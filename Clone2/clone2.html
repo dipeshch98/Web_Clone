@@ -1,0 +1,1206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlogPage</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="app.js"></script> -->
+    <!-- Google Fonts: Inter + Alegreya -->
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700&family=Inter:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bitter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .font-alegreya {
+            font-family: 'Alegreya', serif;
+        }
+
+        .font-inter {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .font-bitter {
+            font-family: 'Bitter', serif;
+        }
+
+        .font-roboto {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .font-lato {
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="text-left sm:py-2 font-alegreya">
+    <!-- -------NAVBAR------ -->
+    <div class="max-w-[1400px] mx-auto py-4  px-1.5 sm:px-0">
+
+        <nav class="flex items-center justify-between pb-2 border-b">
+            <!-- Logo -->
+            <div class="flex items-center gap-2">
+                <div class="w-8 h-8 bg-red-600 flex items-center justify-center rounded">
+                    <span class="text-white font-bold">▶</span>
+                </div>
+                <h1 class=" text-[40px] font-bold font-alegreya leading-[26px] text-black">
+                    Forcast
+                </h1>
+            </div>
+
+            <!-- Desktop Menu -->
+            <ul class="hidden font-inter leading-[26px] text-[15px] md:flex space-x-8 font-semibold">
+                <li class="hover:text-red-600 cursor-pointer">HOME</li>
+                <li class="hover:text-red-600 cursor-pointer">POST FEATURES</li>
+                <li class="hover:text-red-600 cursor-pointer">TECHNOLOGY</li>
+                <li class="hover:text-red-600 cursor-pointer">BREAKING NEWS</li>
+                <li class="hover:text-red-600 cursor-pointer">PAGES</li>
+            </ul>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="md:hidden text-2xl">☰</button>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu"
+            class="hidden font-inter flex-col items-center space-y-4 py-6 bg-gray-100 rounded-lg shadow-md md:hidden">
+
+            <a href="#" class="w-full text-center py-2 px-4 rounded-md hover:bg-red-600 hover:text-white transition">
+                HOME
+            </a>
+
+            <a href="#" class="w-full text-center py-2 px-4 rounded-md hover:bg-red-600 hover:text-white transition">
+                POST FEATURES
+            </a>
+
+            <a href="#" class="w-full text-center py-2 px-4 rounded-md hover:bg-red-600 hover:text-white transition">
+                TECHNOLOGY
+            </a>
+
+            <a href="#" class="w-full text-center py-2 px-4 rounded-md hover:bg-red-600 hover:text-white transition">
+                BREAKING NEWS
+            </a>
+
+            <a href="#" class="w-full text-center py-2 px-4 rounded-md hover:bg-red-600 hover:text-white transition">
+                PAGES
+            </a>
+        </div>
+
+    </div>
+
+
+
+    <!--BODY SECTION -->
+
+    <!-- FIRST SECTION -->
+    <div class="max-w-[1400px] mx-auto p-4 lg:p-0 flex flex-col lg:flex-row gap-8">
+
+        <!-- Left Content Section -->
+        <div class="flex-1">
+            <!-- Top Stories Header -->
+            <div class="flex items-center justify-center my-8">
+  <div class="flex-grow border-t border-gray-400"></div>
+  <h1 class="px-4 text-xl md:text-2xl font-bold text-gray-800">Top Stories</h1>
+  <div class="flex-grow border-t border-gray-400"></div>
+</div>
+
+
+            <!-- Three Column Layout -->
+            <div class="flex flex-col md:flex-row mb-8">
+                <!-- Left Column -->
+                <div class="flex-1 border-r border-gray-200 space-y-6 pr-2">
+                    <article class="group border-b border-gray-200 last:border-b-0">
+                        <div class="flex items-start gap-2 text-sm text-gray-500 mb-2">
+                            <span class="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
+                            <span>January 28, 2022</span>
+                        </div>
+                        <h3
+                            class="text-[16px] font-medium leading-[22.4px] text-gray-800 hover:text-red-500 transition-colors duration-300 cursor-pointer mb-4">
+                            Winter Olympics 2022 day five: Shiffrin out of slalom; snowboard...
+                        </h3>
+                    </article>
+
+                    <article class="group border-b border-gray-200 last:border-b-0">
+                        <div class="flex items-start gap-2 text-sm text-gray-500 mb-2">
+                            <span class="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
+                            <span>January 28, 2022</span>
+                        </div>
+                        <h3
+                            class="text-[16px] font-medium leading-[22.4px] text-gray-800 hover:text-red-500 transition-colors duration-300 cursor-pointer mb-4">
+                            Peloton to replace chief executive and cut 2,800 jobs amid...
+                        </h3>
+                    </article>
+
+                    <article class="group border-b border-gray-200 last:border-b-0">
+                        <div class="flex items-start gap-2 text-sm text-gray-500 mb-2">
+                            <span class="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
+                            <span>January 28, 2022</span>
+                        </div>
+                        <h3
+                            class="text-[16px] font-medium leading-[22.4px] text-gray-800 hover:text-red-500 transition-colors duration-300 cursor-pointer mb-4">
+                            Peloton to replace chief executive and cut 2,800 jobs amid...
+                        </h3>
+                    </article>
+
+                    <article class="group border-b border-gray-200 last:border-b-0">
+                        <div class="flex items-start gap-2 text-sm text-gray-500 mb-2">
+                            <span class="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
+                            <span>January 28, 2022</span>
+                        </div>
+                        <h3
+                            class="text-[16px] font-medium leading-[22.4px] text-gray-800 hover:text-red-500 transition-colors duration-300 cursor-pointer mb-4">
+                            Peloton to replace chief executive and cut 2,800 jobs amid...
+                        </h3>
+                    </article>
+
+                    <article class="group border-b border-gray-200 last:border-b-0">
+                        <div class="flex items-start gap-2 text-sm text-gray-500 mb-2">
+                            <span class="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
+                            <span>January 28, 2022</span>
+                        </div>
+                        <h3
+                            class="text-[16px] font-medium leading-[22.4px] text-gray-800 hover:text-red-500 transition-colors duration-300 cursor-pointer mb-4">
+                            Peloton to replace chief executive and cut 2,800 jobs amid...
+                        </h3>
+                    </article>
+                </div>
+
+                <!-- Center Column (Fixed Width) -->
+                <div class="w-[490px] flex-shrink-0 px-1 border-r border-gray-200">
+                    <article class="group h-full flex flex-col">
+                        <div class="relative overflow-hidden rounded-lg mb-4 flex-grow">
+                            <img src="https://images.unsplash.com/photo-1541872705-1f73c6400ec9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                                alt="Federal Building"
+                                class="w-full h-full min-h-80 object-cover transition-transform duration-500 group-hover:scale-110">
+                            <div
+                                class="absolute inset-0 bg-black bg-opacity-10 group-hover:bg-opacity-20 transition-all duration-300">
+                            </div>
+                        </div>
+                        <div>
+                            <h2
+                                class="text-lg md:text-xl font-bold text-gray-800 hover:text-red-500 transition-colors duration-300 cursor-pointer mb-3 leading-[26px]">
+                                The Fed is about to raise interest rates and shaft American workers
+                            </h2>
+                            <div class="flex flex-col sm:flex-row sm:items-center text-sm text-gray-500 gap-1 sm:gap-4">
+                                <span>by Penci Design</span>
+                                <span>January 28, 2022</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Right Column -->
+                <div class="flex-1 pl-4 space-y-6">
+                    <article class="group border-b border-gray-200 last:border-b-0">
+                        <div class="text-sm text-gray-500 mb-2">January 28, 2022</div>
+                        <h3
+                            class="text-base font-semibold text-gray-800 hover:text-red-500 transition-colors duration-300 cursor-pointer leading-tight mb-4">
+                            'Adults are banning books, not asking our opinions': Teens...
+                        </h3>
+                    </article>
+
+                    <article class="group border-b border-gray-200 last:border-b-0">
+                        <div class="text-sm text-gray-500 mb-2">January 28, 2022</div>
+                        <h3
+                            class="text-base font-semibold text-gray-800 hover:text-red-500 transition-colors duration-300 cursor-pointer leading-tight mb-4">
+                            Pfizer accused of pandemic profiteering as profits double in...
+                        </h3>
+                    </article>
+
+                    <article class="group border-b border-gray-200 last:border-b-0">
+                        <div class="text-sm text-gray-500 mb-2">January 28, 2022</div>
+                        <h3
+                            class="text-base font-semibold text-gray-800 hover:text-red-500 transition-colors duration-300 cursor-pointer leading-tight mb-4">
+                            Pfizer accused of pandemic profiteering as profits double in...
+                        </h3>
+                    </article>
+
+                    <article class="group border-b border-gray-200 last:border-b-0">
+                        <div class="text-sm text-gray-500 mb-2">January 28, 2022</div>
+                        <h3
+                            class="text-base font-semibold text-gray-800 hover:text-red-500 transition-colors duration-300 cursor-pointer leading-tight mb-4">
+                            Pfizer accused of pandemic profiteering as profits double in...
+                        </h3>
+                    </article>
+
+                    <article class="group border-b border-gray-200 last:border-b-0">
+                        <div class="text-sm text-gray-500 mb-2">January 28, 2022</div>
+                        <h3
+                            class="text-base font-semibold text-gray-800 hover:text-red-500 transition-colors duration-300 cursor-pointer leading-tight mb-4">
+                            Pfizer accused of pandemic profiteering as profits double in...
+                        </h3>
+                    </article>
+                </div>
+            </div>
+
+
+            <!-- New Videos Section -->
+            <div class="max-w-full mx-auto border-t border-gray-200 last:border-r-0 pt-4">
+                <!-- Heading -->
+                <h2 class="text-2xl sm:text-3xl font-bold text-gray-800 mb-6">New Stories</h2>
+
+                <!-- Video Grid -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-2">
+                    <!-- Video 1 -->
+                    <article class="group border-r border-gray-200 last:border-r-0 pr-2">
+                        <div class="relative overflow-hidden rounded-lg mb-3">
+                            <img src="https://images.unsplash.com/photo-1511376777868-611b54f68947?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                                alt="Couple watching TV"
+                                class="w-full h-32 object-cover transition-transform duration-500 group-hover:scale-110">
+                        </div>
+                        <h3
+                            class="text-[16px] font-normal text-gray-800 hover:text-red-500 transition-colors duration-300 cursor-pointer leading-tight">
+                            From Buffy to Brideshead – our pick of the best box sets to watch TV shows
+                        </h3>
+                        <p class="text-xs text-gray-500 mt-1">January 28, 2022</p>
+                    </article>
+
+                    <!-- Video 2 -->
+                    <article class="group border-r border-gray-200 last:border-r-0 pr-2">
+                        <div class="relative overflow-hidden rounded-lg mb-3">
+                            <img src="https://images.unsplash.com/photo-1511376777868-611b54f68947?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                                alt="Couple watching TV"
+                                class="w-full h-32 object-cover transition-transform duration-500 group-hover:scale-110">
+                        </div>
+                        <h3
+                            class="text-[16px] font-normal text-gray-800 hover:text-red-500 transition-colors duration-300 cursor-pointer leading-tight">
+                            From Buffy to Brideshead – our pick of the best box sets to watch TV shows
+                        </h3>
+                        <p class="text-xs text-gray-500 mt-1">January 28, 2022</p>
+                    </article>
+
+                    <!-- Video 3 -->
+                    <article class="group border-r border-gray-200 last:border-r-0 pr-2">
+                        <div class="relative overflow-hidden rounded-lg mb-3">
+                            <img src="https://images.unsplash.com/photo-1511376777868-611b54f68947?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                                alt="Couple watching TV"
+                                class="w-full h-32 object-cover transition-transform duration-500 group-hover:scale-110">
+                        </div>
+                        <h3
+                            class="text-[16px] font-normal text-gray-800 hover:text-red-500 transition-colors duration-300 cursor-pointer leading-tight">
+                            From Buffy to Brideshead – our pick of the best box sets to watch TV shows
+                        </h3>
+                        <p class="text-xs text-gray-500 mt-1">January 28, 2022</p>
+                    </article>
+
+                    <!-- Video 4 -->
+                    <article class="group border-r border-gray-200 last:border-r-0 pr-2">
+                        <div class="relative overflow-hidden rounded-lg mb-3">
+                            <img src="https://images.unsplash.com/photo-1511376777868-611b54f68947?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                                alt="Couple watching TV"
+                                class="w-full h-32 object-cover transition-transform duration-500 group-hover:scale-110">
+                        </div>
+                        <h3
+                            class="text-[16px] font-normal text-gray-800 hover:text-red-500 transition-colors duration-300 cursor-pointer leading-tight">
+                            From Buffy to Brideshead – our pick of the best box sets to watch TV shows
+                        </h3>
+                        <p class="text-xs text-gray-500 mt-1">January 28, 2022</p>
+                    </article>
+
+                    <!-- Video 5 -->
+                    <article class="group last:border-r-0 pr-2">
+                        <div class="relative overflow-hidden rounded-lg mb-3">
+                            <img src="https://images.unsplash.com/photo-1511376777868-611b54f68947?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                                alt="Couple watching TV"
+                                class="w-full h-32 object-cover transition-transform duration-500 group-hover:scale-110">
+                        </div>
+                        <h3
+                            class="text-[16px] font-normal text-gray-800 hover:text-red-500 transition-colors duration-300 cursor-pointer leading-tight">
+                            From Buffy to Brideshead – our pick of the best box sets to watch TV shows
+                        </h3>
+                        <p class="text-xs text-gray-500 mt-1">January 28, 2022</p>
+                    </article>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- Right Sidebar - Sticky, Fixed Width -->
+        <aside class="w-[345px] lg:sticky lg:top-6 self-start sm:pb-2  ">
+            <div class="bg-white rounded-lg p-6 border-l border-gray-200 pr-2 last:border-r-0">
+                <div class="border-b border-red-500 pb-3 mb-6">
+                    <h2 class="text-[21px] font-bold text-red-600 uppercase">Latest News</h2>
+                </div>
+
+                <div class="space-y-6">
+                    <!-- News Items -->
+                    <article class="group pb-4 border-b border-gray-200 last:border-b-0">
+                        <h3
+                            class="text-[18px] font-semibold text-gray-800 hover:text-red-500 transition-colors duration-300 cursor-pointer leading-tight mb-2">
+                            Brexit damaging trade with EU, says public committee on Thursday
+                        </h3>
+                    </article>
+                    <article class="group pb-4 border-b border-gray-200 last:border-b-0">
+                        <h3
+                            class="text-[18px] font-semibold text-gray-800 hover:text-red-500 transition-colors duration-300 cursor-pointer leading-tight mb-2">
+                            This Is Going to Hurt review – Ben Whishaw stars in a realism adaptation
+                        </h3>
+                    </article>
+                    <article class="group pb-4 border-b border-gray-200 last:border-b-0">
+                        <h3
+                            class="text-[18px] font-semibold text-gray-800 hover:text-red-500 transition-colors duration-300 cursor-pointer leading-tight mb-2">
+                            No one should have to bear the online abuse I received while fighting hate
+                        </h3>
+                    </article>
+                    <article class="group pb-4 border-b border-gray-200 last:border-b-0">
+                        <h3
+                            class="text-[18px] font-semibold text-gray-800 hover:text-red-500 transition-colors duration-300 cursor-pointer leading-tight mb-2">
+                            How rock climbing gave me a new perspective on the world – and myself
+                        </h3>
+                    </article>
+                    <article class="group pb-4 border-b border-gray-200 last:border-b-0">
+                        <h3
+                            class="text-[18px] font-semibold text-gray-800 hover:text-red-500 transition-colors duration-300 cursor-pointer leading-tight mb-2">
+                            Peloton to replace chief executive and cut 2,800 jobs amid sales slump
+                        </h3>
+                    </article>
+                    <article class="group pb-4 border-b border-gray-200 last:border-b-0">
+                        <h3
+                            class="text-[18px] font-semibold text-gray-800 hover:text-red-500 transition-colors duration-300 cursor-pointer leading-tight mb-2">
+                            Winter Olympics 2022 day five: Shiffrin out of slalom; snowboard cross final
+                        </h3>
+                    </article>
+                    <article class="group pb-4">
+                        <h3
+                            class="text-[18px] font-semibold text-gray-800 hover:text-red-500 transition-colors duration-300 cursor-pointer leading-tight mb-2">
+                            Bruno Guimarães, Gabrielle and Newcastle's dreams coming true
+                        </h3>
+                    </article>
+                </div>
+            </div>
+        </aside>
+
+    </div>
+
+
+    <hr class=" max-w-7xl mx-auto py-4 lg:p-0 px-1.5 sm:px-0 mt-8 mb-8 border-gray-200">
+
+
+
+
+    <!-- POLITICES SECTION
+    POLITICES SECTION -->
+    <main class="max-w-[1400px] mx-auto py-4 lg:p-0 px-1.5 sm:px-0">
+        <div class="flex flex-col md:flex-row md:space-x-4 py-2">
+
+            <!-- Politics Section (fixed 700px) -->
+            <section class="w-full md:basis-[700px] md:flex-shrink-0 mb-8 md:mb-0">
+                <h2 class="text-3xl font-bold mb-4 text-accent-red">Politics</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
+
+                    <!-- Featured Politics Article -->
+                    <div class="flex flex-col h-full border-r border-gray-200 pr-2">
+                        <div class="overflow-hidden rounded-md mb-4">
+                            <img src="https://images.pexels.com/photos/1009136/pexels-photo-1009136.jpeg"
+                                alt="UK Parliament with Union Jack flag"
+                                class="w-full h-74 md:h-64 object-cover transform transition duration-300 hover:scale-105">
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 hover:text-red-600 cursor-pointer">
+                            Brexit damaging trade with EU, says public committee on Thursday
+                        </h3>
+                        <p class="text-gray-500 text-sm font-medium mt-auto">January 28, 2022</p>
+                    </div>
+
+                    <!-- 5 Politics Features -->
+                    <div class="space-y-2 border-r border-gray-200 pr-2">
+                        <article class="border-b border-gray-200 pb-2">
+                            <h4 class="text-[17px] leading-[17px] font-medium hover:text-red-600 cursor-pointer">
+                                The Fed is about to raise interest rates and shaft American workers
+                            </h4>
+                            <p class="text-gray-500 text-sm">January 28, 2022</p>
+                        </article>
+                        <article class="border-b border-gray-200 pb-2">
+                            <h4 class="text-[17px] leading-[17px] font-medium hover:text-red-600 cursor-pointer">
+                                'Adults are banning books, not asking our opinions': Teens of the Banned Book Club
+                            </h4>
+                            <p class="text-gray-500 text-sm">January 28, 2022</p>
+                        </article>
+                        <article class="border-b border-gray-200 pb-2">
+                            <h4 class="text-[17px] leading-[17px] font-medium hover:text-red-600 cursor-pointer">
+                                Ottawa protesters turn to Christian crowdfunding site after GoFundMe snub
+                            </h4>
+                            <p class="text-gray-500 text-sm">January 28, 2022</p>
+                        </article>
+                        <article class="border-b border-gray-200 pb-2">
+                            <h4 class="text-[17px] leading-[17px] font-medium hover:text-red-600 cursor-pointer">
+                                US couple arrested for allegedly conspiring to launder $4.5bn in bitcoin
+                            </h4>
+                            <p class="text-gray-500 text-sm">January 28, 2022</p>
+                        </article>
+                        <article>
+                            <h4 class="text-[17px] leading-[17px] font-medium hover:text-red-600 cursor-pointer">
+                                New bill sparks debate over voting rights in several US states
+                            </h4>
+                            <p class="text-gray-500 text-sm">January 28, 2022</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Business Section (fills remaining space) -->
+            <!-- Business Section (fills remaining space) -->
+            <section class="w-full md:flex-1">
+                <h2 class="text-3xl font-bold mb-4 text-accent-red">Business</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3">
+
+                    <!-- Featured Business Article -->
+                    <div class="flex flex-col h-full border-r border-gray-200 pr-2">
+                        <div class="overflow-hidden rounded-md mb-4">
+                            <img src="https://images.pexels.com/photos/30063037/pexels-photo-30063037.jpeg"
+                                alt="Man riding a bicycle"
+                                class="w-full h-56 md:h-64 object-cover transform transition duration-300 hover:scale-105">
+                        </div>
+                        <h3 class="text-xl font-bold hover:text-red-600 cursor-pointer">
+                            Peloton to replace chief executive and cut 2,800 jobs amid sales slump
+                        </h3>
+                        <p class="text-gray-500 text-sm mt-auto">January 28, 2022</p>
+                    </div>
+
+                    <!-- 3 Business Features (Col 2) -->
+                    <div class="space-y-4 border-r border-gray-200 px-2">
+                        <article class="border-b border-gray-200 pb-2">
+                            <h4 class="text-[16px] font-semibold hover:text-red-600 cursor-pointer">
+                                BP dismisses calls for windfall tax as profits hit all eight-year high
+                            </h4>
+                            <p class="text-gray-500 text-sm">January 28, 2022</p>
+                        </article>
+                        <article class="border-b border-gray-200 pb-2">
+                            <h4 class="text-[16px] font-semibold hover:text-red-600 cursor-pointer">
+                                Pfizer accused of pandemic profiteering as profits double in pandemic
+                            </h4>
+                            <p class="text-gray-500 text-sm">January 28, 2022</p>
+                        </article>
+                        <article>
+                            <h4 class="text-[16px] font-semibold hover:text-red-600 cursor-pointer">
+                                Tesco Chairman warns of food price inflation at 5% by spring in the UK this year
+                            </h4>
+                            <p class="text-gray-500 text-sm">January 28, 2022</p>
+                        </article>
+                    </div>
+
+                    <!-- 3 Business Features (Col 3) -->
+                    <div class="space-y-4 px-2">
+                        <article class="border-b border-gray-200 pb-2">
+                            <h4 class="text-[16px] font-semibold hover:text-red-600 cursor-pointer">
+                                Nvidia's $40bn takeover of UK chip designer Arm collapses in recent news
+                            </h4>
+                            <p class="text-gray-500 text-sm">January 28, 2022</p>
+                        </article>
+                        <article class="border-b border-gray-200 pb-2">
+                            <h4 class="text-[16px] font-semibold hover:text-red-600 cursor-pointer">
+                                Amazon posts record profits but warns of supply chain challenges
+                            </h4>
+                            <p class="text-gray-500 text-sm">January 28, 2022</p>
+                        </article>
+                        <article>
+                            <h4 class="text-[16px] font-semibold hover:text-red-600 cursor-pointer">
+                                Global markets react to rising inflation fears worldwide
+                            </h4>
+                            <p class="text-gray-500 text-sm">January 28, 2022</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+
+
+
+    <!-- 
+    ENTERTAINMENT SECTION 
+    ENTERTAINMENT SECTION -->
+    <main class="max-w-[1400px] mx-auto py-4 lg:p-0  px-1.5 sm:px-0">
+
+        <!-- Entertainment Section -->
+        <section class="mb-8 border-t border-b border-gray-200 py-6">
+            <h2 class="text-3xl font-bold mb-4 text-red-600">Entertainment</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
+
+                <!-- Left Column -->
+                <div class="flex flex-col border-r border-gray-200 pr-0 md:pr-4 last:border-r-0">
+
+                    <!-- Featured Article -->
+                    <div class="mb-6 flex flex-col md:flex-row items-start gap-4">
+
+                        <!-- Left Content -->
+                        <div class="flex-1">
+                            <h3
+                                class="text-lg sm:text-xl md:text-2xl font-bold mb-1 hover:text-red-600 transition-colors cursor-pointer leading-snug">
+                                This Is Going to Hurt review – Ben Whishaw stars in a realism adaptation
+                            </h3>
+                            <p class="text-gray-500 text-xs sm:text-sm mb-2">By Feric Design | January 28, 2022</p>
+                            <p class="text-gray-700 text-sm sm:text-base">
+                                The rush to give employees access to all the tools they'd need...
+                            </p>
+                        </div>
+
+                        <!-- Right Image -->
+                        <div class="w-full md:w-1/3 flex-shrink-0">
+                            <img src="https://images.pexels.com/photos/259780/pexels-photo-259780.jpeg"
+                                alt="Entertainment article image"
+                                class="w-full h-40 sm:h-44 md:h-[7rem] object-cover rounded-md">
+                        </div>
+                    </div>
+
+                    <!-- Sub-articles -->
+                    <div
+                        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-0 border-t border-gray-200 pt-6 divide-x divide-gray-200">
+
+                        <article class="px-2 sm:px-4 md:px-2">
+                            <h4
+                                class="text-[16px] font-bold hover:text-red-600 transition-colors cursor-pointer leading-snug">
+                                From Buffy to Brideshead – our pick of the best binge-watch TV shows
+                            </h4>
+                        </article>
+
+                        <article class="px-2 sm:px-4 md:px-2">
+                            <h4
+                                class="text-[16px] font-bold hover:text-red-600 transition-colors cursor-pointer leading-snug">
+                                Warner Bros sued over abysma Resurrections release in US
+                            </h4>
+                        </article>
+
+                        <article class="px-2 sm:px-4 md:px-2">
+                            <h4
+                                class="text-[16px] font-bold hover:text-red-600 transition-colors cursor-pointer leading-snug">
+                                From age-gap romances to a Welsh robot: the best of Sundance 2022
+                            </h4>
+                        </article>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- Right Column (Image Articles) -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <!-- Article 1 -->
+                    <div
+                        class="flex flex-col border-b sm:border-b-0 sm:border-r border-gray-200 pr-0 sm:pr-4 pb-2 sm:pb-0 last:border-r-0">
+                        <img src="https://images.pexels.com/photos/259780/pexels-photo-259780.jpeg"
+                            alt="Group of doctors" class="w-full h-36 object-cover rounded-md mb-2">
+                        <h4
+                            class="text-[18px] font-alegreya leading-[20px] font-medium hover:text-red-600 transition-colors cursor-pointer">
+                            Oscar nominations triumph confirms The Power of the Dog's classic status
+                        </h4>
+                        <p class="text-gray-500 text-sm mt-1">January 28, 2022</p>
+                    </div>
+
+                    <!-- Article 2 -->
+                    <div
+                        class="flex flex-col border-b sm:border-b-0 sm:border-r border-gray-200 pr-0 sm:pr-4 pb-2 sm:pb-0 last:border-r-0">
+                        <img src="https://images.pexels.com/photos/259780/pexels-photo-259780.jpeg"
+                            alt="Netflix app on phone" class="w-full h-36 object-cover rounded-md mb-2">
+                        <h4
+                            class="text-[18px] font-alegreya leading-[20px] font-medium hover:text-red-600 transition-colors cursor-pointer">
+                            What's on Netflix and Amazon this month. A list you need to watch
+                        </h4>
+                        <p class="text-gray-500 text-sm mt-1">January 28, 2022</p>
+                    </div>
+
+                    <!-- Article 3 -->
+                    <div
+                        class="flex flex-col border-b sm:border-b-0 border-gray-200 pr-0 sm:pr-4 pb-2 sm:pb-0 last:border-r-0">
+                        <img src="https://images.pexels.com/photos/259780/pexels-photo-259780.jpeg"
+                            alt="Spooky graveyard" class="w-full h-36 object-cover rounded-md mb-2">
+                        <h4
+                            class="text-[18px] font-alegreya leading-[20px] font-medium hover:text-red-600 transition-colors cursor-pointer">
+                            All of Us Are Dead: Netflix's Korean zombie show will blow you away
+                        </h4>
+                        <p class="text-gray-500 text-sm mt-1">January 28, 2022</p>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </section>
+
+        <!-- Sports Section -->
+        <!-- Sports Section -->
+        <section>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-0 divide-x divide-gray-200">
+
+                <div class="flex flex-col px-2 sm:px-3 py-2">
+                    <div class="overflow-hidden rounded-md mb-2">
+                        <img src="https://images.pexels.com/photos/31265731/pexels-photo-31265731.jpeg"
+                            alt="Curling players"
+                            class="w-full h-40 object-cover transform transition duration-300 hover:scale-105">
+                    </div>
+                    <h4 class="text-[18px] font-alegreya leading-[22px] font-medium hover:text-red-600 cursor-pointer">
+                        GB miss out on first Beijing medal after crushing mixed curling loss
+                    </h4>
+                    <p class="text-gray-500 text-sm mt-1">January 28, 2022</p>
+                </div>
+
+                <div class="flex flex-col px-2 sm:px-3 py-2">
+                    <div class="overflow-hidden rounded-md mb-2">
+                        <img src="https://images.pexels.com/photos/31265731/pexels-photo-31265731.jpeg"
+                            alt="Golfer on a course"
+                            class="w-full h-40 object-cover transform transition duration-300 hover:scale-105">
+                    </div>
+                    <h4 class="text-[18px] font-alegreya leading-[22px] font-medium hover:text-red-600 cursor-pointer">
+                        John 'Long Socks' McLaren hangs up his bib after 30 years carrying clubs
+                    </h4>
+                    <p class="text-gray-500 text-sm mt-1">January 28, 2022</p>
+                </div>
+
+                <div class="flex flex-col px-2 sm:px-3 py-2">
+                    <div class="overflow-hidden rounded-md mb-2">
+                        <img src="https://images.pexels.com/photos/31265731/pexels-photo-31265731.jpeg"
+                            alt="Person boxing in a gym"
+                            class="w-full h-40 object-cover transform transition duration-300 hover:scale-105">
+                    </div>
+                    <h4 class="text-[18px] font-alegreya leading-[22px] font-medium hover:text-red-600 cursor-pointer">
+                        Pillow fighting: yes, it's professional combat sport trending all over the world
+                    </h4>
+                    <p class="text-gray-500 text-sm mt-1">January 28, 2022</p>
+                </div>
+
+                <div class="flex flex-col px-2 sm:px-3 py-2">
+                    <div class="overflow-hidden rounded-md mb-2">
+                        <img src="https://images.pexels.com/photos/31265731/pexels-photo-31265731.jpeg"
+                            alt="Man holding a soccer ball"
+                            class="w-full h-40 object-cover transform transition duration-300 hover:scale-105">
+                    </div>
+                    <h4 class="text-[18px] font-alegreya leading-[22px] font-medium hover:text-red-600 cursor-pointer">
+                        Which football clubs have won major trophies across three centuries?
+                    </h4>
+                    <p class="text-gray-500 text-sm mt-1">January 28, 2022</p>
+                </div>
+
+                <div class="flex flex-col px-2 sm:px-3 py-2">
+                    <div class="overflow-hidden rounded-md mb-2">
+                        <img src="https://images.pexels.com/photos/31265731/pexels-photo-31265731.jpeg"
+                            alt="Olympic rings with snowy mountains"
+                            class="w-full h-40 object-cover transform transition duration-300 hover:scale-105">
+                    </div>
+                    <h4 class="text-[18px] font-alegreya leading-[22px] font-medium hover:text-red-600 cursor-pointer">
+                        Beijing Winter Olympics 2022 day four – as it happened with all the games
+                    </h4>
+                    <p class="text-gray-500 text-sm mt-1">January 28, 2022</p>
+                </div>
+
+                <div class="flex flex-col px-2 sm:px-3 py-2">
+                    <div class="overflow-hidden rounded-md mb-2">
+                        <img src="https://images.pexels.com/photos/31265731/pexels-photo-31265731.jpeg"
+                            alt="American football players"
+                            class="w-full h-40 object-cover transform transition duration-300 hover:scale-105">
+                    </div>
+                    <h4 class="text-[18px] font-alegreya leading-[22px] font-medium hover:text-red-600 cursor-pointer">
+                        'Never say never': Tom Brady says an NFL comeback is possible
+                    </h4>
+                    <p class="text-gray-500 text-sm mt-1">January 28, 2022</p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <hr class="mt-8 mb-8 border-gray-200">
+
+    </main>
+
+
+    <!-- Four-column section based on the image -->
+    <div class="max-w-[1400px] mx-auto py-4 lg:p-0 px-1.5 sm:px-0">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <!-- Sports Section -->
+            <div class="flex flex-col">
+                <div class="flex justify-between items-center mb-6">
+                    <h2 class="text-2xl font-bold text-red-500 hover:text-red-500 transition-colors duration-300">
+                        Sports
+                    </h2>
+                </div>
+                <div class="relative mb-4 overflow-hidden rounded-md group">
+                    <img src="https://images.pexels.com/photos/27219998/pexels-photo-27219998.jpeg" alt="Skier"
+                        class="w-full h-64 object-cover rounded-md group-hover:scale-105 transition-transform duration-300 ease-in-out">
+                    <!-- Text overlay -->
+                    <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-4">
+                        <h3 class="text-[18px] leading-[24.2px] font-bold mb-1">
+                            Winter Olympics 2022 day five: Shiffrin out of slalom; snowboard cross final
+                        </h3>
+                        <p class="text-sm">January 28, 2022</p>
+                    </div>
+                </div>
+
+
+                <div class="space-y-4">
+                    <div class="pb-4 border-b border-gray-200">
+                        <h4
+                            class="text-lg font-medium text-gray-900 leading-[25.2px] hover:text-red-500 transition-colors duration-300">
+                            Bruno Guimarães, Gabrielle and Newcastle's dreams coming true
+                        </h4>
+                        <p class="text-sm text-gray-500 mt-1">January 28, 2022</p>
+                    </div>
+                    <div class="pb-4 border-b border-gray-200">
+                        <h4
+                            class="text-lg font-medium text-gray-900 leading-[25.2px] hover:text-red-500 transition-colors duration-300">
+                            'Never say never': Tom Brady says an NFL comeback is possible
+                        </h4>
+                        <p class="text-sm text-gray-500 mt-1">January 28, 2022</p>
+                    </div>
+                    <div class="pb-4 border-b border-gray-200">
+                        <h4
+                            class="text-lg font-medium text-gray-900 leading-[25.2px] hover:text-red-500 transition-colors duration-300">
+                            Beijing Winter Olympics 2022 day four – as it happened with all the games
+                        </h4>
+                        <p class="text-sm text-gray-500 mt-1">January 28, 2022</p>
+                    </div>
+                    <div class="pb-4 border-b border-gray-200">
+                        <h4
+                            class="text-lg font-medium text-gray-900 leading-[25.2px] hover:text-red-500 transition-colors duration-300">
+                            Which football clubs have won major trophies across three centuries?
+                        </h4>
+                        <p class="text-sm text-gray-500 mt-1">January 28, 2022</p>
+                    </div>
+                    <div class="pb-4">
+                        <h4
+                            class="text-lg font-medium text-gray-900 leading-[25.2px] hover:text-red-500 transition-colors duration-300">
+                            Pillow fighting: yes, it’s professional combat sport trending all over the world
+                        </h4>
+                        <p class="text-sm text-gray-500 mt-1">January 28, 2022</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Health Section -->
+            <div class="flex flex-col">
+                <div class="flex justify-between items-center mb-6">
+                    <h2 class="text-2xl font-bold text-red-500 hover:text-red-500 transition-colors duration-300">
+                        Health
+                    </h2>
+                </div>
+                <div class="relative mb-4 overflow-hidden rounded-md group">
+                    <img src="https://images.pexels.com/photos/27219998/pexels-photo-27219998.jpeg" alt="Skier"
+                        class="w-full h-64 object-cover rounded-md group-hover:scale-105 transition-transform duration-300 ease-in-out">
+                    <!-- Text overlay -->
+                    <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-4">
+                        <h3 class="text-[18px] leading-[24.2px] font-bold mb-1">
+                            Winter Olympics 2022 day five: Shiffrin out of slalom; snowboard cross final
+                        </h3>
+                        <p class="text-sm">January 28, 2022</p>
+                    </div>
+                </div>
+
+                <div class="space-y-4">
+                    <div class="pb-4 border-b border-gray-200">
+                        <h4
+                            class="text-lg font-medium text-gray-900 leading-[25.2px] hover:text-red-500 transition-colors duration-300">
+                            Easy wins: want to sleep better? Try a short, gentle stretch before bed
+                        </h4>
+                        <p class="text-sm text-gray-500 mt-1">January 28, 2022</p>
+                    </div>
+                    <div class="pb-4 border-b border-gray-200">
+                        <h4
+                            class="text-lg font-medium text-gray-900 leading-[25.2px] hover:text-red-500 transition-colors duration-300">
+                            Revealed: many common omega-3 fish oil supplements are 'rancid'
+                        </h4>
+                        <p class="text-sm text-gray-500 mt-1">January 28, 2022</p>
+                    </div>
+                    <div class="pb-4 border-b border-gray-200">
+                        <h4
+                            class="text-lg font-medium text-gray-900 leading-[25.2px] hover:text-red-500 transition-colors duration-300">
+                            Chris Boardman to lead new walking and cycling body in England
+                        </h4>
+                        <p class="text-sm text-gray-500 mt-1">January 28, 2022</p>
+                    </div>
+                    <div class="pb-4 border-b border-gray-200">
+                        <h4
+                            class="text-lg font-medium text-gray-900 leading-[25.2px] hover:text-red-500 transition-colors duration-300">
+                            100 ways to slightly improve your life without really trying with healthy habits
+                        </h4>
+                        <p class="text-sm text-gray-500 mt-1">January 28, 2022</p>
+                    </div>
+                    <div class="pb-4 ">
+                        <h4
+                            class="text-lg font-medium text-gray-900 leading-[25.2px] hover:text-red-500 transition-colors duration-300">
+                            'Never, ever look down': a middle-aged guide to catching the waves
+                        </h4>
+                        <p class="text-sm text-gray-500 mt-1">January 28, 2022</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Opinion Section -->
+            <div class="flex flex-col">
+                <div class="flex justify-between items-center mb-6">
+                    <h2 class="text-2xl font-bold text-red-500 hover:text-red-500 transition-colors duration-300">
+                        Opinion
+                    </h2>
+                </div>
+                <div class="relative mb-4 overflow-hidden rounded-md group">
+                    <img src="https://images.pexels.com/photos/27219998/pexels-photo-27219998.jpeg" alt="Skier"
+                        class="w-full h-64 object-cover rounded-md group-hover:scale-105 transition-transform duration-300 ease-in-out">
+                    <!-- Text overlay -->
+                    <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-4">
+                        <h3 class="text-[18px] leading-[24.2px] font-bold mb-1">
+                            Winter Olympics 2022 day five: Shiffrin out of slalom; snowboard cross final
+                        </h3>
+                        <p class="text-sm">January 28, 2022</p>
+                    </div>
+                </div>
+
+                <div class="space-y-4">
+                    <div class="pb-4 border-b border-gray-200">
+                        <h4
+                            class="text-lg font-medium text-gray-900 leading-[25.2px] hover:text-red-500 transition-colors duration-300">
+                            The view on social media's metaverse: it may remain as science fiction
+                        </h4>
+                        <p class="text-sm text-gray-500 mt-1">January 28, 2022</p>
+                    </div>
+                    <div class="pb-4 border-b border-gray-200">
+                        <h4
+                            class="text-lg font-medium text-gray-900 leading-[25.2px] hover:text-red-500 transition-colors duration-300">
+                            Caught in the rental trap, we're trying to turn our flat into a co-op.
+                        </h4>
+                        <p class="text-sm text-gray-500 mt-1">January 28, 2022</p>
+                    </div>
+                    <div class="pb-4 border-b border-gray-200">
+                        <h4
+                            class="text-lg font-medium text-gray-900 leading-[25.2px] hover:text-red-500 transition-colors duration-300">
+                            Kindness is strength. But try telling that to children is another story
+                        </h4>
+                        <p class="text-sm text-gray-500 mt-1">January 28, 2022</p>
+                    </div>
+                    <div class="pb-4 border-b border-gray-200">
+                        <h4
+                            class="text-lg font-medium text-gray-900 leading-[25.2px] hover:text-red-500 transition-colors duration-300">
+                            Wasteful, costly and cruel: it’s time to bin GCSEs for good for new age
+                        </h4>
+                        <p class="text-sm text-gray-500 mt-1">January 28, 2022</p>
+                    </div>
+                    <div class="pb-4">
+                        <h4
+                            class="text-lg font-medium text-gray-900 leading-[25.2px] hover:text-red-500 transition-colors duration-300">
+                            Putting big pharma in charge of global vaccine rollout was a big mistake
+                        </h4>
+                        <p class="text-sm text-gray-500 mt-1">January 28, 2022</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Editor's Picks Section -->
+            <div class="flex flex-col">
+                <div class="flex justify-between items-center mb-6">
+                    <h2 class="text-2xl font-bold text-red-500 hover:text-red-500 transition-colors duration-300">
+                        Editor's Picks
+                    </h2>
+                </div>
+                <div class="relative mb-4 overflow-hidden rounded-md group">
+                    <img src="https://images.pexels.com/photos/27219998/pexels-photo-27219998.jpeg" alt="Skier"
+                        class="w-full h-64 object-cover rounded-md group-hover:scale-105 transition-transform duration-300 ease-in-out">
+                    <!-- Text overlay -->
+                    <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-4">
+                        <h3 class="text-[18px] leading-[24.2px] font-bold mb-1">
+                            Winter Olympics 2022 day five: Shiffrin out of slalom; snowboard cross final
+                        </h3>
+                        <p class="text-sm">January 28, 2022</p>
+                    </div>
+                </div>
+
+                <div class="space-y-4">
+                    <div class="pb-4 border-b border-gray-200">
+                        <h4
+                            class="text-lg font-medium text-gray-900 leading-[25.2px] hover:text-red-500 transition-colors duration-300">
+                            'We need politicians and experts': how Chile is putting the climate crisis first
+                        </h4>
+                        <p class="text-sm text-gray-500 mt-1">January 28, 2022</p>
+                    </div>
+                    <div class="pb-4 border-b border-gray-200">
+                        <h4
+                            class="text-lg font-medium text-gray-900 leading-[25.2px] hover:text-red-500 transition-colors duration-300">
+                            GB miss out on first Beijing medal after crushing mixed curling loss
+                        </h4>
+                        <p class="text-sm text-gray-500 mt-1">January 28, 2022</p>
+                    </div>
+                    <div class="pb-4 border-b border-gray-200">
+                        <h4
+                            class="text-lg font-medium text-gray-900 leading-[25.2px] hover:text-red-500 transition-colors duration-300">
+                            The British film industry is doomed if it can’t support new film-makers
+                        </h4>
+                        <p class="text-sm text-gray-500 mt-1">January 28, 2022</p>
+                    </div>
+                    <div class="pb-4 border-b border-gray-200">
+                        <h4
+                            class="text-lg font-medium text-gray-900 leading-[25.2px] hover:text-red-500 transition-colors duration-300">
+                            My Spotify playlists tell the story of my life – can I really quit now?
+                        </h4>
+                        <p class="text-sm text-gray-500 mt-1">January 28, 2022</p>
+                    </div>
+                    <div class="pb-4">
+                        <h4
+                            class="text-lg font-medium text-gray-900 leading-[25.2px] hover:text-red-500 transition-colors duration-300">
+                            How to stay healthy and fit with these simple exercise and routines
+                        </h4>
+                        <p class="text-sm text-gray-500 mt-1">January 28, 2022</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="mt-8 mb-8 border-gray-200">
+
+    </div>
+
+
+
+
+
+
+    <!-- 
+    LATEST UPDATE
+    LATEST UPDATE -->
+    <div class="max-w-[1400px] mx-auto py-4 lg:p-0 px-1.5 sm:px-0">
+        <h1 class="text-[24px] font-bold mb-6 mt-8">Latest Update</h1>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 pb-16">
+
+            <!-- Item 1 -->
+            <div
+                class="group flex flex-row gap-4 cursor-pointer rounded-lg overflow-hidden transition-all duration-300 ease-in-out">
+                <div class="w-1/3 h-32 overflow-hidden rounded-lg">
+                    <img src="https://images.pexels.com/photos/20374088/pexels-photo-20374088.jpeg"
+                        alt="Article Image 1"
+                        class="w-full h-full object-cover object-center rounded-lg transition-transform duration-300 ease-in-out group-hover:scale-105">
+                </div>
+                <div class="w-2/3 flex flex-col justify-center">
+                    <h3
+                        class="text-[18px] font-[500] leading-[22px] text-gray-900 transition-colors duration-300 ease-in-out group-hover:text-red-500">
+                        Brexit damaging trade with EU, says public committee on Thursday
+                    </h3>
+                    <p class="text-sm font-normal text-gray-500 mt-2">January 20, 2022</p>
+                </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div
+                class="group flex flex-row gap-4 cursor-pointer rounded-lg overflow-hidden transition-all duration-300 ease-in-out">
+                <div class="w-1/3 h-32 overflow-hidden rounded-lg">
+                    <img src="https://images.pexels.com/photos/20374088/pexels-photo-20374088.jpeg"
+                        alt="Article Image 2"
+                        class="w-full h-full object-cover object-center rounded-lg transition-transform duration-300 ease-in-out group-hover:scale-105">
+                </div>
+                <div class="w-2/3 flex flex-col justify-center">
+                    <h3
+                        class="text-[18px] font-[500] leading-[25.2px] text-gray-900 transition-colors duration-300 ease-in-out group-hover:text-red-500">
+                        This Is Going to Hurt review - Ben Whishaw stars in a realism adaptation
+                    </h3>
+                    <p class="text-sm font-normal text-gray-500 mt-2">January 20, 2022</p>
+                </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div
+                class="group flex flex-row gap-4 cursor-pointer rounded-lg overflow-hidden transition-all duration-300 ease-in-out">
+                <div class="w-1/3 h-32 overflow-hidden rounded-lg">
+                    <img src="https://images.pexels.com/photos/20374088/pexels-photo-20374088.jpeg"
+                        alt="Article Image 3"
+                        class="w-full h-full object-cover object-center rounded-lg transition-transform duration-300 ease-in-out group-hover:scale-105">
+                </div>
+                <div class="w-2/3 flex flex-col justify-center">
+                    <h3
+                        class="text-[18px] font-[500] leading-[25.2px] text-gray-900 transition-colors duration-300 ease-in-out group-hover:text-red-500">
+                        No one should have to bear the online abuse I received while fighting hate
+                    </h3>
+                    <p class="text-sm font-normal text-gray-500 mt-2">January 20, 2022</p>
+                </div>
+            </div>
+
+            <!-- Item 4 -->
+            <div
+                class="group flex flex-row gap-4 cursor-pointer rounded-lg overflow-hidden transition-all duration-300 ease-in-out">
+                <div class="w-1/3 h-32 overflow-hidden rounded-lg">
+                    <img src="https://images.pexels.com/photos/20374088/pexels-photo-20374088.jpeg"
+                        alt="Article Image 4"
+                        class="w-full h-full object-cover object-center rounded-lg transition-transform duration-300 ease-in-out group-hover:scale-105">
+                </div>
+                <div class="w-2/3 flex flex-col justify-center">
+                    <h3
+                        class="text-[18px] font-[500] leading-[25.2px] text-gray-900 transition-colors duration-300 ease-in-out group-hover:text-red-500">
+                        How rock climbing gave me a new perspective on the world - and myself
+                    </h3>
+                    <p class="text-sm font-normal text-gray-500 mt-2">January 20, 2022</p>
+                </div>
+            </div>
+
+            <!-- Item 5 -->
+            <div
+                class="group flex flex-row gap-4 cursor-pointer rounded-lg overflow-hidden transition-all duration-300 ease-in-out">
+                <div class="w-1/3 h-32 overflow-hidden rounded-lg">
+                    <img src="https://images.pexels.com/photos/20374088/pexels-photo-20374088.jpeg"
+                        alt="Article Image 5"
+                        class="w-full h-full object-cover object-center rounded-lg transition-transform duration-300 ease-in-out group-hover:scale-105">
+                </div>
+                <div class="w-2/3 flex flex-col justify-center">
+                    <h3
+                        class="text-[18px] font-[500] leading-[25.2px] text-gray-900 transition-colors duration-300 ease-in-out group-hover:text-red-500">
+                        Peloton to replace chief executive and cut 2,800 jobs amid sales slump
+                    </h3>
+                    <p class="text-sm font-normal text-gray-500 mt-2">January 20, 2022</p>
+                </div>
+            </div>
+
+            <!-- Item 6 -->
+            <div
+                class="group flex flex-row gap-4 cursor-pointer rounded-lg overflow-hidden transition-all duration-300 ease-in-out">
+                <div class="w-1/3 h-32 overflow-hidden rounded-lg">
+                    <img src="https://images.pexels.com/photos/20374088/pexels-photo-20374088.jpeg"
+                        alt="Article Image 6"
+                        class="w-full h-full object-cover object-center rounded-lg transition-transform duration-300 ease-in-out group-hover:scale-105">
+                </div>
+                <div class="w-2/3 flex flex-col justify-center">
+                    <h3
+                        class="text-[18px] font-[500] leading-[25.2px] text-gray-900 transition-colors duration-300 ease-in-out group-hover:text-red-500">
+                        Winter Olympics 2022 day five: Shiffrin out of slalom; snowboard cross final
+                    </h3>
+                    <p class="text-sm font-normal text-gray-500 mt-2">January 20, 2022</p>
+                </div>
+            </div>
+
+            <!-- Item 7 -->
+            <div
+                class="group flex flex-row gap-4 cursor-pointer rounded-lg overflow-hidden transition-all duration-300 ease-in-out">
+                <div class="w-1/3 h-32 overflow-hidden rounded-lg">
+                    <img src="https://images.pexels.com/photos/20374088/pexels-photo-20374088.jpeg"
+                        alt="Article Image 7"
+                        class="w-full h-full object-cover object-center rounded-lg transition-transform duration-300 ease-in-out group-hover:scale-105">
+                </div>
+                <div class="w-2/3 flex flex-col justify-center">
+                    <h3
+                        class="text-[18px] font-[500] leading-[25.2px] text-gray-900 transition-colors duration-300 ease-in-out group-hover:text-red-500">
+                        Bruno Guimaraes, Gabrielle and Newcastle's dreams coming true
+                    </h3>
+                    <p class="text-sm font-normal text-gray-500 mt-2">January 20, 2022</p>
+                </div>
+            </div>
+
+            <!-- Item 8 -->
+            <div
+                class="group flex flex-row gap-4 cursor-pointer rounded-lg overflow-hidden transition-all duration-300 ease-in-out">
+                <div class="w-1/3 h-32 overflow-hidden rounded-lg">
+                    <img src="https://images.pexels.com/photos/20374088/pexels-photo-20374088.jpeg"
+                        alt="Article Image 8"
+                        class="w-full h-full object-cover object-center rounded-lg transition-transform duration-300 ease-in-out group-hover:scale-105">
+                </div>
+                <div class="w-2/3 flex flex-col justify-center">
+                    <h3
+                        class="text-[18px] font-[500] leading-[25.2px] text-gray-900 transition-colors duration-300 ease-in-out group-hover:text-red-500">
+                        From Buffy to Brideshead - our pick of the best binge-watch TV shows
+                    </h3>
+                    <p class="text-sm font-normal text-gray-500 mt-2">January 20, 2022</p>
+                </div>
+            </div>
+
+            <!-- Item 9 -->
+            <div
+                class="group flex flex-row gap-4 cursor-pointer rounded-lg overflow-hidden transition-all duration-300 ease-in-out">
+                <div class="w-1/3 h-32 overflow-hidden rounded-lg">
+                    <img src="https://images.pexels.com/photos/20374088/pexels-photo-20374088.jpeg"
+                        alt="Article Image 9"
+                        class="w-full h-full object-cover object-center rounded-lg transition-transform duration-300 ease-in-out group-hover:scale-105">
+                </div>
+                <div class="w-2/3 flex flex-col justify-center">
+                    <h3
+                        class="text-[18px] font-[500] leading-[25.2px] text-gray-900 transition-colors duration-300 ease-in-out group-hover:text-red-500">
+                        The view on social media's metaverse: it may remain as science fiction
+                    </h3>
+                    <p class="text-sm font-normal text-gray-500 mt-2">January 20, 2022</p>
+                </div>
+            </div>
+
+            <!-- Item 10 -->
+            <div
+                class="group flex flex-row gap-4 cursor-pointer rounded-lg overflow-hidden transition-all duration-300 ease-in-out">
+                <div class="w-1/3 h-32 overflow-hidden rounded-lg">
+                    <img src="https://images.pexels.com/photos/20374088/pexels-photo-20374088.jpeg"
+                        alt="Article Image 10"
+                        class="w-full h-full object-cover object-center rounded-lg transition-transform duration-300 ease-in-out group-hover:scale-105">
+                </div>
+                <div class="w-2/3 flex flex-col justify-center">
+                    <h3
+                        class="text-[18px] font-[500] leading-[25.2px] text-gray-900 transition-colors duration-300 ease-in-out group-hover:text-red-500">
+                        Easy wins: want to sleep better? Try a short, gentle stretch before bed
+                    </h3>
+                    <p class="text-sm font-normal text-gray-500 mt-2">January 20, 2022</p>
+                </div>
+            </div>
+
+            <!-- Item 11 -->
+            <div
+                class="group flex flex-row gap-4 cursor-pointer rounded-lg overflow-hidden transition-all duration-300 ease-in-out">
+                <div class="w-1/3 h-32 overflow-hidden rounded-lg">
+                    <img src="https://images.pexels.com/photos/20374088/pexels-photo-20374088.jpeg"
+                        alt="Article Image 11"
+                        class="w-full h-full object-cover object-center rounded-lg transition-transform duration-300 ease-in-out group-hover:scale-105">
+                </div>
+                <div class="w-2/3 flex flex-col justify-center">
+                    <h3
+                        class="text-[18px] font-[500] leading-[25.2px] text-gray-900 transition-colors duration-300 ease-in-out group-hover:text-red-500">
+                        BP dismisses calls for windfall tax as profits hit all eight-year high
+                    </h3>
+                    <p class="text-sm font-normal text-gray-500 mt-2">January 20, 2022</p>
+                </div>
+            </div>
+
+            <!-- Item 12 -->
+            <div
+                class="group flex flex-row gap-4 cursor-pointer rounded-lg overflow-hidden transition-all duration-300 ease-in-out">
+                <div class="w-1/3 h-32 overflow-hidden rounded-lg">
+                    <img src="https://images.pexels.com/photos/20374088/pexels-photo-20374088.jpeg"
+                        alt="Article Image 12"
+                        class="w-full h-full object-cover object-center rounded-lg transition-transform duration-300 ease-in-out group-hover:scale-105">
+                </div>
+                <div class="w-2/3 flex flex-col justify-center">
+                    <h3
+                        class="text-[18px] font-[500] leading-[25.2px] text-gray-900 transition-colors duration-300 ease-in-out group-hover:text-red-500">
+                        The Fed is about to raise interest rates and shaft American workers
+                    </h3>
+                    <p class="text-sm font-normal text-gray-500 mt-2">January 20, 2022</p>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!-- FOOTER SECTION -->
+    <!-- FOOTER SECTION -->
+    <div class="bg-black">
+        <div class="max-w-7xl mx-auto px-4 py-6">
+            <footer class="text-center text-gray-400 text-xl font-bold font-alegreya">
+               FORCASR_CRYPTO © 2024 Empath. All Rights Reserved.
+            </footer>
+        </div>
+    </div>
+
+
+
+    <!-- JS-CODE -->
+    <script>
+        const menuBtn = document.getElementById("menu-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+
+        menuBtn.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+        });
+    </script>
+</body>
+
+</html>
