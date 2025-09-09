@@ -1,0 +1,1320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLONE 3</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Merriweather', serif;
+        }
+    </style>
+</head>
+
+<body class="">
+
+    <!-- Navbar -->
+    <!-- Navbar -->
+    <header class="text-white bg-black">
+        <div class="max-w-[1190px] mx-auto flex items-center justify-between py-3 px-1.5 sm:px-0">
+
+            <!-- Logo -->
+            <div class="flex items-center space-x-2">
+                <h1 class="text-white font-extrabold text-2xl">
+                    station <span
+                        class="text-sm border px-1 py-0.5 rounded bg-white text-[#15375d] font-bold">NEWS</span>
+                </h1>
+            </div>
+
+            <!-- Nav Links -->
+            <nav>
+                <ul class="hidden md:flex space-x-6 text-white">
+                    <li class="relative">
+                        <a href="#" class="hover:text-blue-400">Home</a>
+                    </li>
+                    <li><a href="#" class="hover:text-blue-400">Business</a></li>
+                    <li><a href="#" class="hover:text-blue-400">Culture</a></li>
+                    <li><a href="#" class="hover:text-blue-400">Education</a></li>
+                    <li><a href="#" class="hover:text-blue-400">Environment</a></li>
+                    <li><a href="#" class="hover:text-blue-400">Sport</a></li>
+                    <li><a href="#" class="hover:text-blue-400">World News</a></li>
+                </ul>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="menu-btn" class="text-white focus:outline-none">
+                        ☰
+                    </button>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Mobile Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-black px-4 pb-4">
+            <ul class="space-y-2 text-white font-semibold">
+                <li><a href="#" class="block hover:text-blue-400">Home</a></li>
+                <li><a href="#" class="block hover:text-blue-400">Business</a></li>
+                <li><a href="#" class="block hover:text-blue-400">Culture</a></li>
+                <li><a href="#" class="block hover:text-blue-400">Education</a></li>
+                <li><a href="#" class="block hover:text-blue-400">Environment</a></li>
+                <li><a href="#" class="block hover:text-blue-400">Sport</a></li>
+                <li><a href="#" class="block hover:text-blue-400">World News</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- MIDDLE SECTION -->
+    <div class="max-w-[1190px] mx-auto mt-6 px-2 md:px-0 grid grid-cols-1 md:grid-cols-[1fr_520px_1fr] gap-2">
+        <!-- Left Column -->
+        <div class="pr-0 pl-0">
+            <div class="max-w-sm mx-auto">
+                <div class="relative inline-block mb-4">
+                    <div class="relative bg-pink-600 text-white font-bold text-lg px-4 py-1 z-10">TRENDING</div>
+                    <div class="absolute top-0 right-[-10px] w-4 h-full bg-pink-600 transform skew-x-[25deg]"></div>
+                </div>
+
+                <!--Article 1-->
+                <div class="space-y-2 mb-4">
+                    <div class="relative group">
+                        <img src="https://images.pexels.com/photos/852793/pexels-photo-852793.jpeg"
+                            alt="Woman in a fur outfit with a sword" class="w-full h-[145px] object-cover rounded-md">
+                        <div
+                            class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity rounded-md">
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="text-3xl font-bold text-gray-300">1</div>
+                        <div>
+                            <div class="text-xs text-gray-500 uppercase font-semibold">ENTERTAINMENT / 6 years ago</div>
+                            <h3 class="text-[16px] font-bold mt-1 leading-tight">
+                                The final 6 ‘Game of Thrones’ episodes might feel like a full season
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <!--Article 2-->
+                <div class="space-y-2 mb-4">
+                    <div class="relative group">
+                        <img src="https://images.pexels.com/photos/852793/pexels-photo-852793.jpeg"
+                            alt="Woman in a fur outfit with a sword" class="w-full h-[145px] object-cover rounded-md">
+                        <div
+                            class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity rounded-md">
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="text-3xl font-bold text-gray-300">2</div>
+                        <div>
+                            <div class="text-xs text-gray-500 uppercase font-semibold">ENTERTAINMENT / 6 years ago</div>
+                            <h3 class="text-[16px] font-bold mt-1 leading-tight">
+                                The final 6 ‘Game of Thrones’ episodes might feel like a full season
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Article 3-->
+                <div class="space-y-2 mb-4">
+                    <div class="relative group">
+                        <img src="https://images.pexels.com/photos/852793/pexels-photo-852793.jpeg"
+                            alt="Woman in a fur outfit with a sword" class="w-full h-[145px] object-cover rounded-md">
+                        <div
+                            class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity rounded-md">
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="text-3xl font-bold text-gray-300">3</div>
+                        <div>
+                            <div class="text-xs text-gray-500 uppercase font-semibold">ENTERTAINMENT / 6 years ago</div>
+                            <h3 class="text-[16px] font-bold mt-1 leading-tight">
+                                The final 6 ‘Game of Thrones’ episodes might feel like a full season
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Article 4-->
+                <div class="space-y-2 mb-4">
+                    <div class="relative group">
+                        <img src="https://images.pexels.com/photos/852793/pexels-photo-852793.jpeg"
+                            alt="Woman in a fur outfit with a sword" class="w-full h-[145px] object-cover rounded-md">
+                        <div
+                            class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity rounded-md">
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="text-3xl font-bold text-gray-300">4</div>
+                        <div>
+                            <div class="text-xs text-gray-500 uppercase font-semibold">ENTERTAINMENT / 6 years ago</div>
+                            <h3 class="text-[16px] font-bold mt-1 leading-tight">
+                                The final 6 ‘Game of Thrones’ episodes might feel like a full season
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Article 5-->
+                <div class="space-y-2 mb-4">
+                    <div class="relative group">
+                        <img src="https://images.pexels.com/photos/852793/pexels-photo-852793.jpeg"
+                            alt="Woman in a fur outfit with a sword" class="w-full h-[145px] object-cover rounded-md">
+                        <div
+                            class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity rounded-md">
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="text-3xl font-bold text-gray-300">5</div>
+                        <div>
+                            <div class="text-xs text-gray-500 uppercase font-semibold">ENTERTAINMENT / 6 years ago</div>
+                            <h3 class="text-[16px] font-bold mt-1 leading-tight">
+                                The final 6 ‘Game of Thrones’ episodes might feel like a full season
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <!-- Middle Column -->
+        <div class="p-0 md:px-4">
+            <!-- Featured Large Image -->
+            <div class="relative w-full font-sans mb-6">
+                <div class="relative h-[400px] sm:h-[500px] md:h-[600px] w-full">
+                    <img src="https://images.pexels.com/photos/1485548/pexels-photo-1485548.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                        alt="Man speaking into microphones" class="w-full h-full object-cover">
+                </div>
+                <div
+                    class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black via-black/70 to-transparent text-white">
+                    <div class="text-sm font-semibold uppercase mb-1">
+                        <span class="text-white opacity-75">POLITICS</span> <span class="text-white opacity-50">/ 6
+                            years ago</span>
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold leading-tight mt-1">
+                        Illinois’ Financial Crisis Fallout
+                    </h2>
+                    <p class="text-white text-sm opacity-90 mt-2">
+                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+                        deleniti.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Smaller Images -->
+            <div class="space-y-6">
+                <div class="relative w-full font-sans">
+                    <div class="relative h-[250px] sm:h-[280px] w-full">
+                        <img src="https://images.pexels.com/photos/1073097/pexels-photo-1073097.jpeg" alt=""
+                            class="w-full h-full object-cover">
+                    </div>
+                    <div
+                        class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black via-black/70 to-transparent text-white">
+                        <div class="text-sm font-semibold uppercase mb-1">
+                            <span class="text-white opacity-75">POLITICS</span> <span class="text-white opacity-50">/ 6
+                                years ago</span>
+                        </div>
+                        <h2 class="text-[1.5rem] sm:text-2xl font-bold leading-tight mt-1">
+                            Illinois’ Financial Crisis Fallout
+                        </h2>
+                    </div>
+                </div>
+
+                <div class="relative w-full font-sans">
+                    <div class="relative h-[250px] sm:h-[280px] w-full">
+                        <img src="https://images.pexels.com/photos/1073097/pexels-photo-1073097.jpeg" alt=""
+                            class="w-full h-full object-cover">
+                    </div>
+                    <div
+                        class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black via-black/70 to-transparent text-white">
+                        <div class="text-sm font-semibold uppercase mb-1">
+                            <span class="text-white opacity-75">POLITICS</span> <span class="text-white opacity-50">/ 6
+                                years ago</span>
+                        </div>
+                        <h2 class="text-[1.5rem] sm:text-2xl font-bold leading-tight mt-1">
+                            Illinois’ Financial Crisis Fallout
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class=" pl-0 pr-0 mt-6 md:mt-0">
+            <div class="max-w-sm mx-auto space-y-4">
+                <div class="flex border-b border-gray-300 mb-4 text-gray-500 font-bold text-sm">
+                    <div class="relative pb-2 mr-6 text-pink-600">
+                        LATEST
+                        <span class="absolute bottom-0 left-0 w-full h-[3px] bg-pink-600"></span>
+                    </div>
+                    <div class="pb-2 mr-6 hover:text-pink-600">VIDEOS</div>
+                    <div class="pb-2 hover:text-pink-600">GALLERIES</div>
+                </div>
+                <!-- Item 1-->
+                <div class="flex items-center space-x-4 group">
+                    <div class="relative w-20 h-20 flex-shrink-0">
+                        <img src="https://images.pexels.com/photos/12064353/pexels-photo-12064353.jpeg"
+                            alt="Google Daydream" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity">
+                        </div>
+                    </div>
+                    <div class="flex-1">
+                        <div class="text-xs text-gray-500 uppercase font-semibold">TECH / 6 years ago</div>
+                        <div
+                            class="text-[14px] text-black font-semibold mt-1 group-hover:text-gray-700 transition-colors">
+                            Mobile Google CEO Promises 11 Daydream-compatible phones
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 2-->
+                <div class="flex items-center space-x-4 group">
+                    <div class="relative w-20 h-20 flex-shrink-0">
+                        <img src="https://images.pexels.com/photos/12064353/pexels-photo-12064353.jpeg"
+                            alt="Google Daydream" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity">
+                        </div>
+                    </div>
+                    <div class="flex-1">
+                        <div class="text-xs text-gray-500 uppercase font-semibold">TECH / 6 years ago</div>
+                        <div
+                            class="text-[14px] text-black font-semibold mt-1 group-hover:text-gray-700 transition-colors">
+                            Mobile Google CEO Promises 11 Daydream-compatible phones
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 3-->
+                <div class="flex items-center space-x-4 group">
+                    <div class="relative w-20 h-20 flex-shrink-0">
+                        <img src="https://images.pexels.com/photos/12064353/pexels-photo-12064353.jpeg"
+                            alt="Google Daydream" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity">
+                        </div>
+                    </div>
+                    <div class="flex-1">
+                        <div class="text-xs text-gray-500 uppercase font-semibold">TECH / 6 years ago</div>
+                        <div
+                            class="text-[14px] text-black font-semibold mt-1 group-hover:text-gray-700 transition-colors">
+                            Mobile Google CEO Promises 11 Daydream-compatible phones
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 1-->
+                <div class="flex items-center space-x-4 group">
+                    <div class="relative w-20 h-20 flex-shrink-0">
+                        <img src="https://images.pexels.com/photos/12064353/pexels-photo-12064353.jpeg"
+                            alt="Google Daydream" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity">
+                        </div>
+                    </div>
+                    <div class="flex-1">
+                        <div class="text-xs text-gray-500 uppercase font-semibold">TECH / 6 years ago</div>
+                        <div
+                            class="text-[14px] text-black font-semibold mt-1 group-hover:text-gray-700 transition-colors">
+                            Mobile Google CEO Promises 11 Daydream-compatible phones
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 1-->
+                <div class="flex items-center space-x-4 group">
+                    <div class="relative w-20 h-20 flex-shrink-0">
+                        <img src="https://images.pexels.com/photos/12064353/pexels-photo-12064353.jpeg"
+                            alt="Google Daydream" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity">
+                        </div>
+                    </div>
+                    <div class="flex-1">
+                        <div class="text-xs text-gray-500 uppercase font-semibold">TECH / 6 years ago</div>
+                        <div
+                            class="text-[14px] text-black font-semibold mt-1 group-hover:text-gray-700 transition-colors">
+                            Mobile Google CEO Promises 11 Daydream-compatible phones
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 1-->
+                <div class="flex items-center space-x-4 group">
+                    <div class="relative w-20 h-20 flex-shrink-0">
+                        <img src="https://images.pexels.com/photos/12064353/pexels-photo-12064353.jpeg"
+                            alt="Google Daydream" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity">
+                        </div>
+                    </div>
+                    <div class="flex-1">
+                        <div class="text-xs text-gray-500 uppercase font-semibold">TECH / 6 years ago</div>
+                        <div
+                            class="text-[14px] text-black font-semibold mt-1 group-hover:text-gray-700 transition-colors">
+                            Mobile Google CEO Promises 11 Daydream-compatible phones
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 1-->
+                <div class="flex items-center space-x-4 group">
+                    <div class="relative w-20 h-20 flex-shrink-0">
+                        <img src="https://images.pexels.com/photos/12064353/pexels-photo-12064353.jpeg"
+                            alt="Google Daydream" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity">
+                        </div>
+                    </div>
+                    <div class="flex-1">
+                        <div class="text-xs text-gray-500 uppercase font-semibold">TECH / 6 years ago</div>
+                        <div
+                            class="text-[14px] text-black font-semibold mt-1 group-hover:text-gray-700 transition-colors">
+                            Mobile Google CEO Promises 11 Daydream-compatible phones
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 1-->
+                <div class="flex items-center space-x-4 group">
+                    <div class="relative w-20 h-20 flex-shrink-0">
+                        <img src="https://images.pexels.com/photos/12064353/pexels-photo-12064353.jpeg"
+                            alt="Google Daydream" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity">
+                        </div>
+                    </div>
+                    <div class="flex-1">
+                        <div class="text-xs text-gray-500 uppercase font-semibold">TECH / 6 years ago</div>
+                        <div
+                            class="text-[14px] text-black font-semibold mt-1 group-hover:text-gray-700 transition-colors">
+                            Mobile Google CEO Promises 11 Daydream-compatible phones
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 1-->
+                <div class="flex items-center space-x-4 group">
+                    <div class="relative w-20 h-20 flex-shrink-0">
+                        <img src="https://images.pexels.com/photos/12064353/pexels-photo-12064353.jpeg"
+                            alt="Google Daydream" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity">
+                        </div>
+                    </div>
+                    <div class="flex-1">
+                        <div class="text-xs text-gray-500 uppercase font-semibold">TECH / 6 years ago</div>
+                        <div
+                            class="text-[14px] text-black font-semibold mt-1 group-hover:text-gray-700 transition-colors">
+                            Mobile Google CEO Promises 11 Daydream-compatible phones
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 1-->
+                <div class="flex items-center space-x-4 group">
+                    <div class="relative w-20 h-20 flex-shrink-0">
+                        <img src="https://images.pexels.com/photos/12064353/pexels-photo-12064353.jpeg"
+                            alt="Google Daydream" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity">
+                        </div>
+                    </div>
+                    <div class="flex-1">
+                        <div class="text-xs text-gray-500 uppercase font-semibold">TECH / 6 years ago</div>
+                        <div
+                            class="text-[14px] text-black font-semibold mt-1 group-hover:text-gray-700 transition-colors">
+                            Mobile Google CEO Promises 11 Daydream-compatible phones
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- ENTERTAINMENT SECTION -->
+    <div class=" max-w-[1190px] mx-auto flex items-center mt-6 mb-6">
+        <div class="flex-1 border-t border-gray-400"></div>
+        <div class="Text-[18px]  bg-pink-600 text-white font-bold text-center px-4 py-1 tracking-wider mx-4">
+            ENTERTAINMENT
+        </div>
+        <div class="flex-1 border-t border-gray-400"></div>
+    </div>
+
+    <div class="max-w-[1180px] mx-auto px-4 md:px-0 mt-6 grid grid-cols-1 md:grid-cols-[520px_1fr_1fr] gap-4 mb-8">
+
+        <!-- Left Column -->
+        <div class="bg-blue-200">
+            <div class="relative w-full max-w-xl mx-auto font-sans">
+                <div class="relative group">
+                    <img src="https://images.pexels.com/photos/6497212/pexels-photo-6497212.jpeg"
+                        alt="Woman in a fur outfit with a sword" class="w-full h-[520px] object-cover">
+                    <div
+                        class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity duration-300">
+                    </div>
+                </div>
+
+                <div
+                    class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black via-black/70 to-transparent text-white">
+                    <div class="text-sm font-semibold uppercase mb-1">
+                        <span class="text-white opacity-75">ENTERTAINMENT</span> <span class="text-white opacity-50">/ 6
+                            years ago</span>
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-bold leading-tight mt-1">
+                        Final 'Game of Thrones' Episodes
+                    </h2>
+                    <p class="text-white text-sm opacity-90 mt-2">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Middle Column -->
+        <div class="">
+            <div class="space-y-4 font-sans max-w-xl mx-auto">
+                <div>
+                    <div class="relative group">
+                        <img src="https://images.pexels.com/photos/33317736/pexels-photo-33317736.jpeg"
+                            alt="Group of friends toasting at a bar" class="w-full h-[180px] object-cover">
+                    </div>
+                    <div class="mt-2">
+                        <div class="text-xs text-gray-500 uppercase font-semibold">ENTERTAINMENT / 6 years ago</div>
+                        <h3 class="text-[16px] font-bold mt-1 leading-tight">‘Girls Trip’ already surpasses ‘Rough
+                            Night’ in
+                            opening weekend</h3>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="relative group">
+                        <img src="https://images.pexels.com/photos/33317736/pexels-photo-33317736.jpeg"
+                            alt="Man sitting in a field" class="w-full h-[180px] object-cover">
+                        <div
+                            class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity duration-300">
+                        </div>
+                    </div>
+                    <div class="mt-2">
+                        <div class="text-xs text-gray-500 uppercase font-semibold">ENTERTAINMENT / 6 years ago</div>
+                        <h3 class="text-[16px] font-bold mt-1 leading-tight">New Season 8 Walking Dead trailer flashes
+                            forward in time</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="">
+            <div class="max-w-sm mx-auto">
+                <div class="space-y-4">
+                    <!-- Article 1 -->
+                    <div class="flex items-center space-x-4 group">
+                        <div class="relative w-20 h-20 flex-shrink-0">
+                            <img src="https://images.pexels.com/photos/1531660/pexels-photo-1531660.jpeg"
+                                alt="Man playing video games with a controller" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity">
+                            </div>
+                        </div>
+                        <div class="flex-1">
+                            <div class="text-xs text-gray-500 uppercase font-semibold">ENTERTAINMENT / 6 years ago</div>
+                            <div
+                                class="text-black text-[14px] leading-[20px] font-semibold mt-1 group-hover:text-gray-700 transition-colors">
+                                Mod
+                                turns ‘Counter-Strike’ into a ‘Tekken’ clone with fighting chickens</div>
+                        </div>
+                    </div>
+
+                    <!-- Article 2 -->
+                    <div class="flex items-center space-x-4 group">
+                        <div class="relative w-20 h-20 flex-shrink-0">
+                            <img src="https://images.pexels.com/photos/1531660/pexels-photo-1531660.jpeg"
+                                alt="Man revealing a Superman-like suit" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity">
+                            </div>
+                        </div>
+                        <div class="flex-1">
+                            <div class="text-xs text-gray-500 uppercase font-semibold">ENTERTAINMENT / 6 years ago</div>
+                            <div
+                                class="text-black text-[14px] leading-[20px]  font-semibold mt-1 group-hover:text-gray-700 transition-colors">
+                                Meet
+                                Superman’s grandfather in new trailer for Krypton</div>
+                        </div>
+                    </div>
+
+                    <!-- Article 3 -->
+                    <div class="flex items-center space-x-4 group">
+                        <div class="relative w-20 h-20 flex-shrink-0">
+                            <img src="https://images.pexels.com/photos/1531660/pexels-photo-1531660.jpeg"
+                                alt="Couple posing together" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity">
+                            </div>
+                        </div>
+                        <div class="flex-1">
+                            <div class="text-xs text-gray-500 uppercase font-semibold">ENTERTAINMENT / 6 years ago</div>
+                            <div
+                                class="text-black text-[14px] leading-[20px]  font-semibold mt-1 group-hover:text-gray-700 transition-colors">
+                                Disney’s live-action Aladdin finally finds its stars</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- "More Entertainment" Button -->
+                <div class="flex justify-center mt-6">
+                    <a href="#"
+                        class="flex items-center text-pink-600 font-bold uppercase text-xs hover:text-pink-700 transition-colors">
+                        MORE ENTERTAINMENT
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- VIDEOS SECTION -->
+    <div class="bg-black pt-4 pb-2">
+        <div class=" max-w-[1190px] mx-auto flex items-center mt-6 mb-6">
+            <div class="flex-1 border-t border-gray-400"></div>
+            <div class="Text-[18px]  bg-pink-600 text-white font-bold text-center px-4 py-1 tracking-wider mx-4">
+                VIDEOS
+            </div>
+            <div class="flex-1 border-t border-gray-400"></div>
+        </div>
+
+        <div class="max-w-[1180px] mx-auto px-4 md:px-0 mt-6 grid grid-cols-1 md:grid-cols-[740px_1fr] gap-4 mb-8">
+
+            <!-- Left Column -->
+            <div class="">
+                <div class="relative w-full">
+                    <div class="relative group">
+                        <img src="https://images.pexels.com/photos/6666095/pexels-photo-6666095.jpeg"
+                            alt="Person playing video games with a controller" class="w-full h-[445px] object-cover">
+                        <!-- Hover overlay -->
+                        <div
+                            class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity duration-300 rounded-md">
+                        </div>
+
+                    </div>
+
+                    <!-- Text Overlay -->
+                    <div
+                        class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black via-black/70 to-transparent text-white rounded-b-md">
+                        <div class="text-sm font-semibold uppercase mb-1">
+                            <span class="text-green-400 opacity-75">ENTERTAINMENT</span> <span
+                                class="text-white opacity-50">/ 6
+                                years ago</span>
+                        </div>
+                        <h2 class="text-2xl sm:text-3xl font-bold leading-tight mt-1">
+                            Mod turns ‘Counter-Strike’ into a ‘Tekken’ clone with fighting chickens
+                        </h2>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Right Column -->
+            <div class="">
+                <!-- 1ST ARTICAL / VIDEO -->
+                <div class="flex items-start text-white w-full max-w-lg mx-auto mb-4">
+                    <div class="relative w-[150px] h-[105px] flex-shrink-0 group">
+                        <img src="https://images.pexels.com/photos/23915432/pexels-photo-23915432.jpeg"
+                            alt="Man revealing a Superman-like suit" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity">
+                        </div>
+                    </div>
+
+                    <div class="flex-1 ml-4 self-stretch flex flex-col justify-start">
+                        <div class="font-semibold uppercase opacity-75 group-hover:opacity-100 transition-opacity">
+                            <span class="text-white text-[12px]">ENTERTAINMENT</span>
+                            <span class="text-white text-[10px] opacity-50">/ 6 years ago</span>
+                        </div>
+                        <div
+                            class="mt-1 font-semibold text-[16px] leading-tight group-hover:text-gray-300 transition-colors">
+                            Meet Superman's grandfather in new trailer for Krypton
+                        </div>
+                    </div>
+                </div>
+                <!-- 1ST ARTICAL / VIDEO -->
+                <div class="flex items-start text-white w-full max-w-lg mx-auto mb-4">
+                    <div class="relative w-[150px] h-[105px] flex-shrink-0 group">
+                        <img src="https://images.pexels.com/photos/23915432/pexels-photo-23915432.jpeg"
+                            alt="Man revealing a Superman-like suit" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity">
+                        </div>
+                    </div>
+
+                    <div class="flex-1 ml-4 self-stretch flex flex-col justify-start">
+                        <div class="font-semibold uppercase opacity-75 group-hover:opacity-100 transition-opacity">
+                            <span class="text-white text-[12px]">ENTERTAINMENT</span>
+                            <span class="text-white text-[10px] opacity-50">/ 6 years ago</span>
+                        </div>
+                        <div
+                            class="mt-1 font-semibold text-[16px] leading-tight group-hover:text-gray-300 transition-colors">
+                            Meet Superman's grandfather in new trailer for Krypton
+                        </div>
+                    </div>
+                </div>
+                <!-- 3ST ARTICAL / VIDEO -->
+                <div class="flex items-start text-white w-full max-w-lg mx-auto mb-4">
+                    <div class="relative w-[150px] h-[105px] flex-shrink-0 group">
+                        <img src="https://images.pexels.com/photos/23915432/pexels-photo-23915432.jpeg"
+                            alt="Man revealing a Superman-like suit" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity">
+                        </div>
+                    </div>
+
+                    <div class="flex-1 ml-4 self-stretch flex flex-col justify-start">
+                        <div class="font-semibold uppercase opacity-75 group-hover:opacity-100 transition-opacity">
+                            <span class="text-white text-[12px]">ENTERTAINMENT</span>
+                            <span class="text-white text-[10px] opacity-50">/ 6 years ago</span>
+                        </div>
+                        <div
+                            class="mt-1 font-semibold text-[16px] leading-tight group-hover:text-gray-300 transition-colors">
+                            Meet Superman's grandfather in new trailer for Krypton
+                        </div>
+                    </div>
+                </div>
+                <!-- 4ST ARTICAL / VIDEO -->
+                <div class="flex items-start text-white w-full max-w-lg mx-auto mb-4">
+                    <div class="relative w-[150px] h-[105px] flex-shrink-0 group">
+                        <img src="https://images.pexels.com/photos/23915432/pexels-photo-23915432.jpeg"
+                            alt="Man revealing a Superman-like suit" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity">
+                        </div>
+                    </div>
+
+                    <div class="flex-1 ml-4 self-stretch flex flex-col justify-start">
+                        <div class="font-semibold uppercase opacity-75 group-hover:opacity-100 transition-opacity">
+                            <span class="text-white text-[12px]">ENTERTAINMENT</span>
+                            <span class="text-white text-[10px] opacity-50">/ 6 years ago</span>
+                        </div>
+                        <div
+                            class="mt-1 font-semibold text-[16px] leading-tight group-hover:text-gray-300 transition-colors">
+                            Meet Superman's grandfather in new trailer for Krypton
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- BUSINESS SECTION -->
+    <div class=" max-w-[1190px] mx-auto flex items-center mt-6 mb-6">
+        <div class="flex-1 border-t border-gray-400"></div>
+        <div class="Text-[18px]  bg-pink-600 text-white font-bold text-center px-4 py-1 tracking-wider mx-4">
+            BUSINESS
+        </div>
+        <div class="flex-1 border-t border-gray-400"></div>
+    </div>
+
+    <div class="max-w-[1180px] mx-auto px-4 md:px-0 mt-6 grid grid-cols-1 md:grid-cols-[1fr_520px_1fr] gap-4 mb-8">
+
+        <!-- Left Column -->
+        <div class="">
+            <div class="space-y-4max-w-xl mx-auto">
+                <div class="mb-4">
+                    <div class="relative group">
+                        <img src="https://images.pexels.com/photos/33317736/pexels-photo-33317736.jpeg"
+                            alt="Group of friends toasting at a bar" class="w-full h-[180px] object-cover">
+                    </div>
+                    <div class="mt-2">
+                        <div class="text-xs text-gray-500 uppercase font-semibold">ENTERTAINMENT / 6 years ago</div>
+                        <h3 class="text-[16px] font-bold mt-1 leading-tight">‘Girls Trip’ already surpasses ‘Rough
+                            Night’ in
+                            opening weekend</h3>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="relative group">
+                        <img src="https://images.pexels.com/photos/33317736/pexels-photo-33317736.jpeg"
+                            alt="Man sitting in a field" class="w-full h-[180px] object-cover">
+                        <div
+                            class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity duration-300">
+                        </div>
+                    </div>
+                    <div class="mt-2">
+                        <div class="text-xs text-gray-500 uppercase font-semibold">ENTERTAINMENT / 6 years ago</div>
+                        <h3 class="text-[16px] font-bold mt-1 leading-tight">New Season 8 Walking Dead trailer flashes
+                            forward in time</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Middle Column -->
+        <div class="bg-blue-200">
+            <div class="relative w-full max-w-xl mx-auto font-sans">
+                <div class="relative group">
+                    <img src="https://images.pexels.com/photos/6497212/pexels-photo-6497212.jpeg"
+                        alt="Woman in a fur outfit with a sword" class="w-full h-[520px] object-cover">
+                    <div
+                        class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity duration-300">
+                    </div>
+                </div>
+
+                <div
+                    class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black via-black/70 to-transparent text-white">
+                    <div class="text-sm font-semibold uppercase mb-1">
+                        <span class="text-white opacity-75">ENTERTAINMENT</span> <span class="text-white opacity-50">/ 6
+                            years ago</span>
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-bold leading-tight mt-1">
+                        Final 'Game of Thrones' Episodes
+                    </h2>
+                    <p class="text-white text-sm opacity-90 mt-2">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="">
+            <div class="max-w-sm mx-auto">
+                <div class="space-y-4">
+                    <!-- Article 1 -->
+                    <div class="flex items-center space-x-4 group">
+                        <div class="relative w-20 h-20 flex-shrink-0">
+                            <img src="https://images.pexels.com/photos/1531660/pexels-photo-1531660.jpeg"
+                                alt="Man playing video games with a controller" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity">
+                            </div>
+                        </div>
+                        <div class="flex-1">
+                            <div class="text-xs text-gray-500 uppercase font-semibold">ENTERTAINMENT / 6 years ago</div>
+                            <div
+                                class="text-black text-[14px] leading-[20px] font-semibold mt-1 group-hover:text-gray-700 transition-colors">
+                                Mod
+                                turns ‘Counter-Strike’ into a ‘Tekken’ clone with fighting chickens</div>
+                        </div>
+                    </div>
+
+                    <!-- Article 2 -->
+                    <div class="flex items-center space-x-4 group">
+                        <div class="relative w-20 h-20 flex-shrink-0">
+                            <img src="https://images.pexels.com/photos/1531660/pexels-photo-1531660.jpeg"
+                                alt="Man revealing a Superman-like suit" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity">
+                            </div>
+                        </div>
+                        <div class="flex-1">
+                            <div class="text-xs text-gray-500 uppercase font-semibold">ENTERTAINMENT / 6 years ago</div>
+                            <div
+                                class="text-black text-[14px] leading-[20px]  font-semibold mt-1 group-hover:text-gray-700 transition-colors">
+                                Meet
+                                Superman’s grandfather in new trailer for Krypton</div>
+                        </div>
+                    </div>
+
+                    <!-- Article 3 -->
+                    <div class="flex items-center space-x-4 group">
+                        <div class="relative w-20 h-20 flex-shrink-0">
+                            <img src="https://images.pexels.com/photos/1531660/pexels-photo-1531660.jpeg"
+                                alt="Couple posing together" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity">
+                            </div>
+                        </div>
+                        <div class="flex-1">
+                            <div class="text-xs text-gray-500 uppercase font-semibold">ENTERTAINMENT / 6 years ago</div>
+                            <div
+                                class="text-black text-[14px] leading-[20px]  font-semibold mt-1 group-hover:text-gray-700 transition-colors">
+                                Disney’s live-action Aladdin finally finds its stars</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- "More Entertainment" Button -->
+                <div class="flex justify-center mt-6">
+                    <a href="#"
+                        class="flex items-center text-pink-600 font-bold uppercase text-xs hover:text-pink-700 transition-colors">
+                        MORE ENTERTAINMENT
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- TECH SECTION -->
+    <div class=" max-w-[1190px] mx-auto flex items-center mt-6 mb-6">
+        <div class="flex-1 border-t border-gray-400"></div>
+        <div class="Text-[18px]  bg-pink-600 text-white font-bold text-center px-4 py-1 tracking-wider mx-4">
+            TECH
+        </div>
+        <div class="flex-1 border-t border-gray-400"></div>
+    </div>
+    <div class="max-w-[1190px] mx-auto px-4 md:px-0 mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
+        <!-- Left Column -->
+        <div class=" w-full flex flex-col space-y-6">
+            <!-- Main Image / Hero -->
+            <div class="relative w-full group">
+                <img src="https://images.pexels.com/photos/9106697/pexels-photo-9106697.jpeg"
+                    alt="Person wearing VR headset" class="w-full h-auto object-cover">
+                <div
+                    class="absolute inset-0 bg-black opacity-0 group-hover:opacity-20 transition-opacity duration-300 rounded-md">
+                </div>
+                <div
+                    class="absolute bottom-0 left-0 right-0 p-4 text-white bg-gradient-to-t from-black/80 via-black/40 to-transparent rounded-b-md">
+                    <div class="text-sm font-semibold uppercase mb-1">
+                        <span class="text-green-400">TECH</span>
+                        <span class="text-white opacity-50">/ 6 years ago</span>
+                    </div>
+                    <h2 class="text-2xl md:text-3xl font-bold leading-tight mt-1">
+                        Mobile Google CEO Promises 11 Daydream-compatible phones
+                    </h2>
+                </div>
+            </div>
+
+            <!-- Two smaller articles -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
+                <div class="group">
+                    <div class="relative">
+                        <img src="https://images.pexels.com/photos/3820222/pexels-photo-3820222.jpeg"
+                            alt="Business meeting" class="w-full h-[150px] object-cover rounded-md">
+                        <div
+                            class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity duration-300 rounded-md">
+                        </div>
+                    </div>
+                    <div class="mt-2">
+                        <div class="text-xs text-gray-500 uppercase font-semibold">TECH / 6 years ago</div>
+                        <h3 class="text-base font-bold mt-1 group-hover:text-gray-700 transition-colors">
+                            Hulu hires Google marketing veteran Kelly Campbell as CMO
+                        </h3>
+                    </div>
+                </div>
+
+                <div class="group">
+                    <div class="relative">
+                        <img src="https://images.pexels.com/photos/3820222/pexels-photo-3820222.jpeg"
+                            alt="Supersonic airplane taking off" class="w-full h-[150px] object-cover rounded-md">
+                        <div
+                            class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity duration-300 rounded-md">
+                        </div>
+                    </div>
+                    <div class="mt-2">
+                        <div class="text-xs text-gray-500 uppercase font-semibold">TECH / 6 years ago</div>
+                        <h3 class="text-base font-bold mt-1 group-hover:text-gray-700 transition-colors">
+                            NASA seeks to build a quieter supersonic plane for passenger flight
+                        </h3>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Right Column (empty for now) -->
+        <div class=" w-full flex flex-col space-y-6">
+            <!-- Main Image / Hero -->
+            <div class="relative w-full group">
+                <img src="https://images.pexels.com/photos/9106697/pexels-photo-9106697.jpeg"
+                    alt="Person wearing VR headset" class="w-full h-auto object-cover">
+                <div
+                    class="absolute inset-0 bg-black opacity-0 group-hover:opacity-20 transition-opacity duration-300 rounded-md">
+                </div>
+                <div
+                    class="absolute bottom-0 left-0 right-0 p-4 text-white bg-gradient-to-t from-black/80 via-black/40 to-transparent rounded-b-md">
+                    <div class="text-sm font-semibold uppercase mb-1">
+                        <span class="text-green-400">TECH</span>
+                        <span class="text-white opacity-50">/ 6 years ago</span>
+                    </div>
+                    <h2 class="text-2xl md:text-3xl font-bold leading-tight mt-1">
+                        Mobile Google CEO Promises 11 Daydream-compatible phones
+                    </h2>
+                </div>
+            </div>
+
+            <!-- Two smaller articles -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
+                <div class="group">
+                    <div class="relative">
+                        <img src="https://images.pexels.com/photos/3820222/pexels-photo-3820222.jpeg"
+                            alt="Business meeting" class="w-full h-[150px] object-cover rounded-md">
+                        <div
+                            class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity duration-300 rounded-md">
+                        </div>
+                    </div>
+                    <div class="mt-2">
+                        <div class="text-xs text-gray-500 uppercase font-semibold">TECH / 6 years ago</div>
+                        <h3 class="text-base font-bold mt-1 group-hover:text-gray-700 transition-colors">
+                            Hulu hires Google marketing veteran Kelly Campbell as CMO
+                        </h3>
+                    </div>
+                </div>
+
+                <div class="group">
+                    <div class="relative">
+                        <img src="https://images.pexels.com/photos/3820222/pexels-photo-3820222.jpeg"
+                            alt="Supersonic airplane taking off" class="w-full h-[150px] object-cover rounded-md">
+                        <div
+                            class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity duration-300 rounded-md">
+                        </div>
+                    </div>
+                    <div class="mt-2">
+                        <div class="text-xs text-gray-500 uppercase font-semibold">TECH / 6 years ago</div>
+                        <h3 class="text-base font-bold mt-1 group-hover:text-gray-700 transition-colors">
+                            NASA seeks to build a quieter supersonic plane for passenger flight
+                        </h3>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- MORE NEWS SECTION -->
+    <div class=" max-w-[1190px] mx-auto flex items-center mt-6 mb-6">
+        <div class="flex-1 border-t border-gray-400"></div>
+        <div class="Text-[18px]  bg-pink-600 text-white font-bold text-center px-4 py-1 tracking-wider mx-4">
+            More News
+        </div>
+        <div class="flex-1 border-t border-gray-400"></div>
+    </div>
+
+    <div class="max-w-[1180px] mx-auto px-4 md:px-0 mt-6 flex flex-col md:flex-row gap-4">
+        <!-- Left Column (fixed 840px) -->
+        <div class="w-full md:w-[840px]">
+            <!-- 1st MORE NEWS -->
+            <div
+                class="flex flex-col gap-6 md:flex-row items-center justify-center bg-white max-w-[840px] mx-auto border-t border-gray-300">
+                <div class="relative w-full md:w-2/5 flex-shrink-0 mb-4 group">
+                    <img src="https://images.pexels.com/photos/33434115/pexels-photo-33434115.jpeg"
+                        alt="Man revealing a Superman-like suit" class="w-full h-[230px] object-cover">
+                    <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity"></div>
+                </div>
+
+                <!-- Content centered vertically -->
+                <div class="flex-1 flex flex-col justify-center text-[12px]">
+                    <div class="font-semibold uppercase mb-1 ">
+                        <span class="text-gray-500">ENTERTAINMENT</span> <span class="text-gray-400">/ 6 years
+                            ago</span>
+                    </div>
+                    <h2
+                        class="text-[18px] md:text-2xl font-bold leading-tight mt-1 group-hover:text-gray-700 transition-colors">
+                        Meet Superman's grandfather in new trailer for Krypton
+                    </h2>
+                    <p class="text-gray-600 text-[16px] mt-2 leading-relaxed">
+                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+                        deleniti atque corrupti ducimus qui blanditiis praesentium.
+                    </p>
+                </div>
+            </div>
+            <!-- 2st MORE NEWS -->
+            <div
+                class="flex flex-col gap-6 md:flex-row items-center justify-center bg-white max-w-[840px] mx-auto border-t border-gray-300">
+                <div class="relative w-full md:w-2/5 flex-shrink-0 mb-4 group">
+                    <img src="https://images.pexels.com/photos/33434115/pexels-photo-33434115.jpeg"
+                        alt="Man revealing a Superman-like suit" class="w-full h-[230px] object-cover">
+                    <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity"></div>
+                </div>
+
+                <!-- Content centered vertically -->
+                <div class="flex-1 flex flex-col justify-center text-[12px]">
+                    <div class="font-semibold uppercase mb-1 ">
+                        <span class="text-gray-500">ENTERTAINMENT</span> <span class="text-gray-400">/ 6 years
+                            ago</span>
+                    </div>
+                    <h2
+                        class="text-[18px] md:text-2xl font-bold leading-tight mt-1 group-hover:text-gray-700 transition-colors">
+                        Meet Superman's grandfather in new trailer for Krypton
+                    </h2>
+                    <p class="text-gray-600 text-[16px] mt-2 leading-relaxed">
+                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+                        deleniti atque corrupti ducimus qui blanditiis praesentium.
+                    </p>
+                </div>
+            </div>
+            <!-- 3st MORE NEWS -->
+            <div
+                class="flex flex-col gap-6 md:flex-row items-center justify-center bg-white max-w-[840px] mx-auto border-t border-gray-300">
+                <div class="relative w-full md:w-2/5 flex-shrink-0 mb-4 group">
+                    <img src="https://images.pexels.com/photos/33434115/pexels-photo-33434115.jpeg"
+                        alt="Man revealing a Superman-like suit" class="w-full h-[230px] object-cover">
+                    <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity"></div>
+                </div>
+
+                <!-- Content centered vertically -->
+                <div class="flex-1 flex flex-col justify-center text-[12px]">
+                    <div class="font-semibold uppercase mb-1 ">
+                        <span class="text-gray-500">ENTERTAINMENT</span> <span class="text-gray-400">/ 6 years
+                            ago</span>
+                    </div>
+                    <h2
+                        class="text-[18px] md:text-2xl font-bold leading-tight mt-1 group-hover:text-gray-700 transition-colors">
+                        Meet Superman's grandfather in new trailer for Krypton
+                    </h2>
+                    <p class="text-gray-600 text-[16px] mt-2 leading-relaxed">
+                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+                        deleniti atque corrupti ducimus qui blanditiis praesentium.
+                    </p>
+                </div>
+            </div>
+            <!-- 4st MORE NEWS -->
+            <div
+                class="flex flex-col gap-6 md:flex-row items-center justify-center bg-white max-w-[840px] mx-auto border-t border-gray-300">
+                <div class="relative w-full md:w-2/5 flex-shrink-0 mb-4 group">
+                    <img src="https://images.pexels.com/photos/33434115/pexels-photo-33434115.jpeg"
+                        alt="Man revealing a Superman-like suit" class="w-full h-[230px] object-cover">
+                    <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity"></div>
+                </div>
+
+                <!-- Content centered vertically -->
+                <div class="flex-1 flex flex-col justify-center text-[12px]">
+                    <div class="font-semibold uppercase mb-1 ">
+                        <span class="text-gray-500">ENTERTAINMENT</span> <span class="text-gray-400">/ 6 years
+                            ago</span>
+                    </div>
+                    <h2
+                        class="text-[18px] md:text-2xl font-bold leading-tight mt-1 group-hover:text-gray-700 transition-colors">
+                        Meet Superman's grandfather in new trailer for Krypton
+                    </h2>
+                    <p class="text-gray-600 text-[16px] mt-2 leading-relaxed">
+                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+                        deleniti atque corrupti ducimus qui blanditiis praesentium.
+                    </p>
+                </div>
+            </div>
+
+            <!-- BIG NEWS -->
+            <div
+                class="max-w-[1190px] mx-auto bg-white shadow-sm group overflow-hidden rounded-md border-t border-gray-300 pt-4">
+                <div class="relative">
+                    <img src="https://images.pexels.com/photos/30564680/pexels-photo-30564680.jpeg"
+                        alt="Ruth Bader Ginsburg" class="w-full h-[490px] object-cover">
+                    <div
+                        class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity duration-300">
+                    </div>
+                </div>
+                <div class="p-4 transition-colors duration-300 group-hover:text-gray-700">
+                    <div class="text-[12px] font-semibold uppercase mb-1 group-hover:text-gray-600 transition-colors">
+                        <span class="text-gray-500 group-hover:text-gray-600">POLITICS</span>
+                        <span class="text-gray-400 group-hover:text-gray-400">/ 6 years ago</span>
+                    </div>
+                    <h2
+                        class="text-2xl md:text-3xl font-bold leading-tight mt-1 group-hover:text-gray-600 transition-colors">
+                        Ruth Bader Ginsburg optimistic ‘over the long haul’ for US
+                    </h2>
+                    <p class="text-gray-600 text-base mt-3 leading-relaxed group-hover:text-gray-800 transition-colors">
+                        Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae
+                        consequatur, vel illum qui.
+                    </p>
+                </div>
+            </div>
+
+                        <!-- 3st MORE NEWS -->
+            <div
+                class="flex flex-col gap-6 md:flex-row items-center justify-center bg-white max-w-[840px] mx-auto border-t border-gray-300">
+                <div class="relative w-full md:w-2/5 flex-shrink-0 mb-4 group">
+                    <img src="https://images.pexels.com/photos/33434115/pexels-photo-33434115.jpeg"
+                        alt="Man revealing a Superman-like suit" class="w-full h-[230px] object-cover">
+                    <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity"></div>
+                </div>
+
+                <!-- Content centered vertically -->
+                <div class="flex-1 flex flex-col justify-center text-[12px]">
+                    <div class="font-semibold uppercase mb-1 ">
+                        <span class="text-gray-500">ENTERTAINMENT</span> <span class="text-gray-400">/ 6 years
+                            ago</span>
+                    </div>
+                    <h2
+                        class="text-[18px] md:text-2xl font-bold leading-tight mt-1 group-hover:text-gray-700 transition-colors">
+                        Meet Superman's grandfather in new trailer for Krypton
+                    </h2>
+                    <p class="text-gray-600 text-[16px] mt-2 leading-relaxed">
+                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+                        deleniti atque corrupti ducimus qui blanditiis praesentium.
+                    </p>
+                </div>
+            </div>
+            <!-- 4st MORE NEWS -->
+            <div
+                class="flex flex-col gap-6 md:flex-row items-center justify-center bg-white max-w-[840px] mx-auto border-t border-gray-300">
+                <div class="relative w-full md:w-2/5 flex-shrink-0 mb-4 group">
+                    <img src="https://images.pexels.com/photos/33434115/pexels-photo-33434115.jpeg"
+                        alt="Man revealing a Superman-like suit" class="w-full h-[230px] object-cover">
+                    <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity"></div>
+                </div>
+
+                <!-- Content centered vertically -->
+                <div class="flex-1 flex flex-col justify-center text-[12px]">
+                    <div class="font-semibold uppercase mb-1 ">
+                        <span class="text-gray-500">ENTERTAINMENT</span> <span class="text-gray-400">/ 6 years
+                            ago</span>
+                    </div>
+                    <h2
+                        class="text-[18px] md:text-2xl font-bold leading-tight mt-1 group-hover:text-gray-700 transition-colors">
+                        Meet Superman's grandfather in new trailer for Krypton
+                    </h2>
+                    <p class="text-gray-600 text-[16px] mt-2 leading-relaxed">
+                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+                        deleniti atque corrupti ducimus qui blanditiis praesentium.
+                    </p>
+                </div>
+            </div>
+                        <!-- 3st MORE NEWS -->
+            <div
+                class="flex flex-col gap-6 md:flex-row items-center justify-center bg-white max-w-[840px] mx-auto border-t border-gray-300">
+                <div class="relative w-full md:w-2/5 flex-shrink-0 mb-4 group">
+                    <img src="https://images.pexels.com/photos/33434115/pexels-photo-33434115.jpeg"
+                        alt="Man revealing a Superman-like suit" class="w-full h-[230px] object-cover">
+                    <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity"></div>
+                </div>
+
+                <!-- Content centered vertically -->
+                <div class="flex-1 flex flex-col justify-center text-[12px]">
+                    <div class="font-semibold uppercase mb-1 ">
+                        <span class="text-gray-500">ENTERTAINMENT</span> <span class="text-gray-400">/ 6 years
+                            ago</span>
+                    </div>
+                    <h2
+                        class="text-[18px] md:text-2xl font-bold leading-tight mt-1 group-hover:text-gray-700 transition-colors">
+                        Meet Superman's grandfather in new trailer for Krypton
+                    </h2>
+                    <p class="text-gray-600 text-[16px] mt-2 leading-relaxed">
+                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+                        deleniti atque corrupti ducimus qui blanditiis praesentium.
+                    </p>
+                </div>
+            </div>
+            <!-- 4st MORE NEWS -->
+            <div
+                class="flex flex-col gap-6 md:flex-row items-center justify-center bg-white max-w-[840px] mx-auto border-t border-gray-300">
+                <div class="relative w-full md:w-2/5 flex-shrink-0 mb-4 group">
+                    <img src="https://images.pexels.com/photos/33434115/pexels-photo-33434115.jpeg"
+                        alt="Man revealing a Superman-like suit" class="w-full h-[230px] object-cover">
+                    <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity"></div>
+                </div>
+
+                <!-- Content centered vertically -->
+                <div class="flex-1 flex flex-col justify-center text-[12px]">
+                    <div class="font-semibold uppercase mb-1 ">
+                        <span class="text-gray-500">ENTERTAINMENT</span> <span class="text-gray-400">/ 6 years
+                            ago</span>
+                    </div>
+                    <h2
+                        class="text-[18px] md:text-2xl font-bold leading-tight mt-1 group-hover:text-gray-700 transition-colors">
+                        Meet Superman's grandfather in new trailer for Krypton
+                    </h2>
+                    <p class="text-gray-600 text-[16px] mt-2 leading-relaxed">
+                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+                        deleniti atque corrupti ducimus qui blanditiis praesentium.
+                    </p>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- Right Column (remaining space) -->
+        <div class="flex-1 mb-6 lg:sticky lg:top-4 self-start h-fit">
+            <div class="max-w-sm mx-auto space-y-4">
+                <div class="flex border-b border-gray-300 mb-4 text-gray-500 font-bold text-sm">
+                    <div class="relative pb-2 mr-6 text-pink-600">
+                        LATEST
+                        <span class="absolute bottom-0 left-0 w-full h-[3px] bg-pink-600"></span>
+                    </div>
+                    <div class="pb-2 mr-6 hover:text-pink-600">TRENDING</div>
+                    <div class="pb-2 hover:text-pink-600">VIDEOS</div>
+                </div>
+                <!-- Item 1-->
+                <div class="flex items-center space-x-4 group">
+                    <div class="relative w-20 h-20 flex-shrink-0">
+                        <img src="https://images.pexels.com/photos/12064353/pexels-photo-12064353.jpeg"
+                            alt="Google Daydream" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity">
+                        </div>
+                    </div>
+                    <div class="flex-1">
+                        <div class="text-xs text-gray-500 uppercase font-semibold">TECH / 6 years ago</div>
+                        <div
+                            class="text-[14px] text-black font-semibold mt-1 group-hover:text-gray-700 transition-colors">
+                            Mobile Google CEO Promises 11 Daydream-compatible phones
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 2-->
+                <div class="flex items-center space-x-4 group">
+                    <div class="relative w-20 h-20 flex-shrink-0">
+                        <img src="https://images.pexels.com/photos/12064353/pexels-photo-12064353.jpeg"
+                            alt="Google Daydream" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity">
+                        </div>
+                    </div>
+                    <div class="flex-1">
+                        <div class="text-xs text-gray-500 uppercase font-semibold">TECH / 6 years ago</div>
+                        <div
+                            class="text-[14px] text-black font-semibold mt-1 group-hover:text-gray-700 transition-colors">
+                            Mobile Google CEO Promises 11 Daydream-compatible phones
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 3-->
+                <div class="flex items-center space-x-4 group">
+                    <div class="relative w-20 h-20 flex-shrink-0">
+                        <img src="https://images.pexels.com/photos/12064353/pexels-photo-12064353.jpeg"
+                            alt="Google Daydream" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity">
+                        </div>
+                    </div>
+                    <div class="flex-1">
+                        <div class="text-xs text-gray-500 uppercase font-semibold">TECH / 6 years ago</div>
+                        <div
+                            class="text-[14px] text-black font-semibold mt-1 group-hover:text-gray-700 transition-colors">
+                            Mobile Google CEO Promises 11 Daydream-compatible phones
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 4-->
+                <div class="flex items-center space-x-4 group">
+                    <div class="relative w-20 h-20 flex-shrink-0">
+                        <img src="https://images.pexels.com/photos/12064353/pexels-photo-12064353.jpeg"
+                            alt="Google Daydream" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity">
+                        </div>
+                    </div>
+                    <div class="flex-1">
+                        <div class="text-xs text-gray-500 uppercase font-semibold">TECH / 6 years ago</div>
+                        <div
+                            class="text-[14px] text-black font-semibold mt-1 group-hover:text-gray-700 transition-colors">
+                            Mobile Google CEO Promises 11 Daydream-compatible phones
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- FOOTER SECTION -->
+    <footer class="bg-black text-center text-white py-6">
+        <div class="max-w-[1170px] mx-auto">
+            <p class="text-[18px]">&copy; station-news-crypto | All rights reserved</p>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle mobile menu
+        const menuBtn = document.getElementById("menu-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+
+        menuBtn.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+        });
+    </script>
+
+</body>
+
+</html>

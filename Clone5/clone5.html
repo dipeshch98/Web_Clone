@@ -1,0 +1,1588 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clone 5</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Work Sans', sans-serif;
+        }
+    </style>
+
+</head>
+
+<body class="font-worksans">
+    <!-- Navbar -->
+    <!-- Navbar -->
+    <header class="text-white bg-black px-4 lg:px-0">
+        <div class="max-w-[1220px] mx-auto flex items-center justify-between py-3 px-1.5 sm:px-0">
+
+            <!-- Logo -->
+            <div class="flex items-center space-x-2">
+                <h1 class="text-white font-extrabold text-3xl">
+                    Bopea
+                </h1>
+            </div>
+
+            <!-- Nav Links -->
+            <nav>
+                <ul class="hidden md:flex space-x-6 text-white">
+                    <li class="relative">
+                        <a href="#" class="hover:text-blue-400">Home</a>
+                    </li>
+                    <li><a href="#" class="hover:text-blue-400">Business</a></li>
+                    <li><a href="#" class="hover:text-blue-400">Culture</a></li>
+                    <li><a href="#" class="hover:text-blue-400">Education</a></li>
+                    <li><a href="#" class="hover:text-blue-400">Environment</a></li>
+                    <li><a href="#" class="hover:text-blue-400">Sport</a></li>
+                    <li><a href="#" class="hover:text-blue-400">World News</a></li>
+                </ul>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="menu-btn" class="text-white focus:outline-none">
+                        ☰
+                    </button>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Mobile Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-black px-4 pb-4">
+            <ul class="space-y-2 text-white font-semibold">
+                <li><a href="#" class="block hover:text-blue-400">Home</a></li>
+                <li><a href="#" class="block hover:text-blue-400">Business</a></li>
+                <li><a href="#" class="block hover:text-blue-400">Culture</a></li>
+                <li><a href="#" class="block hover:text-blue-400">Education</a></li>
+                <li><a href="#" class="block hover:text-blue-400">Environment</a></li>
+                <li><a href="#" class="block hover:text-blue-400">Sport</a></li>
+                <li><a href="#" class="block hover:text-blue-400">World News</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- MIDDLE PORTION -->
+    <div class="max-w-[1220px] mx-auto px-4 lg:px-0 py-6">
+        <div
+            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-[300px_1fr] lg:grid-cols-[605px_1fr_1fr] gap-4 gap-y-6">
+
+            <!-- First Column -->
+            <div class="">
+                <div class="relative w-full max-w-[605px] mx-auto">
+                    <div class="relative group">
+                        <img src="https://images.pexels.com/photos/4276017/pexels-photo-4276017.jpeg"
+                            alt="Headphones on a stand" class="w-full h-[450px] object-cover">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-transparent text-white p-4 flex flex-col justify-end">
+
+                            <!-- Tech Tag -->
+                            <div class="bg-purple-600 text-white text-xs px-2 py-1 rounded w-fit mb-2">
+                                Tech
+                            </div>
+
+                            <!-- Title -->
+                            <h2 class="text-2xl sm:text-3xl font-bold mt-1 hover:underline leading-[36px]">
+                                I used headset that made me feel like I’m living in the future
+                            </h2>
+
+                            <!-- Description -->
+                            <p class="text-white text-sm opacity-90 mt-2">
+                                What’s made Amazon shoppers fall in love with Tozos? Superior audio quality,
+                                of course, courtesy of 6-millimeter speaker drivers that produce powerful,
+                                crystal-clear sound and…
+                            </p>
+
+                            <!-- Author -->
+                            <div class="flex items-center text-xs text-white opacity-75 mt-3">
+                                <span>Kelly</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second Column -->
+            <div class="">
+                <div class="relative w-full max-w-xl mx-auto">
+                    <div class="relative group">
+                        <img src="https://images.pexels.com/photos/10762620/pexels-photo-10762620.jpeg"
+                            alt="Person on a train platform" class="w-full h-[450px] object-cover">
+                        <div
+                            class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity duration-300">
+                        </div>
+                    </div>
+
+                    <!-- Content section with gradient -->
+                    <div
+                        class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black via-black/70 to-transparent text-white flex flex-col justify-end">
+
+                        <!-- Tech Tag now inside content -->
+                        <div class="bg-purple-600 text-white text-xs px-2 py-1 rounded w-fit mb-2">
+                            Tech
+                        </div>
+
+                        <!-- Title -->
+                        <h2 class="text-2xl sm:text-3xl font-bold leading-tight mt-1">
+                            <a href="#" class="group-hover:underline hover:underline text-[20px] leading-[24px]">AI
+                                workers demand stronger whistleblower protections in open letter</a>
+                        </h2>
+
+                        <!-- Author Info -->
+                        <div class="flex items-center text-xs text-white opacity-75 mt-3">
+                            <span>Kelly</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Third Column -->
+            <div class="">
+                <div class="space-y-2 font-sans max-w-xl mx-auto">
+
+                    <!-- Card 1 -->
+                    <div class="relative group overflow-hidden rounded-md">
+                        <img src="https://images.pexels.com/photos/33738437/pexels-photo-33738437.jpeg"
+                            alt="Hot air balloons in the sky" class="w-full h-[220px] object-cover">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-transparent text-white p-4 flex flex-col justify-end">
+                            <div class="bg-blue-600 text-white text-xs px-2 py-1 rounded flex items-center w-fit mb-2">
+                                <span class="w-2 h-2 rounded-full bg-white mr-1"></span> Sports
+                            </div>
+                            <h2 class="text-2xl font-bold leading-tight">
+                                <a href="#" class="group-hover:underline text-[15px] leading-[18px]">Teachers, Nurses,
+                                    and Child-Care Workers Have
+                                    Had Enough</a>
+                            </h2>
+                            <div class="flex items-center text-xs text-white opacity-75 mt-3">
+                                <span>Kelly</span>
+                                <span class="mx-2">•</span>
+                                <span>2 Month Ago</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="relative group overflow-hidden rounded-md">
+                        <img src="https://images.pexels.com/photos/33738437/pexels-photo-33738437.jpeg"
+                            alt="Steaming cup of coffee" class="w-full h-[220px] object-cover">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-transparent text-white p-4 flex flex-col justify-end">
+                            <div
+                                class="bg-orange-600 text-white text-xs px-2 py-1 rounded flex items-center w-fit mb-2">
+                                <span class="w-2 h-2 rounded-full bg-white mr-1"></span> Inspiration
+                            </div>
+                            <h2 class="text-2xl font-bold leading-tight">
+                                <a href="#" class="group-hover:underline text-[15px] leading-[18px]">Only 57 companies
+                                    produced 80 percent of
+                                    global carbon dioxide</a>
+                            </h2>
+                            <div class="flex items-center text-xs text-white opacity-75 mt-3">
+                                <img src="https://via.placeholder.com/24x24" alt="Author avatar"
+                                    class="rounded-full mr-2">
+                                <span>Kelly</span>
+                                <span class="mx-2">•</span>
+                                <span>2 Month Ago</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <!-- PERSONAL INVESTMENT AND MARKET -->
+    <div class="max-w-[1220px] mx-auto px-4 lg:px-0 py-6">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-6">
+
+            <!--PERSONAL Column -->
+            <div class="">
+                <div class="flex items-center mb-4">
+                    <span class="w-3 h-3 bg-purple-600 rounded-sm mr-2"></span>
+                    <a href="#"
+                        class="text-black font-bold text-lg hover:text-purple-700 transition-colors flex items-center">
+                        Personal Finance
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="mx-auto bg-white rounded-lg shadow-md overflow-hidden border-1 border-gray-900">
+
+                    <div class="relative group">
+                        <img src="https://images.pexels.com/photos/30692714/pexels-photo-30692714.jpeg"
+                            alt="Smiling girl in a poncho and hat" class="w-full h-auto object-cover">
+                        <div
+                            class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity duration-300">
+                        </div>
+                    </div>
+
+                    <div class="p-4">
+                        <div class="flex items-center text-xs text-gray-600 mb-2">
+                            <span class="w-2 h-2 rounded-full bg-purple-600 mr-2"></span> Tech
+                        </div>
+                        <h3 class="text-xl font-bold leading-tight mb-2">
+                            <a href="#" class="hover:text-blue-600 hover:underline transition-colors">Impressive
+                                1st-Quarter Results Spark PayPal's Comeback</a>
+                        </h3>
+                        <p class="text-gray-700 text-sm leading-relaxed mb-4">
+                            What's made Amazon shoppers fall in love with Tozos? Superior audio quality, of course,
+                            courtesy of 6-...
+                        </p>
+                        <div class="flex items-center text-xs text-gray-500">
+                            <span>Kelly</span>
+                            <span class="mx-2">•</span>
+                            <span>5 Month ago</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- INVESTMENT Column-->
+            <div class="">
+                <div class="flex items-center mb-4">
+                    <span class="w-3 h-3 bg-purple-600 rounded-sm mr-2"></span>
+                    <a href="#"
+                        class="text-black font-bold text-lg hover:text-purple-700 transition-colors flex items-center">
+                        Personal Finance
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </a>
+                </div>
+                <div class=" mx-auto bg-white rounded-lg shadow-md overflow-hidden">
+
+
+                    <div class="relative group">
+                        <img src="https://images.pexels.com/photos/30692714/pexels-photo-30692714.jpeg"
+                            alt="Smiling girl in a poncho and hat" class="w-full h-auto object-cover">
+                        <div
+                            class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity duration-300">
+                        </div>
+                    </div>
+
+                    <div class="p-4">
+                        <div class="flex items-center text-xs text-gray-600 mb-2">
+                            <span class="w-2 h-2 rounded-full bg-purple-600 mr-2"></span> Tech
+                        </div>
+                        <h3 class="text-xl font-bold leading-tight mb-2">
+                            <a href="#" class="hover:text-blue-600 hover:underline transition-colors">Impressive
+                                1st-Quarter Results Spark PayPal's Comeback</a>
+                        </h3>
+                        <p class="text-gray-700 text-sm leading-relaxed mb-4">
+                            What's made Amazon shoppers fall in love with Tozos? Superior audio quality, of course,
+                            courtesy of 6-...
+                        </p>
+                        <div class="flex items-center text-xs text-gray-500">
+                            <span>Kelly</span>
+                            <span class="mx-2">•</span>
+                            <span>5 Month ago</span>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--MARKET Column-->
+            <div class="">
+                <div class="flex items-center mb-4">
+                    <span class="w-3 h-3 bg-purple-600 rounded-sm mr-2"></span>
+                    <a href="#"
+                        class="text-black font-bold text-lg hover:text-purple-700 transition-colors flex items-center">
+                        Personal Finance
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </a>
+                </div>
+                <div class=" mx-auto bg-white rounded-lg shadow-md overflow-hidden">
+
+
+                    <div class="relative group">
+                        <img src="https://images.pexels.com/photos/30692714/pexels-photo-30692714.jpeg"
+                            alt="Smiling girl in a poncho and hat" class="w-full h-auto object-cover">
+                        <div
+                            class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity duration-300">
+                        </div>
+                    </div>
+
+                    <div class="p-4">
+                        <div class="flex items-center text-xs text-gray-600 mb-2">
+                            <span class="w-2 h-2 rounded-full bg-purple-600 mr-2"></span> Tech
+                        </div>
+                        <h3 class="text-xl font-bold leading-tight mb-2">
+                            <a href="#" class="hover:text-blue-600 hover:underline transition-colors">Impressive
+                                1st-Quarter Results Spark PayPal's Comeback</a>
+                        </h3>
+                        <p class="text-gray-700 text-sm leading-relaxed mb-4">
+                            What's made Amazon shoppers fall in love with Tozos? Superior audio quality, of course,
+                            courtesy of 6-...
+                        </p>
+                        <div class="flex items-center text-xs text-gray-500">
+                            <span>Kelly</span>
+                            <span class="mx-2">•</span>
+                            <span>5 Month ago</span>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- FEATURES -->
+    <div class="max-w-[1220px] mx-auto flex gap-8 lg:px-0 py-6">
+        <!-- First Column -->
+        <div class="flex-1  px-4 lg:px-0">
+            <div class="max-w-[600px] mx-auto border-b-2 border-gray-300">
+                <div class="flex flex-col sm:flex-row items-stretch gap-4 bg-white rounded-lg overflow-hidden">
+
+                    <!-- Image -->
+                    <div class="w-full sm:w-32 flex-shrink-0">
+                        <img src="https://images.pexels.com/photos/30692714/pexels-photo-30692714.jpeg" alt="Thumbnail"
+                            class="w-full h-24 object-cover rounded-md sm:rounded-none">
+                    </div>
+
+                    <!-- Content -->
+                    <div class="flex-1 flex flex-col justify-between p-2">
+                        <!-- Category -->
+                        <div>
+                            <div class="flex items-center text-xs text-gray-600 mb-1">
+                                <span class="w-2 h-2 rounded-full bg-purple-600 mr-2"></span>
+                                <a href="#" class="text-purple-700 font-medium hover:underline">Tech</a>
+                            </div>
+
+                            <!-- Heading with hover effect -->
+                            <h3 class="font-bold text-sm sm:text-base leading-snug mb-2">
+                                <a href="#"
+                                    class="hover:text-blue-600 hover:underline transition-colors text-[14px] leading-[18px]">
+                                    Tencent Music Entertainment Group Sponsored ADR (TME)
+                                </a>
+                            </h3>
+                        </div>
+
+                        <!-- Meta Info -->
+                        <div class="flex items-center text-xs text-gray-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <span>2 Mins Read</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="max-w-[600px] mx-auto mt-2 pb-0.5 border-b-2 border-gray-300">
+                <div class="flex flex-col sm:flex-row items-stretch gap-4 bg-white rounded-lg overflow-hidden">
+
+                    <!-- Image -->
+                    <div class="w-full sm:w-32 flex-shrink-0">
+                        <img src="https://images.pexels.com/photos/30692714/pexels-photo-30692714.jpeg" alt="Thumbnail"
+                            class="w-full h-24 object-cover rounded-md sm:rounded-none">
+                    </div>
+
+                    <!-- Content -->
+                    <div class="flex-1 flex flex-col justify-between p-2">
+                        <!-- Category -->
+                        <div>
+                            <div class="flex items-center text-xs text-gray-600 mb-1">
+                                <span class="w-2 h-2 rounded-full bg-purple-600 mr-2"></span>
+                                <a href="#" class="text-purple-700 font-medium hover:underline">Tech</a>
+                            </div>
+
+                            <!-- Heading with hover effect -->
+                            <h3 class="font-bold text-sm sm:text-base leading-snug mb-2">
+                                <a href="#"
+                                    class="hover:text-blue-600 hover:underline transition-colors text-[14px] leading-[18px]">
+                                    Tencent Music Entertainment Group Sponsored ADR (TME)
+                                </a>
+                            </h3>
+                        </div>
+
+                        <!-- Meta Info -->
+                        <div class="flex items-center text-xs text-gray-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <span>2 Mins Read</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="max-w-[600px] mx-auto">
+                <div class="flex flex-col sm:flex-row items-stretch gap-4 bg-white rounded-lg overflow-hidden">
+
+                    <!-- Image -->
+                    <div class="w-full sm:w-32 flex-shrink-0">
+                        <img src="https://images.pexels.com/photos/30692714/pexels-photo-30692714.jpeg" alt="Thumbnail"
+                            class="w-full h-24 object-cover rounded-md sm:rounded-none">
+                    </div>
+
+                    <!-- Content -->
+                    <div class="flex-1 flex flex-col justify-between p-2">
+                        <!-- Category -->
+                        <div>
+                            <div class="flex items-center text-xs text-gray-600 mb-1">
+                                <span class="w-2 h-2 rounded-full bg-purple-600 mr-2"></span>
+                                <a href="#" class="text-purple-700 font-medium hover:underline">Tech</a>
+                            </div>
+
+                            <!-- Heading with hover effect -->
+                            <h3 class="font-bold text-sm sm:text-base leading-snug mb-2">
+                                <a href="#"
+                                    class="hover:text-blue-600 hover:underline transition-colors text-[14px] leading-[18px]">
+                                    Tencent Music Entertainment Group Sponsored ADR (TME)
+                                </a>
+                            </h3>
+                        </div>
+
+                        <!-- Meta Info -->
+                        <div class="flex items-center text-xs text-gray-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <span>2 Mins Read</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Second Column -->
+        <div class="flex-1  px-4 lg:px-0">
+            <div class="max-w-[600px] mx-auto border-b-2 border-gray-300">
+                <div class="flex flex-col sm:flex-row items-stretch gap-4 bg-white rounded-lg overflow-hidden">
+
+                    <!-- Image -->
+                    <div class="w-full sm:w-32 flex-shrink-0">
+                        <img src="https://images.pexels.com/photos/30692714/pexels-photo-30692714.jpeg" alt="Thumbnail"
+                            class="w-full h-24 object-cover rounded-md sm:rounded-none">
+                    </div>
+
+                    <!-- Content -->
+                    <div class="flex-1 flex flex-col justify-between p-2">
+                        <!-- Category -->
+                        <div>
+                            <div class="flex items-center text-xs text-gray-600 mb-1">
+                                <span class="w-2 h-2 rounded-full bg-purple-600 mr-2"></span>
+                                <a href="#" class="text-purple-700 font-medium hover:underline">Tech</a>
+                            </div>
+
+                            <!-- Heading with hover effect -->
+                            <h3 class="font-bold text-sm sm:text-base leading-snug mb-2">
+                                <a href="#"
+                                    class="hover:text-blue-600 hover:underline transition-colors text-[14px] leading-[18px]">
+                                    Tencent Music Entertainment Group Sponsored ADR (TME)
+                                </a>
+                            </h3>
+                        </div>
+
+                        <!-- Meta Info -->
+                        <div class="flex items-center text-xs text-gray-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <span>2 Mins Read</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="max-w-[600px] mx-auto mt-2 pb-0.5 border-b-2 border-gray-300">
+                <div class="flex flex-col sm:flex-row items-stretch gap-4 bg-white rounded-lg overflow-hidden">
+
+                    <!-- Image -->
+                    <div class="w-full sm:w-32 flex-shrink-0">
+                        <img src="https://images.pexels.com/photos/30692714/pexels-photo-30692714.jpeg" alt="Thumbnail"
+                            class="w-full h-24 object-cover rounded-md sm:rounded-none">
+                    </div>
+
+                    <!-- Content -->
+                    <div class="flex-1 flex flex-col justify-between p-2">
+                        <!-- Category -->
+                        <div>
+                            <div class="flex items-center text-xs text-gray-600 mb-1">
+                                <span class="w-2 h-2 rounded-full bg-purple-600 mr-2"></span>
+                                <a href="#" class="text-purple-700 font-medium hover:underline">Tech</a>
+                            </div>
+
+                            <!-- Heading with hover effect -->
+                            <h3 class="font-bold text-sm sm:text-base leading-snug mb-2">
+                                <a href="#"
+                                    class="hover:text-blue-600 hover:underline transition-colors text-[14px] leading-[18px]">
+                                    Tencent Music Entertainment Group Sponsored ADR (TME)
+                                </a>
+                            </h3>
+                        </div>
+
+                        <!-- Meta Info -->
+                        <div class="flex items-center text-xs text-gray-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <span>2 Mins Read</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="max-w-[600px] mx-auto">
+                <div class="flex flex-col sm:flex-row items-stretch gap-4 bg-white rounded-lg overflow-hidden">
+
+                    <!-- Image -->
+                    <div class="w-full sm:w-32 flex-shrink-0">
+                        <img src="https://images.pexels.com/photos/30692714/pexels-photo-30692714.jpeg" alt="Thumbnail"
+                            class="w-full h-24 object-cover rounded-md sm:rounded-none">
+                    </div>
+
+                    <!-- Content -->
+                    <div class="flex-1 flex flex-col justify-between p-2">
+                        <!-- Category -->
+                        <div>
+                            <div class="flex items-center text-xs text-gray-600 mb-1">
+                                <span class="w-2 h-2 rounded-full bg-purple-600 mr-2"></span>
+                                <a href="#" class="text-purple-700 font-medium hover:underline">Tech</a>
+                            </div>
+
+                            <!-- Heading with hover effect -->
+                            <h3 class="font-bold text-sm sm:text-base leading-snug mb-2">
+                                <a href="#"
+                                    class="hover:text-blue-600 hover:underline transition-colors text-[14px] leading-[18px]">
+                                    Tencent Music Entertainment Group Sponsored ADR (TME)
+                                </a>
+                            </h3>
+                        </div>
+
+                        <!-- Meta Info -->
+                        <div class="flex items-center text-xs text-gray-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <span>2 Mins Read</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Third Column -->
+        <div class="flex-1  px-4 lg:px-0">
+            <div class="max-w-[600px] mx-auto border-b-2 border-gray-300">
+                <div class="flex flex-col sm:flex-row items-stretch gap-4 bg-white rounded-lg overflow-hidden">
+
+                    <!-- Image -->
+                    <div class="w-full sm:w-32 flex-shrink-0">
+                        <img src="https://images.pexels.com/photos/30692714/pexels-photo-30692714.jpeg" alt="Thumbnail"
+                            class="w-full h-24 object-cover rounded-md sm:rounded-none">
+                    </div>
+
+                    <!-- Content -->
+                    <div class="flex-1 flex flex-col justify-between p-2">
+                        <!-- Category -->
+                        <div>
+                            <div class="flex items-center text-xs text-gray-600 mb-1">
+                                <span class="w-2 h-2 rounded-full bg-purple-600 mr-2"></span>
+                                <a href="#" class="text-purple-700 font-medium hover:underline">Tech</a>
+                            </div>
+
+                            <!-- Heading with hover effect -->
+                            <h3 class="font-bold text-sm sm:text-base leading-snug mb-2">
+                                <a href="#"
+                                    class="hover:text-blue-600 hover:underline transition-colors text-[14px] leading-[18px]">
+                                    Tencent Music Entertainment Group Sponsored ADR (TME)
+                                </a>
+                            </h3>
+                        </div>
+
+                        <!-- Meta Info -->
+                        <div class="flex items-center text-xs text-gray-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <span>2 Mins Read</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="max-w-[600px] mx-auto mt-2 pb-0.5 border-b-2 border-gray-300">
+                <div class="flex flex-col sm:flex-row items-stretch gap-4 bg-white rounded-lg overflow-hidden">
+
+                    <!-- Image -->
+                    <div class="w-full sm:w-32 flex-shrink-0">
+                        <img src="https://images.pexels.com/photos/30692714/pexels-photo-30692714.jpeg" alt="Thumbnail"
+                            class="w-full h-24 object-cover rounded-md sm:rounded-none">
+                    </div>
+
+                    <!-- Content -->
+                    <div class="flex-1 flex flex-col justify-between p-2">
+                        <!-- Category -->
+                        <div>
+                            <div class="flex items-center text-xs text-gray-600 mb-1">
+                                <span class="w-2 h-2 rounded-full bg-purple-600 mr-2"></span>
+                                <a href="#" class="text-purple-700 font-medium hover:underline">Tech</a>
+                            </div>
+
+                            <!-- Heading with hover effect -->
+                            <h3 class="font-bold text-sm sm:text-base leading-snug mb-2">
+                                <a href="#"
+                                    class="hover:text-blue-600 hover:underline transition-colors text-[14px] leading-[18px]">
+                                    Tencent Music Entertainment Group Sponsored ADR (TME)
+                                </a>
+                            </h3>
+                        </div>
+
+                        <!-- Meta Info -->
+                        <div class="flex items-center text-xs text-gray-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <span>2 Mins Read</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="max-w-[600px] mx-auto">
+                <div class="flex flex-col sm:flex-row items-stretch gap-4 bg-white rounded-lg overflow-hidden">
+
+                    <!-- Image -->
+                    <div class="w-full sm:w-32 flex-shrink-0">
+                        <img src="https://images.pexels.com/photos/30692714/pexels-photo-30692714.jpeg" alt="Thumbnail"
+                            class="w-full h-24 object-cover rounded-md sm:rounded-none">
+                    </div>
+
+                    <!-- Content -->
+                    <div class="flex-1 flex flex-col justify-between p-2">
+                        <!-- Category -->
+                        <div>
+                            <div class="flex items-center text-xs text-gray-600 mb-1">
+                                <span class="w-2 h-2 rounded-full bg-purple-600 mr-2"></span>
+                                <a href="#" class="text-purple-700 font-medium hover:underline">Tech</a>
+                            </div>
+
+                            <!-- Heading with hover effect -->
+                            <h3 class="font-bold text-sm sm:text-base leading-snug mb-2">
+                                <a href="#"
+                                    class="hover:text-blue-600 hover:underline transition-colors text-[14px] leading-[18px]">
+                                    Tencent Music Entertainment Group Sponsored ADR (TME)
+                                </a>
+                            </h3>
+                        </div>
+
+                        <!-- Meta Info -->
+                        <div class="flex items-center text-xs text-gray-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <span>2 Mins Read</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 4 CARDS SECTION -->
+    <div class="max-w-[1220px] mx-auto lg:px-0 px-4 lg:px-0 py-6">
+        <div class="flex items-center mb-4">
+            <span class="w-3 h-3 bg-purple-600 rounded-sm mr-2"></span>
+            <a href="#" class="text-black font-bold text-lg hover:text-purple-700 transition-colors flex items-center">
+                Personal Finance
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+            </a>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
+
+            <!-- Column 1 -->
+            <div class="bg-white rounded-lg shadow-md">
+                <div class="">
+                    <div class="relative w-full max-w-xl mx-auto">
+                        <div class="relative group">
+                            <img src="https://images.pexels.com/photos/10762620/pexels-photo-10762620.jpeg"
+                                alt="Person on a train platform" class="w-full h-[340px] object-cover">
+                            <div
+                                class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity duration-300">
+                            </div>
+                        </div>
+
+                        <!-- Content section with gradient -->
+                        <div
+                            class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black via-black/70 to-transparent text-white flex flex-col justify-end">
+
+                            <!-- Tech Tag now inside content -->
+                            <div class="bg-purple-600 text-white text-xs px-2 py-1 rounded w-fit mb-2">
+                                Tech
+                            </div>
+
+                            <!-- Title -->
+                            <h2 class="text-2xl sm:text-3xl font-bold leading-tight mt-1">
+                                <a href="#" class="group-hover:underline hover:underline text-[20px] leading-[24px]">AI
+                                    workers demand stronger whistleblower protections in open letter</a>
+                            </h2>
+
+                            <!-- Author Info -->
+                            <div class="flex items-center text-xs text-white opacity-75 mt-3">
+                                <span>Kelly</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Column 2 -->
+            <div class="bg-white rounded-lg shadow-md">
+                <div class="">
+                    <div class="relative w-full max-w-xl mx-auto">
+                        <div class="relative group">
+                            <img src="https://images.pexels.com/photos/10762620/pexels-photo-10762620.jpeg"
+                                alt="Person on a train platform" class="w-full h-[340px] object-cover">
+                            <div
+                                class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity duration-300">
+                            </div>
+                        </div>
+
+                        <!-- Content section with gradient -->
+                        <div
+                            class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black via-black/70 to-transparent text-white flex flex-col justify-end">
+
+                            <!-- Tech Tag now inside content -->
+                            <div class="bg-purple-600 text-white text-xs px-2 py-1 rounded w-fit mb-2">
+                                Tech
+                            </div>
+
+                            <!-- Title -->
+                            <h2 class="text-2xl sm:text-3xl font-bold leading-tight mt-1">
+                                <a href="#" class="group-hover:underline hover:underline text-[20px] leading-[24px]">AI
+                                    workers demand stronger whistleblower protections in open letter</a>
+                            </h2>
+
+                            <!-- Author Info -->
+                            <div class="flex items-center text-xs text-white opacity-75 mt-3">
+                                <span>Kelly</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Column 3 -->
+            <div class="bg-white rounded-lg shadow-md">
+                <div class="">
+                    <div class="relative w-full max-w-xl mx-auto">
+                        <div class="relative group">
+                            <img src="https://images.pexels.com/photos/10762620/pexels-photo-10762620.jpeg"
+                                alt="Person on a train platform" class="w-full h-[340px] object-cover">
+                            <div
+                                class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity duration-300">
+                            </div>
+                        </div>
+
+                        <!-- Content section with gradient -->
+                        <div
+                            class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black via-black/70 to-transparent text-white flex flex-col justify-end">
+
+                            <!-- Tech Tag now inside content -->
+                            <div class="bg-purple-600 text-white text-xs px-2 py-1 rounded w-fit mb-2">
+                                Tech
+                            </div>
+
+                            <!-- Title -->
+                            <h2 class="text-2xl sm:text-3xl font-bold leading-tight mt-1">
+                                <a href="#" class="group-hover:underline hover:underline text-[20px] leading-[24px]">AI
+                                    workers demand stronger whistleblower protections in open letter</a>
+                            </h2>
+
+                            <!-- Author Info -->
+                            <div class="flex items-center text-xs text-white opacity-75 mt-3">
+                                <span>Kelly</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Column 4 -->
+            <div class="bg-white rounded-lg shadow-md">
+                <div class="">
+                    <div class="relative w-full max-w-xl mx-auto">
+                        <div class="relative group">
+                            <img src="https://images.pexels.com/photos/10762620/pexels-photo-10762620.jpeg"
+                                alt="Person on a train platform" class="w-full h-[340px] object-cover">
+                            <div
+                                class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity duration-300">
+                            </div>
+                        </div>
+
+                        <!-- Content section with gradient -->
+                        <div
+                            class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black via-black/70 to-transparent text-white flex flex-col justify-end">
+
+                            <!-- Tech Tag now inside content -->
+                            <div class="bg-purple-600 text-white text-xs px-2 py-1 rounded w-fit mb-2">
+                                Tech
+                            </div>
+
+                            <!-- Title -->
+                            <h2 class="text-2xl sm:text-3xl font-bold leading-tight mt-1">
+                                <a href="#" class="group-hover:underline hover:underline text-[20px] leading-[24px]">AI
+                                    workers demand stronger whistleblower protections in open letter</a>
+                            </h2>
+
+                            <!-- Author Info -->
+                            <div class="flex items-center text-xs text-white opacity-75 mt-3">
+                                <span>Kelly</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- VIDEOS SECTION -->
+    <div class=" bg-gray-500 max-w-full mx-auto my-6 py-6 px-4 lg:px-0 py-6">
+        <div class=" max-w-[1220px] mx-auto  pt-4 pb-2">
+            <div class="flex items-center mb-4">
+                <span class="w-3 h-3 bg-red-500 rounded-sm mr-2"></span>
+                <a href="#"
+                    class=" text-white font-extrabold text-lg hover:text-purple-700 transition-colors flex items-center">
+                    Personal Finance
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                    </svg>
+                </a>
+            </div>
+
+            <div class="max-w-[1220px] mx-auto px-4 md:px-0 mt-6 grid grid-cols-1 md:grid-cols-[740px_1fr] gap-0 mb-8">
+
+                <!-- Left Column -->
+                <div class="">
+                    <div class="relative w-full">
+                        <div class="relative group">
+                            <img src="https://images.pexels.com/photos/6666095/pexels-photo-6666095.jpeg"
+                                alt="Person playing video games with a controller"
+                                class="w-full h-[445px] object-cover">
+                            <!-- Hover overlay -->
+                            <div
+                                class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity duration-300 rounded-md">
+                            </div>
+
+                        </div>
+
+                        <!-- Text Overlay -->
+                        <div
+                            class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black via-black/70 to-transparent text-white rounded-b-md">
+                            <div class="bg-white text-yellow-400 text-xs px-2 py-1 rounded-lg w-fit mb-2">
+                                Tech
+                            </div>
+                            <h2 class="text-2xl sm:text-3xl font-bold leading-tight mt-1 hover:underline">
+                                Mod turns ‘Counter-Strike’ into a ‘Tekken’ clone with fighting chickens
+                            </h2>
+                            <div class="flex items-center text-xs text-gray-500 pt-4">
+                                <span>Kelly</span>
+                                <span class="mx-2">•</span>
+                                <span>5 Month ago</span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Right Column -->
+                <div class="bg-red-600 flex flex-col justify-center p-4">
+                    <!-- 1ST ARTICAL / VIDEO -->
+                    <div
+                        class="flex items-start text-white w-full max-w-lg mx-auto border-b border-gray-100 border-opacity-50 pb-3">
+                        <div class="relative w-[150px] h-[80px] flex-shrink-0 group">
+                            <img src="https://images.pexels.com/photos/23915432/pexels-photo-23915432.jpeg"
+                                alt="Man revealing a Superman-like suit" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity">
+                            </div>
+                        </div>
+
+                        <div class="flex-1 ml-4 self-stretch flex flex-col justify-start">
+                            <div class="font-semibold uppercase opacity-75 group-hover:opacity-100 transition-opacity">
+                                <span class="text-white text-[12px]">ENTERTAINMENT</span>
+                                <span class="text-white text-[10px] opacity-50">/ 6 years ago</span>
+                            </div>
+                            <div
+                                class="mt-1 font-semibold text-[16px] leading-tight group-hover:text-gray-300 transition-colors">
+                                Meet Superman's grandfather in new trailer for Krypton
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 1ST ARTICAL / VIDEO -->
+                    <div
+                        class="flex items-start text-white w-full max-w-lg mx-auto mt-3 border-b border-gray-100 border-opacity-50 pb-3">
+                        <div class="relative w-[150px] h-[80px] flex-shrink-0 group">
+                            <img src="https://images.pexels.com/photos/23915432/pexels-photo-23915432.jpeg"
+                                alt="Man revealing a Superman-like suit" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity">
+                            </div>
+                        </div>
+
+                        <div class="flex-1 ml-4 self-stretch flex flex-col justify-start">
+                            <div class="font-semibold uppercase opacity-75 group-hover:opacity-100 transition-opacity">
+                                <span class="text-white text-[12px]">ENTERTAINMENT</span>
+                                <span class="text-white text-[10px] opacity-50">/ 6 years ago</span>
+                            </div>
+                            <div
+                                class="mt-1 font-semibold text-[16px] leading-tight group-hover:text-gray-300 transition-colors">
+                                Meet Superman's grandfather in new trailer for Krypton
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 3ST ARTICAL / VIDEO -->
+                    <div
+                        class="flex items-start text-white w-full max-w-lg mx-auto mt-3 border-b border-gray-100 border-opacity-50 pb-3">
+                        <div class="relative w-[150px] h-[80px] flex-shrink-0 group">
+                            <img src="https://images.pexels.com/photos/23915432/pexels-photo-23915432.jpeg"
+                                alt="Man revealing a Superman-like suit" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity">
+                            </div>
+                        </div>
+
+                        <div class="flex-1 ml-4 self-stretch flex flex-col justify-start">
+                            <div class="font-semibold uppercase opacity-75 group-hover:opacity-100 transition-opacity">
+                                <span class="text-white text-[12px]">ENTERTAINMENT</span>
+                                <span class="text-white text-[10px] opacity-50">/ 6 years ago</span>
+                            </div>
+                            <div
+                                class="mt-1 font-semibold text-[16px] leading-tight group-hover:text-gray-300 transition-colors">
+                                Meet Superman's grandfather in new trailer for Krypton
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 4ST ARTICAL / VIDEO -->
+                    <div class="flex items-start text-white w-full max-w-lg mx-auto  ">
+                        <div class="relative w-[150px] h-[80px] flex-shrink-0 group">
+                            <img src="https://images.pexels.com/photos/23915432/pexels-photo-23915432.jpeg"
+                                alt="Man revealing a Superman-like suit" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity">
+                            </div>
+                        </div>
+
+                        <div class="flex-1 ml-4 self-stretch flex flex-col justify-start">
+                            <div class="font-semibold uppercase opacity-75 group-hover:opacity-100 transition-opacity">
+                                <span class="text-white text-[12px]">ENTERTAINMENT</span>
+                                <span class="text-white text-[10px] opacity-50">/ 6 years ago</span>
+                            </div>
+                            <div
+                                class="mt-1 font-semibold text-[16px] leading-tight group-hover:text-gray-300 transition-colors">
+                                Meet Superman's grandfather in new trailer for Krypton
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- WORLD SERIES SECTION -->
+    <div class="max-w-[1220px] mx-auto px-4 py-8 lg:px-0 py-6">
+        <!-- Section Title -->
+        <div class="flex items-center justify-between mb-6">
+            <h2 class="flex items-center font-bold text-xl">
+                <span class="w-3 h-3 bg-teal-500 rounded-sm mr-2"></span> World Series
+            </h2>
+            <a href="#" class="text-red-600 hover:underline">Find more →</a>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Left Big Card -->
+            <div class="lg:col-span-2 relative rounded-xl overflow-hidden group h-80 sm:h-[400px] lg:h-[600px]">
+                <!-- Background Image -->
+                <img src="https://images.pexels.com/photos/27784983/pexels-photo-27784983.jpeg" alt="Featured"
+                    class="absolute inset-0 w-full h-full object-cover">
+
+                <!-- Dark Overlay + Content -->
+                <div
+                    class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent p-6 flex flex-col justify-end">
+
+                    <!-- Badge -->
+                    <span
+                        class="w-fit inline-block px-3 py-1 bg-white text-blue-600 text-xs font-semibold rounded-full mb-3">
+                        Inspiration
+                    </span>
+
+                    <!-- Title -->
+                    <h3 class="text-2xl sm:text-3xl font-bold text-white mb-3">
+                        <a href="#" class="hover:underline hover:text-blue-400">
+                            The Books We Read Too Late And That You Should Read Now
+                        </a>
+                    </h3>
+
+                    <!-- Description -->
+                    <p class="text-gray-200 text-sm mb-4">
+                        What’s made Amazon shoppers fall in love with Tozos? Superior audio quality, of
+                        course, courtesy of 6-millimeter speaker drivers that produce powerful, crystal-clear sound.
+                    </p>
+
+                    <!-- Author Info -->
+                    <div class="flex items-center text-gray-300 text-xs">
+                        <img src="https://randomuser.me/api/portraits/women/65.jpg" class="w-6 h-6 rounded-full mr-2"
+                            alt="Kelly">
+                        <span>Kelly</span>
+                        <span class="mx-2">•</span>
+                        <span>2 Mins Read</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Right Small Cards -->
+            <div class="lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <!-- Card 1 -->
+                <div class="border rounded-xl p-5 shadow-sm hover:shadow-md transition">
+                    <span class="flex items-center text-green-600 font-medium text-sm mb-2">● Active</span>
+                    <h3 class="font-bold text-lg mb-2">
+                        <a href="#" class="hover:underline hover:text-blue-600">
+                            The Unexpected Power of Seeing Yourself as a Villain
+                        </a>
+                    </h3>
+                    <p class="text-sm text-gray-600 mb-4">
+                        What’s made Amazon shoppers fall in love with Tozos? Superior audio quality,
+                        of course, courtesy of 6-millimeter speaker drivers…
+                    </p>
+                    <div class="flex items-center text-xs text-gray-500">
+                        <img src="https://randomuser.me/api/portraits/women/65.jpg" class="w-6 h-6 rounded-full mr-2"
+                            alt="Kelly">
+                        <span>Kelly</span>
+                        <span class="mx-2">•</span>
+                        <span>2 Mins Read</span>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="border rounded-xl p-5 shadow-sm hover:shadow-md transition">
+                    <span class="flex items-center text-yellow-500 font-medium text-sm mb-2">● Health</span>
+                    <h3 class="font-bold text-lg mb-2">
+                        <a href="#" class="hover:underline hover:text-blue-600">
+                            7 food myths dietitians wish people would stop believing
+                        </a>
+                    </h3>
+                    <p class="text-sm text-gray-600 mb-4">
+                        What’s made Amazon shoppers fall in love with Tozos? Superior audio quality,
+                        of course, courtesy of 6-millimeter speaker drivers…
+                    </p>
+                    <div class="flex items-center text-xs text-gray-500">
+                        <img src="https://randomuser.me/api/portraits/women/65.jpg" class="w-6 h-6 rounded-full mr-2"
+                            alt="Kelly">
+                        <span>Kelly</span>
+                        <span class="mx-2">•</span>
+                        <span>2 Mins Read</span>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="border rounded-xl p-5 shadow-sm hover:shadow-md transition sm:col-span-2 lg:col-span-1">
+                    <span class="flex items-center text-green-600 font-medium text-sm mb-2">● Active</span>
+                    <h3 class="font-bold text-lg mb-2">
+                        <a href="#" class="hover:underline hover:text-blue-600">
+                            Outdoor Photo Shooting With Clean and Beautiful
+                        </a>
+                    </h3>
+                    <p class="text-sm text-gray-600 mb-4">
+                        What’s made Amazon shoppers fall in love with Tozos? Superior audio quality,
+                        of course, courtesy of 6-millimeter speaker drivers…
+                    </p>
+                    <div class="flex items-center text-xs text-gray-500">
+                        <img src="https://randomuser.me/api/portraits/women/65.jpg" class="w-6 h-6 rounded-full mr-2"
+                            alt="Kelly">
+                        <span>Kelly</span>
+                        <span class="mx-2">•</span>
+                        <span>2 Mins Read</span>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="border rounded-xl p-5 shadow-sm hover:shadow-md transition sm:col-span-2 lg:col-span-1">
+                    <span class="flex items-center text-blue-600 font-medium text-sm mb-2">● Sports</span>
+                    <h3 class="font-bold text-lg mb-2">
+                        <a href="#" class="hover:underline hover:text-blue-600">
+                            How To Season 3: When Expectations Don’t Meet Reality
+                        </a>
+                    </h3>
+                    <p class="text-sm text-gray-600 mb-4">
+                        What’s made Amazon shoppers fall in love with Tozos? Superior audio quality,
+                        of course, courtesy of 6-millimeter speaker drivers…
+                    </p>
+                    <div class="flex items-center text-xs text-gray-500">
+                        <img src="https://randomuser.me/api/portraits/women/65.jpg" class="w-6 h-6 rounded-full mr-2"
+                            alt="Kelly">
+                        <span>Kelly</span>
+                        <span class="mx-2">•</span>
+                        <span>2 Mins Read</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- SECTOR SECTION -->
+    <section class="max-w-[1220px] mx-auto px-4 py-8 lg:px-0 py-6">
+        <!-- Header -->
+        <div class="flex justify-between items-center mb-6">
+            <h2 class="text-xl font-bold flex items-center">
+                <span class="w-3 h-3 bg-red-600 rounded-sm mr-2"></span>
+                Sector News
+            </h2>
+            <a href="#" class="text-red-600 flex items-center font-medium hover:underline">
+                Find more <span class="ml-1">➔</span>
+            </a>
+        </div>
+
+        <!-- Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+            <!-- Card 1 -->
+            <div class="bg-white rounded-lg overflow-hidden shadow-sm border">
+                <img src="https://images.pexels.com/photos/325812/pexels-photo-325812.jpeg" alt="News"
+                    class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <a href="#" class="text-purple-600 text-sm font-semibold block mb-2">Tech</a>
+                    <h3 class="font-bold text-lg leading-snug mb-3">
+                        <a href="#" class="hover:underline hover:text-blue-600">
+                            The best Father’s Day gifts for every dad in your life
+                        </a>
+                    </h3>
+                    <div class="flex items-center text-gray-500 text-sm">
+                        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Kelly"
+                            class="w-6 h-6 rounded-full mr-2">
+                        <span>Kelly</span>
+                        <span class="mx-2">•</span>
+                        <span>2 Mins Read</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-white rounded-lg overflow-hidden shadow-sm border">
+                <img src="https://images.pexels.com/photos/3184328/pexels-photo-3184328.jpeg" alt="News"
+                    class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <a href="#" class="text-purple-600 text-sm font-semibold block mb-2">Tech</a>
+                    <h3 class="font-bold text-lg leading-snug mb-3">
+                        <a href="#" class="hover:underline hover:text-blue-600">
+                            The world’s largest direct carbon capture plant just went online
+                        </a>
+                    </h3>
+                    <div class="flex items-center text-gray-500 text-sm">
+                        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Kelly"
+                            class="w-6 h-6 rounded-full mr-2">
+                        <span>Kelly</span>
+                        <span class="mx-2">•</span>
+                        <span>2 Mins Read</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-white rounded-lg overflow-hidden shadow-sm border">
+                <img src="https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg" alt="News"
+                    class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <a href="#" class="text-purple-600 text-sm font-semibold block mb-2">Tech</a>
+                    <h3 class="font-bold text-lg leading-snug mb-3">
+                        <a href="#" class="hover:underline hover:text-blue-600">
+                            Tencent Music Entertainment Group Sponsored ADR (TME)
+                        </a>
+                    </h3>
+                    <div class="flex items-center text-gray-500 text-sm">
+                        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Kelly"
+                            class="w-6 h-6 rounded-full mr-2">
+                        <span>Kelly</span>
+                        <span class="mx-2">•</span>
+                        <span>2 Mins Read</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="bg-white rounded-lg overflow-hidden shadow-sm border">
+                <img src="https://images.pexels.com/photos/36753/flower-red-roses-bloom.jpg" alt="News"
+                    class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <a href="#" class="text-purple-600 text-sm font-semibold block mb-2">Tech</a>
+                    <h3 class="font-bold text-lg leading-snug mb-3">
+                        <a href="#" class="hover:underline hover:text-blue-600">
+                            Fast food companies compete for the best value meal
+                        </a>
+                    </h3>
+                    <div class="flex items-center text-gray-500 text-sm">
+                        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Kelly"
+                            class="w-6 h-6 rounded-full mr-2">
+                        <span>Kelly</span>
+                        <span class="mx-2">•</span>
+                        <span>2 Mins Read</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- FINAL PORTION -->
+    <div class="max-w-[1220px] mx-auto px-4 py-8 lg:px-0 py-6">
+        <div class="flex flex-col lg:flex-row gap-4">
+            <!-- Left Column (840px) -->
+            <section class="max-w-[840px] mx-auto py-8">
+                <div class="grid grid-cols-1 gap-6">
+
+                    <!-- Big Featured Card -->
+                    <div class="relative w-full rounded-md overflow-hidden group">
+                        <img src="https://images.pexels.com/photos/6666095/pexels-photo-6666095.jpeg"
+                            alt="Person playing video games with a controller" class="w-full h-[445px] object-cover">
+                        <!-- Hover overlay -->
+                        <div
+                            class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity duration-300">
+                        </div>
+
+                        <!-- Text Overlay -->
+                        <div class="absolute bottom-0 left-0 right-0 p-4 
+                  bg-gradient-to-t from-black via-black/70 to-transparent text-white">
+                            <div class="bg-white text-yellow-400 text-xs px-2 py-1 rounded-lg w-fit mb-2">
+                                Tech
+                            </div>
+                            <h2 class="text-2xl sm:text-3xl font-bold leading-tight mt-1 hover:underline">
+                                Mod turns ‘Counter-Strike’ into a ‘Tekken’ clone with fighting chickens
+                            </h2>
+                            <div class="flex items-center text-xs text-gray-300 pt-4">
+                                <span>Kelly</span>
+                                <span class="mx-2">•</span>
+                                <span>5 Month ago</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Rest of the Cards -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+
+                        <!-- Card 1 -->
+                        <div class="bg-white rounded-lg overflow-hidden shadow-sm border">
+                            <img src="https://images.pexels.com/photos/325812/pexels-photo-325812.jpeg" alt="News"
+                                class="w-full h-48 object-cover">
+                            <div class="p-4">
+                                <a href="#" class="text-purple-600 text-sm font-semibold block mb-2">Tech</a>
+                                <h3 class="font-bold text-lg leading-snug mb-3">
+                                    <a href="#" class="hover:underline hover:text-blue-600">
+                                        The best Father’s Day gifts for every dad in your life
+                                    </a>
+                                </h3>
+                                <div class="flex items-center text-gray-500 text-sm">
+                                    <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Kelly"
+                                        class="w-6 h-6 rounded-full mr-2">
+                                    <span>Kelly</span>
+                                    <span class="mx-2">•</span>
+                                    <span>2 Mins Read</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="bg-white rounded-lg overflow-hidden shadow-sm border">
+                            <img src="https://images.pexels.com/photos/3184328/pexels-photo-3184328.jpeg" alt="News"
+                                class="w-full h-48 object-cover">
+                            <div class="p-4">
+                                <a href="#" class="text-purple-600 text-sm font-semibold block mb-2">Tech</a>
+                                <h3 class="font-bold text-lg leading-snug mb-3">
+                                    <a href="#" class="hover:underline hover:text-blue-600">
+                                        The world’s largest direct carbon capture plant just went online
+                                    </a>
+                                </h3>
+                                <div class="flex items-center text-gray-500 text-sm">
+                                    <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Kelly"
+                                        class="w-6 h-6 rounded-full mr-2">
+                                    <span>Kelly</span>
+                                    <span class="mx-2">•</span>
+                                    <span>2 Mins Read</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="bg-white rounded-lg overflow-hidden shadow-sm border">
+                            <img src="https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg" alt="News"
+                                class="w-full h-48 object-cover">
+                            <div class="p-4">
+                                <a href="#" class="text-purple-600 text-sm font-semibold block mb-2">Tech</a>
+                                <h3 class="font-bold text-lg leading-snug mb-3">
+                                    <a href="#" class="hover:underline hover:text-blue-600">
+                                        Tencent Music Entertainment Group Sponsored ADR (TME)
+                                    </a>
+                                </h3>
+                                <div class="flex items-center text-gray-500 text-sm">
+                                    <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Kelly"
+                                        class="w-6 h-6 rounded-full mr-2">
+                                    <span>Kelly</span>
+                                    <span class="mx-2">•</span>
+                                    <span>2 Mins Read</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 4 -->
+                        <div class="bg-white rounded-lg overflow-hidden shadow-sm border">
+                            <img src="https://images.pexels.com/photos/36753/flower-red-roses-bloom.jpg" alt="News"
+                                class="w-full h-48 object-cover">
+                            <div class="p-4">
+                                <a href="#" class="text-purple-600 text-sm font-semibold block mb-2">Tech</a>
+                                <h3 class="font-bold text-lg leading-snug mb-3">
+                                    <a href="#" class="hover:underline hover:text-blue-600">
+                                        Fast food companies compete for the best value meal
+                                    </a>
+                                </h3>
+                                <div class="flex items-center text-gray-500 text-sm">
+                                    <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Kelly"
+                                        class="w-6 h-6 rounded-full mr-2">
+                                    <span>Kelly</span>
+                                    <span class="mx-2">•</span>
+                                    <span>2 Mins Read</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 5 -->
+                        <div class="bg-white rounded-lg overflow-hidden shadow-sm border">
+                            <img src="https://images.pexels.com/photos/325812/pexels-photo-325812.jpeg" alt="News"
+                                class="w-full h-48 object-cover">
+                            <div class="p-4">
+                                <a href="#" class="text-purple-600 text-sm font-semibold block mb-2">Tech</a>
+                                <h3 class="font-bold text-lg leading-snug mb-3">
+                                    <a href="#" class="hover:underline hover:text-blue-600">
+                                        The best Father’s Day gifts for every dad in your life
+                                    </a>
+                                </h3>
+                                <div class="flex items-center text-gray-500 text-sm">
+                                    <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Kelly"
+                                        class="w-6 h-6 rounded-full mr-2">
+                                    <span>Kelly</span>
+                                    <span class="mx-2">•</span>
+                                    <span>2 Mins Read</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 6 -->
+                        <div class="bg-white rounded-lg overflow-hidden shadow-sm border">
+                            <img src="https://images.pexels.com/photos/3184328/pexels-photo-3184328.jpeg" alt="News"
+                                class="w-full h-48 object-cover">
+                            <div class="p-4">
+                                <a href="#" class="text-purple-600 text-sm font-semibold block mb-2">Tech</a>
+                                <h3 class="font-bold text-lg leading-snug mb-3">
+                                    <a href="#" class="hover:underline hover:text-blue-600">
+                                        The world’s largest direct carbon capture plant just went online
+                                    </a>
+                                </h3>
+                                <div class="flex items-center text-gray-500 text-sm">
+                                    <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Kelly"
+                                        class="w-6 h-6 rounded-full mr-2">
+                                    <span>Kelly</span>
+                                    <span class="mx-2">•</span>
+                                    <span>2 Mins Read</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 7 -->
+                        <div class="bg-white rounded-lg overflow-hidden shadow-sm border">
+                            <img src="https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg" alt="News"
+                                class="w-full h-48 object-cover">
+                            <div class="p-4">
+                                <a href="#" class="text-purple-600 text-sm font-semibold block mb-2">Tech</a>
+                                <h3 class="font-bold text-lg leading-snug mb-3">
+                                    <a href="#" class="hover:underline hover:text-blue-600">
+                                        Tencent Music Entertainment Group Sponsored ADR (TME)
+                                    </a>
+                                </h3>
+                                <div class="flex items-center text-gray-500 text-sm">
+                                    <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Kelly"
+                                        class="w-6 h-6 rounded-full mr-2">
+                                    <span>Kelly</span>
+                                    <span class="mx-2">•</span>
+                                    <span>2 Mins Read</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 8 -->
+                        <div class="bg-white rounded-lg overflow-hidden shadow-sm border">
+                            <img src="https://images.pexels.com/photos/36753/flower-red-roses-bloom.jpg" alt="News"
+                                class="w-full h-48 object-cover">
+                            <div class="p-4">
+                                <a href="#" class="text-purple-600 text-sm font-semibold block mb-2">Tech</a>
+                                <h3 class="font-bold text-lg leading-snug mb-3">
+                                    <a href="#" class="hover:underline hover:text-blue-600">
+                                        Fast food companies compete for the best value meal
+                                    </a>
+                                </h3>
+                                <div class="flex items-center text-gray-500 text-sm">
+                                    <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Kelly"
+                                        class="w-6 h-6 rounded-full mr-2">
+                                    <span>Kelly</span>
+                                    <span class="mx-2">•</span>
+                                    <span>2 Mins Read</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- Right Column (Remaining Space) -->
+            <div class="flex-1 lg:sticky lg:top-4 self-start h-fit">
+                <div class="max-w-[400px] w-full mx-auto">
+                    <!-- Section Title -->
+                    <h2 class="text-lg font-bold mb-4">Explore More</h2>
+
+                    <!-- Big Top Card -->
+                    <div class="relative h-[200px] w-full rounded-lg overflow-hidden mb-4">
+                        <img src="https://images.pexels.com/photos/9211528/pexels-photo-9211528.jpeg" alt="Big Post"
+                            class="absolute inset-0 w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black/40"></div>
+                        <div class="relative z-10 p-3 flex flex-col justify-end h-full">
+                            <!-- Badge -->
+                            <span class="bg-green-100 text-green-600 text-xs px-2 py-0.5 rounded-full w-fit mb-2">
+                                Active
+                            </span>
+
+                            <!-- Title -->
+                            <h3
+                                class="text-white font-semibold text-lg leading-snug hover:underline hover:text-white cursor-pointer">
+                                Outdoor Photo Shooting With clean and Beautiful
+                            </h3>
+
+                            <!-- Meta -->
+                            <div class="flex items-center text-xs text-gray-200 mt-2 space-x-3">
+                                <div class="flex items-center">
+                                    <img src="https://images.pexels.com/photos/33189500/pexels-photo-33189500.jpeg"
+                                        alt="Author" class="w-6 h-6 rounded-full mr-1">
+                                    <span>Kelly</span>
+                                </div>
+                                <span>• 2 Mins Read</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Small Post Cards -->
+                    <div class="space-y-4">
+
+                        <!-- Card -->
+                        <div class="flex h-[90px] gap-3">
+                            <img src="https://images.pexels.com/photos/9211528/pexels-photo-9211528.jpeg"
+                                alt="Small Post" class="w-[100px] h-full object-cover rounded-md">
+                            <div class="flex flex-col justify-center">
+                                <span class="text-xs text-blue-600 font-medium">Sports</span>
+                                <h4
+                                    class="font-semibold text-sm leading-snug hover:underline hover:text-blue-600 cursor-pointer">
+                                    How To Season 3: When Expectations Don’t Meet…
+                                </h4>
+                                <span class="text-xs text-gray-500">2 Mins Read</span>
+                            </div>
+                        </div>
+
+                        <!-- Card -->
+                        <div class="flex h-[90px] gap-3">
+                            <img src="https://images.pexels.com/photos/9211528/pexels-photo-9211528.jpeg"
+                                alt="Small Post" class="w-[100px] h-full object-cover rounded-md">
+                            <div class="flex flex-col justify-center">
+                                <span class="text-xs text-green-600 font-medium">Health</span>
+                                <h4
+                                    class="font-semibold text-sm leading-snug hover:underline hover:text-blue-600 cursor-pointer">
+                                    Is This the Beginning of the End of the Internet?
+                                </h4>
+                                <span class="text-xs text-gray-500">2 Mins Read</span>
+                            </div>
+                        </div>
+
+                        <!-- Card -->
+                        <div class="flex h-[90px] gap-3">
+                            <img src="https://images.pexels.com/photos/9211528/pexels-photo-9211528.jpeg"
+                                alt="Small Post" class="w-[100px] h-full object-cover rounded-md">
+                            <div class="flex flex-col justify-center">
+                                <span class="text-xs text-blue-600 font-medium">Sports</span>
+                                <h4
+                                    class="font-semibold text-sm leading-snug hover:underline hover:text-blue-600 cursor-pointer">
+                                    Before an Animal Disease Becomes a Human Epidemic
+                                </h4>
+                                <span class="text-xs text-gray-500">2 Mins Read</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- FOOTER SECTION -->
+    <footer class="bg-black text-center text-white py-6">
+        <div class="max-w-[1170px] mx-auto">
+            <p class="text-[18px]">&copy; Bopea-crypto | All rights reserved</p>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle mobile menu
+        const menuBtn = document.getElementById("menu-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+
+        menuBtn.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+        });
+    </script>
+
+</body>
+
+</html>

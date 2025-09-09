@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLOG CLONE 3</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Merriweather', serif;
+        }
+    </style>
+</head>
+
+<body class="">
+
+    <!-- Navbar -->
+    <!-- Navbar -->
+    <header class="text-white bg-black">
+        <div class="max-w-[1190px] mx-auto flex items-center justify-between py-3 px-1.5 sm:px-0">
+
+            <!-- Logo -->
+            <div class="flex items-center space-x-2">
+                <h1 class="text-white font-extrabold text-2xl">
+                    station <span
+                        class="text-sm border px-1 py-0.5 rounded bg-white text-[#15375d] font-bold">NEWS</span>
+                </h1>
+            </div>
+
+            <!-- Nav Links -->
+            <nav>
+                <ul class="hidden md:flex space-x-6 text-white">
+                    <li class="relative">
+                        <a href="#" class="hover:text-blue-400">Home</a>
+                    </li>
+                    <li><a href="#" class="hover:text-blue-400">Business</a></li>
+                    <li><a href="#" class="hover:text-blue-400">Culture</a></li>
+                    <li><a href="#" class="hover:text-blue-400">Education</a></li>
+                    <li><a href="#" class="hover:text-blue-400">Environment</a></li>
+                    <li><a href="#" class="hover:text-blue-400">Sport</a></li>
+                    <li><a href="#" class="hover:text-blue-400">World News</a></li>
+                </ul>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="menu-btn" class="text-white focus:outline-none">
+                        ☰
+                    </button>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Mobile Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-black px-4 pb-4">
+            <ul class="space-y-2 text-white font-semibold">
+                <li><a href="#" class="block hover:text-blue-400">Home</a></li>
+                <li><a href="#" class="block hover:text-blue-400">Business</a></li>
+                <li><a href="#" class="block hover:text-blue-400">Culture</a></li>
+                <li><a href="#" class="block hover:text-blue-400">Education</a></li>
+                <li><a href="#" class="block hover:text-blue-400">Environment</a></li>
+                <li><a href="#" class="block hover:text-blue-400">Sport</a></li>
+                <li><a href="#" class="block hover:text-blue-400">World News</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+    <!-- BLOGING PART -->
+
+    <div class="max-w-[1180px] mx-auto px-4 md:px-0 mt-6 flex flex-col md:flex-row gap-4">
+        <!-- Left Column (fixed 840px) -->
+        <div class="w-full md:w-[840px]">
+            <div class="">
+                <div class="max-w-4xl mx-auto space-y-4">
+
+                    <div class="mb-6">
+                        <div class="relative bg-pink-600 text-white font-bold text-sm px-2 py-1 inline-block mb-2">
+                            SPORTS</div>
+                        <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold leading-snug sm:leading-tight md:leading-tight">
+    Federer makes history with eighth Wimbledon, 19th major title
+</h1>
+                        <p class=" mt-2">Quis autem vel eum iure reprehenderit qui in ea voluptate velit
+                            esse quam nihil molestiae consequat</p>
+                        <div class="mt-4 group">
+                            <img src="https://images.pexels.com/photos/2040471/pexels-photo-2040471.jpeg"
+                                alt="Tennis player on a court" class="w-full h-[490px] object-cover ">
+                        </div>
+                    </div>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi ducimus voluptate laudantium
+                        nobis voluptates placeat!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sunt, dignissimos quos modi
+                        adipisci dolorum repudiandae, magnam vero alias ullam blanditiis amet. Quo quidem enim quibusdam
+                        ducimus reiciendis, mollitia tenetur aut omnis molestias voluptatem atque aliquam voluptatum.
+                        Quibusdam necessitatibus delectus consequuntur repellendus perspiciatis nihil doloribus iste
+                        ipsam, exercitationem, animi id.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet veritatis nihil illum accusantium
+                        nemo fugit!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti reiciendis dolorum fuga culpa
+                        dolorem quas modi obcaecati mollitia? Totam, temporibus.</p>
+                </div>
+            </div>
+
+            <!-- RELATED SECTION -->
+            <div>
+                <div class="">
+                    <div class="border-b border-gray-300 pb-2 mb-4 mt-4">
+                        <span class="text-sm font-bold text-gray-500 mr-2">RELATED TOPICS:</span>
+                        <a href="#" class="text-sm font-bold text-gray-500 hover:text-gray-700 transition-colors">#ROGER
+                            FEDERER</a>
+                        <a href="#"
+                            class="text-sm font-bold text-gray-500 hover:text-gray-700 transition-colors ml-2">#SPORTS</a>
+                        <a href="#"
+                            class="text-sm font-bold text-gray-500 hover:text-gray-700 transition-colors ml-2">#TENNIS</a>
+                        <a href="#"
+                            class="text-sm font-bold text-gray-500 hover:text-gray-700 transition-colors ml-2">#WIMBLEDON</a>
+                    </div>
+
+                    <div class="flex items-center">
+                        <div
+                            class="w-8 h-8 flex items-center justify-center text-gray-400 cursor-pointer hover:text-gray-600 transition-colors">
+                            <span class="text-3xl font-light">&lt;</span>
+                        </div>
+                        <div class="flex-1 px-4">
+                            <div class="text-pink-600 text-sm font-bold mb-1">DON'T MISS</div>
+                            <div
+                                class="text-xl md:text-xl font-bold leading-tight hover:text-gray-700 cursor-pointer transition-colors">
+                                Signings, trades shift balance of power across the NHL</div>
+                        </div>
+                        <div
+                            class="w-8 h-8 flex items-center justify-center text-gray-400 cursor-pointer hover:text-gray-600 transition-colors">
+                            <span class="text-3xl font-light">&gt;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- YOU MAY LIKE SECTION -->
+            <div class=" max-w-[1190px] mx-auto flex items-center mt-6 mb-6">
+                <div class="flex-1 border-t border-gray-400"></div>
+                <div class="Text-[18px]  bg-pink-600 text-white font-bold text-center px-4 py-1 tracking-wider mx-4">
+                    YOU MAY LIKE
+                </div>
+                <div class="flex-1 border-t border-gray-400"></div>
+            </div>
+
+            <!-- FIRST COLUMN -->
+            <div class="flex flex-col md:flex-row gap-4 max-w-6xl mx-auto mb-6">
+
+                <div class="md:w-full flex flex-col space-y-4">
+
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                        <div class="group">
+                            <div class="relative">
+                                <img src="https://images.pexels.com/photos/33795416/pexels-photo-33795416.jpeg" alt="Hockey players on the ice"
+                                    class="w-full h-auto object-cover">
+                                <div
+                                    class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity">
+                                </div>
+                            </div>
+                            <h3 class="font-bold mt-2 group-hover:text-gray-700 transition-colors">Signings, trades
+                                shift balance of power across the NHL</h3>
+                        </div>
+                        <div class="group">
+                            <div class="relative">
+                                <img src="https://images.pexels.com/photos/33795416/pexels-photo-33795416.jpeg" alt="American football player"
+                                    class="w-full h-auto object-cover">
+                                <div
+                                    class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity">
+                                </div>
+                            </div>
+                            <h3 class="font-bold mt-2 group-hover:text-gray-700 transition-colors">Who are the early
+                                favorites to win the NFL rushing title?</h3>
+                        </div>
+                        <div class="group">
+                            <div class="relative">
+                                <img src="https://images.pexels.com/photos/33795416/pexels-photo-33795416.jpeg" alt="Boxer in a ring"
+                                    class="w-full h-auto object-cover">
+                                <div
+                                    class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity">
+                                </div>
+                            </div>
+                            <h3 class="font-bold mt-2 group-hover:text-gray-700 transition-colors">Boxing continues to
+                                knock itself out with bewildering, incorrect decisions</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECOND COLUMN -->
+                         <div class="flex flex-col md:flex-row gap-4 max-w-6xl mx-auto mb-6">
+
+                <div class="md:w-full flex flex-col space-y-4">
+
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                        <div class="group">
+                            <div class="relative">
+                                <img src="https://images.pexels.com/photos/33795416/pexels-photo-33795416.jpeg" alt="Hockey players on the ice"
+                                    class="w-full h-auto object-cover">
+                                <div
+                                    class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity">
+                                </div>
+                            </div>
+                            <h3 class="font-bold mt-2 group-hover:text-gray-700 transition-colors">Signings, trades
+                                shift balance of power across the NHL</h3>
+                        </div>
+                        <div class="group">
+                            <div class="relative">
+                                <img src="https://images.pexels.com/photos/33795416/pexels-photo-33795416.jpeg" alt="American football player"
+                                    class="w-full h-auto object-cover">
+                                <div
+                                    class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity">
+                                </div>
+                            </div>
+                            <h3 class="font-bold mt-2 group-hover:text-gray-700 transition-colors">Who are the early
+                                favorites to win the NFL rushing title?</h3>
+                        </div>
+                        <div class="group">
+                            <div class="relative">
+                                <img src="https://images.pexels.com/photos/33795416/pexels-photo-33795416.jpeg" alt="Boxer in a ring"
+                                    class="w-full h-auto object-cover">
+                                <div
+                                    class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity">
+                                </div>
+                            </div>
+                            <h3 class="font-bold mt-2 group-hover:text-gray-700 transition-colors">Boxing continues to
+                                knock itself out with bewildering, incorrect decisions</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Right Column (remaining space) -->
+        <div class="flex-1 mb-6 lg:sticky lg:top-4 self-start h-fit">
+            <div class="max-w-sm mx-auto space-y-4">
+                <div class="flex border-b border-gray-300 mb-4 text-gray-500 font-bold text-sm">
+                    <div class="relative pb-2 mr-6 text-pink-600">
+                        LATEST
+                        <span class="absolute bottom-0 left-0 w-full h-[3px] bg-pink-600"></span>
+                    </div>
+                    <div class="pb-2 mr-6 hover:text-pink-600">TRENDING</div>
+                    <div class="pb-2 hover:text-pink-600">VIDEOS</div>
+                </div>
+                <!-- Item 1-->
+                <div class="flex items-center space-x-4 group">
+                    <div class="relative w-20 h-20 flex-shrink-0">
+                        <img src="https://images.pexels.com/photos/12064353/pexels-photo-12064353.jpeg"
+                            alt="Google Daydream" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity">
+                        </div>
+                    </div>
+                    <div class="flex-1">
+                        <div class="text-xs text-gray-500 uppercase font-semibold">TECH / 6 years ago</div>
+                        <div
+                            class="text-[14px] text-black font-semibold mt-1 group-hover:text-gray-700 transition-colors">
+                            Mobile Google CEO Promises 11 Daydream-compatible phones
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 2-->
+                <div class="flex items-center space-x-4 group">
+                    <div class="relative w-20 h-20 flex-shrink-0">
+                        <img src="https://images.pexels.com/photos/12064353/pexels-photo-12064353.jpeg"
+                            alt="Google Daydream" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity">
+                        </div>
+                    </div>
+                    <div class="flex-1">
+                        <div class="text-xs text-gray-500 uppercase font-semibold">TECH / 6 years ago</div>
+                        <div
+                            class="text-[14px] text-black font-semibold mt-1 group-hover:text-gray-700 transition-colors">
+                            Mobile Google CEO Promises 11 Daydream-compatible phones
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 3-->
+                <div class="flex items-center space-x-4 group">
+                    <div class="relative w-20 h-20 flex-shrink-0">
+                        <img src="https://images.pexels.com/photos/12064353/pexels-photo-12064353.jpeg"
+                            alt="Google Daydream" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity">
+                        </div>
+                    </div>
+                    <div class="flex-1">
+                        <div class="text-xs text-gray-500 uppercase font-semibold">TECH / 6 years ago</div>
+                        <div
+                            class="text-[14px] text-black font-semibold mt-1 group-hover:text-gray-700 transition-colors">
+                            Mobile Google CEO Promises 11 Daydream-compatible phones
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 4-->
+                <div class="flex items-center space-x-4 group">
+                    <div class="relative w-20 h-20 flex-shrink-0">
+                        <img src="https://images.pexels.com/photos/12064353/pexels-photo-12064353.jpeg"
+                            alt="Google Daydream" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity">
+                        </div>
+                    </div>
+                    <div class="flex-1">
+                        <div class="text-xs text-gray-500 uppercase font-semibold">TECH / 6 years ago</div>
+                        <div
+                            class="text-[14px] text-black font-semibold mt-1 group-hover:text-gray-700 transition-colors">
+                            Mobile Google CEO Promises 11 Daydream-compatible phones
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER SECTION -->
+    <footer class="bg-black text-center text-white py-6">
+        <div class="max-w-[1170px] mx-auto">
+            <p class="text-[18px]">&copy; station-news-crypto | All rights reserved</p>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle mobile menu
+        const menuBtn = document.getElementById("menu-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+
+        menuBtn.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+        });
+    </script>
+
+</body>
+
+</html>

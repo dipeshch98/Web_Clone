@@ -4,117 +4,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BlogPage</title>
+    <title>Blog-Clone 3</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- <script src="app.js"></script> -->
-    <!-- Google Fonts: Inter + Alegreya -->
-    <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700&family=Inter:wght@400;500&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bitter&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
     <style>
-        .font-alegreya {
-            font-family: 'Alegreya', serif;
-        }
-
-        .font-inter {
-            font-family: 'Inter', sans-serif;
-        }
-
-        .font-bitter {
-            font-family: 'Bitter', serif;
-        }
-
-        .font-roboto {
-            font-family: 'Roboto', sans-serif;
+        body {
+            font-family: 'Merriweather', serif;
         }
     </style>
 </head>
 
-<body class="text-left sm:py-2">
-    <!-- -------NAVBAR------ -->
-    <div class="max-w-[1400px] mx-auto py-4  px-1.5 sm:px-0">
+<body class="text-[#163860]">
 
-        <nav class="flex items-center justify-between pb-2 border-b">
+    <!-- Navbar -->
+    <!-- Navbar -->
+    <header class="bg-[#15375d]">
+        <div class="max-w-[1170px] mx-auto flex items-center justify-between py-3 px-1.5 sm:px-0">
+
             <!-- Logo -->
-            <div class="flex items-center gap-2">
-                <div class="w-8 h-8 bg-red-600 flex items-center justify-center rounded">
-                    <span class="text-white font-bold">▶</span>
-                </div>
-                <h1 class=" text-[40px] font-bold font-alegreya leading-[26px] text-black">
-                    Forcast
+            <div class="flex items-center space-x-2">
+                <h1 class="text-white font-extrabold text-2xl">
+                    station <span
+                        class="text-sm border px-1 py-0.5 rounded bg-white text-[#15375d] font-bold">NEWS</span>
                 </h1>
             </div>
 
-            <!-- Desktop Menu -->
-            <ul class="hidden font-inter leading-[26px] text-[15px] md:flex space-x-8 font-semibold">
-                <li class="hover:text-red-600 cursor-pointer">HOME</li>
-                <li class="hover:text-red-600 cursor-pointer">POST FEATURES</li>
-                <li class="hover:text-red-600 cursor-pointer">TECHNOLOGY</li>
-                <li class="hover:text-red-600 cursor-pointer">BREAKING NEWS</li>
-                <li class="hover:text-red-600 cursor-pointer">PAGES</li>
-            </ul>
+            <!-- Nav Links -->
+            <nav>
+                <ul class="hidden md:flex space-x-6 text-white">
+                    <li class="relative">
+                        <a href="#" class="hover:text-blue-400">Home</a>
+                    </li>
+                    <li><a href="#" class="hover:text-blue-400">Business</a></li>
+                    <li><a href="#" class="hover:text-blue-400">Culture</a></li>
+                    <li><a href="#" class="hover:text-blue-400">Education</a></li>
+                    <li><a href="#" class="hover:text-blue-400">Environment</a></li>
+                    <li><a href="#" class="hover:text-blue-400">Sport</a></li>
+                    <li><a href="#" class="hover:text-blue-400">World News</a></li>
+                </ul>
 
-            <!-- Mobile Menu Button -->
-            <button id="menu-btn" class="md:hidden text-2xl">☰</button>
-        </nav>
-
-        <!-- Mobile Menu -->
-        <div id="mobile-menu"
-            class="hidden font-inter flex-col items-center space-y-4 py-6 bg-gray-100 rounded-lg shadow-md md:hidden">
-
-            <a href="#" class="w-full text-center py-2 px-4 rounded-md hover:bg-red-600 hover:text-white transition">
-                HOME
-            </a>
-
-            <a href="#" class="w-full text-center py-2 px-4 rounded-md hover:bg-red-600 hover:text-white transition">
-                POST FEATURES
-            </a>
-
-            <a href="#" class="w-full text-center py-2 px-4 rounded-md hover:bg-red-600 hover:text-white transition">
-                TECHNOLOGY
-            </a>
-
-            <a href="#" class="w-full text-center py-2 px-4 rounded-md hover:bg-red-600 hover:text-white transition">
-                BREAKING NEWS
-            </a>
-
-            <a href="#" class="w-full text-center py-2 px-4 rounded-md hover:bg-red-600 hover:text-white transition">
-                PAGES
-            </a>
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="menu-btn" class="text-white focus:outline-none">
+                        ☰
+                    </button>
+                </div>
+            </nav>
         </div>
 
-    </div>
+        <!-- Mobile Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-[#15375d] px-4 pb-4">
+            <ul class="space-y-2 text-white font-semibold">
+                <li><a href="#" class="block hover:text-blue-400">Home</a></li>
+                <li><a href="#" class="block hover:text-blue-400">Business</a></li>
+                <li><a href="#" class="block hover:text-blue-400">Culture</a></li>
+                <li><a href="#" class="block hover:text-blue-400">Education</a></li>
+                <li><a href="#" class="block hover:text-blue-400">Environment</a></li>
+                <li><a href="#" class="block hover:text-blue-400">Sport</a></li>
+                <li><a href="#" class="block hover:text-blue-400">World News</a></li>
+            </ul>
+        </div>
+    </header>
 
 
-    <div class="max-w-[1400px] mx-auto pt-6 font-bitter px-3 sm:px-6 lg:px-0">
-        <nav class="flex flex-wrap items-center gap-2 text-xs sm:text-sm opacity-75" aria-label="Breadcrumb">
-            <a href="#" class="text-gray-600 hover:text-gray-800 transition-colors duration-200">Home</a>
+    <!-- MIDDLE PORTION -->
 
-            <svg class="w-3 h-3 sm:w-4 sm:h-4 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd"
-                    d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                    clip-rule="evenodd"></path>
-            </svg>
-
-            <a href="#" class="text-gray-600 hover:text-gray-800 transition-colors duration-200">Education</a>
-
-            <svg class="w-3 h-3 sm:w-4 sm:h-4 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd"
-                    d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                    clip-rule="evenodd"></path>
-            </svg>
-
-            <span class="text-gray-500 font-medium truncate max-w-[200px] sm:max-w-xs md:max-w-md lg:max-w-full">
-                Despite pandemic, Cal State graduation rates climbed, but equity gaps persist
-            </span>
-        </nav>
-    </div>
-
-
-
-
-    <div class="max-w-[1400px] mx-auto pt-10 pb-6 grid grid-cols-1 lg:grid-cols-12 gap-8 font-bitter">
+    <div class="max-w-[1170px] mx-auto pt-10 pb-6 grid grid-cols-1 lg:grid-cols-12 gap-8">
 
         <!-- Left Column (Main Content) -->
         <div class="lg:col-span-8">
@@ -127,7 +82,7 @@
             </h1>
 
             <!-- Meta -->
-            <div class="text-sm text-gray-500 mb-6 px-1.5 sm:px-0">
+            <div class="text-sm  mb-6 px-1.5 sm:px-0">
                 written by <span class="font-medium text-gray-700">Penci Design</span> · 4 years ago · 0 comments
             </div>
 
@@ -212,16 +167,16 @@
 
                 <!-- Main Content -->
                 <div class="space-y-5 px-1.5 sm:px-0">
-                    <p class="text-[16px] leading-relaxed text-black">
+                    <p class="text-[16px] leading-relaxed">
                         When I hear the buzz of the little world among the stalks, and grow familiar with the
                         countless indescribable forms of the insects and flies, then I feel.
                     </p>
-                    <p class="text-[16px] leading-relaxed text-black">
+                    <p class="text-[16px] leading-relaxed">
                         Everyone realizes why a new common language would be desirable: one could refuse to pay
                         expensive translators. To achieve this, it would be necessary to have uniform grammar,
                         pronunciation and more common words.
                     </p>
-                    <p class="text-[16px] leading-relaxed text-black">
+                    <p class="text-[16px] leading-relaxed">
                         The new common language will be Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                         Fugiat cum possimus ex nostrum laudantium itaque aperiam blanditiis maiores rerum similique
                         voluptate autem error ut, optio incidunt debitis tempora facere molestias vitae natus enim
@@ -244,19 +199,9 @@
             </div>
 
 
-
-
-
-
-
-
-
-
-
-
             <!-- New ONE -->
             <!-- New ONE -->
-            <div class="text-[16px]  font-bitter  w-full leading-[24px] font-normal mb-4 px-1.5 sm:px-0">
+            <div class="text-[16px]  w-full leading-[24px] font-normal mb-4 px-1.5 sm:px-0">
                 <div class="w-full">
 
                     <!-- Image floated left -->
@@ -294,7 +239,7 @@
                 <!-- Previous Post -->
                 <div class="max-w-xs">
                     <p class="text-[12px] text-gray-400">previous post</p>
-                    <h3 class="text-[14px] text-gray-800 hover:text-red-600 transition-colors duration-300">
+                    <h3 class="text-[14px] text-gray-800 hover:text-blue-700 transition-colors duration-300">
                         Peloton to replace chief executive and cut 2,800 jobs amid sales slump
                     </h3>
                 </div>
@@ -302,7 +247,7 @@
                 <!-- Next Post -->
                 <div class="max-w-xs text-right">
                     <p class="text-[12px] text-gray-400">next post</p>
-                    <h3 class=" text-[14px] text-gray-800 hover:text-red-600 transition-colors duration-300">
+                    <h3 class=" text-[14px] hover:text-blue-700 transition-colors duration-300">
                         No one should have to bear the online abuse I received while fighting hate
                     </h3>
                 </div>
@@ -326,10 +271,10 @@
                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
                         </div>
                         <h3
-                            class="mt-3 text-[15px] font-bold text-gray-800 uppercase leading-snug group-hover:text-red-600 transition-colors duration-300">
+                            class="mt-3 text-[15px] font-bold text-gray-800 uppercase leading-snug group-hover:text-blue-400 transition-colors duration-300">
                             Parents in California protest student COVID-19 vaccine mandate
                         </h3>
-                        <p class="text-sm text-gray-500 mt-2">4 years ago</p>
+                        <p class="text-sm  mt-2">4 years ago</p>
                     </article>
 
                     <!-- Item 2 -->
@@ -340,10 +285,10 @@
                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
                         </div>
                         <h3
-                            class="mt-3 text-[15px] font-bold text-gray-800 uppercase leading-snug group-hover:text-red-600 transition-colors duration-300">
+                            class="mt-3 text-[15px] font-bold text-gray-800 uppercase leading-snug group-hover:text-blue-400 transition-colors duration-300">
                             Viral TikTok trend that encourages vandalism hits California schools
                         </h3>
-                        <p class="text-sm text-gray-500 mt-2">4 years ago</p>
+                        <p class="text-sm  mt-2">4 years ago</p>
                     </article>
 
                     <!-- Item 3 -->
@@ -354,10 +299,52 @@
                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
                         </div>
                         <h3
-                            class="mt-3 text-[15px] font-bold text-gray-800 uppercase leading-snug group-hover:text-red-600 transition-colors duration-300">
+                            class="mt-3 text-[15px] font-bold text-gray-800 uppercase leading-snug group-hover:text-blue-400 transition-colors duration-300">
                             New data affirm it. L.A. County school safety policies are working as...
                         </h3>
-                        <p class="text-sm text-gray-500 mt-2">4 years ago</p>
+                        <p class="text-sm  mt-2">4 years ago</p>
+                    </article>
+
+                    <!-- Item 4 -->
+                    <article class="group cursor-pointer">
+                        <div class="relative h-56 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1611605698335-8b1569810432?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                                alt="Vaccination"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <h3
+                            class="mt-3 text-[15px] font-bold text-gray-800 uppercase leading-snug group-hover:text-blue-400 transition-colors duration-300">
+                            Parents in California protest student COVID-19 vaccine mandate
+                        </h3>
+                        <p class="text-sm  mt-2">4 years ago</p>
+                    </article>
+
+                    <!-- Item 5 -->
+                    <article class="group cursor-pointer">
+                        <div class="relative h-56 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1611605698335-8b1569810432?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                                alt="TikTok on phone"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <h3
+                            class="mt-3 text-[15px] font-bold text-gray-800 uppercase leading-snug group-hover:text-blue-400 transition-colors duration-300">
+                            Viral TikTok trend that encourages vandalism hits California schools
+                        </h3>
+                        <p class="text-sm  mt-2">4 years ago</p>
+                    </article>
+
+                    <!-- Item 6 -->
+                    <article class="group cursor-pointer">
+                        <div class="relative h-56 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                                alt="Students with masks"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <h3
+                            class="mt-3 text-[15px] font-bold text-gray-800 uppercase leading-snug group-hover:text-blue-400 transition-colors duration-300">
+                            New data affirm it. L.A. County school safety policies are working as...
+                        </h3>
+                        <p class="text-sm  mt-2">4 years ago</p>
                     </article>
 
                 </div>
@@ -370,7 +357,7 @@
         </div>
 
         <!-- Right Column (Sticky Related Posts) -->
-        <div class="lg:col-span-4">
+        <div class="lg:col-span-4 px-1.5 sm:px-0">
             <!-- Whole sidebar sticks -->
             <div class=" sticky top-6 space-y-8">
 
@@ -378,78 +365,44 @@
                 <div>
                     <h2 class="text-lg font-bold border border-gray-400 relative text-center py-2">
                         <span class="absolute left-0 top-0 h-full w-2 bg-gray-800"></span>
-                        Related Posts
+                        EDITORS PEAK
                     </h2>
 
+                    <!-- EDITORS PEAK CONTENTS -->
+
                     <div class="space-y-4 mt-4">
-
-                        <!-- Post 1 -->
-                        <div
-                            class="flex gap-4 p-2 rounded-lg transition group hover:bg-gray-100 border-b border-gray-300/60">
-                            <img src="https://images.pexels.com/photos/6932230/pexels-photo-6932230.jpeg"
-                                class="w-24 h-16 object-cover rounded-lg transition-transform duration-300 group-hover:scale-105">
-                            <div>
-                                <h3
-                                    class="font-semibold text-gray-800 transition-colors duration-300 group-hover:text-red-600">
-                                    Andrew Friedman clears the air on pitching decisions
-                                </h3>
-                                <p class="text-sm text-gray-500">4 years ago</p>
-                            </div>
+                        <div>
+                            <img src="https://images.pexels.com/photos/33498262/pexels-photo-33498262.jpeg"
+                                alt="Person packaging boxes" class="w-full">
+                            <h2 class="text-[16px] font-bold mt-2 hover:text-[#25bcea]">'Cash is no longer king': the
+                                rapid shift to e commerce
+                                and cash-less</h2>
                         </div>
 
-                        <!-- Post 2 -->
-                        <div
-                            class="flex gap-4 p-2 rounded-lg transition group hover:bg-gray-100 border-b border-gray-300/60">
-                            <img src="https://images.pexels.com/photos/6932230/pexels-photo-6932230.jpeg"
-                                class="w-24 h-16 object-cover rounded-lg transition-transform duration-300 group-hover:scale-105">
+                        <div class="grid grid-cols-2 gap-4 text-[13px] ">
                             <div>
-                                <h3
-                                    class="font-semibold text-gray-800 transition-colors duration-300 group-hover:text-red-600">
-                                    Andrew Friedman clears the air on pitching decisions
-                                </h3>
-                                <p class="text-sm text-gray-500">4 years ago</p>
+                                <img src="https://images.pexels.com/photos/33498262/pexels-photo-33498262.jpeg"
+                                    alt="Joe Biden speaking" class="w-full">
+                                <h3 class="font-semibold mt-1 hover:text-[#25bcea]">'Putin chose this war,' Biden says
+                                    as he announces new sanctions</h3>
                             </div>
-                        </div>
-
-                        <!-- Post 3 -->
-                        <div
-                            class="flex gap-4 p-2 rounded-lg transition group hover:bg-gray-100 border-b border-gray-300/60">
-                            <img src="https://images.pexels.com/photos/6932230/pexels-photo-6932230.jpeg"
-                                class="w-24 h-16 object-cover rounded-lg transition-transform duration-300 group-hover:scale-105">
                             <div>
-                                <h3
-                                    class="font-semibold text-gray-800 transition-colors duration-300 group-hover:text-red-600">
-                                    U.S. wants to deepen relations with Taiwan
-                                </h3>
-                                <p class="text-sm text-gray-500">4 years ago</p>
+                                <img src="https://images.pexels.com/photos/33498262/pexels-photo-33498262.jpeg"
+                                    alt="Soccer players on a field" class="w-full">
+                                <h3 class="font-semibold mt-1 hover:text-[#25bcea]">Champions League final moved to
+                                    Paris, European last-16 draws</h3>
                             </div>
-                        </div>
-
-                        <!-- Post 4 -->
-                        <div
-                            class="flex gap-4 p-2 rounded-lg transition group hover:bg-gray-100 border-b border-gray-300/60">
-                            <img src="https://images.pexels.com/photos/6932230/pexels-photo-6932230.jpeg"
-                                class="w-24 h-16 object-cover rounded-lg transition-transform duration-300 group-hover:scale-105">
                             <div>
-                                <h3
-                                    class="font-semibold text-gray-800 transition-colors duration-300 group-hover:text-red-600">
-                                    U.S. wants to deepen relations with Taiwan
-                                </h3>
-                                <p class="text-sm text-gray-500">4 years ago</p>
+                                <img src="https://images.pexels.com/photos/33498262/pexels-photo-33498262.jpeg"
+                                    alt="Oil rigs in a snowy field" class="w-full">
+                                <h3 class="font-semibold mt-1 hover:text-[#25bcea]">Revealed: leading climate research
+                                    publisher helps fuel oil drilling</h3>
                             </div>
-                        </div>
-
-                        <!-- Post 5 -->
-                        <div
-                            class="flex gap-4 p-2 rounded-lg transition group hover:bg-gray-100 border-b border-gray-300/60">
-                            <img src="https://images.pexels.com/photos/6932230/pexels-photo-6932230.jpeg"
-                                class="w-24 h-16 object-cover rounded-lg transition-transform duration-300 group-hover:scale-105">
                             <div>
-                                <h3
-                                    class="font-semibold text-gray-800 transition-colors duration-300 group-hover:text-red-600">
-                                    U.S. wants to deepen relations with Taiwan
-                                </h3>
-                                <p class="text-sm text-gray-500">4 years ago</p>
+                                <img src="https://images.pexels.com/photos/33498262/pexels-photo-33498262.jpeg"
+                                    alt="Students studying together" class="w-full">
+                                <h3 class="font-semibold mt-1 hover:text-[#25bcea]">Student loan changes will hit poor
+                                    hardest, official analysis finds</h3>
                             </div>
                         </div>
 
@@ -467,31 +420,31 @@
                     <ul class="divide-y bg-white">
                         <li class="flex justify-between items-center py-2 hover:text-red-600 cursor-pointer">
                             <span>› Business</span>
-                            <span class="text-gray-500">(8)</span>
+                            <span class="">(8)</span>
                         </li>
                         <li class="flex justify-between items-center py-2 hover:text-red-600 cursor-pointer">
                             <span>› Education</span>
-                            <span class="text-gray-500">(8)</span>
+                            <span class="">(8)</span>
                         </li>
                         <li class="flex justify-between items-center py-2 hover:text-red-600 cursor-pointer">
                             <span>› Entertainment</span>
-                            <span class="text-gray-500">(8)</span>
+                            <span class="">(8)</span>
                         </li>
                         <li class="flex justify-between items-center py-2 hover:text-red-600 cursor-pointer">
                             <span>› Environment</span>
-                            <span class="text-gray-500">(8)</span>
+                            <span class="">(8)</span>
                         </li>
                         <li class="flex justify-between items-center py-2 hover:text-red-600 cursor-pointer">
                             <span>› Featured</span>
-                            <span class="text-gray-500">(8)</span>
+                            <span class="">(8)</span>
                         </li>
                         <li class="flex justify-between items-center py-2 hover:text-red-600 cursor-pointer">
                             <span>› Politics</span>
-                            <span class="text-gray-500">(8)</span>
+                            <span class="">(8)</span>
                         </li>
                         <li class="flex justify-between items-center py-2 hover:text-red-600 cursor-pointer">
                             <span>› Sports</span>
-                            <span class="text-gray-500">(8)</span>
+                            <span class="">(8)</span>
                         </li>
                     </ul>
                 </div>
@@ -505,20 +458,17 @@
 
     </div>
 
-    <!-- FOOTER SECTION -->
-    <!-- FOOTER SECTION -->
-    <div class="bg-black">
-        <div class="max-w-[1400px] mx-auto px-4 py-6">
-            <footer class="text-center text-gray-400 text-xl font-bold font-alegreya">
-                FORCASR_CRYPTO © 2024 Empath. All Rights Reserved.
-            </footer>
+
+    <!-- Footer -->
+    <!-- Footer -->
+    <footer class="bg-[#15375d] text-center text-white py-4">
+        <div class="max-w-[1170px] mx-auto">
+            <p class="text-sm">&copy; station-news-crypto | All rights reserved</p>
         </div>
-    </div>
+    </footer>
 
-
-
-    <!-- JS-CODE -->
     <script>
+        // Toggle mobile menu
         const menuBtn = document.getElementById("menu-btn");
         const mobileMenu = document.getElementById("mobile-menu");
 
@@ -526,6 +476,7 @@
             mobileMenu.classList.toggle("hidden");
         });
     </script>
+
 </body>
 
 </html>
