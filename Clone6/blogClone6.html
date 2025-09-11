@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POLITICAL Blog Clone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'PT Serif', serif;
+        }
+    </style>
+
+</head>
+
+<body class="">
+    <!-- Navbar -->
+    <nav class="w-full bg-black text-white">
+        <div class="max-w-[1320px] mx-auto flex items-center justify-between py-4 px-4">
+            <!-- Logo -->
+            <div class="text-3xl font-extrabold tracking-wide">
+                POLITICAL
+            </div>
+            <!-- Nav Links -->
+            <ul class="hidden md:flex space-x-8 text-lg font-medium">
+                <li><a href="#" class="hover:text-red-500 transition-colors">HOME</a></li>
+                <li><a href="#" class="hover:text-red-500 transition-colors">FEATURES</a></li>
+                <li><a href="#" class="hover:text-red-500 transition-colors">POLITICS</a></li>
+                <li><a href="#" class="hover:text-red-500 transition-colors">ECONOMY</a></li>
+                <li><a href="#" class="hover:text-red-500 transition-colors">SCIENCE & TECH</a></li>
+                <li><a href="#" class="hover:text-red-500 transition-colors">SPORTS</a></li>
+            </ul>
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button id="menu-btn" class="focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Nav -->
+        <div id="mobile-menu" class="hidden md:hidden px-4 pb-4">
+            <ul class="flex flex-col space-y-4 text-lg font-medium">
+                <li><a href="#" class="hover:text-red-500 transition-colors">HOME</a></li>
+                <li><a href="#" class="hover:text-red-500 transition-colors">FEATURES</a></li>
+                <li><a href="#" class="hover:text-red-500 transition-colors">POLITICS</a></li>
+                <li><a href="#" class="hover:text-red-500 transition-colors">ECONOMY</a></li>
+                <li><a href="#" class="hover:text-red-500 transition-colors">SCIENCE & TECH</a></li>
+                <li><a href="#" class="hover:text-red-500 transition-colors">SPORTS</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- BLOG POST -->
+    <div class="max-w-[1320px] mx-auto px-4 py-6">
+        <div class="flex flex-col lg:flex-row gap-6">
+
+            <!-- Left Column -->
+            <div class="flex-1 bg-white p-4 shadow rounded">
+                <!-- Left Column (Main Content) -->
+                <div class="lg:col-span-8">
+                    <!-- Category -->
+                    <p class="text-red-600 font-semibold uppercase mb-2 px-1.5 sm:px-0">Politics</p>
+
+                    <!-- Title -->
+                    <h1 class="text-[27px] md:text-4xl font-bitter leading-[36.45px] font-semibold mb-4 px-1.5 sm:px-0">
+                        U.S. wants to deepen relations with Taiwan amid rising tensions with China
+                    </h1>
+
+                    <!-- Meta -->
+                    <div class="text-sm  mb-6 px-1.5 sm:px-0">
+                        written by <span class="font-medium text-gray-700">Penci Design</span> · 4 years ago · 0
+                        comments
+                    </div>
+
+                    <!-- Image -->
+                    <div class="overflow-hidden rounded-xl shadow-md mb-6 px-1.5 sm:px-0">
+                        <img src="https://images.pexels.com/photos/102127/pexels-photo-102127.jpeg" alt="Blog cover"
+                            class="w-full transition-transform duration-500 ease-in-out transform hover:scale-105 hover:shadow-xl">
+                    </div>
+
+                    <!-- Content -->
+                    <div class="prose max-w-none px-1.5 sm:px-0">
+                        <p class="mb-4">
+                            The <span class="text-red-600 font-semibold">U.S. government</span> has expressed its intent
+                            to strengthen diplomatic and trade ties with Taiwan amid increasing tensions with China.
+                            Officials stated that fostering closer relations is a key part of their Indo-Pacific
+                            strategy.
+                        </p>
+                        <p class="mb-4">
+                            Experts warn that the move could escalate friction with Beijing, which views Taiwan as a
+                            breakaway province. However, U.S. policymakers argue that supporting Taiwan is critical
+                            for maintaining regional stability and democracy.
+                        </p>
+                    </div>
+                    <!-- You Might Be Interested In -->
+                    <div class="border p-5 rounded-md bg-white mt-8">
+                        <h2 class="text-lg font-bold mb-4 border-b-2 border-red-600 inline-block pb-1">
+                            You Might Be Interested In
+                        </h2>
+                        <ul class="space-y-3 list-disc pl-5 hover:shadow-md transition-shadow duration-300">
+                            <li>
+                                <a href="#" class="text-red-600 hover:underline">
+                                    China, world’s top carbon emitter, offers few new climate targets ahead of U.N.
+                                    summit
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-red-600 hover:underline">
+                                    Is it OK to go trick-or-treating during the pandemic this Halloween?
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-red-600 hover:underline">
+                                    Newsom, Buttigieg announce $5 billion in loans for California’s clogged ports
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-red-600 hover:underline">
+                                    ‘On the verge of catastrophe’: Vaccine hesitancy fuels a COVID spike in Eastern
+                                    Europe
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="text-[16px] font-bitter pt-6 w-full leading-[24px] font-normal mb-4 px-1.5 sm:px-0">
+                        <h2 class="text-[28px] font-semibold mb-4">Economy of the Country</h2>
+                        <p class="text-[16px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis,
+                            dignissimos. Animi voluptates
+                            corrupti magni, dignissimos, expedita doloremque earum nostrum culpa enim totam voluptate.
+                            Explicabo
+                            nobis voluptatibus veritatis aut maiores optio?</p>
+
+
+                    </div>
+
+                    <!-- NEXT CONTENT -->
+                    <div class="max-w-5xl mx-auto bg-white pt-10 pb-10 rounded-xl shadow-sm">
+                        <!-- Full-width Image -->
+                        <img src="https://images.pexels.com/photos/159862/art-school-of-athens-raphael-italian-painter-fresco-159862.jpeg"
+                            alt="The School of Athens by Raphael"
+                            class="w-full h-80 object-cover rounded-xl mb-8 transition-transform duration-500 hover:scale-105">
+
+                        <!-- Full-width Blockquote (Slogan) -->
+                        <div class="bg-gray-50 rounded-xl shadow-sm p-6 mb-8">
+                            <blockquote
+                                class="italic text-[16px] leading-relaxed text-gray-700 mb-4 border-l-4 border-red-600 pl-4">
+                                To take a trivial example, which of us ever undertakes laborious physical exercise,
+                                except to obtain some advantage from it?
+                            </blockquote>
+                            <div class="flex items-center gap-3 pl-4">
+                                <div class="w-8 h-0.5 bg-red-600"></div>
+                                <cite class="uppercase text-sm font-semibold text-red-600 tracking-widest not-italic">
+                                    Penci Design
+                                </cite>
+                            </div>
+                        </div>
+
+                        <!-- Main Content -->
+                        <div class="space-y-5 px-1.5 sm:px-0">
+                            <p class="text-[16px] leading-relaxed">
+                                When I hear the buzz of the little world among the stalks, and grow familiar with the
+                                countless indescribable forms of the insects and flies, then I feel.
+                            </p>
+                            <p class="text-[16px] leading-relaxed">
+                                Everyone realizes why a new common language would be desirable: one could refuse to pay
+                                expensive translators. To achieve this, it would be necessary to have uniform grammar,
+                                pronunciation and more common words.
+                            </p>
+                            <p class="text-[16px] leading-relaxed">
+                                The new common language will be Lorem ipsum dolor sit amet consectetur, adipisicing
+                                elit.
+                                Fugiat cum possimus ex nostrum laudantium itaque aperiam blanditiis maiores rerum
+                                similique
+                                voluptate autem error ut, optio incidunt debitis tempora facere molestias vitae natus
+                                enim
+                                minima, quae sit eius. Cum distinctio aliquid sapiente illum, eos repellendus voluptate,
+                                ipsum suscipit optio laudantium incidunt?
+                            </p>
+                        </div>
+
+                        <!-- Extra Section -->
+                        <div class="space-y-5 mt-8 px-1.5 sm:px-0">
+                            <p class="text-[16px] leading-relaxed text-black">
+                                The European languages are members of the same family. Their separate existence is a
+                                myth.
+                                For science, music, sport, etc, Europe uses the same vocabulary.
+                            </p>
+                            <p class="text-[16px] leading-relaxed text-black">
+                                To achieve this, it would be necessary to have uniform grammar, pronunciation and more
+                                common
+                                words.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <!-- New ONE -->
+                    <!-- New ONE -->
+                    <div class="text-[16px]  w-full leading-[24px] font-normal mb-4 px-1.5 sm:px-0">
+                        <div class="w-full">
+
+                            <!-- Image floated left -->
+                            <img src="https://images.pexels.com/photos/3811842/pexels-photo-3811842.jpeg"
+                                alt="Sample Image"
+                                class="w-full md:w-1/2 h-auto object-cover rounded-lg mb-4 md:mb-2 md:mr-4 float-left transition-transform duration-300 hover:scale-105">
+
+                            <!-- Text wraps around image -->
+                            <p class="pb-6">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, accusamus!
+                            </p>
+                            <p class="pb-6">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo necessitatibus obcaecati
+                                maiores
+                                veniam,
+                                pariatur dolorem accusantium minima nostrum optio illo!
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, inventore. Lorem ipsum
+                                dolor
+                                sit amet consectetur, adipisicing elit. Sunt cum vero dicta, similique, fugiat,
+                                laboriosam
+                                tenetur officiis iure facere ab voluptates voluptatibus odio! Expedita laborum nostrum
+                                fugit
+                                incidunt id repudiandae! Nostrum hic, harum repudiandae, placeat illo officiis
+                                voluptatibus
+                                suscipit perferendis nam mollitia inventore deleniti officia possimus voluptate
+                                similique?
+                                Corporis, mollitia. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est
+                                tenetur illum
+                                et quidem quia, quos, non minus porro dolorem soluta quae aspernatur labore iste
+                                laudantium?
+                            </p>
+                        </div>
+                        <h2 class="pb-6 font-semibold text-[28px] leading-[36.45px]">How To Achieve Zero Carbon Emission
+                        </h2>
+                        <p class="pb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nihil
+                            inventore, fugit
+                            sapiente dicta eos ab ipsam placeat quisquam magni, praesentium repellendus illo, cum
+                            aliquid? A
+                            possimus vitae odit sunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+                            ipsa, ab at
+                            sequi suscipit placeat ad quos iste vero cum.</p>
+                    </div>
+
+
+
+                    <div class="flex justify-between items-start border-t border-gray-200 pt-6 mt-8">
+
+                        <!-- Previous Post -->
+                        <div class="max-w-xs">
+                            <p class="text-[12px] text-gray-400">previous post</p>
+                            <h3 class="text-[14px] text-gray-800 hover:text-blue-700 transition-colors duration-300">
+                                Peloton to replace chief executive and cut 2,800 jobs amid sales slump
+                            </h3>
+                        </div>
+
+                        <!-- Next Post -->
+                        <div class="max-w-xs text-right">
+                            <p class="text-[12px] text-gray-400">next post</p>
+                            <h3 class=" text-[14px] hover:text-blue-700 transition-colors duration-300">
+                                No one should have to bear the online abuse I received while fighting hate
+                            </h3>
+                        </div>
+
+                    </div>
+
+                    <hr class=" max-w-7xl mx-auto py-4 lg:p-0 px-1.5 sm:px-0 mt-8 mb-8 border-gray-200">
+
+                    <!-- You May Also Like -->
+                    <!-- You May Also Like -->
+                    <section class="max-w-6xl mx-auto pb-10">
+                        <h2 class="text-center text-xl font-bold mb-8">YOU MAY ALSO LIKE</h2>
+
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+
+                            <!-- Item 1 -->
+                            <article class="group cursor-pointer">
+                                <div class="relative h-56 overflow-hidden">
+                                    <img src="https://images.unsplash.com/photo-1611605698335-8b1569810432?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                                        alt="Vaccination"
+                                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                                </div>
+                                <h3
+                                    class="mt-3 text-[15px] font-bold text-gray-800 uppercase leading-snug group-hover:text-blue-400 transition-colors duration-300">
+                                    Parents in California protest student COVID-19 vaccine mandate
+                                </h3>
+                                <p class="text-sm  mt-2">4 years ago</p>
+                            </article>
+
+                            <!-- Item 2 -->
+                            <article class="group cursor-pointer">
+                                <div class="relative h-56 overflow-hidden">
+                                    <img src="https://images.unsplash.com/photo-1611605698335-8b1569810432?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                                        alt="TikTok on phone"
+                                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                                </div>
+                                <h3
+                                    class="mt-3 text-[15px] font-bold text-gray-800 uppercase leading-snug group-hover:text-blue-400 transition-colors duration-300">
+                                    Viral TikTok trend that encourages vandalism hits California schools
+                                </h3>
+                                <p class="text-sm  mt-2">4 years ago</p>
+                            </article>
+
+                            <!-- Item 3 -->
+                            <article class="group cursor-pointer">
+                                <div class="relative h-56 overflow-hidden">
+                                    <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                                        alt="Students with masks"
+                                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                                </div>
+                                <h3
+                                    class="mt-3 text-[15px] font-bold text-gray-800 uppercase leading-snug group-hover:text-blue-400 transition-colors duration-300">
+                                    New data affirm it. L.A. County school safety policies are working as...
+                                </h3>
+                                <p class="text-sm  mt-2">4 years ago</p>
+                            </article>
+
+                            <!-- Item 4 -->
+                            <article class="group cursor-pointer">
+                                <div class="relative h-56 overflow-hidden">
+                                    <img src="https://images.unsplash.com/photo-1611605698335-8b1569810432?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                                        alt="Vaccination"
+                                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                                </div>
+                                <h3
+                                    class="mt-3 text-[15px] font-bold text-gray-800 uppercase leading-snug group-hover:text-blue-400 transition-colors duration-300">
+                                    Parents in California protest student COVID-19 vaccine mandate
+                                </h3>
+                                <p class="text-sm  mt-2">4 years ago</p>
+                            </article>
+
+                            <!-- Item 5 -->
+                            <article class="group cursor-pointer">
+                                <div class="relative h-56 overflow-hidden">
+                                    <img src="https://images.unsplash.com/photo-1611605698335-8b1569810432?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                                        alt="TikTok on phone"
+                                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                                </div>
+                                <h3
+                                    class="mt-3 text-[15px] font-bold text-gray-800 uppercase leading-snug group-hover:text-blue-400 transition-colors duration-300">
+                                    Viral TikTok trend that encourages vandalism hits California schools
+                                </h3>
+                                <p class="text-sm  mt-2">4 years ago</p>
+                            </article>
+
+                            <!-- Item 6 -->
+                            <article class="group cursor-pointer">
+                                <div class="relative h-56 overflow-hidden">
+                                    <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                                        alt="Students with masks"
+                                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                                </div>
+                                <h3
+                                    class="mt-3 text-[15px] font-bold text-gray-800 uppercase leading-snug group-hover:text-blue-400 transition-colors duration-300">
+                                    New data affirm it. L.A. County school safety policies are working as...
+                                </h3>
+                                <p class="text-sm  mt-2">4 years ago</p>
+                            </article>
+
+                        </div>
+                    </section>
+
+
+
+
+
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="w-full lg:w-[300px] bg-white p-4 shadow rounded">
+                <div class="w-full lg:w-[330px] flex-shrink-0 mt-8 lg:mt-0 lg:sticky lg:top-4 self-start h-fit">
+                    <div class="w-full border border-gray-300">
+
+                        <!-- Header -->
+                        <div class="flex items-start gap-4 mb-4 px-4 py-2">
+                            <h1 class="text-2xl font-bold text-red-600 leading-snug line-clamp-4">
+                                Editor's Picks
+                            </h1>
+                        </div>
+
+                        <!-- Articles List -->
+                        <div class="space-y-4 px-4 pb-4">
+                            <!-- Repeat Articles -->
+                            <div
+                                class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pb-4 border-b border-gray-300">
+                                <img src="https://placehold.co/68x68/d1d5db/374151?text=img"
+                                    alt="Women in colorful dresses dancing"
+                                    class="w-[68px] h-[68px] object-cover rounded-md flex-shrink-0">
+                                <div class="flex flex-col">
+                                    <h2 class="text-[14px] font-bold text-gray-900 leading-tight mb-1 line-clamp-2">
+                                        EU: ‘Addiction’ to Social Media Causing Conspiracy Theories
+                                    </h2>
+                                    <div class="flex items-center text-xs font-semibold">
+                                        <span class="text-gray-500">Jan 11, 2021</span>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <!-- Repeat Articles -->
+                            <div
+                                class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pb-4 border-b border-gray-300">
+                                <img src="https://placehold.co/68x68/d1d5db/374151?text=img"
+                                    alt="Women in colorful dresses dancing"
+                                    class="w-[68px] h-[68px] object-cover rounded-md flex-shrink-0">
+                                <div class="flex flex-col">
+                                    <h2 class="text-[14px] font-bold text-gray-900 leading-tight mb-1 line-clamp-2">
+                                        EU: ‘Addiction’ to Social Media Causing Conspiracy Theories
+                                    </h2>
+                                    <div class="flex items-center text-xs font-semibold">
+                                        <span class="text-gray-500">Jan 11, 2021</span>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <!-- Repeat Articles -->
+                           <div
+                                class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pb-4 border-b border-gray-300">
+                                <img src="https://placehold.co/68x68/d1d5db/374151?text=img"
+                                    alt="Women in colorful dresses dancing"
+                                    class="w-[68px] h-[68px] object-cover rounded-md flex-shrink-0">
+                                <div class="flex flex-col">
+                                    <h2 class="text-[14px] font-bold text-gray-900 leading-tight mb-1 line-clamp-2">
+                                        EU: ‘Addiction’ to Social Media Causing Conspiracy Theories
+                                    </h2>
+                                    <div class="flex items-center text-xs font-semibold">
+                                        <span class="text-gray-500">Jan 11, 2021</span>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <!-- Repeat Articles -->
+                           <div
+                                class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pb-4 border-b border-gray-300">
+                                <img src="https://placehold.co/68x68/d1d5db/374151?text=img"
+                                    alt="Women in colorful dresses dancing"
+                                    class="w-[68px] h-[68px] object-cover rounded-md flex-shrink-0">
+                                <div class="flex flex-col">
+                                    <h2 class="text-[14px] font-bold text-gray-900 leading-tight mb-1 line-clamp-2">
+                                        EU: ‘Addiction’ to Social Media Causing Conspiracy Theories
+                                    </h2>
+                                    <div class="flex items-center text-xs font-semibold">
+                                        <span class="text-gray-500">Jan 11, 2021</span>
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+                            <div class="flex items-start gap-4 mb-4 px-4 py-2">
+                            <h1 class="text-2xl font-bold text-red-600 leading-snug line-clamp-4">
+                                LATEST POSTS
+                            </h1>
+                        </div>
+
+                            <!-- LATEST POST SECTION -->
+                            <div class="mb-6">
+                                <img src="https://images.pexels.com/photos/32965512/pexels-photo-32965512.jpeg"
+                                    alt="Post Image 1"
+                                    class="w-full h-[130px] object-cover transition duration-300 hover:opacity-80">
+                                <div class="flex mt-2">
+                                    <span class="text-red-600 font-extrabold text-[30px] mr-2">1.</span>
+                                    <p class="text-[15px] font-semibold leading-snug hover:text-red-600 cursor-pointer">
+                                        Grolar Bear Hybrids in N.W.T. All Traced Back to Same ‘Strange’ Female Polar
+                                        Bear
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="mb-6">
+                                <img src="https://images.pexels.com/photos/32965512/pexels-photo-32965512.jpeg"
+                                    alt="Post Image 1"
+                                    class="w-full h-[130px] object-cover transition duration-300 hover:opacity-80">
+                                <div class="flex mt-2">
+                                    <span class="text-red-600 font-extrabold text-[30px] mr-2">2.</span>
+                                    <p class="text-[15px] font-semibold leading-snug hover:text-red-600 cursor-pointer">
+                                        Grolar Bear Hybrids in N.W.T. All Traced Back to Same ‘Strange’ Female Polar
+                                        Bear
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="mb-6">
+                                <img src="https://images.pexels.com/photos/32965512/pexels-photo-32965512.jpeg"
+                                    alt="Post Image 1"
+                                    class="w-full h-[130px] object-cover transition duration-300 hover:opacity-80">
+                                <div class="flex mt-2">
+                                    <span class="text-red-600 font-extrabold text-[30px] mr-2">3.</span>
+                                    <p class="text-[15px] font-semibold leading-snug hover:text-red-600 cursor-pointer">
+                                        Grolar Bear Hybrids in N.W.T. All Traced Back to Same ‘Strange’ Female Polar
+                                        Bear
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-4">
+        <div class="text-center text-sm">
+            POLITICAL-CRYPTO&copy; <span id="year"></span> All Rights Reserved.
+        </div>
+    </footer>
+    <!-- JS CODE -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>

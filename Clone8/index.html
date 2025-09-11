@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Newspaper</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <nav class="logo">
+        <img src="https://demo.tagdiv.com/newspaper_magazine_pro/wp-content/uploads/2020/06/logo-header.png.webp"
+            alt="Logo">
+
+        <div class="navigations">
+            <a href="/">Home</a>
+            <a href="/">Global</a>
+            <a href="/">Lifestyle</a>
+            <a href="/">Fashion</a>
+            <a href="/">Gaming</a>
+            <a href="/">Fitness</a>
+            <a href="/">Video</a>
+            <a href="/">More</a>
+        </div>
+
+        <!-- Hamburger Icon -->
+        <div class="hamburger" onclick="toggleMenu(this)">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+    <div class="container">
+        <!-- Main Article -->
+        <div class="main-article" style="background-image: url('https://picsum.photos/id/1011/800/600');">
+            <div class="overlay">
+                <div class="category">STYLE</div>
+                <h2>What Makeup to Wear Daily, No Matter What You’ve Got Planned</h2>
+                <p>David Lee - June 3, 2020</p>
+            </div>
+        </div>
+
+        <!-- Side Articles -->
+        <div class="side-articles">
+            <div class="article" style="background-image: url('https://picsum.photos/id/1015/400/300');">
+                <div class="overlay">
+                    <div class="category">TRAVEL</div>
+                    <h3>Work Out as Much as Possible During Your All Inclusive Vacations</h3>
+                </div>
+            </div>
+
+            <div class="article" style="background-image: url('https://picsum.photos/id/1012/400/300');">
+                <div class="overlay">
+                    <div class="category">STYLE</div>
+                    <h3>Expert Advice: The Best Cheap Retro Chic Fashion for this Fall</h3>
+                </div>
+            </div>
+
+            <div class="article" style="background-image: url('https://picsum.photos/id/1016/400/300');">
+                <div class="overlay">
+                    <div class="category">SHOWBIZ</div>
+                    <h3>Bloggers Hijacked the Industry, Cutting a Piece of Earnings</h3>
+                </div>
+            </div>
+
+            <div class="article" style="background-image: url('https://picsum.photos/id/1018/400/300');">
+                <div class="overlay">
+                    <div class="category">FACTS</div>
+                    <h3>The Weirdest Places Ashes Have Been Scattered in South America</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="global">
+        <h2>Global News</h2>
+    </div>
+    <div class="global-news">
+        <div class="left-artical">
+            <img src="https://images.pexels.com/photos/354939/pexels-photo-354939.jpeg" alt="Image">
+            <div>
+                <p>Global</p>
+                <h2>Witnessing the Birth of the New Coronavirus Economy</h2>
+                <p>David Lee - June 3, 2020</p>
+                <p>People live better in big houses and in big clothes. I try to contrast; life today is full of
+                    contrast. We have to change!... More and More People Stay Home as Coronavirus Spreads June 3, 2020
+                    The Real Economy Has Never Been Tested by a Pandemic June 3, 2020 How to Think and Act in the
+                    Plummeting Stock Market June 3, 2020 H&M’s Fashion Photoshoot Campaign is the Coolest Thing We’ve
+                    Seen June 1, 2020</p>
+            </div>
+        </div>
+        <div class="sidebar">
+            <div class="side-artical">
+                <img src="https://demo.tagdiv.com/newspaper_magazine_pro/wp-content/uploads/2020/06/3-218x150.jpg.webp"
+                    alt="">
+                <div>
+                    <h4>More and More People Stay Home as Coronavirus Spreads</h4>
+                    <p>June 3, 2020</p>
+                </div>
+            </div>
+            <div class="side-artical">
+                <img src="https://demo.tagdiv.com/newspaper_magazine_pro/wp-content/uploads/2020/06/3-218x150.jpg.webp"
+                    alt="">
+                <div>
+                    <h4>More and More People Stay Home as Coronavirus Spreads</h4>
+                    <p>June 3, 2020</p>
+                </div>
+            </div>
+            <div class="side-artical">
+                <img src="https://demo.tagdiv.com/newspaper_magazine_pro/wp-content/uploads/2020/06/3-218x150.jpg.webp"
+                    alt="">
+                <div>
+                    <h4>More and More People Stay Home as Coronavirus Spreads</h4>
+                    <p>June 3, 2020</p>
+                </div>
+            </div>
+            <div class="side-artical">
+                <img src="https://demo.tagdiv.com/newspaper_magazine_pro/wp-content/uploads/2020/06/3-218x150.jpg.webp"
+                    alt="">
+                <div>
+                    <h4>More and More People Stay Home as Coronavirus Spreads</h4>
+                    <p>June 3, 2020</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Travels Guide -->
+    <div class="travel-guides-container">
+        <h3 class="section-title"><span>TRAVEL GUIDES</span></h3>
+        <div class="travel-cards-grid">
+            <div class="travel-card">
+                <img src="https://images.pexels.com/photos/346885/pexels-photo-346885.jpeg"
+                    alt="Exotic Travel Destinations">
+                <div class="overlay-content">
+                    <p class="category">TRAVEL</p>
+                    <h4>Out of This World Experience with these Exotic Travel Destinations</h4>
+                </div>
+            </div>
+            <div class="travel-card">
+                <img src="https://images.pexels.com/photos/32825864/pexels-photo-32825864.jpeg" alt="Workout on road">
+                <div class="overlay-content">
+                    <p class="category">TRAVEL</p>
+                    <h4>Work Out as Much as Possible During Your All Inclusive Vacations</h4>
+                </div>
+            </div>
+            <div class="travel-card">
+                <img src="https://images.pexels.com/photos/1285625/pexels-photo-1285625.jpeg" alt="Real Life Adventure">
+                <div class="overlay-content">
+                    <p class="category">TRAVEL</p>
+                    <h4>Bali Travel Experience: Combine Luxury with a Real Life Adventure</h4>
+                </div>
+            </div>
+        </div>
+        <div class="pagination">
+            <i class="fas fa-chevron-left"></i>
+            <i class="fas fa-chevron-right"></i>
+        </div>
+    </div>
+
+    <!-- Gadget Recepie and most popular -->
+    <div class="container11">
+
+        <!-- Gadgets -->
+        <div class="gadgets">
+            <h2>Gadgets</h2>
+            <div class="card11">
+                <img src="https://images.pexels.com/photos/33079382/pexels-photo-33079382.jpeg" alt="Gadget">
+                <h3>Modular Systems Will Keep Your Smart Home from Becoming Obsolete</h3>
+                <div class="author">David Lee - June 3, 2020</div>
+                <p>People live better in big houses and in big clothes. I try to contrast; life today is full of
+                    contrast...</p>
+            </div>
+
+            <div class="sub-article">
+                <img src="https://images.pexels.com/photos/33079382/pexels-photo-33079382.jpeg" alt="">
+                <div>
+                    <h4>Sneak Peak: Best Smart Home Gadgets & Features to Install Today</h4>
+                    <p>June 3, 2020</p>
+                </div>
+            </div>
+
+            <div class="sub-article">
+                <img src="https://images.pexels.com/photos/33079382/pexels-photo-33079382.jpeg" alt="">
+                <div>
+                    <h4>Lights Guide for your Home: Ultimate LED vs. Old Generations</h4>
+                    <p>June 3, 2020</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Recipes -->
+        <div class="recipes">
+            <h2>Recipes</h2>
+            <div class="card11">
+                <img src="https://images.pexels.com/photos/33079382/pexels-photo-33079382.jpeg" alt="Bakery">
+                <h3>One of a Kind Traditional Bakeries Must Tries When in Morocco</h3>
+                <div class="author">David Lee - June 3, 2020</div>
+                <p>People live better in big houses and in big clothes. I try to contrast; life today is full of
+                    contrast...</p>
+            </div>
+
+            <div class="sub-article">
+                <img src="https://images.pexels.com/photos/33079382/pexels-photo-33079382.jpeg" alt="">
+                <div>
+                    <h4>Traveller’s Tip: Where to Find the Best Food Around Shanghai</h4>
+                    <p>June 3, 2020</p>
+                </div>
+            </div>
+
+            <div class="sub-article">
+                <img src="https://images.pexels.com/photos/33079382/pexels-photo-33079382.jpeg" alt="">
+                <div>
+                    <h4>The Best Yummy Italian Pasta Recipe for All Food Travelers</h4>
+                    <p>June 3, 2020</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Most Popular -->
+        <div class="popular">
+            <h2>Most Popular</h2>
+
+            <div class="popular-item">
+                <img src="https://images.pexels.com/photos/33079382/pexels-photo-33079382.jpeg" alt="">
+                <div>
+                    <span>Style</span>
+                    <h4>What Makeup to Wear Daily, No Matter What You’ve Got Planned</h4>
+                </div>
+            </div>
+
+            <div class="popular-item">
+                <img src="https://images.pexels.com/photos/33079382/pexels-photo-33079382.jpeg" alt="">
+                <div>
+                    <span>What's Hot</span>
+                    <h4>5 Most Affordable and Fun Swimsuits to Try This Summer Season</h4>
+                </div>
+            </div>
+
+            <div class="popular-item">
+                <img src="https://images.pexels.com/photos/33079382/pexels-photo-33079382.jpeg" alt="">
+                <div>
+                    <span>Style</span>
+                    <h4>Style Spy: Fashion Model Goes Casual in Distinct and Original Way</h4>
+                </div>
+            </div>
+
+            <div class="popular-item">
+                <img src="https://images.pexels.com/photos/33079382/pexels-photo-33079382.jpeg" alt="">
+                <div>
+                    <span>Global</span>
+                    <h4>Witnessing the Birth of the New Coronavirus Economy</h4>
+                </div>
+            </div>
+            <div class="popular-item">
+                <img src="https://images.pexels.com/photos/33079382/pexels-photo-33079382.jpeg" alt="">
+                <div>
+                    <span>Style</span>
+                    <h4>What Makeup to Wear Daily, No Matter What You’ve Got Planned</h4>
+                </div>
+            </div>
+            <div class="popular-item">
+                <img src="https://images.pexels.com/photos/33079382/pexels-photo-33079382.jpeg" alt="">
+                <div>
+                    <span>Style</span>
+                    <h4>What Makeup to Wear Daily, No Matter What You’ve Got Planned</h4>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Card -->
+    <div class="card-wrapper">
+        <div class="card-container">
+            <div class="card"
+                style="background-image: url('https://images.pexels.com/photos/354939/pexels-photo-354939.jpeg');">
+                <div class="content">
+                    <p class="category">FASHION</p>
+                    <h2>Amazing Model On Site in Ibiza, on the Best Rated Photo Location</h2>
+                    <p class="meta">David Lee - June 3, 2020</p>
+                </div>
+            </div>
+            <div class="card"
+                style="background-image: url('https://images.pexels.com/photos/354939/pexels-photo-354939.jpeg');">
+                <div class="content">
+                    <p class="category">FASHION</p>
+                    <h2>Beauty Model Working on New Photoshoot on North Thailand Beach</h2>
+                    <p class="meta">David Lee - June 3, 2020</p>
+                </div>
+            </div>
+            <div class="card"
+                style="background-image: url('https://images.pexels.com/photos/354939/pexels-photo-354939.jpeg');">
+                <div class="content">
+                    <p class="category">FASHION</p>
+                    <h2>Victoria's Secret Afterparty Goes Off with a Bang This Year</h2>
+                    <p class="meta">David Lee - June 3, 2020</p>
+                </div>
+            </div>
+            <div class="card"
+                style="background-image: url('https://images.pexels.com/photos/354939/pexels-photo-354939.jpeg');">
+                <div class="content">
+                    <p class="category">FASHION</p>
+                    <h2>Sisters Land Fashion Role on the Cover of Bestseller Magazine</h2>
+                    <p class="meta">David Lee - June 3, 2020</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fitness and Gaming -->
+
+    <div class="news-grid-container">
+        <div class="left-column">
+            <div class="column-header">
+                <h3 class="category-title">FITNESS</h3>
+                <div class="dropdown">
+                    <span>All</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+
+            <div class="article-item large-image">
+                <img src="https://images.pexels.com/photos/354939/pexels-photo-354939.jpeg" alt="Woman climbing">
+                <div class="article-content">
+                    <h2>British Study: Daily Workouts Help You Cope Better with Stress</h2>
+                    <p class="meta">FITNESS <span>David Lee - June 3, 2020</span></p>
+                    <p class="excerpt">People live better in big houses and in big clothes. I try to contrast; life
+                        today is full of contrast. We have to change!...</p>
+                </div>
+            </div>
+
+            <div class="article-item">
+                <img src="https://images.pexels.com/photos/354939/pexels-photo-354939.jpeg" alt="Man lifting weights">
+                <div class="article-content">
+                    <h2>10 Steps to Make to be Successful in Bodybuilding and in Life</h2>
+                    <p class="meta">FITNESS <span>David Lee - June 3, 2020</span></p>
+                    <p class="excerpt">People live better in big houses and in big clothes. I try to contrast; life
+                        today is full of contrast. We have to change!...</p>
+                </div>
+            </div>
+
+            <div class="article-item">
+                <img src="https://images.pexels.com/photos/354939/pexels-photo-354939.jpeg" alt="Couple running">
+                <div class="article-content">
+                    <h2>Discover How Physical Exercises Make your Brain Work Better</h2>
+                    <p class="meta">FITNESS <span>David Lee - June 3, 2020</span></p>
+                    <p class="excerpt">People live better in big houses and in big clothes. I try to contrast; life
+                        today is full of contrast. We have to change!...</p>
+                </div>
+            </div>
+            <div class="article-item">
+                <img src="https://images.pexels.com/photos/7303859/pexels-photo-7303859.jpeg" alt="Couple running">
+                <div class="article-content">
+                    <h2>Discover How Physical Exercises Make your Brain Work Better</h2>
+                    <p class="meta">FITNESS <span>David Lee - June 3, 2020</span></p>
+                    <p class="excerpt">People live better in big houses and in big clothes. I try to contrast; life
+                        today is full of contrast. We have to change!...</p>
+                </div>
+            </div>
+
+            <div class="article-item">
+                <img src="https://images.pexels.com/photos/354939/pexels-photo-354939.jpeg"
+                    alt="Man listening to music">
+                <div class="article-content">
+                    <h2>How to Transform your Weight Loss Routine into a Lifestyle</h2>
+                    <p class="meta">FITNESS <span>David Lee - June 3, 2020</span></p>
+                    <p class="excerpt">People live better in big houses and in big clothes. I try to contrast; life
+                        today is full of contrast. We have to change!...</p>
+                </div>
+            </div>
+            <div class="article-item">
+                <img src="https://images.pexels.com/photos/9533990/pexels-photo-9533990.jpeg"
+                    alt="Man listening to music">
+                <div class="article-content">
+                    <h2>How to Transform your Weight Loss Routine into a Lifestyle</h2>
+                    <p class="meta">FITNESS <span>David Lee - June 3, 2020</span></p>
+                    <p class="excerpt">People live better in big houses and in big clothes. I try to contrast; life
+                        today is full of contrast. We have to change!...</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-column">
+            <div class="column-header">
+                <h3 class="category-title">GAMING</h3>
+                <div class="dropdown">
+                    <span>All</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+
+            <div class="article-item main-gaming-article">
+                <img src="https://images.pexels.com/photos/354939/pexels-photo-354939.jpeg" alt="Gaming Setup">
+                <div class="article-content">
+                    <h2>Microsoft to Start Gaming Development Systems in March</h2>
+                    <p class="meta">GAMING <span>David Lee - June 3, 2020</span></p>
+                    <p class="excerpt">People live better in big houses and in big clothes. I try to contrast; life
+                        today is full of contrast. We have to change!...</p>
+                </div>
+            </div>
+            <div class="article-item main-gaming-article">
+                <img src="https://images.pexels.com/photos/9533990/pexels-photo-9533990.jpeg" alt="Gaming Setup">
+                <div class="article-content">
+                    <h2>Microsoft to Start Gaming Development Systems in March</h2>
+                    <p class="meta">GAMING <span>David Lee - June 3, 2020</span></p>
+                    <p class="excerpt">People live better in big houses and in big clothes. I try to contrast; life
+                        today is full of contrast. We have to change!...</p>
+                </div>
+            </div>
+
+            <div class="pagination">
+                <a href="#" class="page-arrow"><i class="fas fa-chevron-left"></i></a>
+                <a href="#" class="page-arrow"><i class="fas fa-chevron-right"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- New - Container -->
+    <div class="news-container">
+        <section class="latest-articles-section">
+            <h3 class="section-title"><span>LATEST ARTICLES</span></h3>
+            <div class="articles-grid">
+                <div class="article-card">
+                    <img src="https://images.pexels.com/photos/354939/pexels-photo-354939.jpeg" alt="Mountain Lake">
+                    <div class="card-content">
+                        <p class="category">FACTS</p>
+                        <h4>The Travel Insurance Catch that can Double Your Cover in Two Months</h4>
+                        <p class="meta">David Lee - June 3, 2020</p>
+                    </div>
+                </div>
+                <div class="article-card">
+                    <img src="https://images.pexels.com/photos/354939/pexels-photo-354939.jpeg" alt="Waterfall">
+                    <div class="card-content">
+                        <p class="category">FACTS</p>
+                        <h4>The Weirdest Places Ashes Have Been Scattered in South America</h4>
+                        <p class="meta">David Lee - June 3, 2020</p>
+                    </div>
+                </div>
+                <div class="article-card">
+                    <img src="https://images.pexels.com/photos/354939/pexels-photo-354939.jpeg" alt="Woman on mountain">
+                    <div class="card-content">
+                        <p class="category">FACTS</p>
+                        <h4>The Travel Insurance Catch that can Double Your Cover in Two Months</h4>
+                        <p class="meta">David Lee - June 3, 2020</p>
+                    </div>
+                </div>
+                <div class="article-card">
+                    <img src="https://images.pexels.com/photos/354939/pexels-photo-354939.jpeg"
+                        alt="Person with spray paint">
+                    <div class="card-content">
+                        <p class="category">FACTS</p>
+                        <h4>The Weirdest Places Ashes Have Been Scattered in South America</h4>
+                        <p class="meta">David Lee - June 3, 2020</p>
+                    </div>
+                </div>
+                <div class="article-card">
+                    <img src="https://images.pexels.com/photos/354939/pexels-photo-354939.jpeg" alt="Row of houses">
+                    <div class="card-content">
+                        <p class="category">FACTS</p>
+                        <h4>The Travel Insurance Catch that can Double Your Cover in Two Months</h4>
+                        <p class="meta">David Lee - June 3, 2020</p>
+                    </div>
+                </div>
+                <div class="article-card">
+                    <img src="https://images.pexels.com/photos/32480714/pexels-photo-32480714.jpeg" alt="Cityscape">
+                    <div class="card-content">
+                        <p class="category">FACTS</p>
+                        <h4>The Weirdest Places Ashes Have Been Scattered in South America</h4>
+                        <p class="meta">David Lee - June 3, 2020</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <aside class="must-read-sidebar">
+            <div>
+                <div class="must-read-list">
+                    <h3 class="section-title"><span>MUST READ</span></h3>
+                    <div class="must-read-item">
+                        <p class="category">STYLE</p>
+                        <h4>What Makeup to Wear Daily, No Matter What You've Got Planned</h4>
+                        <p class="meta">David Lee - June 3, 2020</p>
+                    </div>
+                    <div class="must-read-item">
+                        <p class="category">WHAT'S HOT</p>
+                        <h4>5 Most Affordable and Fun Swimsuits to Try This Summer Season</h4>
+                        <p class="meta">David Lee - June 3, 2020</p>
+                    </div>
+                    <div class="must-read-item">
+                        <p class="category">STYLE</p>
+                        <h4>Style Spy: Fashion Model Goes Casual in Distinct and Original Way</h4>
+                        <p class="meta">David Lee - June 3, 2020</p>
+                    </div>
+                    <div class="must-read-item">
+                        <p class="category">STYLE</p>
+                        <h4>Expert Advice: The Best Cheap Retro Chic Fashion for this Fall</h4>
+                        <p class="meta">David Lee - June 3, 2020</p>
+                    </div>
+                    <div class="must-read-item">
+                        <p class="category">GLOBAL</p>
+                        <h4>Witnessing the Birth of the New Coronavirus Economy</h4>
+                        <p class="meta">David Lee - June 3, 2020</p>
+                    </div>
+                </div>
+                <div class="pagination">
+                    <i class="fas fa-chevron-left"></i>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </div>
+            <div>
+
+                <div class="must-read-list">
+                </div>
+                <div class="pagination">
+                </div>
+
+                <div class="categories-section">
+                    <h3 class="section-title categories-title"><span>CATEGORIES</span></h3>
+                    <ul class="category-list">
+                        <li>
+                            <a href="#">Fashion</a>
+                            <span>10</span>
+                        </li>
+                        <li>
+                            <a href="#">Facts</a>
+                            <span>10</span>
+                        </li>
+                        <li>
+                            <a href="#">Gaming</a>
+                            <span>10</span>
+                        </li>
+                        <li>
+                            <a href="#">Style</a>
+                            <span>10</span>
+                        </li>
+                        <li>
+                            <a href="#">Video</a>
+                            <span>10</span>
+                        </li>
+                        <li>
+                            <a href="#">Photography</a>
+                            <span>10</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+    </div>
+    
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-copyright">
+                <p>&copy; Copyright - Newspaper WordPress Theme by TagDiv</p>
+            </div>
+            <div class="footer-links">
+                <a href="#">Blog</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

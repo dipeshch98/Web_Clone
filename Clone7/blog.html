@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts: Inter + Alegreya -->
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700&family=Inter:wght@400;500&display=swap"
+        rel="stylesheet">
+    <style>
+        .font-alegreya {
+            font-family: 'Alegreya', serif;
+        }
+
+        .font-inter {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 py-10">
+
+        <nav class="flex items-center justify-between pb-3 border-b">
+            <!-- Logo -->
+            <div class="flex items-center gap-2">
+                <div class="w-8 h-8 bg-red-600 flex items-center justify-center rounded">
+                    <span class="text-white font-bold">▶</span>
+                </div>
+                <h1 class=" text-[40px] font-bold font-alegreya leading-[26px] text-black">
+                    Forcast
+                </h1>
+            </div>
+
+            <!-- Desktop Menu -->
+            <ul class="hidden font-inter leading-[26px] text-[15px] md:flex space-x-8 font-semibold">
+                <li class="hover:text-red-600 cursor-pointer">HOME</li>
+                <li class="hover:text-red-600 cursor-pointer">POST FEATURES</li>
+                <li class="hover:text-red-600 cursor-pointer">TECHNOLOGY</li>
+                <li class="hover:text-red-600 cursor-pointer">BREAKING NEWS</li>
+                <li class="hover:text-red-600 cursor-pointer">PAGES</li>
+            </ul>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="md:hidden text-2xl">☰</button>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu"
+            class="hidden font-inter flex-col items-center space-y-4 py-6 bg-gray-100 rounded-lg shadow-md md:hidden">
+
+            <a href="#" class="w-full text-center py-2 px-4 rounded-md hover:bg-red-600 hover:text-white transition">
+                HOME
+            </a>
+
+            <a href="#" class="w-full text-center py-2 px-4 rounded-md hover:bg-red-600 hover:text-white transition">
+                POST FEATURES
+            </a>
+
+            <a href="#" class="w-full text-center py-2 px-4 rounded-md hover:bg-red-600 hover:text-white transition">
+                TECHNOLOGY
+            </a>
+
+            <a href="#" class="w-full text-center py-2 px-4 rounded-md hover:bg-red-600 hover:text-white transition">
+                BREAKING NEWS
+            </a>
+
+            <a href="#" class="w-full text-center py-2 px-4 rounded-md hover:bg-red-600 hover:text-white transition">
+                PAGES
+            </a>
+        </div>
+
+    </div>
+
+
+    <div class="max-w-7xl mx-auto px-4 py-10">
+        <!-- Grid Layout -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+
+            <!-- Main Blog Content (Left Column) -->
+            <div class="lg:col-span-2">
+                <!-- Blog Category -->
+                <span
+                    class="inline-block bg-red-600 text-white text-xs font-semibold px-3 py-1 rounded mb-3">Business</span>
+
+                <!-- Blog Title -->
+                <h1 class="text-4xl font-alegreya font-bold leading-snug mb-4">
+                    The Future of Work: Adapting to Changing Trends and Technologies
+                </h1>
+
+                <!-- Blog Meta -->
+                <div class="flex items-center flex-wrap gap-4 text-gray-500 text-sm mb-6">
+                    <div class="flex items-center gap-2">
+                        <img src="https://i.pravatar.cc/40" class="w-8 h-8 rounded-full transition-transform duration-300 hover:scale-105" alt="Author">
+                        <span class="font-medium">Empath</span>
+                    </div>
+                    <span class="flex items-center gap-1">📅 March 26, 2024</span>
+                    <span class="flex items-center gap-1">💬 0 Comments</span>
+                    <span class="flex items-center gap-1">📊 834 Views</span>
+                    <span class="flex items-center gap-1 cursor-pointer">🔖 Save</span>
+                </div>
+
+                <!-- Blog Short Intro -->
+                <p class="font-inter text-[18px] font-normal leading-[28px] text-[#666666] mb-6">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis amet consequuntur numquam molestias
+                    officia minus labore ex, blanditiis maiores eum atque a reprehenderit mollitia hic delectus dolorum.
+                </p>
+
+                <!-- Blog Image -->
+                <img src="https://images.pexels.com/photos/32922275/pexels-photo-32922275.jpeg" alt="Blog Post Image"
+                    class="w-full rounded-2xl shadow mb-6 transition-transform duration-300 hover:scale-105">
+
+                <!-- Blog Content -->
+                <p class="font-inter text-[18px] font-normal leading-[28px] text-[#666666] mb-6">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero, magnam omnis reprehenderit nemo
+                    quos accusantium sapiente molestiae dicta provident aliquam tempora doloribus exercitationem nihil,
+                    <b>commodi maiores ipsam, corporis assumenda ipsum ullam dolorem magni</b> ratione facilis! Enim,
+                    ipsa.
+                </p>
+
+                <h2 class="text-3xl font-alegreya font-bold leading-snug mb-4 mt-4">Where can I get some?</h2>
+                <p class="font-inter text-[18px] font-normal leading-[28px] text-[#666666] mb-6">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero, magnam omnis reprehenderit nemo
+                    quos accusantium sapiente molestiae dicta provident aliquam tempora doloribus exercitationem nihil,
+                    commodi maiores ipsam, corporis assumenda ipsum ullam dolorem magni ratione facilis! Enim,
+                    ipsa.
+                </p>
+                <p class="font-inter text-[18px] font-normal leading-[28px] text-[#666666] mb-6">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero, magnam omnis reprehenderit nemo
+                    exercitationem nihil,
+                    commodi maiores ipsam, corporis assumenda ipsum ullam dolorem magni ratione facilis! Enim,
+                    ipsa.
+                </p>
+                <h2 class="text-2xl font-alegreya font-bold leading-snug mb-4 mt-4">Content</h2>
+                <div class="max-w-7xl mx-auto px-0 pb-5">
+                    <div class="flex flex-col md:flex-row md:space-x-12">
+                        <div class="md:w-1/2">
+                            <ul>
+                                <li
+                                    class="flex items-center space-x-2 font-inter text-base font-medium leading-7 text-black mb-4">
+                                    <svg class="w-5 h-5 text-red-600 flex-shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span>Website should be easy to navigate</span>
+                                </li>
+                                <li
+                                    class="flex items-center space-x-2 font-inter text-base font-medium leading-7 text-black mb-4">
+                                    <svg class="w-5 h-5 text-red-600 flex-shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span>Help website visual composition</span>
+                                </li>
+                                <li
+                                    class="flex items-center space-x-2 font-inter text-base font-medium leading-7 text-black">
+                                    <svg class="w-5 h-5 text-red-600 flex-shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span>Interactive elements are easy to identify</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="md:w-1/2 mt-8 md:mt-0">
+                            <ul>
+                                <li
+                                    class="flex items-center space-x-2 font-inter text-base font-medium leading-7 text-black mb-4">
+                                    <svg class="w-5 h-5 text-red-600 flex-shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span>Creating visual rhythms in your layouts</span>
+                                </li>
+                                <li
+                                    class="flex items-center space-x-2 font-inter text-base font-medium leading-7 text-black mb-4">
+                                    <svg class="w-5 h-5 text-red-600 flex-shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span>Diving into UX and UI design</span>
+                                </li>
+                                <li
+                                    class="flex items-center space-x-2 font-inter text-base font-medium leading-7 text-black">
+                                    <svg class="w-5 h-5 text-red-600 flex-shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span>Breaking down the barriers</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="font-inter text-[18px] font-normal leading-[28px] text-[#666666] mb-6">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero, magnam omnis reprehenderit nemo
+                    quos accusantium sapiente molestiae dicta provident aliquam tempora doloribus exercitationem nihil,
+                    <b>commodi maiores ipsam, corporis assumenda ipsum ullam dolorem magni</b> ratione facilis! Enim,
+                    ipsa.
+                </p>
+                <p class="font-inter text-[18px] font-normal leading-[28px] text-[#666666] mb-6">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero, magnam omnis reprehenderit nemo
+                    quos accusantium sapiente molestiae dictas exercitationem nihil, ratione facilis! Enim,
+                    ipsa.
+                </p>
+                <p class="font-inter text-[18px] font-normal leading-[28px] text-[#666666] mb-6">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero, magnam omnis reprehenderit nemo
+                    quos accusantium sapiente molestiae dictas exercitationem nihil, ratione facilis! Enim,
+                    ipsa.
+                </p>
+                <p class="font-inter text-[18px] font-normal leading-[28px] text-[#666666] mb-6">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero, magnam omnis reprehenderit nemo
+                    quos accusantium sapiente molestiae
+                </p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div class="w-full h-64 sm:h-80 rounded-lg overflow-hidden">
+                        <img src="https://images.pexels.com/photos/1133957/pexels-photo-1133957.jpeg" alt="Placeholder Image 1"
+                            class="object-cover w-full h-full transition-transform duration-300 hover:scale-105">
+                    </div>
+                    <div class="w-full h-64 sm:h-80 rounded-lg overflow-hidden">
+                        <img src="https://images.pexels.com/photos/247599/pexels-photo-247599.jpeg" alt="Placeholder Image 2"
+                            class="object-cover w-full h-full transition-transform duration-300 hover:scale-105">
+                    </div>
+                </div>
+                <h2 class="text-3xl font-alegreya font-bold leading-snug mb-4 mt-4">A good website should be easy to
+                    navigate</h2>
+                <p class="font-inter text-[18px] font-normal leading-[28px] text-[#666666] mb-6">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero, magnam omnis reprehenderit nemo
+                    quos accusantium sapiente molestiae
+                </p>
+                <p class="font-inter text-[18px] font-normal leading-[28px] text-[#666666] mb-6">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore temporibus sunt soluta tempora
+                    similique maiores, asperiores expedita maxime debitis doloribus, minima numquam, enim fuga
+                    repellendus eaque dolores recusandae quibusdam beatae quis quas. Sed, exercitationem beatae? Facere,
+                    veritatis. Molestias mollitia doloribus eos, corporis dolor, ex nesciunt perspiciatis est sapiente
+                    nobis neque voluptatum maiores doloremque dolorem ipsum!
+                </p>
+
+                <h2 class="text-3xl font-alegreya font-bold leading-snug mb-4 mt-4">A good website should be easy to
+                    navigate</h2>
+
+                <p class="font-inter text-[18px] font-normal leading-[28px] text-[#666666] mb-6">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore temporibus sunt soluta tempora
+                    similique maiores, asperiores expedita maxime debitis doloribus, minima numquam, enim fuga
+                </p>
+
+                <div class="max-w-7xl mx-auto px-0 pb-5">
+                    <div class="flex flex-col space-y-4">
+                        <div class="flex items-center space-x-2 text-base font-medium text-black">
+                            <svg class="w-5 h-5 text-red-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            <span>Website should be easy to navigate</span>
+                        </div>
+
+                        <div class="flex items-center space-x-2 text-base font-medium text-black">
+                            <svg class="w-5 h-5 text-red-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            <span>Help website visual composition</span>
+                        </div>
+
+                        <div class="flex items-center space-x-2 text-base font-medium text-black">
+                            <svg class="w-5 h-5 text-red-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            <span>Interactive elements are easy to identify</span>
+                        </div>
+
+                        <div class="flex items-center space-x-2 text-base font-medium text-black">
+                            <svg class="w-5 h-5 text-red-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            <span>Creating visual rhythms in your layouts</span>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="text-3xl font-alegreya font-bold leading-snug mb-4 mt-4">Diving into UX and UI design
+                </h2>
+
+                <p class="font-inter text-[18px] font-normal leading-[28px] text-[#666666] mb-6">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore temporibus sunt soluta tempora
+                    numquam, enim fuga Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, incidunt
+                    recusandae! Expedita dolorem alias eaque.
+                </p>
+                <h2 class="text-xl font-alegreya font-bold leading-snug mb-4 mt-4">Diving into UX and UI design
+                </h2>
+                <p class="font-inter text-[18px] font-normal leading-[28px] text-[#666666] mb-6">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore temporibus sunt soluta tempora
+                    numquam, enim fuga Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, incidunt
+                    recusandae! Expedita dolorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+                    iste velit, laboriosam nihil dolore repellat. Deleniti illum voluptatem, illo qui reprehenderit
+                    magni fugit vel odio cum libero suscipit quo ratione, ipsa ut eaque labore asperiores non explicabo,
+                    commodi exercitationem necessitatibus? alias eaque.
+                </p>
+                <div class="mt-12 md:mt-16">
+                    <div class="flex items-center justify-between border-t border-b border-gray-200 py-6">
+                        <!-- Previous Article -->
+                        <a href="#" class="flex items-center space-x-4 group">
+                            <div class="w-16 h-16 rounded-full overflow-hidden flex-shrink-0">
+                                <img src="https://images.pexels.com/photos/33624855/pexels-photo-33624855.jpeg" alt="Previous Article"
+                                    class="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110">
+                            </div>
+                            <div class="hidden sm:block">
+                                <p class="text-black text-[14px] font-medium font-inter leading-[26px] text-black uppercase tracking-wide">Previous Article
+                                </p>
+                                <h5
+                                    class="mt-1 text-[18px] font-bold font-alegreya leading-[26px] text-black md:text-base text-black transition-colors duration-300 group-hover:text-red-600">
+                                    The Joy of Cooking: Rediscovering the Pleasure of...</h5>
+                            </div>
+                        </a>
+                        <!-- Next Article -->
+                        <a href="#" class="flex items-center space-x-4 group text-right">
+                            <div class="hidden sm:block">
+                                <p class="text-black text-[14px] font-medium font-inter leading-[26px] text-black uppercase tracking-wide">Next Article</p>
+                                <h5
+                                    class="mt-1 text-[18px] font-bold font-alegreya leading-[26px] text-black md:text-base  text-black transition-colors duration-300 group-hover:text-red-600">
+                                    Elevate Your Brunch Game: Creative Ideas for a...</h5>
+                            </div>
+                            <div class="w-16 h-16 rounded-full overflow-hidden flex-shrink-0">
+                                <img src="https://images.pexels.com/photos/33625689/pexels-photo-33625689.jpeg"
+                                    alt="Next Article"
+                                    class="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+            </div>
+
+            <!-- Recent Blog Section (Right Column) -->
+            <aside class="lg:col-span-1">
+                <div class="sticky top-12">
+                    <h2 class="text-[24px] font-bold font-alegreya leading-[34px] text-black mb-6">Recent Posts</h2>
+                    <div class="bg-white rounded-2xl shadow-lg p-6 space-y-5">
+
+                        <!-- Recent Post 1 -->
+                        <div class="flex items-center space-x-4">
+                            <img class="w-20 h-20 object-cover rounded-xl transition-transform duration-300 hover:scale-105"
+                                src="https://placehold.co/100x100/e2e8f0/0f172a?text=Post" alt="Recent Post Image">
+                            <div>
+                                <a href="#" class="text-[18px] font-semibold font-alegreya leading-[26px] text-black hover:underline">10 Tips for Remote Work
+                                    Productivity</a>
+                                <p class="text-black text-[14px] font-medium font-inter leading-[26px] text-black">August 28, 2025</p>
+                            </div>
+                        </div>
+
+                        <!-- Recent Post 2 -->
+                        <div class="flex items-center space-x-4">
+                            <img class="w-20 h-20 object-cover rounded-xl transition-transform duration-300 hover:scale-105"
+                                src="https://placehold.co/100x100/e2e8f0/0f172a?text=Post" alt="Recent Post Image" >
+                            <div>
+                                <a href="#" class="text-[18px] font-semibold font-alegreya leading-[26px] text-black hover:underline">The Best Coffee Shops in
+                                    London</a>
+                                <p class="text-black text-[14px] font-medium font-inter leading-[26px] text-black">August 25, 2025</p>
+                            </div>
+                        </div>
+
+                        <!-- Recent Post 3 -->
+                        <div class="flex items-center space-x-4">
+                            <img class="w-20 h-20 object-cover rounded-xl transition-transform duration-300 hover:scale-105"
+                                src="https://placehold.co/100x100/e2e8f0/0f172a?text=Post" alt="Recent Post Image">
+                            <div>
+                                <a href="#" class="text-[18px] font-semibold font-alegreya leading-[26px] text-black hover:underline">A Beginner's Guide to
+                                    Digital Art</a>
+                                <p class="text-black text-[14px] font-medium font-inter leading-[26px] text-black">August 20, 2025</p>
+                            </div>
+                        </div>
+                        <!-- Recent Post 4 -->
+                        <div class="flex items-center space-x-4">
+                            <img class="w-20 h-20 object-cover rounded-xl transition-transform duration-300 hover:scale-105"
+                                src="https://placehold.co/100x100/e2e8f0/0f172a?text=Post" alt="Recent Post Image">
+                            <div>
+                                <a href="#" class="text-[18px] font-semibold font-alegreya leading-[26px] text-black hover:underline">A Beginner's Guide to
+                                    Digital Art</a>
+                                <p class="text-black text-[14px] font-medium font-inter leading-[26px] text-black">August 20, 2025</p>
+                            </div>
+                        </div>
+                        <!-- Recent Post 5 -->
+                        <div class="flex items-center space-x-4">
+                            <img class="w-20 h-20 object-cover rounded-xl transition-transform duration-300 hover:scale-105"
+                                src="https://placehold.co/100x100/e2e8f0/0f172a?text=Post" alt="Recent Post Image">
+                            <div>
+                                <a href="#" class="text-[18px] font-semibold font-alegreya leading-[26px] text-black hover:underline">A Beginner's Guide to
+                                    Digital Art</a>
+                                <p class="text-black text-[14px] font-medium font-inter leading-[26px] text-black">August 20, 2025</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+        </div>
+    </div>
+
+    <!-- FOOTER PART -->
+    <div class="bg-black">
+        <div class="max-w-7xl mx-auto px-4 py-6">
+            <footer class="text-center text-gray-400 text-xl font-bold font-alegreya">
+                © 2024 Empath. All Rights Reserved.
+            </footer>
+        </div>
+    </div>
+
+
+    <script>
+        const menuBtn = document.getElementById("menu-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+
+        menuBtn.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+        });
+    </script>
+</body>
+
+</html>

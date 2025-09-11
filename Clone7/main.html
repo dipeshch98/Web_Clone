@@ -1,0 +1,1622 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SITE2DESIGN</title>
+
+    <!-- Load Tailwind first -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Your custom CSS last -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts: Inter + Alegreya -->
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700&family=Inter:wght@400;500&display=swap"
+        rel="stylesheet">
+    <style>
+        .font-alegreya {
+            font-family: 'Alegreya', serif;
+        }
+
+        .font-inter {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- -------NAVBAR------ -->
+    <div class="max-w-7xl mx-auto px-4 py-10">
+
+        <nav class="flex items-center justify-between pb-3 border-b">
+            <!-- Logo -->
+            <div class="flex items-center gap-2">
+                <div class="w-8 h-8 bg-red-600 flex items-center justify-center rounded">
+                    <span class="text-white font-bold">▶</span>
+                </div>
+                <h1 class=" text-[40px] font-bold font-alegreya leading-[26px] text-black">
+                    Forcast
+                </h1>
+            </div>
+
+            <!-- Desktop Menu -->
+            <ul class="hidden font-inter leading-[26px] text-[15px] md:flex space-x-8 font-semibold">
+                <li class="hover:text-red-600 cursor-pointer">HOME</li>
+                <li class="hover:text-red-600 cursor-pointer">POST FEATURES</li>
+                <li class="hover:text-red-600 cursor-pointer">TECHNOLOGY</li>
+                <li class="hover:text-red-600 cursor-pointer">BREAKING NEWS</li>
+                <li class="hover:text-red-600 cursor-pointer">PAGES</li>
+            </ul>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="md:hidden text-2xl">☰</button>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu"
+            class="hidden font-inter flex-col items-center space-y-4 py-6 bg-gray-100 rounded-lg shadow-md md:hidden">
+
+            <a href="#" class="w-full text-center py-2 px-4 rounded-md hover:bg-red-600 hover:text-white transition">
+                HOME
+            </a>
+
+            <a href="#" class="w-full text-center py-2 px-4 rounded-md hover:bg-red-600 hover:text-white transition">
+                POST FEATURES
+            </a>
+
+            <a href="#" class="w-full text-center py-2 px-4 rounded-md hover:bg-red-600 hover:text-white transition">
+                TECHNOLOGY
+            </a>
+
+            <a href="#" class="w-full text-center py-2 px-4 rounded-md hover:bg-red-600 hover:text-white transition">
+                BREAKING NEWS
+            </a>
+
+            <a href="#" class="w-full text-center py-2 px-4 rounded-md hover:bg-red-600 hover:text-white transition">
+                PAGES
+            </a>
+        </div>
+
+    </div>
+
+    <!--------------- HERO SECTION ----------------->
+    <!-- Container -->
+    <div class="max-w-7xl mx-auto px-4 py-1 grid grid-cols-1 md:grid-cols-4 gap-6">
+
+        <!-- Left Column -->
+        <div class="md:col-span-1 space-y-6">
+            <!-- Card 1 -->
+            <div class="border-b pb-4">
+                <img src="https://picsum.photos/400/250" alt=""
+                    class="w-full rounded-md transition-transform duration-300 hover:scale-105" />
+                <span
+                    class="bg-red-600 text-white font-inter text-[12px] leading-normal font-semibold px-3 py-1 inline-block mt-3 rounded">
+                    TECHNOLOGY
+                </span>
+                <h2 class="font-alegreya text-[24px] leading-[30px] font-bold mt-2">Smart factories leverage IoT and AI,
+                    increasing efficiency</h2>
+                <p class="text-gray-500 text-[14px] leading-[26px] font-inter font-normal mt-2 flex items-center gap-2">
+                    <span>📅</span> March 26, 2024
+                </p>
+            </div>
+
+            <!-- Card 2 -->
+            <div>
+                <img src="https://picsum.photos/401/250" alt=""
+                    class="w-full rounded-md transition-transform duration-300 hover:scale-105" />
+                <span
+                    class="bg-red-600 text-white font-inter text-[12px] leading-normal font-semibold px-3 py-1 inline-block mt-3 rounded">
+                    BUSINESS
+                </span>
+                <h2 class="font-alegreya text-[24px] leading-[30px] font-bold mt-2">The Future of Work: Adapting to
+                    Change</h2>
+                <p class="text-gray-500 text-[14px] leading-[26px] font-inter font-normal mt-2 flex items-center gap-2">
+                    <span>📅</span> March 26, 2024
+                </p>
+            </div>
+        </div>
+
+        <!-- Middle Column -->
+        <div class="md:col-span-2 space-y-6">
+            <!-- Main Breaking News -->
+            <div class="relative">
+                <img src="https://picsum.photos/600/350" alt=""
+                    class="w-full rounded-md transition-transform duration-300 hover:scale-105" />
+
+                <!-- Overlay -->
+                <div class="absolute inset-0 bg-black bg-opacity-50 rounded-md p-3 sm:p-6 flex flex-col justify-end">
+                    <!-- Tag -->
+                    <span
+                        class="bg-red-600 text-white font-inter text-[12px] leading-normal font-semibold sm:text-xs md:text-sm px-2 sm:px-3 py-1 mt-2 rounded w-fit">
+                        BREAKING NEWS
+                    </span>
+
+                    <!-- Title -->
+                    <h1
+                        class="font-alegreya text-lg sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white mt-2 leading-snug sm:leading-tight">
+                        The Joy Of Cooking: Rediscovering The Pleasure Of Homemade
+                    </h1>
+
+                    <!-- Description -->
+                    <p
+                        class="text-gray-200 text-[15px] leading-[26px] font-inter font-normal sm:text-sm md:text-base mt-2">
+                        Embracing a balanced lifestyle is key to achieving overall well-being and happiness.
+                    </p>
+
+                    <!-- Meta Info -->
+                    <div
+                        class="flex flex-wrap items-center gap-2 sm:gap-4 text-gray-300 text-[14px] leading-[26px] font-inter font-normal sm:text-xs md:text-sm mt-3">
+                        <span>👤 McKiney</span>
+                        <span>📅 March 26, 2024</span>
+                        <span>💬 3 Comments</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Featured Posts -->
+            <div>
+                <h2 class="text-[28px] leading-[25px] font-alegreya font-bold sm:text-xl mb-4">Featured Post</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                    <!-- Post 1 -->
+                    <div class="border rounded-md p-2">
+                        <img src="https://picsum.photos/300/200" alt=""
+                            class="w-full rounded-md transition-transform duration-300 hover:scale-105" />
+                        <span
+                            class="text-red-600 text-[13px] leading-[26px] font-inter font-semibold mt-2 inline-block w-fit">FOOD</span>
+                        <h3 class="font-alegreya font-semibold mt-1 text-[18px] leading-[22px] sm:text-base">
+                            Elevate Your Brunch Game: Creative Ideas
+                        </h3>
+                        <p class="text-gray-500 text-[14px] leading-[26px] font-inter font-normal mt-1">📅 March 26,
+                            2024</p>
+                    </div>
+                    <!-- Post 2 -->
+                    <div class="border rounded-md p-2">
+                        <img src="https://picsum.photos/301/200" alt=""
+                            class="w-full rounded-md transition-transform duration-300 hover:scale-105" />
+                        <span
+                            class="text-red-600 text-[13px] leading-[26px] font-inter font-semibold mt-2 inline-block w-fit">TRAVEL</span>
+                        <h3 class="font-alegreya font-semibold mt-1 text-[18px] leading-[22px] sm:text-base">
+                            Into the Wild: Embarking on Epic Adventures
+                        </h3>
+                        <p class="text-gray-500 text-[14px] leading-[26px] font-inter font-normal mt-1">📅 March 26,
+                            2024</p>
+                    </div>
+                    <!-- Post 3 -->
+                    <div class="border rounded-md p-2">
+                        <img src="https://picsum.photos/302/200" alt=""
+                            class="w-full rounded-md transition-transform duration-300 hover:scale-105" />
+                        <span
+                            class="text-red-600 text-[13px] leading-[26px] font-inter font-semibold mt-2 inline-block w-fit">TRAVEL</span>
+                        <h3 class=" font-alegreya font-semibold mt-1 text-[18px] leading-[22px] sm:text-base">
+                            How to Travel the World on a Budget
+                        </h3>
+                        <p class="text-gray-500 text-[14px] leading-[26px] font-inter font-normal mt-1">📅 May 30, 2024
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Right Column -->
+        <div class="md:col-span-1 space-y-6 md:sticky md:top-4 self-start">
+            <!-- Tabs -->
+            <div class="flex space-x-6 border-b pb-3 mb-6  overflow-x-auto font-normal text-[15px] leading-[26px] font-inter">
+                <button class="text-gray-500 hover:text-red-600 whitespace-nowrap">Latest News</button>
+                <button class="text-gray-500 hover:text-red-600 whitespace-nowrap">Most View</button>
+                <button class="text-gray-500 hover:text-red-600 whitespace-nowrap">Top News</button>
+            </div>
+
+            <!-- News List -->
+            <div class="space-y-5">
+                <!-- Item 1 -->
+                <div class="flex items-center gap-4">
+                    <span class="text-gray-400 text-xl font-bold w-8 shrink-0">01</span>
+                    <div class="flex-1">
+                        <h3 class="font-semibold font-alegreya text-[16px] leading-[22px]">Smart factories leverage IoT
+                            and AI</h3>
+                        <p
+                            class="text-gray-500 font-inter text-[12px] leading-[26px] font-normal flex items-center gap-1">
+                            📅 March 26, 2024</p>
+                    </div>
+                    <img src="https://picsum.photos/81/60" alt=""
+                        class="rounded-md shrink-0 transition-transform duration-300 hover:scale-105" />
+                </div>
+
+                <!-- Item 2 -->
+                <div class="flex items-center gap-4">
+                    <span class="text-gray-400 text-xl font-bold w-8 shrink-0">02</span>
+                    <div class="flex-1">
+                        <h3 class="font-alegreya font-semibold text-[16px] leading-[22px]">The Joy of Cooking:
+                            Rediscovering</h3>
+                        <p
+                            class="text-gray-500 font-inter text-[12px] leading-[26px] font-normal flex items-center gap-1">
+                            📅 March 26, 2024</p>
+                    </div>
+                    <img src="https://picsum.photos/81/60" alt=""
+                        class="rounded-md shrink-0 transition-transform duration-300 hover:scale-105" />
+                </div>
+
+                <!-- Item 3 -->
+                <div class="flex items-center gap-4">
+                    <span class="text-gray-400 text-xl font-bold w-8 shrink-0">03</span>
+                    <div class="flex-1">
+                        <h3 class="font-alegreya font-semibold text-[16px] leading-[22px]">The Future of Work: Adapting
+                        </h3>
+                        <p
+                            class="text-gray-500 font-inter text-[12px] leading-[26px] font-normal flex items-center gap-1">
+                            📅 March 26, 2024</p>
+                    </div>
+                    <img src="https://picsum.photos/82/60" alt=""
+                        class="rounded-md shrink-0 transition-transform duration-300 hover:scale-105" />
+                </div>
+
+                <!-- Item 4 -->
+                <div class="flex items-center gap-4">
+                    <span class="text-gray-400 text-xl font-bold w-8 shrink-0">04</span>
+                    <div class="flex-1">
+                        <h3 class="font-alegreya font-semibold text-[16px] leading-[22px]">Elevate Your Brunch Game</h3>
+                        <p
+                            class="text-gray-500 font-inter text-[12px] leading-[26px] font-normal flex items-center gap-1">
+                            📅 March 26, 2024</p>
+                    </div>
+                    <img src="https://picsum.photos/83/60" alt=""
+                        class="rounded-md shrink-0 transition-transform duration-300 hover:scale-105" />
+                </div>
+
+                <!-- Item 5 -->
+                <div class="flex items-center gap-4">
+                    <span class="text-gray-400 text-xl font-bold w-8 shrink-0">05</span>
+                    <div class="flex-1">
+                        <h3 class="font-alegreya font-semibold text-[16px] leading-[22px]">Into the Wild: Epic Adventure
+                        </h3>
+                        <p
+                            class="text-gray-500 font-inter text-[12px] leading-[26px] font-normal flex items-center gap-1">
+                            📅 March 26, 2024</p>
+                    </div>
+                    <img src="https://picsum.photos/84/60" alt=""
+                        class="rounded-md shrink-0 transition-transform duration-300 hover:scale-105" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- world News -->
+    <div class="max-w-7xl mx-auto px-4 py-7">
+        <!-- Section Title -->
+        <h2 class="font-semibold text-[30px] leading-[38px] font-inter flex items-center gap-2 mb-6">
+            <span class="text-red-600 text-3xl">▌</span> World News
+        </h2>
+
+        <!-- Grid Layout -->
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+
+            <!-- Left Column (Big News) -->
+            <div class="md:col-span-6 border rounded-lg overflow-hidden">
+                <img src="https://picsum.photos/700/400" alt="Featured News"
+                    class="w-full transition-transform duration-300 hover:scale-105">
+                <div class="p-4">
+                    <span class="bg-red-600 text-white text-xs font-bold px-3 py-1 inline-block mb-3 rounded">
+                        WORLD
+                    </span>
+                    <h3 class="font-alegreya text-[26px] font-bold mb-2">Biden stands defiant on critical night – but
+                        gaffes mar fightback
+                    </h3>
+                    <div class="flex items-center gap-3 text-gray-500 text-sm">
+                        <span>👤 McKiney</span>
+                        <span class="font-inter text-[14px] leading-[26px] font-normal">📅 May 31, 2024</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Middle Column (Small News List) -->
+            <div class="md:col-span-4 flex flex-col gap-4">
+                <!-- Repeated small news items -->
+                <div class="flex gap-3 border rounded-lg p-3">
+                    <img src="https://picsum.photos/120/80" alt=""
+                        class="w-24 h-16 rounded object-cover transition-transform duration-300 hover:scale-105">
+                    <div>
+                        <h4 class="font-bold font-alegreya text-[18px] leading-[26px]">England have to be ‘perfect’ to
+                            beat Spain</h4>
+                        <p class="text-gray-500 font-inter text-[14px] leading-[26px] font-normal mt-1">📅 May 31, 2024
+                        </p>
+                    </div>
+                </div>
+                <div class="flex gap-3 border rounded-lg p-3">
+                    <img src="https://picsum.photos/121/80" alt=""
+                        class="w-24 h-16 rounded object-cover transition-transform duration-300 hover:scale-105">
+                    <div>
+                        <h4 class="font-bold font-alegreya text-[18px] leading-[26px]">China hits back at Nato over
+                            Russia accusations</h4>
+                        <p class="text-gray-500 font-inter text-[14px] leading-[26px] font-normal mt-1">📅 July 12, 2024
+                        </p>
+                    </div>
+                </div>
+                <div class="flex gap-3 border rounded-lg p-3">
+                    <img src="https://picsum.photos/120/80" alt=""
+                        class="w-24 h-16 rounded object-cover transition-transform duration-300 hover:scale-105">
+                    <div>
+                        <h4 class="font-bold font-alegreya text-[18px] leading-[26px]">England have to be ‘perfect’ to
+                            beat Spain</h4>
+                        <p class="text-gray-500 font-inter text-[14px] leading-[26px] font-normal mt-1">📅 May 31, 2024
+                        </p>
+                    </div>
+                </div>
+                <div class="flex gap-3 border rounded-lg p-3">
+                    <img src="https://picsum.photos/122/80" alt=""
+                        class="w-24 h-16 rounded object-cover transition-transform duration-300 hover:scale-105">
+                    <div>
+                        <h4 class="font-bold font-alegreya text-[18px] leading-[26px]">From rough sleeping to advising
+                            Prince William</h4>
+                        <p class="text-gray-500 font-inter text-[14px] leading-[26px] font-normal mt-1">📅 July 12, 2024
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column (3 sub-columns) -->
+            <div class="md:col-span-2 grid grid-cols-1 gap-4">
+
+                <!-- Column 2 -->
+                <div class="border rounded-lg p-4 bg-gray-50">
+                    <h4 class="font-bold font-alegreya text-[18px] leading-[26px]">Trending</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li class="flex items-start gap-2 font-inter text-[15px] leading-[24px] font-normal">
+                            <span class="text-blue-600">🔥</span>
+                            <p>Climate change policies reshaping global markets.</p>
+                        </li>
+                        <li class="flex items-start gap-2 font-inter text-[15px] leading-[24px] font-normal">
+                            <span class="text-blue-600">🔥</span>
+                            <p>Major tech companies release new AI tools.</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Column 3 -->
+                <div class="border rounded-lg p-4 bg-gray-50">
+                    <h4 class="font-bold font-alegreya text-[18px] leading-[26px]">Most Read</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li class="flex items-start gap-2 font-inter text-[15px] leading-[24px] font-normal">
+                            <span class="text-green-600">📌</span>
+                            <p>Top travel destinations this summer.</p>
+                        </li>
+                        <li class="flex items-start gap-2 font-inter text-[15px] leading-[24px] font-normal">
+                            <span class="text-green-600">📌</span>
+                            <p>How to boost productivity while working remotely.</p>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Top Category Section -->
+    <div class="max-w-7xl mx-auto px-4 py-7">
+        <div class="flex items-center justify-between mb-4">
+            <h2 class="font-semibold text-[30px] leading-[38px] font-inter flex items-center gap-2">
+                <span
+                    class="w-2 h-4 bg-red-600 inline-block font-semibold text-[30px] leading-[38px] font-inter"></span>
+                Top Category
+            </h2>
+            <a href="#" class="text-sm text-gray-600 flex items-center gap-1 hover:text-gray-800">
+                View All <span>→</span>
+            </a>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="relative rounded overflow-hidden group cursor-pointer">
+                <img src="https://picsum.photos/300/200?1" alt=""
+                    class="w-full h-50 object-cover transition-transform duration-300 hover:scale-105">
+                <div class="absolute bottom-2 left-2 text-white">
+                    <h3 class=" font-inter text-[20px] leading-normal font-medium">World</h3>
+                    <p class="font-alegreya text-[16px] leading-[26px] font-medium">6 Articles</p>
+                </div>
+                <div
+                    class="absolute top-2 right-2 bg-gray-700 bg-opacity-50 rounded-full w-6 h-6 flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity">
+                    +
+                </div>
+            </div>
+
+            <div class="relative rounded overflow-hidden group cursor-pointer">
+                <img src="https://picsum.photos/300/200?2" alt=""
+                    class="w-full h-50 object-cover transition-transform duration-300 hover:scale-105">
+                <div class="absolute bottom-2 left-2 text-white">
+                    <h3 class="font-inter text-[20px] leading-normal font-medium">Travel</h3>
+                    <p class="font-alegreya text-[16px] leading-[26px] font-medium">7 Articles</p>
+                </div>
+                <div
+                    class="absolute top-2 right-2 bg-gray-700 bg-opacity-50 rounded-full w-6 h-6 flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity">
+                    +
+                </div>
+            </div>
+
+            <div class="relative rounded overflow-hidden group cursor-pointer">
+                <img src="https://picsum.photos/300/200?3" alt=""
+                    class="w-full h-50 object-cover transition-transform duration-300 hover:scale-105">
+                <div class="absolute bottom-2 left-2 text-white">
+                    <h3 class="font-inter text-[20px] leading-normal font-medium">Technology</h3>
+                    <p class="font-alegreya text-[16px] leading-[26px] font-medium">8 Articles</p>
+                </div>
+                <div
+                    class="absolute top-2 right-2 bg-gray-700 bg-opacity-50 rounded-full w-6 h-6 flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity">
+                    +
+                </div>
+            </div>
+
+            <div class="relative rounded overflow-hidden group cursor-pointer">
+                <img src="https://picsum.photos/300/200?4" alt=""
+                    class="w-full h-50 object-cover transition-transform duration-300 hover:scale-105">
+                <div class="absolute bottom-2 left-2 text-white">
+                    <h3 class="font-inter text-[20px] leading-normal font-medium">Health</h3>
+                    <p class="font-alegreya text-[16px] leading-[26px] font-medium">3 Articles</p>
+                </div>
+                <div
+                    class="absolute top-2 right-2 bg-gray-700 bg-opacity-50 rounded-full w-6 h-6 flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity">
+                    +
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Must Read Section -->
+    <div class="max-w-7xl mx-auto px-4 py-7">
+        <!-- Section Header -->
+        <div class="flex items-center justify-between mb-6">
+            <div class="flex items-center space-x-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                    class="w-6 h-6 text-red-600">
+                    <path
+                        d="M5.562 10.254a.75.75 0 0 0-1.25.738l.25 1.751A6.75 6.75 0 0 0 12 20.25a6.75 6.75 0 0 0 7.438-9.257l.25-1.751a.75.75 0 0 0-1.25-.738L17.25 10.5h-1.378c-.285-.547-.547-.85-.821-1.108C14.75 9.17 13.91 8.75 12.799 8.75H12c-.524 0-1.227.112-1.997.425-.284.112-.547.25-.822.425h-1.378l-.364-.735Z" />
+                    <path
+                        d="M14.25 5.25a.75.75 0 0 0-.872.582l-.25 1.751A6.75 6.75 0 0 0 12 3.75a6.75 6.75 0 0 0-6.749 8.257l-.25 1.751a.75.75 0 0 0 1.25.738L6.75 13.5h1.378c.285.547.547.85.821 1.108C9.25 14.83 10.09 15.25 11.201 15.25H12c.524 0 1.227-.112 1.997-.425.284-.112.547-.25.822-.425h1.378l.364.735Z" />
+                </svg>
+                <h3 class="font-semibold text-[30px] leading-[38px] font-inter">Must Read</h3>
+            </div>
+            <a href="#" class="text-sm text-gray-600 hover:text-red-600 font-medium">View All <span
+                    aria-hidden="true">&rarr;</span></a>
+        </div>
+
+        <!-- Main Grid Layout -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Main Column 1 -->
+            <div class="md:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-4">
+                <!-- Large Feature Post -->
+                <div class="relative bg-white rounded-lg shadow-lg overflow-hidden md:col-span-1">
+                    <img src="https://placehold.co/800x600/e2e8f0/0f172a?text=Winter+Dressing+Tips"
+                        alt="Winter Dressing"
+                        class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
+                    <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+                    <div class="absolute bottom-4 left-4 text-white p-4 z-10">
+                        <h4 class="text-[24px] font-alegreya font-bold leading-[30px]">Winter Dressing Tips When It's
+                            Really Cold Out</h4>
+                    </div>
+                </div>
+
+                <!-- Medium Feature Post -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col md:col-span-1">
+                    <img src="https://placehold.co/800x600/e2e8f0/0f172a?text=Exploring+Europe" alt="Exploring Europe"
+                        class="w-full h-48 object-cover transition-transform duration-300 hover:scale-105">
+                    <div class="p-4 flex-grow flex flex-col">
+                        <span
+                            class="bg-purple-600 text-white text-xs font-bold px-2 py-1 rounded-full uppercase self-start">TRAVEL</span>
+                        <h4 class="font-bold text-[24px] font-alegreya mt-2 leading-[30px]">Exploring Europe by Train: A
+                            Scenic Adventure
+                        </h4>
+                        <p class="text-gray-500 font-normal text-[15px] font-inter mt-2 leading-[26px] flex-grow">Lorem
+                            ipsum dolor sit amet consectetur. Ut
+                            tellus suspendisse nulla aliquam Risus rutrum ultrices pretium dolor</p>
+                        <div class="flex items-center text-gray-500 text-xs mt-4">
+                            <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M8 7V3m8 4V3m-9 8h.01M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z">
+                                </path>
+                            </svg>
+                            <span>May 31, 2024</span>
+                            <a href="#"><svg class="w-4 h-4 ml-auto" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"></path>
+                                </svg></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Small Right Column Posts -->
+            <div class="md:col-span-1 space-y-4">
+                <!-- Small Post 1 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden flex items-center p-4 gap-4">
+                    <img src="https://images.pexels.com/photos/33067303/pexels-photo-33067303.jpeg" alt="Biden"
+                        class="w-20 h-20 rounded-lg object-cover transition-transform duration-300 hover:scale-105">
+                    <div class="flex-1">
+                        <h4 class="font-bold text-[18px] leading-[26px] font-alegreya">Biden stands defiant on critical
+                            night - but</h4>
+                        <div class="flex items-center text-gray-500 text-xs mt-2">
+                            <svg class="w-3 h-3 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M8 7V3m8 4V3m-9 8h.01M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z">
+                                </path>
+                            </svg>
+                            <span class="font-normal text-[14px] font-inter mt-2 leading-[26px]">May 31, 2024</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Small Post 2 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden flex items-center p-4 gap-4">
+                    <img src="https://images.pexels.com/photos/33067303/pexels-photo-33067303.jpeg" alt="Southgate"
+                        class="w-20 h-20 rounded-lg object-cover transition-transform duration-300 hover:scale-105">
+                    <div class="flex-1">
+                        <h4 class="font-bold text-[18px] leading-[26px] font-alegreya">FA wants Southgate to stay as
+                            England boss</h4>
+                        <div class="flex items-center text-gray-500 text-xs mt-2">
+                            <svg class="w-3 h-3 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M8 7V3m8 4V3m-9 8h.01M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z">
+                                </path>
+                            </svg>
+                            <span class="font-normal text-[14px] font-inter mt-2 leading-[26px]">May 31, 2024</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Small Post 3 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden flex items-center p-4 gap-4">
+                    <img src="https://images.pexels.com/photos/33067303/pexels-photo-33067303.jpeg" alt="Southgate"
+                        class="w-20 h-20 rounded-lg object-cover transition-transform duration-300 hover:scale-105">
+                    <div class="flex-1">
+                        <h4 class="font-bold text-[18px] leading-[26px] font-alegreya">FA wants Southgate to stay as
+                            England boss</h4>
+                        <div class="flex items-center text-gray-500 text-xs mt-2">
+                            <svg class="w-3 h-3 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M8 7V3m8 4V3m-9 8h.01M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z">
+                                </path>
+                            </svg>
+                            <span class="font-normal text-[14px] font-inter mt-2 leading-[26px]">May 31, 2024</span>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Second Row of Posts -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4 mt-8">
+            <!-- Post 1 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="https://placehold.co/400x300/e2e8f0/0f172a?text=Travel" alt="Travel"
+                    class="w-full h-40 object-cover transition-transform duration-300 hover:scale-105">
+                <div class="p-4">
+                    <span
+                        class="bg-purple-600 text-white text-xs font-bold px-2 py-1 rounded-full uppercase">TRAVEL</span>
+                    <h4 class="font-bold text-[22px] mt-2 leading-[30px] font-alegreya">The Ultimate Guide to Solo
+                        Travel: Tips</h4>
+                    <div class="flex items-center text-gray-500 text-sm mt-2">
+                        <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M8 7V3m8 4V3m-9 8h.01M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z">
+                            </path>
+                        </svg>
+                        <span class="font-normal text-[14px] font-inter mt-2 leading-[26px]">May 30, 2024</span>
+                        <a href="#"><svg class="w-4 h-4 ml-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"></path>
+                            </svg></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Post 2 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="https://placehold.co/400x300/e2e8f0/0f172a?text=Food" alt="Food"
+                    class="w-full h-40 object-cover transition-transform duration-300 hover:scale-105">
+                <div class="p-4">
+                    <span class="bg-blue-600 text-white text-xs font-bold px-2 py-1 rounded-full uppercase">FOOD</span>
+                    <h4 class="font-bold text-[22px] mt-2 leading-[30px] font-alegreya">Healthy Eating Made Easy: Nutri
+                        tious and</h4>
+                    <div class="flex items-center text-gray-500 text-sm mt-2">
+                        <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M8 7V3m8 4V3m-9 8h.01M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z">
+                            </path>
+                        </svg>
+                        <span class="font-normal text-[14px] font-inter mt-2 leading-[26px]">May 30, 2024</span>
+                        <a href="#"><svg class="w-4 h-4 ml-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"></path>
+                            </svg></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Post 3 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="https://placehold.co/400x300/e2e8f0/0f172a?text=Technology" alt="Technology"
+                    class="w-full h-40 object-cover transition-transform duration-300 hover:scale-105">
+                <div class="p-4">
+                    <span
+                        class="bg-pink-600 text-white text-xs font-bold px-2 py-1 rounded-full uppercase">TECHNOLOGY</span>
+                    <h4 class="font-bold text-[22px] mt-2 leading-[30px] font-alegreya">The Future of Wearable Tech:
+                        Innovations to</h4>
+                    <div class="flex items-center text-gray-500 text-sm mt-2">
+                        <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M8 7V3m8 4V3m-9 8h.01M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z">
+                            </path>
+                        </svg>
+                        <span class="font-normal text-[14px] font-inter mt-2 leading-[26px]">May 31, 2024</span>
+                        <a href="#"><svg class="w-4 h-4 ml-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"></path>
+                            </svg></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Post 4 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="https://placehold.co/400x300/e2e8f0/0f172a?text=Business" alt="Business"
+                    class="w-full h-40 object-cover transition-transform duration-300 hover:scale-105">
+                <div class="p-4">
+                    <span
+                        class="bg-orange-600 text-white text-xs font-bold px-2 py-1 rounded-full uppercase">BUSINESS</span>
+                    <h4 class="font-bold text-[22px] mt-2 leading-[30px] font-alegreya">The Art of Hosting: Planning the
+                        Perfect</h4>
+                    <div class="flex items-center text-gray-500 text-sm mt-2">
+                        <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M8 7V3m8 4V3m-9 8h.01M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z">
+                            </path>
+                        </svg>
+                        <span class="font-normal text-[14px] font-inter mt-2 leading-[26px]">May 31, 2024</span>
+                        <a href="#"><svg class="w-4 h-4 ml-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"></path>
+                            </svg></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Post 5 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="https://placehold.co/400x300/e2e8f0/0f172a?text=Health" alt="Health"
+                    class="w-full h-40 object-cover transition-transform duration-300 hover:scale-105">
+                <div class="p-4">
+                    <span
+                        class="bg-green-600 text-white text-xs font-bold px-2 py-1 rounded-full uppercase">HELTH</span>
+                    <h4 class="font-bold text-[22px] mt-2 leading-[30px] font-alegreya">Young woman help can patient
+                        around the</h4>
+                    <div class="flex items-center text-gray-500 text-sm mt-2">
+                        <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M8 7V3m8 4V3m-9 8h.01M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z">
+                            </path>
+                        </svg>
+                        <span class="font-normal text-[14px] font-inter mt-2 leading-[26px]">July 11, 2024</span>
+                        <a href="#"><svg class="w-4 h-4 ml-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"></path>
+                            </svg></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- BUSINESS SECTION -->
+    <div class="max-w-7xl mx-auto px-4 py-7">
+        <!-- Section Header -->
+        <div class="flex items-center justify-between mb-6">
+            <div class="flex items-center space-x-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                    class="w-6 h-6 text-red-600">
+                    <path
+                        d="M5.562 10.254a.75.75 0 0 0-1.25.738l.25 1.751A6.75 6.75 0 0 0 12 20.25a6.75 6.75 0 0 0 7.438-9.257l.25-1.751a.75.75 0 0 0-1.25-.738L17.25 10.5h-1.378c-.285-.547-.547-.85-.821-1.108C14.75 9.17 13.91 8.75 12.799 8.75H12c-.524 0-1.227.112-1.997.425-.284.112-.547.25-.822.425h-1.378l-.364-.735Z" />
+                    <path
+                        d="M14.25 5.25a.75.75 0 0 0-.872.582l-.25 1.751A6.75 6.75 0 0 0 12 3.75a6.75 6.75 0 0 0-6.749 8.257l-.25 1.751a.75.75 0 0 0 1.25.738L6.75 13.5h1.378c.285.547.547.85.821 1.108C9.25 14.83 10.09 15.25 11.201 15.25H12c.524 0 1.227-.112 1.997-.425.284-.112.547-.25.822-.425h1.378l.364.735Z" />
+                </svg>
+                <h3 class="font-semibold text-[30px] leading-[38px] font-inter">Bussiness</h3>
+            </div>
+            <a href="#" class="text-sm text-gray-600 hover:text-red-600 font-medium">View All <span
+                    aria-hidden="true">&rarr;</span></a>
+        </div>
+
+        <!-- Grid Layout for Posts -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Post 1 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="flex items-start gap-4 p-4">
+                    <img src="https://placehold.co/120x120/e2e8f0/0f172a?text=Work" alt="The Future of Work"
+                        class="w-32 h-32 object-cover rounded-lg flex-shrink-0 transition-transform duration-300 hover:scale-105">
+                    <div class="flex-1">
+                        <h4 class="font-semibold text-[22px] leading-[30px] font-alegreya">The Future of Work: Adapting
+                            to Changing</h4>
+                        <div class="flex items-center text-gray-500 text-sm mt-2">
+                            <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M8 7V3m8 4V3m-9 8h.01M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z">
+                                </path>
+                            </svg>
+                            <span class="font-normal text-[14px] font-inter mt-2 leading-[26px]">March 26, 2024</span>
+                            <a href="#" class="ml-auto"><svg class="w-4 h-4" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"></path>
+                                </svg></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Post 2 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="flex items-start gap-4 p-4">
+                    <img src="https://placehold.co/120x120/e2e8f0/0f172a?text=Startup"
+                        alt="Strategies for Scaling Your Startup"
+                        class="w-32 h-32 object-cover rounded-lg flex-shrink-0 transition-transform duration-300 hover:scale-105">
+                    <div class="flex-1">
+                        <h4 class="font-semibold text-[22px] leading-[30px] font-alegreya">Strategies for Scaling Your
+                            Startup: Tips from</h4>
+                        <div class="flex items-center text-gray-500 text-sm mt-2">
+                            <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M8 7V3m8 4V3m-9 8h.01M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z">
+                                </path>
+                            </svg>
+                            <span class="font-normal text-[14px] font-inter mt-2 leading-[26px]">May 30, 2024</span>
+                            <a href="#" class="ml-auto"><svg class="w-4 h-4" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"></path>
+                                </svg></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Post 3 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="flex items-start gap-4 p-4">
+                    <img src="https://placehold.co/120x120/e2e8f0/0f172a?text=Hosting" alt="The Art of Hosting"
+                        class="w-32 h-32 object-cover rounded-lg flex-shrink-0 transition-transform duration-300 hover:scale-105">
+                    <div class="flex-1">
+                        <h4 class="font-semibold text-[22px] leading-[30px] font-alegreya">The Art of Hosting: Planning
+                            the Perfect</h4>
+                        <div class="flex items-center text-gray-500 text-sm mt-2">
+                            <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M8 7V3m8 4V3m-9 8h.01M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z">
+                                </path>
+                            </svg>
+                            <span class="font-normal text-[14px] font-inter mt-2 leading-[26px]">May 31, 2024</span>
+                            <a href="#" class="ml-auto"><svg class="w-4 h-4" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"></path>
+                                </svg></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Post 4 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="flex items-start gap-4 p-4">
+                    <img src="https://placehold.co/120x120/e2e8f0/0f172a?text=Venture" alt="Funding Your Venture"
+                        class="w-32 h-32 object-cover rounded-lg flex-shrink-0 transition-transform duration-300 hover:scale-105">
+                    <div class="flex-1">
+                        <h4 class="font-semibold text-[22px] leading-[30px] font-alegreya">Funding Your Venture: A Guide
+                            to Securing</h4>
+                        <div class="flex items-center text-gray-500 text-sm mt-2">
+                            <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M8 7V3m8 4V3m-9 8h.01M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z">
+                                </path>
+                            </svg>
+                            <span class="font-normal text-[14px] font-inter mt-2 leading-[26px]">May 31, 2024</span>
+                            <a href="#" class="ml-auto"><svg class="w-4 h-4" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"></path>
+                                </svg></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Post 5 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="flex items-start gap-4 p-4">
+                    <img src="https://placehold.co/120x120/e2e8f0/0f172a?text=Data+Talk" alt="Data Talk"
+                        class="w-32 h-32 object-cover rounded-lg flex-shrink-0 transition-transform duration-300 hover:scale-105">
+                    <div class="flex-1">
+                        <h4 class="font-semibold text-[22px] leading-[30px] font-alegreya">Data Talk: Best Apps, Code
+                            Tips, Cool</h4>
+                        <div class="flex items-center text-gray-500 text-sm mt-2">
+                            <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M8 7V3m8 4V3m-9 8h.01M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z">
+                                </path>
+                            </svg>
+                            <span class="font-normal text-[14px] font-inter mt-2 leading-[26px]">July 11, 2024</span>
+                            <a href="#" class="ml-auto"><svg class="w-4 h-4" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"></path>
+                                </svg></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Post 6 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="flex items-start gap-4 p-4">
+                    <img src="https://placehold.co/120x120/e2e8f0/0f172a?text=Scammers"
+                        alt="Why both businesses and scammers love India’s"
+                        class="w-32 h-32 object-cover rounded-lg flex-shrink-0 transition-transform duration-300 hover:scale-105">
+                    <div class="flex-1">
+                        <h4 class="font-semibold text-[22px] leading-[30px] font-alegreya">Why both businesses and
+                            scammers love India’s</h4>
+                        <div class="flex items-center text-gray-500 text-sm mt-2">
+                            <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M8 7V3m8 4V3m-9 8h.01M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z">
+                                </path>
+                            </svg>
+                            <span class="font-normal text-[14px] font-inter mt-2 leading-[26px]">July 12, 2024</span>
+                            <a href="#" class="ml-auto"><svg class="w-4 h-4" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"></path>
+                                </svg></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Technology Section -->
+    <div class="max-w-7xl mx-auto px-4 py-7">
+        <!-- Section Header -->
+        <div class="flex items-center justify-between mb-6">
+            <div class="flex items-center space-x-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                    class="w-6 h-6 text-red-600">
+                    <path
+                        d="M5.562 10.254a.75.75 0 0 0-1.25.738l.25 1.751A6.75 6.75 0 0 0 12 20.25a6.75 6.75 0 0 0 7.438-9.257l.25-1.751a.75.75 0 0 0-1.25-.738L17.25 10.5h-1.378c-.285-.547-.547-.85-.821-1.108C14.75 9.17 13.91 8.75 12.799 8.75H12c-.524 0-1.227.112-1.997.425-.284.112-.547.25-.822.425h-1.378l-.364-.735Z" />
+                    <path
+                        d="M14.25 5.25a.75.75 0 0 0-.872.582l-.25 1.751A6.75 6.75 0 0 0 12 3.75a6.75 6.75 0 0 0-6.749 8.257l-.25 1.751a.75.75 0 0 0 1.25.738L6.75 13.5h1.378c.285.547.547.85.821 1.108C9.25 14.83 10.09 15.25 11.201 15.25H12c.524 0 1.227-.112 1.997-.425.284-.112.547-.25.822-.425h1.378l.364.735Z" />
+                </svg>
+                <h3 class="font-semibold text-[30px] leading-[38px] font-inter">Technology</h3>
+            </div>
+            <a href="#" class="text-sm text-gray-600 hover:text-red-600 font-medium">View All <span
+                    aria-hidden="true">&rarr;</span></a>
+        </div>
+
+        <!-- Grid Layout for Posts -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Post 1 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+                <img src="https://placehold.co/400x250/e2e8f0/0f172a?text=Code" alt="Data Talk"
+                    class="w-full h-auto object-cover rounded-t-lg transition-transform duration-300 hover:scale-105">
+                <div class="p-4 flex-grow flex flex-col">
+                    <h4 class="font-bold mb-2 text-[24px] leading-[32px] font-alegreya">Data Talk: Best Apps, Code Tips,
+                        Cool</h4>
+                    <p class="text-gray-600 font-normal text-[15px] leading-[26px] font-inter mb-4 flex-grow">To mark
+                        the first UK show of artist Henni Brande,
+                        developers ThemesCamp and German studio</p>
+                    <div class="flex items-center text-gray-500 text-sm mt-auto">
+                        <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M8 7V3m8 4V3m-9 8h.01M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z">
+                            </path>
+                        </svg>
+                        <span class="font-normal text-[14px] font-inter mt-2 leading-[26px]">July 11, 2024</span>
+                        <a href="#" class="ml-auto"><svg class="w-4 h-4" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"></path>
+                            </svg></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Post 2 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+                <img src="https://placehold.co/400x250/e2e8f0/0f172a?text=Laptop" alt="Tech for Good"
+                    class="w-full h-auto object-cover rounded-t-lg transition-transform duration-300 hover:scale-105">
+                <div class="p-4 flex-grow flex flex-col">
+                    <h4 class="font-bold mb-2 text-[24px] leading-[32px] font-alegreya">Tech for Good: How Technology is
+                        Solving</h4>
+                    <p class="text-gray-600 font-normal text-[15px] leading-[26px] font-inter mb-4 flex-grow">Lorem
+                        ipsum dolor sit amet consectetur. Ut tellus
+                        suspendisse nulla aliquam Risus rutrum ultricies pretium dolor</p>
+                    <div class="flex items-center text-gray-500 text-sm mt-auto">
+                        <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M8 7V3m8 4V3m-9 8h.01M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z">
+                            </path>
+                        </svg>
+                        <span class="font-normal text-[14px] font-inter mt-2 leading-[26px]">May 31, 2024</span>
+                        <a href="#" class="ml-auto"><svg class="w-4 h-4" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"></path>
+                            </svg></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Post 3 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+                <img src="https://placehold.co/400x250/e2e8f0/0f172a?text=Office" alt="Smart Office"
+                    class="w-full h-auto object-cover rounded-t-lg transition-transform duration-300 hover:scale-105">
+                <div class="p-4 flex-grow flex flex-col">
+                    <h4 class="font-bold mb-2 text-[24px] leading-[32px] font-alegreya">How to Create a Smart Office for
+                    </h4>
+                    <p class="text-gray-600 font-normal text-[15px] leading-[26px] font-inter mb-4 flex-grow">Lorem
+                        ipsum dolor sit amet consectetur. Ut tellus
+                        suspendisse nulla aliquam Risus rutrum ultricies pretium dolor</p>
+                    <div class="flex items-center text-gray-500 text-sm mt-auto">
+                        <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M8 7V3m8 4V3m-9 8h.01M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z">
+                            </path>
+                        </svg>
+                        <span class="font-normal text-[14px] font-inter mt-2 leading-[26px]">May 31, 2024</span>
+                        <a href="#" class="ml-auto"><svg class="w-4 h-4" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"></path>
+                            </svg></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Post 4 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+                <img src="https://placehold.co/400x250/e2e8f0/0f172a?text=Wearable" alt="The Future of Wearable Tech"
+                    class="w-full h-auto object-cover rounded-t-lg transition-transform duration-300 hover:scale-105">
+                <div class="p-4 flex-grow flex flex-col">
+                    <h4 class="font-bold mb-2 text-[24px] leading-[32px] font-alegreya">The Future of Wearable Tech:
+                        Innovations to</h4>
+                    <p class="text-gray-600 font-normal text-[15px] leading-[26px] font-inter mb-4 flex-grow">Lorem
+                        ipsum dolor sit amet consectetur. Ut tellus
+                        suspendisse nulla aliquam Risus rutrum ultricies pretium dolor</p>
+                    <div class="flex items-center text-gray-500 text-sm mt-auto">
+                        <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M8 7V3m8 4V3m-9 8h.01M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z">
+                            </path>
+                        </svg>
+                        <span class="font-normal text-[14px] font-inter mt-2 leading-[26px]">May 31, 2024</span>
+                        <a href="#" class="ml-auto"><svg class="w-4 h-4" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"></path>
+                            </svg></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Sticky and Scrollable Section -->
+    <div class="max-w-7xl mx-auto px-4 py-7">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Sticky Most Popular Section -->
+            <div class="md:col-span-1">
+                <div class="sticky top-10">
+                    <div class="flex items-center space-x-2 mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            class="w-6 h-6 text-red-600">
+                            <path
+                                d="M12 1.5a.75.75 0 0 1 .75.75V4.5a.75.75 0 0 1-1.5 0V2.25A.75.75 0 0 1 12 1.5ZM12 19.5a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0v-2.25a.75.75 0 0 1 .75-.75ZM2.25 12a.75.75 0 0 1 .75-.75h2.25a.75.75 0 0 1 0 1.5H3a.75.75 0 0 1-.75-.75ZM19.5 12a.75.75 0 0 1 .75-.75H22.5a.75.75 0 0 1 0 1.5H20.25a.75.75 0 0 1-.75-.75ZM12 5.25a6.75 6.75 0 1 0 0 13.5 6.75 6.75 0 0 0 0-13.5ZM1.996 9.471a.75.75 0 0 1 .839-.684 6.75 6.75 0 0 0-.258 5.438.75.75 0 0 1 .684.839 8.251 8.251 0 0 1-3.619-3.093.75.75 0 0 1 .29-.79Zm18.527-3.21a.75.75 0 0 1 1.058.079 8.251 8.251 0 0 1 1.393 1.933.75.75 0 0 1-.79.29 6.75 6.75 0 0 0-5.438.258.75.75 0 0 1 .684-.84Zm-18.47 6.702a.75.75 0 0 1 .838-.684 6.75 6.75 0 0 0 5.438-.258.75.75 0 0 1 .684.838 8.251 8.251 0 0 1-1.933 1.393.75.75 0 0 1-.79-.29 6.75 6.75 0 0 0-3.619-3.093Z" />
+                        </svg>
+                        <h3 class="font-semibold text-[30px] leading-[38px] font-inter">Most Popular</h3>
+                    </div>
+
+                    <ul class="space-y-4">
+                        <!-- Post 1 -->
+                        <li class="flex items-center gap-4 py-3">
+                            <img src="https://placehold.co/120x80/e2e8f0/0f172a?text=Post" alt="Post 1"
+                                class="w-25 h-25 object-cover rounded-lg transition-transform duration-300 hover:scale-105">
+                            <div class="flex-1">
+                                <h4 class="font-bold text-[22px] leading-[30px] font-alegreya">Biden stands defiant on
+                                    critical night –</h4>
+                                <div class="flex items-center text-gray-500 text-xs mt-1">
+                                    <svg class="w-3 h-3 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M8 7V3m8 4V3m-9 8h.01M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z">
+                                        </path>
+                                    </svg>
+                                    <span>May 31, 2024</span>
+                                    <a href="#" class="ml-auto"><svg class="w-3 h-3" fill="none" stroke="currentColor"
+                                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"></path>
+                                        </svg></a>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Post 2 -->
+                        <li class="flex items-center gap-4 py-3">
+                            <img src="https://placehold.co/120x80/e2e8f0/0f172a?text=Post" alt="Post 2"
+                                class="w-25 h-25 object-cover rounded-lg transition-transform duration-300 hover:scale-105">
+                            <div class="flex-1">
+                                <h4 class="font-bold text-[22px] leading-[30px] font-alegreya">Work-Life Balance: Tips
+                                    for Juggling Career
+                                    and</h4>
+                                <div class="flex items-center text-gray-500 text-xs mt-1">
+                                    <svg class="w-3 h-3 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M8 7V3m8 4V3m-9 8h.01M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z">
+                                        </path>
+                                    </svg>
+                                    <span>May 31, 2024</span>
+                                    <a href="#" class="ml-auto"><svg class="w-3 h-3" fill="none" stroke="currentColor"
+                                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"></path>
+                                        </svg></a>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Post 3 -->
+                        <li class="flex items-center gap-4 py-3">
+                            <img src="https://placehold.co/120x80/e2e8f0/0f172a?text=Post" alt="Post 3"
+                                class="w-25 h-25 object-cover rounded-lg transition-transform duration-300 hover:scale-105">
+                            <div class="flex-1">
+                                <h4 class="font-bold text-[22px] leading-[30px] font-alegreya">Winter Dressing Tips When
+                                    It's Really ready
+                                </h4>
+                                <div class="flex items-center text-gray-500 text-xs mt-1">
+                                    <svg class="w-3 h-3 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M8 7V3m8 4V3m-9 8h.01M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z">
+                                        </path>
+                                    </svg>
+                                    <span>July 12, 2024</span>
+                                    <a href="#" class="ml-auto"><svg class="w-3 h-3" fill="none" stroke="currentColor"
+                                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"></path>
+                                        </svg></a>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Post 4 -->
+                        <li class="flex items-center gap-4 py-3">
+                            <img src="https://placehold.co/120x80/e2e8f0/0f172a?text=Post" alt="Post 4"
+                                class="w-25 h-25 object-cover rounded-lg transition-transform duration-300 hover:scale-105">
+                            <div class="flex-1">
+                                <h4 class="font-bold text-[22px] leading-[30px] font-alegreya">Why both businesses and
+                                    scammers love India’s
+                                </h4>
+                                <div class="flex items-center text-gray-500 text-xs mt-1">
+                                    <svg class="w-3 h-3 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M8 7V3m8 4V3m-9 8h.01M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z">
+                                        </path>
+                                    </svg>
+                                    <span>July 12, 2024</span>
+                                    <a href="#" class="ml-auto"><svg class="w-3 h-3" fill="none" stroke="currentColor"
+                                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"></path>
+                                        </svg></a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Scrollable Top Most Stories Section -->
+            <div class="md:col-span-2">
+                <div class="flex items-center justify-between mb-6">
+                    <h3 class="font-semibold text-[30px] leading-[38px] font-inter">Top Most Stories</h3>
+                    <a href="#" class="text-sm text-gray-600 hover:text-red-600 font-medium">View All <span
+                            aria-hidden="true">&rarr;</span></a>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <!-- Post 1 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <img src="https://placehold.co/600x400/e2e8f0/0f172a?text=Post" alt="Top Most Story 1"
+                            class="w-full h-auto object-cover transition-transform duration-300 hover:scale-105">
+                        <div class="p-4">
+                            <h4 class="font-bold text-[24px] leading-[33px] font-alegreya">Tech for Good: How Technology
+                                is Solving</h4>
+                            <div class="flex items-center text-gray-500 text-sm mt-2">
+                                <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M8 7V3m8 4V3m-9 8h.01M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z">
+                                    </path>
+                                </svg>
+                                <span>May 31, 2024</span>
+                                <a href="#" class="ml-auto"><svg class="w-4 h-4" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"></path>
+                                    </svg></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Post 2 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <img src="https://placehold.co/600x400/e2e8f0/0f172a?text=Post" alt="Top Most Story 2"
+                            class="w-full h-auto object-cover transition-transform duration-300 hover:scale-105">
+                        <div class="p-4">
+                            <h4 class="font-bold text-[24px] leading-[33px] font-alegreya">The Art of Hosting: Planning
+                                the Perfect</h4>
+                            <div class="flex items-center text-gray-500 text-sm mt-2">
+                                <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M8 7V3m8 4V3m-9 8h.01M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z">
+                                    </path>
+                                </svg>
+                                <span>May 30, 2024</span>
+                                <a href="#" class="ml-auto"><svg class="w-4 h-4" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"></path>
+                                    </svg></a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Ad/Featured Content -->
+                    <!-- Post 1 -->
+                    <div class="md:col-span-2">
+                        <div class="flex flex-col md:flex-row bg-white rounded-lg shadow-lg overflow-hidden mt-6">
+                            <img src="https://placehold.co/400x250/e2e8f0/0f172a?text=Content" alt="Featured Content"
+                                class="w-full md:w-1/2 object-cover transition-transform duration-300 hover:scale-105">
+                            <div class="p-6 md:p-8 flex-1">
+                                <span
+                                    class="inline-block bg-red-600 text-white text-xs font-semibold px-3 py-1 rounded-full mb-2 uppercase tracking-wide">
+                                    HEALTH
+                                </span>
+                                <h4 class="font-bold text-[24px] leading-[30px] font-alegreya">Young woman help cancer
+                                    patient around the world</h4>
+                                <p class="text-gray-600 text-sm mb-4">To mark the first UK show of artist Henni Brande,
+                                    developers ThemesCamp and German studio schultzschultz have created</p>
+                                <div class="flex items-center text-gray-500 text-sm">
+                                    <span class="text-xs mr-2 uppercase tracking-wide">McKinley</span>
+                                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M8 7V3m8 4V3m-9 8h.01M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z">
+                                        </path>
+                                    </svg>
+                                    <span>July 11, 2024</span>
+                                    <a href="#" class="ml-auto"><svg class="w-4 h-4" fill="none" stroke="currentColor"
+                                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"></path>
+                                        </svg></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Post 2 -->
+                    <div class="md:col-span-2">
+                        <div class="flex flex-col md:flex-row bg-white rounded-lg shadow-lg overflow-hidden mt-6">
+                            <img src="https://placehold.co/400x250/e2e8f0/0f172a?text=Content" alt="Featured Content"
+                                class="w-full md:w-1/2 object-cover transition-transform duration-300 hover:scale-105">
+                            <div class="p-6 md:p-8 flex-1">
+                                <span
+                                    class="inline-block bg-red-600 text-white text-xs font-semibold px-3 py-1 rounded-full mb-2 uppercase tracking-wide">
+                                    HEALTH
+                                </span>
+                                <h4 class="font-bold text-[24px] leading-[30px] font-alegreya">Young woman help cancer
+                                    patient around the world</h4>
+                                <p class="text-gray-600 text-sm mb-4">To mark the first UK show of artist Henni Brande,
+                                    developers ThemesCamp and German studio schultzschultz have created</p>
+                                <div class="flex items-center text-gray-500 text-sm">
+                                    <span class="text-xs mr-2 uppercase tracking-wide">McKinley</span>
+                                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M8 7V3m8 4V3m-9 8h.01M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z">
+                                        </path>
+                                    </svg>
+                                    <span>July 11, 2024</span>
+                                    <a href="#" class="ml-auto"><svg class="w-4 h-4" fill="none" stroke="currentColor"
+                                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"></path>
+                                        </svg></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Post 3 -->
+                    <div class="md:col-span-2">
+                        <div class="flex flex-col md:flex-row bg-white rounded-lg shadow-lg overflow-hidden mt-6">
+                            <img src="https://placehold.co/400x250/e2e8f0/0f172a?text=Content" alt="Featured Content"
+                                class="w-full md:w-1/2 object-cover transition-transform duration-300 hover:scale-105">
+                            <div class="p-6 md:p-8 flex-1">
+                                <span
+                                    class="inline-block bg-red-600 text-white text-xs font-semibold px-3 py-1 rounded-full mb-2 uppercase tracking-wide">
+                                    HEALTH
+                                </span>
+                                <h4 class="font-bold text-[24px] leading-[30px] font-alegreya">Young woman help cancer
+                                    patient around the world</h4>
+                                <p class="text-gray-600 text-sm mb-4">To mark the first UK show of artist Henni Brande,
+                                    developers ThemesCamp and German studio schultzschultz have created</p>
+                                <div class="flex items-center text-gray-500 text-sm">
+                                    <span class="text-xs mr-2 uppercase tracking-wide">McKinley</span>
+                                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M8 7V3m8 4V3m-9 8h.01M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z">
+                                        </path>
+                                    </svg>
+                                    <span>July 11, 2024</span>
+                                    <a href="#" class="ml-auto"><svg class="w-4 h-4" fill="none" stroke="currentColor"
+                                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"></path>
+                                        </svg></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Post 4 -->
+                    <div class="md:col-span-2">
+                        <div class="flex flex-col md:flex-row bg-white rounded-lg shadow-lg overflow-hidden mt-6">
+                            <img src="https://placehold.co/400x250/e2e8f0/0f172a?text=Content" alt="Featured Content"
+                                class="w-full md:w-1/2 object-cover transition-transform duration-300 hover:scale-105">
+                            <div class="p-6 md:p-8 flex-1">
+                                <span
+                                    class="inline-block bg-red-600 text-white text-xs font-semibold px-3 py-1 rounded-full mb-2 uppercase tracking-wide">
+                                    HEALTH
+                                </span>
+                                <h4 class="font-bold text-[24px] leading-[30px] font-alegreya">Young woman help cancer
+                                    patient around the world</h4>
+                                <p class="text-gray-600 text-sm mb-4">To mark the first UK show of artist Henni Brande,
+                                    developers ThemesCamp and German studio schultzschultz have created</p>
+                                <div class="flex items-center text-gray-500 text-sm">
+                                    <span class="text-xs mr-2 uppercase tracking-wide">McKinley</span>
+                                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M8 7V3m8 4V3m-9 8h.01M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z">
+                                        </path>
+                                    </svg>
+                                    <span>July 11, 2024</span>
+                                    <a href="#" class="ml-auto"><svg class="w-4 h-4" fill="none" stroke="currentColor"
+                                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"></path>
+                                        </svg></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BIG PICTURE -->
+    <div class="max-w-7xl mx-auto px-4 py-7">
+        <!-- Card -->
+        <div class="relative rounded-lg overflow-hidden shadow-lg">
+            <!-- Background Image -->
+            <img src="https://images.pexels.com/photos/4063861/pexels-photo-4063861.jpeg" alt="Startup strategies"
+                class="w-full h-[500px] object-cover transition-transform duration-300 hover:scale-105">
+
+            <!-- Overlay -->
+            <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+
+            <!-- Content -->
+            <div class="absolute inset-0 flex flex-col justify-end p-6 text-white">
+
+                <!-- Category -->
+                <span class="bg-red-600 text-white text-xs font-semibold px-2 py-0.5 rounded-md w-fit">
+                    BUSINESS
+                </span>
+
+                <!-- Title -->
+                <h2 class="font-bold text-[38px] leading-[45px] font-alegreya">
+                    Strategies For Scaling Your Startup: Tips From Successful Entrepreneur
+                </h2>
+
+                <!-- Description -->
+                <p class="mt-3 text-gray-200 font-normal text-[15px] leading-[26px] font-inter md:text-base max-w-3xl">
+                    Lorem ipsum dolor sit amet consectetur. Ut tellus suspendisse nulla aliquam
+                    Risus rutrum ultrices pretium dolor amet consectetur.
+                </p>
+
+                <!-- Author + Meta -->
+                <div class="mt-5 flex items-center text-sm text-gray-300 gap-4 flex-wrap">
+                    <!-- Author -->
+                    <div class="flex items-center gap-2">
+                        <img src="https://xsgames.co/randomusers/assets/avatars/male/2.jpg" alt="Author"
+                            class="w-8 h-8 rounded-full">
+                        <span class="font-semibold">McKiney</span>
+                    </div>
+
+                    <!-- Date -->
+                    <div class="flex items-center gap-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 
+                     2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                        </svg>
+                        <span>May 30, 2024</span>
+                    </div>
+
+                    <!-- Comments -->
+                    <div class="flex items-center gap-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M21 
+                     12c0 4.418-4.03 8-9 8a9.77 9.77 0 
+                     01-4-.8L3 20l1.8-3.6A7.3 7.3 0 
+                     013 12c0-4.418 4.03-8 9-8s9 3.582 
+                     9 8z" />
+                        </svg>
+                        <span>0 Comments</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Editor's Pick -->
+    <div class="max-w-7xl mx-auto px-4 py-7">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+
+            <!-- Left Side (Sticky) -->
+            <div class="lg:col-span-1">
+                <div class="sticky top-5">
+
+                    <!-- Outer Wrapper with border -->
+                    <div class="border rounded-lg shadow-sm overflow-hidden p-2">
+                        <h2
+                            class="font-semibold text-[30px] leading-[38px] font-inter flex items-center mb-4 p-4 border-b">
+                            <span class="text-red-600 text-2xl mr-2">▮</span> Editor's Pick
+                        </h2>
+
+                        <!-- Main Editor's Pick Card -->
+                        <div class="mb-6">
+                            <img src="https://images.pexels.com/photos/935979/pexels-photo-935979.jpeg"
+                                alt="Editor's Pick"
+                                class="w-full h-56 object-cover transition-transform duration-300 hover:scale-105">
+
+                            <div class="p-4">
+                                <span class="bg-red-600 text-white text-xs font-semibold px-2 py-0.5 rounded-md">
+                                    HEALTH
+                                </span>
+                                <h3 class="font-bold text-[24px] leading-[30px] font-alegreya">
+                                    Young woman help cancer patient around the world
+                                </h3>
+                                <div class="mt-3 flex items-center text-gray-500 text-sm gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 
+                       002-2V7a2 2 0 00-2-2H5a2 2 0 
+                       00-2 2v12a2 2 0 002 2z" />
+                                    </svg>
+                                    <span>July 11, 2024</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Small Post List -->
+                        <div class="space-y-5 p-4 pt-0">
+                            <!-- Post Item -->
+                            <div class="flex items-center gap-3 border-b pb-4">
+                                <img src="https://images.pexels.com/photos/315755/pexels-photo-315755.jpeg" alt="Post"
+                                    class="w-20 h-20 object-cover rounded transition-transform duration-300 hover:scale-105">
+                                <div class="flex-1">
+                                    <h4 class="font-bold text-[22px] leading-[30px] font-alegreya">
+                                        Baking Bliss: Tips and Tricks for Perfect
+                                    </h4>
+                                    <div class="mt-1 flex items-center text-gray-500 text-sm gap-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 
+                         002-2V7a2 2 0 00-2-2H5a2 2 0 
+                         00-2 2v12a2 2 0 002 2z" />
+                                        </svg>
+                                        <span>May 31, 2024</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Post Item -->
+                            <div class="flex items-center gap-3">
+                                <img src="https://images.pexels.com/photos/758733/pexels-photo-758733.jpeg" alt="Post"
+                                    class="w-20 h-20 object-cover rounded transition-transform duration-300 hover:scale-105">
+                                <div class="flex-1">
+                                    <h4 class="font-bold text-[22px] leading-[30px] font-alegreya">
+                                        Into the Wild: Embarking on Epic Outdoor
+                                    </h4>
+                                    <div class="mt-1 flex items-center text-gray-500 text-sm gap-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 
+                         002-2V7a2 2 0 00-2-2H5a2 2 0 
+                         00-2 2v12a2 2 0 002 2z" />
+                                        </svg>
+                                        <span>March 26, 2024</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Small Post List -->
+
+                    </div>
+                    <!-- End Wrapper -->
+
+                </div>
+            </div>
+
+
+            <!-- Right Side (Posts List) -->
+            <div class="lg:col-span-2 space-y-8">
+
+                <!-- Post 1 -->
+                <div class="flex flex-col md:flex-row gap-5 border-b pb-5">
+                    <img src="https://images.pexels.com/photos/2341830/pexels-photo-2341830.jpeg" alt="Post"
+                        class="w-full md:w-1/3 h-48 object-cover rounded-md transition-transform duration-300 hover:scale-105">
+                    <div>
+                        <span class="bg-red-600 text-white text-xs font-semibold px-2 py-0.5 rounded-md">
+                            BREAKING NEWS
+                        </span>
+                        <h3 class="font-bold text-[24px] leading-[30px] font-alegreya mt-2">
+                            The Joy of Cooking: Rediscovering the Pleasure of Homemade Meals
+                        </h3>
+                        <p class="text-gray-600 mt-2 font-normal text-[15px] leading-[26px] font-inter">
+                            Embracing a balanced lifestyle is key to achieving overall well-being and happiness.
+                            Start by practicing mindfulness through meditation.
+                        </p>
+                        <div class="mt-3 flex items-center text-gray-500 text-sm gap-4">
+                            <img src="https://images.pexels.com/photos/33598059/pexels-photo-33598059.jpeg" alt="Image"
+                                class="w-8 h-8 rounded-full">
+                            <span class="font-medium">McKiney</span>
+                            <span class="font-normal text-[14px] leading-[26px] font-inter">March 26, 2024</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Post 2 -->
+                <div class="flex flex-col md:flex-row gap-5 border-b pb-5">
+                    <img src="https://images.pexels.com/photos/758733/pexels-photo-758733.jpeg" alt="Post"
+                        class="w-full md:w-1/3 h-48 object-cover rounded-md transition-transform duration-300 hover:scale-105">
+                    <div>
+                        <span class="bg-red-600 text-white text-xs font-semibold px-2 py-0.5 rounded-md">
+                            TRAVEL
+                        </span>
+                        <h3 class="font-bold text-[24px] leading-[30px] font-alegreya mt-2">
+                            Into the Wild: Embarking on Epic Outdoor Expeditions and Nature Retreats
+                        </h3>
+                        <p class="text-gray-600 mt-2 font-normal text-[15px] leading-[26px] font-inter">
+                            Lorem ipsum dolor sit amet consectetur. Ut tellus suspendisse nulla aliquam Risus rutrum
+                            ultrices pretium dolor amet consectetur.
+                        </p>
+                        <div class="mt-3 flex items-center text-gray-500 text-sm gap-4">
+                            <img src="https://images.pexels.com/photos/33598059/pexels-photo-33598059.jpeg" alt="Image"
+                                class="w-8 h-8 rounded-full">
+                            <span class="font-medium">McKiney</span>
+                            <span class="font-normal text-[15px] leading-[26px] font-inter">March 26, 2024</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Post 3 -->
+                <div class="flex flex-col md:flex-row gap-5 border-b pb-5">
+                    <img src="https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg" alt="Post"
+                        class="w-full md:w-1/3 h-48 object-cover rounded-md transition-transform duration-300 hover:scale-105">
+                    <div>
+                        <span class="bg-red-600 text-white text-xs font-semibold px-2 py-0.5 rounded-md">
+                            BUSINESS
+                        </span>
+                        <h3 class="font-bold text-[24px] leading-[30px] font-alegreya mt-2">
+                            Scaling Your Startup: Strategies for Growth
+                        </h3>
+                        <p class="text-gray-600 mt-2 font-normal text-[15px] leading-[26px] font-inter">
+                            Effective strategies for expanding your business sustainably without losing focus.
+                        </p>
+                        <div class="mt-3 flex items-center text-gray-500 text-sm gap-4">
+                            <img src="https://images.pexels.com/photos/33598059/pexels-photo-33598059.jpeg" alt="Image"
+                                class="w-8 h-8 rounded-full">
+                            <span class="font-medium">McKiney</span>
+                            <span class="font-normal text-[15px] leading-[26px] font-inter">April 15, 2024</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Post 4 -->
+                <div class="flex flex-col md:flex-row gap-5 border-b pb-5">
+                    <img src="https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg" alt="Post"
+                        class="w-full md:w-1/3 h-48 object-cover rounded-md transition-transform duration-300 hover:scale-105">
+                    <div>
+                        <span class="bg-red-600 text-white text-xs font-semibold px-2 py-0.5 rounded-md">
+                            BUSINESS
+                        </span>
+                        <h3 class="font-bold text-[24px] leading-[30px] font-alegreya mt-2">
+                            Hello Developer Scaling Your Startup: Strategies for Growth
+                        </h3>
+                        <p class="text-gray-600 mt-2 font-normal text-[15px] leading-[26px] font-inter">
+                            Effective strategies for expanding your business sustainably without losing focus.
+                        </p>
+                        <div class="mt-3 flex items-center text-gray-500 text-sm gap-4">
+                            <img src="https://images.pexels.com/photos/33598059/pexels-photo-33598059.jpeg" alt="Image"
+                                class="w-8 h-8 rounded-full">
+                            <span class="font-medium">McKiney</span>
+                            <span class="font-normal text-[15px] leading-[26px] font-inter">April 15, 2024</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex justify-center mt-6">
+                    <button
+                        class="px-6 py-3 border border-black-300 bg-white text-black font-semibold rounded-lg hover:bg-red-500 hover:text-white transition">
+                        Learn More
+                    </button>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- FOOTER PART -->
+    <div class="bg-black">
+        <div class="max-w-7xl mx-auto px-4 py-6">
+            <footer class="text-center text-gray-400 text-xl font-bold font-alegreya">
+                © 2024 Empath. All Rights Reserved.
+            </footer>
+        </div>
+    </div>
+
+
+    <script>
+        const menuBtn = document.getElementById("menu-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+
+        menuBtn.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+        });
+    </script>
+</body>
+
+</html>
