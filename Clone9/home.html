@@ -1,0 +1,1137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEWZIN</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Neco-Variable&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* body {
+            font-family: 'Neco-Variable', sans-serif;
+        } */
+
+        body {
+            font-family: 'Work Sans', sans-serif;
+        }
+    </style>
+
+</head>
+
+<body class="font-worksans">
+    <!-- Navbar -->
+    <nav class="w-full bg-[#40798C] text-white">
+        <div class="max-w-[1170px] mx-auto flex items-center justify-between py-4">
+            <!-- Logo -->
+            <div class="text-4xl font-extrabold tracking-wide">
+                NEWZIN
+            </div>
+            <!-- Nav Links -->
+            <ul class="hidden md:flex space-x-8 text-lg font-medium">
+                <li><a href="#" class="hover:underline">HOME</a></li>
+                <li><a href="#" class="hover:underline">FEATURES</a></li>
+                <li><a href="#" class="hover:underline">POLITICS</a></li>
+                <li><a href="#" class="hover:underline">ECONOMY</a></li>
+                <li><a href="#" class="hover:underline">SCIENCE & TECH</a></li>
+                <li><a href="#" class="hover:underline">SPORTS</a></li>
+            </ul>
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button id="menu-btn" class="focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Nav -->
+        <div id="mobile-menu" class="hidden md:hidden px-4 pb-4">
+            <ul class="flex flex-col space-y-4 text-lg font-medium">
+                <li><a href="#" class="hover:text-red-500 transition-colors">HOME</a></li>
+                <li><a href="#" class="hover:text-red-500 transition-colors">FEATURES</a></li>
+                <li><a href="#" class="hover:text-red-500 transition-colors">POLITICS</a></li>
+                <li><a href="#" class="hover:text-red-500 transition-colors">ECONOMY</a></li>
+                <li><a href="#" class="hover:text-red-500 transition-colors">SCIENCE & TECH</a></li>
+                <li><a href="#" class="hover:text-red-500 transition-colors">SPORTS</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- 2 NEWS COLUMN SECTION -->
+
+    <div class="max-w-[1170px] mx-auto border-b border-gray-200">
+        <div class="grid grid-cols-1 md:grid-cols-2 border-b border-gray-200">
+
+            <!-- Left Article -->
+            <div class="px-2 md:pl-0 md:pr-6 py-6 md:border-r border-gray-200">
+                <span class="bg-gray-800 text-white text-xs font-semibold px-2 py-1 rounded">NEWS</span>
+                <h2 class="text-2xl font-bold mt-3 mb-2 cursor-pointer">
+                    Biden asks Congress for $33 billion to support Ukraine
+                </h2>
+                <p class="text-gray-600 mb-4">
+                    The social-media company is in discussions to sell itself to Elon, a dramatic turn of events just 11
+                    days after the...
+                </p>
+
+                <!-- Meta info -->
+                <div class="flex items-center gap-4 text-gray-500 text-sm mb-4">
+                    <span class="flex items-center gap-1"><i class="ri-calendar-line"></i> Aug 3, 2022</span>
+                    <span class="flex items-center gap-1"><i class="ri-user-3-line"></i> By David Bowie</span>
+                    <span class="flex items-center gap-1"><i class="ri-chat-3-line"></i> 0 Comments</span>
+                </div>
+
+                <!-- Image -->
+                <div class="overflow-hidden rounded">
+                    <img src="https://placehold.co/600x400/000000/FFFFFF?text=Black+%26+White+Image" alt="News Image"
+                        class="w-full h-[370px] object-cover transition-transform duration-300 cursor-pointer hover:scale-105">
+                </div>
+            </div>
+
+            <!-- Right Article -->
+            <div class="px-2 md:pr-0 md:pl-6 py-6">
+                <span class="bg-gray-800 text-white text-xs font-semibold px-2 py-1 rounded">NEWS</span>
+                <h2 class="text-2xl font-bold mt-3 mb-2 cursor-pointer">
+                    Putin ‘preparing to starve’ parts of developing world
+                </h2>
+                <p class="text-gray-600 mb-4">
+                    The social-media company is in discussions to sell itself to Elon, a dramatic turn of events just 11
+                    days after the...
+                </p>
+
+                <!-- Meta info -->
+                <div class="flex items-center gap-4 text-gray-500 text-sm mb-4">
+                    <span class="flex items-center gap-1"><i class="ri-calendar-line"></i> Aug 3, 2022</span>
+                    <span class="flex items-center gap-1"><i class="ri-user-3-line"></i> By David Bowie</span>
+                    <span class="flex items-center gap-1"><i class="ri-chat-3-line"></i> 0 Comments</span>
+                </div>
+
+                <!-- Image -->
+                <div class="overflow-hidden rounded">
+                    <img src="https://placehold.co/600x400/1D4ED8/FFFFFF?text=Blue+Poster" alt="News Image"
+                        class="w-full h-[370px] object-cover transition-transform duration-300 cursor-pointer hover:scale-105">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- 3 COLUMN NEWS SECTION -->
+
+    <div class="">
+        <div class="max-w-[1170px] w-full mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 border-b border-gray-200">
+
+            <!-- Card 1 -->
+            <div class="p-2 sm:p-4 lg:p-6 lg:pl-0 md:pr-4 md:pl-0">
+                <!-- Category -->
+                <div class="flex items-center gap-2 mb-2">
+                    <span class="bg-red-600 text-white text-xs font-semibold px-2 py-1 rounded">LIVE</span>
+                    <span class="bg-gray-800 text-white text-xs font-semibold px-2 py-1 rounded">POLITICS</span>
+                </div>
+                <!-- Title -->
+                <h2 class="text-xl font-bold mb-2 cursor-pointer">
+                    The 6th session of the US Congress today
+                </h2>
+                <!-- Meta -->
+                <div class="flex items-center gap-4 text-gray-500 text-sm mb-4">
+                    <span class="flex items-center gap-1"><i class="ri-calendar-line"></i> Aug 3, 2022</span>
+                    <span class="flex items-center gap-1"><i class="ri-chat-3-line"></i> 0 Comments</span>
+                </div>
+                <!-- Image -->
+                <div class="overflow-hidden rounded aspect-[4/3]">
+                    <img src="https://placehold.co/600x400/cccccc/000000?text=Congress+Image" alt="Congress"
+                        class="w-full h-full object-cover transition-transform duration-300 cursor-pointer hover:scale-105">
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="p-2 sm:p-4 lg:p-6">
+                <div class="flex items-center gap-2 mb-2">
+                    <span class="bg-blue-800 text-white text-xs font-semibold px-2 py-1 rounded">MARKET</span>
+                </div>
+                <h2 class="text-xl font-bold mb-2 cursor-pointer">
+                    The unexpected change of the stock market
+                </h2>
+                <div class="flex items-center gap-4 text-gray-500 text-sm mb-4">
+                    <span class="flex items-center gap-1"><i class="ri-calendar-line"></i> Aug 3, 2022</span>
+                    <span class="flex items-center gap-1"><i class="ri-chat-3-line"></i> 0 Comments</span>
+                </div>
+                <!-- Image with Play Button -->
+                <div class="relative overflow-hidden rounded aspect-[4/3]">
+                    <img src="https://placehold.co/600x400/999999/ffffff?text=Stock+Market" alt="Stock Market"
+                        class="w-full h-full object-cover transition-transform duration-300 cursor-pointer hover:scale-105">
+                    <div class="absolute inset-0 flex justify-center items-center">
+                        <div
+                            class="w-12 h-12 bg-black bg-opacity-60 text-white rounded-full flex justify-center items-center">
+                            ▶
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="p-2 sm:p-4 lg:p-6 lg:pr-0 md:pl-4 md:pr-0">
+                <div class="flex items-center gap-2 mb-2">
+                    <span class="bg-cyan-800 text-white text-xs font-semibold px-2 py-1 rounded">ECONOMIC</span>
+                </div>
+                <h2 class="text-xl font-bold mb-2 cursor-pointer">
+                    Norway’s economy in 2023 increases strongly
+                </h2>
+                <div class="flex items-center gap-4 text-gray-500 text-sm mb-4">
+                    <span class="flex items-center gap-1"><i class="ri-calendar-line"></i> Aug 3, 2022</span>
+                    <span class="flex items-center gap-1"><i class="ri-chat-3-line"></i> 0 Comments</span>
+                </div>
+                <!-- Image -->
+                <div class="overflow-hidden rounded aspect-[4/3]">
+                    <img src="https://placehold.co/600x400/ff0000/ffffff?text=Norway+Flag" alt="Norway Flag"
+                        class="w-full h-full object-cover transition-transform duration-300 cursor-pointer hover:scale-105">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- LATEST NEWS SECTION -->
+
+    <div class="w-[1170px] mx-auto mt-6">
+        <div>
+            <h3 class="font-bold text-lg mb-4">Latest Posts</h3>
+        </div>
+
+        <!-- Flex Row: Featured, Latest, Trending -->
+        <div class="flex flex-col md:flex-row divide-y md:divide-y-0 divide-gray-200">
+
+
+            <!-- Column 1: Featured -->
+            <div class="w-full md:w-[480px] flex-shrink-0 mb-6 md:mb-0">
+
+                <div class="relative rounded-lg overflow-hidden">
+                    <img src="https://images.pexels.com/photos/31718767/pexels-photo-31718767.jpeg" alt="Businessman"
+                        class="w-full h-[480px] md:h-[525px] object-cover">
+
+                    <!-- Category Tag -->
+                    <span
+                        class="absolute top-3 left-3 bg-white text-black text-[11px] px-2 py-1 uppercase tracking-wide rounded">
+                        Business
+                    </span>
+
+                    <!-- Overlay Info -->
+                    <div
+                        class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/80 to-transparent text-white p-4 md:p-6">
+                        <h2 class="text-xl md:text-2xl font-bold leading-snug md:leading-tight">
+                            Forbes #3: Top 10 Businessman NYC
+                        </h2>
+                        <p class="text-sm mt-2 md:mt-3 line-clamp-3">
+                            Its first decline in subscribers since 2011 triggered a $54 billion stock value loss and...
+                        </p>
+                        <div class="flex items-center text-xs mt-3 space-x-4 opacity-80">
+                            <span>Aug 5, 2022</span>
+                            <span>By David Bowie</span>
+                            <span>0 Comments</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Column 2: Latest Posts -->
+            <div class="w-full md:w-[384px] flex-shrink-0 mb-6 md:mb-0 md:border-l md:border-gray-200 md:pl-6 p-4">
+                <div class="space-y-4">
+                    <!-- Post Item 1 -->
+                    <div class="grid grid-cols-[1fr_100px] gap-3 border-b pb-4 items-center mt-15">
+                        <div class="h-[75px] flex flex-col justify-center">
+                            <span
+                                class="w-fit bg-[#40798C] text-white text-xs font-normal px-2 py-1 rounded">MARKET</span>
+                            <h3 class="text-[15px] leading-[24px] font-semibold mt-1 cursor-pointer">
+                                Norway exempts visas for visitors from EU
+                            </h3>
+                        </div>
+                        <img src="https://images.pexels.com/photos/25427762/pexels-photo-25427762.jpeg" alt="Visa News"
+                            class="h-[75px] w-[100px] object-cover">
+                    </div>
+                    <!-- Post Item 2 -->
+                    <div class="grid grid-cols-[1fr_100px] gap-3 border-b pb-4 items-center">
+                        <div class="h-[75px] flex flex-col justify-center">
+                            <span
+                                class="w-fit bg-[#40798C] text-white text-xs font-normal px-2 py-1 rounded">MARKET</span>
+                            <h3 class="text-[15px] leading-[24px] font-semibold mt-1 cursor-pointer">
+                                Norway exempts visas for visitors from EU
+                            </h3>
+                        </div>
+                        <img src="https://images.pexels.com/photos/25427762/pexels-photo-25427762.jpeg" alt="Visa News"
+                            class="h-[75px] w-[100px] object-cover">
+                    </div>
+                    <!-- Post Item 3 -->
+                    <div class="grid grid-cols-[1fr_100px] gap-3 border-b pb-4 items-center">
+                        <div class="h-[75px] flex flex-col justify-center">
+                            <span
+                                class="w-fit bg-[#40798C] text-white text-xs font-normal px-2 py-1 rounded">MARKET</span>
+                            <h3 class="text-[15px] leading-[24px] font-semibold mt-1 cursor-pointer">
+                                Norway exempts visas for visitors from EU
+                            </h3>
+                        </div>
+                        <img src="https://images.pexels.com/photos/25427762/pexels-photo-25427762.jpeg" alt="Visa News"
+                            class="h-[75px] w-[100px] object-cover">
+                    </div>
+                    <!-- Post Item 4 -->
+                    <div class="grid grid-cols-[1fr_100px] gap-3 border-b pb-4 items-center">
+                        <div class="h-[75px] flex flex-col justify-center">
+                            <span
+                                class="w-fit bg-[#40798C] text-white text-xs font-normal px-2 py-1 rounded">MARKET</span>
+                            <h3 class="text-[15px] leading-[24px] font-semibold mt-1 cursor-pointer">
+                                Norway exempts visas for visitors from EU
+                            </h3>
+                        </div>
+                        <img src="https://images.pexels.com/photos/25427762/pexels-photo-25427762.jpeg" alt="Visa News"
+                            class="h-[75px] w-[100px] object-cover">
+                    </div>
+
+                    <a href="#" class="block text-xs font-medium text-blue-600 hover:underline mt-2">See All Posts →</a>
+                </div>
+            </div>
+
+            <!-- Column 3: Trending -->
+            <div class="flex-1 md:pl-6 md:border-l md:border-gray-200">
+                <h3 class="font-bold text-lg border-b pb-2 mb-4">Trending Posts</h3>
+
+                <!-- Top Trending -->
+                <div class="relative w-full h-32 rounded overflow-hidden mb-4">
+                    <img src="https://images.pexels.com/photos/33339461/pexels-photo-33339461.jpeg" alt="Real Estate"
+                        class="w-full h-full object-cover">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent p-2 flex flex-col justify-end">
+                        <span class="w-fit bg-[#40798C] text-white text-xs font-normal px-2 py-1 rounded">News</span>
+                        <h4 class="font-semibold mt-1 text-white cursor-pointer text-sm md:text-base">
+                            Real Estate in California
+                        </h4>
+                    </div>
+                </div>
+
+                <!-- Numbered Trending -->
+                <div class="space-y-4">
+                    <!-- NUMBER 1 -->
+                    <div class="flex border-b border-gray-200 pb-3">
+                        <div class="flex items-center justify-center pr-3 border-r border-gray-300">
+                            <span class="text-2xl md:text-3xl font-extrabold text-gray-400">1</span>
+                        </div>
+                        <div class="pl-3">
+                            <span
+                                class="w-fit bg-[#40798C] text-white text-xs font-normal px-2 py-1 rounded">News</span>
+                            <p class="font-medium mt-1 leading-snug cursor-pointer">
+                                Elon Musk got Twitter because he gets Twitter
+                            </p>
+                        </div>
+                    </div>
+                    <!-- NUMBER 2 -->
+                    <div class="flex border-b border-gray-200 pb-3">
+                        <div class="flex items-center justify-center pr-3 border-r border-gray-300">
+                            <span class="text-2xl md:text-3xl font-extrabold text-gray-400">2</span>
+                        </div>
+                        <div class="pl-3">
+                            <span
+                                class="w-fit bg-[#40798C] text-white text-xs font-normal px-2 py-1 rounded">News</span>
+                            <p class="font-medium mt-1 leading-snug cursor-pointer">
+                                Elon Musk got Twitter because he gets Twitter
+                            </p>
+                        </div>
+                    </div>
+                    <!-- NUMBER 3 -->
+                    <div class="flex border-b border-gray-200 pb-3">
+                        <div class="flex items-center justify-center pr-3 border-r border-gray-300">
+                            <span class="text-2xl md:text-3xl font-extrabold text-gray-400">3</span>
+                        </div>
+                        <div class="pl-3">
+                            <span
+                                class="w-fit bg-[#40798C] text-white text-xs font-normal px-2 py-1 rounded">News</span>
+                            <p class="font-medium mt-1 leading-snug cursor-pointer">
+                                Elon Musk got Twitter because he gets Twitter
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#" class="block text-xs font-medium text-blue-600 hover:underline mt-2">See All Posts →</a>
+            </div>
+
+        </div>
+    </div>
+
+
+    <hr class="max-w-[1170px] mx-auto border-gray-200 mt-4">
+
+    <!-- POPULAR POST SECTION -->
+
+    <div class="w-[1170px] max-w-full mx-auto flex flex-col md:flex-row border-b border-gray-300 mt-6">
+        <!-- Column 1 -->
+        <div class="w-full md:w-[300px] border-b md:border-b-0 md:border-r border-gray-300 p-0 md:p-4 md:pl-0">
+            <div class="w-full md:w-[300px] flex-shrink-0 pr-4 space-y-4">
+                <!-- Section Title -->
+                <h3 class="text-sm font-bold uppercase tracking-wide">Popular Posts</h3>
+
+                <!-- Post Item 1 -->
+                <div class="space-y-3">
+                    <!-- Category Badge -->
+                    <span class="w-fit bg-[#40798C] text-white text-xs font-normal px-2 py-1 rounded">MARKET</span>
+
+                    <!-- Post Title -->
+                    <h2 class="text-[15px] font-semibold leading-snug cursor-pointer">
+                        UK Stock Market last week, Nike hit near 40%
+                    </h2>
+
+                    <!-- Meta Info -->
+                    <div class="flex items-center space-x-4 text-gray-500 text-xs">
+                        <span>Aug 6, 2022</span>
+                        <div class="flex items-center space-x-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17 8h2a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2v-9a2 2 0 012-2h2m4-4h4m-4 0a2 2 0 114 0m-4 0V4m4 0v4" />
+                            </svg>
+                            <span>0</span>
+                        </div>
+                    </div>
+
+                    <!-- Post Image -->
+                    <img src="https://images.pexels.com/photos/187041/pexels-photo-187041.jpeg" alt="Stock Market"
+                        class="w-full h-auto object-cover">
+                </div>
+
+                <!-- Divider -->
+                <hr class="border-gray-200">
+
+                <!-- Post Item 2 -->
+                <div class="space-y-3">
+                    <!-- Category Badge -->
+                    <span class="w-fit bg-[#40798C] text-white text-xs font-normal px-2 py-1 rounded">MARKET</span>
+
+                    <!-- Post Title -->
+                    <h2 class="text-[15px] font-semibold leading-snug cursor-pointer">
+                        UK Stock Market last week, Nike hit near 40%
+                    </h2>
+
+                    <!-- Meta Info -->
+                    <div class="flex items-center space-x-4 text-gray-500 text-xs">
+                        <span>Aug 6, 2022</span>
+                        <div class="flex items-center space-x-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17 8h2a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2v-9a2 2 0 012-2h2m4-4h4m-4 0a2 2 0 114 0m-4 0V4m4 0v4" />
+                            </svg>
+                            <span>0</span>
+                        </div>
+                    </div>
+
+                    <!-- Post Image -->
+                    <img src="https://images.pexels.com/photos/187041/pexels-photo-187041.jpeg" alt="Stock Market"
+                        class="w-full h-auto object-cover">
+                </div>
+
+                <!-- Divider -->
+                <hr class="border-gray-200">
+            </div>
+
+            <!-- POST ITEM 3 -->
+            <div class="space-y-3 mt-3">
+                <!-- Category Badge -->
+                <span class="w-fit bg-[#40798C] text-white text-xs font-normal px-2 py-1 rounded">MARKET</span>
+
+                <!-- Post Title -->
+                <h2 class="text-[15px] font-semibold leading-snug cursor-pointer">
+                    UK Stock Market last week, Nike hit near 40%
+                </h2>
+
+                <!-- Meta Info -->
+                <div class="flex items-center space-x-4 text-gray-500 text-xs">
+                    <span>Aug 6, 2022</span>
+                    <div class="flex items-center space-x-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17 8h2a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2v-9a2 2 0 012-2h2m4-4h4m-4 0a2 2 0 114 0m-4 0V4m4 0v4" />
+                        </svg>
+                        <span>0</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- LAST ITEM -->
+            <div class="max-w-sm h-[345px] bg-[#DADAD9] shadow rounded-lg overflow-hidden flex flex-col mt-4">
+                <!-- Top content -->
+                <div class="p-4 flex-1">
+                    <span class="text-xs font-semibold text-gray-500 uppercase">Sponsored</span>
+                    <h2 class="mt-2 text-lg font-semibold text-gray-900 leading-snug">
+                        Standard post with title for post without image
+                    </h2>
+                    <div class="mt-3 flex items-center text-sm text-gray-500 space-x-4">
+                        <span class="flex items-center space-x-1">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 
+            0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                            </svg>
+                            <span>Aug 6, 2022</span>
+                        </span>
+                        <span class="flex items-center space-x-1">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v10a2 2 
+            0 01-2 2H5a2 2 0 01-2-2V10a2 2 0 
+            012-2h2m3-3h4m-4 0a2 2 0 104 0m-4 0v3" />
+                            </svg>
+                            <span>0</span>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Image -->
+                <div class="w-full">
+                    <img src="https://picsum.photos/600/400" alt="Post image" class="w-full h-50 object-cover p-2">
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- Column 2 -->
+        <div class="w-full md:w-[560px] border-b md:border-b-0 md:border-r border-gray-300 p-4">
+            <h3 class="text-sm font-bold uppercase tracking-wide">Resently Posts</h3>
+
+            <!-- POST 1 -->
+            <div class=" w-full border-b pb-4 flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-4">
+
+                <!-- Left Content -->
+                <div class="flex-1 mt-4">
+                    <span class="w-fit bg-[#40798C] text-white text-xs font-normal px-2 py-1 rounded">MARKET</span>
+                    <h2 class="text-[20px] leading-[28px] font-semibold mt-2">
+                        The transportation market shows signs of revival
+                    </h2>
+                    <div class="flex items-center text-gray-500 text-sm mt-2 gap-4">
+                        <span class="flex items-center gap-1">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2v-7H3v7a2 2 0 002 2z" />
+                            </svg>
+                            Aug 6, 2022
+                        </span>
+                        <span class="flex items-center gap-1">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" />
+                            </svg>
+                            0 Comments
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Right Image -->
+                <div class="flex-shrink-0">
+                    <img src="https://images.pexels.com/photos/210607/pexels-photo-210607.jpeg" alt="Transport"
+                        class="h-[140px] w-[210px] object-cover rounded">
+                </div>
+
+            </div>
+
+            <!-- POST 2 -->
+            <div class=" w-full border-b pb-4 flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-4">
+
+                <!-- Left Content -->
+                <div class="flex-1 mt-4">
+                    <span class="w-fit bg-[#40798C] text-white text-xs font-normal px-2 py-1 rounded">MARKET</span>
+                    <h2 class="text-[20px] leading-[28px] font-semibold mt-2">
+                        The transportation market shows signs of revival
+                    </h2>
+                    <div class="flex items-center text-gray-500 text-sm mt-2 gap-4">
+                        <span class="flex items-center gap-1">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2v-7H3v7a2 2 0 002 2z" />
+                            </svg>
+                            Aug 6, 2022
+                        </span>
+                        <span class="flex items-center gap-1">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" />
+                            </svg>
+                            0 Comments
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Right Image -->
+                <div class="flex-shrink-0">
+                    <img src="https://images.pexels.com/photos/210607/pexels-photo-210607.jpeg" alt="Transport"
+                        class="h-[140px] w-[210px] object-cover rounded">
+                </div>
+
+            </div>
+
+            <!-- POST 3 -->
+            <div class=" w-full border-b pb-4 flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-4">
+
+                <!-- Left Content -->
+                <div class="flex-1 mt-4">
+                    <span class="w-fit bg-[#40798C] text-white text-xs font-normal px-2 py-1 rounded">MARKET</span>
+                    <h2 class="text-[20px] leading-[28px] font-semibold mt-2">
+                        The transportation market shows signs of revival
+                    </h2>
+                    <div class="flex items-center text-gray-500 text-sm mt-2 gap-4">
+                        <span class="flex items-center gap-1">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2v-7H3v7a2 2 0 002 2z" />
+                            </svg>
+                            Aug 6, 2022
+                        </span>
+                        <span class="flex items-center gap-1">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" />
+                            </svg>
+                            0 Comments
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Right Image -->
+                <div class="flex-shrink-0">
+                    <img src="https://images.pexels.com/photos/210607/pexels-photo-210607.jpeg" alt="Transport"
+                        class="h-[140px] w-[210px] object-cover rounded">
+                </div>
+
+            </div>
+
+            <hr class="border-gray-200">
+
+            <!-- BIG IMAGE -->
+
+            <div class="relative w-full max-w-2xl rounded overflow-hidden border-b border-gray-300 pb-4">
+                <!-- Background Image -->
+                <img src="https://images.pexels.com/photos/793097/pexels-photo-793097.jpeg" alt="NFL Draft"
+                    class="w-full h-[300px] object-cover">
+
+                <!-- Overlay -->
+                <div class="absolute inset-0 "></div>
+
+                <!-- Content -->
+                <div class="absolute inset-0 flex flex-col justify-between p-4 text-white">
+
+                    <!-- Top Category -->
+                    <div>
+                        <span class="w-fit bg-[#40798C] text-white text-xs font-normal px-2 py-1 rounded">MARKET</span>
+                    </div>
+
+                    <!-- Title -->
+                    <div>
+                        <h2 class="text-2xl font-bold leading-snug">
+                            2022 NFL Craf predict: Sample <br /> Quarterbacks
+                        </h2>
+                        <!-- Meta Info -->
+                        <div class="flex items-center gap-6 text-sm text-gray-200">
+                            <span class="flex items-center gap-1">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2v-7H3v7a2 2 0 002 2z" />
+                                </svg>
+                                Aug 6, 2022
+                            </span>
+                            <span class="flex items-center gap-1">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M5.121 17.804A9 9 0 1118.364 4.56a9 9 0 01-13.243 13.243z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                </svg>
+                                By David Bowie
+                            </span>
+                            <span class="flex items-center gap-1">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" />
+                                </svg>
+                                0 Comments
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <hr class="border-gray-200">
+
+            <!-- POST 3 -->
+            <div
+                class="mt-4 w-full border-b pb-4 flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-4">
+
+                <!-- Left Content -->
+                <div class="flex-1 mt-4">
+                    <span class="w-fit bg-[#40798C] text-white text-xs font-normal px-2 py-1 rounded">MARKET</span>
+                    <h2 class="text-[20px] leading-[28px] font-semibold mt-2">
+                        The transportation market shows signs of revival
+                    </h2>
+                    <div class="flex items-center text-gray-500 text-sm mt-2 gap-4">
+                        <span class="flex items-center gap-1">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2v-7H3v7a2 2 0 002 2z" />
+                            </svg>
+                            Aug 6, 2022
+                        </span>
+                        <span class="flex items-center gap-1">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" />
+                            </svg>
+                            0 Comments
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Right Image -->
+                <div class="flex-shrink-0">
+                    <img src="https://images.pexels.com/photos/210607/pexels-photo-210607.jpeg" alt="Transport"
+                        class="h-[140px] w-[210px] object-cover rounded">
+                </div>
+
+            </div>
+            <!-- POST 5 -->
+            <div class="mt-4 w-full flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-4">
+
+                <!-- Left Content -->
+                <div class="flex-1 mt-4">
+                    <span class="w-fit bg-[#40798C] text-white text-xs font-normal px-2 py-1 rounded">MARKET</span>
+                    <h2 class="text-[20px] leading-[28px] font-semibold mt-2">
+                        The transportation market shows signs of revival
+                    </h2>
+                    <div class="flex items-center text-gray-500 text-sm mt-2 gap-4">
+                        <span class="flex items-center gap-1">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2v-7H3v7a2 2 0 002 2z" />
+                            </svg>
+                            Aug 6, 2022
+                        </span>
+                        <span class="flex items-center gap-1">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" />
+                            </svg>
+                            0 Comments
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Column 3 -->
+        <div class="flex-1 p-4 md:pr-0 lg:sticky lg:top-4 self-start h-fit">
+            <div class="max-w-sm border p-4">
+                <!-- Title -->
+                <h2 class="text-lg font-semibold mb-4">HOT TAGS TODAY</h2>
+
+                <!-- Tags -->
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 border text-sm cursor-pointer hover:bg-gray-100">2 Columns Posts</span>
+                    <span class="px-3 py-1 border text-sm cursor-pointer hover:bg-gray-100">3 Columns Posts</span>
+                    <span class="px-3 py-1 border text-sm cursor-pointer hover:bg-gray-100">Latest News</span>
+                    <span class="px-3 py-1 border text-sm cursor-pointer hover:bg-gray-100">Latest News Slider</span>
+                    <span class="px-3 py-1 border text-sm cursor-pointer hover:bg-gray-100">Popular Posts</span>
+                    <span class="px-3 py-1 border text-sm cursor-pointer hover:bg-gray-100">Recently Post</span>
+                </div>
+            </div>
+
+            <hr class="border-gray-200 mt-4 mb-4">
+
+            <div class="max-w-sm">
+                <!-- Title -->
+                <h2 class="text-sm font-semibold tracking-wider mb-4">STAY CONNECTED</h2>
+
+                <!-- List -->
+                <div class="space-y-4">
+                    <!-- Item 1 -->
+                    <div class="flex items-center space-x-3 border-b pb-3">
+                        <img src="https://picsum.photos/80/80?random=1" alt="Kayak"
+                            class="w-14 h-14 rounded-full border-2 border-red-400 object-cover">
+                        <span class="text-sm font-semibold">Kayak stories</span>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="flex items-center space-x-3 border-b pb-3">
+                        <img src="https://picsum.photos/80/80?random=2" alt="Developers"
+                            class="w-14 h-14 rounded-full border-2 border-red-400 object-cover">
+                        <span class="text-sm font-semibold">6 Tips Successful for Developers</span>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="flex items-center space-x-3">
+                        <img src="https://picsum.photos/80/80?random=3" alt="PS Controller"
+                            class="w-14 h-14 rounded-full border-2 border-red-400 object-cover">
+                        <span class="text-sm font-semibold">PS Controller</span>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+    <hr class="max-w-[1170px] mx-auto border-gray-200 mt-4 mb-4">
+
+    <!-- BUSINESSMAN SECTION -->
+    <div class="bg-[#40798C] py-10 relative">
+        <div class="max-w-[1170px] mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8 relative">
+
+            <!-- Vertical Divider -->
+            <div class="hidden lg:block absolute top-0 bottom-0 left-[66.666%] w-px bg-white/30 z-10"></div>
+
+            <!-- Left Section (Main Feature) -->
+            <div class="lg:col-span-2 relative w-full max-w-full rounded-lg overflow-hidden">
+                <!-- Background Image -->
+                <img src="https://images.pexels.com/photos/302588/pexels-photo-302588.jpeg" alt="Featured"
+                    class="w-full h-full object-cover" />
+
+                <!-- Overlay to darken image for readability -->
+                <div class="absolute inset-0 bg-black/30"></div>
+
+                <!-- Category Tag -->
+                <span
+                    class="absolute top-4 left-4 bg-white text-slate-800 text-sm font-semibold px-3 py-1 rounded z-10">
+                    BUSINESS
+                </span>
+
+                <!-- Text Overlay -->
+                <div class="absolute inset-0 flex flex-col justify-end p-4 text-white z-10">
+                    <h2 class="text-3xl font-bold mb-2 leading-snug">Forbes #3: Top 10 Businessman NYC</h2>
+                    <p class="text-sm mb-3">Its first decline in subscribers since 2011 triggered a $54 billion stock
+                        value loss and...</p>
+                    <div class="flex items-center text-xs space-x-4">
+                        <span class="flex items-center space-x-1">
+                            <span>📅</span><span>Aug 5, 2022</span>
+                        </span>
+                        <span class="flex items-center space-x-1">
+                            <span>👤</span><span>By David Bowie</span>
+                        </span>
+                        <span class="flex items-center space-x-1">
+                            <span>💬</span><span>0 Comments</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Section (Popular Posts) -->
+            <div class="text-white">
+                <h3 class="text-sm font-semibold uppercase tracking-wide mb-4">Popular Posts</h3>
+
+                <!-- Post Item -->
+                <div class="flex items-center gap-3 mb-5 border-b border-white/20 pb-3">
+                    <div>
+                        <span class="text-xs bg-white text-slate-800 px-2 py-1 rounded font-semibold">NEWS</span>
+                        <h4 class="text-base mt-2">Norway exempts visas for visitors from EU</h4>
+                    </div>
+                    <img src="https://images.pexels.com/photos/6801212/pexels-photo-6801212.jpeg" alt="Post"
+                        class="w-20 h-16 object-cover rounded" />
+                </div>
+
+                <!-- Post Item -->
+                <div class="flex items-center gap-3 mb-5 border-b border-white/20 pb-3">
+                    <div>
+                        <span class="text-xs bg-white text-slate-800 px-2 py-1 rounded font-semibold">NEWS</span>
+                        <h4 class="text-base mt-2">Norway exempts visas for visitors from EU</h4>
+                    </div>
+                    <img src="https://images.pexels.com/photos/6801212/pexels-photo-6801212.jpeg" alt="Post"
+                        class="w-20 h-16 object-cover rounded" />
+                </div>
+
+                <!-- Post Item -->
+                <div class="flex items-center gap-3 mb-5 border-b border-white/20 pb-3">
+                    <div>
+                        <span class="text-xs bg-white text-slate-800 px-2 py-1 rounded font-semibold">POLITICS</span>
+                        <h4 class="text-base mt-2">Sadabell ATM become popular in Ohio</h4>
+                    </div>
+                    <img src="https://images.pexels.com/photos/6801212/pexels-photo-6801212.jpeg" alt="Post"
+                        class="w-20 h-16 object-cover rounded" />
+                </div>
+
+                <!-- Post Item -->
+                <div class="flex items-center gap-3 mb-5 border-b border-white/20 pb-3">
+                    <div>
+                        <span class="text-xs bg-white text-slate-800 px-2 py-1 rounded font-semibold">MARKET</span>
+                        <h4 class="text-base mt-2">US accuses Russia of currency manipulation, What’s Putin said?</h4>
+                    </div>
+                    <img src="https://images.pexels.com/photos/6801212/pexels-photo-6801212.jpeg" alt="Post"
+                        class="w-20 h-16 object-cover rounded" />
+                </div>
+
+                <a href="#" class="text-sm font-semibold hover:underline">See All Posts →</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- TOP COMUNIST SECTION -->
+    <div class="bg-white py-6">
+        <div class="max-w-[1170px] mx-auto">
+
+            <!-- Header -->
+            <div class="flex justify-between items-center mb-8 px-4 lg:px-0">
+                <h3 class="uppercase text-sm font-semibold tracking-wide">Top Columnist</h3>
+                <div class="flex gap-2">
+                    <button
+                        class="border rounded-full w-8 h-8 flex items-center justify-center text-gray-600 hover:bg-gray-100">&lt;</button>
+                    <button
+                        class="border rounded-full w-8 h-8 flex items-center justify-center text-gray-600 hover:bg-gray-100">&gt;</button>
+                </div>
+            </div>
+
+            <!-- Columns -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 divide-x divide-gray-200">
+
+                <!-- Columnist Card -->
+                <div class="px-4 lg:px-0 pb-8 text-left">
+                    <div class="px-4">
+                        <img src="https://images.pexels.com/photos/2393789/pexels-photo-2393789.jpeg" alt="Profile"
+                            class="w-24 h-24 rounded-full mb-4 object-cover" />
+                        <h4 class="font-bold text-lg">Luis Diaz</h4>
+                        <p class="text-gray-400 text-sm mt-1">Specialize in</p>
+                        <p class="text-sm font-semibold tracking-wide mt-1">ENTERTAINMENT, CULTURE, WORLD</p>
+                        <p class="text-sm text-gray-600 mt-3">My content focus into business, politics that allows
+                            anyone
+                            with a cellphone to scan.</p>
+                    </div>
+                </div>
+
+                <!-- Columnist Card -->
+                <div class="px-4 lg:px-0 pb-8 text-left">
+                    <div class="px-4">
+                        <img src="https://images.pexels.com/photos/2393789/pexels-photo-2393789.jpeg" alt="Profile"
+                            class="w-24 h-24 rounded-full mb-4 object-cover" />
+                        <h4 class="font-bold text-lg">Luis Diaz</h4>
+                        <p class="text-gray-400 text-sm mt-1">Specialize in</p>
+                        <p class="text-sm font-semibold tracking-wide mt-1">ENTERTAINMENT, CULTURE, WORLD</p>
+                        <p class="text-sm text-gray-600 mt-3">My content focus into business, politics that allows
+                            anyone
+                            with a cellphone to scan.</p>
+                    </div>
+                </div>
+
+                <!-- Columnist Card -->
+                <div class="px-4 lg:px-0 pb-8 text-left">
+                    <div class="px-4">
+                        <img src="https://images.pexels.com/photos/2393789/pexels-photo-2393789.jpeg" alt="Profile"
+                            class="w-24 h-24 rounded-full mb-4 object-cover" />
+                        <h4 class="font-bold text-lg">Luis Diaz</h4>
+                        <p class="text-gray-400 text-sm mt-1">Specialize in</p>
+                        <p class="text-sm font-semibold tracking-wide mt-1">ENTERTAINMENT, CULTURE, WORLD</p>
+                        <p class="text-sm text-gray-600 mt-3">My content focus into business, politics that allows
+                            anyone
+                            with a cellphone to scan.</p>
+                    </div>
+                </div>
+
+                <!-- Columnist Card -->
+                <div class="px-4 lg:px-0 pb-8 text-left">
+                    <div class="px-4">
+                        <img src="https://images.pexels.com/photos/2393789/pexels-photo-2393789.jpeg" alt="Profile"
+                            class="w-24 h-24 rounded-full mb-4 object-cover" />
+                        <h4 class="font-bold text-lg">Luis Diaz</h4>
+                        <p class="text-gray-400 text-sm mt-1">Specialize in</p>
+                        <p class="text-sm font-semibold tracking-wide mt-1">ENTERTAINMENT, CULTURE, WORLD</p>
+                        <p class="text-sm text-gray-600 mt-3">My content focus into business, politics that allows
+                            anyone
+                            with a cellphone to scan.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <hr class="max-w-[1170px] mx-auto border-gray-200 mt-4 mb-4">
+
+
+    <!-- BUSINESS POLITICS AND MARKET -->
+    <div class="bg-white py-10">
+        <div class="max-w-[1170px] mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 divide-x divide-gray-200 gap-x-0">
+
+                <!-- Column 1 -->
+                <div class="flex flex-col h-full space-y-6 px-3">
+                    <div class="mb-4">
+                        <h3 class="uppercase text-sm font-semibold tracking-wide">BUSINESS</h3>
+                    </div>
+
+                    <!-- Big Post -->
+                    <div class="flex-1 flex flex-col border-b border-gray-200 pb-6">
+                        <span class="w-fit bg-slate-700 text-white text-xs px-2 py-1 rounded">BUSINESS</span>
+                        <h2 class="font-bold text-xl mt-2">The EU is showing signs of breaking up</h2>
+                        <p class="text-sm text-gray-600 mt-2 flex-1">The framework is far less ambitious offered by
+                            Democrats for banning semi-automatic, assault-style rifles and high-capacity [...]</p>
+                        <div class="flex items-center text-xs text-gray-500 mt-3 space-x-4">
+                            <span>📅 Aug 8, 2022</span>
+                            <span>💬 0 Comments</span>
+                        </div>
+                        <img src="https://images.pexels.com/photos/7652465/pexels-photo-7652465.jpeg"
+                            class="w-full h-[230px] object-cover mt-4" alt="Big Post" />
+                    </div>
+
+                    <!-- Small Post -->
+                    <div class="flex justify-between items-center border-b border-gray-200 pb-4">
+                        <div class="flex-1">
+                            <span class="bg-slate-700 text-white text-xs px-2 py-1 rounded">BUSINESS</span>
+                            <h3 class="font-semibold text-sm mt-2">The new US financial law takes effect today</h3>
+                        </div>
+                        <img src="https://images.pexels.com/photos/7652465/pexels-photo-7652465.jpeg"
+                            class="w-[100px] h-[80px] object-cover ml-3" alt="Small Post" />
+                    </div>
+                    <div class="flex justify-between items-center border-b border-gray-200 pb-4">
+                        <div class="flex-1">
+                            <span class="bg-slate-700 text-white text-xs px-2 py-1 rounded">BUSINESS</span>
+                            <h3 class="font-semibold text-sm mt-2">The new US financial law takes effect today</h3>
+                        </div>
+                        <img src="https://images.pexels.com/photos/7652465/pexels-photo-7652465.jpeg"
+                            class="w-[100px] h-[80px] object-cover ml-3" alt="Small Post" />
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <div class="flex-1">
+                            <span class="bg-slate-700 text-white text-xs px-2 py-1 rounded">BUSINESS</span>
+                            <h3 class="font-semibold text-sm mt-2">The new US financial law takes effect today</h3>
+                        </div>
+                        <img src="https://images.pexels.com/photos/7652465/pexels-photo-7652465.jpeg"
+                            class="w-[100px] h-[80px] object-cover ml-3" alt="Small Post" />
+                    </div>
+                </div>
+
+                <!-- Column 2 -->
+                <div class="flex flex-col h-full space-y-6 px-3">
+                    <div class="mb-4">
+                        <h3 class="uppercase text-sm font-semibold tracking-wide">Politics</h3>
+                    </div>
+
+                    <!-- Big Post -->
+                    <div class="flex-1 flex flex-col border-b border-gray-200 pb-6">
+                        <span class="w-fit bg-slate-700 text-white text-xs px-2 py-1 rounded">POLITICS</span>
+                        <h2 class="font-bold text-xl mt-2">The EU is showing signs of breaking up</h2>
+                        <p class="text-sm text-gray-600 mt-2 flex-1">The framework is far less ambitious offered by
+                            Democrats for banning semi-automatic, assault-style rifles and high-capacity [...]</p>
+                        <div class="flex items-center text-xs text-gray-500 mt-3 space-x-4">
+                            <span>📅 Aug 8, 2022</span>
+                            <span>💬 0 Comments</span>
+                        </div>
+                        <img src="https://images.pexels.com/photos/7652465/pexels-photo-7652465.jpeg"
+                            class="w-full h-[230px] object-cover mt-4" alt="Big Post" />
+                    </div>
+
+                    <!-- Small Post -->
+                    <div class="flex justify-between items-center border-b border-gray-200 pb-4">
+                        <div class="flex-1">
+                            <span class="bg-slate-700 text-white text-xs px-2 py-1 rounded">POLITICS</span>
+                            <h3 class="font-semibold text-sm mt-2">The new US financial law takes effect today</h3>
+                        </div>
+                        <img src="https://images.pexels.com/photos/7652465/pexels-photo-7652465.jpeg"
+                            class="w-[100px] h-[80px] object-cover ml-3" alt="Small Post" />
+                    </div>
+                    <div class="flex justify-between items-center border-b border-gray-200 pb-4">
+                        <div class="flex-1">
+                            <span class="bg-slate-700 text-white text-xs px-2 py-1 rounded">POLITICS</span>
+                            <h3 class="font-semibold text-sm mt-2">The new US financial law takes effect today</h3>
+                        </div>
+                        <img src="https://images.pexels.com/photos/7652465/pexels-photo-7652465.jpeg"
+                            class="w-[100px] h-[80px] object-cover ml-3" alt="Small Post" />
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <div class="flex-1">
+                            <span class="bg-slate-700 text-white text-xs px-2 py-1 rounded">POLITICS</span>
+                            <h3 class="font-semibold text-sm mt-2">The new US financial law takes effect today</h3>
+                        </div>
+                        <img src="https://images.pexels.com/photos/7652465/pexels-photo-7652465.jpeg"
+                            class="w-[100px] h-[80px] object-cover ml-3" alt="Small Post" />
+                    </div>
+                </div>
+
+                <!-- Column 3 -->
+                <div class="flex flex-col h-full space-y-6 px-3">
+                    <div class="mb-4">
+                        <h3 class="uppercase text-sm font-semibold tracking-wide">Politics</h3>
+                    </div>
+
+                    <!-- Big Post -->
+                    <div class="flex-1 flex flex-col border-b border-gray-200 pb-6">
+                        <span class="w-fit bg-slate-700 text-white text-xs px-2 py-1 rounded">POLITICS</span>
+                        <h2 class="font-bold text-xl mt-2">The EU is showing signs of breaking up</h2>
+                        <p class="text-sm text-gray-600 mt-2 flex-1">The framework is far less ambitious offered by
+                            Democrats for banning semi-automatic, assault-style rifles and high-capacity [...]</p>
+                        <div class="flex items-center text-xs text-gray-500 mt-3 space-x-4">
+                            <span>📅 Aug 8, 2022</span>
+                            <span>💬 0 Comments</span>
+                        </div>
+                        <img src="https://images.pexels.com/photos/7652465/pexels-photo-7652465.jpeg"
+                            class="w-full h-[230px] object-cover mt-4" alt="Big Post" />
+                    </div>
+
+                    <!-- Small Post -->
+                    <div class="flex justify-between items-center border-b border-gray-200 pb-4">
+                        <div class="flex-1">
+                            <span class="bg-slate-700 text-white text-xs px-2 py-1 rounded">POLITICS</span>
+                            <h3 class="font-semibold text-sm mt-2">The new US financial law takes effect today</h3>
+                        </div>
+                        <img src="https://images.pexels.com/photos/7652465/pexels-photo-7652465.jpeg"
+                            class="w-[100px] h-[80px] object-cover ml-3" alt="Small Post" />
+                    </div>
+                    <div class="flex justify-between items-center border-b border-gray-200 pb-4">
+                        <div class="flex-1">
+                            <span class="bg-slate-700 text-white text-xs px-2 py-1 rounded">POLITICS</span>
+                            <h3 class="font-semibold text-sm mt-2">The new US financial law takes effect today</h3>
+                        </div>
+                        <img src="https://images.pexels.com/photos/7652465/pexels-photo-7652465.jpeg"
+                            class="w-[100px] h-[80px] object-cover ml-3" alt="Small Post" />
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <div class="flex-1">
+                            <span class="bg-slate-700 text-white text-xs px-2 py-1 rounded">POLITICS</span>
+                            <h3 class="font-semibold text-sm mt-2">The new US financial law takes effect today</h3>
+                        </div>
+                        <img src="https://images.pexels.com/photos/7652465/pexels-photo-7652465.jpeg"
+                            class="w-[100px] h-[80px] object-cover ml-3" alt="Small Post" />
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="bg-[#40798C] text-white py-4">
+        <div class="text-center text-sm">
+            NEWZIN-CRYPTO&copy; <span id="year"></span> All Rights Reserved.
+        </div>
+    </footer>
+    <!-- JS CODE -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>
