@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Clone 11</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Heebo', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="w-full bg-[#515A60] text-white">
+        <div class="max-w-[1120px] mx-auto w-full px-2 sm:px-0">
+             <!-- Container -->
+        <div class="w-full flex justify-center">
+            <!-- Inner content: exact 1200px width on desktop -->
+            <div class="w-full max-w-[1120px] flex items-center justify-between py-2 md:py-4">
+
+                <!-- Logo -->
+                <div class="text-3xl md:text-4xl font-extrabold tracking-wide">
+                    <a href="https://wp.quomodosoft.com/newsprk/" target="_blank" class="">NEWSPARK</a>
+                </div>
+
+                <!-- Nav Links (Desktop) -->
+                <ul class="hidden md:flex space-x-8 text-base md:text-lg font-medium">
+                    <li><a href="#" class=" hover:underline">HOME</a></li>
+                    <li><a href="#" class="hover:underline">FEATURES</a></li>
+                    <li><a href="#" class="hover:underline">POLITICS</a></li>
+                    <li><a href="#" class="hover:underline">ECONOMY</a></li>
+                    <li><a href="#" class="hover:underline">SCIENCE & TECH</a></li>
+                    <li><a href="#" class="hover:underline">SPORTS</a></li>
+                </ul>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="menu-btn" class="focus:outline-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Nav -->
+        <div id="mobile-menu" class="hidden md:hidden w-full px-2 pb-2">
+            <ul class="flex flex-col space-y-3 text-base font-medium">
+                <li><a href="#" class="hover:text-red-500 transition-colors">HOME</a></li>
+                <li><a href="#" class="hover:text-red-500 transition-colors">FEATURES</a></li>
+                <li><a href="#" class="hover:text-red-500 transition-colors">POLITICS</a></li>
+                <li><a href="#" class="hover:text-red-500 transition-colors">ECONOMY</a></li>
+                <li><a href="#" class="hover:text-red-500 transition-colors">SCIENCE & TECH</a></li>
+                <li><a href="#" class="hover:text-red-500 transition-colors">SPORTS</a></li>
+            </ul>
+        </div>
+        </div>
+       
+    </nav>
+
+    <!-- ALL CONTENT PORTION -->
+    <div class="max-w-[1120px] mx-auto w-full px-2 sm:px-0 bg-gray-500">
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="bg-[#515A60] text-white py-4">
+        <div class="text-center text-[20px] font-bold">
+            NEWSPARK-CRYPTO&copy; <span id="year"></span> All Rights Reserved.
+        </div>
+    </footer>
+    <!-- JS CODE -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+
+</html>

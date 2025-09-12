@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLOG Clone 10</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Alegreya', serif;
+        }
+    </style>
+
+</head>
+
+<body class="text-[#012761] font-alegreya">
+
+
+    <!-- Navbar -->
+    <nav class="w-full bg-[#012761] text-white">
+        <!-- Container -->
+        <div class="w-full flex justify-center">
+            <!-- Inner content: exact 1200px width on desktop -->
+            <div class="w-full max-w-[1200px] flex items-center justify-between py-2 md:py-4">
+
+                <!-- Logo -->
+                <div class="text-3xl md:text-4xl font-extrabold tracking-wide">
+                    <a href="https://foxiz.io/focus/" target="_blank" class="">FOXIZ REPORT</a>
+                </div>
+
+                <!-- Nav Links (Desktop) -->
+                <ul class="hidden md:flex space-x-8 text-base md:text-lg font-medium">
+                    <li><a href="#" class="hover:underline">HOME</a></li>
+                    <li><a href="#" class="hover:underline">FEATURES</a></li>
+                    <li><a href="#" class="hover:underline">POLITICS</a></li>
+                    <li><a href="#" class="hover:underline">ECONOMY</a></li>
+                    <li><a href="#" class="hover:underline">SCIENCE & TECH</a></li>
+                    <li><a href="#" class="hover:underline">SPORTS</a></li>
+                </ul>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="menu-btn" class="focus:outline-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Nav -->
+        <div id="mobile-menu" class="hidden md:hidden w-full px-2 pb-2">
+            <ul class="flex flex-col space-y-3 text-base font-medium">
+                <li><a href="#" class="hover:text-red-500 transition-colors">HOME</a></li>
+                <li><a href="#" class="hover:text-red-500 transition-colors">FEATURES</a></li>
+                <li><a href="#" class="hover:text-red-500 transition-colors">POLITICS</a></li>
+                <li><a href="#" class="hover:text-red-500 transition-colors">ECONOMY</a></li>
+                <li><a href="#" class="hover:text-red-500 transition-colors">SCIENCE & TECH</a></li>
+                <li><a href="#" class="hover:text-red-500 transition-colors">SPORTS</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- BLOG PORTION -->
+    <div class="max-w-[1200px] mx-auto w-full px-2 sm:px-0 mt-6">
+        <div class="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-[910px_290px] mb-6 gap-6">
+
+            <!-- Left Column -->
+            <div class="w-full">
+                <div class="">
+                    <div class="max-w-full mx-auto space-y-4">
+
+                        <div class="mb-6">
+                            <div class="relative bg-red-600 text-white font-bold text-sm px-2 py-1 inline-block mb-2">
+                                WORLD</div>
+                            <h1
+                                class="text-3xl sm:text-4xl md:text-5xl font-bold leading-snug sm:leading-tight md:leading-tight">
+                                Federer makes history with eighth Wimbledon, 19th major title
+                            </h1>
+                            <p class=" mt-2">Quis autem vel eum iure reprehenderit qui in ea voluptate velit
+                                esse quam nihil molestiae consequat</p>
+
+                            <!-- AUTHOR NAME -->
+                            <div class="flex items-start gap-3 border-b pb-3 mt-4">
+                                <!-- Author Image -->
+                                <img src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg" alt="Author"
+                                    class="w-12 h-12 rounded-full object-cover" />
+
+                                <!-- Author Info -->
+                                <div>
+                                    <p class="text-sm text-gray-700">
+                                        By <span
+                                            class="text-red-600 font-semibold hover:underline cursor-pointer">Evelyn
+                                            Cole</span>
+                                        <span class="text-gray-400 mx-2">—</span>
+                                        No Comments
+                                        <span class="text-gray-400 mx-2">—</span>
+                                        6 Min Read
+                                    </p>
+                                    <p class="text-sm text-gray-500 mt-1">
+                                        Last updated: November 13, 2024 12:22 pm
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="mt-4 group">
+                                <img src="https://images.pexels.com/photos/2040471/pexels-photo-2040471.jpeg"
+                                    alt="Tennis player on a court" class="w-full h-[490px] object-cover ">
+                            </div>
+                        </div>
+
+                        <p class="text-[18px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+                            ducimus voluptate
+                            laudantium Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus earum
+                            aperiam, fugit ullam nemo officiis corporis excepturi doloribus saepe, optio impedit
+                            consectetur tenetur nobis velit. nobis voluptates placeat!</p>
+                        <p class="text-[18px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sunt,
+                            dignissimos quos modi
+                            adipisci dolorum repudiandae, magnam vero alias ullam blanditiis amet. Quo quidem enim
+                            quibusdam
+                            ducimus reiciendis, mollitia tenetur aut omnis molestias voluptatem atque aliquam
+                            voluptatum.
+                            Quibusdam necessitatibus delectus consequuntur repellendus perspiciatis nihil doloribus iste
+                            ipsam, exercitationem, animi id.</p>
+                       
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="mt-4 group">
+                            <img src="https://images.pexels.com/photos/2040471/pexels-photo-2040471.jpeg"
+                                alt="Tennis player on a court" class="w-full h-[490px] object-cover ">
+                        </div>
+                        <p class="text-[18px]">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur quis
+                            commodi inventore?
+                            Asperiores ipsam ut architecto ipsum quis numquam laborum eum, autem dolores ab veniam esse
+                            quidem delectus sequi quod illo inventore voluptatem eius officiis repellendus. Temporibus
+                            quo
+                            odio non fuga, voluptatem soluta? Illo voluptatibus aspernatur consectetur aperiam explicabo
+                            perferendis!</p>
+                        <p class="mb-4 text-[18px]">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero laborum voluptatum
+                            aspernatur
+                            exercitationem omnis accusantium deleniti cum modi. Consectetur veniam et amet nisi
+                            repellendus?
+                            Consectetur reiciendis aliquid harum dolorem! Nihil!
+                        </p>
+
+                        <ul class="list-disc pl-6 space-y-2 text-[18px]">
+                            <li>First important point goes here</li>
+                            <li>Second key detail with short explanation</li>
+                            <li>Third point that provides more context</li>
+                            <li>Fourth one to keep balance</li>
+                            <li>Fifth and final useful point</li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                <!-- RELATED SECTION -->
+                <div>
+                    <div class="">
+                        <div class="border-b border-gray-500 pb-2 mb-4 mt-4">
+                            <span class="text-sm font-bold text-gray-500 mr-2">RELATED TOPICS:</span>
+                            <a href="#"
+                                class="text-sm font-bold text-gray-500 hover:text-gray-700 transition-colors">#ROGER
+                                FEDERER</a>
+                            <a href="#"
+                                class="text-sm font-bold text-gray-500 hover:text-gray-700 transition-colors ml-2">#SPORTS</a>
+                            <a href="#"
+                                class="text-sm font-bold text-gray-500 hover:text-gray-700 transition-colors ml-2">#TENNIS</a>
+                            <a href="#"
+                                class="text-sm font-bold text-gray-500 hover:text-gray-700 transition-colors ml-2">#WIMBLEDON</a>
+                        </div>
+
+                        <div class="flex items-center">
+                            <div
+                                class="w-8 h-8 flex items-center justify-center text-gray-400 cursor-pointer hover:text-gray-600 transition-colors">
+                                <span class="text-3xl font-light">&lt;</span>
+                            </div>
+                            <div class="flex-1 px-4">
+                                <div class="text-pink-600 text-sm font-bold mb-1">DON'T MISS</div>
+                                <div
+                                    class="text-xl md:text-xl font-bold leading-tight hover:text-gray-700 cursor-pointer transition-colors">
+                                    Signings, trades shift balance of power across the NHL</div>
+                            </div>
+                            <div
+                                class="w-8 h-8 flex items-center justify-center text-gray-400 cursor-pointer hover:text-gray-600 transition-colors">
+                                <span class="text-3xl font-light">&gt;</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- WRAPPER CONTAINER -->
+                <div class="max-w-[1200px] mx-auto w-full p-8 border mt-6">
+
+                    <!-- YOU MAY LIKE SECTION -->
+                    <h2 class="text-[25px] text-black font-bold mb-4 border-t-4 border-black">
+                        › You May Like
+                    </h2>
+
+                    <!-- FIRST COLUMN -->
+                    <div class="flex flex-col md:flex-row gap-4 mb-6">
+
+                        <div class="md:w-full flex flex-col space-y-4">
+                            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                                <div class="group">
+                                    <div class="relative">
+                                        <img src="https://images.pexels.com/photos/33795416/pexels-photo-33795416.jpeg"
+                                            alt="Hockey players on the ice" class="w-full h-auto object-cover">
+                                        <div
+                                            class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity">
+                                        </div>
+                                    </div>
+                                    <h3
+                                        class="text-black font-bold mt-2 group-hover:text-red-600 transition-colors text-[15px]">
+                                        Signings, trades shift balance of power across the NHL
+                                    </h3>
+                                </div>
+                                <div class="group">
+                                    <div class="relative">
+                                        <img src="https://images.pexels.com/photos/33795416/pexels-photo-33795416.jpeg"
+                                            alt="American football player" class="w-full h-auto object-cover">
+                                        <div
+                                            class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity">
+                                        </div>
+                                    </div>
+                                    <h3
+                                        class="font-bold text-black mt-2 group-hover:text-red-600 transition-colors text-[15px]">
+                                        Who are the early favorites to win the NFL rushing title?
+                                    </h3>
+                                </div>
+                                <div class="group">
+                                    <div class="relative">
+                                        <img src="https://images.pexels.com/photos/33795416/pexels-photo-33795416.jpeg"
+                                            alt="Boxer in a ring" class="w-full h-auto object-cover">
+                                        <div
+                                            class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity">
+                                        </div>
+                                    </div>
+                                    <h3
+                                        class="font-bold text-black mt-2 group-hover:text-red-600 transition-colors text-[15px]">
+                                        Boxing continues to knock itself out with bewildering, incorrect
+                                        decisions
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SECOND COLUMN -->
+                    <div class="flex flex-col md:flex-row gap-4 mb-6">
+
+                        <div class="md:w-full flex flex-col space-y-4">
+                            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                                <div class="group">
+                                    <div class="relative">
+                                        <img src="https://images.pexels.com/photos/33795416/pexels-photo-33795416.jpeg"
+                                            alt="Hockey players on the ice" class="w-full h-auto object-cover">
+                                        <div
+                                            class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity">
+                                        </div>
+                                    </div>
+                                    <h3
+                                        class="font-bold text-black mt-2 group-hover:text-red-600 transition-colors text-[15px]">
+                                        Signings, trades shift balance of power across the NHL
+                                    </h3>
+                                </div>
+                                <div class="group">
+                                    <div class="relative">
+                                        <img src="https://images.pexels.com/photos/33795416/pexels-photo-33795416.jpeg"
+                                            alt="American football player" class="w-full h-auto object-cover">
+                                        <div
+                                            class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity">
+                                        </div>
+                                    </div>
+                                    <h3
+                                        class="font-bold text-black mt-2 group-hover:text-red-600 transition-colors text-[15px]">
+                                        Who are the early favorites to win the NFL rushing title?
+                                    </h3>
+                                </div>
+                                <div class="group">
+                                    <div class="relative">
+                                        <img src="https://images.pexels.com/photos/33795416/pexels-photo-33795416.jpeg"
+                                            alt="Boxer in a ring" class="w-full h-auto object-cover">
+                                        <div
+                                            class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity">
+                                        </div>
+                                    </div>
+                                    <h3
+                                        class="font-bold text-black mt-2 group-hover:text-red-600 transition-colors text-[15px]">
+                                        Boxing continues to knock itself out with bewildering, incorrect
+                                        decisions
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <!-- Right Column (Sidebar) -->
+            <div class="lg:sticky lg:top-4 self-start h-fit mb-6">
+                <h2 class="text-[25px] font-bold text-blue-900 mb-4 ">
+                    › Must Read
+                </h2>
+
+                <!-- Top Big Post -->
+                <div class="border mb-4">
+                    <div class="p-3">
+                        <p class="text-sm text-gray-500 mb-1">November 13, 2024</p>
+                        <h3 class="font-bold text-blue-900 hover:text-red-600 cursor-pointer">
+                            How the Rise of Global Tech Giants Is Changing International Markets
+                        </h3>
+                    </div>
+                    <img src="https://images.pexels.com/photos/3182784/pexels-photo-3182784.jpeg"
+                        class="w-[290px] h-[200px]  object-cover mt-2 hover:opacity-90 transition" />
+                </div>
+
+                <!-- Small List Items -->
+                <div class="space-y-5">
+                    <div class="flex gap-3">
+                        <img src="https://images.pexels.com/photos/3182781/pexels-photo-3182781.jpeg"
+                            class="w-[60px] h-[40px] object-cover hover:opacity-90 transition" />
+                        <h4
+                            class="text-[15px] leading-[21px] font-semibold text-blue-900 hover:text-red-600 cursor-pointer">
+                            Iskera and Nolinia Agree to Historic Trade Pact Amid Economic Crisis
+                        </h4>
+                    </div>
+
+                    <div class="flex gap-3">
+                        <img src="https://images.pexels.com/photos/3182782/pexels-photo-3182782.jpeg"
+                            class="w-[60px] h-[40px] object-cover hover:opacity-90 transition" />
+                        <h4
+                            class="text-[15px] leading-[21px] font-semibold text-blue-900 hover:text-red-600 cursor-pointer">
+                            Tensions Escalate Between Dorviana and Krystland Over Trade Disputes
+                        </h4>
+                    </div>
+
+                    <div class="flex gap-3">
+                        <img src="https://images.pexels.com/photos/3182783/pexels-photo-3182783.jpeg"
+                            class="w-[60px] h-[40px] object-cover hover:opacity-90 transition" />
+                        <h4
+                            class="text-[15px] leading-[21px] font-semibold text-blue-900 hover:text-red-600 cursor-pointer">
+                            Sildan to Tighten Border Security Amid Rising Migration Flows
+                        </h4>
+                    </div>
+
+                    <div class="flex gap-3">
+                        <img src="https://images.pexels.com/photos/3182784/pexels-photo-3182784.jpeg"
+                            class="w-[60px] h-[40px] object-cover hover:opacity-90 transition" />
+                        <h4
+                            class="text-[15px] leading-[21px] font-semibold text-blue-900 hover:text-red-600 cursor-pointer">
+                            Exploring the Top Adventure Travel Destinations for Thrill Seekers
+                        </h4>
+                    </div>
+
+                    <div class="flex gap-3">
+                        <img src="https://images.pexels.com/photos/3182784/pexels-photo-3182784.jpeg"
+                            class="w-[60px] h-[40px] object-cover hover:opacity-90 transition" />
+                        <h4
+                            class="text-[15px] leading-[21px] font-semibold text-blue-900 hover:text-red-600 cursor-pointer">
+                            Exploring the Top Adventure Travel Destinations for Thrill Seekers
+                        </h4>
+                    </div>
+
+                    <div class="flex gap-3">
+                        <img src="https://images.pexels.com/photos/3182784/pexels-photo-3182784.jpeg"
+                            class="w-[60px] h-[40px] object-cover hover:opacity-90 transition" />
+                        <h4
+                            class="text-[15px] leading-[21px] font-semibold text-blue-900 hover:text-red-600 cursor-pointer">
+                            Exploring the Top Adventure Travel Destinations for Thrill Seekers
+                        </h4>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="bg-[#012761] text-white py-4">
+        <div class="text-center text-[20px] font-bold">
+            FOXIZ_REPORT-CRYPTO&copy; <span id="year"></span> All Rights Reserved.
+        </div>
+    </footer>
+    <!-- JS CODE -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>
+
+</body>
+
+</html>

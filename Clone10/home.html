@@ -1,0 +1,1429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clone 10</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Alegreya', serif;
+        }
+    </style>
+
+</head>
+
+<body class="text-[#012761] font-alegreya">
+
+
+    <!-- Navbar -->
+    <nav class="w-full bg-[#012761] text-white">
+        <!-- Container -->
+        <div class="w-full flex justify-center">
+            <!-- Inner content: exact 1200px width on desktop -->
+            <div class="w-full max-w-[1200px] flex items-center justify-between py-2 md:py-4">
+
+                <!-- Logo -->
+                <div class="text-3xl md:text-4xl font-extrabold tracking-wide">
+                    <a href="https://foxiz.io/focus/" target="_blank" class="">FOXIZ REPORT</a>
+                </div>
+
+                <!-- Nav Links (Desktop) -->
+                <ul class="hidden md:flex space-x-8 text-base md:text-lg font-medium">
+                    <li><a href="#" class="hover:underline">HOME</a></li>
+                    <li><a href="#" class="hover:underline">FEATURES</a></li>
+                    <li><a href="#" class="hover:underline">POLITICS</a></li>
+                    <li><a href="#" class="hover:underline">ECONOMY</a></li>
+                    <li><a href="#" class="hover:underline">SCIENCE & TECH</a></li>
+                    <li><a href="#" class="hover:underline">SPORTS</a></li>
+                </ul>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="menu-btn" class="focus:outline-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Nav -->
+        <div id="mobile-menu" class="hidden md:hidden w-full px-2 pb-2">
+            <ul class="flex flex-col space-y-3 text-base font-medium">
+                <li><a href="#" class="hover:text-red-500 transition-colors">HOME</a></li>
+                <li><a href="#" class="hover:text-red-500 transition-colors">FEATURES</a></li>
+                <li><a href="#" class="hover:text-red-500 transition-colors">POLITICS</a></li>
+                <li><a href="#" class="hover:text-red-500 transition-colors">ECONOMY</a></li>
+                <li><a href="#" class="hover:text-red-500 transition-colors">SCIENCE & TECH</a></li>
+                <li><a href="#" class="hover:text-red-500 transition-colors">SPORTS</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="max-w-[1200px] mx-auto w-full px-2 sm:px-0">
+        <!-- FIRST PART -->
+        <!-- Full-width wrapper -->
+        <div class="w-full flex justify-center mt-6 mb-6">
+            <!-- Inner container -->
+            <div class="w-full max-w-[1200px] flex flex-col md:flex-row gap-6">
+
+                <!-- Left Column (870px fixed) -->
+                <div class="w-full md:w-[870px]">
+                    <div class="max-w-6xl mx-auto">
+
+                        <!-- Top Section -->
+                        <div class="grid md:grid-cols-2 gap-6 mb-6">
+
+                            <!-- Left Text Content -->
+                            <div>
+                                <span class="bg-red-600 text-white px-2 py-1 text-sm font-bold">News</span>
+                                <h1
+                                    class="text-[40px] font-extrabold text-blue-900 mt-2 leading-tight hover:text-red-600 cursor-pointer">
+                                    Iskera and Nolinia Agree to Historic Trade Pact Amid Economic Crisis
+                                </h1>
+                                <p class="text-gray-700 mt-3">
+                                    We are just an advanced breed of monkeys on a minor planet of a very average star.
+                                    But
+                                    we can...
+                                </p>
+                                <div class="flex items-center mt-4 text-sm text-gray-600">
+                                    <span class="text-red-600 font-semibold">By Evelyn Cole</span>
+                                    <span class="mx-2">—</span>
+                                    <span>November 13, 2024</span>
+                                </div>
+                            </div>
+
+                            <!-- Right Image -->
+                            <div>
+                                <img src="https://images.pexels.com/photos/33551085/pexels-photo-33551085.jpeg"
+                                    alt="Main news" class="w-[445px] h-[310px] object-cover mx-auto rounded shadow" />
+                            </div>
+                        </div>
+
+                        <!-- Bottom Grid part 1 -->
+                        <div class="grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-6">
+
+                            <!-- Card 1 -->
+                            <div class="w-full mx-auto group">
+                                <div class="relative w-full">
+                                    <img src="https://images.pexels.com/photos/33551085/pexels-photo-33551085.jpeg"
+                                        alt="News 1"
+                                        class="w-full h-[120px] object-cover rounded shadow transition duration-300 group-hover:brightness-110" />
+                                    <span
+                                        class="absolute bottom-0 left-0 bg-red-600 text-white px-2 py-1 text-xs font-bold rounded-tr">
+                                        News
+                                    </span>
+                                </div>
+                                <h2
+                                    class="font-extrabold text-[15px] leading-[18px] text-blue-900 mt-2 hover:text-red-600 cursor-pointer">
+                                    Tensions Escalate Between Dovriana and Krystland Over Trade Disputes
+                                </h2>
+                            </div>
+
+                            <!-- Card 2 -->
+                            <div class="w-full mx-auto group">
+                                <div class="relative w-full">
+                                    <img src="https://images.pexels.com/photos/33551085/pexels-photo-33551085.jpeg"
+                                        alt="News 1"
+                                        class="w-full h-[120px] object-cover rounded shadow transition duration-300 group-hover:brightness-110" />
+                                    <span
+                                        class="absolute bottom-0 left-0 bg-red-600 text-white px-2 py-1 text-xs font-bold rounded-tr">
+                                        News
+                                    </span>
+                                </div>
+                                <h2
+                                    class="font-extrabold text-[15px] leading-[18px] text-blue-900 mt-2 hover:text-red-600 cursor-pointer">
+                                    Tensions Escalate Between Dovriana and Krystland Over Trade Disputes
+                                </h2>
+                            </div>
+
+                            <!-- Card 3 -->
+                            <div class="w-full mx-auto group">
+                                <div class="relative w-full">
+                                    <img src="https://images.pexels.com/photos/33551085/pexels-photo-33551085.jpeg"
+                                        alt="News 1"
+                                        class="w-full h-[120px] object-cover rounded shadow transition duration-300 group-hover:brightness-110" />
+                                    <span
+                                        class="absolute bottom-0 left-0 bg-red-600 text-white px-2 py-1 text-xs font-bold rounded-tr">
+                                        News
+                                    </span>
+                                </div>
+                                <h2
+                                    class="font-extrabold text-[15px] leading-[18px] text-blue-900 mt-2 hover:text-red-600 cursor-pointer">
+                                    Tensions Escalate Between Dovriana and Krystland Over Trade Disputes
+                                </h2>
+                            </div>
+
+                            <!-- Card 4 -->
+                            <div class="w-full mx-auto group">
+                                <div class="relative w-full">
+                                    <img src="https://images.pexels.com/photos/33551085/pexels-photo-33551085.jpeg"
+                                        alt="News 1"
+                                        class="w-full h-[120px] object-cover rounded shadow transition duration-300 group-hover:brightness-110" />
+                                    <span
+                                        class="absolute bottom-0 left-0 bg-red-600 text-white px-2 py-1 text-xs font-bold rounded-tr">
+                                        News
+                                    </span>
+                                </div>
+                                <h2
+                                    class="font-extrabold text-[15px] leading-[18px] text-blue-900 mt-2 hover:text-red-600 cursor-pointer">
+                                    Tensions Escalate Between Dovriana and Krystland Over Trade Disputes
+                                </h2>
+                            </div>
+
+                        </div>
+
+                        <!-- Bottom Grid part 2 -->
+                        <div class="grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-6">
+
+                            <!-- Card 1 -->
+                            <div class="w-full mx-auto group">
+                                <div class="relative w-full">
+                                    <img src="https://images.pexels.com/photos/33551085/pexels-photo-33551085.jpeg"
+                                        alt="News 1"
+                                        class="w-full h-[120px] object-cover rounded shadow transition duration-300 group-hover:brightness-110" />
+                                    <span
+                                        class="absolute bottom-0 left-0 bg-red-600 text-white px-2 py-1 text-xs font-bold rounded-tr">
+                                        News
+                                    </span>
+                                </div>
+                                <h2
+                                    class="font-extrabold text-[15px] leading-[18px] text-blue-900 mt-2 hover:text-red-600 cursor-pointer">
+                                    Tensions Escalate Between Dovriana and Krystland Over Trade Disputes
+                                </h2>
+                            </div>
+
+                            <!-- Card 2 -->
+                            <div class="w-full mx-auto group">
+                                <div class="relative w-full">
+                                    <img src="https://images.pexels.com/photos/33551085/pexels-photo-33551085.jpeg"
+                                        alt="News 1"
+                                        class="w-full h-[120px] object-cover rounded shadow transition duration-300 group-hover:brightness-110" />
+                                    <span
+                                        class="absolute bottom-0 left-0 bg-red-600 text-white px-2 py-1 text-xs font-bold rounded-tr">
+                                        News
+                                    </span>
+                                </div>
+                                <h2
+                                    class="font-extrabold text-[15px] leading-[18px] text-blue-900 mt-2 hover:text-red-600 cursor-pointer">
+                                    Tensions Escalate Between Dovriana and Krystland Over Trade Disputes
+                                </h2>
+                            </div>
+
+                            <!-- Card 3 -->
+                            <div class="w-full mx-auto group">
+                                <div class="relative w-full">
+                                    <img src="https://images.pexels.com/photos/33551085/pexels-photo-33551085.jpeg"
+                                        alt="News 1"
+                                        class="w-full h-[120px] object-cover rounded shadow transition duration-300 group-hover:brightness-110" />
+                                    <span
+                                        class="absolute bottom-0 left-0 bg-red-600 text-white px-2 py-1 text-xs font-bold rounded-tr">
+                                        News
+                                    </span>
+                                </div>
+                                <h2
+                                    class="font-extrabold text-[15px] leading-[18px] text-blue-900 mt-2 hover:text-red-600 cursor-pointer">
+                                    Tensions Escalate Between Dovriana and Krystland Over Trade Disputes
+                                </h2>
+                            </div>
+
+                            <!-- Card 4 -->
+                            <div class="w-full mx-auto group">
+                                <div class="relative w-full">
+                                    <img src="https://images.pexels.com/photos/33551085/pexels-photo-33551085.jpeg"
+                                        alt="News 1"
+                                        class="w-full h-[120px] object-cover rounded shadow transition duration-300 group-hover:brightness-110" />
+                                    <span
+                                        class="absolute bottom-0 left-0 bg-red-600 text-white px-2 py-1 text-xs font-bold rounded-tr">
+                                        News
+                                    </span>
+                                </div>
+                                <h2
+                                    class="font-extrabold text-[15px] leading-[18px] text-blue-900 mt-2 hover:text-red-600 cursor-pointer">
+                                    Tensions Escalate Between Dovriana and Krystland Over Trade Disputes
+                                </h2>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column (remaining) -->
+                <div class="flex-1 lg:sticky lg:top-4 self-start h-fit ">
+                    <!-- Top Headlines Section -->
+                    <div class="max-w-full mx-auto bg-white">
+                        <!-- Heading -->
+                        <div class="flex items-center mb-4">
+                            <div class="bg-black text-white font-bold px-3 py-1 rounded flex items-center">
+                                <span class="mr-2">⚡</span> Top Headlines
+                            </div>
+                        </div>
+
+                        <!-- Headlines List -->
+                        <div class="space-y-4">
+
+                            <!-- Item 1 -->
+                            <div class="flex items-start space-x-3">
+                                <span class="text-red-600 font-extrabold text-3xl">01</span>
+                                <p class="font-black text-[15px] leading-[21px] hover:text-red-600 cursor-pointer">
+                                    Discover the World’s Most Scenic Road Trips for Your Bucket List
+                                </p>
+                            </div>
+
+                            <!-- Item 2 -->
+                            <div class="flex items-start space-x-3">
+                                <span class="text-red-600 font-extrabold text-3xl">02</span>
+                                <p class="font-black text-[15px] leading-[21px] hover:text-red-600 cursor-pointer">
+                                    The Art of Slow Travel: Exploring Rekland’s Hidden Gems
+                                </p>
+                            </div>
+
+                            <!-- Item 3 -->
+                            <div class="flex items-start space-x-3">
+                                <span class="text-red-600 font-extrabold text-3xl">03</span>
+                                <p class="font-black text-[15px] leading-[21px] hover:text-red-600 cursor-pointer">
+                                    Jalinga Faces Major Economic Setback After Natural Disasters Disrupt Routes
+                                </p>
+                            </div>
+
+                            <!-- Item 4 -->
+                            <div class="flex items-start space-x-3">
+                                <span class="text-red-600 font-extrabold text-3xl">04</span>
+                                <p class="font-black text-[15px] leading-[21px] hover:text-red-600 cursor-pointer">
+                                    Virelia’s Love for Vintage: How Retro Style is Dominating Modern Fashion
+                                </p>
+                            </div>
+
+                            <!-- Item 5 -->
+                            <div class="flex items-start space-x-3">
+                                <span class="text-red-600 font-extrabold text-3xl">05</span>
+                                <p class="font-black text-[15px] leading-[21px] hover:text-red-600 cursor-pointer">
+                                    Norelia’s President Faces International Pressure Over Human Rights Violations
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- IMAGE PART -->
+                    <div class="w-full mx-auto group mt-6">
+                        <div class="relative w-full">
+                            <img src="https://images.pexels.com/photos/33714763/pexels-photo-33714763.jpeg" alt="News 1"
+                                class="w-full h-[150px] object-cover rounded shadow transition duration-300 group-hover:brightness-110" />
+                            <span
+                                class="absolute bottom-0 left-0 bg-red-600 text-white px-2 py-1 text-xs font-bold rounded-tr">
+                                News
+                            </span>
+                        </div>
+                        <h2
+                            class="font-extrabold text-[15px] leading-[18px] text-blue-900 mt-2 hover:text-red-600 cursor-pointer">
+                            Tensions Escalate Between Dovriana and Krystland Over Trade Disputes
+                        </h2>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- DIVIDER -->
+        <hr class="w-[1200px] mx-auto border-t-2 border-gray-300 my-2">
+
+
+        <!-- 2nd part -->
+        <!-- 2nd part -->
+        <div class="max-w-[1200px] mx-auto px-0 lg:px-0 sm:px-2 mt-6 mb-6">
+
+            <!-- Section Heading -->
+            <h2 class="text-[30px] font-extrabold text-blue-900 mb-4 ">
+                <span class="mr-2">›</span> Top Stories
+            </h2>
+
+            <!-- Grid Layout -->
+            <div class="grid grid-cols-1 md:grid-cols-[460px_1fr_300px] gap-6">
+                <!-- Column 1: Big Image Story -->
+                <div>
+                    <div class="relative">
+                        <img src="https://images.pexels.com/photos/8813204/pexels-photo-8813204.jpeg" alt="Main Story"
+                            class="w-full h-[270px] object-cover rounded shadow" />
+                        <!-- Overlay Badge -->
+                        <span
+                            class="absolute bottom-0 left-0 bg-red-600 text-white px-2 py-1 text-xs font-bold rounded-tr">
+                            Travel
+                        </span>
+                    </div>
+
+                    <!-- Title -->
+                    <h3 class="text-2xl font-extrabold text-blue-900 mt-2 hover:text-red-600 cursor-pointer">
+                        The Ultimate Guide to Backpacking Through Southeast Asia
+                    </h3>
+
+                    <!-- Description -->
+                    <p class="text-gray-600 mt-2">
+                        Modern technology has become a total phenomenon for civilization, the defining force of a new
+                        social
+                        order...
+                    </p>
+
+                    <!-- Sponsored -->
+                    <p class="text-sm text-gray-500 mt-2">
+                        <span class="font-semibold">Sponsored by</span> Envato Market
+                    </p>
+                </div>
+
+                <!-- Column 2: Small Image Stories -->
+                <div class="space-y-4">
+                    <!-- Item 1 -->
+                    <div class="flex space-x-3">
+                        <img src="https://images.pexels.com/photos/8813204/pexels-photo-8813204.jpeg" alt="Story 1"
+                            class="w-[100px] h-[70px] object-cover rounded shadow" />
+                        <div>
+                            <span class="bg-red-600 text-white px-2 py-0.5 text-xs font-bold">Lifestyle</span>
+                            <h4 class="font-bold text-blue-900 text-sm mt-1 hover:text-red-600 cursor-pointer">
+                                How Newmarkia Is Using Technology to Revamp Traditional Craftsmanship
+                            </h4>
+                        </div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="flex space-x-3">
+                        <img src="https://images.pexels.com/photos/8813204/pexels-photo-8813204.jpeg" alt="Story 1"
+                            class="w-[100px] h-[70px] object-cover rounded shadow" />
+                        <div>
+                            <span class="bg-red-600 text-white px-2 py-0.5 text-xs font-bold">Lifestyle</span>
+                            <h4 class="font-bold text-blue-900 text-sm mt-1 hover:text-red-600 cursor-pointer">
+                                How Newmarkia Is Using Technology to Revamp Traditional Craftsmanship
+                            </h4>
+                        </div>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="flex space-x-3">
+                        <img src="https://images.pexels.com/photos/8813204/pexels-photo-8813204.jpeg" alt="Story 1"
+                            class="w-[100px] h-[70px] object-cover rounded shadow" />
+                        <div>
+                            <span class="bg-red-600 text-white px-2 py-0.5 text-xs font-bold">Lifestyle</span>
+                            <h4 class="font-bold text-blue-900 text-sm mt-1 hover:text-red-600 cursor-pointer">
+                                How Newmarkia Is Using Technology to Revamp Traditional Craftsmanship
+                            </h4>
+                        </div>
+                    </div>
+                    <!-- Item 4 -->
+                    <div class="flex space-x-3">
+                        <img src="https://images.pexels.com/photos/8813204/pexels-photo-8813204.jpeg" alt="Story 1"
+                            class="w-[100px] h-[70px] object-cover rounded shadow" />
+                        <div>
+                            <span class="bg-red-600 text-white px-2 py-0.5 text-xs font-bold">Lifestyle</span>
+                            <h4 class="font-bold text-blue-900 text-sm mt-1 hover:text-red-600 cursor-pointer">
+                                How Newmarkia Is Using Technology to Revamp Traditional Craftsmanship
+                            </h4>
+                        </div>
+                    </div>
+                    <!-- Item 5 -->
+                    <div class="flex space-x-3">
+                        <img src="https://images.pexels.com/photos/8813204/pexels-photo-8813204.jpeg" alt="Story 1"
+                            class="w-[100px] h-[70px] object-cover rounded shadow" />
+                        <div>
+                            <span class="bg-red-600 text-white px-2 py-0.5 text-xs font-bold">Lifestyle</span>
+                            <h4 class="font-bold text-blue-900 text-sm mt-1 hover:text-red-600 cursor-pointer">
+                                How Newmarkia Is Using Technology to Revamp Traditional Craftsmanship
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 3: Newsletter -->
+                <div class="bg-yellow-400 p-6 flex flex-col justify-center">
+                    <h3 class="text-2xl font-extrabold text-black text-center mb-3">
+                        The Daily Newsletter
+                    </h3>
+                    <p class="text-black text-center mb-4">
+                        Brings you a selection of the latest news, trends, insights, and tips from around the world.
+                    </p>
+                    <input type="email" placeholder="Your email address"
+                        class="w-full p-2 border border-black focus:outline-none mb-3" />
+                    <button class="bg-black text-white font-bold py-2 w-full hover:bg-red-600 transition">
+                        Sign Up Now
+                    </button>
+                    <label class="flex items-center mt-3 text-sm text-black">
+                        <input type="checkbox" class="mr-2">
+                        I have read and agree to the terms & conditions
+                    </label>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- DIVIDER -->
+        <hr class="w-[1200px] mx-auto border-t-2 border-gray-300 my-2">
+
+        <!-- WORLD NEWS SECTION -->
+        <div class="max-w-[1200px] mx-auto mb-6 mt-6">
+
+            <!-- Section Heading -->
+            <h2 class="text-[30px] font-extrabold text-blue-900 mb-4">
+                <span class="mr-2">›</span> World News
+            </h2>
+
+            <!-- Flex Layout instead of grid -->
+            <div class="flex flex-col md:flex-row md:space-x-6">
+
+                <!-- Left Column (Flexible) -->
+                <div class="flex-1 space-y-6">
+
+                    <!-- Top Story -->
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <img src="https://images.pexels.com/photos/27771819/pexels-photo-27771819.jpeg" alt="Top Story"
+                            class="w-full h-[310px] object-cover rounded shadow img-hover" />
+                        <div>
+                            <span class="bg-red-600 text-white px-2 py-1 text-xs font-bold">Education</span>
+                            <h3 class="text-3xl font-extrabold text-blue-900 mt-2 hover:text-red-600 cursor-pointer">
+                                How Major World Religions Are Evolving in the 21st Century
+                            </h3>
+                            <p class="text-gray-600 mt-2">
+                                Politics is the art of looking for trouble, finding it everywhere, diagnosing it
+                                incorrectly
+                                and applying the wrong remedies
+                            </p>
+                            <p class="text-sm text-gray-500 mt-3">
+                                By <span class="text-red-600 font-semibold">Evelyn Cole</span> — November 14, 2024
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Bottom Stories -->
+                    <div class="space-y-6">
+
+                        <!-- Story 1 -->
+                        <div class="flex items-start">
+                            <!-- Image container with overlay -->
+                            <div class="relative">
+                                <img src="https://images.pexels.com/photos/27771819/pexels-photo-27771819.jpeg"
+                                    alt="Story 1" class="w-[170px] h-[120px] object-cover rounded shadow img-hover" />
+
+                                <!-- Overlay span -->
+                                <span
+                                    class="absolute bottom-0 left-0 bg-red-600 text-white text-xs font-bold px-2 py-0.5 rounded-tr">
+                                    Featured
+                                </span>
+                            </div>
+
+                            <!-- Text content -->
+                            <div class="pl-3">
+                                <p class="text-sm text-gray-500 mb-1">November 13, 2024</p>
+                                <h4 class="font-bold text-lg text-blue-900 hover:text-red-600 cursor-pointer">
+                                    The Effects of Globalization on Cultural Identity in the Modern Age
+                                </h4>
+                                <p class="text-gray-600 text-sm mt-1">
+                                    Politics is the art of looking for trouble, finding it everywhere, diagnosing it
+                                    incorrectly and applying the wrong remedies
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <!-- Story 2 -->
+                        <div class="flex flex-col sm:flex-row items-start">
+                            <!-- Image -->
+                            <img src="https://images.pexels.com/photos/27771819/pexels-photo-27771819.jpeg"
+                                alt="Story 1"
+                                class="w-full sm:w-[170px] h-[180px] sm:h-[120px] object-cover rounded shadow img-hover" />
+
+                            <!-- Text content -->
+                            <div class="mt-3 sm:mt-0 sm:pl-3">
+                                <p class="text-sm text-gray-500 mb-1">November 13, 2024</p>
+                                <h4 class="font-bold text-lg text-blue-900 hover:text-red-600 cursor-pointer">
+                                    The Effects of Globalization on Cultural Identity in the Modern Age
+                                </h4>
+                                <p class="text-gray-600 text-sm mt-1">
+                                    Politics is the art of looking for trouble, finding it everywhere, diagnosing it
+                                    incorrectly and applying the wrong remedies
+                                </p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <!-- Right Column (Fixed width) -->
+                <div class="w-full md:w-[300px] space-y-6">
+
+                    <!-- Story with image -->
+                    <div class="border border-gray-200">
+                        <div class="p-2">
+                            <p class="text-sm text-gray-500 mb-1">November 13, 2024</p>
+                            <h4 class="font-bold text-lg text-blue-900 hover:text-red-600 cursor-pointer mb-2">
+                                The State of Global Health: A Look at the Most Pressing Issues in 2024
+                            </h4>
+                        </div>
+                        <img src="https://images.pexels.com/photos/27771819/pexels-photo-27771819.jpeg"
+                            alt="Right Story" class="w-full h-[200px] object-cover rounded shadow img-hover" />
+                    </div>
+
+                    <!-- Advertisement -->
+                    <div class="text-center">
+                        <p class="text-sm text-gray-500 mb-1">- Advertisement -</p>
+                        <img src="https://images.pexels.com/photos/27771819/pexels-photo-27771819.jpeg" alt="Ad"
+                            class="w-full md:w-[300px] h-[200px] object-cover rounded shadow mx-auto img-hover" />
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- DIVIDER -->
+        <hr class="w-[1200px] mx-auto border-t-2 border-gray-300 my-2">
+
+
+        <!-- CULTURE SECTION -->
+        <div class="max-w-[1200px] mx-auto">
+
+            <!-- Section Heading -->
+            <h2 class="text-[30px] font-extrabold mb-4 flex items-center">
+                <span class="text-[30px] text-blue-900 mr-2">›</span> Culture
+            </h2>
+
+            <!-- Grid Layout -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+
+                <!-- Card -->
+                <div class="group">
+                    <div class="relative">
+                        <img src="https://images.pexels.com/photos/2174656/pexels-photo-2174656.jpeg" alt="Story 1"
+                            class="w-full h-[200px] object-cover rounded shadow img-hover group-hover:opacity-90 transition duration-300" />
+                    </div>
+
+                    <h3 class="mt-3 font-bold text-lg text-blue-900 group-hover:text-red-600 cursor-pointer">
+                        The Resurgence of Folk Music in Northern Vornya
+                    </h3>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="group">
+                    <div class="relative">
+                        <img src="https://images.pexels.com/photos/2174656/pexels-photo-2174656.jpeg" alt="Story 1"
+                            class="w-full h-[200px] object-cover rounded shadow img-hover group-hover:opacity-90 transition duration-300" />
+                    </div>
+                    <h3 class="mt-3 font-bold text-lg text-blue-900 group-hover:text-red-600 cursor-pointer">
+                        The Resurgence of Folk Music in Northern Vornya
+                    </h3>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="group">
+                    <div class="relative">
+                        <img src="https://images.pexels.com/photos/2174656/pexels-photo-2174656.jpeg" alt="Story 1"
+                            class="w-full h-[200px] object-cover rounded shadow img-hover group-hover:opacity-90 transition duration-300" />
+                        <span class="absolute bottom-0 left-0 bg-red-600 text-white text-xs font-bold px-2 py-1">
+                            Beautiful
+                        </span>
+                    </div>
+                    <h3 class="mt-3 font-bold text-lg text-blue-900 group-hover:text-red-600 cursor-pointer">
+                        The Resurgence of Folk Music in Northern Vornya
+                    </h3>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="group">
+                    <div class="relative">
+                        <img src="https://images.pexels.com/photos/2174656/pexels-photo-2174656.jpeg" alt="Story 1"
+                            class="w-full h-[200px] object-cover rounded shadow img-hover group-hover:opacity-90 transition duration-300" />
+                        <span class="absolute bottom-0 left-0 bg-red-600 text-white text-xs font-bold px-2 py-1">
+                            Beautiful
+                        </span>
+                    </div>
+                    <h3 class="mt-3 font-bold text-lg text-blue-900 group-hover:text-red-600 cursor-pointer">
+                        The Resurgence of Folk Music in Northern Vornya
+                    </h3>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- DIVIDER -->
+        <hr class="w-[1200px] mx-auto border-t-2 border-gray-300 my-2">
+
+
+        <!-- SPORTS SECTION -->
+        <div class="max-w-[1200px] mx-auto mb-6 mt-6">
+
+            <!-- Section Heading -->
+            <h2 class="text-[30px] font-extrabold text-blue-900 mb-4">
+                <span class="mr-2">›</span> SPORTS
+            </h2>
+
+            <!-- Flex Layout instead of grid -->
+            <div class="flex flex-col md:flex-row md:space-x-6">
+
+                <!-- Left Column (Flexible) -->
+                <div class="flex-1 space-y-6">
+
+                    <!-- Top Story -->
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <img src="https://images.pexels.com/photos/209841/pexels-photo-209841.jpeg" alt="Top Story"
+                            class="w-full h-[310px] object-cover rounded shadow img-hover" />
+                        <div>
+                            <span class="bg-red-600 text-white px-2 py-1 text-xs font-bold">Education</span>
+                            <h3 class="text-3xl font-extrabold text-blue-900 mt-2 hover:text-red-600 cursor-pointer">
+                                How Major World Religions Are Evolving in the 21st Century
+                            </h3>
+                            <p class="text-gray-600 mt-2">
+                                Politics is the art of looking for trouble, finding it everywhere, diagnosing it
+                                incorrectly
+                                and applying the wrong remedies
+                            </p>
+                            <p class="text-sm text-gray-500 mt-3">
+                                By <span class="text-red-600 font-semibold">Evelyn Cole</span> — November 14, 2024
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Bottom Stories -->
+                    <div class="space-y-6">
+                        <!-- Story 1 -->
+                        <div class="flex flex-col sm:flex-row items-start">
+                            <!-- Image -->
+                            <img src="https://images.pexels.com/photos/1618200/pexels-photo-1618200.jpeg" alt="Story 1"
+                                class="w-full sm:w-[170px] h-[180px] sm:h-[120px] object-cover rounded shadow img-hover" />
+
+                            <!-- Text content -->
+                            <div class="mt-3 sm:mt-0 sm:pl-3">
+                                <p class="text-sm text-gray-500 mb-1">November 13, 2024</p>
+                                <h4 class="font-bold text-lg text-blue-900 hover:text-red-600 cursor-pointer">
+                                    The Effects of Globalization on Cultural Identity in the Modern Age
+                                </h4>
+                                <p class="text-gray-600 text-sm mt-1">
+                                    Politics is the art of looking for trouble, finding it everywhere, diagnosing it
+                                    incorrectly and applying the wrong remedies
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Story 2 -->
+                        <div class="flex items-start">
+                            <!-- Image container with overlay -->
+                            <div class="relative">
+                                <img src="https://images.pexels.com/photos/1618200/pexels-photo-1618200.jpeg"
+                                    alt="Story 1" class="w-[170px] h-[120px] object-cover rounded shadow img-hover" />
+
+                                <!-- Overlay span -->
+                                <span
+                                    class="absolute bottom-0 left-0 bg-red-600 text-white text-xs font-bold px-2 py-0.5 rounded-tr">
+                                    Featured
+                                </span>
+                            </div>
+
+                            <!-- Text content -->
+                            <div class="pl-3">
+                                <p class="text-sm text-gray-500 mb-1">November 13, 2024</p>
+                                <h4 class="font-bold text-lg text-blue-900 hover:text-red-600 cursor-pointer">
+                                    The Effects of Globalization on Cultural Identity in the Modern Age
+                                </h4>
+                                <p class="text-gray-600 text-sm mt-1">
+                                    Politics is the art of looking for trouble, finding it everywhere, diagnosing it
+                                    incorrectly and applying the wrong remedies
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Right Column (Fixed width) -->
+                <div class="w-full md:w-[300px] space-y-6">
+
+                    <!-- Story with image -->
+                    <div class="border border-gray-200">
+                        <div class="p-2">
+                            <p class="text-sm text-gray-500 mb-1">November 13, 2024</p>
+                            <h4 class="font-bold text-lg text-blue-900 hover:text-red-600 cursor-pointer mb-2">
+                                The State of Global Health: A Look at the Most Pressing Issues in 2024
+                            </h4>
+                        </div>
+                        <img src="https://images.pexels.com/photos/1618200/pexels-photo-1618200.jpeg" alt="Right Story"
+                            class="w-full h-[200px] object-cover rounded shadow img-hover" />
+                    </div>
+
+                    <!-- Advertisement -->
+                    <div class="text-center">
+                        <p class="text-sm text-gray-500 mb-1">- Advertisement -</p>
+                        <img src="https://images.pexels.com/photos/27771819/pexels-photo-27771819.jpeg" alt="Ad"
+                            class="w-full md:w-[300px] h-[200px] object-cover rounded shadow mx-auto img-hover" />
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- DIVIDER -->
+        <hr class="w-[1200px] mx-auto border-t-2 border-gray-300 my-2">
+
+
+        <!-- TRAVEL SECTION -->
+        <div class="max-w-[1200px] mx-auto">
+
+            <!-- Section Heading -->
+            <h2 class="text-[30px] font-extrabold mb-4 flex items-center">
+                <span class="text-[30px] text-blue-900 mr-2">›</span> Travel
+            </h2>
+
+            <!-- Grid Layout -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+
+                <!-- Card -->
+                <div class="group">
+                    <div class="relative">
+                        <img src="https://images.pexels.com/photos/2174656/pexels-photo-2174656.jpeg" alt="Story 1"
+                            class="w-full h-[200px] object-cover rounded shadow img-hover group-hover:opacity-90 transition duration-300" />
+
+                        <!-- Overlay Badge -->
+                        <span class="absolute bottom-0 left-0 bg-red-600 text-white text-xs font-bold px-2 py-1">
+                            Beautiful
+                        </span>
+                    </div>
+
+                    <h3 class="mt-3 font-bold text-lg text-blue-900 group-hover:text-red-600 cursor-pointer">
+                        The Resurgence of Folk Music in Northern Vornya
+                    </h3>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="group">
+                    <div class="relative">
+                        <img src="https://images.pexels.com/photos/2174656/pexels-photo-2174656.jpeg" alt="Story 1"
+                            class="w-full h-[200px] object-cover rounded shadow img-hover group-hover:opacity-90 transition duration-300" />
+                        <span class="absolute bottom-0 left-0 bg-red-600 text-white text-xs font-bold px-2 py-1">
+                            Beautiful
+                        </span>
+                    </div>
+                    <h3 class="mt-3 font-bold text-lg text-blue-900 group-hover:text-red-600 cursor-pointer">
+                        The Resurgence of Folk Music in Northern Vornya
+                    </h3>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="group">
+                    <div class="relative">
+                        <img src="https://images.pexels.com/photos/2174656/pexels-photo-2174656.jpeg" alt="Story 1"
+                            class="w-full h-[200px] object-cover rounded shadow img-hover group-hover:opacity-90 transition duration-300" />
+                        <span class="absolute bottom-0 left-0 bg-red-600 text-white text-xs font-bold px-2 py-1">
+                            Beautiful
+                        </span>
+                    </div>
+                    <h3 class="mt-3 font-bold text-lg text-blue-900 group-hover:text-red-600 cursor-pointer">
+                        The Resurgence of Folk Music in Northern Vornya
+                    </h3>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="group">
+                    <div class="relative">
+                        <img src="https://images.pexels.com/photos/2174656/pexels-photo-2174656.jpeg" alt="Story 1"
+                            class="w-full h-[200px] object-cover rounded shadow img-hover group-hover:opacity-90 transition duration-300" />
+                        <span class="absolute bottom-0 left-0 bg-red-600 text-white text-xs font-bold px-2 py-1">
+                            Beautiful
+                        </span>
+                    </div>
+                    <h3 class="mt-3 font-bold text-lg text-blue-900 group-hover:text-red-600 cursor-pointer">
+                        The Resurgence of Folk Music in Northern Vornya
+                    </h3>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- DIVIDER -->
+        <hr class="w-[1200px] mx-auto border-t-2 border-gray-300 my-2">
+
+        <!-- CULTURE LIFESTYLE BUSINESS WORLD -->
+        <div class="max-w-[1200px] mx-auto ">
+
+            <!-- Grid Layout for 4 Columns -->
+            <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-6">
+
+                <!-- Column 1: Culture -->
+                <div>
+                    <h2 class="text-[25px] font-extrabold text-blue-900 mb-4">
+                        <span class="mr-1">›</span> Culture
+                    </h2>
+
+                    <div class="border p-3">
+                        <span class="text-sm text-gray-500">Sponsored by <span
+                                class="text-red-600 font-bold">Bstore</span></span>
+                        <h3 class="text-lg font-bold text-blue-900 hover:text-red-600 cursor-pointer mt-1">
+                            How Rekland’s Ancient Landmarks Are Inspiring Modern Architecture
+                        </h3>
+                        <img src="https://images.pexels.com/photos/210134/pexels-photo-210134.jpeg"
+                            class="w-full h-[180px] object-cover rounded mt-2 hover:opacity-90 transition" />
+
+                        <ul class="mt-3 space-y-4 text-blue-900 font-semibold">
+                            <li class="hover:text-red-600 cursor-pointer">The Rise of Digital Art in Solastia’s Creative
+                                Communities</li>
+                            <li class="hover:text-red-600 cursor-pointer">Pylandia’s Museums Lead the Charge in
+                                Preserving
+                                Indigenous Art</li>
+                            <li class="hover:text-red-600 cursor-pointer">The Resurgence of Folk Music in Northern
+                                Vornya
+                            </li>
+                            <li class="hover:text-red-600 cursor-pointer">How Rekland’s Ancient Landmarks Are Inspiring
+                                Modern Architecture</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Column 2: Lifestyle -->
+                <div>
+                    <h2 class="text-[25px] font-extrabold text-blue-900 mb-4 ">
+                        <span class="mr-1">›</span> Lifestyle
+                    </h2>
+
+                    <div class="border p-3">
+                        <p class="text-sm text-gray-500 mb-1">November 13, 2024</p>
+                        <h3 class="text-lg font-bold text-blue-900 hover:text-red-600 cursor-pointer">
+                            The Resurgence of DIY Culture in Freland’s Suburban Neighborhoods
+                        </h3>
+                        <img src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg"
+                            class="w-full h-[180px] object-cover rounded mt-2 hover:opacity-90 transition" />
+
+                        <ul class="mt-3 space-y-4 text-blue-900 font-semibold">
+                            <li class="hover:text-red-600 cursor-pointer">Iskera and Nolinia Agree to Historic Trade
+                                Pact
+                                Amid Economic Crisis</li>
+                            <li class="hover:text-red-600 cursor-pointer">Tensions Escalate Between Dorviana and
+                                Krystland
+                                Over Trade Disputes</li>
+                            <li class="hover:text-red-600 cursor-pointer">Sildan to Tighten Border Security Amid Rising
+                                Migration Flows</li>
+                            <li class="hover:text-red-600 cursor-pointer">Exploring the Top Adventure Travel
+                                Destinations
+                                for Thrill Seekers</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Column 3: Business -->
+                <div>
+                    <h2 class="text-[25px] font-extrabold text-blue-900 mb-4">
+                        <span class="mr-1">›</span> Business
+                    </h2>
+
+                    <div class="border p-3">
+                        <p class="text-sm text-gray-500 mb-1">November 13, 2024</p>
+                        <h3 class="text-lg font-bold text-blue-900 hover:text-red-600 cursor-pointer">
+                            Jalinga Faces Major Economic Setback After Natural Disasters Disrupt Trade Routes
+                        </h3>
+                        <img src="https://images.pexels.com/photos/3184300/pexels-photo-3184300.jpeg"
+                            class="w-full h-[180px] object-cover rounded mt-2 hover:opacity-90 transition" />
+
+                        <ul class="mt-3 space-y-4 text-blue-900 font-semibold">
+                            <li class="hover:text-red-600 cursor-pointer">Iskera and Nolinia Agree to Historic Trade
+                                Pact
+                                Amid Economic Crisis</li>
+                            <li class="hover:text-red-600 cursor-pointer">Tensions Escalate Between Dorviana and
+                                Krystland
+                                Over Trade Disputes</li>
+                            <li class="hover:text-red-600 cursor-pointer">Sildan to Tighten Border Security Amid Rising
+                                Migration Flows</li>
+                            <li class="hover:text-red-600 cursor-pointer">Exploring the Top Adventure Travel
+                                Destinations
+                                for Thrill Seekers</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Column 4: World -->
+                <div>
+                    <h2 class="text-[25px] font-extrabold text-blue-900 mb-4 ">
+                        <span class="mr-1">›</span> World
+                    </h2>
+
+                    <div class="border p-3">
+                        <p class="text-sm text-gray-500 mb-1">November 13, 2024</p>
+                        <h3 class="text-lg font-bold text-blue-900 hover:text-red-600 cursor-pointer">
+                            How Emerging Markets Are Shaping the Global Economy
+                        </h3>
+                        <img src="https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg"
+                            class="w-full h-[180px] object-cover rounded mt-2 hover:opacity-90 transition" />
+
+                        <ul class="mt-3 space-y-4 text-blue-900 font-semibold">
+                            <li class="hover:text-red-600 cursor-pointer">Iskera and Nolinia Agree to Historic Trade
+                                Pact
+                                Amid Economic Crisis</li>
+                            <li class="hover:text-red-600 cursor-pointer">Tensions Escalate Between Dorviana and
+                                Krystland
+                                Over Trade Disputes</li>
+                            <li class="hover:text-red-600 cursor-pointer">Sildan to Tighten Border Security Amid Rising
+                                Migration Flows</li>
+                            <li class="hover:text-red-600 cursor-pointer">Exploring the Top Adventure Travel
+                                Destinations
+                                for Thrill Seekers</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- DIVIDER -->
+        <hr class="w-[1200px] mx-auto border-t-2 border-gray-300 my-2">
+
+
+        <h2 class="max-w-[1200px] mx-auto text-[30px] font-extrabold mb-4 flex items-center">
+            <span class="text-[30px]  text-blue-900 mr-2">›</span> More News
+        </h2>
+
+        <!-- MORE NEWS AND MUST READ SECTION -->
+        <div class="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-[910px_290px] mb-6">
+
+            <!-- Left Column -->
+            <div class="space-y-6">
+
+                <!-- Post Item 1 -->
+                <div class="flex gap-4">
+                    <div class="relative">
+                        <img src="https://images.pexels.com/photos/3184300/pexels-photo-3184300.jpeg"
+                            class="w-[240px] h-[170px] object-cover hover:opacity-90 transition" />
+                        <span
+                            class="absolute bottom-0 left-0 bg-red-600 text-white text-xs font-semibold px-2 py-1">Motivation</span>
+                    </div>
+                    <div>
+                        <p class="text-sm text-gray-500">November 13, 2024</p>
+                        <h3 class="text-lg font-bold text-blue-900 hover:text-red-600 cursor-pointer">
+                            Virelia’s Love for Vintage: How Retro Style is Dominating Modern Fashion
+                        </h3>
+                        <p class="text-gray-600 text-sm mt-1">
+                            We are just an advanced breed of monkeys on a minor planet of a very average star...
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Post Item 2 -->
+                <div class="flex gap-4">
+                    <div class="relative">
+                        <img src="https://images.pexels.com/photos/2990650/pexels-photo-2990650.jpeg"
+                            class="w-[240px] h-[170px] object-cover hover:opacity-90 transition" />
+                        <span
+                            class="absolute bottom-0 left-0 bg-red-600 text-white text-xs font-semibold px-2 py-1">Engineering</span>
+                    </div>
+                    <div>
+                        <p class="text-sm text-gray-500">November 13, 2024</p>
+                        <h3 class="text-lg font-bold text-blue-900 hover:text-red-600 cursor-pointer">
+                            Virelia Faces Widespread Protests Over Corruption Allegations
+                        </h3>
+                        <p class="text-gray-600 text-sm mt-1">
+                            We are just an advanced breed of monkeys on a minor planet of a very average star...
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Post Item 3-->
+                <div class="flex gap-4">
+                    <div class="relative">
+                        <img src="https://images.pexels.com/photos/274422/pexels-photo-274422.jpeg"
+                            class="w-[240px] h-[170px] object-cover hover:opacity-90 transition" />
+                        <span
+                            class="absolute bottom-0 left-0 bg-red-600 text-white text-xs font-semibold px-2 py-1">Featured</span>
+                    </div>
+                    <div>
+                        <p class="text-sm text-gray-500">November 13, 2024</p>
+                        <h3 class="text-lg font-bold text-blue-900 hover:text-red-600 cursor-pointer">
+                            Unexpected Success of National Volleyball Team in Global Tournament
+                        </h3>
+                        <p class="text-gray-600 text-sm mt-1">
+                            Music expresses feeling and thought, without language. It was below and before speech...
+                        </p>
+                    </div>
+                </div>
+                <!-- Post Item 1 -->
+                <div class="flex gap-4">
+                    <div class="relative">
+                        <img src="https://images.pexels.com/photos/3184300/pexels-photo-3184300.jpeg"
+                            class="w-[240px] h-[170px] object-cover hover:opacity-90 transition" />
+                        <span
+                            class="absolute bottom-0 left-0 bg-red-600 text-white text-xs font-semibold px-2 py-1">Motivation</span>
+                    </div>
+                    <div>
+                        <p class="text-sm text-gray-500">November 13, 2024</p>
+                        <h3 class="text-lg font-bold text-blue-900 hover:text-red-600 cursor-pointer">
+                            Virelia’s Love for Vintage: How Retro Style is Dominating Modern Fashion
+                        </h3>
+                        <p class="text-gray-600 text-sm mt-1">
+                            We are just an advanced breed of monkeys on a minor planet of a very average star...
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Post Item 2 -->
+                <div class="flex gap-4">
+                    <div class="relative">
+                        <img src="https://images.pexels.com/photos/2990650/pexels-photo-2990650.jpeg"
+                            class="w-[240px] h-[170px] object-cover hover:opacity-90 transition" />
+                        <span
+                            class="absolute bottom-0 left-0 bg-red-600 text-white text-xs font-semibold px-2 py-1">Engineering</span>
+                    </div>
+                    <div>
+                        <p class="text-sm text-gray-500">November 13, 2024</p>
+                        <h3 class="text-lg font-bold text-blue-900 hover:text-red-600 cursor-pointer">
+                            Virelia Faces Widespread Protests Over Corruption Allegations
+                        </h3>
+                        <p class="text-gray-600 text-sm mt-1">
+                            We are just an advanced breed of monkeys on a minor planet of a very average star...
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Post Item 3-->
+                <div class="flex gap-4">
+                    <div class="relative">
+                        <img src="https://images.pexels.com/photos/274422/pexels-photo-274422.jpeg"
+                            class="w-[240px] h-[170px] object-cover hover:opacity-90 transition" />
+                        <span
+                            class="absolute bottom-0 left-0 bg-red-600 text-white text-xs font-semibold px-2 py-1">Featured</span>
+                    </div>
+                    <div>
+                        <p class="text-sm text-gray-500">November 13, 2024</p>
+                        <h3 class="text-lg font-bold text-blue-900 hover:text-red-600 cursor-pointer">
+                            Unexpected Success of National Volleyball Team in Global Tournament
+                        </h3>
+                        <p class="text-gray-600 text-sm mt-1">
+                            Music expresses feeling and thought, without language. It was below and before speech...
+                        </p>
+                    </div>
+                </div>
+                <!-- Post Item 4 -->
+                <div class="flex gap-4">
+                    <div class="relative">
+                        <img src="https://images.pexels.com/photos/3184300/pexels-photo-3184300.jpeg"
+                            class="w-[240px] h-[170px] object-cover hover:opacity-90 transition" />
+                        <span
+                            class="absolute bottom-0 left-0 bg-red-600 text-white text-xs font-semibold px-2 py-1">Motivation</span>
+                    </div>
+                    <div>
+                        <p class="text-sm text-gray-500">November 13, 2024</p>
+                        <h3 class="text-lg font-bold text-blue-900 hover:text-red-600 cursor-pointer">
+                            Virelia’s Love for Vintage: How Retro Style is Dominating Modern Fashion
+                        </h3>
+                        <p class="text-gray-600 text-sm mt-1">
+                            We are just an advanced breed of monkeys on a minor planet of a very average star...
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Post Item 5 -->
+                <div class="flex gap-4">
+                    <div class="relative">
+                        <img src="https://images.pexels.com/photos/2990650/pexels-photo-2990650.jpeg"
+                            class="w-[240px] h-[170px] object-cover hover:opacity-90 transition" />
+                        <span
+                            class="absolute bottom-0 left-0 bg-red-600 text-white text-xs font-semibold px-2 py-1">Engineering</span>
+                    </div>
+                    <div>
+                        <p class="text-sm text-gray-500">November 13, 2024</p>
+                        <h3 class="text-lg font-bold text-blue-900 hover:text-red-600 cursor-pointer">
+                            Virelia Faces Widespread Protests Over Corruption Allegations
+                        </h3>
+                        <p class="text-gray-600 text-sm mt-1">
+                            We are just an advanced breed of monkeys on a minor planet of a very average star...
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Post Item 6-->
+                <div class="flex gap-4">
+                    <div class="relative">
+                        <img src="https://images.pexels.com/photos/274422/pexels-photo-274422.jpeg"
+                            class="w-[240px] h-[170px] object-cover hover:opacity-90 transition" />
+                        <span
+                            class="absolute bottom-0 left-0 bg-red-600 text-white text-xs font-semibold px-2 py-1">Featured</span>
+                    </div>
+                    <div>
+                        <p class="text-sm text-gray-500">November 13, 2024</p>
+                        <h3 class="text-lg font-bold text-blue-900 hover:text-red-600 cursor-pointer">
+                            Unexpected Success of National Volleyball Team in Global Tournament
+                        </h3>
+                        <p class="text-gray-600 text-sm mt-1">
+                            Music expresses feeling and thought, without language. It was below and before speech...
+                        </p>
+                    </div>
+                </div>
+                <!-- Post Item 7 -->
+                <div class="flex gap-4">
+                    <div class="relative">
+                        <img src="https://images.pexels.com/photos/3184300/pexels-photo-3184300.jpeg"
+                            class="w-[240px] h-[170px] object-cover hover:opacity-90 transition" />
+                        <span
+                            class="absolute bottom-0 left-0 bg-red-600 text-white text-xs font-semibold px-2 py-1">Motivation</span>
+                    </div>
+                    <div>
+                        <p class="text-sm text-gray-500">November 13, 2024</p>
+                        <h3 class="text-lg font-bold text-blue-900 hover:text-red-600 cursor-pointer">
+                            Virelia’s Love for Vintage: How Retro Style is Dominating Modern Fashion
+                        </h3>
+                        <p class="text-gray-600 text-sm mt-1">
+                            We are just an advanced breed of monkeys on a minor planet of a very average star...
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Post Item 8 -->
+                <div class="flex gap-4">
+                    <div class="relative">
+                        <img src="https://images.pexels.com/photos/2990650/pexels-photo-2990650.jpeg"
+                            class="w-[240px] h-[170px] object-cover hover:opacity-90 transition" />
+                        <span
+                            class="absolute bottom-0 left-0 bg-red-600 text-white text-xs font-semibold px-2 py-1">Engineering</span>
+                    </div>
+                    <div>
+                        <p class="text-sm text-gray-500">November 13, 2024</p>
+                        <h3 class="text-lg font-bold text-blue-900 hover:text-red-600 cursor-pointer">
+                            Virelia Faces Widespread Protests Over Corruption Allegations
+                        </h3>
+                        <p class="text-gray-600 text-sm mt-1">
+                            We are just an advanced breed of monkeys on a minor planet of a very average star...
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Post Item 9-->
+                <div class="flex gap-4">
+                    <div class="relative">
+                        <img src="https://images.pexels.com/photos/274422/pexels-photo-274422.jpeg"
+                            class="w-[240px] h-[170px] object-cover hover:opacity-90 transition" />
+                        <span
+                            class="absolute bottom-0 left-0 bg-red-600 text-white text-xs font-semibold px-2 py-1">Featured</span>
+                    </div>
+                    <div>
+                        <p class="text-sm text-gray-500">November 13, 2024</p>
+                        <h3 class="text-lg font-bold text-blue-900 hover:text-red-600 cursor-pointer">
+                            Unexpected Success of National Volleyball Team in Global Tournament
+                        </h3>
+                        <p class="text-gray-600 text-sm mt-1">
+                            Music expresses feeling and thought, without language. It was below and before speech...
+                        </p>
+                    </div>
+                </div>
+                <!-- Post Item 10 -->
+                <div class="flex gap-4">
+                    <div class="relative">
+                        <img src="https://images.pexels.com/photos/3184300/pexels-photo-3184300.jpeg"
+                            class="w-[240px] h-[170px] object-cover hover:opacity-90 transition" />
+                        <span
+                            class="absolute bottom-0 left-0 bg-red-600 text-white text-xs font-semibold px-2 py-1">Motivation</span>
+                    </div>
+                    <div>
+                        <p class="text-sm text-gray-500">November 13, 2024</p>
+                        <h3 class="text-lg font-bold text-blue-900 hover:text-red-600 cursor-pointer">
+                            Virelia’s Love for Vintage: How Retro Style is Dominating Modern Fashion
+                        </h3>
+                        <p class="text-gray-600 text-sm mt-1">
+                            We are just an advanced breed of monkeys on a minor planet of a very average star...
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Post Item 11 -->
+                <div class="flex gap-4">
+                    <div class="relative">
+                        <img src="https://images.pexels.com/photos/2990650/pexels-photo-2990650.jpeg"
+                            class="w-[240px] h-[170px] object-cover hover:opacity-90 transition" />
+                        <span
+                            class="absolute bottom-0 left-0 bg-red-600 text-white text-xs font-semibold px-2 py-1">Engineering</span>
+                    </div>
+                    <div>
+                        <p class="text-sm text-gray-500">November 13, 2024</p>
+                        <h3 class="text-lg font-bold text-blue-900 hover:text-red-600 cursor-pointer">
+                            Virelia Faces Widespread Protests Over Corruption Allegations
+                        </h3>
+                        <p class="text-gray-600 text-sm mt-1">
+                            We are just an advanced breed of monkeys on a minor planet of a very average star...
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Post Item 12-->
+                <div class="flex gap-4">
+                    <div class="relative">
+                        <img src="https://images.pexels.com/photos/274422/pexels-photo-274422.jpeg"
+                            class="w-[240px] h-[170px] object-cover hover:opacity-90 transition" />
+                        <span
+                            class="absolute bottom-0 left-0 bg-red-600 text-white text-xs font-semibold px-2 py-1">Featured</span>
+                    </div>
+                    <div>
+                        <p class="text-sm text-gray-500">November 13, 2024</p>
+                        <h3 class="text-lg font-bold text-blue-900 hover:text-red-600 cursor-pointer">
+                            Unexpected Success of National Volleyball Team in Global Tournament
+                        </h3>
+                        <p class="text-gray-600 text-sm mt-1">
+                            Music expresses feeling and thought, without language. It was below and before speech...
+                        </p>
+                    </div>
+                </div>
+                <!-- Post Item 13 -->
+                <div class="flex gap-4">
+                    <div class="relative">
+                        <img src="https://images.pexels.com/photos/3184300/pexels-photo-3184300.jpeg"
+                            class="w-[240px] h-[170px] object-cover hover:opacity-90 transition" />
+                        <span
+                            class="absolute bottom-0 left-0 bg-red-600 text-white text-xs font-semibold px-2 py-1">Motivation</span>
+                    </div>
+                    <div>
+                        <p class="text-sm text-gray-500">November 13, 2024</p>
+                        <h3 class="text-lg font-bold text-blue-900 hover:text-red-600 cursor-pointer">
+                            Virelia’s Love for Vintage: How Retro Style is Dominating Modern Fashion
+                        </h3>
+                        <p class="text-gray-600 text-sm mt-1">
+                            We are just an advanced breed of monkeys on a minor planet of a very average star...
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Post Item 14 -->
+                <div class="flex gap-4">
+                    <div class="relative">
+                        <img src="https://images.pexels.com/photos/2990650/pexels-photo-2990650.jpeg"
+                            class="w-[240px] h-[170px] object-cover hover:opacity-90 transition" />
+                        <span
+                            class="absolute bottom-0 left-0 bg-red-600 text-white text-xs font-semibold px-2 py-1">Engineering</span>
+                    </div>
+                    <div>
+                        <p class="text-sm text-gray-500">November 13, 2024</p>
+                        <h3 class="text-lg font-bold text-blue-900 hover:text-red-600 cursor-pointer">
+                            Virelia Faces Widespread Protests Over Corruption Allegations
+                        </h3>
+                        <p class="text-gray-600 text-sm mt-1">
+                            We are just an advanced breed of monkeys on a minor planet of a very average star...
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Post Item 15-->
+                <div class="flex gap-4">
+                    <div class="relative">
+                        <img src="https://images.pexels.com/photos/274422/pexels-photo-274422.jpeg"
+                            class="w-[240px] h-[170px] object-cover hover:opacity-90 transition" />
+                        <span
+                            class="absolute bottom-0 left-0 bg-red-600 text-white text-xs font-semibold px-2 py-1">Featured</span>
+                    </div>
+                    <div>
+                        <p class="text-sm text-gray-500">November 13, 2024</p>
+                        <h3 class="text-lg font-bold text-blue-900 hover:text-red-600 cursor-pointer">
+                            Unexpected Success of National Volleyball Team in Global Tournament
+                        </h3>
+                        <p class="text-gray-600 text-sm mt-1">
+                            Music expresses feeling and thought, without language. It was below and before speech...
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!-- Right Column (Sidebar) -->
+            <div class="lg:sticky lg:top-4 self-start h-fit mb-6">
+                <h2 class="text-[25px] font-bold text-blue-900 mb-4 ">
+                    › Must Read
+                </h2>
+
+                <!-- Top Big Post -->
+                <div class="border mb-4">
+                    <div class="p-3">
+                        <p class="text-sm text-gray-500 mb-1">November 13, 2024</p>
+                        <h3 class="font-bold text-blue-900 hover:text-red-600 cursor-pointer">
+                            How the Rise of Global Tech Giants Is Changing International Markets
+                        </h3>
+                    </div>
+                    <img src="https://images.pexels.com/photos/3182784/pexels-photo-3182784.jpeg"
+                        class="w-[290px] h-[200px]  object-cover mt-2 hover:opacity-90 transition" />
+                </div>
+
+                <!-- Small List Items -->
+                <div class="space-y-5">
+                    <div class="flex gap-3">
+                        <img src="https://images.pexels.com/photos/3182781/pexels-photo-3182781.jpeg"
+                            class="w-[60px] h-[40px] object-cover hover:opacity-90 transition" />
+                        <h4
+                            class="text-[15px] leading-[21px] font-semibold text-blue-900 hover:text-red-600 cursor-pointer">
+                            Iskera and Nolinia Agree to Historic Trade Pact Amid Economic Crisis
+                        </h4>
+                    </div>
+
+                    <div class="flex gap-3">
+                        <img src="https://images.pexels.com/photos/3182782/pexels-photo-3182782.jpeg"
+                            class="w-[60px] h-[40px] object-cover hover:opacity-90 transition" />
+                        <h4
+                            class="text-[15px] leading-[21px] font-semibold text-blue-900 hover:text-red-600 cursor-pointer">
+                            Tensions Escalate Between Dorviana and Krystland Over Trade Disputes
+                        </h4>
+                    </div>
+
+                    <div class="flex gap-3">
+                        <img src="https://images.pexels.com/photos/3182783/pexels-photo-3182783.jpeg"
+                            class="w-[60px] h-[40px] object-cover hover:opacity-90 transition" />
+                        <h4
+                            class="text-[15px] leading-[21px] font-semibold text-blue-900 hover:text-red-600 cursor-pointer">
+                            Sildan to Tighten Border Security Amid Rising Migration Flows
+                        </h4>
+                    </div>
+
+                    <div class="flex gap-3">
+                        <img src="https://images.pexels.com/photos/3182784/pexels-photo-3182784.jpeg"
+                            class="w-[60px] h-[40px] object-cover hover:opacity-90 transition" />
+                        <h4
+                            class="text-[15px] leading-[21px] font-semibold text-blue-900 hover:text-red-600 cursor-pointer">
+                            Exploring the Top Adventure Travel Destinations for Thrill Seekers
+                        </h4>
+                    </div>
+
+                    <div class="flex gap-3">
+                        <img src="https://images.pexels.com/photos/3182784/pexels-photo-3182784.jpeg"
+                            class="w-[60px] h-[40px] object-cover hover:opacity-90 transition" />
+                        <h4
+                            class="text-[15px] leading-[21px] font-semibold text-blue-900 hover:text-red-600 cursor-pointer">
+                            Exploring the Top Adventure Travel Destinations for Thrill Seekers
+                        </h4>
+                    </div>
+
+                    <div class="flex gap-3">
+                        <img src="https://images.pexels.com/photos/3182784/pexels-photo-3182784.jpeg"
+                            class="w-[60px] h-[40px] object-cover hover:opacity-90 transition" />
+                        <h4
+                            class="text-[15px] leading-[21px] font-semibold text-blue-900 hover:text-red-600 cursor-pointer">
+                            Exploring the Top Adventure Travel Destinations for Thrill Seekers
+                        </h4>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-[#012761] text-white py-4">
+        <div class="text-center text-[20px] font-bold">
+            FOXIZ_REPORT-CRYPTO&copy; <span id="year"></span> All Rights Reserved.
+        </div>
+    </footer>
+    <!-- JS CODE -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>
+
+</body>
+
+</html>

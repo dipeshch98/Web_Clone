@@ -24,27 +24,26 @@
         .font-bitter {
             font-family: 'Bitter', serif;
         }
-        .font-roboto {
-    font-family: 'Roboto', sans-serif;
-  }
 
+        .font-roboto {
+            font-family: 'Roboto', sans-serif;
+        }
     </style>
 </head>
 
 <body>
     <!-- -------NAVBAR------ -->
-    <div class="max-w-7xl mx-auto py-4 px-1.5 sm:px-0">
+    <div class="max-w-7xl mx-auto py-6  px-1.5 sm:px-0">
 
-        <nav class="flex items-center justify-between pb-2 border-b">
+        <nav class="flex items-center justify-between pb-4 border-b">
             <!-- Logo -->
-            <div class="flex items-center gap-2">
-                <div class="w-8 h-8 bg-red-600 flex items-center justify-center rounded">
-                    <span class="text-white font-bold">▶</span>
+            <a href="https://soledaddemo.pencidesign.net/soledad-times-magazine/">
+                <div class="flex items-center gap-2">
+                    <h1 class=" text-[40px] font-bold font-alegreya leading-[26px] text-black">
+                        Magazine
+                    </h1>
                 </div>
-                <h1 class=" text-[40px] font-bold font-alegreya leading-[26px] text-black">
-                    Forcast
-                </h1>
-            </div>
+            </a>
 
             <!-- Desktop Menu -->
             <ul class="hidden font-inter leading-[26px] text-[15px] md:flex space-x-8 font-semibold">
@@ -86,17 +85,18 @@
 
     </div>
 
-    <!-- MAIN PART -->
-    <div class="max-w-7xl mx-auto pt-6">
+    <div class="max-w-7xl mx-auto w-full px-2 sm:px-0">
+           <!-- MAIN PART -->
+    <div class="max-w-7xl mx-auto">
 
         <!-- TITLE SECTION 4 containeer  -->
 
         <div class="w-full max-w-7xl mb-12 mt-6">
             <!-- Title -->
-            <h2 class="font-semibold font-bitter text-[14] leading-6 mb-6 px-6 text-gray-800">IN THE NEWS</h2>
+            <h2 class="font-semibold font-bitter text-[14px] leading-6 mb-6 text-gray-800">IN THE NEWS</h2>
 
             <!-- Grid -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
 
                 <!-- News Item -->
                 <div class="flex gap-4 items-start group cursor-pointer">
@@ -152,7 +152,7 @@
         </div>
 
         <!-- HERO SETION MAIN -->
-        <div class="max-w-7xl mx-auto px-4 mb-16">
+        <div class="max-w-7xl mx-auto mb-16">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
 
                 <!-- LEFT COLUMN (Main Feature) -->
@@ -221,7 +221,8 @@
                     <div class="flex-1 flex flex-col justify-between">
                         <!-- Trending Now -->
                         <div class="border rounded-md p-4 mb-6 bg-white shadow-sm">
-                            <span class="bg-red-600 text-white text-[14px] font-semibold px-2 py-1 rounded">TRENDING NOW</span>
+                            <span class="bg-red-600 text-white text-[14px] font-semibold px-2 py-1 rounded">TRENDING
+                                NOW</span>
                             <ul class="divide-y mt-4">
                                 <li
                                     class="py-2 hover:text-red-600 cursor-pointer font-bitter font-normal text-[15px] transition duration-300">
@@ -261,7 +262,7 @@
 
     <!-- NEWS ITEMS - 4 -->
 
-    <div class="max-w-7xl mx-auto px-4">
+    <div class="max-w-7xl mx-auto">
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
 
             <!-- News Item  -->
@@ -322,165 +323,192 @@
 
     <!-- World & Politics SECTION -->
     <!-- World & Politics SECTION -->
-    <div class="max-w-7xl mx-auto px-6 py-8 font-roboto">
-    <!-- Section Headers -->
-    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-6">
-        <div class="lg:col-span-2">
-            <div class="border-b-2 border-black pb-2">
-                <h2 class="text-[14px] font-bold uppercase tracking-wider text-black font-bitter hover:text-red-600 transition duration-300">WORLD & POLITICS</h2>
+    <div class="max-w-7xl mx-auto py-8 font-roboto">
+        <!-- Section Headers -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-6">
+            <div class="lg:col-span-2">
+                <div class="border-b-2 border-black pb-2">
+                    <h2
+                        class="text-[14px] font-bold uppercase tracking-wider text-black font-bitter hover:text-red-600 transition duration-300">
+                        WORLD & POLITICS</h2>
+                </div>
+            </div>
+            <div>
+                <div class="border-b-2 border-black pb-2">
+                    <h2
+                        class="text-xs font-bold uppercase tracking-wider text-black font-bitter hover:text-red-600 transition duration-300">
+                        EDUCATION</h2>
+                </div>
             </div>
         </div>
-        <div>
-            <div class="border-b-2 border-black pb-2">
-                <h2 class="text-xs font-bold uppercase tracking-wider text-black font-bitter hover:text-red-600 transition duration-300">EDUCATION</h2>
-            </div>
-        </div>
-    </div>
 
-    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-        <!-- Left Column - World & Politics -->
-        <div class="lg:col-span-2 space-y-8">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                <!-- Main Article -->
-                <div class="lg:col-span-1">
-                    <img src="https://images.pexels.com/photos/8566473/pexels-photo-8566473.jpeg?auto=compress&cs=tinysrgb&w=500"
-                        alt="Biden with flags" class="w-full h-64 object-cover mb-4 rounded-md hover:scale-105 hover:opacity-90 transition duration-500 cursor-pointer">
-                    <h1 class="text-2xl font-bold font-bitter leading-tight mb-2 text-black hover:text-red-600 transition duration-300">
-                        U.S. wants to deepen relations with Taiwan amid rising tensions with China
-                    </h1>
-                    <p class="text-xs text-gray-600 mb-3">by Penci Design • 4 years ago</p>
-                    <p class="text-sm text-gray-700 font-roboto leading-relaxed">
-                        A wonderful serenity has taken possession of my entire soul, like these sweet mornings of
-                        spring which I enjoy with my whole heart. I am alone, and feel...
-                    </p>
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <!-- Left Column - World & Politics -->
+            <div class="lg:col-span-2 space-y-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                    <!-- Main Article -->
+                    <div class="lg:col-span-1">
+                        <img src="https://images.pexels.com/photos/8566473/pexels-photo-8566473.jpeg?auto=compress&cs=tinysrgb&w=500"
+                            alt="Biden with flags"
+                            class="w-full h-64 object-cover mb-4 rounded-md hover:scale-105 hover:opacity-90 transition duration-500 cursor-pointer">
+                        <h1
+                            class="text-2xl font-bold font-bitter leading-tight mb-2 text-black hover:text-red-600 transition duration-300">
+                            U.S. wants to deepen relations with Taiwan amid rising tensions with China
+                        </h1>
+                        <p class="text-xs text-gray-600 mb-3">by Penci Design • 4 years ago</p>
+                        <p class="text-sm text-gray-700 font-roboto leading-relaxed">
+                            A wonderful serenity has taken possession of my entire soul, like these sweet mornings of
+                            spring which I enjoy with my whole heart. I am alone, and feel...
+                        </p>
+                    </div>
+
+                    <!-- Right Side Articles - 2x2 Grid Layout -->
+                    <div class="grid grid-cols-2 gap-4">
+                        <article>
+                            <img src="https://images.pexels.com/photos/590016/pexels-photo-590016.jpeg?auto=compress&cs=tinysrgb&w=200"
+                                alt="China cityscape"
+                                class="w-full h-20 object-cover mb-2 rounded-md hover:scale-105 hover:opacity-90 transition duration-500 cursor-pointer">
+                            <h3
+                                class="text-[15px] font-bitter font-bold leading-[19.5px] text-black mb-1 hover:text-red-600 transition duration-300">
+                                China, world's top carbon emitter, offers few new climate targets ahead of U.N. summit
+                            </h3>
+                            <p class="text-xs text-gray-500">4 years ago</p>
+                        </article>
+
+                        <article>
+                            <img src="https://images.pexels.com/photos/1485657/pexels-photo-1485657.jpeg?auto=compress&cs=tinysrgb&w=200"
+                                alt="Halloween pumpkins"
+                                class="w-full h-20 object-cover mb-2 rounded-md hover:scale-105 hover:opacity-90 transition duration-500 cursor-pointer">
+                            <h3
+                                class="text-[15px] font-bitter font-bold leading-[19.5px] text-black mb-1 hover:text-red-600 transition duration-300">
+                                Is it OK to go trick-or-treating during the pandemic this Halloween?
+                            </h3>
+                            <p class="text-xs text-gray-500">4 years ago</p>
+                        </article>
+
+                        <article>
+                            <img src="https://images.pexels.com/photos/8837543/pexels-photo-8837543.jpeg?auto=compress&cs=tinysrgb&w=200"
+                                alt="Newsom speaking"
+                                class="w-full h-20 object-cover mb-2 rounded-md hover:scale-105 hover:opacity-90 transition duration-500 cursor-pointer">
+                            <h3
+                                class="text-[15px] font-bitter font-bold leading-[19.5px] text-black mb-1 hover:text-red-600 transition duration-300">
+                                Newsom, Buttigieg announce $5 billion in loans for California's clogged ports
+                            </h3>
+                            <p class="text-xs text-gray-500">4 years ago</p>
+                        </article>
+
+                        <article>
+                            <img src="https://images.pexels.com/photos/4004376/pexels-photo-4004376.jpeg?auto=compress&cs=tinysrgb&w=200"
+                                alt="Vaccine protest"
+                                class="w-full h-20 object-cover mb-2 rounded-md hover:scale-105 hover:opacity-90 transition duration-500 cursor-pointer">
+                            <h3
+                                class="text-[15px] font-bitter font-bold leading-[19.5px] text-black mb-1 hover:text-red-600 transition duration-300">
+                                'On the verge of catastrophe': Vaccine hesitancy fuels a COVID spike in Eastern Europe
+                            </h3>
+                            <p class="text-xs text-gray-500">4 years ago</p>
+                        </article>
+                    </div>
                 </div>
 
-                <!-- Right Side Articles - 2x2 Grid Layout -->
-                <div class="grid grid-cols-2 gap-4">
+                <!-- Bottom Row - 3 Column Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+                    <article>
+                        <img src="https://images.pexels.com/photos/8837646/pexels-photo-8837646.jpeg?auto=compress&cs=tinysrgb&w=300"
+                            alt="NYC protest"
+                            class="w-full h-32 object-cover mb-3 rounded-md hover:scale-105 hover:opacity-90 transition duration-500 cursor-pointer">
+                        <h3
+                            class="text-sm font-bitter font-bold leading-tight text-black mb-2 hover:text-red-600 transition duration-300">
+                            Judge won't stop vaccine mandate for NYC cops, other workers
+                        </h3>
+                        <p class="text-xs text-gray-500">4 years ago</p>
+                    </article>
+
+                    <article>
+                        <img src="https://images.pexels.com/photos/4031867/pexels-photo-4031867.jpeg?auto=compress&cs=tinysrgb&w=300"
+                            alt="Person with mask"
+                            class="w-full h-32 object-cover mb-3 rounded-md hover:scale-105 hover:opacity-90 transition duration-500 cursor-pointer">
+                        <h3
+                            class="text-sm font-bitter font-bold leading-tight text-black mb-2 hover:text-red-600 transition duration-300">
+                            Coronavirus Today: California is not exactly leading by example
+                        </h3>
+                        <p class="text-xs text-gray-500">4 years ago</p>
+                    </article>
+
                     <article>
                         <img src="https://images.pexels.com/photos/590016/pexels-photo-590016.jpeg?auto=compress&cs=tinysrgb&w=200"
-                            alt="China cityscape" class="w-full h-20 object-cover mb-2 rounded-md hover:scale-105 hover:opacity-90 transition duration-500 cursor-pointer">
-                        <h3 class="text-[15px] font-bitter font-bold leading-[19.5px] text-black mb-1 hover:text-red-600 transition duration-300">
-                            China, world's top carbon emitter, offers few new climate targets ahead of U.N. summit
-                        </h3>
-                        <p class="text-xs text-gray-500">4 years ago</p>
-                    </article>
-
-                    <article>
-                        <img src="https://images.pexels.com/photos/1485657/pexels-photo-1485657.jpeg?auto=compress&cs=tinysrgb&w=200"
-                            alt="Halloween pumpkins" class="w-full h-20 object-cover mb-2 rounded-md hover:scale-105 hover:opacity-90 transition duration-500 cursor-pointer">
-                        <h3 class="text-[15px] font-bitter font-bold leading-[19.5px] text-black mb-1 hover:text-red-600 transition duration-300">
-                            Is it OK to go trick-or-treating during the pandemic this Halloween?
-                        </h3>
-                        <p class="text-xs text-gray-500">4 years ago</p>
-                    </article>
-
-                    <article>
-                        <img src="https://images.pexels.com/photos/8837543/pexels-photo-8837543.jpeg?auto=compress&cs=tinysrgb&w=200"
-                            alt="Newsom speaking" class="w-full h-20 object-cover mb-2 rounded-md hover:scale-105 hover:opacity-90 transition duration-500 cursor-pointer">
-                        <h3 class="text-[15px] font-bitter font-bold leading-[19.5px] text-black mb-1 hover:text-red-600 transition duration-300">
-                            Newsom, Buttigieg announce $5 billion in loans for California's clogged ports
-                        </h3>
-                        <p class="text-xs text-gray-500">4 years ago</p>
-                    </article>
-
-                    <article>
-                        <img src="https://images.pexels.com/photos/4004376/pexels-photo-4004376.jpeg?auto=compress&cs=tinysrgb&w=200"
-                            alt="Vaccine protest" class="w-full h-20 object-cover mb-2 rounded-md hover:scale-105 hover:opacity-90 transition duration-500 cursor-pointer">
-                        <h3 class="text-[15px] font-bitter font-bold leading-[19.5px] text-black mb-1 hover:text-red-600 transition duration-300">
-                            'On the verge of catastrophe': Vaccine hesitancy fuels a COVID spike in Eastern Europe
+                            alt="Capitol building"
+                            class="w-full h-32 object-cover mb-3 rounded-md hover:scale-105 hover:opacity-90 transition duration-500 cursor-pointer">
+                        <h3
+                            class="text-sm font-bitter font-bold leading-tight text-black mb-2 hover:text-red-600 transition duration-300">
+                            What is a wealth tax, and how would it work with the current system?
                         </h3>
                         <p class="text-xs text-gray-500">4 years ago</p>
                     </article>
                 </div>
             </div>
 
-            <!-- Bottom Row - 3 Column Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
-                <article>
-                    <img src="https://images.pexels.com/photos/8837646/pexels-photo-8837646.jpeg?auto=compress&cs=tinysrgb&w=300"
-                        alt="NYC protest" class="w-full h-32 object-cover mb-3 rounded-md hover:scale-105 hover:opacity-90 transition duration-500 cursor-pointer">
-                    <h3 class="text-sm font-bitter font-bold leading-tight text-black mb-2 hover:text-red-600 transition duration-300">
-                        Judge won't stop vaccine mandate for NYC cops, other workers
-                    </h3>
-                    <p class="text-xs text-gray-500">4 years ago</p>
+            <!-- Right Column - Education -->
+            <div class="bg-gray-100 p-6 space-y-6">
+                <!-- Red Education Label -->
+                <div>
+                    <span
+                        class="bg-red-600 text-white text-xs font-bold px-2 py-1 uppercase font-bitter">EDUCATION</span>
+                </div>
+
+                <!-- Featured Education Article -->
+                <article class="mb-6">
+                    <h2
+                        class="text-lg font-bitter font-bold leading-tight text-black mb-2 hover:text-red-600 transition duration-300">
+                        Despite pandemic, Cal State graduation rates climbed, but equity gaps persist
+                    </h2>
+                    <p class="text-xs text-gray-600 mb-4 font-roboto">by Penci Design • 4 years ago</p>
+                    <img src="https://images.pexels.com/photos/1595391/pexels-photo-1595391.jpeg?auto=compress&cs=tinysrgb&w=400"
+                        alt="Students walking"
+                        class="w-full h-48 object-cover rounded-md hover:scale-105 hover:opacity-90 transition duration-500 cursor-pointer">
                 </article>
 
-                <article>
-                    <img src="https://images.pexels.com/photos/4031867/pexels-photo-4031867.jpeg?auto=compress&cs=tinysrgb&w=300"
-                        alt="Person with mask" class="w-full h-32 object-cover mb-3 rounded-md hover:scale-105 hover:opacity-90 transition duration-500 cursor-pointer">
-                    <h3 class="text-sm font-bitter font-bold leading-tight text-black mb-2 hover:text-red-600 transition duration-300">
-                        Coronavirus Today: California is not exactly leading by example
-                    </h3>
-                    <p class="text-xs text-gray-500">4 years ago</p>
-                </article>
+                <!-- Education Articles List -->
+                <div class="space-y-4">
+                    <article>
+                        <h3
+                            class="text-sm font-bitter font-semibold leading-[25px] text-black mb-1 hover:text-red-600 transition duration-300">
+                            Parents in California protest student COVID-19 vaccine mandate
+                        </h3>
+                        <p class="text-xs text-gray-500 font-roboto">4 years ago • 0 comments</p>
+                    </article>
 
-                <article>
-                    <img src="https://images.pexels.com/photos/590016/pexels-photo-590016.jpeg?auto=compress&cs=tinysrgb&w=200"
-                        alt="Capitol building" class="w-full h-32 object-cover mb-3 rounded-md hover:scale-105 hover:opacity-90 transition duration-500 cursor-pointer">
-                    <h3 class="text-sm font-bitter font-bold leading-tight text-black mb-2 hover:text-red-600 transition duration-300">
-                        What is a wealth tax, and how would it work with the current system?
-                    </h3>
-                    <p class="text-xs text-gray-500">4 years ago</p>
-                </article>
-            </div>
-        </div>
+                    <article>
+                        <h3
+                            class="text-sm font-bitter font-semibold leading-[25px] text-black mb-1 hover:text-red-600 transition duration-300">
+                            Viral TikTok trend that encourages vandalism hits California schools
+                        </h3>
+                        <p class="text-xs text-gray-500 font-roboto">4 years ago • 0 comments</p>
+                    </article>
 
-        <!-- Right Column - Education -->
-        <div class="bg-gray-100 p-6 space-y-6">
-            <!-- Red Education Label -->
-            <div>
-                <span class="bg-red-600 text-white text-xs font-bold px-2 py-1 uppercase font-bitter">EDUCATION</span>
-            </div>
+                    <article>
+                        <h3
+                            class="text-sm font-bitter font-semibold leading-[25px] text-black mb-1 hover:text-red-600 transition duration-300">
+                            New data affirm it. L.A. County school safety policies are working as COVID rates are low
+                        </h3>
+                        <p class="text-xs text-gray-500 font-roboto">4 years ago • 0 comments</p>
+                    </article>
 
-            <!-- Featured Education Article -->
-            <article class="mb-6">
-                <h2 class="text-lg font-bitter font-bold leading-tight text-black mb-2 hover:text-red-600 transition duration-300">
-                    Despite pandemic, Cal State graduation rates climbed, but equity gaps persist
-                </h2>
-                <p class="text-xs text-gray-600 mb-4 font-roboto">by Penci Design • 4 years ago</p>
-                <img src="https://images.pexels.com/photos/1595391/pexels-photo-1595391.jpeg?auto=compress&cs=tinysrgb&w=400"
-                    alt="Students walking" class="w-full h-48 object-cover rounded-md hover:scale-105 hover:opacity-90 transition duration-500 cursor-pointer">
-            </article>
-
-            <!-- Education Articles List -->
-            <div class="space-y-4">
-                <article>
-                    <h3 class="text-sm font-bitter font-semibold leading-[25px] text-black mb-1 hover:text-red-600 transition duration-300">
-                        Parents in California protest student COVID-19 vaccine mandate
-                    </h3>
-                    <p class="text-xs text-gray-500 font-roboto">4 years ago • 0 comments</p>
-                </article>
-
-                <article>
-                    <h3 class="text-sm font-bitter font-semibold leading-[25px] text-black mb-1 hover:text-red-600 transition duration-300">
-                        Viral TikTok trend that encourages vandalism hits California schools
-                    </h3>
-                    <p class="text-xs text-gray-500 font-roboto">4 years ago • 0 comments</p>
-                </article>
-
-                <article>
-                    <h3 class="text-sm font-bitter font-semibold leading-[25px] text-black mb-1 hover:text-red-600 transition duration-300">
-                        New data affirm it. L.A. County school safety policies are working as COVID rates are low
-                    </h3>
-                    <p class="text-xs text-gray-500 font-roboto">4 years ago • 0 comments</p>
-                </article>
-
-                <article>
-                    <h3 class="text-sm font-bitter font-semibold leading-[25px] text-black mb-1 hover:text-red-600 transition duration-300">
-                        65,000 fake students applied for financial aid in wide community college scam
-                    </h3>
-                    <p class="text-xs text-gray-500 font-roboto">4 years ago • 0 comments</p>
-                </article>
+                    <article>
+                        <h3
+                            class="text-sm font-bitter font-semibold leading-[25px] text-black mb-1 hover:text-red-600 transition duration-300">
+                            65,000 fake students applied for financial aid in wide community college scam
+                        </h3>
+                        <p class="text-xs text-gray-500 font-roboto">4 years ago • 0 comments</p>
+                    </article>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
 
     <!-- Business News SECTION -->
     <!-- Business News SECTION -->
-    <div class="max-w-7xl mx-auto px-6 py-8">
+    <div class="max-w-7xl mx-auto py-8">
         <!-- Section Header -->
         <div class="border-b-2 border-black pb-2 mb-8">
             <h2 class="text-[14px] font-bitter font-bold uppercase tracking-wider text-black">BUSINESS NEWS</h2>
@@ -602,201 +630,222 @@
 
 
     <!-- ENVIRONMENT UPDATE SECTIONS -->
-    <div class="max-w-7xl mx-auto bg-white px-4 sm:px-6 lg:px-8">
-    <!-- Main Grid Container -->
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+    <div class="max-w-7xl mx-auto bg-white">
+        <!-- Main Grid Container -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
 
-        <!-- Left Column: Entertainment Updates -->
-        <div class="py-6">
-            <div class="border-b-2 border-black pb-2 mb-6">
-                <h2 class="text-[14px] font-bitter font-bold text-black tracking-wide">EDUCATION</h2>
-            </div>
+            <!-- Left Column: Entertainment Updates -->
+            <div class="py-6">
+                <div class="border-b-2 border-black pb-2 mb-6">
+                    <h2 class="text-[14px] font-bitter font-bold text-black tracking-wide">EDUCATION</h2>
+                </div>
 
-            <div class="flex flex-col lg:flex-row gap-6 items-stretch">
-                <!-- Featured Sports Image - Left Side -->
-                <div class="w-full lg:w-64 flex-shrink-0 group cursor-pointer flex flex-col">
-                    <div class="relative overflow-hidden h-64 sm:h-56">
-                        <img src="https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?w=400&h=280&fit=crop"
-                            alt="Sports"
-                            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 rounded-md">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent rounded-md"></div>
-                        <div class="absolute bottom-0 left-0 right-0 p-4">
-                            <h3 class="text-white font-bitter text-base font-bold leading-tight mb-2 group-hover:text-red-400 transition-colors">
-                                Five substitutes sport rule set to become permanent in football
-                            </h3>
-                            <div class="flex items-center text-white/80 text-xs">
-                                <span class="mr-3">by Penci Design</span>
-                                <span>4 years ago</span>
+                <div class="flex flex-col lg:flex-row gap-6 items-stretch">
+                    <!-- Featured Sports Image - Left Side -->
+                    <div class="w-full lg:w-64 flex-shrink-0 group cursor-pointer flex flex-col">
+                        <div class="relative overflow-hidden h-64 sm:h-56">
+                            <img src="https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?w=400&h=280&fit=crop"
+                                alt="Sports"
+                                class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 rounded-md">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent rounded-md">
+                            </div>
+                            <div class="absolute bottom-0 left-0 right-0 p-4">
+                                <h3
+                                    class="text-white font-bitter text-base font-bold leading-tight mb-2 group-hover:text-red-400 transition-colors">
+                                    Five substitutes sport rule set to become permanent in football
+                                </h3>
+                                <div class="flex items-center text-white/80 text-xs">
+                                    <span class="mr-3">by Penci Design</span>
+                                    <span>4 years ago</span>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- Sports News List - Right Side -->
-                <div class="flex-1 flex flex-col justify-between">
-                    <div class="space-y-6">
-                        <article class="group cursor-pointer">
-                            <h4 class="font-semibold font-bitter text-gray-900 text-base leading-snug group-hover:text-red-500 transition-colors duration-200 mb-2">
-                                Andrew Friedman clears the air on pitching decisions and lackluster...
-                            </h4>
-                            <p class="text-gray-400 text-sm">4 years ago</p>
-                        </article>
+                    <!-- Sports News List - Right Side -->
+                    <div class="flex-1 flex flex-col justify-between">
+                        <div class="space-y-6">
+                            <article class="group cursor-pointer">
+                                <h4
+                                    class="font-semibold font-bitter text-gray-900 text-base leading-snug group-hover:text-red-500 transition-colors duration-200 mb-2">
+                                    Andrew Friedman clears the air on pitching decisions and lackluster...
+                                </h4>
+                                <p class="text-gray-400 text-sm">4 years ago</p>
+                            </article>
 
-                        <article class="group cursor-pointer">
-                            <h4 class="font-semibold font-bitter text-gray-900 text-base leading-snug group-hover:text-red-500 transition-colors duration-200 mb-2">
-                                Five substitutes sport rule set to become permanent in football
-                            </h4>
-                            <p class="text-gray-400 text-sm">4 years ago</p>
-                        </article>
+                            <article class="group cursor-pointer">
+                                <h4
+                                    class="font-semibold font-bitter text-gray-900 text-base leading-snug group-hover:text-red-500 transition-colors duration-200 mb-2">
+                                    Five substitutes sport rule set to become permanent in football
+                                </h4>
+                                <p class="text-gray-400 text-sm">4 years ago</p>
+                            </article>
 
-                        <article class="group cursor-pointer">
-                            <h4 class="font-semibold font-bitter text-gray-900 text-base leading-snug group-hover:text-red-500 transition-colors duration-200 mb-2">
-                                Andy Murray: I could be convinced to play in the...
-                            </h4>
-                            <p class="text-gray-400 text-sm">4 years ago</p>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Right Column: Sport Around The World -->
-        <div class="py-6">
-            <div class="border-b-2 border-black pb-2 mb-6">
-                <h2 class="text-[14px] font-bitter font-bold text-black tracking-wide">SPORT AROUND THE WORLD</h2>
-            </div>
-
-            <div class="flex flex-col lg:flex-row gap-6 items-stretch">
-                <!-- Sports News List - Left Side -->
-                <div class="flex-1 flex flex-col justify-between">
-                    <div class="space-y-6">
-                        <article class="group cursor-pointer">
-                            <h4 class="font-semibold font-bitter text-gray-900 text-base leading-snug group-hover:text-red-500 transition-colors duration-200 mb-2">
-                                Andrew Friedman clears the air on pitching decisions and lackluster...
-                            </h4>
-                            <p class="text-gray-400 text-sm">4 years ago</p>
-                        </article>
-
-                        <article class="group cursor-pointer">
-                            <h4 class="font-semibold font-bitter text-gray-900 text-base leading-snug group-hover:text-red-500 transition-colors duration-200 mb-2">
-                                Five substitutes sport rule set to become permanent in football
-                            </h4>
-                            <p class="text-gray-400 text-sm">4 years ago</p>
-                        </article>
-
-                        <article class="group cursor-pointer">
-                            <h4 class="font-semibold font-bitter text-gray-900 text-base leading-snug group-hover:text-red-500 transition-colors duration-200 mb-2">
-                                Andy Murray: I could be convinced to play in the...
-                            </h4>
-                            <p class="text-gray-400 text-sm">4 years ago</p>
-                        </article>
-                    </div>
-                </div>
-
-                <!-- Featured Sports Image - Right Side -->
-                <div class="w-full lg:w-64 flex-shrink-0 group cursor-pointer flex">
-                    <div class="relative overflow-hidden h-64 sm:h-56 w-full">
-                        <img src="https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?w=400&h=280&fit=crop"
-                            alt="Sports"
-                            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 rounded-md">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent rounded-md"></div>
-                        <div class="absolute bottom-0 left-0 right-0 p-4">
-                            <h3 class="text-white font-bitter text-base font-bold leading-tight mb-2 group-hover:text-red-400 transition-colors">
-                                Five substitutes sport rule set to become permanent in football
-                            </h3>
-                            <div class="flex items-center text-white/80 text-xs">
-                                <span class="mr-3">by Penci Design</span>
-                                <span>4 years ago</span>
-                            </div>
+                            <article class="group cursor-pointer">
+                                <h4
+                                    class="font-semibold font-bitter text-gray-900 text-base leading-snug group-hover:text-red-500 transition-colors duration-200 mb-2">
+                                    Andy Murray: I could be convinced to play in the...
+                                </h4>
+                                <p class="text-gray-400 text-sm">4 years ago</p>
+                            </article>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <!-- Right Column: Sport Around The World -->
+            <div class="py-6">
+                <div class="border-b-2 border-black pb-2 mb-6">
+                    <h2 class="text-[14px] font-bitter font-bold text-black tracking-wide">SPORT AROUND THE WORLD</h2>
+                </div>
+
+                <div class="flex flex-col lg:flex-row gap-6 items-stretch">
+                    <!-- Sports News List - Left Side -->
+                    <div class="flex-1 flex flex-col justify-between">
+                        <div class="space-y-6">
+                            <article class="group cursor-pointer">
+                                <h4
+                                    class="font-semibold font-bitter text-gray-900 text-base leading-snug group-hover:text-red-500 transition-colors duration-200 mb-2">
+                                    Andrew Friedman clears the air on pitching decisions and lackluster...
+                                </h4>
+                                <p class="text-gray-400 text-sm">4 years ago</p>
+                            </article>
+
+                            <article class="group cursor-pointer">
+                                <h4
+                                    class="font-semibold font-bitter text-gray-900 text-base leading-snug group-hover:text-red-500 transition-colors duration-200 mb-2">
+                                    Five substitutes sport rule set to become permanent in football
+                                </h4>
+                                <p class="text-gray-400 text-sm">4 years ago</p>
+                            </article>
+
+                            <article class="group cursor-pointer">
+                                <h4
+                                    class="font-semibold font-bitter text-gray-900 text-base leading-snug group-hover:text-red-500 transition-colors duration-200 mb-2">
+                                    Andy Murray: I could be convinced to play in the...
+                                </h4>
+                                <p class="text-gray-400 text-sm">4 years ago</p>
+                            </article>
+                        </div>
+                    </div>
+
+                    <!-- Featured Sports Image - Right Side -->
+                    <div class="w-full lg:w-64 flex-shrink-0 group cursor-pointer flex">
+                        <div class="relative overflow-hidden h-64 sm:h-56 w-full">
+                            <img src="https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?w=400&h=280&fit=crop"
+                                alt="Sports"
+                                class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 rounded-md">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent rounded-md">
+                            </div>
+                            <div class="absolute bottom-0 left-0 right-0 p-4">
+                                <h3
+                                    class="text-white font-bitter text-base font-bold leading-tight mb-2 group-hover:text-red-400 transition-colors">
+                                    Five substitutes sport rule set to become permanent in football
+                                </h3>
+                                <div class="flex items-center text-white/80 text-xs">
+                                    <span class="mr-3">by Penci Design</span>
+                                    <span>4 years ago</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
+        <!-- Bottom Grid - 6 Column Layout -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 py-8 border-t border-gray-200">
+            <!-- Article 1 -->
+            <div class="group cursor-pointer">
+                <div class="relative overflow-hidden mb-4 h-32 sm:h-40">
+                    <img src="https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?w=400&h=280&fit=crop"
+                        alt="Classic movies"
+                        class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110 rounded-md">
+                </div>
+                <h4
+                    class="font-semibold font-bitter text-sm text-gray-900 leading-tight group-hover:text-red-500 transition-colors duration-200 mb-2">
+                    Classic movies in SoCal: 'Pan's Labyrinth,' 'Phantasm,' 'Psycho' and more
+                </h4>
+                <p class="text-gray-400 text-xs font-roboto">4 years ago</p>
+            </div>
+
+            <!-- Article 2 -->
+            <div class="group cursor-pointer">
+                <div class="relative overflow-hidden mb-4 h-32 sm:h-40">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=250&h=180&fit=crop"
+                        alt="Books"
+                        class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110 rounded-md">
+                </div>
+                <h4
+                    class="font-semibold font-bitter text-sm text-gray-900 leading-tight group-hover:text-red-500 transition-colors duration-200 mb-2">
+                    11 inspiring and entertaining books to add to your reading list next month
+                </h4>
+                <p class="text-gray-400 text-xs font-roboto">4 years ago</p>
+            </div>
+
+            <!-- Article 3 -->
+            <div class="group cursor-pointer">
+                <div class="relative overflow-hidden mb-4 h-32 sm:h-40">
+                    <img src="https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=250&h=180&fit=crop"
+                        alt="Baseball"
+                        class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110 rounded-md">
+                </div>
+                <h4
+                    class="font-semibold font-bitter text-sm text-gray-900 leading-tight group-hover:text-red-500 transition-colors duration-200 mb-2">
+                    Baseball boosts TBS, NFL gives ESPN a kick and streamers love 'Squid'
+                </h4>
+                <p class="text-gray-400 text-xs font-roboto">4 years ago</p>
+            </div>
+
+            <!-- Article 4 -->
+            <div class="group cursor-pointer">
+                <div class="relative overflow-hidden mb-4 h-32 sm:h-40">
+                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=250&h=180&fit=crop"
+                        alt="Rugby"
+                        class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110 rounded-md">
+                </div>
+                <h4
+                    class="font-semibold font-bitter text-sm text-gray-900 leading-tight group-hover:text-red-500 transition-colors duration-200 mb-2">
+                    Detailed team-by-team guide for the new Premiership season this year
+                </h4>
+                <p class="text-gray-400 text-xs font-roboto">4 years ago</p>
+            </div>
+
+            <!-- Article 5 -->
+            <div class="group cursor-pointer">
+                <div class="relative overflow-hidden mb-4 h-32 sm:h-40">
+                    <img src="https://images.unsplash.com/photo-1530915365347-e35b749a0381?w=250&h=180&fit=crop"
+                        alt="Golf"
+                        class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110 rounded-md">
+                </div>
+                <h4
+                    class="font-semibold font-bitter text-sm text-gray-900 leading-tight group-hover:text-red-500 transition-colors duration-200 mb-2">
+                    Padraig Harrington: Ryder Cup crowd left parents of players in tears
+                </h4>
+                <p class="text-gray-400 text-xs font-roboto">4 years ago</p>
+            </div>
+
+            <!-- Article 6 -->
+            <div class="group cursor-pointer">
+                <div class="relative overflow-hidden mb-4 h-32 sm:h-40">
+                    <img src="https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=250&h=180&fit=crop"
+                        alt="Horse racing"
+                        class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110 rounded-md">
+                </div>
+                <h4
+                    class="font-semibold font-bitter text-sm text-gray-900 leading-tight group-hover:text-red-500 transition-colors duration-200 mb-2">
+                    Frodon and Bryony Frost edge rival duo in thrilling encounter this season
+                </h4>
+                <p class="text-gray-400 text-xs font-roboto">4 years ago</p>
+            </div>
+        </div>
+    </div> 
     </div>
 
-    <!-- Bottom Grid - 6 Column Layout -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 px-4 py-8 border-t border-gray-200">
-        <!-- Article 1 -->
-        <div class="group cursor-pointer">
-            <div class="relative overflow-hidden mb-4 h-32 sm:h-40">
-                <img src="https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?w=400&h=280&fit=crop"
-                    alt="Classic movies"
-                    class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110 rounded-md">
-            </div>
-            <h4 class="font-semibold font-bitter text-sm text-gray-900 leading-tight group-hover:text-red-500 transition-colors duration-200 mb-2">
-                Classic movies in SoCal: 'Pan's Labyrinth,' 'Phantasm,' 'Psycho' and more
-            </h4>
-            <p class="text-gray-400 text-xs font-roboto">4 years ago</p>
-        </div>
 
-        <!-- Article 2 -->
-        <div class="group cursor-pointer">
-            <div class="relative overflow-hidden mb-4 h-32 sm:h-40">
-                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=250&h=180&fit=crop"
-                    alt="Books"
-                    class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110 rounded-md">
-            </div>
-            <h4 class="font-semibold font-bitter text-sm text-gray-900 leading-tight group-hover:text-red-500 transition-colors duration-200 mb-2">
-                11 inspiring and entertaining books to add to your reading list next month
-            </h4>
-            <p class="text-gray-400 text-xs font-roboto">4 years ago</p>
-        </div>
-
-        <!-- Article 3 -->
-        <div class="group cursor-pointer">
-            <div class="relative overflow-hidden mb-4 h-32 sm:h-40">
-                <img src="https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=250&h=180&fit=crop"
-                    alt="Baseball"
-                    class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110 rounded-md">
-            </div>
-            <h4 class="font-semibold font-bitter text-sm text-gray-900 leading-tight group-hover:text-red-500 transition-colors duration-200 mb-2">
-                Baseball boosts TBS, NFL gives ESPN a kick and streamers love 'Squid'
-            </h4>
-            <p class="text-gray-400 text-xs font-roboto">4 years ago</p>
-        </div>
-
-        <!-- Article 4 -->
-        <div class="group cursor-pointer">
-            <div class="relative overflow-hidden mb-4 h-32 sm:h-40">
-                <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=250&h=180&fit=crop"
-                    alt="Rugby"
-                    class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110 rounded-md">
-            </div>
-            <h4 class="font-semibold font-bitter text-sm text-gray-900 leading-tight group-hover:text-red-500 transition-colors duration-200 mb-2">
-                Detailed team-by-team guide for the new Premiership season this year
-            </h4>
-            <p class="text-gray-400 text-xs font-roboto">4 years ago</p>
-        </div>
-
-        <!-- Article 5 -->
-        <div class="group cursor-pointer">
-            <div class="relative overflow-hidden mb-4 h-32 sm:h-40">
-                <img src="https://images.unsplash.com/photo-1530915365347-e35b749a0381?w=250&h=180&fit=crop"
-                    alt="Golf"
-                    class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110 rounded-md">
-            </div>
-            <h4 class="font-semibold font-bitter text-sm text-gray-900 leading-tight group-hover:text-red-500 transition-colors duration-200 mb-2">
-                Padraig Harrington: Ryder Cup crowd left parents of players in tears
-            </h4>
-            <p class="text-gray-400 text-xs font-roboto">4 years ago</p>
-        </div>
-
-        <!-- Article 6 -->
-        <div class="group cursor-pointer">
-            <div class="relative overflow-hidden mb-4 h-32 sm:h-40">
-                <img src="https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=250&h=180&fit=crop"
-                    alt="Horse racing"
-                    class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110 rounded-md">
-            </div>
-            <h4 class="font-semibold font-bitter text-sm text-gray-900 leading-tight group-hover:text-red-500 transition-colors duration-200 mb-2">
-                Frodon and Bryony Frost edge rival duo in thrilling encounter this season
-            </h4>
-            <p class="text-gray-400 text-xs font-roboto">4 years ago</p>
-        </div>
-    </div>
-</div>
 
 
 
@@ -807,7 +856,7 @@
     <div class="bg-black">
         <div class="max-w-7xl mx-auto px-4 py-6">
             <footer class="text-center text-gray-400 text-xl font-bold font-alegreya">
-               FORCASR_CRYPTO © 2024 Empath. All Rights Reserved.
+                FORCASR_CRYPTO © 2024 Empath. All Rights Reserved.
             </footer>
         </div>
     </div>

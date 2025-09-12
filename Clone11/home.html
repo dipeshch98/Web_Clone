@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clone 11</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Heebo', sans-serif;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="w-full bg-[#515A60] text-white">
+        <div class="max-w-[1120px] mx-auto w-full px-2 sm:px-0">
+            <!-- Container -->
+            <div class="w-full flex justify-center">
+                <!-- Inner content: exact 1200px width on desktop -->
+                <div class="w-full max-w-[1120px] flex items-center justify-between py-2 md:py-4">
+
+                    <!-- Logo -->
+                    <div class="text-3xl md:text-4xl font-extrabold tracking-wide">
+                        <a href="https://wp.quomodosoft.com/newsprk/" target="_blank" class="">NEWSPARK</a>
+                    </div>
+
+                    <!-- Nav Links (Desktop) -->
+                    <ul class="hidden md:flex space-x-8 text-base md:text-lg font-medium">
+                        <li><a href="#" class=" hover:underline">HOME</a></li>
+                        <li><a href="#" class="hover:underline">FEATURES</a></li>
+                        <li><a href="#" class="hover:underline">POLITICS</a></li>
+                        <li><a href="#" class="hover:underline">ECONOMY</a></li>
+                        <li><a href="#" class="hover:underline">SCIENCE & TECH</a></li>
+                        <li><a href="#" class="hover:underline">SPORTS</a></li>
+                    </ul>
+
+                    <!-- Mobile Menu Button -->
+                    <div class="md:hidden">
+                        <button id="menu-btn" class="focus:outline-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h16" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile Nav -->
+            <div id="mobile-menu" class="hidden md:hidden w-full px-2 pb-2">
+                <ul class="flex flex-col space-y-3 text-base font-medium">
+                    <li><a href="#" class="hover:text-red-500 transition-colors">HOME</a></li>
+                    <li><a href="#" class="hover:text-red-500 transition-colors">FEATURES</a></li>
+                    <li><a href="#" class="hover:text-red-500 transition-colors">POLITICS</a></li>
+                    <li><a href="#" class="hover:text-red-500 transition-colors">ECONOMY</a></li>
+                    <li><a href="#" class="hover:text-red-500 transition-colors">SCIENCE & TECH</a></li>
+                    <li><a href="#" class="hover:text-red-500 transition-colors">SPORTS</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+
+    <!-- BODY PORTION -->
+    <div class="max-w-[1120px] mx-auto w-full px-2 sm:px-0">
+        <!--hero section 1st part -->
+        <div class="max-w-[1120px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-8 mb-8">
+            <!-- Card 1 -->
+            <div class="flex items-start gap-3">
+                <img src="https://images.pexels.com/photos/32431779/pexels-photo-32431779.jpeg" alt="news 1"
+                    class="w-[80px] h-[70px] object-cover rounded-md transition-transform duration-300 hover:scale-105">
+                <div>
+                    <h3
+                        class="font-semibold text-gray-800 text-sm leading-tight transition-colors duration-300 hover:text-blue-600">
+                        Boris Johnson Tells Brits Lockdown Easing Will Go...
+                    </h3>
+                    <p class="text-gray-500 text-xs leading-tight">
+                        Entilators will be taken from certain ...
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="flex items-start gap-3">
+                <img src="https://images.pexels.com/photos/32431779/pexels-photo-32431779.jpeg" alt="news 2"
+                    class="w-[80px] h-[70px] object-cover rounded-md transition-transform duration-300 hover:scale-105">
+                <div>
+                    <h3
+                        class="font-semibold text-gray-800 text-sm leading-tight transition-colors duration-300 hover:text-blue-600">
+                        How The Seychelles Is Racing To Become The...
+                    </h3>
+                    <p class="text-gray-500 text-xs leading-tight">
+                        Entilators will be taken from certain ...
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="flex items-start gap-3">
+                <img src="https://images.pexels.com/photos/32431779/pexels-photo-32431779.jpeg" alt="news 3"
+                    class="w-[80px] h-[70px] object-cover rounded-md transition-transform duration-300 hover:scale-105">
+                <div>
+                    <h3
+                        class="font-semibold text-gray-800 text-sm leading-tight transition-colors duration-300 hover:text-blue-600">
+                        When Can We Go On Vacation Again? This...
+                    </h3>
+                    <p class="text-gray-500 text-xs leading-tight">
+                        Entilators will be taken from certain ...
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hero section 2nd part -->
+        <div class="w-full flex flex-col lg:flex-row gap-6 mt-8 mb-8">
+
+            <!-- LEFT COLUMN -->
+            <div class="relative w-full lg:flex-1 h-[470px] overflow-hidden rounded-md group">
+                <img src="https://images.pexels.com/photos/27706766/pexels-photo-27706766.jpeg" alt="Main News"
+                    class="w-full h-full object-cover object-center ">
+                <div
+                    class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4 sm:p-6 lg:p-10">
+                    <p class="text-white text-[14px] font-semibold uppercase tracking-wide mb-2">
+                        Business / March 31, 2021
+                    </p>
+                    <h2
+                        class="text-white text-[24px] sm:text-[28px] lg:text-[36px] leading-[28px] sm:leading-[34px] lg:leading-[43px] font-bold mb-2 hover:text-blue-400 transition-colors duration-300 cursor-pointer">
+                        Winston Churchill And The Union Jack Should Make
+                    </h2>
+                    <p class="text-gray-200 text-sm sm:text-base">
+                        Entilators will be taken from certain New York hospitals and redistributed to the worst-hit
+                        parts of the state.
+                    </p>
+                </div>
+            </div>
+
+            <!-- RIGHT COLUMN -->
+            <div class="flex flex-col gap-7 w-full lg:w-[360px] mt-6 lg:mt-0">
+                <!-- Repeat Articles -->
+                <div class="flex gap-3 items-start overflow-hidden group cursor-pointer">
+                    <div class="w-[100px] h-[70px] overflow-hidden rounded-md flex-shrink-0">
+                        <img src="https://images.pexels.com/photos/33843460/pexels-photo-33843460.jpeg" alt="news"
+                            class="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-110">
+                    </div>
+                    <div>
+                        <p class="text-blue-500 text-[13px] font-semibold uppercase tracking-wide pb-1">
+                            Finance / <span class="text-black">June 14, 2020</span>
+                        </p>
+                        <h3
+                            class="text-gray-800 text-[16px] leading-[21px] font-medium hover:text-blue-500 transition-colors duration-300">
+                            Inflation Slows In February Amid Falling Clothes Prices
+                        </h3>
+                    </div>
+                </div>
+
+                <div class="flex gap-3 items-start overflow-hidden group cursor-pointer">
+                    <div class="w-[100px] h-[70px] overflow-hidden rounded-md flex-shrink-0">
+                        <img src="https://images.pexels.com/photos/33843460/pexels-photo-33843460.jpeg" alt="news"
+                            class="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-110">
+                    </div>
+                    <div>
+                        <p class="text-blue-500 text-[13px] font-semibold uppercase tracking-wide pb-1">
+                            Finance / <span class="text-black">June 14, 2020</span>
+                        </p>
+                        <h3
+                            class="text-gray-800 text-[16px] leading-[21px] font-medium hover:text-blue-500 transition-colors duration-300">
+                            Inflation Slows In February Amid Falling Clothes Prices
+                        </h3>
+                    </div>
+                </div>
+
+                <div class="flex gap-3 items-start overflow-hidden group cursor-pointer">
+                    <div class="w-[100px] h-[70px] overflow-hidden rounded-md flex-shrink-0">
+                        <img src="https://images.pexels.com/photos/33843460/pexels-photo-33843460.jpeg" alt="news"
+                            class="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-110">
+                    </div>
+                    <div>
+                        <p class="text-blue-500 text-[13px] font-semibold uppercase tracking-wide pb-1">
+                            Finance / <span class="text-black">June 14, 2020</span>
+                        </p>
+                        <h3
+                            class="text-gray-800 text-[16px] leading-[21px] font-medium hover:text-blue-500 transition-colors duration-300">
+                            Inflation Slows In February Amid Falling Clothes Prices
+                        </h3>
+                    </div>
+                </div>
+
+                <div class="flex gap-3 items-start overflow-hidden group cursor-pointer">
+                    <div class="w-[100px] h-[70px] overflow-hidden rounded-md flex-shrink-0">
+                        <img src="https://images.pexels.com/photos/33843460/pexels-photo-33843460.jpeg" alt="news"
+                            class="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-110">
+                    </div>
+                    <div>
+                        <p class="text-blue-500 text-[13px] font-semibold uppercase tracking-wide pb-1">
+                            Finance / <span class="text-black">June 14, 2020</span>
+                        </p>
+                        <h3
+                            class="text-gray-800 text-[16px] leading-[21px] font-medium hover:text-blue-500 transition-colors duration-300">
+                            Inflation Slows In February Amid Falling Clothes Prices
+                        </h3>
+                    </div>
+                </div>
+
+                <div class="flex gap-3 items-start overflow-hidden group cursor-pointer">
+                    <div class="w-[100px] h-[70px] overflow-hidden rounded-md flex-shrink-0">
+                        <img src="https://images.pexels.com/photos/33843460/pexels-photo-33843460.jpeg" alt="news"
+                            class="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-110">
+                    </div>
+                    <div>
+                        <p class="text-blue-500 text-[13px] font-semibold uppercase tracking-wide pb-1">
+                            Finance / <span class="text-black">June 14, 2020</span>
+                        </p>
+                        <h3
+                            class="text-gray-800 text-[16px] leading-[21px] font-medium hover:text-blue-500 transition-colors duration-300">
+                            Inflation Slows In February Amid Falling Clothes Prices
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FEATURES NEWS SECTION -->
+        <div class="max-w-[1120px] mx-auto mt-8 mb-8">
+            <h2 class="text-2xl font-medium mb-6">Feature News</h2>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                <!-- Card 1 -->
+                <div class="relative h-[340px] overflow-hidden">
+                    <img src="https://images.pexels.com/photos/32523808/pexels-photo-32523808.jpeg" alt="news"
+                        class="w-full h-full object-cover">
+                    <div class="absolute bottom-0 left-0 right-0 p-6">
+                        <p class="text-white text-[14px]  font-semibold tracking-wide mb-2">
+                            BUSINESS / June 8, 2020
+                        </p>
+                        <h3
+                            class="text-white text-[16px] font-semibold hover:text-blue-400 transition-colors cursor-pointer">
+                            Best iphone 11 and 11 pro cases...
+                        </h3>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="relative h-[340px] overflow-hidden">
+                    <img src="https://images.pexels.com/photos/32523808/pexels-photo-32523808.jpeg" alt="news"
+                        class="w-full h-full object-cover">
+                    <div class="absolute bottom-0 left-0 right-0 p-6">
+                        <p class="text-white text-[14px]  font-semibold tracking-wide mb-2">
+                            TRAVEL / June 8, 2020
+                        </p>
+                        <h3
+                            class="text-white text-[16px] font-semibold hover:text-blue-400 transition-colors cursor-pointer">
+                            Emirates Palace Spends A Hefty Sum For...
+                        </h3>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="relative h-[340px] overflow-hidden">
+                    <img src="https://images.pexels.com/photos/32523808/pexels-photo-32523808.jpeg" alt="news"
+                        class="w-full h-full object-cover">
+                    <div class="absolute bottom-0 left-0 right-0 p-6">
+                        <p class="text-white text-[14px]  font-semibold tracking-wide mb-2">
+                            SPORTS / June 8, 2020
+                        </p>
+                        <h3
+                            class="text-white text-[16px] font-semibold hover:text-blue-400 transition-colors cursor-pointer">
+                            East Bengal And Kerala Blasters Have Most...
+                        </h3>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="relative h-[340px] overflow-hidden">
+                    <img src="https://images.pexels.com/photos/32523808/pexels-photo-32523808.jpeg" alt="news"
+                        class="w-full h-full object-cover">
+                    <div class="absolute bottom-0 left-0 right-0 p-6 ">
+                        <p class="text-white text-[14px]  font-semibold tracking-wide mb-2">
+                            SPORTS / June 8, 2020
+                        </p>
+                        <h3
+                            class="text-white text-[16px] font-semibold hover:text-blue-400 transition-colors cursor-pointer">
+                            Mbappe Said I Showed Off Too Much...
+                        </h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- TECHNOLOGY SECTION -->
+        <div class="w-full max-w-[1120px] mx-auto flex flex-col lg:flex-row gap-6 mb-8">
+
+            <!-- Left Column -->
+            <div class="flex-1 flex flex-col">
+                <h2 class="text-2xl font-medium mb-6">Technology</h2>
+
+                <!-- Top News -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-4">
+                    <div class="group">
+                        <div class="overflow-hidden rounded-md">
+                            <img src="https://images.pexels.com/photos/3862634/pexels-photo-3862634.jpeg" alt="news"
+                                class="w-full h-[230px] object-cover transition-transform duration-300 group-hover:scale-105">
+                        </div>
+                        <p class="text-sm text-gray-500 mt-2"><span class="text-blue-600">TECHNOLOGY</span> • Mar 22,
+                            2021
+                        </p>
+                        <h3
+                            class="mt-1 text-lg font-semibold cursor-pointer transition-colors duration-300 group-hover:text-blue-600">
+                            Keep Your Vacuum Cleaner On Track...
+                        </h3>
+                        <p class="mt-1 text-[15px] text-gray-500 font-normal">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, cumque?
+                        </p>
+                    </div>
+
+                    <div class="group">
+                        <div class="overflow-hidden rounded-md">
+                            <img src="https://images.pexels.com/photos/3862634/pexels-photo-3862634.jpeg" alt="news"
+                                class="w-full h-[230px] object-cover transition-transform duration-300 group-hover:scale-105">
+                        </div>
+                        <p class="text-sm text-gray-500 mt-2"><span class="text-blue-600">TECHNOLOGY</span> • Mar 22,
+                            2021
+                        </p>
+                        <h3
+                            class="mt-1 text-lg font-semibold cursor-pointer transition-colors duration-300 group-hover:text-blue-600">
+                            Keep Your Vacuum Cleaner On Track...
+                        </h3>
+                        <p class="mt-1 text-[15px] text-gray-500 font-normal">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, cumque?
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Bottom News Row 1 -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 pb-4 border-t-2 border-dashed border-gray-300 pt-4">
+                    <div class="flex gap-3 group overflow-hidden">
+                        <div class="w-[100px] h-[75px] overflow-hidden rounded">
+                            <img src="https://images.pexels.com/photos/73910/mars-mars-rover-space-travel-robot-73910.jpeg"
+                                alt="news"
+                                class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                        </div>
+                        <div>
+                            <p class="text-xs text-gray-500"><span>TECHNOLOGY</span> • Jun 14, 2020</p>
+                            <h4
+                                class="mt-1 text-[16px] font-medium cursor-pointer transition-colors duration-300 group-hover:text-blue-600">
+                                Greene King Now Taking Bookings......
+                            </h4>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-3 group overflow-hidden">
+                        <div class="w-[100px] h-[75px] overflow-hidden rounded">
+                            <img src="https://images.pexels.com/photos/73910/mars-mars-rover-space-travel-robot-73910.jpeg"
+                                alt="news"
+                                class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                        </div>
+                        <div>
+                            <p class="text-xs text-gray-500"><span>TECHNOLOGY</span> • Jun 14, 2020</p>
+                            <h4
+                                class="mt-1 text-[16px] font-medium cursor-pointer transition-colors duration-300 group-hover:text-blue-600">
+                                Boris Johnson Tells Brits Lockdown...
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bottom News Row 2 -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 border-t border-dashed border-gray-200 pt-4">
+                    <div class="flex gap-3 group overflow-hidden">
+                        <div class="w-[100px] h-[75px] overflow-hidden rounded">
+                            <img src="https://images.pexels.com/photos/73910/mars-mars-rover-space-travel-robot-73910.jpeg"
+                                alt="news"
+                                class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                        </div>
+                        <div>
+                            <p class="text-xs text-gray-500"><span>TECHNOLOGY</span> • Jun 14, 2020</p>
+                            <h4
+                                class="mt-1 text-[16px] font-medium cursor-pointer transition-colors duration-300 group-hover:text-blue-600">
+                                Greene King Now Taking Bookings......
+                            </h4>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-3 group overflow-hidden">
+                        <div class="w-[100px] h-[75px] overflow-hidden rounded">
+                            <img src="https://images.pexels.com/photos/73910/mars-mars-rover-space-travel-robot-73910.jpeg"
+                                alt="news"
+                                class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                        </div>
+                        <div>
+                            <p class="text-xs text-gray-500"><span>TECHNOLOGY</span> • Jun 14, 2020</p>
+                            <h4
+                                class="mt-1 text-[16px] font-medium cursor-pointer transition-colors duration-300 group-hover:text-blue-600">
+                                Boris Johnson Tells Brits Lockdown...
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="w-full lg:w-[340px]">
+                <h2 class="text-2xl font-medium mb-4">Most View</h2>
+                <div class="flex flex-col gap-4">
+
+                    <!-- Item 1-->
+                    <div class="flex justify-between items-center group overflow-hidden">
+                        <div class="flex gap-3">
+                            <div class="w-[75px] h-[65px] overflow-hidden rounded">
+                                <img src="https://images.pexels.com/photos/2599244/pexels-photo-2599244.jpeg" alt="news"
+                                    class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                            </div>
+                            <div>
+                                <p class="text-[13px] pb-2 text-gray-500"><span class="text-blue-600">BUSINESS</span> •
+                                    Mar
+                                    31, 2021</p>
+                                <h4
+                                    class="text-[16px] leading-[21px] font-medium cursor-pointer transition-colors duration-300 group-hover:text-blue-600">
+                                    Winston Churchill And The Union Jack...
+                                </h4>
+                            </div>
+                        </div>
+                        <span class="text-3xl font-bold text-gray-200">1</span>
+                    </div>
+
+                    <!-- item 2 -->
+                    <div
+                        class="flex justify-between items-center group overflow-hidden border-t border-dashed border-gray-200 pt-4">
+                        <div class="flex gap-3">
+                            <div class="w-[75px] h-[65px] overflow-hidden rounded">
+                                <img src="https://images.pexels.com/photos/2599244/pexels-photo-2599244.jpeg" alt="news"
+                                    class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                            </div>
+                            <div>
+                                <p class="text-[13px] pb-2 text-gray-500"><span class="text-blue-600">BUSINESS</span> •
+                                    Mar
+                                    31, 2021</p>
+                                <h4
+                                    class="text-[16px] leading-[21px] font-medium cursor-pointer transition-colors duration-300 group-hover:text-blue-600">
+                                    Teacher Suspended For Showing Cartoon...
+                                </h4>
+                            </div>
+                        </div>
+                        <span class="text-3xl font-bold text-gray-200">2</span>
+                    </div>
+
+                    <!-- item 3 -->
+                    <div
+                        class="flex justify-between items-center group overflow-hidden border-t border-dashed border-gray-200 pt-4">
+                        <div class="flex gap-3">
+                            <div class="w-[75px] h-[65px] overflow-hidden rounded">
+                                <img src="https://images.pexels.com/photos/2599244/pexels-photo-2599244.jpeg" alt="news"
+                                    class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                            </div>
+                            <div>
+                                <p class="text-[13px] pb-2 text-gray-500"><span class="text-blue-600">BUSINESS</span> •
+                                    Mar
+                                    31, 2021</p>
+                                <h4
+                                    class="text-[16px] leading-[21px] font-medium cursor-pointer transition-colors duration-300 group-hover:text-blue-600">
+                                    Teacher Suspended For Showing Cartoon...
+                                </h4>
+                            </div>
+                        </div>
+                        <span class="text-3xl font-bold text-gray-200">3</span>
+                    </div>
+
+                    <!-- item 4 -->
+                    <div
+                        class="flex justify-between items-center group overflow-hidden border-t border-dashed border-gray-200 pt-4">
+                        <div class="flex gap-3">
+                            <div class="w-[75px] h-[65px] overflow-hidden rounded">
+                                <img src="https://images.pexels.com/photos/2599244/pexels-photo-2599244.jpeg" alt="news"
+                                    class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                            </div>
+                            <div>
+                                <p class="text-[13px] pb-2 text-gray-500"><span class="text-blue-600">BUSINESS</span> •
+                                    Mar
+                                    31, 2021</p>
+                                <h4
+                                    class="text-[16px] leading-[21px] font-medium cursor-pointer transition-colors duration-300 group-hover:text-blue-600">
+                                    Teacher Suspended For Showing Cartoon...
+                                </h4>
+                            </div>
+                        </div>
+                        <span class="text-3xl font-bold text-gray-200">4</span>
+                    </div>
+
+                    <!-- item 5 -->
+                    <div
+                        class="flex justify-between items-center group overflow-hidden border-t border-dashed border-gray-200 pt-4">
+                        <div class="flex gap-3">
+                            <div class="w-[75px] h-[65px] overflow-hidden rounded">
+                                <img src="https://images.pexels.com/photos/2599244/pexels-photo-2599244.jpeg" alt="news"
+                                    class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                            </div>
+                            <div>
+                                <p class="text-[13px] pb-2 text-gray-500"><span class="text-blue-600">BUSINESS</span> •
+                                    Mar
+                                    31, 2021</p>
+                                <h4
+                                    class="text-[16px] leading-[21px] font-medium cursor-pointer transition-colors duration-300 group-hover:text-blue-600">
+                                    Teacher Suspended For Showing Cartoon...
+                                </h4>
+                            </div>
+                        </div>
+                        <span class="text-3xl font-bold text-gray-200">5</span>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- BIG BIG BIG -->
+    <div class="w-full bg-[#13202A] py-10">
+        <div class="max-w-[1120px] mx-auto flex flex-col gap-10">
+            <!-- Top Two Images -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- first -->
+                <div class="relative group overflow-hidden w-[540px] h-[400px]">
+                    <!-- Image -->
+                    <img src="https://images.pexels.com/photos/1752724/pexels-photo-1752724.jpeg" alt="news"
+                        class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+
+                    <!-- Content (on top of image) -->
+                    <div class="absolute bottom-8 left-10 text-white z-10">
+                        <p class="text-sm"><span
+                                class="text-blue-600">SPORTS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;June
+                            8, 2020</p>
+                        <h3
+                            class="text-[30px] font-extrabold leading-[36px] transition-colors duration-300 group-hover:text-blue-400">
+                            East Bengal And Kerala Blasters Have Most Number...
+                        </h3>
+                    </div>
+                </div>
+                <!-- second -->
+                <div class="relative group overflow-hidden w-[540px] h-[400px]">
+                    <!-- Image -->
+                    <img src="https://images.pexels.com/photos/1752724/pexels-photo-1752724.jpeg" alt="news"
+                        class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+
+                    <!-- Content (on top of image) -->
+                    <div class="absolute bottom-8 left-10 text-white z-10">
+                        <p class="text-sm"><span
+                                class="text-blue-600">SPORTS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;June
+                            8, 2020</p>
+                        <h3
+                            class="text-[30px] font-extrabold leading-[36px] transition-colors duration-300 group-hover:text-blue-400">
+                            East Bengal And Kerala Blasters Have Most Number...
+                        </h3>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Bottom Section -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                <!-- Big Image Left -->
+                <div class="lg:col-span-2 w-full bg-[#D8DBE2]">
+                    <!-- Image -->
+                    <div class="relative group overflow-hidden w-full h-[400px]">
+                        <img src="https://images.pexels.com/photos/18561722/pexels-photo-18561722.jpeg" alt="news"
+                            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                    </div>
+
+                    <!-- Content below image -->
+                    <div class=" p-6">
+                        <p class="text-sm text-black"><span
+                                class="text-blue-600">ENTERTAINMENT</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            March 31, 2021
+                        </p>
+                        <h3
+                            class="text-xl font-medium text-black transition-colors duration-300 hover:text-blue-500 cursor-pointer">
+                            Bobby Brown Autopsy Reveals He Died From Alcohol, Cocaine And Fentanyl Revels Died
+                        </h3>
+                    </div>
+                </div>
+
+
+
+                <!-- Popular List -->
+                <div class="bg-white p-4 rounded-md">
+                    <h2 class="text-lg font-semibold mb-4">Popular</h2>
+                    <div class="flex flex-col gap-4">
+                        <!-- Item 1 -->
+                        <div class="flex gap-3 items-center group border-t border-gray-200 pt-3">
+                            <img src="https://images.pexels.com/photos/3970330/pexels-photo-3970330.jpeg" alt="news"
+                                class="w-[100px] h-[60px] object-cover transition-transform duration-300 group-hover:scale-105">
+                            <div class="flex-1 space-y-2">
+                                <h4
+                                    class="text-[16px] leading-[21px] font-medium cursor-pointer transition-colors duration-300 group-hover:text-blue-600">
+                                    East Bengal And Kerala Blasters Have...
+                                </h4>
+                                <p class="text-[12px] text-gray-500 uppercase"><span
+                                        class="text-blue-600">BUSINESS</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jun
+                                    14,
+                                    2020
+                                </p>
+                            </div>
+                            <span class="text-[25px] font-extrabold text-gray-400">1</span>
+                        </div>
+                        <!-- Item 2 -->
+                        <div class="flex gap-3 items-center group border-t border-gray-200 pt-3">
+                            <img src="https://images.pexels.com/photos/3970330/pexels-photo-3970330.jpeg" alt="news"
+                                class="w-[100px] h-[60px] object-cover transition-transform duration-300 group-hover:scale-105">
+                            <div class="flex-1 space-y-2">
+                                <h4
+                                    class="text-[16px] leading-[21px] font-medium cursor-pointer transition-colors duration-300 group-hover:text-blue-600">
+                                    East Bengal And Kerala Blasters Have...
+                                </h4>
+                                <p class="text-[12px] text-gray-500 uppercase"><span
+                                        class="text-blue-600">BUSINESS</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jun
+                                    14,
+                                    2020
+                                </p>
+                            </div>
+                            <span class="text-[25px] font-extrabold text-gray-400">2</span>
+                        </div>
+                        <!-- Item 3 -->
+                        <div class="flex gap-3 items-center group border-t border-gray-200 pt-3">
+                            <img src="https://images.pexels.com/photos/3970330/pexels-photo-3970330.jpeg" alt="news"
+                                class="w-[100px] h-[60px] object-cover transition-transform duration-300 group-hover:scale-105">
+                            <div class="flex-1 space-y-2">
+                                <h4
+                                    class="text-[16px] leading-[21px] font-medium cursor-pointer transition-colors duration-300 group-hover:text-blue-600">
+                                    East Bengal And Kerala Blasters Have...
+                                </h4>
+                                <p class="text-[12px] text-gray-500 uppercase"><span
+                                        class="text-blue-600">BUSINESS</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jun
+                                    14,
+                                    2020
+                                </p>
+                            </div>
+                            <span class="text-[25px] font-extrabold text-gray-400">3</span>
+                        </div>
+                        <!-- Item 4 -->
+                        <div class="flex gap-3 items-center group border-t border-gray-200 pt-3">
+                            <img src="https://images.pexels.com/photos/3970330/pexels-photo-3970330.jpeg" alt="news"
+                                class="w-[100px] h-[60px] object-cover transition-transform duration-300 group-hover:scale-105">
+                            <div class="flex-1 space-y-2">
+                                <h4
+                                    class="text-[16px] leading-[21px] font-medium cursor-pointer transition-colors duration-300 group-hover:text-blue-600">
+                                    East Bengal And Kerala Blasters Have...
+                                </h4>
+                                <p class="text-[12px] text-gray-500 uppercase"><span
+                                        class="text-blue-600">BUSINESS</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jun
+                                    14,
+                                    2020
+                                </p>
+                            </div>
+                            <span class="text-[25px] font-extrabold text-gray-400">4</span>
+                        </div>
+                        <!-- Item 5 -->
+                        <div class="flex gap-3 items-center group border-t border-gray-200 pt-3">
+                            <img src="https://images.pexels.com/photos/3970330/pexels-photo-3970330.jpeg" alt="news"
+                                class="w-[100px] h-[60px] object-cover transition-transform duration-300 group-hover:scale-105">
+                            <div class="flex-1 space-y-2">
+                                <h4
+                                    class="text-[16px] leading-[21px] font-medium cursor-pointer transition-colors duration-300 group-hover:text-blue-600">
+                                    East Bengal And Kerala Blasters Have...
+                                </h4>
+                                <p class="text-[12px] text-gray-500 uppercase"><span
+                                        class="text-blue-600">BUSINESS</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jun
+                                    14,
+                                    2020
+                                </p>
+                            </div>
+                            <span class="text-[25px] font-extrabold text-gray-400">5</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ENTERTAINMENT and SLIDER POST -->
+    <div class="w-full py-10">
+        <div class="max-w-[1120px] mx-auto grid grid-cols-1 lg:grid-cols-[1fr_340px] gap-6">
+
+            <!-- Left Column -->
+            <div>
+                <!-- Heading -->
+                <h2 class="text-2xl font-medium mb-4">Technology</h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Post 1 -->
+                    <div class="group">
+                        <div class="overflow-hidden relative">
+                            <img src="https://images.pexels.com/photos/1323550/pexels-photo-1323550.jpeg" alt="post"
+                                class="w-[365px] h-[235px] object-cover transition-transform duration-500 group-hover:scale-110 origin-center">
+                            <!-- Icon Top Left -->
+                            <span
+                                class="absolute top-3 left-3 bg-red-500 text-white text-xs w-6 h-6 flex items-center justify-center rounded-full">⚡</span>
+                        </div>
+                        <div class="mt-3">
+                            <p class="text-xs text-gray-500"><span class="text-blue-600">TRAVEL</span> • March 23, 2021
+                            </p>
+                            <h3
+                                class="text-lg font-semibold mt-1 cursor-pointer transition-colors duration-300 group-hover:text-blue-600">
+                                How The Seychelles Is Racing To Become The World’S Safest...
+                            </h3>
+                            <p class="text-sm text-gray-600">Entilators will be taken from certain New York hospitals
+                                and redistributed...</p>
+                        </div>
+                    </div>
+
+                    <!-- Post 2 -->
+                    <div class="group">
+                        <div class="overflow-hidden relative">
+                            <img src="https://images.pexels.com/photos/210186/pexels-photo-210186.jpeg" alt="post"
+                                class="w-[365px] h-[235px] object-cover transition-transform duration-500 group-hover:scale-110 origin-center">
+                            <!-- Icon Top Left -->
+                            <span
+                                class="absolute top-3 left-3 bg-red-500 text-white text-xs w-6 h-6 flex items-center justify-center rounded-full">⚡</span>
+                        </div>
+                        <div class="mt-3">
+                            <p class="text-xs text-gray-500"><span class="text-blue-600">TRAVEL</span> • March 23, 2021
+                            </p>
+                            <h3
+                                class="text-lg font-semibold mt-1 cursor-pointer transition-colors duration-300 group-hover:text-blue-600">
+                                When Can We Go On Vacation Again? This Is What...
+                            </h3>
+                            <p class="text-sm text-gray-600">Entilators will be taken from certain New York hospitals
+                                and redistributed...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Post 1 -->
+                    <div class="group">
+                        <div class="overflow-hidden relative">
+                            <img src="https://images.pexels.com/photos/1323550/pexels-photo-1323550.jpeg" alt="post"
+                                class="w-[365px] h-[235px] object-cover transition-transform duration-500 group-hover:scale-110 origin-center">
+                            <!-- Icon Top Left -->
+                            <span
+                                class="absolute top-3 left-3 bg-red-500 text-white text-xs w-6 h-6 flex items-center justify-center rounded-full">⚡</span>
+                        </div>
+                        <div class="mt-3">
+                            <p class="text-xs text-gray-500"><span class="text-blue-600">TRAVEL</span> • March 23, 2021
+                            </p>
+                            <h3
+                                class="text-lg font-semibold mt-1 cursor-pointer transition-colors duration-300 group-hover:text-blue-600">
+                                How The Seychelles Is Racing To Become The World’S Safest...
+                            </h3>
+                            <p class="text-sm text-gray-600">Entilators will be taken from certain New York hospitals
+                                and redistributed...</p>
+                        </div>
+                    </div>
+
+                    <!-- Post 2 -->
+                    <div class="group">
+                        <div class="overflow-hidden relative">
+                            <img src="https://images.pexels.com/photos/210186/pexels-photo-210186.jpeg" alt="post"
+                                class="w-[365px] h-[235px] object-cover transition-transform duration-500 group-hover:scale-110 origin-center">
+                            <!-- Icon Top Left -->
+                            <span
+                                class="absolute top-3 left-3 bg-red-500 text-white text-xs w-6 h-6 flex items-center justify-center rounded-full">⚡</span>
+                        </div>
+                        <div class="mt-3">
+                            <p class="text-xs text-gray-500"><span class="text-blue-600">TRAVEL</span> • March 23, 2021
+                            </p>
+                            <h3
+                                class="text-lg font-semibold mt-1 cursor-pointer transition-colors duration-300 group-hover:text-blue-600">
+                                When Can We Go On Vacation Again? This Is What...
+                            </h3>
+                            <p class="text-sm text-gray-600">Entilators will be taken from certain New York hospitals
+                                and redistributed...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div>
+                <div class="flex items-center justify-between mb-4">
+                    <h2 class="text-2xl font-medium">Slider Post</h2>
+                    <div class="flex gap-2">
+                        <button class="border px-2 py-1">&lt;</button>
+                        <button class="border px-2 py-1">&gt;</button>
+                    </div>
+                </div>
+
+                <!-- LISTS -->
+                <div class="flex flex-col gap-4">
+                    <!-- Post Item 1 -->
+                    <div class="flex gap-8 items-center border-b border-gray-200 pb-3 items-center">
+                        <div
+                            class="w-12 h-12 flex-none flex items-center justify-center border-4 border-gray-200 rounded-full text-gray-500 font-bold">
+                            1
+                        </div>
+                        <div>
+                            <p class="text-xs text-gray-500 pb-2"><span class="text-blue-600">SPORTS</span> • March 22,
+                                2021
+                            </p>
+                            <h4
+                                class="text-[16px] leading-[25px] font-normal cursor-pointer transition-colors duration-300 hover:text-blue-600">
+                                Former England Captain Karen Smithies Sues For Alleged...
+                            </h4>
+                            
+                        </div>
+                    </div>
+
+                    <!-- Post Item 2 -->
+                    <div class="flex gap-8 items-center border-b border-gray-200 pb-3 items-center">
+                        <div
+                            class="w-12 h-12 flex-none flex items-center justify-center border-4 border-gray-200 rounded-full text-gray-500 font-bold">
+                            2
+                        </div>
+                        <div>
+                            <p class="text-xs text-gray-500 pb-2"><span class="text-blue-600">SPORTS</span> • March 22,
+                                2021
+                            </p>
+                            <h4
+                                class="text-[16px] leading-[25px] font-normal cursor-pointer transition-colors duration-300 hover:text-blue-600">
+                                Former England Captain Karen Smithies Sues For Alleged...
+                            </h4>
+                        </div>
+                    </div>
+
+                    <!-- Post Item 3 -->
+                    <div class="flex gap-8 items-center border-b border-gray-200 pb-3 items-center">
+                        <div
+                            class="w-12 h-12 flex-none flex items-center justify-center border-4 border-gray-200 rounded-full text-gray-500 font-bold">
+                            3
+                        </div>
+                        <div>
+                            <p class="text-xs text-gray-500 pb-2"><span class="text-blue-600">SPORTS</span> • March 22,
+                                2021
+                            </p>
+                            <h4
+                                class="text-[16px] leading-[25px] font-normal cursor-pointer transition-colors duration-300 hover:text-blue-600">
+                                Former England Captain Karen Smithies Sues For Alleged...
+                            </h4>
+                        </div>
+                    </div>
+
+                    <!-- Post Item 4 -->
+                <div class="flex gap-8 items-center border-b border-gray-200 pb-3 items-center">
+                        <div
+                            class="w-12 h-12 flex-none flex items-center justify-center border-4 border-gray-200 rounded-full text-gray-500 font-bold">
+                            4
+                        </div>
+                        <div>
+                            <p class="text-xs text-gray-500 pb-2"><span class="text-blue-600">SPORTS</span> • March 22,
+                                2021
+                            </p>
+                            <h4
+                                class="text-[16px] leading-[25px] font-normal cursor-pointer transition-colors duration-300 hover:text-blue-600">
+                                Former England Captain Karen Smithies Sues For Alleged...
+                            </h4>
+                        </div>
+                    </div>
+                    <!-- Post Item 5 -->
+                     <div class="flex gap-8 items-center border-b border-gray-200 pb-3 items-center">
+                        <div
+                            class="w-12 h-12 flex-none flex items-center justify-center border-4 border-gray-200 rounded-full text-gray-500 font-bold">
+                            5
+                        </div>
+                        <div>
+                            <p class="text-xs text-gray-500 pb-2"><span class="text-blue-600">SPORTS</span> • March 22,
+                                2021
+                            </p>
+                            <h4
+                                class="text-[16px] leading-[25px] font-normal cursor-pointer transition-colors duration-300 hover:text-blue-600">
+                                Former England Captain Karen Smithies Sues For Alleged...
+                            </h4>
+                        </div>
+                    </div>
+
+                    <!-- Post Item 6 -->
+                     <div class="flex gap-8 items-center border-b border-gray-200 pb-3 items-center">
+                        <div
+                            class="w-12 h-12 flex-none flex items-center justify-center border-4 border-gray-200 rounded-full text-gray-500 font-bold">
+                            6
+                        </div>
+                        <div>
+                            <p class="text-xs text-gray-500 pb-2"><span class="text-blue-600">SPORTS</span> • March 22,
+                                2021
+                            </p>
+                            <h4
+                                class="text-[16px] leading-[25px] font-normal cursor-pointer transition-colors duration-300 hover:text-blue-600">
+                                Former England Captain Karen Smithies Sues For Alleged...
+                            </h4>
+                        </div>
+                    </div>
+
+                    <!-- Post Item 7 -->
+                     <div class="flex gap-8 items-center">
+                        <div
+                            class="w-12 h-12 flex-none flex items-center justify-center border-4 border-gray-200 rounded-full text-gray-500 font-bold">
+                            7
+                        </div>
+                        <div>
+                            <p class="text-xs text-gray-500 pb-2"><span class="text-blue-600">SPORTS</span> • March 22,
+                                2021
+                            </p>
+                            <h4
+                                class="text-[16px] leading-[25px] font-normal cursor-pointer transition-colors duration-300 hover:text-blue-600">
+                                Former England Captain Karen Smithies Sues For Alleged...
+                            </h4>
+                        </div>
+                    </div>
+                    
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <!-- Footer -->
+        <footer class="bg-[#515A60] text-white py-4">
+            <div class="text-center text-[20px] font-bold">
+                NEWSPARK-CRYPTO&copy; <span id="year"></span> All Rights Reserved.
+            </div>
+        </footer>
+        <!-- JS CODE -->
+        <script>
+            const menuBtn = document.getElementById('menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            menuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        </script>
+
+</body>
+
+</html>
