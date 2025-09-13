@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Clone 11</title>
+    <title>Clone 11</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Heebo&display=swap" rel="stylesheet">
     <style>
@@ -16,66 +16,477 @@
 
         body {
             font-family: 'Heebo', sans-serif;
+            color: black;
         }
     </style>
 </head>
 
 <body>
-
     <!-- Navbar -->
     <nav class="w-full bg-[#515A60] text-white">
-        <div class="max-w-[1120px] mx-auto w-full px-2 sm:px-0">
-             <!-- Container -->
-        <div class="w-full flex justify-center">
-            <!-- Inner content: exact 1200px width on desktop -->
-            <div class="w-full max-w-[1120px] flex items-center justify-between py-2 md:py-4">
+        <div class="max-w-[1230px] mx-auto w-full px-2 sm:px-0">
+            <!-- Container -->
+            <div class="w-full flex justify-center">
+                <!-- Inner content: exact 1200px width on desktop -->
+                <div class="w-full max-w-[1230px] flex items-center justify-between py-2 md:py-4">
 
-                <!-- Logo -->
-                <div class="text-3xl md:text-4xl font-extrabold tracking-wide">
-                    <a href="https://wp.quomodosoft.com/newsprk/" target="_blank" class="">NEWSPARK</a>
+                    <!-- Logo -->
+                    <div class="text-3xl md:text-4xl font-extrabold tracking-wide">
+                        <a href="https://wp.quomodosoft.com/newsprk/" target="_blank" class="">NEWSPARK</a>
+                    </div>
+
+                    <!-- Nav Links (Desktop) -->
+                    <ul class="hidden md:flex space-x-8 text-base md:text-lg font-medium">
+                        <li><a href="#" class=" hover:underline">HOME</a></li>
+                        <li><a href="#" class="hover:underline">FEATURES</a></li>
+                        <li><a href="#" class="hover:underline">POLITICS</a></li>
+                        <li><a href="#" class="hover:underline">ECONOMY</a></li>
+                        <li><a href="#" class="hover:underline">SCIENCE & TECH</a></li>
+                        <li><a href="#" class="hover:underline">SPORTS</a></li>
+                    </ul>
+
+                    <!-- Mobile Menu Button -->
+                    <div class="md:hidden">
+                        <button id="menu-btn" class="focus:outline-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h16" />
+                            </svg>
+                        </button>
+                    </div>
                 </div>
+            </div>
 
-                <!-- Nav Links (Desktop) -->
-                <ul class="hidden md:flex space-x-8 text-base md:text-lg font-medium">
-                    <li><a href="#" class=" hover:underline">HOME</a></li>
-                    <li><a href="#" class="hover:underline">FEATURES</a></li>
-                    <li><a href="#" class="hover:underline">POLITICS</a></li>
-                    <li><a href="#" class="hover:underline">ECONOMY</a></li>
-                    <li><a href="#" class="hover:underline">SCIENCE & TECH</a></li>
-                    <li><a href="#" class="hover:underline">SPORTS</a></li>
+            <!-- Mobile Nav -->
+            <div id="mobile-menu" class="hidden md:hidden w-full px-2 pb-2">
+                <ul class="flex flex-col space-y-3 text-base font-medium">
+                    <li><a href="#" class="hover:text-red-500 transition-colors">HOME</a></li>
+                    <li><a href="#" class="hover:text-red-500 transition-colors">FEATURES</a></li>
+                    <li><a href="#" class="hover:text-red-500 transition-colors">POLITICS</a></li>
+                    <li><a href="#" class="hover:text-red-500 transition-colors">ECONOMY</a></li>
+                    <li><a href="#" class="hover:text-red-500 transition-colors">SCIENCE & TECH</a></li>
+                    <li><a href="#" class="hover:text-red-500 transition-colors">SPORTS</a></li>
                 </ul>
-
-                <!-- Mobile Menu Button -->
-                <div class="md:hidden">
-                    <button id="menu-btn" class="focus:outline-none">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h16M4 18h16" />
-                        </svg>
-                    </button>
-                </div>
             </div>
         </div>
 
-        <!-- Mobile Nav -->
-        <div id="mobile-menu" class="hidden md:hidden w-full px-2 pb-2">
-            <ul class="flex flex-col space-y-3 text-base font-medium">
-                <li><a href="#" class="hover:text-red-500 transition-colors">HOME</a></li>
-                <li><a href="#" class="hover:text-red-500 transition-colors">FEATURES</a></li>
-                <li><a href="#" class="hover:text-red-500 transition-colors">POLITICS</a></li>
-                <li><a href="#" class="hover:text-red-500 transition-colors">ECONOMY</a></li>
-                <li><a href="#" class="hover:text-red-500 transition-colors">SCIENCE & TECH</a></li>
-                <li><a href="#" class="hover:text-red-500 transition-colors">SPORTS</a></li>
-            </ul>
-        </div>
-        </div>
-       
     </nav>
 
     <!-- ALL CONTENT PORTION -->
-    <div class="max-w-[1120px] mx-auto w-full px-2 sm:px-0 bg-gray-500">
+    <div class="w-full px-4 lg:px-0">
+        <div class="max-w-[1230px] mx-auto flex flex-col lg:flex-row gap-12 mt-6 mb-6">
+            <!-- Left Column -->
+            <div class="flex-1 space-y-6">
+                <div class="w-full">
+                    <!-- Breadcrumb -->
+                    <nav class="text-sm text-gray-500 flex flex-wrap gap-1 mb-3">
+                        <a href="#" class="flex items-center gap-1 hover:text-blue-600">Home</a>
+                        <span>/</span>
+                        <a href="#" class="hover:text-blue-600">Finance</a>
+                        <span>/</span>
+                        <span class="truncate">Inflation Slows In February Amid Fallin...</span>
+                    </nav>
+
+                    <!-- Category -->
+                    <p class="text-blue-600 font-semibold uppercase text-sm mb-2">Finance</p>
+
+                    <!-- Title -->
+                    <h1 class="text-[45px] md:text-3xl font-extrabold text-gray-800 leading-[52.5px] mb-3">
+                        Inflation Slows In February Amid Falling Clothes Prices And Rising Fuel Costs Rise Again
+                    </h1>
+
+                    <!-- Short Description -->
+                    <p class="text-gray-600 mb-6">
+                        Entilators will be taken from certain New York hospitals and redistributed to the worst-hit
+                        parts of
+                        the state under an…
+                    </p>
+
+                    <!-- Featured Image -->
+                    <div class="relative overflow-hidden rounded-lg">
+                        <img src="https://images.pexels.com/photos/3182763/pexels-photo-3182763.jpeg"
+                            alt="Featured Image" class="w-full h-auto object-cover">
+                    </div>
+                </div>
+
+                <div class="w-full mx-auto space-y-6">
+                    <!-- Title and Intro -->
+                    <div>
+                        <h2 class="text-2xl font-bold">What's the debate over masks?</h2>
+                        <p class="mt-2 text-gray-600">
+                            Both the US Centers for Disease Control (CDC) and the World Health Organization (WHO)
+                            reassessing their guidance on face masks, as experts race to find ways to fight the highly
+                            contagious virus...
+                        </p>
+                    </div>
+
+                    <!-- Image + Quote Card -->
+                    <div class="flex flex-col md:flex-row items-start gap-4">
+                        <!-- Image -->
+                        <div class="flex-shrink-0">
+                            <img src="https://images.pexels.com/photos/2240771/pexels-photo-2240771.jpeg"
+                                alt="mask debate" class="h-[280px] w-[255px] object-cover rounded-lg shadow" />
+                        </div>
+
+                        <!-- Quote -->
+                        <div class="bg-gray-100 p-6 md:p-10 rounded-lg shadow w-full h-auto md:h-[280px]">
+                            <p class="text-gray-700 text-[16px] font-medium leading-[25.5px]">
+                                I must explain to you how all this mistake idea denouncing pleasure and praising pain
+                                was
+                                born Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam ab blanditiis
+                                aut
+                                ipsa libero cumque beatae exercitationem iste officiis, eligendi ducimus, nemo maxime
+                                deserunt repellat.
+                            </p>
+                            <div class="flex items-center mt-4 gap-2">
+                                <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center">
+                                    <span class="text-blue-500">✦</span>
+                                </div>
+                                <div>
+                                    <p class="font-semibold">Jhon wick</p>
+                                    <p class="text-sm text-gray-500">Founder at Seative Digital</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bottom Paragraph -->
+                    <div>
+                        <p class="text-gray-600">
+                            Mr. Hogan has also leaned on his wife, Yumi Hogan, a Korean immigrant, who was also at the
+                            governor’s convention Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, facilis
+                            nihil debitis repellendus quia quidem!
+                        </p>
+
+                        <p class="text-gray-600">
+                            Mr. Hogan has also leaned on his wife, Yumi Hogan, a Korean immigrant, who was also at the
+                            governor’s convention Lorem ipsum Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Sequi, maxime. Laboriosam, et! Soluta error molestiae vitae aspernatur! Magni corporis
+                            dolorum
+                            quas, fuga quia minus aperiam. dolor sit amet, consectetur adipisicing elit. At, facilis
+                            nihil
+                            debitis repellendus quia quidem!
+                        </p>
+                    </div>
+                </div>
+
+                <div class="w-full mx-auto space-y-6">
+                    <div class="relative overflow-hidden rounded-lg">
+                        <img src="https://images.pexels.com/photos/3052360/pexels-photo-3052360.jpeg"
+                            alt="Featured Image" class="w-full h-auto object-cover">
+                    </div>
+                    <div>
+                        <p class="text-gray-600 mt-4">
+                            Mr. Hogan has also leaned on his wife, Yumi Hogan, a Korean immigrant, who was also at the
+                            governor’s convention Lorem ipsum Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Sequi, maxime. Laboriosam, et! Soluta error molestiae vitae aspernatur! Magni corporis
+                            dolorum quas,
+                            fuga quia minus aperiam. dolor sit amet, consectetur adipisicing elit. At, facilis nihil
+                            debitis
+                            repellendus quia quidem!
+                        </p>
+                    </div>
+                </div>
+
+                <!-- NEXT AND PREVIOUS SECTION -->
+                <div class="max-w-full mx-auto border-t border-b py-6">
+                    <div class="flex flex-col md:flex-row justify-between items-center gap-6 md:gap-0 relative">
+
+                        <!-- Prev News -->
+                        <div class="flex-1 text-left cursor-pointer">
+                            <p class="text-xs uppercase text-gray-500">Prev News</p>
+                            <h3 class="text-lg font-semibold text-gray-600 hover:text-blue-600 transition-colors">
+                                East Bengal And Kerala Blasters Have Lost Most...
+                            </h3>
+                        </div>
+
+                        <!-- Divider -->
+                        <div class="hidden md:block w-px bg-gray-300 h-12 mx-6"></div>
+
+                        <!-- Next News -->
+                        <div class="flex-1 text-right cursor-pointer">
+                            <p class="text-xs uppercase text-gray-500">Next News</p>
+                            <h3 class="text-lg font-semibold text-gray-600 hover:text-blue-600 transition-colors">
+                                Asda Is Set To Launch Its First-Ever LoyaltY honesty is the best policy
+                            </h3>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!-- Right Column -->
+            <div class="w-full lg:w-[370px] flex-shrink-0 lg:sticky lg:top-4 self-start h-fit">
+                <!-- Most Share -->
+                <div class="w-full max-w-md bg-white">
+                    <h2 class="text-[20px] font-bold text-gray-800 border-b pb-2 mb-4">Most Share</h2>
+                    <div class="space-y-4">
+                        <!-- Items 1  -->
+                        <div class="flex gap-6 items-start border-b border-gray-200 pb-4">
+                            <div
+                                class="w-12 h-12 flex items-center justify-center rounded-full bg-gray-100 text-gray-400 font-bold text-3xl">
+                                1
+                            </div>
+                            <div>
+                                <h3 class="text-[18px] text-gray-800 font-bold hover:text-blue-600 cursor-pointer">
+                                    Jofra Archer To Undergo Surgery On…
+                                </h3>
+                                <div class="text-sm text-gray-500 flex gap-2">
+                                    <span class="text-blue-600 font-medium">SPORTS</span>
+                                    <span>/</span>
+                                    <span>March 22, 2021</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ITEM 2 -->
+                        <div class="flex gap-6 items-start border-b border-gray-200 pb-4">
+                            <div
+                                class="w-12 h-12 flex items-center justify-center rounded-full bg-gray-100 text-gray-400 font-bold text-3xl">
+                                2
+                            </div>
+                            <div>
+                                <h3 class="text-[18px] text-gray-800 font-bold hover:text-blue-600 cursor-pointer">
+                                    Jofra Archer To Undergo Surgery On…
+                                </h3>
+                                <div class="text-sm text-gray-500 flex gap-2">
+                                    <span class="text-blue-600 font-medium">SPORTS</span>
+                                    <span>/</span>
+                                    <span>March 22, 2021</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ITEM 3 -->
+                        <div class="flex gap-6 items-start border-b border-gray-200 pb-4">
+                            <div
+                                class="w-12 h-12 flex items-center justify-center rounded-full bg-gray-100 text-gray-400 font-bold text-3xl">
+                                3
+                            </div>
+                            <div>
+                                <h3 class="text-[18px] text-gray-800 font-bold hover:text-blue-600 cursor-pointer">
+                                    Jofra Archer To Undergo Surgery On…
+                                </h3>
+                                <div class="text-sm text-gray-500 flex gap-2">
+                                    <span class="text-blue-600 font-medium">SPORTS</span>
+                                    <span>/</span>
+                                    <span>March 22, 2021</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ITEM 4 -->
+                        <div class="flex gap-6 items-start border-b border-gray-200 pb-4">
+                            <div
+                                class="w-12 h-12 flex items-center justify-center rounded-full bg-gray-100 text-gray-400 font-bold text-3xl">
+                                4
+                            </div>
+                            <div>
+                                <h3 class="text-[18px] text-gray-800 font-bold hover:text-blue-600 cursor-pointer">
+                                    Jofra Archer To Undergo Surgery On…
+                                </h3>
+                                <div class="text-sm text-gray-500 flex gap-2">
+                                    <span class="text-blue-600 font-medium">SPORTS</span>
+                                    <span>/</span>
+                                    <span>March 22, 2021</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ITEM 5 -->
+                        <div class="flex gap-6 items-start ">
+                            <div
+                                class="w-12 h-12 flex items-center justify-center rounded-full bg-gray-100 text-gray-400 font-bold text-3xl">
+                                5
+                            </div>
+                            <div>
+                                <h3 class="text-[18px] text-gray-800 font-bold hover:text-blue-600 cursor-pointer">
+                                    Jofra Archer To Undergo Surgery On…
+                                </h3>
+                                <div class="text-sm text-gray-500 flex gap-2">
+                                    <span class="text-blue-600 font-medium">SPORTS</span>
+                                    <span>/</span>
+                                    <span>March 22, 2021</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RELATED POST SECTION -->
+                <div class="w-full max-w-md mt-6 mb-6">
+                    <h2 class="text-[20px] font-bold text-gray-800 border-b pb-2 mb-4">Recent Post</h2>
+                    <div class="space-y-4">
+                        <!-- Post Items 1  -->
+                        <div class="flex gap-3 items-start border-b border-gray-200 pb-4">
+                            <div class="w-[100px] h-[75px] overflow-hidden rounded-md flex-shrink-0">
+                                <img src="https://images.pexels.com/photos/3184183/pexels-photo-3184183.jpeg"
+                                    alt="post image"
+                                    class="w-full h-full object-cover transition-transform duration-300 hover:scale-110">
+                            </div>
+                            <div>
+                                <h3 class="text-gray-800 font-bold text-[18px] hover:text-blue-600 cursor-pointer">
+                                    As Young People Leave Lockdown, British
+                                </h3>
+                                <div class="text-sm text-gray-500 flex gap-2">
+                                    <span class="text-blue-600 font-medium">BUSINESS</span>
+                                    <span>/</span>
+                                    <span>June 8, 2020</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Post Items 2-->
+                        <div class="flex gap-3 items-start border-b border-gray-200 pb-4">
+                            <div class="w-[100px] h-[75px] overflow-hidden rounded-md flex-shrink-0">
+                                <img src="https://images.pexels.com/photos/3184183/pexels-photo-3184183.jpeg"
+                                    alt="post image"
+                                    class="w-full h-full object-cover transition-transform duration-300 hover:scale-110">
+                            </div>
+                            <div>
+                                <h3 class="text-gray-800 font-bold text-[18px] hover:text-blue-600 cursor-pointer">
+                                    As Young People Leave have Lockdown, British Leave
+                                </h3>
+                                <div class="text-sm text-gray-500 flex gap-2">
+                                    <span class="text-blue-600 font-medium">BUSINESS</span>
+                                    <span>/</span>
+                                    <span>June 8, 2020</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Post Items 3-->
+                        <div class="flex gap-3 items-start border-b border-gray-200 pb-4">
+                            <div class="w-[100px] h-[75px] overflow-hidden rounded-md flex-shrink-0">
+                                <img src="https://images.pexels.com/photos/3184183/pexels-photo-3184183.jpeg"
+                                    alt="post image"
+                                    class="w-full h-full object-cover transition-transform duration-300 hover:scale-110">
+                            </div>
+                            <div>
+                                <h3 class="text-gray-800 font-bold text-[18px] hover:text-blue-600 cursor-pointer">
+                                    As Young People Leave have Lockdown, British Leave
+                                </h3>
+                                <div class="text-sm text-gray-500 flex gap-2">
+                                    <span class="text-blue-600 font-medium">BUSINESS</span>
+                                    <span>/</span>
+                                    <span>June 8, 2020</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Post Items 4-->
+                        <div class="flex gap-3 items-start border-b border-gray-200 pb-4">
+                            <div class="w-[100px] h-[75px] overflow-hidden rounded-md flex-shrink-0">
+                                <img src="https://images.pexels.com/photos/3184183/pexels-photo-3184183.jpeg"
+                                    alt="post image"
+                                    class="w-full h-full object-cover transition-transform duration-300 hover:scale-110">
+                            </div>
+                            <div>
+                                <h3 class="text-gray-800 font-bold text-[18px] hover:text-blue-600 cursor-pointer">
+                                    As Young People Leave have Lockdown, British Leave
+                                </h3>
+                                <div class="text-sm text-gray-500 flex gap-2">
+                                    <span class="text-blue-600 font-medium">BUSINESS</span>
+                                    <span>/</span>
+                                    <span>June 8, 2020</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Post Items 5-->
+                        <div class="flex gap-3 items-start">
+                            <div class="w-[100px] h-[75px] overflow-hidden rounded-md flex-shrink-0">
+                                <img src="https://images.pexels.com/photos/3184183/pexels-photo-3184183.jpeg"
+                                    alt="post image"
+                                    class="w-full h-full object-cover transition-transform duration-300 hover:scale-110">
+                            </div>
+                            <div>
+                                <h3 class="text-gray-800 font-bold text-[18px] hover:text-blue-600 cursor-pointer">
+                                    As Young People Leave have Lockdown, British Leave
+                                </h3>
+                                <div class="text-sm text-gray-500 flex gap-2">
+                                    <span class="text-blue-600 font-medium">BUSINESS</span>
+                                    <span>/</span>
+                                    <span>June 8, 2020</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
+
+    <!-- RELATED POST SECTION-->
+    <div class="bg-gray-200 pt-6 pb-6 w-full px-2 sm:px-0">
+        <div class="max-w-[1230px] mx-auto ">
+            <h2 class="text-2xl font-bold mb-4 border-b pb-2">Related Post</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Card 1 -->
+                <div class="bg-white shadow cursor-pointer">
+                    <img src="https://images.pexels.com/photos/1001850/pexels-photo-1001850.jpeg" alt="post image"
+                        class="h-[255px] w-full object-cover">
+                    <div class="p-4">
+                        <p class="text-sm text-gray-500">
+                            <span class="text-blue-600 font-semibold uppercase">Entertainment</span> / March 31, 2021
+                        </p>
+                        <h3 class="mt-2 text-lg font-bold text-gray-900 hover:text-blue-600 transition-colors">
+                            Bobby Brown Autopsy Reveals He Died From Alcohol, Cocaine...
+                        </h3>
+                        <p class="mt-2 text-gray-600 text-sm">
+                            Entilators will be taken from certain New York hospitals and redistributed to the worst-hit
+                            parts of the state under an order...
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white shadow cursor-pointer">
+                    <img src="https://images.pexels.com/photos/1540406/pexels-photo-1540406.jpeg" alt="post image"
+                        class="h-[255px] w-full object-cover">
+                    <div class="p-4">
+                        <p class="text-sm text-gray-500">
+                            <span class="text-blue-600 font-semibold uppercase">Business</span> / March 31, 2021
+                        </p>
+                        <h3 class="mt-2 text-lg font-bold text-gray-900 hover:text-blue-600 transition-colors">
+                            Winston Churchill And The Union Jack Should Make Us...
+                        </h3>
+                        <p class="mt-2 text-gray-600 text-sm">
+                            Entilators will be taken from certain New York hospitals and redistributed to the worst-hit
+                            parts of the state under an order...
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white shadow cursor-pointer">
+                    <img src="https://images.pexels.com/photos/1010519/pexels-photo-1010519.jpeg" alt="post image"
+                        class="h-[255px] w-full object-cover">
+                    <div class="p-4">
+                        <p class="text-sm text-gray-500">
+                            <span class="text-blue-600 font-semibold uppercase">Business</span> / March 31, 2021
+                        </p>
+                        <h3 class="mt-2 text-lg font-bold text-gray-900 hover:text-blue-600 transition-colors">
+                            Teacher Suspended For Showing Prophet Muhammad Cartoon ‘Defends Free...
+                        </h3>
+                        <p class="mt-2 text-gray-600 text-sm">
+                            Entilators will be taken from certain New York hospitals and redistributed to the worst-hit
+                            parts of the state under an order...
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
 
 
     <!-- Footer -->
