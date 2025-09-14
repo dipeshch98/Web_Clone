@@ -1,0 +1,2407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clone 12</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Times New Roman', 'Lora', Times, serif;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="w-full bg-black text-white">
+        <div class="max-w-[1200px] mx-auto w-full px-2 sm:px-0">
+            <!-- Container -->
+            <div class="w-full flex justify-center">
+                <!-- Inner content: exact 1200px width on desktop -->
+                <div class="w-full max-w-[1200px] flex items-center justify-between py-2 md:py-4">
+
+                    <!-- Logo -->
+                    <div class="text-3xl md:text-4xl font-extrabold tracking-wide">
+                        <a href="https://www.latimes.com/" target="_blank" class="">Los Angeles Times</a>
+                    </div>
+
+                    <!-- Nav Links (Desktop) -->
+                    <ul class="hidden md:flex space-x-8 text-base md:text-lg font-medium">
+                        <li><a href="#" class=" hover:underline">HOME</a></li>
+                        <li><a href="#" class="hover:underline">FEATURES</a></li>
+                        <li><a href="#" class="hover:underline">POLITICS</a></li>
+                        <li><a href="#" class="hover:underline">ECONOMY</a></li>
+                        <li><a href="#" class="hover:underline">SCIENCE & TECH</a></li>
+                        <li><a href="#" class="hover:underline">SPORTS</a></li>
+                    </ul>
+
+                    <!-- Mobile Menu Button -->
+                    <div class="md:hidden">
+                        <button id="menu-btn" class="focus:outline-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h16" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile Nav -->
+            <div id="mobile-menu" class="hidden md:hidden w-full px-2 pb-2">
+                <ul class="flex flex-col space-y-3 text-base font-medium">
+                    <li><a href="#" class="hover:text-red-500 transition-colors">HOME</a></li>
+                    <li><a href="#" class="hover:text-red-500 transition-colors">FEATURES</a></li>
+                    <li><a href="#" class="hover:text-red-500 transition-colors">POLITICS</a></li>
+                    <li><a href="#" class="hover:text-red-500 transition-colors">ECONOMY</a></li>
+                    <li><a href="#" class="hover:text-red-500 transition-colors">SCIENCE & TECH</a></li>
+                    <li><a href="#" class="hover:text-red-500 transition-colors">SPORTS</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+
+
+    <!-- BODY SECTION -->
+    <div class="max-w-[1200px] mx-auto w-full px-2 sm:px-0 mt-8 mb-8">
+        <!-- 1ST SECTION -->
+        <div class="max-w-[1200px] mx-auto flex flex-col md:flex-row w-full md:space-x-6 relative">
+
+            <!-- Left Column (Fixed 840px) -->
+            <div class="w-full md:w-[840px]">
+                <!-- TOP BIG part -->
+                <div class="w-full">
+                    <!-- Header -->
+                    <div class="pt-4 border-t-2 border-black mb-4">
+                        <h2 class="text-[24px] font-extrabold">Top Stories</h2>
+                    </div>
+
+                    <!-- Content Grid -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-start border-b pb-6 mb-4">
+                        <!-- Left: Text -->
+                        <div>
+                            <h1 class="text-[30px] md:text-[30px] font-bold leading-snug">
+                                Once-booming Santa Monica faces a dire fiscal crisis. The surprising way it got there
+                            </h1>
+                            <p class="text-sm md:text-base text-gray-600 mt-3">
+                                Santa Monica has declared itself in fiscal distress amid a budget crisis driven by $229
+                                million in sexual abuse settlement payouts.
+                            </p>
+                        </div>
+
+                        <!-- Right: Image -->
+                        <div class="flex justify-center">
+                            <img src="https://images.pexels.com/photos/759374/pexels-photo-759374.jpeg"
+                                alt="Santa Monica Crisis" class="w-[555px] h-[370px] object-cover">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3 ARTICAL IN ROW -->
+                <div class="w-full max-w-full mx-auto border-b border-gray-300 pb-4 mb-4">
+                    <div class="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr_auto_1fr] gap-4">
+
+                        <!-- Article 1 -->
+                        <div class="p-0">
+                            <img src="https://images.pexels.com/photos/552168/pexels-photo-552168.jpeg" alt="Oil Rig"
+                                class="w-full h-48 object-cover mb-4">
+                            <h2 class="text-xl font-semibold hover:text-gray-600 transition-colors cursor-pointer px-2">
+                                California lawmakers pass measures to expand oil production in Central Valley, restrict
+                                offshore drilling
+                            </h2>
+                        </div>
+
+                        <!-- Divider -->
+                        <div class="hidden md:block w-px bg-gray-200 mx-auto"></div>
+
+                        <!-- Article 2 -->
+                        <div class="p-0">
+                            <img src="https://images.pexels.com/photos/552168/pexels-photo-552168.jpeg"
+                                alt="Military Ceremony" class="w-full h-48 object-cover mb-4">
+                            <h2 class="text-xl font-semibold hover:text-gray-600 transition-colors cursor-pointer px-2">
+                                What we know about Tyler Robinson, the young suspect in Charlie Kirk killing
+                            </h2>
+                        </div>
+
+                        <!-- Divider -->
+                        <div class="hidden md:block w-px bg-gray-300 mx-auto"></div>
+
+                        <!-- Article 3 -->
+                        <div class="p-0">
+                            <img src="https://images.pexels.com/photos/552168/pexels-photo-552168.jpeg"
+                                alt="People Praying" class="w-full h-48 object-cover mb-4">
+                            <h2 class="text-xl font-semibold hover:text-gray-600 transition-colors cursor-pointer px-2">
+                                From Charlie Kirk to Supreme Court backlash, Civil War historians see modern parallels
+                            </h2>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- 4 ARTICAL IN ROW -->
+                <div class="w-full max-w-full mx-auto border-b border-gray-300 pb-4">
+                    <div class="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr_auto_1fr_auto_1fr] gap-4">
+
+                        <!-- Article 1 -->
+                        <div class="p-0">
+                            <img src="https://images.pexels.com/photos/552168/pexels-photo-552168.jpeg" alt="Article 1"
+                                class="w-full h-48 object-cover mb-4">
+                            <h2 class="text-xl font-semibold hover:text-gray-600 transition-colors cursor-pointer px-2">
+                                Article 1 Headline
+                            </h2>
+                        </div>
+
+                        <!-- Divider 1 -->
+                        <div class="hidden md:block w-px bg-gray-200 mx-auto"></div>
+
+                        <!-- Article 2 -->
+                        <div class="p-0">
+                            <img src="https://images.pexels.com/photos/552168/pexels-photo-552168.jpeg" alt="Article 2"
+                                class="w-full h-48 object-cover mb-4">
+                            <h2 class="text-xl font-semibold hover:text-gray-600 transition-colors cursor-pointer px-2">
+                                Article 2 Headline
+                            </h2>
+                        </div>
+
+                        <!-- Divider 2 -->
+                        <div class="hidden md:block w-px bg-gray-200 mx-auto"></div>
+
+                        <!-- Article 3 -->
+                        <div class="p-0">
+                            <img src="https://images.pexels.com/photos/552168/pexels-photo-552168.jpeg" alt="Article 3"
+                                class="w-full h-48 object-cover mb-4">
+                            <h2 class="text-xl font-semibold hover:text-gray-600 transition-colors cursor-pointer px-2">
+                                Article 3 Headline
+                            </h2>
+                        </div>
+
+                        <!-- Divider 3 -->
+                        <div class="hidden md:block w-px bg-gray-200 mx-auto "></div>
+
+                        <!-- Article 4 -->
+                        <div class="p-0">
+                            <img src="https://images.pexels.com/photos/552168/pexels-photo-552168.jpeg" alt="Article 4"
+                                class="w-full h-48 object-cover mb-4">
+                            <h2 class="text-xl font-semibold hover:text-gray-400 transition-colors cursor-pointer px-2">
+                                Article 4 Headline
+                            </h2>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- 4 ARTICAL IN ROW -->
+                <div class="w-full max-w-full mx-auto border-b border-gray-300 pb-10 mt-6">
+                    <div class="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr_auto_1fr_auto_1fr] gap-4">
+
+                        <!-- Article 1 -->
+                        <div class="p-0">
+                            <h2 class="text-xl font-semibold hover:text-gray-600 transition-colors cursor-pointer px-2">
+                                These bills could change your child’s school experience. They are not without
+                                controversy
+                            </h2>
+                        </div>
+
+                        <!-- Divider 1 -->
+                        <div class="hidden md:block w-px bg-gray-200 mx-auto"></div>
+
+                        <!-- Article 2 -->
+                        <div class="p-0">
+
+                            <h2 class="text-xl font-semibold hover:text-gray-600 transition-colors cursor-pointer px-2">
+                                California lawmakers pass bill to grant priority college admission for descendants of
+                                slavery
+                            </h2>
+                        </div>
+
+                        <!-- Divider 2 -->
+                        <div class="hidden md:block w-px bg-gray-200 mx-auto"></div>
+
+                        <!-- Article 3 -->
+                        <div class="p-0">
+
+                            <h2 class="text-xl font-semibold hover:text-gray-600 transition-colors cursor-pointer px-2">
+                                Lopez: The immigration raids are crushing L.A.’s fire recovery and California’s economy
+
+                            </h2>
+                        </div>
+
+                        <!-- Divider 3 -->
+                        <div class="hidden md:block w-px bg-gray-200 mx-auto "></div>
+
+                        <!-- Article 4 -->
+                        <div class="p-0">
+                            <h2 class="text-xl font-semibold hover:text-gray-600 transition-colors cursor-pointer px-2">
+                                This beloved Californian theme park is slashing jobs and shortening its season. Here’s
+                                why
+                            </h2>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- BIG IMAGE + DESCRIPTION -->
+                <div class="w-full max-w-full mx-auto mb-6">
+                    <!-- Image -->
+                    <img src="https://images.pexels.com/photos/552168/pexels-photo-552168.jpeg" alt="Main Image"
+                        class="w-full h-[365px] object-cover">
+
+                    <!-- Content -->
+                    <div class="mt-4">
+                        <h2 class="text-[30px] leading-[34px] font-extrabold mb-2">2025 Emmys predictions: Our expert
+                            picks the winner in 15 major categories</h2>
+                        <p class="text-gray-700 text-[15px] leading-[20px] text-semibold">
+                            Awards columnist Glenn Whipp has been tracking the Emmy race all season. Here are his
+                            predictions for who will win in 15 major categories on Sunday.
+                        </p>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+            <!-- Divider (centered between columns) -->
+            <div class="hidden md:block w-px bg-gray-300"></div>
+
+            <!-- Right Column (Fixed 320px) -->
+            <div class="w-full md:w-[320px] lg:sticky lg:top-2 self-start h-fit">
+                <!-- NEWSPAPER ARTICLE -->
+                <div class="w-80 h-80 border p-2 bg-white mx-auto mt-4 md:mt-0 shadow-lg p-4 bg-black">
+                    <!-- Header -->
+                    <div class="text-center border-b pb-1">
+                        <h1 class="text-lg font-serif">Los Angeles Times</h1>
+                        <p class="text-[10px] text-gray-600">Sat, Sept 14, 2025</p>
+                    </div>
+
+                    <!-- Content -->
+                    <div class="mt-2 space-y-2 text-xs">
+                        <!-- Image -->
+                        <img src="https://images.pexels.com/photos/518543/pexels-photo-518543.jpeg" alt="Main News"
+                            class="w-full h-24 object-cover">
+
+                        <!-- Headline -->
+                        <h2 class="font-bold leading-snug">Suspect arrested in fatal shooting</h2>
+                        <p class="text-gray-700">Authorities confirm the arrest after a standoff. Motive under
+                            investigation.</p>
+
+                        <!-- Bottom story -->
+                        <h2 class="font-bold mt-1">Trapped in ICE’s basement</h2>
+                        <p class="text-gray-700">A Pasadena resident recalls 13 days of confinement in detention.</p>
+                    </div>
+                </div>
+
+
+                <!-- THE LATEST SECTION -->
+                <div class="w-full bg-white pt-4 border-t-2 border-black mt-6">
+                    <!-- Header -->
+                    <div class="flex items-center justify-between border-b pb-2">
+                        <h2 class="text-[24px] font-extrabold">The Latest</h2>
+                        <span class="text-[24px] font-extrabold">›</span>
+                    </div>
+
+                    <!-- News List -->
+                    <div class="divide-y mt-2">
+                        <!-- Item 1 -->
+                        <div class="py-3">
+                            <p class="text-[18px] font-bold leading-[21px]">
+                                Wild donkey struck by arrow, the latest in a string of burro bow attacks rattling inland
+                                California
+                            </p>
+                        </div>
+                        <!-- Item 2 -->
+                        <div class="py-3">
+                            <p class="text-[18px] font-bold leading-[21px]">
+                                Paramount denounces boycott of Israeli film industry as Gaza conflict divides Hollywood
+                            </p>
+                        </div>
+                        <!-- Item 3 -->
+                        <div class="py-3">
+                            <p class="text-[18px] font-bold leading-[21px]">
+                                Liam Hemsworth and model Gabriella Brooks are engaged after nearly 6 years of dating
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- DIVIDER -->
+        <div class="border border-black mb-4 mt-8"></div>
+
+        <!-- TRENDING PART -->
+        <div class="mb-4">
+            <h2 class="text-[24px] font-extrabold">Top Stories</h2>
+        </div>
+
+        <div class="w-full max-w-[1200px] mx-auto px-2 md:px-0 py-2">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+                <!-- Article 1 -->
+                <div class="flex flex-col">
+                    <img src="https://images.pexels.com/photos/552168/pexels-photo-552168.jpeg" alt="Article 1"
+                        class="w-full md:w-[385px] h-[255px] object-cover mx-auto">
+                    <h2 class="mt-2 text-[18px] font-semibold leading-[21px] hover:text-gray-700">
+                        A young boy dies in freak accident on a Ventura beach. The family is overwhelmed by donations
+                    </h2>
+                </div>
+
+                <!-- Article 2 -->
+                <div class="flex flex-col">
+                    <img src="https://images.pexels.com/photos/552168/pexels-photo-552168.jpeg" alt="Article 2"
+                        class="w-full md:w-[385px] h-[255px] object-cover mx-auto">
+                    <h2 class="mt-2 text-[18px] font-semibold leading-[21px] hover:text-gray-700">
+                        MSNBC severs ties with Matthew Dowd over Charlie Kirk comments
+                    </h2>
+                </div>
+
+                <!-- Article 3 -->
+                <div class="flex flex-col">
+                    <img src="https://images.pexels.com/photos/552168/pexels-photo-552168.jpeg" alt="Article 3"
+                        class="w-full md:w-[385px] h-[255px] object-cover mx-auto">
+                    <h2 class="mt-2 text-[18px] font-semibold leading-[21px] hover:text-gray-700">
+                        UCLA’s season goes from bad to worse in loss to New Mexico at Rose Bowl
+                    </h2>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- DIVIDER -->
+        <div class="border border-black mb-4 mt-8"></div>
+
+        <!-- Arts & Lifestyle section -->
+        <div class="mb-4">
+            <h2 class="text-[24px] font-extrabold">Arts & Lifestyle</h2>
+        </div>
+
+        <div class="w-full max-w-[1200px] mx-auto px-2 md:px-0 py-2">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+                <!-- Article 1 -->
+                <div class="flex flex-col">
+                    <img src="https://images.pexels.com/photos/1029208/pexels-photo-1029208.jpeg" alt="Article 1"
+                        class="w-full md:w-[385px] h-[255px] object-cover mx-auto">
+                    <h2 class="mt-2 text-[18px] font-semibold leading-[21px] hover:text-gray-700">
+                        A young boy dies in freak accident on a Ventura beach. The family is overwhelmed by donations
+                    </h2>
+                </div>
+
+                <!-- Article 2 -->
+                <div class="flex flex-col">
+                    <img src="https://images.pexels.com/photos/1029208/pexels-photo-1029208.jpeg" alt="Article 2"
+                        class="w-full md:w-[385px] h-[255px] object-cover mx-auto">
+                    <h2 class="mt-2 text-[18px] font-semibold leading-[21px] hover:text-gray-700">
+                        MSNBC severs ties with Matthew Dowd over Charlie Kirk comments
+                    </h2>
+                </div>
+
+                <!-- Article 3 -->
+                <div class="flex flex-col">
+                    <img src="https://images.pexels.com/photos/1029208/pexels-photo-1029208.jpeg" alt="Article 3"
+                        class="w-full md:w-[385px] h-[255px] object-cover mx-auto">
+                    <h2 class="mt-2 text-[18px] font-semibold leading-[21px] hover:text-gray-700">
+                        UCLA’s season goes from bad to worse in loss to New Mexico at Rose Bowl
+                    </h2>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- DIVIDER -->
+        <div class="border border-black mb-4 mt-8"></div>
+
+        <!-- latest video section section -->
+        <div class="mb-4">
+            <h2 class="text-[24px] font-extrabold">Latest Videos</h2>
+        </div>
+
+        <div class="w-full">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+
+                <!-- Card 1 -->
+                <div class="relative h-[500px]">
+                    <img src="https://images.pexels.com/photos/4960243/pexels-photo-4960243.jpeg" alt="Video 1"
+                        class="absolute inset-0 w-full h-full object-cover">
+                    <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4">
+                        <h2 class="text-white font-semibold text-lg hover:text-gray-200 transition-colors">
+                            The East L.A. Mexican Independence parade will continue despite ongoing ICE raids
+                        </h2>
+                        <div class="flex items-center space-x-2 mt-2">
+                            <span
+                                class="border border-white w-6 h-6 flex items-center justify-center text-white text-xs">&#9658;</span>
+                            <span class="text-white text-sm">01:47</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="relative h-[500px]">
+                    <img src="https://images.pexels.com/photos/4960243/pexels-photo-4960243.jpeg" alt="Video 2"
+                        class="absolute inset-0 w-full h-full object-cover">
+                    <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4">
+                        <h2 class="text-white font-semibold text-lg hover:text-gray-200 transition-colors">
+                            Meet the collector preserving a complex history
+                        </h2>
+                        <div class="flex items-center space-x-2 mt-2">
+                            <span
+                                class="border border-white w-6 h-6 flex items-center justify-center text-white text-xs">&#9658;</span>
+                            <span class="text-white text-sm">02:12</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="relative h-[500px]">
+                    <img src="https://images.pexels.com/photos/103120/pexels-photo-103120.jpeg" alt="Video 3"
+                        class="absolute inset-0 w-full h-full object-cover">
+                    <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4">
+                        <h2 class="text-white font-semibold text-lg hover:text-gray-200 transition-colors">
+                            "Could Pali High football recover?"
+                        </h2>
+                        <div class="flex items-center space-x-2 mt-2">
+                            <span
+                                class="border border-white w-6 h-6 flex items-center justify-center text-white text-xs">&#9658;</span>
+                            <span class="text-white text-sm">01:31</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="relative h-[500px]">
+                    <img src="https://images.pexels.com/photos/103120/pexels-photo-103120.jpeg" alt="Video 4"
+                        class="absolute inset-0 w-full h-full object-cover">
+                    <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4">
+                        <h2 class="text-white font-semibold text-lg hover:text-gray-200 transition-colors">
+                            What the writings on the bullet casings from Charlie Kirk’s killer might mean
+                        </h2>
+                        <div class="flex items-center space-x-2 mt-2">
+                            <span
+                                class="border border-white w-6 h-6 flex items-center justify-center text-white text-xs">&#9658;</span>
+                            <span class="text-white text-sm">02:54</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- DIVIDER -->
+        <div class="border border-black mb-4 mt-8"></div>
+
+        <!-- Editors’ Pick section -->
+        <div class="mb-4">
+            <h2 class="text-[24px] font-extrabold">Editors’ Pick</h2>
+        </div>
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 bg-black overflow-hidden">
+
+                <!-- Left Side: Text -->
+                <div class="p-12 flex flex-col justify-center text-white">
+                    <p class="uppercase text-gray-400 text-sm tracking-wide mb-2">California</p>
+                    <h1 class="text-3xl md:text-4xl font-bold leading-tight mb-4 hover:text-gray-300 transition-colors">
+                        Pali High football: A team of wildfire nomads searches for normalcy
+                    </h1>
+                    <p class="text-gray-300 text-base leading-relaxed">
+                        After Palisades Charter High School’s campus burned in January’s Palisades fire, the future of
+                        the school’s football program was in question. Could it survive the upheaval?
+                    </p>
+                </div>
+
+                <!-- Right Side: Image/Video -->
+                <div class="relative">
+                    <img src="https://images.pexels.com/photos/6231881/pexels-photo-6231881.jpeg" alt="Football Team"
+                        class="w-full h-full object-cover">
+                    <button class="absolute inset-0 flex items-center justify-center">
+                        <div
+                            class="bg-white/80 rounded-full w-16 h-16 flex items-center justify-center shadow-lg hover:bg-white transition">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-black" fill="currentColor"
+                                viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M6.5 5.5a1 1 0 011.5-.866l7 4a1 1 0 010 1.732l-7 4A1 1 0 016.5 13.5v-8z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- DIVIDER -->
+        <div class="border border-black mb-4 mt-8"></div>
+
+        <!--Weekend Picks section -->
+        <div class="mb-4">
+            <h2 class="text-[24px] font-extrabold">Weekend Picks</h2>
+        </div>
+        <div class="w-full max-w-full mx-auto ">
+            <div class="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr_auto_1fr_auto_1fr] gap-4">
+
+                <!-- Article 1 -->
+                <div class="p-0">
+                    <img src="https://images.pexels.com/photos/552168/pexels-photo-552168.jpeg" alt="Article 1"
+                        class="w-full h-48 object-cover mb-4">
+                    <h2
+                        class="text-18px font-bold leading-[22px] hover:text-gray-600 transition-colors cursor-pointer px-2">
+                        Heading back to Downton Abbey for ‘The Grand Finale’ yields a comfortable catharsis
+                    </h2>
+                </div>
+
+                <!-- Divider 1 -->
+                <div class="hidden md:block w-px bg-gray-200 mx-auto"></div>
+
+                <!-- Article 2 -->
+                <div class="p-0">
+                    <img src="https://images.pexels.com/photos/552168/pexels-photo-552168.jpeg" alt="Article 2"
+                        class="w-full h-48 object-cover mb-4">
+                    <h2
+                        class="text-18px font-bold leading-[22px] hover:text-gray-600 transition-colors cursor-pointer px-2">
+                        ‘The Long Walk’ is a straight line to one of Stephen King’s darkest concepts
+                    </h2>
+                </div>
+
+                <!-- Divider 2 -->
+                <div class="hidden md:block w-px bg-gray-200 mx-auto"></div>
+
+                <!-- Article 3 -->
+                <div class="p-0">
+                    <img src="https://images.pexels.com/photos/552168/pexels-photo-552168.jpeg" alt="Article 3"
+                        class="w-full h-48 object-cover mb-4">
+                    <h2
+                        class="text-18px font-bold leading-[22px] hover:text-gray-600 transition-colors cursor-pointer px-2">
+                        ‘Task,’ from creator of ‘Mare of Easttown,’ is centered on two tenderhearted, tragic men
+                    </h2>
+                </div>
+
+                <!-- Divider 3 -->
+                <div class="hidden md:block w-px bg-gray-200 mx-auto "></div>
+
+                <!-- Article 4 -->
+                <div class="p-0">
+                    <img src="https://images.pexels.com/photos/552168/pexels-photo-552168.jpeg" alt="Article 4"
+                        class="w-full h-48 object-cover mb-4">
+                    <h2
+                        class="text-18px font-bold leading-[22px] hover:text-gray-400 transition-colors cursor-pointer px-2">
+                        ‘Seen & Heard’ examines Black TV history, shining light on its successes and struggles
+                    </h2>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- DIVIDER -->
+        <div class="border border-black mb-4 mt-8"></div>
+
+        <!-- Fall Arts Preview section -->
+        <div class="mb-4">
+            <h2 class="text-[24px] font-extrabold">Fall Arts Preview</h2>
+        </div>
+        <div class="w-full max-w-[1200px] mx-auto px-2 md:px-0 py-2">
+            <div class="flex flex-wrap justify-between gap-4">
+
+                <!-- Article 1 -->
+                <div class="flex flex-col w-full sm:w-[calc(20%-0.8rem)]">
+                    <img src="https://images.pexels.com/photos/1029208/pexels-photo-1029208.jpeg" alt="Article 1"
+                        class="w-full h-[150px] object-cover">
+                    <h2 class="mt-2 text-[18px] font-semibold leading-[21px] hover:text-gray-700">
+                        The 21 movies we’re most excited to see this fall
+                    </h2>
+                </div>
+
+                <!-- Article 2 -->
+                <div class="flex flex-col w-full sm:w-[calc(20%-0.8rem)]">
+                    <img src="https://images.pexels.com/photos/1037992/pexels-photo-1037992.jpeg" alt="Article 2"
+                        class="w-full h-[150px] object-cover">
+                    <h2 class="mt-2 text-[18px] font-semibold leading-[21px] hover:text-gray-700">
+                        Spinal Tap is back and ready to talk. Just don’t bring up the last movie
+                    </h2>
+                </div>
+
+                <!-- Article 3 -->
+                <div class="flex flex-col w-full sm:w-[calc(20%-0.8rem)]">
+                    <img src="https://images.pexels.com/photos/712618/pexels-photo-712618.jpeg" alt="Article 3"
+                        class="w-full h-[150px] object-cover">
+                    <h2 class="mt-2 text-[18px] font-semibold leading-[21px] hover:text-gray-700">
+                        16 TV shows we’re excited to watch this fall
+                    </h2>
+                </div>
+
+                <!-- Article 4 -->
+                <div class="flex flex-col w-full sm:w-[calc(20%-0.8rem)]">
+                    <img src="https://images.pexels.com/photos/1037992/pexels-photo-1037992.jpeg" alt="Article 4"
+                        class="w-full h-[150px] object-cover">
+                    <h2 class="mt-2 text-[18px] font-semibold leading-[21px] hover:text-gray-700">
+                        Domhnall Gleeson isn’t Superman. But in ‘The Office’ spinoff ‘The Paper,’ he can be Clark Kent
+                    </h2>
+                </div>
+
+                <!-- Article 5 -->
+                <div class="flex flex-col w-full sm:w-[calc(20%-0.8rem)]">
+                    <img src="https://images.pexels.com/photos/712618/pexels-photo-712618.jpeg" alt="Article 5"
+                        class="w-full h-[150px] object-cover">
+                    <h2 class="mt-2 text-[18px] font-semibold leading-[21px] hover:text-gray-700">
+                        The 16 most intriguing SoCal theater offerings this fall season
+                    </h2>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- DIVIDER -->
+        <div class="border border-black mb-4 mt-8"></div>
+
+        <!-- Games section -->
+        <div class="mb-4">
+            <h2 class="text-[24px] font-extrabold">Games</h2>
+        </div>
+        <div class="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+            <!-- Item -->
+            <div class="flex flex-col items-center text-center">
+                <img src="https://images.pexels.com/photos/139167/pexels-photo-139167.jpeg" alt="Daily Crossword"
+                    class="w-[130px] h-[130px] mb-3">
+                <h3 class="text-[18px] font-bold leading-[21px] mb-1">Daily Crossword</h3>
+                <p class="text-[14px] font-normal leading-[14px] text-[#666666]">
+                    An engaging new puzzle to conquer each day.
+                </p>
+            </div>
+
+            <div class="flex flex-col items-center text-center">
+                <img src="https://images.pexels.com/photos/1500610/pexels-photo-1500610.jpeg" alt="Wordflower"
+                    class="w-[130px] h-[130px] mb-3">
+                <h3 class="text-[18px] font-bold leading-[21px] mb-1">Wordflower</h3>
+                <p class="text-[14px] font-normal leading-[14px] text-[#666666]">
+                    Find words and watch your vocabulary bloom.
+                </p>
+            </div>
+
+            <div class="flex flex-col items-center text-center">
+                <img src="https://images.pexels.com/photos/1500610/pexels-photo-1500610.jpeg" alt="Mini Crossword"
+                    class="w-[130px] h-[130px] mb-3">
+                <h3 class="text-[18px] font-bold leading-[21px] mb-1">Mini Crossword</h3>
+                <p class="text-[14px] font-normal leading-[14px] text-[#666666]">
+                    Proof that good things come in small packages.
+                </p>
+            </div>
+
+            <div class="flex flex-col items-center text-center">
+                <img src="https://images.pexels.com/photos/371924/pexels-photo-371924.jpeg" alt="Sudoku"
+                    class="w-[130px] h-[130px] mb-3">
+                <h3 class="text-[18px] font-bold leading-[21px] mb-1">Sudoku</h3>
+                <p class="text-[14px] font-normal leading-[14px] text-[#666666]">
+                    Everyone’s favorite classic numbers game.
+                </p>
+            </div>
+
+            <div class="flex flex-col items-center text-center">
+                <img src="https://images.pexels.com/photos/1500610/pexels-photo-1500610.jpeg" alt="Impossible Sudoku"
+                    class="w-[130px] h-[130px] mb-3">
+                <h3 class="text-[18px] font-bold leading-[21px] mb-1">Impossible Sudoku</h3>
+                <p class="text-[14px] font-normal leading-[14px] text-[#666666]">
+                    The ultimate challenge for savvy solvers.
+                </p>
+            </div>
+
+            <div class="flex flex-col items-center text-center">
+                <img src="https://images.pexels.com/photos/371924/pexels-photo-371924.jpeg" alt="Word Search"
+                    class="w-[130px] h-[130px] mb-3">
+                <h3 class="text-[18px] font-bold leading-[21px] mb-1">Word Search</h3>
+                <p class="text-[14px] font-normal leading-[14px] text-[#666666]">
+                    A hunt for hidden words on the day’s themed list.
+                </p>
+            </div>
+        </div>
+
+        <!-- DIVIDER -->
+        <div class="border border-black mb-4 mt-8"></div>
+
+        <!--Opinion Voice section -->
+        <div class="mb-4">
+            <h2 class="text-[24px] font-extrabold">Opinion Voice</h2>
+        </div>
+        <div class="w-full max-w-full mx-auto ">
+            <div class="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr_auto_1fr_auto_1fr] gap-4">
+
+                <!-- Article 1 -->
+                <div class="p-0">
+                    <img src="https://images.pexels.com/photos/9583112/pexels-photo-9583112.jpeg" alt="Article 1"
+                        class="w-full h-48 object-cover mb-4">
+                    <h2
+                        class="text-18px font-bold leading-[22px] hover:text-gray-600 transition-colors cursor-pointer px-2">
+                        Heading back to Downton Abbey for ‘The Grand Finale’ yields a comfortable catharsis
+                    </h2>
+                </div>
+
+                <!-- Divider 1 -->
+                <div class="hidden md:block w-px bg-gray-200 mx-auto"></div>
+
+                <!-- Article 2 -->
+                <div class="p-0">
+                    <img src="https://images.pexels.com/photos/9583112/pexels-photo-9583112.jpeg" alt="Article 2"
+                        class="w-full h-48 object-cover mb-4">
+                    <h2
+                        class="text-18px font-bold leading-[22px] hover:text-gray-600 transition-colors cursor-pointer px-2">
+                        ‘The Long Walk’ is a straight line to one of Stephen King’s darkest concepts
+                    </h2>
+                </div>
+
+                <!-- Divider 2 -->
+                <div class="hidden md:block w-px bg-gray-200 mx-auto"></div>
+
+                <!-- Article 3 -->
+                <div class="p-0">
+                    <img src="https://images.pexels.com/photos/9583112/pexels-photo-9583112.jpeg" alt="Article 3"
+                        class="w-full h-48 object-cover mb-4">
+                    <h2
+                        class="text-18px font-bold leading-[22px] hover:text-gray-600 transition-colors cursor-pointer px-2">
+                        ‘Task,’ from creator of ‘Mare of Easttown,’ is centered on two tenderhearted, tragic men
+                    </h2>
+                </div>
+
+                <!-- Divider 3 -->
+                <div class="hidden md:block w-px bg-gray-200 mx-auto "></div>
+
+                <!-- Article 4 -->
+                <div class="p-0">
+                    <img src="https://images.pexels.com/photos/552168/pexels-photo-552168.jpeg" alt="Article 4"
+                        class="w-full h-48 object-cover mb-4">
+                    <h2
+                        class="text-18px font-bold leading-[22px] hover:text-gray-400 transition-colors cursor-pointer px-2">
+                        ‘Seen & Heard’ examines Black TV history, shining light on its successes and struggles
+                    </h2>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- DIVIDER -->
+        <div class="border border-black mb-4 mt-8"></div>
+
+        <!-- Californians Are Reading section -->
+        <div class="mb-4">
+            <h2 class="text-[24px] font-extrabold">Californians Are Reading</h2>
+        </div>
+        <div class="w-full max-w-[1200px] mx-auto px-2 md:px-0 py-2">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+                <!-- Article 1 -->
+                <div class="flex flex-col">
+                    <img src="https://images.pexels.com/photos/33871321/pexels-photo-33871321.jpeg" alt="Article 1"
+                        class="w-full md:w-[385px] h-[255px] object-cover mx-auto">
+                    <h2 class="mt-2 text-[18px] font-semibold leading-[21px] hover:text-gray-700">
+                        A young boy dies in freak accident on a Ventura beach. The family is overwhelmed by donations
+                    </h2>
+                </div>
+
+                <!-- Article 2 -->
+                <div class="flex flex-col">
+                    <img src="https://images.pexels.com/photos/33871321/pexels-photo-33871321.jpeg" alt="Article 2"
+                        class="w-full md:w-[385px] h-[255px] object-cover mx-auto">
+                    <h2 class="mt-2 text-[18px] font-semibold leading-[21px] hover:text-gray-700">
+                        MSNBC severs ties with Matthew Dowd over Charlie Kirk comments
+                    </h2>
+                </div>
+
+                <!-- Article 3 -->
+                <div class="flex flex-col">
+                    <img src="https://images.pexels.com/photos/33871321/pexels-photo-33871321.jpeg" alt="Article 3"
+                        class="w-full md:w-[385px] h-[255px] object-cover mx-auto">
+                    <h2 class="mt-2 text-[18px] font-semibold leading-[21px] hover:text-gray-700">
+                        UCLA’s season goes from bad to worse in loss to New Mexico at Rose Bowl
+                    </h2>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- DIVIDER -->
+        <div class="border border-black mb-4 mt-8"></div>
+
+        <!-- Guides section -->
+        <div class="mb-4">
+            <h2 class="text-[24px] font-extrabold">Guides</h2>
+        </div>
+        <div class="w-full max-w-[1200px] mx-auto px-2 md:px-0 py-2">
+            <div class="flex flex-wrap justify-between gap-4">
+
+                <!-- Article 1 -->
+                <div class="flex flex-col w-full sm:w-[calc(20%-0.8rem)]">
+                    <img src="https://images.pexels.com/photos/1029208/pexels-photo-1029208.jpeg" alt="Article 1"
+                        class="w-full h-[150px] object-cover">
+                    <h2 class="mt-2 text-[18px] font-semibold leading-[21px] hover:text-gray-700">
+                        The 21 movies we’re most excited to see this fall
+                    </h2>
+                </div>
+
+                <!-- Article 2 -->
+                <div class="flex flex-col w-full sm:w-[calc(20%-0.8rem)]">
+                    <img src="https://images.pexels.com/photos/1037992/pexels-photo-1037992.jpeg" alt="Article 2"
+                        class="w-full h-[150px] object-cover">
+                    <h2 class="mt-2 text-[18px] font-semibold leading-[21px] hover:text-gray-700">
+                        Spinal Tap is back and ready to talk. Just don’t bring up the last movie
+                    </h2>
+                </div>
+
+                <!-- Article 3 -->
+                <div class="flex flex-col w-full sm:w-[calc(20%-0.8rem)]">
+                    <img src="https://images.pexels.com/photos/712618/pexels-photo-712618.jpeg" alt="Article 3"
+                        class="w-full h-[150px] object-cover">
+                    <h2 class="mt-2 text-[18px] font-semibold leading-[21px] hover:text-gray-700">
+                        16 TV shows we’re excited to watch this fall
+                    </h2>
+                </div>
+
+                <!-- Article 4 -->
+                <div class="flex flex-col w-full sm:w-[calc(20%-0.8rem)]">
+                    <img src="https://images.pexels.com/photos/1037992/pexels-photo-1037992.jpeg" alt="Article 4"
+                        class="w-full h-[150px] object-cover">
+                    <h2 class="mt-2 text-[18px] font-semibold leading-[21px] hover:text-gray-700">
+                        Domhnall Gleeson isn’t Superman. But in ‘The Office’ spinoff ‘The Paper,’ he can be Clark Kent
+                    </h2>
+                </div>
+
+                <!-- Article 5 -->
+                <div class="flex flex-col w-full sm:w-[calc(20%-0.8rem)]">
+                    <img src="https://images.pexels.com/photos/712618/pexels-photo-712618.jpeg" alt="Article 5"
+                        class="w-full h-[150px] object-cover">
+                    <h2 class="mt-2 text-[18px] font-semibold leading-[21px] hover:text-gray-700">
+                        The 16 most intriguing SoCal theater offerings this fall season
+                    </h2>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- DIVIDER -->
+        <div class="border border-black mb-4 mt-8"></div>
+
+        <!-- California Living section -->
+        <div class="mb-4">
+            <h2 class="text-[24px] font-extrabold">California Living</h2>
+        </div>
+        <div class="w-full max-w-[1200px] mx-auto px-2 md:px-0 py-2">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+                <!-- Article 1 -->
+                <div class="flex flex-col">
+                    <img src="https://images.pexels.com/photos/33043467/pexels-photo-33043467.jpeg" alt="Article 1"
+                        class="w-full md:w-[385px] h-[255px] object-cover mx-auto">
+                    <h2 class="mt-2 text-[18px] font-semibold leading-[21px] hover:text-gray-700">
+                        A young boy dies in freak accident on a Ventura beach. The family is overwhelmed by donations
+                    </h2>
+                </div>
+
+                <!-- Article 2 -->
+                <div class="flex flex-col">
+                    <img src="https://images.pexels.com/photos/33043467/pexels-photo-33043467.jpeg" alt="Article 2"
+                        class="w-full md:w-[385px] h-[255px] object-cover mx-auto">
+                    <h2 class="mt-2 text-[18px] font-semibold leading-[21px] hover:text-gray-700">
+                        MSNBC severs ties with Matthew Dowd over Charlie Kirk comments
+                    </h2>
+                </div>
+
+                <!-- Article 3 -->
+                <div class="flex flex-col">
+                    <img src="https://images.pexels.com/photos/33043467/pexels-photo-33043467.jpeg" alt="Article 3"
+                        class="w-full md:w-[385px] h-[255px] object-cover mx-auto">
+                    <h2 class="mt-2 text-[18px] font-semibold leading-[21px] hover:text-gray-700">
+                        UCLA’s season goes from bad to worse in loss to New Mexico at Rose Bowl
+                    </h2>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- PAID PROGARM ADS -->
+        <div class="border-t border-black bg-gray-100 p-4 mt-6">
+            <!-- Label -->
+            <p class="text-[14px] font-bold mb-4">PAID PROGRAM</p>
+
+            <div class="flex flex-col md:flex-row gap-4">
+                <!-- Image -->
+                <div class="md:w-[220px] w-full flex-shrink-0">
+                    <img src="https://images.pexels.com/photos/5474028/pexels-photo-5474028.jpeg" alt="On the Ground"
+                        class="w-full h-[220px] object-cover">
+                </div>
+
+                <!-- Content -->
+                <div class="flex flex-col">
+                    <h2 class="text-[20px] font-bold leading-[24px] mb-2">
+                        On the Ground in LA: Rebuilding After the Fires
+                    </h2>
+                    <p class="text-[16px] font-normal leading-[22px] text-gray-700 mb-3">
+                        When the cameras leave and the smoke clears, who rebuilds our communities?
+                        Watch the unsung heroes of the recovery, from educated union crews, local leaders,
+                        and resilient residents on the front lines, turning wreckage into renewal and proving
+                        that the heart of Los Angeles is in its people.
+                    </p>
+                    <p class="text-[16px] font-bold">By Rebuild SoCal Partnership</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOD AND 101 PORTION -->
+        <div class="max-w-7xl mx-auto py-6">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+
+                <!-- Left Column -->
+                <div class="md:col-span-8 space-y-6">
+
+                    <!-- Section Title -->
+                    <div class="mb-4">
+
+                        <div class="border border-black mb-4"></div>
+                        <h2 class="text-[24px] font-extrabold">Food <span>›</span></h2>
+                    </div>
+
+                    <!-- Articles Grid -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <!-- Article 1 -->
+                        <div>
+                            <img src="https://images.pexels.com/photos/574073/pexels-photo-574073.jpeg" alt="Food 1"
+                                class="w-full h-auto mb-3">
+                            <h3 class="text-[18px] font-bold leading-[21px]">
+                                Head to Orange County for the best sourdough in the universe. And it’s purple
+                            </h3>
+                        </div>
+                        <!-- Article 2 -->
+                        <div>
+                            <img src="https://images.pexels.com/photos/574073/pexels-photo-574073.jpeg" alt="Food 2"
+                                class="w-full h-auto mb-3">
+                            <h3 class="text-[18px] font-bold leading-[21px]">
+                                Readers tell us their top dining spots in the Valley
+                            </h3>
+                        </div>
+                        <!-- Article 3 -->
+                        <div>
+                            <img src="https://images.pexels.com/photos/574073/pexels-photo-574073.jpeg" alt="Food 3"
+                                class="w-full h-auto mb-3">
+                            <h3 class="text-[18px] font-bold leading-[21px]">
+                                L.A.’s best new Japanese tea shop has beautiful matcha lattes. That’s only the beginning
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column -->
+                <div class="md:col-span-4 md:border-l md:pl-6">
+                    <!-- Section Title -->
+                    <div class="mb-4">
+                        <div class="border border-black mb-4"></div>
+                        <h2 class="text-[24px] font-extrabold">101 Best Restaurant <span>›</span></h2>
+                    </div>
+
+                    <!-- Article -->
+                    <div>
+                        <img src="https://images.pexels.com/photos/574073/pexels-photo-574073.jpeg"
+                            alt="Best Restaurants" class="w-full h-auto mb-3">
+                        <p class="text-[12px] font-bold text-teal-600 uppercase mb-1">For Subscribers</p>
+                        <h3 class="text-[18px] font-bold leading-[21px]">
+                            These are the 101 best restaurants in California
+                        </h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- CALIFORNIA SECTION -->
+        <div class="w-full md:w-full">
+            <!-- TOP BIG part -->
+            <div class="w-full">
+                <!-- Header -->
+                <div class="pt-4 border-t-2 border-black mb-4">
+                    <h2 class="text-[24px] font-extrabold">California <span>›</span></h2>
+                </div>
+
+                <!-- Content Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-start border-b pb-6 mb-4">
+                    <!-- Left: Text -->
+                    <div>
+                        <h1 class="text-[30px] md:text-[30px] font-bold leading-snug">
+                            Once-booming Santa Monica faces a dire fiscal crisis. The surprising way it got there
+                        </h1>
+                        <p class="text-sm md:text-base text-gray-600 mt-3">
+                            Santa Monica has declared itself in fiscal distress amid a budget crisis driven by $229
+                            million in sexual abuse settlement payouts.
+                        </p>
+                    </div>
+
+                    <!-- Right: Image -->
+                    <div class="flex justify-center">
+                        <img src="https://images.pexels.com/photos/759374/pexels-photo-759374.jpeg"
+                            alt="Santa Monica Crisis" class="w-[555px] h-[370px] object-cover">
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3 ARTICAL IN ROW -->
+            <div class="w-full max-w-full mx-auto border-b border-gray-300 pb-4 mb-4">
+                <div class="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr_auto_1fr] gap-4">
+
+                    <!-- Article 1 -->
+                    <div class="p-0">
+                        <img src="https://images.pexels.com/photos/552168/pexels-photo-552168.jpeg" alt="Oil Rig"
+                            class="w-full h-48 object-cover mb-4">
+                        <h2 class="text-xl font-semibold hover:text-gray-600 transition-colors cursor-pointer px-2">
+                            California lawmakers pass measures to expand oil production in Central Valley, restrict
+                            offshore drilling
+                        </h2>
+                    </div>
+
+                    <!-- Divider -->
+                    <div class="hidden md:block w-px bg-gray-200 mx-auto"></div>
+
+                    <!-- Article 2 -->
+                    <div class="p-0">
+                        <img src="https://images.pexels.com/photos/552168/pexels-photo-552168.jpeg"
+                            alt="Military Ceremony" class="w-full h-48 object-cover mb-4">
+                        <h2 class="text-xl font-semibold hover:text-gray-600 transition-colors cursor-pointer px-2">
+                            What we know about Tyler Robinson, the young suspect in Charlie Kirk killing
+                        </h2>
+                    </div>
+
+                    <!-- Divider -->
+                    <div class="hidden md:block w-px bg-gray-300 mx-auto"></div>
+
+                    <!-- Article 3 -->
+                    <div class="p-0">
+                        <img src="https://images.pexels.com/photos/552168/pexels-photo-552168.jpeg" alt="People Praying"
+                            class="w-full h-48 object-cover mb-4">
+                        <h2 class="text-xl font-semibold hover:text-gray-600 transition-colors cursor-pointer px-2">
+                            From Charlie Kirk to Supreme Court backlash, Civil War historians see modern parallels
+                        </h2>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- 4 ARTICAL IN ROW -->
+            <div class="w-full max-w-full mx-auto border-b border-gray-300 pb-10 mt-6">
+                <div class="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr_auto_1fr_auto_1fr] gap-4">
+
+                    <!-- Article 1 -->
+                    <div class="p-0">
+                        <h2 class="text-xl font-semibold hover:text-gray-600 transition-colors cursor-pointer px-2">
+                            These bills could change your child’s school experience. They are not without
+                            controversy
+                        </h2>
+                    </div>
+
+                    <!-- Divider 1 -->
+                    <div class="hidden md:block w-px bg-gray-200 mx-auto"></div>
+
+                    <!-- Article 2 -->
+                    <div class="p-0">
+
+                        <h2 class="text-xl font-semibold hover:text-gray-600 transition-colors cursor-pointer px-2">
+                            California lawmakers pass bill to grant priority college admission for descendants of
+                            slavery
+                        </h2>
+                    </div>
+
+                    <!-- Divider 2 -->
+                    <div class="hidden md:block w-px bg-gray-200 mx-auto"></div>
+
+                    <!-- Article 3 -->
+                    <div class="p-0">
+
+                        <h2 class="text-xl font-semibold hover:text-gray-600 transition-colors cursor-pointer px-2">
+                            Lopez: The immigration raids are crushing L.A.’s fire recovery and California’s economy
+
+                        </h2>
+                    </div>
+
+                    <!-- Divider 3 -->
+                    <div class="hidden md:block w-px bg-gray-200 mx-auto "></div>
+
+                    <!-- Article 4 -->
+                    <div class="p-0">
+                        <h2 class="text-xl font-semibold hover:text-gray-600 transition-colors cursor-pointer px-2">
+                            This beloved Californian theme park is slashing jobs and shortening its season. Here’s
+                            why
+                        </h2>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- DIVIDER -->
+        <div class="border border-black mb-4 mt-8"></div>
+
+        <!--Climate California section -->
+        <div class="mb-4">
+            <h2 class="text-[24px] font-extrabold">Cliamte California <span>›</span></h2>
+        </div>
+        <div class="w-full max-w-[1200px] mx-auto px-2 md:px-0 py-2">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+                <!-- Article 1 -->
+                <div class="flex flex-col">
+                    <img src="https://images.pexels.com/photos/60013/desert-drought-dehydrated-clay-soil-60013.jpeg"
+                        alt="Article 1" class="w-full md:w-[385px] h-[255px] object-cover mx-auto">
+                    <h2 class="mt-2 text-[18px] font-semibold leading-[21px] hover:text-gray-700">
+                        A young boy dies in freak accident on a Ventura beach. The family is overwhelmed by donations
+                    </h2>
+                </div>
+
+                <!-- Article 2 -->
+                <div class="flex flex-col">
+                    <img src="https://images.pexels.com/photos/60013/desert-drought-dehydrated-clay-soil-60013.jpeg"
+                        alt="Article 2" class="w-full md:w-[385px] h-[255px] object-cover mx-auto">
+                    <h2 class="mt-2 text-[18px] font-semibold leading-[21px] hover:text-gray-700">
+                        MSNBC severs ties with Matthew Dowd over Charlie Kirk comments
+                    </h2>
+                </div>
+
+                <!-- Article 3 -->
+                <div class="flex flex-col">
+                    <img src="https://images.pexels.com/photos/60013/desert-drought-dehydrated-clay-soil-60013.jpeg"
+                        alt="Article 3" class="w-full md:w-[385px] h-[255px] object-cover mx-auto">
+                    <h2 class="mt-2 text-[18px] font-semibold leading-[21px] hover:text-gray-700">
+                        UCLA’s season goes from bad to worse in loss to New Mexico at Rose Bowl
+                    </h2>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- California Fires PORTION -->
+        <div class="max-w-7xl mx-auto py-6">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+
+                <!-- Left Column -->
+                <div class="md:col-span-8 space-y-6">
+
+                    <!-- Section Title -->
+                    <div class="mb-4">
+
+                        <div class="border border-black mb-4"></div>
+                        <h2 class="text-[24px] font-extrabold">Clifornia Fires <span>›</span></h2>
+                    </div>
+
+                    <!-- Articles Grid -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <!-- Article 1 -->
+                        <div>
+                            <img src="https://images.pexels.com/photos/30805406/pexels-photo-30805406.jpeg" alt="Food 1"
+                                class="w-full h-auto mb-3">
+                            <h3 class="text-[18px] font-bold leading-[21px]">
+                                Head to Orange County for the best sourdough in the universe. And it’s purple
+                            </h3>
+                        </div>
+                        <!-- Article 2 -->
+                        <div>
+                            <img src="https://images.pexels.com/photos/30805406/pexels-photo-30805406.jpeg" alt="Food 2"
+                                class="w-full h-auto mb-3">
+                            <h3 class="text-[18px] font-bold leading-[21px]">
+                                Readers tell us their top dining spots in the Valley
+                            </h3>
+                        </div>
+                        <!-- Article 3 -->
+                        <div>
+                            <img src="https://images.pexels.com/photos/30805406/pexels-photo-30805406.jpeg" alt="Food 3"
+                                class="w-full h-auto mb-3">
+                            <h3 class="text-[18px] font-bold leading-[21px]">
+                                L.A.’s best new Japanese tea shop has beautiful matcha lattes. That’s only the beginning
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column -->
+                <div class="md:col-span-4 md:border-l md:pl-6">
+                    <!-- Section Title -->
+                    <div class="mb-4">
+                        <div class="border border-black mb-4"></div>
+                        <h2 class="text-[24px] font-extrabold">The Hub reading LA <span>›</span></h2>
+                    </div>
+
+                    <!-- Article -->
+                    <div>
+                        <img src="https://images.pexels.com/photos/574073/pexels-photo-574073.jpeg"
+                            alt="Best Restaurants" class="w-full h-auto mb-3">
+                        <p class="text-[12px] font-bold text-teal-600 uppercase mb-1">For Subscribers</p>
+                        <h3 class="text-[18px] font-bold leading-[21px]">
+                            These are the 101 best restaurants in California
+                        </h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- DIVIDER -->
+        <div class="border border-black mb-4 mt-8"></div>
+
+        <!--Politics section -->
+        <div class="mb-4">
+            <h2 class="text-[24px] font-extrabold">Politics</h2>
+        </div>
+        <div class="w-full max-w-full mx-auto ">
+            <div class="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr_auto_1fr_auto_1fr] gap-4">
+
+                <!-- Article 1 -->
+                <div class="p-0">
+                    <img src="https://images.pexels.com/photos/2990644/pexels-photo-2990644.jpeg" alt="Article 1"
+                        class="w-full h-48 object-cover mb-4">
+                    <h2
+                        class="text-18px font-bold leading-[22px] hover:text-gray-600 transition-colors cursor-pointer px-2">
+                        Heading back to Downton Abbey for ‘The Grand Finale’ yields a comfortable catharsis
+                    </h2>
+                </div>
+
+                <!-- Divider 1 -->
+                <div class="hidden md:block w-px bg-gray-200 mx-auto"></div>
+
+                <!-- Article 2 -->
+                <div class="p-0">
+                    <img src="https://images.pexels.com/photos/2990644/pexels-photo-2990644.jpeg" alt="Article 2"
+                        class="w-full h-48 object-cover mb-4">
+                    <h2
+                        class="text-18px font-bold leading-[22px] hover:text-gray-600 transition-colors cursor-pointer px-2">
+                        ‘The Long Walk’ is a straight line to one of Stephen King’s darkest concepts
+                    </h2>
+                </div>
+
+                <!-- Divider 2 -->
+                <div class="hidden md:block w-px bg-gray-200 mx-auto"></div>
+
+                <!-- Article 3 -->
+                <div class="p-0">
+                    <img src="https://images.pexels.com/photos/2990644/pexels-photo-2990644.jpeg" alt="Article 3"
+                        class="w-full h-48 object-cover mb-4">
+                    <h2
+                        class="text-18px font-bold leading-[22px] hover:text-gray-600 transition-colors cursor-pointer px-2">
+                        ‘Task,’ from creator of ‘Mare of Easttown,’ is centered on two tenderhearted, tragic men
+                    </h2>
+                </div>
+
+                <!-- Divider 3 -->
+                <div class="hidden md:block w-px bg-gray-200 mx-auto "></div>
+
+                <!-- Article 4 -->
+                <div class="p-0">
+                    <img src="https://images.pexels.com/photos/2990644/pexels-photo-2990644.jpeg" alt="Article 4"
+                        class="w-full h-48 object-cover mb-4">
+                    <h2
+                        class="text-18px font-bold leading-[22px] hover:text-gray-400 transition-colors cursor-pointer px-2">
+                        ‘Seen & Heard’ examines Black TV history, shining light on its successes and struggles
+                    </h2>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- DIVIDER -->
+        <div class="border border-black mb-4 mt-8"></div>
+
+        <!--Subscriber are reading section -->
+        <div class="mb-4">
+            <h2 class="text-[24px] font-extrabold">Subscribers are reading <span>›</span></h2>
+        </div>
+        <div class="w-full max-w-[1200px] mx-auto px-2 md:px-0 py-2">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+                <!-- Article 1 -->
+                <div class="flex flex-col">
+                    <img src="https://images.pexels.com/photos/60013/desert-drought-dehydrated-clay-soil-60013.jpeg"
+                        alt="Article 1" class="w-full md:w-[385px] h-[255px] object-cover mx-auto">
+                    <h2 class="mt-2 text-[18px] font-semibold leading-[21px] hover:text-gray-700">
+                        A young boy dies in freak accident on a Ventura beach. The family is overwhelmed by donations
+                    </h2>
+                </div>
+
+                <!-- Article 2 -->
+                <div class="flex flex-col">
+                    <img src="https://images.pexels.com/photos/60013/desert-drought-dehydrated-clay-soil-60013.jpeg"
+                        alt="Article 2" class="w-full md:w-[385px] h-[255px] object-cover mx-auto">
+                    <h2 class="mt-2 text-[18px] font-semibold leading-[21px] hover:text-gray-700">
+                        MSNBC severs ties with Matthew Dowd over Charlie Kirk comments
+                    </h2>
+                </div>
+
+                <!-- Article 3 -->
+                <div class="flex flex-col">
+                    <img src="https://images.pexels.com/photos/60013/desert-drought-dehydrated-clay-soil-60013.jpeg"
+                        alt="Article 3" class="w-full md:w-[385px] h-[255px] object-cover mx-auto">
+                    <h2 class="mt-2 text-[18px] font-semibold leading-[21px] hover:text-gray-700">
+                        UCLA’s season goes from bad to worse in loss to New Mexico at Rose Bowl
+                    </h2>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- DIVIDER -->
+        <div class="border border-black mb-4 mt-8"></div>
+
+        <!--Podcasts section -->
+        <div class="mb-4">
+            <h2 class="text-[24px] font-extrabold">Podcasts <span>›</span></h2>
+        </div>
+        <div class="w-full max-w-[1200px] mx-auto px-2 md:px-0 py-2">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+                <!-- Article 1 -->
+                <div class="flex flex-col">
+                    <img src="https://images.pexels.com/photos/1054713/pexels-photo-1054713.jpeg" alt="Article 1"
+                        class="w-full md:w-[385px] h-[255px] object-cover mx-auto">
+                    <h2 class="mt-2 text-[18px] font-semibold leading-[21px] hover:text-gray-700">
+                        A young boy dies in freak accident on a Ventura beach. The family is overwhelmed by donations
+                    </h2>
+                </div>
+
+                <!-- Article 2 -->
+                <div class="flex flex-col">
+                    <img src="https://images.pexels.com/photos/60013/desert-drought-dehydrated-clay-soil-60013.jpeg"
+                        alt="Article 2" class="w-full md:w-[385px] h-[255px] object-cover mx-auto">
+                    <h2 class="mt-2 text-[18px] font-semibold leading-[21px] hover:text-gray-700">
+                        MSNBC severs ties with Matthew Dowd over Charlie Kirk comments
+                    </h2>
+                </div>
+
+                <!-- Article 3 -->
+                <div class="flex flex-col">
+                    <img src="https://images.pexels.com/photos/1054713/pexels-photo-1054713.jpeg" alt="Article 3"
+                        class="w-full md:w-[385px] h-[255px] object-cover mx-auto">
+                    <h2 class="mt-2 text-[18px] font-semibold leading-[21px] hover:text-gray-700">
+                        UCLA’s season goes from bad to worse in loss to New Mexico at Rose Bowl
+                    </h2>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- DIVIDER -->
+        <div class="border border-black mb-4 mt-8"></div>
+
+        <!-- World & Nation PORTION -->
+        <div class="mb-4">
+            <h2 class="text-[24px] font-extrabold">World and Nation</h2>
+        </div>
+        <div class="max-w-7xl mx-auto px-2 md:px-0">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+
+                <!-- Left Column: Big + Small Articles -->
+                <div class="md:col-span-8 flex flex-col md:flex-row gap-6">
+
+                    <!-- Left Big Article -->
+                    <div class="md:w-[445px] border-r pr-3">
+                        <img src="https://images.pexels.com/photos/12256847/pexels-photo-12256847.jpeg"
+                            alt="Main Article" class="w-full h-[295px] object-cover mb-4">
+                        <h2 class="text-[30px] font-extrabold leading-[34px] mb-2">
+                            Why did Giorgio Armani abandon 50 years of independence in his final will?
+                        </h2>
+                        <p class="text-gray-600 text-[14px]">
+                            Why did Giorgio Armani abandon 50 years of independence in his final will?
+                        </p>
+                    </div>
+
+                    <!-- Right Small Articles Grid -->
+                    <div class="flex gap-6 flex-1">
+
+                        <!-- Left Column -->
+                        <div class="flex flex-col gap-4 flex-1">
+
+                            <!-- Article 1 -->
+                            <div class="flex flex-col items-start gap-2 pb-2 border-b border-gray-300">
+                                <img src="https://images.pexels.com/photos/19453624/pexels-photo-19453624.jpeg"
+                                    alt="Article" class="w-[160px] h-[100px] object-cover">
+                                <h3 class="text-[16px] font-bold leading-[24px]">
+                                    Why is Apple preparing consumers for $2,000 iPhones?
+                                </h3>
+                            </div>
+
+                            <!-- Article 2 -->
+                            <div class="flex flex-col items-start gap-2">
+                                <img src="https://images.pexels.com/photos/19453624/pexels-photo-19453624.jpeg"
+                                    alt="Article" class="w-[160px] h-[100px] object-cover">
+                                <h3 class="text-[16px] font-bold leading-[24px]">
+                                    L.A.’s Original Pantry to reopen with new owner and same workers
+                                </h3>
+                            </div>
+
+                        </div>
+
+
+                        <!-- Divider -->
+                        <div class="w-px bg-gray-300"></div>
+
+                        <!-- Right Column -->
+                        <div class="flex flex-col gap-4 flex-1">
+
+                            <!-- Article 1 -->
+                            <div class="flex flex-col items-start gap-2 pb-2 border-b border-gray-300">
+                                <img src="https://images.pexels.com/photos/19453624/pexels-photo-19453624.jpeg"
+                                    alt="Article" class="w-[160px] h-[100px] object-cover">
+                                <h3 class="text-[16px] font-bold leading-[24px]">
+                                    Why is Apple preparing consumers for $2,000 iPhones?
+                                </h3>
+                            </div>
+
+                            <!-- Article 2 -->
+                            <div class="flex flex-col items-start gap-2">
+                                <img src="https://images.pexels.com/photos/19453624/pexels-photo-19453624.jpeg"
+                                    alt="Article" class="w-[160px] h-[100px] object-cover">
+                                <h3 class="text-[16px] font-bold leading-[24px]">
+                                    L.A.’s Original Pantry to reopen with new owner and same workers
+                                </h3>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+
+                <!-- Right Column: List of Articles -->
+                <div class="md:col-span-4 md:border-l md:pl-6">
+                    <div class="space-y-4">
+
+                        <!-- Article 1 -->
+                        <div class="flex flex-col sm:flex-row sm:space-x-4 self-start border-b border-gray-200 pb-4">
+                            <img src="https://images.pexels.com/photos/12385474/pexels-photo-12385474.jpeg"
+                                alt="Article Image" class="w-full sm:w-[120px] h-[80px] object-cover mb-2 sm:mb-0">
+                            <h3 class="text-[16px] font-bold leading-[24px] self-start">
+                                U.S. Navy raids tuna boat in Caribbean, Venezuela says, as tensions escalate
+                            </h3>
+                        </div>
+
+                        <!-- Article 2 -->
+                        <div class="flex flex-col sm:flex-row sm:space-x-4 self-start border-b border-gray-200 pb-4">
+                            <img src="https://images.pexels.com/photos/12385474/pexels-photo-12385474.jpeg"
+                                alt="Article Image" class="w-full sm:w-[120px] h-[80px] object-cover mb-2 sm:mb-0">
+                            <h3 class="text-[16px] font-bold leading-[24px] self-start">
+                                U.S. Navy raids tuna boat in Caribbean, Venezuela says, as tensions escalate
+                            </h3>
+                        </div>
+
+                        <!-- Article 3 -->
+                        <div class="flex flex-col sm:flex-row sm:space-x-4 self-start border-b border-gray-200 pb-4">
+                            <img src="https://images.pexels.com/photos/12385474/pexels-photo-12385474.jpeg"
+                                alt="Article Image" class="w-full sm:w-[120px] h-[80px] object-cover mb-2 sm:mb-0">
+                            <h3 class="text-[16px] font-bold leading-[24px] self-start">
+                                U.S. Navy raids tuna boat in Caribbean, Venezuela says, as tensions escalate
+                            </h3>
+                        </div>
+
+                        <!-- Article 4 -->
+                        <div class="flex flex-col sm:flex-row sm:space-x-4 self-start">
+                            <img src="https://images.pexels.com/photos/12385474/pexels-photo-12385474.jpeg"
+                                alt="Article Image" class="w-full sm:w-[120px] h-[80px] object-cover mb-2 sm:mb-0">
+                            <h3 class="text-[16px] font-bold leading-[24px] self-start">
+                                U.S. Navy raids tuna boat in Caribbean, Venezuela says, as tensions escalate
+                            </h3>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <!-- DIVIDER -->
+        <div class="border border-black mb-4 mt-8"></div>
+
+        <!-- Enterainment and Arts PORTION -->
+        <div class="mb-4">
+            <h2 class="text-[24px] font-extrabold">Enterainment and Arts</h2>
+        </div>
+        <div class="max-w-7xl mx-auto px-2 md:px-0">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+
+                <!-- Left Column: Big + Small Articles -->
+                <div class="md:col-span-8 flex flex-col md:flex-row gap-6">
+
+                    <!-- Left Big Article -->
+                    <div class="md:w-[445px] border-r pr-3">
+                        <img src="https://images.pexels.com/photos/3109807/pexels-photo-3109807.jpeg" alt="Main Article"
+                            class="w-full h-[295px] object-cover mb-4">
+                        <h2 class="text-[30px] font-extrabold leading-[34px] mb-2">
+                            Why did Giorgio Armani abandon 50 years of independence in his final will?
+                        </h2>
+                        <p class="text-gray-600 text-[14px]">
+                            Why did Giorgio Armani abandon 50 years of independence in his final will?
+                        </p>
+                    </div>
+
+                    <!-- Right Small Articles Grid -->
+                    <div class="flex gap-6 flex-1">
+
+                        <!-- Left Column -->
+                        <div class="flex flex-col gap-4 flex-1">
+
+                            <!-- Article 1 -->
+                            <div class="flex flex-col items-start gap-2 pb-2 border-b border-gray-300">
+                                <img src="https://images.pexels.com/photos/3109807/pexels-photo-3109807.jpeg"
+                                    alt="Article" class="w-[160px] h-[100px] object-cover">
+                                <h3 class="text-[16px] font-bold leading-[24px]">
+                                    Why is Apple preparing consumers for $2,000 iPhones?
+                                </h3>
+                            </div>
+
+                            <!-- Article 2 -->
+                            <div class="flex flex-col items-start gap-2">
+                                <img src="https://images.pexels.com/photos/19453624/pexels-photo-19453624.jpeg"
+                                    alt="Article" class="w-[160px] h-[100px] object-cover">
+                                <h3 class="text-[16px] font-bold leading-[24px]">
+                                    L.A.’s Original Pantry to reopen with new owner and same workers
+                                </h3>
+                            </div>
+
+                        </div>
+
+
+                        <!-- Divider -->
+                        <div class="w-px bg-gray-300"></div>
+
+                        <!-- Right Column -->
+                        <div class="flex flex-col gap-4 flex-1">
+
+                            <!-- Article 1 -->
+                            <div class="flex flex-col items-start gap-2 pb-2 border-b border-gray-300">
+                                <img src="https://images.pexels.com/photos/19453624/pexels-photo-19453624.jpeg"
+                                    alt="Article" class="w-[160px] h-[100px] object-cover">
+                                <h3 class="text-[16px] font-bold leading-[24px]">
+                                    Why is Apple preparing consumers for $2,000 iPhones?
+                                </h3>
+                            </div>
+
+                            <!-- Article 2 -->
+                            <div class="flex flex-col items-start gap-2">
+                                <img src="https://images.pexels.com/photos/19453624/pexels-photo-19453624.jpeg"
+                                    alt="Article" class="w-[160px] h-[100px] object-cover">
+                                <h3 class="text-[16px] font-bold leading-[24px]">
+                                    L.A.’s Original Pantry to reopen with new owner and same workers
+                                </h3>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Right Column: List of Articles -->
+                <div class="md:col-span-4 md:border-l md:pl-6">
+                    <div class="space-y-4">
+
+                        <!-- Article 1 -->
+                        <div class="flex flex-col sm:flex-row sm:space-x-4 self-start border-b border-gray-200 pb-4">
+                            <img src="https://images.pexels.com/photos/3777876/pexels-photo-3777876.jpeg"
+                                alt="Article Image" class="w-full sm:w-[120px] h-[80px] object-cover mb-2 sm:mb-0">
+                            <h3 class="text-[16px] font-bold leading-[24px] self-start">
+                                U.S. Navy raids tuna boat in Caribbean, Venezuela says, as tensions escalate
+                            </h3>
+                        </div>
+
+                        <!-- Article 2 -->
+                        <div class="flex flex-col sm:flex-row sm:space-x-4 self-start border-b border-gray-200 pb-4">
+                            <img src="https://images.pexels.com/photos/3777876/pexels-photo-3777876.jpeg"
+                                alt="Article Image" class="w-full sm:w-[120px] h-[80px] object-cover mb-2 sm:mb-0">
+                            <h3 class="text-[16px] font-bold leading-[24px] self-start">
+                                U.S. Navy raids tuna boat in Caribbean, Venezuela says, as tensions escalate
+                            </h3>
+                        </div>
+
+                        <!-- Article 3 -->
+                        <div class="flex flex-col sm:flex-row sm:space-x-4 self-start border-b border-gray-200 pb-4">
+                            <img src="https://images.pexels.com/photos/3777876/pexels-photo-3777876.jpeg"
+                                alt="Article Image" class="w-full sm:w-[120px] h-[80px] object-cover mb-2 sm:mb-0">
+                            <h3 class="text-[16px] font-bold leading-[24px] self-start">
+                                U.S. Navy raids tuna boat in Caribbean, Venezuela says, as tensions escalate
+                            </h3>
+                        </div>
+
+                        <!-- Article 4 -->
+                        <div class="flex flex-col sm:flex-row sm:space-x-4 self-start">
+                            <img src="https://images.pexels.com/photos/3777876/pexels-photo-3777876.jpeg"
+                                alt="Article Image" class="w-full sm:w-[120px] h-[80px] object-cover mb-2 sm:mb-0">
+                            <h3 class="text-[16px] font-bold leading-[24px] self-start">
+                                U.S. Navy raids tuna boat in Caribbean, Venezuela says, as tensions escalate
+                            </h3>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <!-- Business PORTION -->
+        <div class="max-w-7xl mx-auto px-2 md:px-0">
+
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+
+                <!-- Left Column: Big + Small Articles -->
+                <div class="md:col-span-8">
+
+                    <!-- Business Heading -->
+                    <h2 class="text-[24px] font-bold border-t-2 border-black py-2 mt-6">
+                        Business
+                    </h2>
+
+                    <!-- Main Flex Row -->
+                    <div class="flex flex-col md:flex-row gap-6">
+
+                        <!-- Left Big Article -->
+                        <div class="md:w-[445px] border-r pr-3">
+                            <img src="https://images.pexels.com/photos/12256847/pexels-photo-12256847.jpeg"
+                                alt="Main Article" class="w-full h-[295px] object-cover mb-4">
+                            <h2 class="text-[30px] font-extrabold leading-[34px] mb-2">
+                                Why did Giorgio Armani abandon 50 years of independence in his final will?
+                            </h2>
+                            <p class="text-gray-600 text-[14px]">
+                                Why did Giorgio Armani abandon 50 years of independence in his final will?
+                            </p>
+                        </div>
+
+                        <!-- Right Small Articles Grid -->
+                        <div class="flex gap-6 flex-1">
+
+                            <!-- Left Column -->
+                            <div class="flex flex-col gap-4 flex-1">
+
+                                <!-- Article 1 -->
+                                <div class="flex flex-col items-start gap-2 pb-2 border-b border-gray-300">
+                                    <img src="https://images.pexels.com/photos/19453624/pexels-photo-19453624.jpeg"
+                                        alt="Article" class="w-[160px] h-[100px] object-cover">
+                                    <h3 class="text-[16px] font-bold leading-[24px]">
+                                        Why is Apple preparing consumers for $2,000 iPhones?
+                                    </h3>
+                                </div>
+
+                                <!-- Article 2 -->
+                                <div class="flex flex-col items-start gap-2">
+                                    <img src="https://images.pexels.com/photos/19453624/pexels-photo-19453624.jpeg"
+                                        alt="Article" class="w-[160px] h-[100px] object-cover">
+                                    <h3 class="text-[16px] font-bold leading-[24px]">
+                                        L.A.’s Original Pantry to reopen with new owner and same workers
+                                    </h3>
+                                </div>
+
+                            </div>
+
+                            <!-- Divider -->
+                            <div class="w-px bg-gray-300"></div>
+
+                            <!-- Right Column -->
+                            <div class="flex flex-col gap-4 flex-1">
+
+                                <!-- Article 1 -->
+                                <div class="flex flex-col items-start gap-2 pb-2 border-b border-gray-300">
+                                    <img src="https://images.pexels.com/photos/19453624/pexels-photo-19453624.jpeg"
+                                        alt="Article" class="w-[160px] h-[100px] object-cover">
+                                    <h3 class="text-[16px] font-bold leading-[24px]">
+                                        Why is Apple preparing consumers for $2,000 iPhones?
+                                    </h3>
+                                </div>
+
+                                <!-- Article 2 -->
+                                <div class="flex flex-col items-start gap-2">
+                                    <img src="https://images.pexels.com/photos/19453624/pexels-photo-19453624.jpeg"
+                                        alt="Article" class="w-[160px] h-[100px] object-cover">
+                                    <h3 class="text-[16px] font-bold leading-[24px]">
+                                        L.A.’s Original Pantry to reopen with new owner and same workers
+                                    </h3>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Right Column: List of Articles -->
+                <div class="md:col-span-4 md:border-l md:pl-6">
+
+                    <!-- Heading -->
+                    <h2 class="text-[24px] font-bold border-t-2  border-black py-2 mt-6">
+                        Hollywood Inc.
+                    </h2>
+
+                    <div class="space-y-4">
+
+                        <!-- Article 1 -->
+                        <div class="flex flex-col sm:flex-row sm:space-x-4 self-start border-b border-gray-200 pb-4">
+                            <img src="https://images.pexels.com/photos/12385474/pexels-photo-12385474.jpeg"
+                                alt="Article Image" class="w-full sm:w-[120px] h-[80px] object-cover mb-2 sm:mb-0">
+                            <h3 class="text-[16px] font-bold leading-[24px] self-start">
+                                U.S. Navy raids tuna boat in Caribbean, Venezuela says, as tensions escalate
+                            </h3>
+                        </div>
+
+                        <!-- Article 2 -->
+                        <div class="flex flex-col sm:flex-row sm:space-x-4 self-start border-b border-gray-200 pb-4">
+                            <img src="https://images.pexels.com/photos/12385474/pexels-photo-12385474.jpeg"
+                                alt="Article Image" class="w-full sm:w-[120px] h-[80px] object-cover mb-2 sm:mb-0">
+                            <h3 class="text-[16px] font-bold leading-[24px] self-start">
+                                U.S. Navy raids tuna boat in Caribbean, Venezuela says, as tensions escalate
+                            </h3>
+                        </div>
+
+                        <!-- Article 3 -->
+                        <div class="flex flex-col sm:flex-row sm:space-x-4 self-start border-b border-gray-200 pb-4">
+                            <img src="https://images.pexels.com/photos/12385474/pexels-photo-12385474.jpeg"
+                                alt="Article Image" class="w-full sm:w-[120px] h-[80px] object-cover mb-2 sm:mb-0">
+                            <h3 class="text-[16px] font-bold leading-[24px] self-start">
+                                U.S. Navy raids tuna boat in Caribbean, Venezuela says, as tensions escalate
+                            </h3>
+                        </div>
+
+                        <!-- Article 4 -->
+                        <div class="flex flex-col sm:flex-row sm:space-x-4 self-start">
+                            <img src="https://images.pexels.com/photos/12385474/pexels-photo-12385474.jpeg"
+                                alt="Article Image" class="w-full sm:w-[120px] h-[80px] object-cover mb-2 sm:mb-0">
+                            <h3 class="text-[16px] font-bold leading-[24px] self-start">
+                                U.S. Navy raids tuna boat in Caribbean, Venezuela says, as tensions escalate
+                            </h3>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+
+        <!--Sports PORTION -->
+        <div class="max-w-7xl mx-auto px-2 md:px-0">
+
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+
+                <!-- Left Column: Big + Small Articles -->
+                <div class="md:col-span-8">
+
+                    <!-- Business Heading -->
+                    <h2 class="text-[24px] font-bold border-t-2 border-black py-2 mt-6">
+                        Sports
+                    </h2>
+
+                    <!-- Main Flex Row -->
+                    <div class="flex flex-col md:flex-row gap-6">
+
+                        <!-- Left Big Article -->
+                        <div class="md:w-[445px] border-r pr-3">
+                            <img src="https://images.pexels.com/photos/12256847/pexels-photo-12256847.jpeg"
+                                alt="Main Article" class="w-full h-[295px] object-cover mb-4">
+                            <h2 class="text-[30px] font-extrabold leading-[34px] mb-2">
+                                Why did Giorgio Armani abandon 50 years of independence in his final will?
+                            </h2>
+                            <p class="text-gray-600 text-[14px]">
+                                Why did Giorgio Armani abandon 50 years of independence in his final will?
+                            </p>
+                        </div>
+
+                        <!-- Right Small Articles Grid -->
+                        <div class="flex gap-6 flex-1">
+
+                            <!-- Left Column -->
+                            <div class="flex flex-col gap-4 flex-1">
+
+                                <!-- Article 1 -->
+                                <div class="flex flex-col items-start gap-2 pb-2 border-b border-gray-300">
+                                    <img src="https://images.pexels.com/photos/19453624/pexels-photo-19453624.jpeg"
+                                        alt="Article" class="w-[160px] h-[100px] object-cover">
+                                    <h3 class="text-[16px] font-bold leading-[24px]">
+                                        Why is Apple preparing consumers for $2,000 iPhones?
+                                    </h3>
+                                </div>
+
+                                <!-- Article 2 -->
+                                <div class="flex flex-col items-start gap-2">
+                                    <img src="https://images.pexels.com/photos/19453624/pexels-photo-19453624.jpeg"
+                                        alt="Article" class="w-[160px] h-[100px] object-cover">
+                                    <h3 class="text-[16px] font-bold leading-[24px]">
+                                        L.A.’s Original Pantry to reopen with new owner and same workers
+                                    </h3>
+                                </div>
+
+                            </div>
+
+                            <!-- Divider -->
+                            <div class="w-px bg-gray-300"></div>
+
+                            <!-- Right Column -->
+                            <div class="flex flex-col gap-4 flex-1">
+
+                                <!-- Article 1 -->
+                                <div class="flex flex-col items-start gap-2 pb-2 border-b border-gray-300">
+                                    <img src="https://images.pexels.com/photos/19453624/pexels-photo-19453624.jpeg"
+                                        alt="Article" class="w-[160px] h-[100px] object-cover">
+                                    <h3 class="text-[16px] font-bold leading-[24px]">
+                                        Why is Apple preparing consumers for $2,000 iPhones?
+                                    </h3>
+                                </div>
+
+                                <!-- Article 2 -->
+                                <div class="flex flex-col items-start gap-2">
+                                    <img src="https://images.pexels.com/photos/19453624/pexels-photo-19453624.jpeg"
+                                        alt="Article" class="w-[160px] h-[100px] object-cover">
+                                    <h3 class="text-[16px] font-bold leading-[24px]">
+                                        L.A.’s Original Pantry to reopen with new owner and same workers
+                                    </h3>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Plants and Home Heading -->
+                    <h2 class="text-[24px] font-bold border-t-2 border-black py-2 mt-6">
+                        Plants and Home
+                    </h2>
+
+                    <!-- Main Flex Row -->
+                    <div class="flex flex-col md:flex-row gap-6">
+
+                        <!-- Left Big Article -->
+                        <div class="md:w-[445px] border-r pr-3">
+                            <img src="https://images.pexels.com/photos/7105593/pexels-photo-7105593.jpeg"
+                                alt="Main Article" class="w-full h-[295px] object-cover mb-4">
+                            <h2 class="text-[30px] font-extrabold leading-[34px] mb-2">
+                                Why did Giorgio Armani abandon 50 years of independence in his final will?
+                            </h2>
+                            <p class="text-gray-600 text-[14px]">
+                                Why did Giorgio Armani abandon 50 years of independence in his final will?
+                            </p>
+                        </div>
+
+                        <!-- Right Small Articles Grid -->
+                        <div class="flex gap-6 flex-1">
+
+                            <!-- Left Column -->
+                            <div class="flex flex-col gap-4 flex-1">
+
+                                <!-- Article 1 -->
+                                <div class="flex flex-col items-start gap-2 pb-2 border-b border-gray-300">
+                                    <img src="https://images.pexels.com/photos/19453624/pexels-photo-19453624.jpeg"
+                                        alt="Article" class="w-[160px] h-[100px] object-cover">
+                                    <h3 class="text-[16px] font-bold leading-[24px]">
+                                        Why is Apple preparing consumers for $2,000 iPhones?
+                                    </h3>
+                                </div>
+
+                                <!-- Article 2 -->
+                                <div class="flex flex-col items-start gap-2">
+                                    <img src="https://images.pexels.com/photos/7105593/pexels-photo-7105593.jpeg"
+                                        alt="Article" class="w-[160px] h-[100px] object-cover">
+                                    <h3 class="text-[16px] font-bold leading-[24px]">
+                                        L.A.’s Original Pantry to reopen with new owner and same workers
+                                    </h3>
+                                </div>
+
+                            </div>
+
+                            <!-- Divider -->
+                            <div class="w-px bg-gray-300"></div>
+
+                            <!-- Right Column -->
+                            <div class="flex flex-col gap-4 flex-1">
+
+                                <!-- Article 1 -->
+                                <div class="flex flex-col items-start gap-2 pb-2 border-b border-gray-300">
+                                    <img src="https://images.pexels.com/photos/19453624/pexels-photo-19453624.jpeg"
+                                        alt="Article" class="w-[160px] h-[100px] object-cover">
+                                    <h3 class="text-[16px] font-bold leading-[24px]">
+                                        Why is Apple preparing consumers for $2,000 iPhones?
+                                    </h3>
+                                </div>
+
+                                <!-- Article 2 -->
+                                <div class="flex flex-col items-start gap-2">
+                                    <img src="https://images.pexels.com/photos/19453624/pexels-photo-19453624.jpeg"
+                                        alt="Article" class="w-[160px] h-[100px] object-cover">
+                                    <h3 class="text-[16px] font-bold leading-[24px]">
+                                        L.A.’s Original Pantry to reopen with new owner and same workers
+                                    </h3>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Right Column: List of Articles -->
+                <div class="md:col-span-4 md:border-l md:pl-6 lg:sticky lg:top-4 self-start h-fit">
+
+                    <!-- Heading -->
+                    <h2 class="text-[24px] font-extrabold border-t-2  border-black py-2 mt-6">
+                        Newspaper
+                    </h2>
+
+                    <div class="space-y-4">
+
+                        <!-- Article 1 -->
+                        <div class="flex flex-col sm:flex-row sm:space-x-4 self-start border-b border-gray-200 pb-4">
+                            <h3 class="text-[18px] font-bold leading-[21px] self-start">
+                                U.S. Navy raids tuna boat in Caribbean, Venezuela says, as tensions escalate
+                            </h3>
+                        </div>
+
+                        <!-- Article 2 -->
+                        <div class="flex flex-col sm:flex-row sm:space-x-4 self-start border-b border-gray-200 pb-4">
+                            <h3 class="text-[18px] font-bold leading-[21px] self-start">
+                                U.S. Navy raids tuna boat in Caribbean, Venezuela says, as tensions escalate
+                            </h3>
+                        </div>
+
+                        <!-- Article 3 -->
+                        <div class="flex flex-col sm:flex-row sm:space-x-4 self-start border-b border-gray-200 pb-4">
+                            <h3 class="text-[18px] font-bold leading-[21px] self-start">
+                                U.S. Navy raids tuna boat in Caribbean, Venezuela says, as tensions escalate
+                            </h3>
+                        </div>
+
+                        <!-- Article 4 -->
+                        <div class="flex flex-col sm:flex-row sm:space-x-4 self-start">
+                            <h3 class="text-[18px] font-bold leading-[21px] self-start">
+                                U.S. Navy raids tuna boat in Caribbean, Venezuela says, as tensions escalate
+                            </h3>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+
+
+        <!-- DIVIDER -->
+        <div class="border border-black mb-4 mt-8"></div>
+
+        <!--L.A. Timeless: Archive Classics section -->
+        <div class="mb-4">
+            <h2 class="text-[24px] font-extrabold">EL.A. Timeless: Archive Classics</h2>
+        </div>
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 bg-black overflow-hidden">
+
+                <!-- Left Side: Text -->
+                <div class="p-12 flex flex-col justify-center text-white">
+                    <p class="uppercase text-gray-400 text-sm tracking-wide mb-2">California</p>
+                    <h1 class="text-3xl md:text-4xl font-bold leading-tight mb-4 hover:text-gray-300 transition-colors">
+                        Pali High football: A team of wildfire nomads searches for normalcy
+                    </h1>
+                    <p class="text-gray-300 text-base leading-relaxed">
+                        After Palisades Charter High School’s campus burned in January’s Palisades fire, the future of
+                        the school’s football program was in question. Could it survive the upheaval?
+                    </p>
+                </div>
+
+                <!-- Right Side: Image/Video -->
+                <div class="relative">
+                    <img src="https://images.pexels.com/photos/6896331/pexels-photo-6896331.jpeg" alt="Football Team"
+                        class="w-full h-full object-cover">
+                    <button class="absolute inset-0 flex items-center justify-center">
+                        <div
+                            class="bg-white/80 rounded-full w-16 h-16 flex items-center justify-center shadow-lg hover:bg-white transition">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-black" fill="currentColor"
+                                viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M6.5 5.5a1 1 0 011.5-.866l7 4a1 1 0 010 1.732l-7 4A1 1 0 016.5 13.5v-8z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+        <!--De Los PORTION -->
+        <div class="max-w-7xl mx-auto px-2 md:px-0 mt-6">
+
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+
+                <!-- Left Column: Big + Small Articles -->
+                <div class="md:col-span-8 space-y-6">
+
+                    <!-- Section Title -->
+                    <div class="mb-4">
+                        <div class="border border-black mb-4"></div>
+                        <h2 class="text-[24px] font-extrabold">De Los <span>›</span></h2>
+                    </div>
+
+                    <!-- Articles Grid -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <!-- Article 1 -->
+                        <div>
+                            <img src="https://images.pexels.com/photos/3812729/pexels-photo-3812729.jpeg" alt="Food 1"
+                                class="w-full h-auto mb-3">
+                            <h3 class="text-[18px] font-bold leading-[21px]">
+                                Head to Orange County for the best sourdough in the universe. And it’s purple
+                            </h3>
+                        </div>
+                        <!-- Article 2 -->
+                        <div>
+                            <img src="https://images.pexels.com/photos/3812729/pexels-photo-3812729.jpeg" alt="Food 2"
+                                class="w-full h-auto mb-3">
+                            <h3 class="text-[18px] font-bold leading-[21px]">
+                                Readers tell us their top dining spots in the Valley
+                            </h3>
+                        </div>
+                        <!-- Article 3 -->
+                        <div>
+                            <img src="https://images.pexels.com/photos/3812729/pexels-photo-3812729.jpeg" alt="Food 3"
+                                class="w-full h-auto mb-3">
+                            <h3 class="text-[18px] font-bold leading-[21px]">
+                                L.A.’s best new Japanese tea shop has beautiful matcha lattes. That’s only the beginning
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: List of Articles -->
+                <div class="md:col-span-4 md:border-l md:pl-6 lg:sticky lg:top-4 self-start h-fit">
+
+                    <!-- Heading -->
+                    <h2 class="text-[24px] font-extrabold border-t-2  border-black py-2">
+                        Newspaper
+                    </h2>
+
+                    <div class="space-y-4">
+
+                        <!-- Article 1 -->
+                        <div class="flex flex-col sm:flex-row sm:space-x-4 self-start border-b border-gray-200 pb-4">
+                            <h3 class="text-[18px] font-bold leading-[21px] self-start">
+                                U.S. Navy raids tuna boat in Caribbean, Venezuela says, as tensions escalate
+                            </h3>
+                        </div>
+
+                        <!-- Article 2 -->
+                        <div class="flex flex-col sm:flex-row sm:space-x-4 self-start border-b border-gray-200 pb-4">
+                            <h3 class="text-[18px] font-bold leading-[21px] self-start">
+                                U.S. Navy raids tuna boat in Caribbean, Venezuela says, as tensions escalate
+                            </h3>
+                        </div>
+
+                        <!-- Article 3 -->
+                        <div class="flex flex-col sm:flex-row sm:space-x-4 self-start border-b border-gray-200 pb-4">
+                            <h3 class="text-[18px] font-bold leading-[21px] self-start">
+                                U.S. Navy raids tuna boat in Caribbean, Venezuela says, as tensions escalate
+                            </h3>
+                        </div>
+
+                        <!-- Article 4 -->
+                        <div class="flex flex-col sm:flex-row sm:space-x-4 self-start">
+                            <h3 class="text-[18px] font-bold leading-[21px] self-start">
+                                U.S. Navy raids tuna boat in Caribbean, Venezuela says, as tensions escalate
+                            </h3>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+
+
+        <!-- DIVIDER -->
+        <div class="border border-black mb-4 mt-8"></div>
+
+        <!--Image section -->
+        <div class="mb-4">
+            <h2 class="text-[24px] font-extrabold">Image</h2>
+        </div>
+        <div class="w-full max-w-full mx-auto ">
+            <div class="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr_auto_1fr_auto_1fr] gap-4">
+
+                <!-- Article 1 -->
+                <div class="p-0">
+                    <img src="https://images.pexels.com/photos/2990644/pexels-photo-2990644.jpeg" alt="Article 1"
+                        class="w-full h-48 object-cover mb-4">
+                    <h2
+                        class="text-18px font-bold leading-[22px] hover:text-gray-600 transition-colors cursor-pointer px-2">
+                        Heading back to Downton Abbey for ‘The Grand Finale’ yields a comfortable catharsis
+                    </h2>
+                </div>
+
+                <!-- Divider 1 -->
+                <div class="hidden md:block w-px bg-gray-200 mx-auto"></div>
+
+                <!-- Article 2 -->
+                <div class="p-0">
+                    <img src="https://images.pexels.com/photos/20805596/pexels-photo-20805596.jpeg" alt="Article 2"
+                        class="w-full h-48 object-cover mb-4">
+                    <h2
+                        class="text-18px font-bold leading-[22px] hover:text-gray-600 transition-colors cursor-pointer px-2">
+                        ‘The Long Walk’ is a straight line to one of Stephen King’s darkest concepts
+                    </h2>
+                </div>
+
+                <!-- Divider 2 -->
+                <div class="hidden md:block w-px bg-gray-200 mx-auto"></div>
+
+                <!-- Article 3 -->
+                <div class="p-0">
+                    <img src="https://images.pexels.com/photos/20805596/pexels-photo-20805596.jpeg" alt="Article 3"
+                        class="w-full h-48 object-cover mb-4">
+                    <h2
+                        class="text-18px font-bold leading-[22px] hover:text-gray-600 transition-colors cursor-pointer px-2">
+                        ‘Task,’ from creator of ‘Mare of Easttown,’ is centered on two tenderhearted, tragic men
+                    </h2>
+                </div>
+
+                <!-- Divider 3 -->
+                <div class="hidden md:block w-px bg-gray-200 mx-auto "></div>
+
+                <!-- Article 4 -->
+                <div class="p-0">
+                    <img src="https://images.pexels.com/photos/20805596/pexels-photo-20805596.jpeg" alt="Article 4"
+                        class="w-full h-48 object-cover mb-4">
+                    <h2
+                        class="text-18px font-bold leading-[22px] hover:text-gray-400 transition-colors cursor-pointer px-2">
+                        ‘Seen & Heard’ examines Black TV history, shining light on its successes and struggles
+                    </h2>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- DIVIDER -->
+        <div class="border border-black mb-4 mt-8"></div>
+
+        <!--Visual Storytelling section -->
+        <div class="mb-4">
+            <h2 class="text-[24px] font-extrabold">Visual Storytelling</h2>
+        </div>
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 bg-black overflow-hidden">
+
+                <!-- Left Side: Text -->
+                <div class="p-12 flex flex-col justify-center text-white">
+                    <p class="uppercase text-gray-400 text-sm tracking-wide mb-2">California</p>
+                    <h1 class="text-3xl md:text-4xl font-bold leading-tight mb-4 hover:text-gray-300 transition-colors">
+                        Pali High football: A team of wildfire nomads searches for normalcy
+                    </h1>
+                    <p class="text-gray-300 text-base leading-relaxed">
+                        After Palisades Charter High School’s campus burned in January’s Palisades fire, the future of
+                        the school’s football program was in question. Could it survive the upheaval?
+                    </p>
+                </div>
+
+                <!-- Right Side: Image/Video -->
+                <div class="relative">
+                    <img src="https://images.pexels.com/photos/3379934/pexels-photo-3379934.jpeg" alt="Football Team"
+                        class="w-full h-full object-cover">
+                    <button class="absolute inset-0 flex items-center justify-center">
+                        <div
+                            class="bg-white/80 rounded-full w-16 h-16 flex items-center justify-center shadow-lg hover:bg-white transition">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-black" fill="currentColor"
+                                viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M6.5 5.5a1 1 0 011.5-.866l7 4a1 1 0 010 1.732l-7 4A1 1 0 016.5 13.5v-8z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- DIVIDER -->
+        <div class="border border-black mb-4 mt-8"></div>
+
+        <!-- Events, Offers and Promotions section -->
+        <div class="mb-4">
+            <h2 class="text-[24px] font-extrabold">Events, Offers and Promotions</h2>
+        </div>
+        <div class="w-full max-w-[1200px] mx-auto px-2 md:px-0 py-2">
+            <div class="flex flex-wrap justify-between gap-4">
+
+                <!-- Article 1 -->
+                <div class="flex flex-col w-full sm:w-[calc(20%-0.8rem)]">
+                    <img src="https://images.pexels.com/photos/7987750/pexels-photo-7987750.jpeg" alt="Article 1"
+                        class="w-full h-[150px] object-cover">
+                    <h2 class="mt-2 text-[18px] font-semibold leading-[21px] hover:text-gray-700">
+                        The 21 movies we’re most excited to see this fall
+                    </h2>
+                </div>
+
+                <!-- Article 2 -->
+                <div class="flex flex-col w-full sm:w-[calc(20%-0.8rem)]">
+                    <img src="https://images.pexels.com/photos/7987750/pexels-photo-7987750.jpeg" alt="Article 2"
+                        class="w-full h-[150px] object-cover">
+                    <h2 class="mt-2 text-[18px] font-semibold leading-[21px] hover:text-gray-700">
+                        Spinal Tap is back and ready to talk. Just don’t bring up the last movie
+                    </h2>
+                </div>
+
+                <!-- Article 3 -->
+                <div class="flex flex-col w-full sm:w-[calc(20%-0.8rem)]">
+                    <img src="https://images.pexels.com/photos/712618/pexels-photo-712618.jpeg" alt="Article 3"
+                        class="w-full h-[150px] object-cover">
+                    <h2 class="mt-2 text-[18px] font-semibold leading-[21px] hover:text-gray-700">
+                        16 TV shows we’re excited to watch this fall
+                    </h2>
+                </div>
+
+                <!-- Article 4 -->
+                <div class="flex flex-col w-full sm:w-[calc(20%-0.8rem)]">
+                    <img src="https://images.pexels.com/photos/7987750/pexels-photo-7987750.jpeg" alt="Article 4"
+                        class="w-full h-[150px] object-cover">
+                    <h2 class="mt-2 text-[18px] font-semibold leading-[21px] hover:text-gray-700">
+                        Domhnall Gleeson isn’t Superman. But in ‘The Office’ spinoff ‘The Paper,’ he can be Clark Kent
+                    </h2>
+                </div>
+
+                <!-- Article 5 -->
+                <div class="flex flex-col w-full sm:w-[calc(20%-0.8rem)]">
+                    <img src="https://images.pexels.com/photos/712618/pexels-photo-712618.jpeg" alt="Article 5"
+                        class="w-full h-[150px] object-cover">
+                    <h2 class="mt-2 text-[18px] font-semibold leading-[21px] hover:text-gray-700">
+                        The 16 most intriguing SoCal theater offerings this fall season
+                    </h2>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Things to do section -->
+        <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-6 divide-x divide-gray-300 items-stretch">
+            <!-- Column 1 -->
+            <div class="flex flex-col h-full px-4">
+                <h2 class="text-[20px] font-extrabold mb-3 border-t-2 border-black pt-4">
+                    Things to Do <span>›</span>
+                </h2>
+                <!-- Responsive image -->
+                <div class="w-full aspect-[3/2] mb-3">
+                    <img src="https://images.pexels.com/photos/760731/pexels-photo-760731.jpeg" alt="Article"
+                        class="w-full h-full object-cover">
+                </div>
+                <p class="text-[12px] font-bold text-teal-600 uppercase mb-1">For Subscribers</p>
+                <h3 class="text-[18px] font-bold leading-[21px] mb-3 border-b border-gray-200 pb-4">
+                    Glorya Kaufman’s final gift to L.A.? A $17-million wellness hub where everything is free
+                </h3>
+                <div class="space-y-3 text-[15px] leading-[18px] font-medium flex-1">
+                    <p class="border-b border-gray-200 pb-4"><span class="italic font-semibold">Review</span> Why
+                        doesn’t Mei Lin’s cuisine roar at 88 Club?</p>
+                    <p class="border-b border-gray-200 pb-4">The most exciting immersive show in L.A. right now is a
+                        funeral</p>
+                    <p class="border-b border-gray-200 pb-4">John Burton, powerful liberal who shaped California
+                        politics for decades, dies</p>
+                    <p>‘It’s like real-life Instagram’: The rise of junk journaling in L.A.</p>
+                </div>
+            </div>
+
+            <!-- Column 2 -->
+            <div class="flex flex-col h-full px-4">
+                <h2 class="text-[20px] font-extrabold mb-3 border-t-2 border-black pt-4">
+                    L.A. Affairs <span>›</span>
+                </h2>
+                <div class="w-full aspect-[3/2] mb-3">
+                    <img src="https://images.pexels.com/photos/760731/pexels-photo-760731.jpeg" alt="Article"
+                        class="w-full h-full object-cover">
+                </div>
+                <h3 class="text-[18px] font-bold leading-[21px] mb-3 border-b border-gray-200 pb-4">
+                    L.A. Affairs: Do I really love him? Or do I just hate myself?
+                </h3>
+                <div class="space-y-3 text-[15px] leading-[18px] font-medium flex-1">
+                    <p class="border-b border-gray-200 pb-4">L.A. Affairs: Could a couch-surfing gringo dance his way
+                        into my heart?</p>
+                    <p class="border-b border-gray-200 pb-4">L.A. Affairs: I was navigating L.A. to find my perfect
+                        match. But would I really meet her?</p>
+                    <p class="border-b border-gray-200 pb-4">John Burton, powerful liberal who shaped California
+                        politics for decades, dies</p>
+                    <p>L.A. Affairs: My boyfriend told me that he didn’t want to get married again. Dealbreaker?</p>
+                </div>
+            </div>
+
+            <!-- Column 3 -->
+            <div class="flex flex-col h-full px-4">
+                <h2 class="text-[20px] font-extrabold mb-3 border-t-2 border-black pt-4">
+                    Investigations <span>›</span>
+                </h2>
+                <div class="w-full aspect-[3/2] mb-3">
+                    <img src="https://images.pexels.com/photos/760731/pexels-photo-760731.jpeg" alt="Article"
+                        class="w-full h-full object-cover">
+                </div>
+                <h3 class="text-[18px] font-bold leading-[21px] mb-3 border-b border-gray-200 pb-4">
+                    Contamination fears drive push to remake state cannabis agency
+                </h3>
+                <div class="space-y-3 text-[15px] leading-[18px] font-medium flex-1">
+                    <p class="border-b border-gray-200 pb-4">California lawmakers propose banning sales from dog brokers
+                        in crackdown on puppy pipeline</p>
+                    <p class="text-teal-600 font-bold uppercase text-[12px]">For Subscribers</p>
+                    <p class="border-b border-gray-200 pb-4">Escape from the Palisades: Split-second decision-making,
+                        confusing responses</p>
+                    <p class="text-teal-600 font-bold uppercase text-[12px]">For Subscribers</p>
+                    <p>An ex-NBA player’s plan for a $5-billion Las Vegas arena is an empty pit. What went wrong?</p>
+                </div>
+            </div>
+
+            <!-- Column 4 -->
+            <div class="flex flex-col h-full px-4">
+                <h2 class="text-[20px] font-extrabold mb-3 border-t-2 border-black pt-4">
+                    Obituaries <span>›</span>
+                </h2>
+                <div class="w-full aspect-[3/2] mb-3">
+                    <img src="https://images.pexels.com/photos/760731/pexels-photo-760731.jpeg" alt="Article"
+                        class="w-full h-full object-cover">
+                </div>
+                <h3 class="text-[18px] font-bold leading-[21px] mb-3 border-b border-gray-200 pb-4">
+                    Polly Holliday, ‘Alice’ star who coined ‘Kiss my grits’ as sassy waitress Flo, dies at 88
+                </h3>
+                <div class="space-y-3 text-[15px] leading-[18px] font-medium flex-1">
+                    <p class="border-b border-gray-200 pb-4">David Baltimore, Nobel Prize-winning scientist and former
+                        Caltech president, dies at 87</p>
+                    <p class="border-b border-gray-200 pb-4">John Burton, powerful liberal who shaped California
+                        politics for decades, dies</p>
+                        <p class="border-b border-gray-200 pb-4">John Burton, powerful liberal who shaped California
+                        politics for decades, dies</p>
+                    <p class="">Bill Christine, award-winning horse racing reporter and
+                        author, dies at 87</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-4">
+        <div class="text-center text-[20px] font-bold">
+            NEWSPARK-CRYPTO&copy; <span id="year"></span> All Rights Reserved.
+        </div>
+    </footer>
+    <!-- JS CODE -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+
+</html>
