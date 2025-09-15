@@ -732,63 +732,75 @@
         </div>
 
         <!-- Column 3 -->
-        <div class="flex-1 p-4 md:pr-0 lg:sticky lg:top-4 self-start h-fit">
-            <div class="max-w-sm border p-4">
-                <!-- Title -->
-                <h2 class="text-lg font-semibold mb-4">HOT TAGS TODAY</h2>
+        <div class="flex-1 md:pl-6 md:border-l md:border-gray-200 lg:sticky lg:top-4 self-start h-fit">
+                <h3 class="font-bold text-lg border-b pb-2 mb-4">Upcomming Blogs</h3>
 
-                <!-- Tags -->
-                <div class="flex flex-wrap gap-2">
-                    <span class="px-3 py-1 border text-sm cursor-pointer hover:bg-gray-100">2 Columns Posts</span>
-                    <span class="px-3 py-1 border text-sm cursor-pointer hover:bg-gray-100">3 Columns Posts</span>
-                    <span class="px-3 py-1 border text-sm cursor-pointer hover:bg-gray-100">Latest News</span>
-                    <span class="px-3 py-1 border text-sm cursor-pointer hover:bg-gray-100">Latest News Slider</span>
-                    <span class="px-3 py-1 border text-sm cursor-pointer hover:bg-gray-100">Popular Posts</span>
-                    <span class="px-3 py-1 border text-sm cursor-pointer hover:bg-gray-100">Recently Post</span>
+                <!-- Top Trending -->
+                <div class="relative w-full h-32 rounded overflow-hidden mb-4">
+                    <img src="https://images.pexels.com/photos/33339461/pexels-photo-33339461.jpeg" alt="Real Estate"
+                        class="w-full h-full object-cover">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent p-2 flex flex-col justify-end">
+                        <span class="w-fit bg-[#40798C] text-white text-xs font-normal px-2 py-1 rounded">News</span>
+                        <h4 class="font-semibold mt-1 text-white cursor-pointer text-sm md:text-base">
+                            Real Estate in California
+                        </h4>
+                    </div>
                 </div>
-            </div>
+                <!-- Top Trending -->
+                <div class="relative w-full h-32 rounded overflow-hidden mb-4">
+                    <img src="https://images.pexels.com/photos/33339461/pexels-photo-33339461.jpeg" alt="Real Estate"
+                        class="w-full h-full object-cover">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent p-2 flex flex-col justify-end">
+                        <span class="w-fit bg-[#40798C] text-white text-xs font-normal px-2 py-1 rounded">News</span>
+                        <h4 class="font-semibold mt-1 text-white cursor-pointer text-sm md:text-base">
+                            Real Estate in California
+                        </h4>
+                    </div>
+                </div>
 
-            <hr class="border-gray-200 mt-4 mb-4">
-
-            <div class="max-w-sm">
-                <!-- Title -->
-                <h2 class="text-sm font-semibold tracking-wider mb-4">STAY CONNECTED</h2>
-
-                <!-- List -->
+                <!-- Numbered Trending -->
                 <div class="space-y-4">
-                    <!-- Item 1 -->
-                    <div class="flex items-center space-x-3 border-b pb-3">
-                        <img src="https://picsum.photos/80/80?random=1" alt="Kayak"
-                            class="w-14 h-14 rounded-full border-2 border-red-400 object-cover">
-                        <span class="text-sm font-semibold">Kayak stories</span>
+                    <!-- NUMBER 1 -->
+                    <div class="flex border-b border-gray-200 pb-3">
+                        <div class="flex items-center justify-center pr-3 border-r border-gray-300">
+                            <span class="text-2xl md:text-3xl font-extrabold text-gray-400">1</span>
+                        </div>
+                        <div class="pl-3">
+                            <span
+                                class="w-fit bg-[#40798C] text-white text-xs font-normal px-2 py-1 rounded">News</span>
+                            <p class="font-medium mt-1 leading-snug cursor-pointer">
+                                Elon Musk got Twitter because he gets Twitter
+                            </p>
+                        </div>
                     </div>
-
-                    <!-- Item 2 -->
-                    <div class="flex items-center space-x-3 border-b pb-3">
-                        <img src="https://picsum.photos/80/80?random=2" alt="Developers"
-                            class="w-14 h-14 rounded-full border-2 border-red-400 object-cover">
-                        <span class="text-sm font-semibold">6 Tips Successful for Developers</span>
+                    <!-- NUMBER 2 -->
+                    <div class="flex">
+                        <div class="flex items-center justify-center pr-3 border-r border-gray-300">
+                            <span class="text-2xl md:text-3xl font-extrabold text-gray-400">2</span>
+                        </div>
+                        <div class="pl-3">
+                            <span
+                                class="w-fit bg-[#40798C] text-white text-xs font-normal px-2 py-1 rounded">News</span>
+                            <p class="font-medium mt-1 leading-snug cursor-pointer">
+                                Elon Musk got Twitter because he gets Twitter
+                            </p>
+                        </div>
                     </div>
-
-                    <!-- Item 3 -->
-                    <div class="flex items-center space-x-3">
-                        <img src="https://picsum.photos/80/80?random=3" alt="PS Controller"
-                            class="w-14 h-14 rounded-full border-2 border-red-400 object-cover">
-                        <span class="text-sm font-semibold">PS Controller</span>
-                    </div>
+                    
                 </div>
+
+                <a href="#" class="block text-xs font-medium text-blue-600 hover:underline mt-4 mb-4">See All Posts →</a>
             </div>
-
-
-        </div>
     </div>
 
 
 
-    <hr class="max-w-[1170px] mx-auto border-gray-200 mt-4 mb-4">
+    <!-- <hr class="max-w-[1170px] mx-auto border-gray-200 mt-4 mb-4"> -->
 
     <!-- BUSINESSMAN SECTION -->
-    <div class="bg-[#40798C] py-10 relative">
+    <div class="bg-[#40798C] py-10 relative mt-5">
         <div class="max-w-[1170px] mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8 relative">
 
             <!-- Vertical Divider -->
@@ -877,90 +889,11 @@
         </div>
     </div>
 
-
-    <!-- TOP COMUNIST SECTION -->
-    <div class="bg-white py-6">
-        <div class="max-w-[1170px] mx-auto">
-
-            <!-- Header -->
-            <div class="flex justify-between items-center mb-8 px-4 lg:px-0">
-                <h3 class="uppercase text-sm font-semibold tracking-wide">Top Columnist</h3>
-                <div class="flex gap-2">
-                    <button
-                        class="border rounded-full w-8 h-8 flex items-center justify-center text-gray-600 hover:bg-gray-100">&lt;</button>
-                    <button
-                        class="border rounded-full w-8 h-8 flex items-center justify-center text-gray-600 hover:bg-gray-100">&gt;</button>
-                </div>
-            </div>
-
-            <!-- Columns -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 divide-x divide-gray-200">
-
-                <!-- Columnist Card -->
-                <div class="px-4 lg:px-0 pb-8 text-left">
-                    <div class="px-4">
-                        <img src="https://images.pexels.com/photos/2393789/pexels-photo-2393789.jpeg" alt="Profile"
-                            class="w-24 h-24 rounded-full mb-4 object-cover" />
-                        <h4 class="font-bold text-lg">Luis Diaz</h4>
-                        <p class="text-gray-400 text-sm mt-1">Specialize in</p>
-                        <p class="text-sm font-semibold tracking-wide mt-1">ENTERTAINMENT, CULTURE, WORLD</p>
-                        <p class="text-sm text-gray-600 mt-3">My content focus into business, politics that allows
-                            anyone
-                            with a cellphone to scan.</p>
-                    </div>
-                </div>
-
-                <!-- Columnist Card -->
-                <div class="px-4 lg:px-0 pb-8 text-left">
-                    <div class="px-4">
-                        <img src="https://images.pexels.com/photos/2393789/pexels-photo-2393789.jpeg" alt="Profile"
-                            class="w-24 h-24 rounded-full mb-4 object-cover" />
-                        <h4 class="font-bold text-lg">Luis Diaz</h4>
-                        <p class="text-gray-400 text-sm mt-1">Specialize in</p>
-                        <p class="text-sm font-semibold tracking-wide mt-1">ENTERTAINMENT, CULTURE, WORLD</p>
-                        <p class="text-sm text-gray-600 mt-3">My content focus into business, politics that allows
-                            anyone
-                            with a cellphone to scan.</p>
-                    </div>
-                </div>
-
-                <!-- Columnist Card -->
-                <div class="px-4 lg:px-0 pb-8 text-left">
-                    <div class="px-4">
-                        <img src="https://images.pexels.com/photos/2393789/pexels-photo-2393789.jpeg" alt="Profile"
-                            class="w-24 h-24 rounded-full mb-4 object-cover" />
-                        <h4 class="font-bold text-lg">Luis Diaz</h4>
-                        <p class="text-gray-400 text-sm mt-1">Specialize in</p>
-                        <p class="text-sm font-semibold tracking-wide mt-1">ENTERTAINMENT, CULTURE, WORLD</p>
-                        <p class="text-sm text-gray-600 mt-3">My content focus into business, politics that allows
-                            anyone
-                            with a cellphone to scan.</p>
-                    </div>
-                </div>
-
-                <!-- Columnist Card -->
-                <div class="px-4 lg:px-0 pb-8 text-left">
-                    <div class="px-4">
-                        <img src="https://images.pexels.com/photos/2393789/pexels-photo-2393789.jpeg" alt="Profile"
-                            class="w-24 h-24 rounded-full mb-4 object-cover" />
-                        <h4 class="font-bold text-lg">Luis Diaz</h4>
-                        <p class="text-gray-400 text-sm mt-1">Specialize in</p>
-                        <p class="text-sm font-semibold tracking-wide mt-1">ENTERTAINMENT, CULTURE, WORLD</p>
-                        <p class="text-sm text-gray-600 mt-3">My content focus into business, politics that allows
-                            anyone
-                            with a cellphone to scan.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
     <hr class="max-w-[1170px] mx-auto border-gray-200 mt-4 mb-4">
 
 
     <!-- BUSINESS POLITICS AND MARKET -->
-    <div class="bg-white py-10">
+    <div class="bg-white pt-4 pb-10">
         <div class="max-w-[1170px] mx-auto">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 divide-x divide-gray-200 gap-x-0">
 

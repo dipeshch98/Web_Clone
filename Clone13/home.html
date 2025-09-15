@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clone 13- VALENTI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+
+
+    <style>
+        body {
+            font-family: 'Times New Roman', 'Lora', Times, serif;
+            background: black;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="w-full max-w-[1200px] mx-auto bg-black text-white">
+        <div class="max-w-[1200px] mx-auto w-full px-2 sm:px-0">
+            <!-- Container -->
+            <div class="w-full flex justify-center">
+                <!-- Inner content: exact 1200px width on desktop -->
+                <div class="w-full max-w-[1200px] flex items-center justify-between py-2 md:py-4">
+
+                    <!-- Logo -->
+                    <div class="text-3xl md:text-4xl font-extrabold tracking-wide">
+                        <a href="https://www.latimes.com/" target="_blank" class="">Los Angeles Times</a>
+                    </div>
+
+                    <!-- Nav Links (Desktop) -->
+                    <ul class="hidden md:flex space-x-8 text-base md:text-lg font-medium">
+                        <li><a href="#" class=" hover:underline">HOME</a></li>
+                        <li><a href="#" class="hover:underline">FEATURES</a></li>
+                        <li><a href="#" class="hover:underline">POLITICS</a></li>
+                        <li><a href="#" class="hover:underline">ECONOMY</a></li>
+                        <li><a href="#" class="hover:underline">SCIENCE & TECH</a></li>
+                        <li><a href="#" class="hover:underline">SPORTS</a></li>
+                    </ul>
+
+                    <!-- Mobile Menu Button -->
+                    <div class="md:hidden">
+                        <button id="menu-btn" class="focus:outline-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h16" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile Nav -->
+            <div id="mobile-menu" class="hidden md:hidden w-full px-2 pb-2">
+                <ul class="flex flex-col space-y-3 text-base font-medium">
+                    <li><a href="#" class="hover:text-red-500 transition-colors">HOME</a></li>
+                    <li><a href="#" class="hover:text-red-500 transition-colors">FEATURES</a></li>
+                    <li><a href="#" class="hover:text-red-500 transition-colors">POLITICS</a></li>
+                    <li><a href="#" class="hover:text-red-500 transition-colors">ECONOMY</a></li>
+                    <li><a href="#" class="hover:text-red-500 transition-colors">SCIENCE & TECH</a></li>
+                    <li><a href="#" class="hover:text-red-500 transition-colors">SPORTS</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+
+    <!-- BODY SECTION -->
+    <div class="max-w-[1200px] mx-auto w-full px-2 sm:px-0 mt-8 mb-8">
+        <!-- 1st section -->
+        <div class="w-full max-w-[1200px] mx-auto bg-white">
+
+            <!-- Breaking Section -->
+            <div
+                class="w-full bg-gray-300 flex flex-col md:flex-row items-center justify-between px-4 py-2 text-sm text-gray-700">
+                <!-- Left Text -->
+                <div class="flex items-center gap-1">
+                    <span class="font-semibold uppercase">Breaking</span>
+                    <span class="text-gray-500">→</span>
+                    <span class="text-gray-600">Inventing the Universe</span>
+                </div>
+
+                <!-- Right Social Icons -->
+                <div class="flex items-center gap-4 mt-1 md:mt-0 text-gray-500">
+                    <a href="#" class="hover:text-blue-600"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="hover:text-sky-500"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="hover:text-pink-600"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="hover:text-red-600"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <!-- Top Section -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-1 mt-1">
+
+                <!-- Left Big Image -->
+                <div class="relative h-[250px] md:h-[400px] overflow-hidden group">
+                    <img src="https://images.pexels.com/photos/7987750/pexels-photo-7987750.jpeg" alt="Editor Summer"
+                        class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-black/30 flex items-end">
+                        <div class="p-4 text-white">
+                            <h2 class="text-xl md:text-3xl font-bold">OUR EDITOR’S SUMMER ESSENTIALS</h2>
+                            <p class="text-xs md:text-sm mt-1">👤 Sienna Doe • Design • Nov 15 • 36049</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Big Image -->
+                <div class="relative h-[250px] md:h-[400px] overflow-hidden group">
+                    <img src="https://images.pexels.com/photos/4056316/pexels-photo-4056316.jpeg" alt="Capsule Wardrobe"
+                        class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-black/30 flex items-end">
+                        <div class="p-4 text-white">
+                            <h2 class="text-xl md:text-3xl font-bold">CREATE YOUR CAPSULE WARDROBE</h2>
+                            <p class="text-xs md:text-sm mt-1">Sponsored • Robin Blake • Fashion • Nov 12 • 38364</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Section -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-1 mt-1">
+
+                <!-- Small Image 1 -->
+                <div class="relative h-[200px] md:h-[250px] overflow-hidden group">
+                    <img src="https://images.pexels.com/photos/3225517/pexels-photo-3225517.jpeg" alt="Ethical Pieces"
+                        class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-black/30 flex items-end">
+                        <div class="p-3 text-white">
+                            <h2 class="text-base md:text-xl font-bold">HIGH STREET ETHICAL PIECES</h2>
+                            <p class="text-xs mt-1">👤 Juliette Baker • Fashion • Nov 1 • 16005</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Small Image 2 -->
+                <div class="relative h-[200px] md:h-[250px] overflow-hidden group">
+                    <img src="https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg"
+                        alt="Words with Astronaut"
+                        class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-black/30 flex items-end">
+                        <div class="p-3 text-white">
+                            <h2 class="text-base md:text-xl font-bold">WORDS WITH AN ASTRONAUT</h2>
+                            <p class="text-xs mt-1">Sponsored • Casper Childs • Design • Jun 26 • 22834</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Small Image 3 -->
+                <div class="relative h-[200px] md:h-[250px] overflow-hidden group">
+                    <img src="https://images.pexels.com/photos/4109999/pexels-photo-4109999.jpeg" alt="Rise of AI"
+                        class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-black/30 flex items-end">
+                        <div class="p-3 text-white">
+                            <h2 class="text-base md:text-xl font-bold">THE RISE OF AI IS CLOSER THAN YOU THINK</h2>
+                            <p class="text-xs mt-1">👤 Sienna Doe • Lifestyle • Jun 21 • 21129</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- 2nd section -->
+        <div class="max-w-[1200px] bg-white mx-auto px-8 py-8">
+            <!-- Section Heading -->
+            <div class="bg-gray-100 text-center py-6 border-b-2 border-blue-400">
+                <h2 class="text-2xl md:text-3xl font-bold tracking-wide">LATEST MUSIC</h2>
+                <p class="text-gray-500 mt-2 text-sm md:text-base">This is an optional category description</p>
+            </div>
+
+            <!-- Articles Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-1 mt-1">
+                <!-- Article 1 -->
+                <div class="relative">
+                    <img src="https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg" alt="90s Fashion Game"
+                        class="w-full h-[250px] object-cover" />
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-end p-4 text-white">
+                        <h3 class="font-bold text-lg">90S FASHION GAME</h3>
+                        <div class="flex items-center text-xs space-x-3 mt-1">
+                            <span>👤 Sienna Doe</span>
+                            <span>📁 Hip Hop</span>
+                            <span>⏰ May 27</span>
+                        </div>
+                        <div class="flex items-center text-xs mt-1">
+                            <span>👁️ 10419</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Article 2 -->
+                <div class="relative">
+                    <img src="https://images.pexels.com/photos/36347/pexels-photo.jpg" alt="Protect the Planet"
+                        class="w-full h-[250px] object-cover" />
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-end p-4 text-white">
+                        <h3 class="font-bold text-lg">PROTECT THE PLANET</h3>
+                        <div class="flex items-center text-xs space-x-3 mt-1">
+                            <span>⭐ Sponsored</span>
+                            <span>👤 Robin Blake</span>
+                            <span>📁 Pop</span>
+                            <span>⏰ May 21</span>
+                        </div>
+                        <div class="flex items-center text-xs mt-1">
+                            <span>👁️ 12956</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Article 3 -->
+                <div class="relative">
+                    <img src="https://images.pexels.com/photos/261800/pexels-photo-261800.jpeg"
+                        alt="Nintendo Game Nights" class="w-full h-[250px] object-cover" />
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-end p-4 text-white">
+                        <h3 class="font-bold text-lg">NINTENDO GAME NIGHTS</h3>
+                        <div class="flex items-center text-xs space-x-3 mt-1">
+                            <span>👤 Sienna Doe</span>
+                            <span>📁 Rock & Roll</span>
+                            <span>⏰ Apr 29</span>
+                        </div>
+                        <div class="flex items-center text-xs mt-1">
+                            <span>👁️ 10920</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Article 4 -->
+                <div class="relative">
+                    <img src="https://images.pexels.com/photos/5634632/pexels-photo-5634632.jpeg"
+                        alt="Algorithm Secrets" class="w-full h-[250px] object-cover" />
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-end p-4 text-white">
+                        <h3 class="font-bold text-lg">ALGORITHM SECRETS</h3>
+                        <div class="flex items-center text-xs space-x-3 mt-1">
+                            <span>👤 Robin Blake</span>
+                            <span>📁 Hip Hop</span>
+                            <span>⏰ Mar 9</span>
+                        </div>
+                        <div class="flex items-center text-xs mt-1">
+                            <span>👁️ 7629</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+             <div class="bg-[#222] text-center py-6 border-b-2 border-pink-500">
+        <h2 class="text-2xl md:text-3xl font-bold tracking-wide text-white">FASHIONISTAS</h2>
+        <p class="text-gray-300 mt-2 text-sm md:text-base">This is an optional subtitle</p>
+    </div>
+
+    <!-- Articles Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 bg-[#222] p-4">
+        <!-- Article 1 -->
+        <div class="bg-[#333] text-white">
+            <img src="https://images.pexels.com/photos/794064/pexels-photo-794064.jpeg"
+                alt="Gravity Rippling Waves" class="w-full h-[250px] object-cover" />
+            <div class="p-4">
+                <h3 class="font-bold text-lg mb-2">Gravity Rippling Waves</h3>
+                <div class="flex flex-wrap text-xs text-gray-300 space-x-3 mb-2">
+                    <span>👤 Robin Blake</span>
+                    <span>📁 Fashion</span>
+                    <span>⏰ Jun 9</span>
+                    <span>💬 0</span>
+                    <span>👁️ 16092</span>
+                </div>
+                <p class="text-gray-400 text-sm">
+                    Motivated purposes of art refer to intentional, conscious actions on the part of the artists or creator. These may be...
+                </p>
+            </div>
+        </div>
+
+        <!-- Article 2 -->
+        <div class="bg-[#333] text-white">
+            <img src="https://images.pexels.com/photos/410648/pexels-photo-410648.jpeg"
+                alt="Coco Launches Winter Collection" class="w-full h-[250px] object-cover" />
+            <div class="p-4">
+                <h3 class="font-bold text-lg mb-2">Coco Launches Winter Collection</h3>
+                <div class="flex flex-wrap text-xs text-gray-300 space-x-3 mb-2">
+                    <span>👤 Robin Blake</span>
+                    <span>📁 Fashion</span>
+                    <span>⏰ Apr 28</span>
+                    <span>💬 3</span>
+                    <span>👁️ 12725</span>
+                </div>
+                <p class="text-gray-400 text-sm">
+                    Motivated purposes of art refer to intentional, conscious actions on the part of the artists or creator. These may be...
+                </p>
+            </div>
+        </div>
+
+        <!-- Article 3 -->
+        <div class="bg-[#333] text-white">
+            <img src="https://images.pexels.com/photos/258965/pexels-photo-258965.jpeg"
+                alt="5 Trends To Keep In Spring" class="w-full h-[250px] object-cover" />
+            <div class="p-4">
+                <h3 class="font-bold text-lg mb-2">5 Trends To Keep In Spring</h3>
+                <div class="flex flex-wrap text-xs text-gray-300 space-x-3 mb-2">
+                    <span>👤 Casper Childs</span>
+                    <span>📁 Fashion</span>
+                    <span>⏰ Mar 1</span>
+                    <span>💬 0</span>
+                    <span>👁️ 6886</span>
+                </div>
+                <p class="text-gray-400 text-sm">
+                    Artificial intelligence has been argued that plants should also be classified as intelligent based on their ability to sense and...
+                </p>
+            </div>
+        </div>
+    </div>
+        </div>
+
+
+
+
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="max-w-[1200px] mx-auto bg-black  text-white py-4">
+        <div class="text-center text-[20px] font-bold">
+            VALENTI-CRYPTO&copy; <span id="year"></span> All Rights Reserved.
+        </div>
+    </footer>
+    <!-- JS CODE -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+
+</html>

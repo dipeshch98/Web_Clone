@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clone 10</title>
     <script src="https://cdn.tailwindcss.com"></script>
-<link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Alegreya', serif;
@@ -349,6 +349,7 @@
 
             <!-- Grid Layout -->
             <div class="grid grid-cols-1 md:grid-cols-[460px_1fr_300px] gap-6">
+
                 <!-- Column 1: Big Image Story -->
                 <div>
                     <div class="relative">
@@ -438,24 +439,40 @@
                     </div>
                 </div>
 
-                <!-- Column 3: Newsletter -->
-                <div class="bg-yellow-400 p-6 flex flex-col justify-center">
-                    <h3 class="text-2xl font-extrabold text-black text-center mb-3">
-                        The Daily Newsletter
-                    </h3>
-                    <p class="text-black text-center mb-4">
-                        Brings you a selection of the latest news, trends, insights, and tips from around the world.
-                    </p>
-                    <input type="email" placeholder="Your email address"
-                        class="w-full p-2 border border-black focus:outline-none mb-3" />
-                    <button class="bg-black text-white font-bold py-2 w-full hover:bg-red-600 transition">
-                        Sign Up Now
-                    </button>
-                    <label class="flex items-center mt-3 text-sm text-black">
-                        <input type="checkbox" class="mr-2">
-                        I have read and agree to the terms & conditions
-                    </label>
+                <!-- Column 3: Small Image Stories -->
+                <div class="flex flex-col gap-4">
+                    <!-- IMAGE PART -->
+                    <div class="w-full mx-auto group">
+                        <div class="relative w-full">
+                            <img src="https://images.pexels.com/photos/33714763/pexels-photo-33714763.jpeg" alt="News 1"
+                                class="w-full h-[150px] object-cover rounded shadow transition duration-300 group-hover:brightness-110" />
+                            <span
+                                class="absolute bottom-0 left-0 bg-red-600 text-white px-2 py-1 text-xs font-bold rounded-tr">
+                                News
+                            </span>
+                        </div>
+                        <h2
+                            class="font-extrabold text-[15px] leading-[18px] text-blue-900 mt-2 hover:text-red-600 cursor-pointer">
+                            Tensions Escalate Between Dovriana and Krystland Over Trade Disputes
+                        </h2>
+                    </div>
+
+                    <div class="w-full mx-auto group">
+                        <div class="relative w-full">
+                            <img src="https://images.pexels.com/photos/33714763/pexels-photo-33714763.jpeg" alt="News 1"
+                                class="w-full h-[150px] object-cover rounded shadow transition duration-300 group-hover:brightness-110" />
+                            <span
+                                class="absolute bottom-0 left-0 bg-red-600 text-white px-2 py-1 text-xs font-bold rounded-tr">
+                                News
+                            </span>
+                        </div>
+                        <h2
+                            class="font-extrabold text-[15px] leading-[18px] text-blue-900 mt-2 hover:text-red-600 cursor-pointer">
+                            Tensions Escalate Between Dovriana and Krystland Over Trade Disputes
+                        </h2>
+                    </div>
                 </div>
+
             </div>
 
         </div>
@@ -569,9 +586,9 @@
 
                     <!-- Advertisement -->
                     <div class="text-center">
-                        <p class="text-sm text-gray-500 mb-1">- Advertisement -</p>
                         <img src="https://images.pexels.com/photos/27771819/pexels-photo-27771819.jpeg" alt="Ad"
                             class="w-full md:w-[300px] h-[200px] object-cover rounded shadow mx-auto img-hover" />
+                            <h2 class="font-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, eos!</h2>
                     </div>
 
                 </div>
@@ -752,9 +769,9 @@
 
                     <!-- Advertisement -->
                     <div class="text-center">
-                        <p class="text-sm text-gray-500 mb-1">- Advertisement -</p>
                         <img src="https://images.pexels.com/photos/27771819/pexels-photo-27771819.jpeg" alt="Ad"
                             class="w-full md:w-[300px] h-[200px] object-cover rounded shadow mx-auto img-hover" />
+                            <h2 class="font-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, eos!</h2>
                     </div>
 
                 </div>
