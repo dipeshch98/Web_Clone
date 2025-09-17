@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Artical Clone 15</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Times New Roman', 'Lora', Times, serif;
+            background: rgb(185, 183, 183);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Navbar -->
+    <nav class="bg-[#2D3047] w-full">
+        <div class="max-w-[1240px] mx-auto w-full px-2 sm:px-0 flex justify-between items-center h-16">
+            <!-- Logo -->
+            <a href="https://typify.qantumthemes.xyz/demo03/">
+                <div class="text-white text-2xl font-bold">TIPIFY-NEWS</div>
+            </a>
+
+            <!-- Nav Links -->
+            <ul class="hidden md:flex space-x-6 text-white font-medium">
+                <li><a href="#" class="hover:underline">Home</a></li>
+                <li><a href="#" class="hover:underline">About</a></li>
+                <li><a href="#" class="hover:underline">Services</a></li>
+                <li><a href="#" class="hover:underline">Blog</a></li>
+                <li><a href="#" class="hover:underline">Contact</a></li>
+            </ul>
+
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-white focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-[#2D3047]">
+            <ul class="flex flex-col space-y-2 p-4 text-white font-medium">
+                <li><a href="#" class="hover:underline">Home</a></li>
+                <li><a href="#" class="hover:underline">About</a></li>
+                <li><a href="#" class="hover:underline">Services</a></li>
+                <li><a href="#" class="hover:underline">Blog</a></li>
+                <li><a href="#" class="hover:underline">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ARTICAL SECTION -->
+    <!-- Blog Page Heading -->
+    <section class="w-full py-4">
+        <div class="max-w-[1280px] w-full mx-auto text-left">
+            <h1 class="text-[3.448rem] leading-[4.31rem] font-bold text-gray-900 mb-4">
+                The Power of Mindfulness: Practical Tips for Everyday Life
+            </h1>
+            <p class="text-[0.875rem] sm:text-[1rem] md:text-[1.125rem] lg:text-[1.25rem] text-gray-600">
+                Stay updated with the latest articles on travel, lifestyle, technology, and more. Lorem ipsum dolor, sit
+                amet consectetur adipisicing elit. Minima quo iste illo beatae tempora repellendus debitis, aspernatur
+                dolores voluptates suscipit sit a incidunt quod quisquam. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Ab maiores repellat amet, hic beatae natus? Vel ullam exercitationem fugiat soluta
+                incidunt eligendi nihil aperiam itaque corrupti, quae ut repellendus officia.
+            </p>
+        </div>
+    </section>
+
+    <!-- BLOG SECTION -->
+    <section class="w-full max-w-[1280px] mx-auto">
+        <div class="max-w-[80rem] w-full mx-auto flex flex-col lg:flex-row gap-6 px-2">
+
+            <!-- Left Column: Image + Paragraph -->
+            <div class="lg:w-[50.9375rem] w-full"> <!-- 815px = 50.9375rem -->
+                <img src="https://images.pexels.com/photos/33660828/pexels-photo-33660828.jpeg" alt="Blog Image"
+                    class="w-full h-auto object-cover mb-4" />
+                <p class="text-[1rem] sm:text-[1.125rem] md:text-[1.25rem] leading-[1.75rem] text-gray-700">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum
+                    vestibulum.
+                    Cras venenatis euismod malesuada. Suspendisse potenti. Curabitur convallis, arcu at consequat
+                    cursus,
+                    justo urna tincidunt libero, at posuere sapien ligula ut magna.
+                </p>
+
+                <p class="text-[1rem] sm:text-[1.125rem] md:text-[1.25rem] leading-[1.75rem] text-gray-700">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum
+                    vestibulum.
+                    Cras venenatis euismod malesuada. Suspendisse potenti. Curabitur convallis, arcu at consequat
+                    cursus,
+                    justo urna tincidunt libero, at posuere sapien ligula ut magna.
+                </p>
+
+                <p class="text-[1rem] sm:text-[1.125rem] md:text-[1.25rem] leading-[1.75rem] text-gray-700">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum
+                    vestibulum.
+                </p>
+
+                <img src="https://images.pexels.com/photos/33660828/pexels-photo-33660828.jpeg" alt="Blog Image"
+                    class="w-full h-auto object-cover mb-4 mt-4" />
+
+                <!-- CARD SECTION -->
+                <div class="max-w-full mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-8 mt-6">
+                    <!-- Card 1 -->
+                    <div class="group">
+                        <div class="overflow-hidden rounded-lg">
+                            <img src="https://images.pexels.com/photos/3184325/pexels-photo-3184325.jpeg"
+                                alt="Financial technology"
+                                class="w-full h-[12rem] object-cover transform transition duration-500 group-hover:scale-105" />
+                        </div>
+                        <h3 class="mt-2 text-[1rem] font-medium text-gray-800">Financial technology.</h3>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="group">
+                        <div class="overflow-hidden rounded-lg">
+                            <img src="https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg"
+                                alt="Technology blog theme"
+                                class="w-full h-[12rem] object-cover transform transition duration-500 group-hover:scale-105" />
+                        </div>
+                        <h3 class="mt-2 text-[1rem] font-medium text-gray-800">Technology blog theme</h3>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="group">
+                        <div class="overflow-hidden rounded-lg">
+                            <img src="https://images.pexels.com/photos/3184293/pexels-photo-3184293.jpeg"
+                                alt="Business meeting image"
+                                class="w-full h-[12rem] object-cover transform transition duration-500 group-hover:scale-105" />
+                        </div>
+                        <h3 class="mt-2 text-[1rem] font-medium text-gray-800">Business meeting image</h3>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="group">
+                        <div class="overflow-hidden rounded-lg">
+                            <img src="https://images.pexels.com/photos/3861972/pexels-photo-3861972.jpeg"
+                                alt="Computer engineer"
+                                class="w-full h-[12rem] object-cover transform transition duration-500 group-hover:scale-105" />
+                        </div>
+                        <h3 class="mt-2 text-[1rem] font-medium text-gray-800">Computer Engineer Tests Mobile App
+                            Usability...</h3>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="group">
+                        <div class="overflow-hidden rounded-lg">
+                            <img src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg"
+                                alt="Software developer"
+                                class="w-full h-[12rem] object-cover transform transition duration-500 group-hover:scale-105" />
+                        </div>
+                        <h3 class="mt-2 text-[1rem] font-medium text-gray-800">High angle view at software developer
+                            writing...</h3>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div class="group">
+                        <div class="overflow-hidden rounded-lg">
+                            <img src="https://images.pexels.com/photos/3183171/pexels-photo-3183171.jpeg"
+                                alt="Speaker presentation"
+                                class="w-full h-[12rem] object-cover transform transition duration-500 group-hover:scale-105" />
+                        </div>
+                        <h3 class="mt-2 text-[1rem] font-medium text-gray-800">Speaker on the stage in front of the room
+                            with...</h3>
+                    </div>
+                </div>
+
+
+                <!-- LABEL BUTTON PART -->
+                <div class="flex flex-wrap gap-3 mt-6 mb-6">
+                    <button
+                        class="px-4 py-1 bg-black text-white text-sm font-medium uppercase tracking-wide hover:bg-red-600 transition-colors duration-300">
+                        Business
+                    </button>
+                    <button
+                        class="px-4 py-1 bg-black text-white text-sm font-medium uppercase tracking-wide hover:bg-red-600 transition-colors duration-300">
+                        Economy
+                    </button>
+                    <button
+                        class="px-4 py-1 bg-black text-white text-sm font-medium uppercase tracking-wide hover:bg-red-600 transition-colors duration-300">
+                        Health
+                    </button>
+                    <button
+                        class="px-4 py-1 bg-black text-white text-sm font-medium uppercase tracking-wide hover:bg-red-600 transition-colors duration-300">
+                        Lifestyle
+                    </button>
+                    <button
+                        class="px-4 py-1 bg-black text-white text-sm font-medium uppercase tracking-wide hover:bg-red-600 transition-colors duration-300">
+                        Travel
+                    </button>
+                    <button
+                        class="px-4 py-1 bg-black text-white text-sm font-medium uppercase tracking-wide hover:bg-red-600 transition-colors duration-300">
+                        Business
+                    </button>
+                    <button
+                        class="px-4 py-1 bg-black text-white text-sm font-medium uppercase tracking-wide hover:bg-red-600 transition-colors duration-300">
+                        Economy
+                    </button>
+                    <button
+                        class="px-4 py-1 bg-black text-white text-sm font-medium uppercase tracking-wide hover:bg-red-600 transition-colors duration-300">
+                        Business
+                    </button>
+                    <button
+                        class="px-4 py-1 bg-black text-white text-sm font-medium uppercase tracking-wide hover:bg-red-600 transition-colors duration-300">
+                        Economy
+                    </button>
+                </div>
+
+
+                <!-- NEXT AND PREVIOUS -->
+                <div
+                    class="max-w-full mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 py-8 border-t-2 border-gray-200 pt-4">
+                    <!-- Previous -->
+                    <div>
+                        <h2 class="text-xl font-bold uppercase text-gray-800 flex items-center mb-4">
+                            Previous
+                            <span class="ml-2 w-4 h-[2px] bg-red-600"></span>
+                        </h2>
+                        <div class="flex items-start space-x-4">
+                            <img src="https://images.pexels.com/photos/33691649/pexels-photo-33691649.jpeg"
+                                alt="Previous Post"
+                                class="w-28 h-28 object-cover hover:scale-105 transition-transform duration-300">
+                            <div>
+                                <h3 class="font-bold text-lg leading-snug hover:text-red-600 cursor-pointer">
+                                    Art of Expression: Quotes for Creative Souls
+                                </h3>
+                                <span class="inline-block mt-2 bg-red-600 text-white text-xs font-semibold px-3 py-1">
+                                    Culture
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Next -->
+                    <div>
+                        <h2 class="text-xl font-bold uppercase text-gray-800 flex items-center mb-4">
+                            Next
+                            <span class="ml-2 w-4 h-[2px] bg-red-600"></span>
+                        </h2>
+                        <div class="flex items-start space-x-4">
+                            <img src="https://images.pexels.com/photos/33691649/pexels-photo-33691649.jpeg"
+                                alt="Next Post"
+                                class="w-28 h-28 object-cover hover:scale-105 transition-transform duration-300">
+                            <div>
+                                <h3 class="font-bold text-lg leading-snug hover:text-red-600 cursor-pointer">
+                                    The Benefits of Exercise: How to Get Moving and Feel Great
+                                </h3>
+                                <span class="inline-block mt-2 bg-red-600 text-white text-xs font-semibold px-3 py-1">
+                                    Wellness
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!-- Right Column: Tags -->
+            <div class="lg:flex-1 w-full lg:w-auto p-4 lg:sticky lg:top-2 self-start h-fit">
+                <div class="bg-white p-6 pt-0 max-w-[40rem] mx-auto">
+                    <!-- Section Title -->
+                    <h2 class="text-xl font-bold uppercase text-gray-700 flex items-center">
+                        Latest News
+                        <span class="ml-2 w-4 h-[2px] bg-red-600"></span>
+                    </h2>
+
+                    <!-- News List -->
+                    <ul class="mt-4 space-y-4">
+                        <li class="flex items-start hover:text-red-600 transition">
+                            <span
+                                class="w-6 h-6 flex items-center justify-center rounded-full bg-black text-white mr-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-3 h-3" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5l7 7-7 7" />
+                                </svg>
+                            </span>
+                            <span class="text-base font-normal text-gray-700">
+                                Changing Landscape of Music and Entertainment
+                            </span>
+                        </li>
+
+                        <li class="flex items-start hover:text-red-600 transition">
+                            <span
+                                class="w-6 h-6 flex items-center justify-center rounded-full bg-black text-white mr-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-3 h-3" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5l7 7-7 7" />
+                                </svg>
+                            </span>
+                            <span class="text-base font-normal text-gray-700">
+                                The Best Travel Apps: Streamlining Your Journey
+                            </span>
+                        </li>
+
+                        <li class="flex items-start hover:text-red-600 transition">
+                            <span
+                                class="w-6 h-6 flex items-center justify-center rounded-full bg-black text-white mr-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-3 h-3" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5l7 7-7 7" />
+                                </svg>
+                            </span>
+                            <span class="text-base font-normal text-gray-700">
+                                Mars Attackers – the new movie out now
+                            </span>
+                        </li>
+
+                        <li class="flex items-start hover:text-red-600 transition">
+                            <span
+                                class="w-6 h-6 flex items-center justify-center rounded-full bg-black text-white mr-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-3 h-3" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5l7 7-7 7" />
+                                </svg>
+                            </span>
+                            <span class="text-base font-normal text-gray-700">
+                                The Intersection of Art and Technology in Entertainment
+                            </span>
+                        </li>
+
+                        <li class="flex items-start hover:text-red-600 transition">
+                            <span
+                                class="w-6 h-6 flex items-center justify-center rounded-full bg-black text-white mr-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-3 h-3" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5l7 7-7 7" />
+                                </svg>
+                            </span>
+                            <span class="text-base font-normal text-gray-700">
+                                Overcoming Common Obstacles in Small Business Management
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <!-- Section Title -->
+                <h2 class="text-3xl font-bold relative inline-block mb-6 mt-6">
+                    <span class="relative z-10">FASHION</span>
+                    <span class="absolute bottom-0 left-0 w-full h-2 bg-red-600 -z-10"></span>
+                </h2>
+                <div class="flex flex-wrap gap-2">
+                    <span
+                        class="px-3 py-1 bg-black text-white text-[1rem] cursor-pointer hover:bg-red-600 transition rounded">Business</span>
+                    <span
+                        class="px-3 py-1 bg-black text-white text-[1rem] cursor-pointer hover:bg-red-600 transition rounded">Economy</span>
+                    <span
+                        class="px-3 py-1 bg-black text-white text-[1rem] cursor-pointer hover:bg-red-600 transition rounded">Health</span>
+                    <span
+                        class="px-3 py-1 bg-black text-white text-[1rem] cursor-pointer hover:bg-red-600 transition rounded">Lifestyle</span>
+                    <span
+                        class="px-3 py-1 bg-black text-white text-[1rem] cursor-pointer hover:bg-red-600 transition rounded">Technology</span>
+                    <span
+                        class="px-3 py-1 bg-black text-white text-[1rem] cursor-pointer hover:bg-red-600 transition rounded">Travel</span>
+                    <span
+                        class="px-3 py-1 bg-black text-white text-[1rem] cursor-pointer hover:bg-red-600 transition rounded">Economy</span>
+                    <span
+                        class="px-3 py-1 bg-black text-white text-[1rem] cursor-pointer hover:bg-red-600 transition rounded">Health</span>
+                    <span
+                        class="px-3 py-1 bg-black text-white text-[1rem] cursor-pointer hover:bg-red-600 transition rounded">Lifestyle</span>
+                    <span
+                        class="px-3 py-1 bg-black text-white text-[1rem] cursor-pointer hover:bg-red-600 transition rounded">Technology</span>
+                    <span
+                        class="px-3 py-1 bg-black text-white text-[1rem] cursor-pointer hover:bg-red-600 transition rounded">Travel</span>
+                    <span
+                        class="px-3 py-1 bg-black text-white text-[1rem] cursor-pointer hover:bg-red-600 transition rounded">Economy</span>
+                    <span
+                        class="px-3 py-1 bg-black text-white text-[1rem] cursor-pointer hover:bg-red-600 transition rounded">Health</span>
+                    <span
+                        class="px-3 py-1 bg-black text-white text-[1rem] cursor-pointer hover:bg-red-600 transition rounded">Lifestyle</span>
+                    <span
+                        class="px-3 py-1 bg-black text-white text-[1rem] cursor-pointer hover:bg-red-600 transition rounded">Technology</span>
+                    <span
+                        class="px-3 py-1 bg-black text-white text-[1rem] cursor-pointer hover:bg-red-600 transition rounded">Travel</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#2D3047] text-white py-6 sm:py-8">
+        <div
+            class="max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-2">
+
+            <!-- Left / Brand -->
+            <p class="text-[14px] sm:text-[15px] md:text-[16px] text-center sm:text-left">
+                TIPIFY-NEWS &copy; 2025 Travel Blog. All Rights Reserved.
+            </p>
+
+            <!-- Right / Links (optional) -->
+            <div class="flex flex-wrap justify-center sm:justify-end gap-3 text-[14px] sm:text-[15px] md:text-[16px]">
+                <a href="#" class="hover:text-red-600 transition">Privacy Policy</a>
+                <a href="#" class="hover:text-red-600 transition">Terms of Service</a>
+                <a href="#" class="hover:text-red-600 transition">Contact</a>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <!-- Script for Mobile Menu -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+
+</html>

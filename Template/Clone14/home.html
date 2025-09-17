@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Clone 14</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Times New Roman', 'Lora', Times, serif;
+            background: rgb(194, 194, 194);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Navbar -->
+    <nav class="bg-[#2D3047] w-full">
+        <div class="max-w-[1290px] mx-auto w-full px-2 sm:px-0 flex justify-between items-center h-16">
+            <!-- Logo -->
+            <a href="https://startersites.io/blocksy/travel/#">
+                <div class="text-white text-2xl font-bold">TRAVEL</div>
+            </a>
+
+
+            <!-- Nav Links -->
+            <ul class="hidden md:flex space-x-6 text-white font-medium">
+                <li><a href="#" class="hover:underline">Home</a></li>
+                <li><a href="#" class="hover:underline">About</a></li>
+                <li><a href="#" class="hover:underline">Services</a></li>
+                <li><a href="#" class="hover:underline">Blog</a></li>
+                <li><a href="#" class="hover:underline">Contact</a></li>
+            </ul>
+
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-white focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-[#2D3047]">
+            <ul class="flex flex-col space-y-2 p-4 text-white font-medium">
+                <li><a href="#" class="hover:underline">Home</a></li>
+                <li><a href="#" class="hover:underline">About</a></li>
+                <li><a href="#" class="hover:underline">Services</a></li>
+                <li><a href="#" class="hover:underline">Blog</a></li>
+                <li><a href="#" class="hover:underline">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="relative w-full bg-cover bg-center pt-16 px-2 sm:px-0"
+        style="min-height: calc(100vh - 64px); background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80');">
+
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-black/40"></div>
+
+        <!-- Content Wrapper -->
+        <div class="relative z-10 w-full h-full flex flex-col justify-center items-center px-4 sm:px-6 lg:px-8">
+
+            <!-- Main Heading and Paragraph -->
+            <div class="w-full max-w-[1290px] flex flex-col items-center md:items-start text-center md:text-left">
+                <h1 class="text-3xl sm:text-4xl md:text-6xl font-extrabold leading-tight text-white">
+                    Explore the world <br class="hidden sm:block"> with exciting people
+                </h1>
+                <p class="mt-4 text-sm sm:text-base md:text-lg leading-relaxed text-white max-w-2xl">
+                    Mi in nulla posuere sollicitudin aliquam ultrices sagittis. Egestas quis ipsum suspendisse ultrices
+                    gravida. Sed adipiscing diam donec adipiscing tristique risus nec feugiat in.
+                </p>
+                <button
+                    class="mt-6 bg-black text-white px-6 py-3 font-semibold rounded shadow hover:bg-gray-800 transition">
+                    Start Now
+                </button>
+            </div>
+
+            <!-- Steps Section -->
+            <div
+                class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16 w-full max-w-[1290px] text-white text-center md:text-left">
+                <div>
+                    <h3 class="text-[50px] font-bold">01</h3>
+                    <h4 class="mt-2 font-bold text-[25px]">Choose the place and time</h4>
+                    <p class="mt-2 text-[16px] leading-relaxed">
+                        Ultricies tristique nulla aliquet tortor malesuada fames ac turpis egestas sed tempus urna.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="text-[50px] font-bold">02</h3>
+                    <h4 class="mt-2 font-bold text-[25px]">Compound your team</h4>
+                    <p class="mt-2 text-[16px] leading-relaxed">
+                        Urna condimentum mattis pellentesque placerat vestibulum lectus mauris tortor condimentum.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="text-[50px] font-bold">03</h3>
+                    <h4 class="mt-2 font-bold text-[25px]">Start exploring the world</h4>
+                    <p class="mt-2 text-[16px] leading-relaxed">
+                        Auctor elit sed vulputate morbi tristique senectus et netus et malesuada fames ac turpis.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Popular Destinations -->
+    <section class="max-w-[1290px] mx-auto px-6 py-12">
+        <!-- Section Heading -->
+        <p class="text-sm font-semibold text-gray-600">WHERE TO GO</p>
+        <h2 class="text-3xl md:text-4xl font-extrabold mt-2 mb-8">Popular Destinations</h2>
+
+        <!-- Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+            <!-- Card 1 -->
+            <div class="relative rounded-xl overflow-hidden group">
+                <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=800&q=80"
+                    alt="Norway"
+                    class="w-full h-[450px] object-cover transform transition duration-500 group-hover:scale-110">
+                <!-- Overlay -->
+                <div class="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition"></div>
+                <!-- Text -->
+                <div class="absolute bottom-6 left-6 text-white">
+                    <h3 class="text-lg font-bold">Tristique Magna</h3>
+                    <p class="text-sm flex items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12 2C8.14 2 5 5.14 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.86-3.14-7-7-7zM12 11.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z" />
+                        </svg>
+                        Norway
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="relative rounded-xl overflow-hidden group">
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80"
+                    alt="Indonesia"
+                    class="w-full h-[450px] object-cover transform transition duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition"></div>
+                <div class="absolute bottom-6 left-6 text-white">
+                    <h3 class="text-lg font-bold">Egestas Quis</h3>
+                    <p class="text-sm flex items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12 2C8.14 2 5 5.14 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.86-3.14-7-7-7zM12 11.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z" />
+                        </svg>
+                        Indonesia
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="relative rounded-xl overflow-hidden group">
+                <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80"
+                    alt="Ethiopia"
+                    class="w-full h-[450px] object-cover transform transition duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition"></div>
+                <div class="absolute bottom-6 left-6 text-white">
+                    <h3 class="text-lg font-bold">Ultricies Tristique</h3>
+                    <p class="text-sm flex items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12 2C8.14 2 5 5.14 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.86-3.14-7-7-7zM12 11.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z" />
+                        </svg>
+                        Ethiopia
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="relative rounded-xl overflow-hidden group">
+                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80"
+                    alt="Laguna Island"
+                    class="w-full h-[450px] object-cover transform transition duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition"></div>
+                <div class="absolute bottom-6 left-6 text-white">
+                    <h3 class="text-lg font-bold">Diam Maecenas</h3>
+                    <p class="text-sm flex items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12 2C8.14 2 5 5.14 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.86-3.14-7-7-7zM12 11.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z" />
+                        </svg>
+                        Laguna Island
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Ultricies Tristique Aliquet SECTION -->
+    <section class="max-w-[1290px] mx-auto px-6 py-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+
+            <!-- Feature 1 -->
+            <div class="flex items-start gap-4">
+                <!-- Icon -->
+                <div class="flex-shrink-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-12 h-12 text-black">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M9 2.25h6M12 3v1.5m6.364 2.136l1.061 1.061m-12.728 0L5.636 6.697M21 12h1.5M2.25 12H3.75m2.136 6.364l1.061-1.061m12.728 0-1.061-1.061M15 20.25h-6m-.75-8.25h7.5v7.5h-7.5v-7.5z" />
+                    </svg>
+                </div>
+                <!-- Text -->
+                <div>
+                    <h3 class="text-xl font-bold">Ultricies Tristique Aliquet</h3>
+                    <p class="mt-2 text-gray-700">
+                        Egestas quis ipsum suspendisse ultrices gravida. Sed adipiscing diam donec adipiscing
+                        tristique risus nec feugiat in. Arcu risus quis varius quam quisque id diam. Aliquet
+                        enim tortor at auctor urna nunc id.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="flex items-start gap-4">
+                <!-- Icon -->
+                <div class="flex-shrink-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-12 h-12 text-black">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M12 2.25c-1.242 0-2.25 1.008-2.25 2.25v1.5h4.5v-1.5c0-1.242-1.008-2.25-2.25-2.25zM6.75 6.75h10.5l.75 12H6l.75-12z" />
+                    </svg>
+                </div>
+                <!-- Text -->
+                <div>
+                    <h3 class="text-xl font-bold">Semper Duis Attellus</h3>
+                    <p class="mt-2 text-gray-700">
+                        Dignissim sodales ut eu sem integer. Odio pellentesque diam volutpat commodo sed egestas
+                        egestas. A arcu cursus vitae congue mauris rhoncus. Viverra mauris in aliquam sem fringilla
+                        ut morbi.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- IMAGE + CONTENT -->
+    <section class="relative w-full bg-cover bg-center"
+        style="background-image: url('https://images.pexels.com/photos/20899958/pexels-photo-20899958.jpeg');">
+        <div class="max-w-[1290px] mx-auto px-4 py-20 flex flex-col lg:flex-row items-center lg:items-start gap-12">
+
+            <!-- Left Content -->
+            <div class="flex-1 text-center lg:text-left">
+                <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6">
+                    Condimentum Mattis Pellentesque Dnibust Tortyga
+                </h1>
+                <p class="text-gray-600 mb-4">
+                    Malesuada fames ac turpis egestas sed tempus urna et pharetra. Urna duis convallis convallis tellus
+                    id interdum velit laoreet id.
+                </p>
+                <p class="text-gray-600 mb-8">
+                    Diam maecenas ultricies mi eget lobortis elementum tellus molestie odio pellentesque diam volutpat
+                    commodo sed egestas egestas.
+                </p>
+
+            </div>
+
+            <!-- Right Image -->
+            <div class="flex-1 flex justify-center lg:justify-end">
+                <div class="relative rounded-2xl overflow-hidden shadow-lg group">
+                    <img src="https://images.pexels.com/photos/1285625/pexels-photo-1285625.jpeg" alt="Video Thumbnail"
+                        class="w-full max-w-md rounded-2xl transform transition-transform duration-500 group-hover:scale-105">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Completed Journeys Section -->
+    <section class="w-full py-12 px-2 sm:px-0  mt-8 mb-8">
+        <div class="max-w-[1290px] mx-auto">
+
+            <!-- Heading -->
+            <div class="mb-8">
+                <p class="text-sm font-semibold uppercase tracking-wide text-gray-600">Trips Gallery</p>
+                <h2 class="text-4xl font-extrabold text-gray-900">Completed Journeys</h2>
+            </div>
+
+            <!-- First Row (Full Image) -->
+            <div class="relative rounded-xl overflow-hidden group mb-6">
+                <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470" alt="Journey"
+                    class="w-full h-[450px] object-cover transform transition-transform duration-500 group-hover:scale-105">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                <div class="absolute bottom-6 left-6 right-6 text-white">
+                    <div class="flex mb-2">
+                        <span class="text-orange-400">★★★★☆</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2">Ultricies Tristique Nulla Aliquet</h3>
+                    <p class="text-sm mb-4">
+                        Egestas quis ipsum suspendisse ultrices gravida. Sed adipiscing diam donec adipiscing tristique
+                        risus nec feugiat in.
+                    </p>
+                    <a href="#" class="inline-flex items-center gap-1 text-white font-semibold hover:underline">
+                        Read More
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Second Row (Two Images 50/50) -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+
+                <!-- Card 1 -->
+                <div class="relative rounded-xl overflow-hidden group">
+                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Journey"
+                        class="w-full h-[420px] object-cover transform transition-transform duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                    <div class="absolute bottom-4 left-4 right-4 text-white">
+                        <div class="flex mb-1">
+                            <span class="text-orange-400">★★★☆☆</span>
+                        </div>
+                        <h3 class="text-lg font-bold">Ultricies Tristique Nulla Aliquet</h3>
+                        <a href="#"
+                            class="inline-flex items-center gap-1 text-white text-sm font-semibold hover:underline">
+                            Read More
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="relative rounded-xl overflow-hidden group">
+                    <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="Journey"
+                        class="w-full h-[420px] object-cover transform transition-transform duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                    <div class="absolute bottom-4 left-4 right-4 text-white">
+                        <div class="flex mb-1">
+                            <span class="text-orange-400">★★★★☆</span>
+                        </div>
+                        <h3 class="text-lg font-bold">Ultricies Tristique Nulla Aliquet</h3>
+                        <a href="#"
+                            class="inline-flex items-center gap-1 text-white text-sm font-semibold hover:underline">
+                            Read More
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- third Row (Two Images 50/50) -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+
+                <!-- Card 1 -->
+                <div class="relative rounded-xl overflow-hidden group">
+                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Journey"
+                        class="w-full h-[420px] object-cover transform transition-transform duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                    <div class="absolute bottom-4 left-4 right-4 text-white">
+                        <div class="flex mb-1">
+                            <span class="text-orange-400">★★★☆☆</span>
+                        </div>
+                        <h3 class="text-lg font-bold">Ultricies Tristique Nulla Aliquet</h3>
+                        <a href="#"
+                            class="inline-flex items-center gap-1 text-white text-sm font-semibold hover:underline">
+                            Read More
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="relative rounded-xl overflow-hidden group">
+                    <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="Journey"
+                        class="w-full h-[420px] object-cover transform transition-transform duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                    <div class="absolute bottom-4 left-4 right-4 text-white">
+                        <div class="flex mb-1">
+                            <span class="text-orange-400">★★★★☆</span>
+                        </div>
+                        <h3 class="text-lg font-bold">Ultricies Tristique Nulla Aliquet</h3>
+                        <a href="#"
+                            class="inline-flex items-center gap-1 text-white text-sm font-semibold hover:underline">
+                            Read More
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- IMAGE + CONTENT 2 -->
+    <section class="relative w-full bg-cover bg-center"
+        style="background-image: url('https://images.pexels.com/photos/20899958/pexels-photo-20899958.jpeg');">
+        <div class="max-w-[1290px] mx-auto py-20 flex flex-col lg:flex-row items-center gap-12">
+
+            <!-- Left Content -->
+            <div class="flex-1 flex flex-col justify-center text-center lg:text-left">
+                <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6">
+                    Condimentum Mattis Pellentesque Dnibust Tortyga
+                </h1>
+                <p class="text-gray-600 mb-4">
+                    Malesuada fames ac turpis egestas sed tempus urna et pharetra. Urna duis convallis convallis tellus
+                    id interdum velit laoreet id.
+                </p>
+                <p class="text-gray-600 mb-4">
+                    Diam maecenas ultricies mi eget lobortis elementum tellus molestie odio pellentesque diam volutpat
+                    commodo sed egestas egestas.
+                </p>
+                <p class="text-gray-600 mb-8">
+                    Sit amet aliquam id diam maecenas ultricies mi eget. Tempus egestas sed sed risus pretium quam
+                    vulputate dignissim.
+                </p>
+
+                <!-- Explore More Button -->
+                <div>
+                    <a href="#"
+                        class="inline-block px-6 py-3 text-black font-semibold bg-transparent border-2 border-gray-600 rounded-lg shadow-md hover:bg-green-600 hover:text-white hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300">
+                        Explore More
+                    </a>
+                </div>
+
+            </div>
+
+
+            <!-- Right Images Grid -->
+            <div class="flex-1 flex justify-center lg:justify-end px-2 sm:px-0 mt-8 mb-8">
+                <div class="grid grid-cols-2 gap-4">
+                    <!-- Image 1 -->
+                    <div class="relative rounded-2xl overflow-hidden shadow-lg group">
+                        <img src="https://images.pexels.com/photos/1285625/pexels-photo-1285625.jpeg" alt="Image 1"
+                            class="w-full h-[300px] object-cover rounded-2xl transform transition-transform duration-500 group-hover:scale-105">
+                    </div>
+
+                    <!-- Image 2 -->
+                    <div class="relative rounded-2xl overflow-hidden shadow-lg group">
+                        <img src="https://images.pexels.com/photos/356056/pexels-photo-356056.jpeg" alt="Image 2"
+                            class="w-full h-[300px] object-cover rounded-2xl transform transition-transform duration-500 group-hover:scale-105">
+                    </div>
+
+                    <!-- Image 3 -->
+                    <div class="relative rounded-2xl overflow-hidden shadow-lg group">
+                        <img src="https://images.pexels.com/photos/4063861/pexels-photo-4063861.jpeg" alt="Image 3"
+                            class="w-full h-[300px] object-cover rounded-2xl transform transition-transform duration-500 group-hover:scale-105">
+                    </div>
+
+                    <!-- Image 4 -->
+                    <div class="relative rounded-2xl overflow-hidden shadow-lg group">
+                        <img src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg" alt="Image 4"
+                            class="w-full h-[300px] object-cover rounded-2xl transform transition-transform duration-500 group-hover:scale-105">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- LAST SECTION -->
+    <section class="w-full py-16">
+        <div class="max-w-[1290px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+
+            <!-- Column 1 -->
+            <div class="flex flex-col items-center text-center overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=800&q=80"
+                    alt="Forest"
+                    class="w-[80%] h-72 object-cover rounded-lg mx-auto transform transition-transform duration-500 hover:scale-105 hover:shadow-lg">
+
+                <h2 class="text-2xl md:text-3xl font-extrabold text-gray-900 mb-4 mt-4">
+                    Justo Laoreet Sitamet Cursus
+                </h2>
+                <p class="text-gray-700 mb-4">
+                    Vitae aliquet nec ullamcorper sit amet risus nullam eget felis. Leo urna molestie at elementum
+                    pellentesque habitant tristique.
+                </p>
+                <p class="text-gray-700">
+                    Tempor commodo ullamcorper a lacus. Nunc scelerisque viverra mauris in. Nisl nunc mi ipsum faucibus
+                    vitae.
+                </p>
+            </div>
+
+
+            <!-- Column 2 -->
+            <div class="flex flex-col items-center text-center overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=800&q=80"
+                    alt="Forest"
+                    class="w-[80%] h-72 object-cover rounded-lg mx-auto transform transition-transform duration-500 hover:scale-105 hover:shadow-lg">
+
+                <h2 class="text-2xl md:text-3xl font-extrabold text-gray-900 mb-4 mt-4">
+                    Justo Laoreet Sitamet Cursus
+                </h2>
+                <p class="text-gray-700 mb-4">
+                    Vitae aliquet nec ullamcorper sit amet risus nullam eget felis. Leo urna molestie at elementum
+                    pellentesque habitant tristique.
+                </p>
+                <p class="text-gray-700">
+                    Tempor commodo ullamcorper a lacus. Nunc scelerisque viverra mauris in. Nisl nunc mi ipsum faucibus
+                    vitae.
+                </p>
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+
+    <!-- Footer -->
+    <footer class="bg-[#2D3047] text-white py-6 mt-12">
+        <div class="max-w-[1290px] mx-auto px-4 text-center">
+            <p>&copy; 2025 Travel Blog. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Script for Mobile Menu -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+
+</html>

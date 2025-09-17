@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Lora', serif;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-900">
+
+    <!-- Navbar -->
+    <nav class="bg-[#2D3047] w-full">
+        <div class="max-w-[1290px] mx-auto w-full px-2 sm:px-0 flex justify-between items-center h-16">
+            <!-- Logo -->
+            <a href="https://startersites.io/blocksy/travel/#">
+                <div class="text-white text-2xl font-bold">TRAVEL</div>
+            </a>
+
+            <!-- Nav Links -->
+            <ul class="hidden md:flex space-x-6 text-white font-medium">
+                <li><a href="#" class="hover:underline">Home</a></li>
+                <li><a href="#" class="hover:underline">About</a></li>
+                <li><a href="#" class="hover:underline">Services</a></li>
+                <li><a href="#" class="hover:underline">Blog</a></li>
+                <li><a href="#" class="hover:underline">Contact</a></li>
+            </ul>
+
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-white focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-[#2D3047]">
+            <ul class="flex flex-col space-y-2 p-4 text-white font-medium">
+                <li><a href="#" class="hover:underline">Home</a></li>
+                <li><a href="#" class="hover:underline">About</a></li>
+                <li><a href="#" class="hover:underline">Services</a></li>
+                <li><a href="#" class="hover:underline">Blog</a></li>
+                <li><a href="#" class="hover:underline">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative w-full bg-cover bg-center h-[70vh]"
+        style="background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1950&q=80');">
+        <div class="absolute inset-0 bg-black/50"></div>
+        <div class="relative z-10 flex flex-col justify-center items-center h-full text-center text-white px-4">
+            <h1 class="text-4xl md:text-6xl font-bold">Travel Blog</h1>
+            <p class="mt-4 max-w-2xl text-lg md:text-xl">
+                Stories, guides, and tips to inspire your next adventure 🌍
+            </p>
+        </div>
+    </section>
+
+
+    <section class="max-w-[1290px] mx-auto px-4 pt-10 grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <!-- Left Column: Blog Content -->
+        <div class="lg:col-span-2 space-y-6">
+            <!-- Heading -->
+            <h1 class="text-4xl font-bold text-gray-900">Exploring the Hidden Forests of Europe</h1>
+
+            <!-- Paragraph -->
+            <p class="text-gray-700 text-lg">
+                Europe is home to some of the most breathtaking forests in the world. From dense green landscapes to
+                hidden waterfalls, these natural wonders attract travelers seeking adventure.
+            </p>
+
+            <!-- Full-width Image -->
+            <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1200&q=80"
+                alt="Forest" class="w-full h-80 object-cover rounded-lg">
+
+            <!-- Paragraph -->
+            <p class="text-gray-700 text-lg">
+                Walking through these forests, you can feel the serenity and magic that has inspired legends for
+                centuries. Every turn reveals a new story.
+            </p>
+
+            <!-- Another Paragraph -->
+            <p class="text-gray-700 text-lg">
+                Local wildlife, hidden trails, and ancient trees make these forests perfect for nature lovers and
+                photographers alike.
+            </p>
+
+            <!-- Bullet Points with Description -->
+            <div class="space-y-4">
+                <div class="flex items-start gap-3">
+                    <span class="font-bold text-xl text-gray-900">•</span>
+                    <p class="text-gray-700">Dense Green Landscapes: Enjoy vast greenery and untouched natural beauty.
+                    </p>
+                </div>
+                <div class="flex items-start gap-3">
+                    <span class="font-bold text-xl text-gray-900">•</span>
+                    <p class="text-gray-700">Rare Wildlife: Spot deer, foxes, and birds in their natural habitats.</p>
+                </div>
+                <div class="flex items-start gap-3">
+                    <span class="font-bold text-xl text-gray-900">•</span>
+                    <p class="text-gray-700">Secluded Hiking Trails: Explore hidden paths away from crowds.</p>
+                </div>
+            </div>
+
+            <p class="text-gray-700">Secluded Hiking Trails: Explore hidden paths away from crowds. Lorem ipsum dolor
+                sit amet consectetur adipisicing elit. Iure deserunt recusandae cum unde praesentium commodi reiciendis
+                maxime dolores aliquid dolor eius beatae ab tenetur harum quas qui impedit, dolorem optio? Sit ea
+                ratione, officia totam distinctio recusandae eius neque ex quia optio tenetur ipsum velit quaerat
+                corrupti perferendis, obcaecati possimus.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam, porro. Rem veniam voluptatem tempore
+                quisquam animi eum officia dolorem ipsum a pariatur! Quo repellat odio molestiae eligendi, facilis
+                beatae soluta similique labore sint, ad asperiores provident fuga non impedit excepturi quia nesciunt
+                quam aliquam officia ratione vel. Odio minima illo quos doloremque deleniti a, ab sit illum odit,
+                aspernatur consequuntur. Reprehenderit ipsam dolor rerum voluptatem perferendis nemo quidem blanditiis
+                assumenda, eum, rem, minus minima pariatur in officia non earum corrupti? Molestiae nisi soluta
+                recusandae perferendis libero dolore possimus ipsam qui quibusdam accusamus cupiditate itaque, mollitia,
+                esse nihil necessitatibus, quos quae aperiam eveniet? Quam, amet similique.</p>
+
+            <!-- Previous / Next -->
+            <div class="flex justify-between mt-6 text-gray-700">
+                <a href="#" class="border border-gray-200 px-8 py-4 bg-gray-100 hover:bg-gray-300">&larr; Previous
+                    Article</a>
+                <a href="#" class="border border-gray-200 px-8 py-4 bg-gray-100 hover:bg-gray-300">Next Article
+                    &rarr;</a>
+            </div>
+
+        </div>
+
+        <!-- Right Column: Destination Details -->
+        <div class="space-y-6 lg:sticky lg:top-2 self-start h-fit">
+            <h2 class="text-2xl font-bold text-gray-900">Destination Highlights</h2>
+
+            <div class="space-y-4">
+                <img src="https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=600&q=80"
+                    alt="Nature"
+                    class="w-full h-48 object-cover rounded-lg hover:scale-105 transform transition duration-300">
+                <p class="text-gray-700">Experience breathtaking nature and fresh air surrounded by tall trees and
+                    rivers.</p>
+
+                <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=600&q=80"
+                    alt="Forest"
+                    class="w-full h-48 object-cover rounded-lg hover:scale-105 transform transition duration-300">
+                <p class="text-gray-700">Hidden trails perfect for a peaceful walk and reconnecting with nature.</p>
+
+                <img src="https://images.pexels.com/photos/237272/pexels-photo-237272.jpeg" alt="Wildlife"
+                    class="w-full h-48 object-cover rounded-lg hover:scale-105 transform transition duration-300">
+                <p class="text-gray-700">Opportunities to observe rare European wildlife in their natural habitat.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Blog Content -->
+    <section class="max-w-[1290px] mx-auto py-12 px-4">
+        <h1 class="text-[25px] font-bold text-black">RELATED ARTICALS</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Blog Card -->
+            <article class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition">
+                <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=800&q=80"
+                    alt="Forest" class="w-full h-56 object-cover">
+                <div class="p-6">
+                    <h2 class="text-2xl font-bold mb-2">Exploring the Hidden Forests</h2>
+                    <p class="text-gray-600 mb-4">Discover the untouched beauty of the world's most mysterious forests
+                        and what
+                        makes them magical.</p>
+                    <a href="#" class="text-blue-600 font-semibold hover:underline">Read More →</a>
+                </div>
+            </article>
+
+            <!-- Blog Card -->
+            <article class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition">
+                <img src="https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=800&q=80"
+                    alt="Beach" class="w-full h-56 object-cover">
+                <div class="p-6">
+                    <h2 class="text-2xl font-bold mb-2">Best Beaches Around the World</h2>
+                    <p class="text-gray-600 mb-4">From Maldives to Hawaii 🌴, explore the best beaches for relaxation
+                        and
+                        adventure.</p>
+                    <a href="#" class="text-blue-600 font-semibold hover:underline">Read More →</a>
+                </div>
+            </article>
+
+            <!-- Blog Card -->
+            <article class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition">
+                <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80"
+                    alt="City" class="w-full h-56 object-cover">
+                <div class="p-6">
+                    <h2 class="text-2xl font-bold mb-2">City Adventures in Europe</h2>
+                    <p class="text-gray-600 mb-4">A guide to the most charming European cities, filled with culture,
+                        food, and
+                        hidden gems.</p>
+                    <a href="#" class="text-blue-600 font-semibold hover:underline">Read More →</a>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-6 mt-12">
+        <div class="max-w-[1290px] mx-auto px-4 text-center">
+            <p>&copy; 2025 Travel Blog. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Script for Mobile Menu -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+
+</html>

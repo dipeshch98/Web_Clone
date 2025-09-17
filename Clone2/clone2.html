@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BlogPage</title>
+    <title>Clone 2</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- <script src="app.js"></script> -->
     <!-- Google Fonts: Inter + Alegreya -->
@@ -172,28 +172,35 @@
                 </div>
 
                 <!-- Center Column (Fixed Width) -->
-                <div class="w-[490px] flex-shrink-0 px-1 border-r border-gray-200">
+                <div class="w-full sm:w-1/2 lg:w-[30rem] flex-shrink-0 px-2 border-r border-gray-200">
                     <article class="group h-full flex flex-col">
+
+                        <!-- Image -->
                         <div class="relative overflow-hidden rounded-lg mb-4 flex-grow">
                             <img src="https://images.unsplash.com/photo-1541872705-1f73c6400ec9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
                                 alt="Federal Building"
-                                class="w-full h-full min-h-80 object-cover transition-transform duration-500 group-hover:scale-110">
+                                class="w-full h-full sm:h-full lg:h-full object-cover transition-transform duration-500 group-hover:scale-110" />
                             <div
-                                class="absolute inset-0 bg-black bg-opacity-10 group-hover:bg-opacity-20 transition-all duration-300">
+                                class="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition-all duration-300">
                             </div>
                         </div>
+
+                        <!-- Content -->
                         <div>
                             <h2
-                                class="text-lg md:text-xl font-bold text-gray-800 hover:text-red-500 transition-colors duration-300 cursor-pointer mb-3 leading-[26px]">
+                                class="text-[1.125rem] sm:text-[1.25rem] font-bold text-gray-800 hover:text-red-500 transition-colors duration-300 cursor-pointer mb-3 leading-[1.625rem]">
                                 The Fed is about to raise interest rates and shaft American workers
                             </h2>
-                            <div class="flex flex-col sm:flex-row sm:items-center text-sm text-gray-500 gap-1 sm:gap-4">
+                            <div
+                                class="flex flex-col sm:flex-row sm:items-center text-[0.875rem] text-gray-500 gap-1 sm:gap-4">
                                 <span>by Penci Design</span>
                                 <span>January 28, 2022</span>
                             </div>
                         </div>
+
                     </article>
                 </div>
+
 
                 <!-- Right Column -->
                 <div class="flex-1 pl-4 space-y-6">
@@ -387,130 +394,134 @@
 
     <!-- POLITICES SECTION
     POLITICES SECTION -->
-    <main class="max-w-[1400px] mx-auto py-4 lg:p-0 px-1.5 sm:px-0">
-        <div class="flex flex-col md:flex-row md:space-x-4 py-2">
+<main class="max-w-[87.5rem] mx-auto py-6 px-3 sm:px-4 lg:px-0">
+  <div class="flex flex-col lg:flex-row lg:space-x-8">
 
-            <!-- Politics Section (fixed 700px) -->
-            <section class="w-full md:basis-[700px] md:flex-shrink-0 mb-8 md:mb-0">
-                <h2 class="text-3xl font-bold mb-4 text-accent-red">Politics</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
+    <!-- Politics Section -->
+    <section class="w-full lg:basis-[42rem] lg:flex-shrink-0 mb-10 lg:mb-0">
+      <h2 class="text-[1.5rem] sm:text-[1.75rem] lg:text-[2rem] font-bold mb-4 text-red-600">
+        Politics
+      </h2>
 
-                    <!-- Featured Politics Article -->
-                    <div class="flex flex-col h-full border-r border-gray-200 pr-2">
-                        <div class="overflow-hidden rounded-md mb-4">
-                            <img src="https://images.pexels.com/photos/1009136/pexels-photo-1009136.jpeg"
-                                alt="UK Parliament with Union Jack flag"
-                                class="w-full h-74 md:h-64 object-cover transform transition duration-300 hover:scale-105">
-                        </div>
-                        <h3 class="text-xl font-bold mb-2 hover:text-red-600 cursor-pointer">
-                            Brexit damaging trade with EU, says public committee on Thursday
-                        </h3>
-                        <p class="text-gray-500 text-sm font-medium mt-auto">January 28, 2022</p>
-                    </div>
-
-                    <!-- 5 Politics Features -->
-                    <div class="space-y-2 border-r border-gray-200 pr-2">
-                        <article class="border-b border-gray-200 pb-2">
-                            <h4 class="text-[17px] leading-[17px] font-medium hover:text-red-600 cursor-pointer">
-                                The Fed is about to raise interest rates and shaft American workers
-                            </h4>
-                            <p class="text-gray-500 text-sm">January 28, 2022</p>
-                        </article>
-                        <article class="border-b border-gray-200 pb-2">
-                            <h4 class="text-[17px] leading-[17px] font-medium hover:text-red-600 cursor-pointer">
-                                'Adults are banning books, not asking our opinions': Teens of the Banned Book Club
-                            </h4>
-                            <p class="text-gray-500 text-sm">January 28, 2022</p>
-                        </article>
-                        <article class="border-b border-gray-200 pb-2">
-                            <h4 class="text-[17px] leading-[17px] font-medium hover:text-red-600 cursor-pointer">
-                                Ottawa protesters turn to Christian crowdfunding site after GoFundMe snub
-                            </h4>
-                            <p class="text-gray-500 text-sm">January 28, 2022</p>
-                        </article>
-                        <article class="border-b border-gray-200 pb-2">
-                            <h4 class="text-[17px] leading-[17px] font-medium hover:text-red-600 cursor-pointer">
-                                US couple arrested for allegedly conspiring to launder $4.5bn in bitcoin
-                            </h4>
-                            <p class="text-gray-500 text-sm">January 28, 2022</p>
-                        </article>
-                        <article>
-                            <h4 class="text-[17px] leading-[17px] font-medium hover:text-red-600 cursor-pointer">
-                                New bill sparks debate over voting rights in several US states
-                            </h4>
-                            <p class="text-gray-500 text-sm">January 28, 2022</p>
-                        </article>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Business Section (fills remaining space) -->
-            <!-- Business Section (fills remaining space) -->
-            <section class="w-full md:flex-1">
-                <h2 class="text-3xl font-bold mb-4 text-accent-red">Business</h2>
-                <div class="grid grid-cols-1 md:grid-cols-3">
-
-                    <!-- Featured Business Article -->
-                    <div class="flex flex-col h-full border-r border-gray-200 pr-2">
-                        <div class="overflow-hidden rounded-md mb-4">
-                            <img src="https://images.pexels.com/photos/30063037/pexels-photo-30063037.jpeg"
-                                alt="Man riding a bicycle"
-                                class="w-full h-56 md:h-64 object-cover transform transition duration-300 hover:scale-105">
-                        </div>
-                        <h3 class="text-xl font-bold hover:text-red-600 cursor-pointer">
-                            Peloton to replace chief executive and cut 2,800 jobs amid sales slump
-                        </h3>
-                        <p class="text-gray-500 text-sm mt-auto">January 28, 2022</p>
-                    </div>
-
-                    <!-- 3 Business Features (Col 2) -->
-                    <div class="space-y-4 border-r border-gray-200 px-2">
-                        <article class="border-b border-gray-200 pb-2">
-                            <h4 class="text-[16px] font-semibold hover:text-red-600 cursor-pointer">
-                                BP dismisses calls for windfall tax as profits hit all eight-year high
-                            </h4>
-                            <p class="text-gray-500 text-sm">January 28, 2022</p>
-                        </article>
-                        <article class="border-b border-gray-200 pb-2">
-                            <h4 class="text-[16px] font-semibold hover:text-red-600 cursor-pointer">
-                                Pfizer accused of pandemic profiteering as profits double in pandemic
-                            </h4>
-                            <p class="text-gray-500 text-sm">January 28, 2022</p>
-                        </article>
-                        <article>
-                            <h4 class="text-[16px] font-semibold hover:text-red-600 cursor-pointer">
-                                Tesco Chairman warns of food price inflation at 5% by spring in the UK this year
-                            </h4>
-                            <p class="text-gray-500 text-sm">January 28, 2022</p>
-                        </article>
-                    </div>
-
-                    <!-- 3 Business Features (Col 3) -->
-                    <div class="space-y-4 px-2">
-                        <article class="border-b border-gray-200 pb-2">
-                            <h4 class="text-[16px] font-semibold hover:text-red-600 cursor-pointer">
-                                Nvidia's $40bn takeover of UK chip designer Arm collapses in recent news
-                            </h4>
-                            <p class="text-gray-500 text-sm">January 28, 2022</p>
-                        </article>
-                        <article class="border-b border-gray-200 pb-2">
-                            <h4 class="text-[16px] font-semibold hover:text-red-600 cursor-pointer">
-                                Amazon posts record profits but warns of supply chain challenges
-                            </h4>
-                            <p class="text-gray-500 text-sm">January 28, 2022</p>
-                        </article>
-                        <article>
-                            <h4 class="text-[16px] font-semibold hover:text-red-600 cursor-pointer">
-                                Global markets react to rising inflation fears worldwide
-                            </h4>
-                            <p class="text-gray-500 text-sm">January 28, 2022</p>
-                        </article>
-                    </div>
-                </div>
-            </section>
-
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Featured Politics Article -->
+        <div class="flex flex-col h-full border-b md:border-b-0 md:border-r border-gray-200 pr-0 md:pr-4 pb-4 md:pb-0">
+          <div class="overflow-hidden rounded-md mb-4">
+            <img src="https://images.pexels.com/photos/1009136/pexels-photo-1009136.jpeg"
+              alt="UK Parliament with Union Jack flag"
+              class="w-full h-[15rem] sm:h-[16rem] lg:h-[18rem] object-cover transform transition duration-300 hover:scale-105">
+          </div>
+          <h3 class="text-lg sm:text-xl font-bold mb-2 hover:text-red-600 cursor-pointer">
+            Brexit damaging trade with EU, says public committee on Thursday
+          </h3>
+          <p class="text-gray-500 text-sm font-medium mt-auto">January 28, 2022</p>
         </div>
-    </main>
+
+        <!-- Politics List -->
+        <div class="space-y-3 pt-4 md:pt-0 md:pl-4">
+          <article class="border-b border-gray-200 pb-2">
+            <h4 class="text-[1rem] leading-[1.25rem] font-medium hover:text-red-600 cursor-pointer">
+              The Fed is about to raise interest rates and shaft American workers
+            </h4>
+            <p class="text-gray-500 text-sm">January 28, 2022</p>
+          </article>
+          <article class="border-b border-gray-200 pb-2">
+            <h4 class="text-[1rem] leading-[1.25rem] font-medium hover:text-red-600 cursor-pointer">
+              'Adults are banning books, not asking our opinions': Teens of the Banned Book Club
+            </h4>
+            <p class="text-gray-500 text-sm">January 28, 2022</p>
+          </article>
+          <article class="border-b border-gray-200 pb-2">
+            <h4 class="text-[1rem] leading-[1.25rem] font-medium hover:text-red-600 cursor-pointer">
+              Ottawa protesters turn to Christian crowdfunding site after GoFundMe snub
+            </h4>
+            <p class="text-gray-500 text-sm">January 28, 2022</p>
+          </article>
+          <article class="border-b border-gray-200 pb-2">
+            <h4 class="text-[1rem] leading-[1.25rem] font-medium hover:text-red-600 cursor-pointer">
+              US couple arrested for allegedly conspiring to launder $4.5bn in bitcoin
+            </h4>
+            <p class="text-gray-500 text-sm">January 28, 2022</p>
+          </article>
+          <article>
+            <h4 class="text-[1rem] leading-[1.25rem] font-medium hover:text-red-600 cursor-pointer">
+              New bill sparks debate over voting rights in several US states
+            </h4>
+            <p class="text-gray-500 text-sm">January 28, 2022</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Business Section -->
+    <section class="w-full lg:flex-1">
+      <h2 class="text-[1.5rem] sm:text-[1.75rem] lg:text-[2rem] font-bold mb-4 text-red-600">
+        Business
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Featured Business -->
+        <div class="flex flex-col h-full border-b md:border-b-0 md:border-r border-gray-200 pr-0 md:pr-4 pb-4 md:pb-0">
+          <div class="overflow-hidden rounded-md mb-4">
+            <img src="https://images.pexels.com/photos/30063037/pexels-photo-30063037.jpeg"
+              alt="Man riding a bicycle"
+              class="w-full h-[14rem] sm:h-[16rem] lg:h-[18rem] object-cover transform transition duration-300 hover:scale-105">
+          </div>
+          <h3 class="text-lg sm:text-xl font-bold hover:text-red-600 cursor-pointer">
+            Peloton to replace chief executive and cut 2,800 jobs amid sales slump
+          </h3>
+          <p class="text-gray-500 text-sm mt-auto">January 28, 2022</p>
+        </div>
+
+        <!-- Business Col 2 -->
+        <div class="space-y-4 border-b md:border-b-0 md:border-r border-gray-200 px-0 md:px-4 pb-4 md:pb-0">
+          <article class="border-b border-gray-200 pb-2">
+            <h4 class="text-[0.95rem] sm:text-[1rem] font-semibold hover:text-red-600 cursor-pointer">
+              BP dismisses calls for windfall tax as profits hit all eight-year high
+            </h4>
+            <p class="text-gray-500 text-sm">January 28, 2022</p>
+          </article>
+          <article class="border-b border-gray-200 pb-2">
+            <h4 class="text-[0.95rem] sm:text-[1rem] font-semibold hover:text-red-600 cursor-pointer">
+              Pfizer accused of pandemic profiteering as profits double in pandemic
+            </h4>
+            <p class="text-gray-500 text-sm">January 28, 2022</p>
+          </article>
+          <article>
+            <h4 class="text-[0.95rem] sm:text-[1rem] font-semibold hover:text-red-600 cursor-pointer">
+              Tesco Chairman warns of food price inflation at 5% by spring in the UK this year
+            </h4>
+            <p class="text-gray-500 text-sm">January 28, 2022</p>
+          </article>
+        </div>
+
+        <!-- Business Col 3 -->
+        <div class="space-y-4 px-0 md:px-4">
+          <article class="border-b border-gray-200 pb-2">
+            <h4 class="text-[0.95rem] sm:text-[1rem] font-semibold hover:text-red-600 cursor-pointer">
+              Nvidia's $40bn takeover of UK chip designer Arm collapses in recent news
+            </h4>
+            <p class="text-gray-500 text-sm">January 28, 2022</p>
+          </article>
+          <article class="border-b border-gray-200 pb-2">
+            <h4 class="text-[0.95rem] sm:text-[1rem] font-semibold hover:text-red-600 cursor-pointer">
+              Amazon posts record profits but warns of supply chain challenges
+            </h4>
+            <p class="text-gray-500 text-sm">January 28, 2022</p>
+          </article>
+          <article>
+            <h4 class="text-[0.95rem] sm:text-[1rem] font-semibold hover:text-red-600 cursor-pointer">
+              Global markets react to rising inflation fears worldwide
+            </h4>
+            <p class="text-gray-500 text-sm">January 28, 2022</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+
+
 
 
 
