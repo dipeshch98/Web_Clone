@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>POLITICAL Navbar</title>
+    <title>POLITICAL Clone 6</title>
     <script src="https://cdn.tailwindcss.com"></script>
 
     <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap" rel="stylesheet">
@@ -98,122 +98,124 @@
 
 
     <!-- POPULAR SECTION -->
-    <div
-        class="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[230px_540px_240px_230px] gap-6 mt-6">
+    <div class="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-0 mt-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
 
-        <!-- LEFT SIDEBAR -->
-        <div>
-            <h2 class="text-2xl font-extrabold mb-2">Popular</h2>
-            <p class="text-[12.5px] text-gray-500 mb-4">BROWSE OUR EDITOR'S HAND PICKED NEWS!</p>
+            <!-- LEFT SIDEBAR -->
+            <div class="order-1 lg:order-1">
+                <h2 class="text-2xl font-extrabold mb-2">Popular</h2>
+                <p class="text-[12.5px] text-gray-500 mb-4">BROWSE OUR EDITOR'S HAND PICKED NEWS!</p>
 
-            <div class="space-y-4">
-                <div class="border-t border-gray-300 pt-4">
+                <div class="space-y-4">
+                    <div class="border-t border-gray-300 pt-4">
+                        <h3 class="font-bold text-[15px] leading-5 hover:text-red-500 cursor-pointer">
+                            Stock Market Today: Dow Climbs; Tesla Stock Price Jumps After Deliveries Beat Forecasts
+                        </h3>
+                        <p class="text-xs text-gray-500 mt-1"><span class="text-red-500 font-semibold">MARKETS</span> —
+                            Jan 4, 2021</p>
+                    </div>
+                    <div class="border-t border-gray-300 pt-4">
+                        <h3 class="font-bold text-[15px] leading-5 hover:text-red-500 cursor-pointer">
+                            China to Develop More Than 50 New Standards for AI Sector by 2026
+                        </h3>
+                        <p class="text-xs text-gray-500 mt-1"><span class="text-red-500 font-semibold">TECH</span> — Jan
+                            4, 2021</p>
+                    </div>
+                    <div class="border-t border-gray-300 pt-4">
+                        <h3 class="font-bold text-[15px] leading-5 hover:text-red-500 cursor-pointer">
+                            Son’s Soccer Academy in South Korea Denies Bullying Allegations Involving Coaches
+                        </h3>
+                        <p class="text-xs text-gray-500 mt-1"><span class="text-red-500 font-semibold">SPORTS</span> —
+                            Jan 4, 2021</p>
+                    </div>
+                    <div class="border-t border-gray-300 pt-4">
+                        <h3 class="font-bold text-[15px] leading-5 hover:text-red-500 cursor-pointer">
+                            Market Trading Guide: Jyothy Labs, Safari Industries Among 4 Stock Recommendations for Now –
+                            Latest Stock Ideas
+                        </h3>
+                        <p class="text-xs text-gray-500 mt-1"><span class="text-red-500 font-semibold">MARKETS</span> —
+                            Jan 4, 2021</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BIG IMAGE SECTION -->
+            <div
+                class="order-2 lg:order-2 relative h-[300px] sm:h-[400px] lg:h-[575px] w-full overflow-hidden group rounded-md">
+                <img src="https://images.pexels.com/photos/33687912/pexels-photo-33687912.jpeg" alt="Main News"
+                    class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105 rounded-md">
+                <div class="absolute bottom-0 left-0 right-0 p-4">
+                    <span class="text-xs text-white bg-red-600 px-2 py-1 rounded">WORLD</span>
+                    <h2
+                        class="text-lg sm:text-xl font-extrabold mt-2 leading-tight cursor-pointer text-white drop-shadow-lg">
+                        United Nations Accuses Iran of Using ‘Disproportionate’ Violence During Mahsa Amini Protests
+                    </h2>
+                    <p class="text-xs text-gray-200 mt-2">JOHN DOE — Jan 4, 2021</p>
+                </div>
+            </div>
+
+            <!-- CENTER CONTENT -->
+            <div class="order-4 md:order-3 lg:order-3 space-y-6">
+                <div class="space-y-2">
+                    <img src="https://images.pexels.com/photos/29054973/pexels-photo-29054973.jpeg" alt="News"
+                        class="w-full h-48 object-cover rounded">
+                    <p class="text-red-500 text-xs font-semibold">POLITICS</p>
+                    <h2 class="font-bold text-[14px] leading-snug hover:text-red-500 cursor-pointer">
+                        Russia-Ukraine War: Have Tanks Become Obsolete in Modern Warfare?
+                    </h2>
+                </div>
+
+                <div class="space-y-2">
+                    <img src="https://images.pexels.com/photos/29054973/pexels-photo-29054973.jpeg" alt="News"
+                        class="w-full h-48 object-cover rounded">
+                    <p class="text-red-500 text-xs font-semibold">TRAVEL</p>
+                    <h2 class="font-bold text-[14px] leading-snug hover:text-red-500 cursor-pointer">
+                        Egypt Ministry of Tourism Announces a Record-Breaking 14.9m Tourists
+                    </h2>
+                </div>
+            </div>
+
+            <!-- RIGHT SIDEBAR -->
+            <div class="order-3 md:order-4 lg:order-4 border border-gray-300 p-4 space-y-4">
+                <div class="border-b border-gray-300 pb-3">
                     <h3 class="font-bold text-[15px] leading-5 hover:text-red-500 cursor-pointer">
-                        Stock Market Today: Dow Climbs; Tesla Stock Price Jumps After Deliveries Beat Forecasts
+                        Oxford University Launches Covid-19 Vaccine Study on Children
                     </h3>
-                    <p class="text-xs text-gray-500 mt-1"><span class="text-red-500 font-semibold">MARKETS</span> — Jan
+                    <p class="text-xs text-gray-500 mt-1"><span class="text-red-500 font-semibold">HEALTH</span> — Jan
                         4, 2021</p>
                 </div>
-                <div class="border-t border-gray-300 pt-4">
+                <div class="border-b border-gray-300 pb-3">
                     <h3 class="font-bold text-[15px] leading-5 hover:text-red-500 cursor-pointer">
-                        China to Develop More Than 50 New Standards for AI Sector by 2026
+                        Battle Analysis: Russian Tank Armada vs Ukraine
                     </h3>
-                    <p class="text-xs text-gray-500 mt-1"><span class="text-red-500 font-semibold">TECH</span> — Jan 4,
+                    <p class="text-xs text-gray-500 mt-1"><span class="text-red-500 font-semibold">UKRAINE
+                            CONFLICT</span> — Jan 4, 2021</p>
+                </div>
+                <div class="border-b border-gray-300 pb-3">
+                    <h3 class="font-bold text-[15px] leading-5 hover:text-red-500 cursor-pointer">
+                        T-Mobile Vs. Verizon 5G Home Internet: Which Is Best For You?
+                    </h3>
+                    <p class="text-xs text-gray-500 mt-1"><span class="text-red-500 font-semibold">TECH</span> — Jan 3,
                         2021</p>
                 </div>
-                <div class="border-t border-gray-300 pt-4">
+                <div class="border-b border-gray-300 pb-3">
                     <h3 class="font-bold text-[15px] leading-5 hover:text-red-500 cursor-pointer">
-                        Son’s Soccer Academy in South Korea Denies Bullying Allegations Involving Coaches
+                        E.U. Leaders Consider Faster Vaccine Funds Rollouts
                     </h3>
-                    <p class="text-xs text-gray-500 mt-1"><span class="text-red-500 font-semibold">SPORTS</span> — Jan
-                        4, 2021</p>
+                    <p class="text-xs text-gray-500 mt-1"><span class="text-red-500 font-semibold">HEALTH</span> — Jan
+                        3, 2021</p>
                 </div>
-                <div class="border-t border-gray-300 pt-4">
+                <div>
                     <h3 class="font-bold text-[15px] leading-5 hover:text-red-500 cursor-pointer">
-                        Market Trading Guide: Jyothy Labs, Safari Industries Among 4 Stock Recommendations for Now –
-                        Latest Stock Ideas
+                        Huawei Launches Tri-Folding Phone With Unique Dual Hinges And Gigantic Vivid Display
                     </h3>
-                    <p class="text-xs text-gray-500 mt-1"><span class="text-red-500 font-semibold">MARKETS</span> — Jan
-                        4, 2021</p>
+                    <p class="text-xs text-gray-500 mt-1"><span class="text-red-500 font-semibold">TECH</span> — Jan 3,
+                        2021</p>
                 </div>
             </div>
-        </div>
 
-        <!-- BIG IMAGE SECTION -->
-        <div class="relative h-[300px] sm:h-[400px] lg:h-[575px] w-full overflow-hidden group">
-            <img src="https://images.pexels.com/photos/33687912/pexels-photo-33687912.jpeg" alt="Main News"
-                class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105">
-            <div class="absolute bottom-0 left-0 right-0 p-4">
-                <span class="text-xs text-white bg-red-600 px-2 py-1">WORLD</span>
-                <h2
-                    class="text-lg sm:text-xl font-extrabold mt-2 leading-tight cursor-pointer text-white drop-shadow-lg">
-                    United Nations Accuses Iran of Using ‘Disproportionate’ Violence During Mahsa Amini Protests
-                </h2>
-                <p class="text-xs text-gray-200 mt-2">JOHN DOE — Jan 4, 2021</p>
-            </div>
-        </div>
-
-        <!-- CENTER CONTENT -->
-        <div class="space-y-6 border-t border-gray-300 pt-4">
-            <div class="space-y-2">
-                <img src="https://images.pexels.com/photos/29054973/pexels-photo-29054973.jpeg" alt="News"
-                    class="w-full h-48 object-cover rounded">
-                <p class="text-red-500 text-xs font-semibold">POLITICS</p>
-                <h2 class="font-bold text-[14px] leading-snug hover:text-red-500 cursor-pointer">
-                    Russia-Ukraine War: Have Tanks Become Obsolete in Modern Warfare?
-                </h2>
-            </div>
-
-            <div class="space-y-2">
-                <img src="https://images.pexels.com/photos/29054973/pexels-photo-29054973.jpeg" alt="News"
-                    class="w-full h-48 object-cover rounded">
-                <p class="text-red-500 text-xs font-semibold">TRAVEL</p>
-                <h2 class="font-bold text-[14px] leading-snug hover:text-red-500 cursor-pointer">
-                    Egypt Ministry of Tourism Announces a Record-Breaking 14.9m Tourists
-                </h2>
-            </div>
-        </div>
-
-        <!-- RIGHT SIDEBAR -->
-        <div class="border border-gray-300 p-4 space-y-4">
-            <div class="border-b border-gray-300 pb-3">
-                <h3 class="font-bold text-[15px] leading-5 hover:text-red-500 cursor-pointer">
-                    Oxford University Launches Covid-19 Vaccine Study on Children
-                </h3>
-                <p class="text-xs text-gray-500 mt-1"><span class="text-red-500 font-semibold">HEALTH</span> — Jan 4,
-                    2021</p>
-            </div>
-            <div class="border-b border-gray-300 pb-3">
-                <h3 class="font-bold text-[15px] leading-5 hover:text-red-500 cursor-pointer">
-                    Battle Analysis: Russian Tank Armada vs Ukraine
-                </h3>
-                <p class="text-xs text-gray-500 mt-1"><span class="text-red-500 font-semibold">UKRAINE CONFLICT</span> —
-                    Jan 4, 2021</p>
-            </div>
-            <div class="border-b border-gray-300 pb-3">
-                <h3 class="font-bold text-[15px] leading-5 hover:text-red-500 cursor-pointer">
-                    T-Mobile Vs. Verizon 5G Home Internet: Which Is Best For You?
-                </h3>
-                <p class="text-xs text-gray-500 mt-1"><span class="text-red-500 font-semibold">TECH</span> — Jan 3, 2021
-                </p>
-            </div>
-            <div class="border-b border-gray-300 pb-3">
-                <h3 class="font-bold text-[15px] leading-5 hover:text-red-500 cursor-pointer">
-                    E.U. Leaders Consider Faster Vaccine Funds Rollouts
-                </h3>
-                <p class="text-xs text-gray-500 mt-1"><span class="text-red-500 font-semibold">HEALTH</span> — Jan 3,
-                    2021</p>
-            </div>
-            <div>
-                <h3 class="font-bold text-[15px] leading-5 hover:text-red-500 cursor-pointer">
-                    Huawei Launches Tri-Folding Phone With Unique Dual Hinges And Gigantic Vivid Display
-                </h3>
-                <p class="text-xs text-gray-500 mt-1"><span class="text-red-500 font-semibold">TECH</span> — Jan 3, 2021
-                </p>
-            </div>
         </div>
     </div>
-
 
 
 
@@ -1232,453 +1234,279 @@
 
 
     <!-- MIDDLE EAST NEWS -->
-    <div class="max-w-[1320px] mx-auto flex divide-x divide-gray-300">
-        <!-- Left Column (remaining space) -->
-        <div class="flex-1 pr-4">
-            <!-- Section Title -->
-            <div class="flex items-center w-full mb-6">
-                <h2 class="text-xl font-bold text-red-600 whitespace-nowrap">Middle East News</h2>
-                <div class="flex-grow border-t border-gray-300 ml-4"></div>
-            </div>
+    <div class="max-w-[82.5rem] mx-auto px-4 sm:px-6 lg:px-0 mt-6 flex flex-col lg:flex-row lg:gap-6">
 
-            <!-- Main Content -->
-            <div class="flex w-full gap-4">
-                <!-- Left Column (remaining width) -->
-                <div class="flex-1">
-                    <div class="bg-white">
-                        <!-- Main Image -->
-                        <img src="https://placehold.co/1000x420/e2e8f0/1a202c?text=News+Image" alt="News article image"
-                            class="w-full h-[420px] object-cover" />
-                        <!-- Text Content -->
-                        <div class="pt-4 border-b border-gray-300 pb-2">
-                            <div class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-2">MIDDLE EAST
-                            </div>
-                            <h1 class="text-2xl font-bold text-gray-900 mb-3">
-                                Beijing ready to cooperate with Doha to enhance role of Shanghai Cooperation
-                                Organisation: Envoy
-                            </h1>
-                            <p class="text-gray-700 text-sm leading-relaxed">
-                                To understand the new politics stance and other pro nationals of recent times, we should
-                                look to
-                                Silicon Valley and the quantified movement of the latest generation. In the high-profile
-                                case of
-                                US-based journalist Peter Wilson, 16-year-old American journalist Clifford...
-                            </p>
-                        </div>
-                    </div>
+        <!-- MAIN CONTENT LEFT -->
+        <div class="flex-1 flex flex-col lg:flex-row gap-6">
 
-                    <!-- Articles Grid -->
-                    <div class="container mx-auto max-w-6xl mt-4">
-                        <!-- Articles Grid -->
-                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                            <!-- First Article -->
-                            <div class="bg-white overflow-hidden cursor-pointer">
-                                <div class="relative overflow-hidden">
-                                    <img src="https://images.pexels.com/photos/33691273/pexels-photo-33691273.jpeg"
-                                        alt="Putin speaking" class="w-full h-[100px] object-cover rounded-t-lg" />
-                                </div>
-                                <div class="p-4 text-center">
-                                    <h2
-                                        class="text-[14px] font-semibold text-gray-800 leading-snug  hover:text-red-600">
-                                        How the Middle East Became an Arena for Putin's Power Struggle with the US
-                                    </h2>
-                                </div>
-                            </div>
+            <!-- LEFT/MAIN COLUMN -->
+            <div class="flex-1 flex flex-col gap-6 order-1 lg:order-1">
 
-
-                            <!-- Second Article -->
-                            <div class="bg-white overflow-hidden cursor-pointer">
-                                <div class="relative overflow-hidden">
-                                    <img src="https://images.pexels.com/photos/33691273/pexels-photo-33691273.jpeg"
-                                        alt="Putin speaking" class="w-full h-[100px] object-cover rounded-t-lg" />
-                                </div>
-                                <div class="p-4 text-center">
-                                    <h2
-                                        class="text-[14px] font-semibold text-gray-800 leading-snug  hover:text-red-600">
-                                        How the Middle East Became an Arena for Putin's Power Struggle with the US
-                                    </h2>
-                                </div>
-                            </div>
-
-                            <!-- Third Article -->
-                            <div class="bg-white overflow-hidden cursor-pointer">
-                                <div class="relative overflow-hidden">
-                                    <img src="https://images.pexels.com/photos/33691273/pexels-photo-33691273.jpeg"
-                                        alt="Putin speaking" class="w-full h-[100px] object-cover rounded-t-lg" />
-                                </div>
-                                <div class="p-4 text-center">
-                                    <h2
-                                        class="text-[14px] font-semibold text-gray-800 leading-snug  hover:text-red-600">
-                                        How the Middle East Became an Arena for Putin's Power Struggle with the US
-                                    </h2>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-
-
-                </div>
-
-                <!-- Right Column (fixed width) -->
-                <div class="w-[310px]">
-                    <div class="w-full">
-                        <!-- Top Big Post -->
-                        <div class="mb-4 border-b border-gray-300 pb-4 hover:bg-gray-100 cursor-pointer">
-                            <img src="https://picsum.photos/id/1005/600/400" alt="Main News"
-                                class="w-full h-[175px] object-cover">
-                            <h2 class="mt-2 text-sm font-bold hover:text-red-600 cursor-pointer">
-                                France Risks IMF, Commission Oversight if Macron Loses, Finance Minister Warns
-                            </h2>
-                        </div>
-
-                        <!-- Smaller Posts -->
-                        <div class="space-y-2">
-                            <!-- Repeatable Post -->
-                            <div
-                                class="flex items-start gap-3 border-b border-gray-300 pb-4 hover:bg-gray-100 cursor-pointer">
-                                <div class="flex-1">
-                                    <h3 class="text-sm font-semibold hover:text-red-600">
-                                        Trump Calls for ‘No Holds Barred’ Presidential Debate With Biden
-                                    </h3>
-                                    <p class="text-gray-500 text-xs mt-1">Jun 30, 2024</p>
-                                </div>
-                                <img src="https://picsum.photos/id/1011/200/200" alt="Thumbnail"
-                                    class="w-[70px] h-[70px] object-cover flex-shrink-0">
-                            </div>
-
-                            <div
-                                class="flex items-start gap-3 border-b border-gray-300 pb-4 hover:bg-gray-100 cursor-pointer">
-                                <div class="flex-1">
-                                    <h3 class="text-sm font-semibold hover:text-red-600">
-                                        Ukraine’s Soldier Crisis a Major Challenge for Country’s Defense
-                                    </h3>
-                                    <p class="text-gray-500 text-xs mt-1">Jun 30, 2024</p>
-                                </div>
-                                <img src="https://picsum.photos/id/1012/200/200" alt="Thumbnail"
-                                    class="w-[70px] h-[70px] object-cover flex-shrink-0">
-                            </div>
-
-                            <div
-                                class="flex items-start gap-3 border-b border-gray-300 pb-4 hover:bg-gray-100 cursor-pointer">
-                                <div class="flex-1">
-                                    <h3 class="text-sm font-semibold hover:text-red-600">
-                                        Reward Increases After Beloved Horse Statue Stolen from Yolo County Stable
-                                    </h3>
-                                    <p class="text-gray-500 text-xs mt-1">Jun 30, 2024</p>
-                                </div>
-                                <img src="https://picsum.photos/id/1013/200/200" alt="Thumbnail"
-                                    class="w-[70px] h-[70px] object-cover flex-shrink-0">
-                            </div>
-
-                            <div
-                                class="flex items-start gap-3 border-b border-gray-300 pb-4 hover:bg-gray-100 cursor-pointer">
-                                <div class="flex-1">
-                                    <h3 class="text-sm font-semibold hover:text-red-600">
-                                        Reward Increases After Beloved Horse Statue Stolen from Yolo County Stable
-                                    </h3>
-                                    <p class="text-gray-500 text-xs mt-1">Jun 30, 2024</p>
-                                </div>
-                                <img src="https://picsum.photos/id/1013/200/200" alt="Thumbnail"
-                                    class="w-[70px] h-[70px] object-cover flex-shrink-0">
-                            </div>
-
-                            <div
-                                class="flex items-start gap-3 border-b border-gray-300 pb-4 hover:bg-gray-100 cursor-pointer">
-                                <div class="flex-1">
-                                    <h3 class="text-sm font-semibold hover:text-red-600">
-                                        Reward Increases After Beloved Horse Statue Stolen from Yolo County Stable
-                                    </h3>
-                                    <p class="text-gray-500 text-xs mt-1">Jun 30, 2024</p>
-                                </div>
-                                <img src="https://picsum.photos/id/1013/200/200" alt="Thumbnail"
-                                    class="w-[70px] h-[70px] object-cover flex-shrink-0">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- CLIMATE CHANGE SECTION -->
-            <div class="flex items-center w-full mb-6">
-                <h2 class="text-xl font-bold text-red-600 whitespace-nowrap">Climate Change</h2>
-                <div class="flex-grow border-t border-gray-300 ml-4"></div>
-            </div>
-            <div>
-                <div class="flex-1 flex flex-col lg:flex-row gap-4">
-
-                    <!-- Left Column -->
-                    <div class="w-full lg:w-[420px] flex-shrink-0 mb-8 lg:mb-0">
-                        <div class="space-y-4 pb-5 border-b border-gray-200">
-                            <img src="https://images.pexels.com/photos/32965506/pexels-photo-32965506.jpeg"
-                                alt="Vladimir Putin at a podium" class="w-full h-auto rounded-md">
-                            <h1 class="text-[22px] font-bold font-serif text-gray-900 leading-tight">
-                                One Year on From Unprecedented Wagner Rebellion and Vladimir Putin's Position is as
-                                Strong
-                                as Ever
-                            </h1>
-                            <div class="flex items-center text-xs font-semibold space-x-2">
-                                <span class="text-red-600 uppercase">POLITICS</span>
-                                <span class="text-gray-500">—</span>
-                                <span class="text-gray-500">Jan 15, 2021</span>
-                            </div>
-                            <p class="text-gray-600 text-sm leading-relaxed">
-                                To understand the new politics stance and other pro nationals of recent times, we should
-                                look to Silicon Valley and the quantified movement of the latest generation. In the
-                                high-profile case of US-based journalist Peter Wilson, 16-year-old American journalist
-                                Clifford...
-                            </p>
-                        </div>
-
-                        <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4 mt-4">
-                            <img src="https://placehold.co/100x100/e2e8f0/4a5568?text=Image" alt="Placeholder image"
-                                class="w-36 h-24 object-cover rounded-md flex-shrink-0">
-                            <div>
-                                <h3 class="font-bold text-[15px] leading-tight hover:text-red-600 cursor-pointer">
-                                    Breakthrough in Renewable Energy Storage
-                                </h3>
-                                <p class="text-xs text-gray-500 mt-2">Jan 13, 2021</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Middle Column -->
-                    <div
-                        class="w-full sm:w-[220px] flex-grow lg:border-l lg:border-r lg:border-gray-200 lg:px-4 mb-8 lg:mb-0">
-                        <div class="space-y-5">
-                            <div class="pb-5 border-b border-gray-200">
-                                <h2
-                                    class="font-bold text-gray-800 text-[14px] leading-[20.2px] hover:text-red-600 cursor-pointer">
-                                    Digging Up Old Graves to Make Room for Newly Fallen Soldiers
-                                </h2>
-                                <p class="text-xs text-gray-500 mt-1">Jan 14, 2021</p>
-                            </div>
-                            <div class="pb-5 border-b border-gray-200">
-                                <h2
-                                    class="font-bold text-gray-800 text-[14px] leading-[20.2px] hover:text-red-600 cursor-pointer">
-                                    The New CEO Stresses Commitment to Free Speech in First Speech
-                                </h2>
-                                <p class="text-xs text-gray-500 mt-1">Jan 14, 2021</p>
-                            </div>
-                            <div class="pb-5 border-b border-gray-200">
-                                <h2
-                                    class="font-bold text-gray-800 text-[14px] leading-[20.2px] hover:text-red-600 cursor-pointer">
-                                    U.S. to Finally Have a Secretary-Level Position for Tourism
-                                </h2>
-                                <p class="text-xs text-gray-500 mt-1">Jan 13, 2021</p>
-                            </div>
-                            <div class="pb-5 border-b border-gray-200">
-                                <h2
-                                    class="font-bold text-gray-800 text-[14px] leading-[20.2px] hover:text-red-600 cursor-pointer">
-                                    WHO events around the Union World Conference on Lung Health
-                                </h2>
-                                <p class="text-xs text-gray-500 mt-1">Jan 13, 2021</p>
-                            </div>
-                            <div class="pb-5 border-b border-gray-200">
-                                <h2
-                                    class="font-bold text-gray-800 text-[14px] leading-[20.2px] hover:text-red-600 cursor-pointer">
-                                    Ministry of Law Notifies Transfer of Several High Court Judges
-                                </h2>
-                                <p class="text-xs text-gray-500 mt-1">Jan 12, 2021</p>
-                            </div>
-                            <div class="pb-5 border-b border-gray-200">
-                                <h2
-                                    class="font-bold text-gray-800 text-[14px] leading-[20.2px] hover:text-red-600 cursor-pointer">
-                                    Ministry of Law Notifies Transfer of Several High Court Judges
-                                </h2>
-                                <p class="text-xs text-gray-500 mt-1">Jan 12, 2021</p>
-                            </div>
-                            <div>
-                                <h2
-                                    class="font-bold text-gray-800 text-[14px] leading-[20.2px] hover:text-red-600 cursor-pointer">
-                                    Extra Running Time of Trains in Timetable Cost Millions to National Exchequer
-                                </h2>
-                                <p class="text-xs text-gray-500 mt-1">Jan 12, 2021</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Right Column -->
-                    <div class="w-full lg:w-[270px] flex-shrink-0">
-                        <div class="space-y-6">
-                            <div class="pb-5 border-b border-gray-200">
-                                <img src="https://placehold.co/270x160/e2e8f0/4a5568?text=Image" alt="Mario Draghi"
-                                    class="w-full h-auto rounded-md mb-3">
-                                <p class="text-red-600 text-xs font-semibold uppercase">WORLD</p>
-                                <h3
-                                    class="font-bold text-gray-800 leading-tight my-1 hover:text-red-600 cursor-pointer">
-                                    EU Economy will Grow and Inflation Decline Further, Says Report
-                                </h3>
-                                <p class="text-gray-600 text-sm leading-relaxed">
-                                    To understand the new politics stance and other pro nationals of recent times, we
-                                    should look to Silicon Valley and the quantified movement of the...
-                                </p>
-                            </div>
-                            <div class="pb-5 border-b border-gray-200">
-                                <img src="https://placehold.co/270x160/e2e8f0/4a5568?text=Image" alt="Mario Draghi"
-                                    class="w-full h-auto rounded-md mb-3">
-                                <p class="text-red-600 text-xs font-semibold uppercase">WORLD</p>
-                                <h3
-                                    class="font-bold text-gray-800 leading-tight my-1 hover:text-red-600 cursor-pointer">
-                                    EU Economy will Grow and Inflation Decline Further, Says Report
-                                </h3>
-                                <p class="text-gray-600 text-sm leading-relaxed">
-                                    To understand the new politics stance and other pro nationals of recent times, we
-                                    should look to Silicon Valley and the quantified movement of the...
-                                </p>
-                            </div>
-
-
-
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-
-
-
-
-
-
-            </div>
-
-
-        </div>
-
-
-
-
-        <!-- Right Column (fixed width) -->
-        <div class="max-w-[300px] w-full mx-auto pl-4 lg:sticky lg:top-4 self-start h-fit">
-            <!-- Heading -->
-            <div class="flex items-center w-full mb-6">
-                <!-- Title -->
-                <h2 class="text-xl font-bold text-red-600 whitespace-nowrap">
-                    Trending Now
-                </h2>
-
-                <!-- Line -->
-                <div class="flex-grow border-t border-gray-300 ml-4"></div>
-            </div>
-
-            <!-- Post 1 -->
-            <div class="mb-6">
-                <img src="https://images.pexels.com/photos/32965512/pexels-photo-32965512.jpeg" alt="Post Image 1"
-                    class="w-full h-[130px] object-cover transition duration-300 hover:opacity-80">
-                <div class="flex mt-2">
-                    <span class="text-red-600 font-extrabold text-[30px] mr-2">1.</span>
-                    <p class="text-[15px] font-semibold leading-snug hover:text-red-600 cursor-pointer">
-                        Grolar Bear Hybrids in N.W.T. All Traced Back to Same ‘Strange’ Female Polar Bear
-                    </p>
-                </div>
-            </div>
-
-            <!-- Post 2 -->
-            <div class="mb-6">
-                <img src="https://images.pexels.com/photos/32965512/pexels-photo-32965512.jpeg" alt="Post Image 1"
-                    class="w-full h-[130px] object-cover transition duration-300 hover:opacity-80">
-                <div class="flex mt-2">
-                    <span class="text-red-600 font-extrabold text-[30px] mr-2">2.</span>
-                    <p class="text-[15px] font-semibold leading-snug hover:text-red-600 cursor-pointer">
-                        Grolar Bear Hybrids in N.W.T. All Traced Back to Same ‘Strange’ Female Polar Bear
-                    </p>
-                </div>
-            </div>
-            <!-- Post 3 -->
-            <div class="mb-6">
-                <img src="https://images.pexels.com/photos/32965512/pexels-photo-32965512.jpeg" alt="Post Image 1"
-                    class="w-full h-[130px] object-cover transition duration-300 hover:opacity-80">
-                <div class="flex mt-2">
-                    <span class="text-red-600 font-extrabold text-[30px] mr-2">3.</span>
-                    <p class="text-[15px] font-semibold leading-snug hover:text-red-600 cursor-pointer">
-                        Grolar Bear Hybrids in N.W.T. All Traced Back to Same ‘Strange’ Female Polar Bear
-                    </p>
-                </div>
-            </div>
-            <!-- Post 4 -->
-            <div class="mb-6">
-                <img src="https://images.pexels.com/photos/32965512/pexels-photo-32965512.jpeg" alt="Post Image 1"
-                    class="w-full h-[130px] object-cover transition duration-300 hover:opacity-80">
-                <div class="flex mt-2">
-                    <span class="text-red-600 font-extrabold text-[30px] mr-2">4.</span>
-                    <p class="text-[15px] font-semibold leading-snug hover:text-red-600 cursor-pointer">
-                        Grolar Bear Hybrids in N.W.T. All Traced Back to Same ‘Strange’ Female Polar Bear
-                    </p>
-                </div>
-            </div>
-            <!-- Post 5 -->
-            <div class="mb-6">
-                <img src="https://images.pexels.com/photos/32965512/pexels-photo-32965512.jpeg" alt="Post Image 1"
-                    class="w-full h-[130px] object-cover transition duration-300 hover:opacity-80">
-                <div class="flex mt-2">
-                    <span class="text-red-600 font-extrabold text-[30px] mr-2">5.</span>
-                    <p class="text-[15px] font-semibold leading-snug hover:text-red-600 cursor-pointer">
-                        Grolar Bear Hybrids in N.W.T. All Traced Back to Same ‘Strange’ Female Polar Bear
-                    </p>
-                </div>
-            </div>
-
-            <div class="max-w-[300px] w-full mx-auto">
-                <div class="flex items-center w-full mb-6 mt-6">
-                    <!-- Title -->
-                    <h2 class="text-xl font-bold text-red-600 whitespace-nowrap">
-                        Travel & Tourism
-                    </h2>
-
-                    <!-- Line -->
+                <!-- Section Title -->
+                <div class="flex items-center w-full mb-6">
+                    <h2 class="text-xl font-bold text-red-600 whitespace-nowrap">Middle East News</h2>
                     <div class="flex-grow border-t border-gray-300 ml-4"></div>
                 </div>
 
-                <!-- Grid -->
-                <div class="grid grid-cols-2 gap-6">
-                    <!-- Card 1 -->
-                    <div class="text-center">
-                        <img src="https://picsum.photos/id/1011/600/400" alt="Post 1"
-                            class="w-full h-[80px] object-cover transition duration-300 hover:opacity-80">
-                        <p class="mt-2 text-[14px] font-semibold leading-snug hover:text-red-600 cursor-pointer">
-                            After the July Fourth Fireworks, Look for Business..
+                <!-- Top Article -->
+                <div class="bg-white rounded-md overflow-hidden">
+                    <img src="https://placehold.co/1000x420/e2e8f0/1a202c?text=News+Image" alt="News article"
+                        class="w-full h-[26.25rem] sm:h-[30rem] md:h-[32rem] lg:h-[28rem] object-cover" />
+                    <div class="p-4 border-b border-gray-300">
+                        <div class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-2">MIDDLE EAST</div>
+                        <h1 class="text-2xl md:text-3xl font-bold text-gray-900 mb-3 leading-snug">
+                            Beijing ready to cooperate with Doha to enhance role of Shanghai Cooperation Organisation:
+                            Envoy
+                        </h1>
+                        <p class="text-gray-700 text-sm leading-relaxed">
+                            To understand the new politics stance and other pro nationals of recent times, we should
+                            look to
+                            Silicon Valley and the quantified movement of the latest generation. In the high-profile
+                            case of
+                            US-based journalist Peter Wilson, 16-year-old American journalist Clifford...
                         </p>
                     </div>
+                    
+                </div>
 
-                    <!-- Card 2 -->
-                    <div class="text-center">
-                        <img src="https://picsum.photos/id/1012/600/400" alt="Post 2"
-                            class="w-full h-[80px] object-cover transition duration-300 hover:opacity-80">
-                        <p class="mt-2 text-[14px] font-semibold leading-snug hover:text-red-600 cursor-pointer">
-                            Hunting, Fishing, Tourism and Nature Fair returns to..
-                        </p>
+                <!-- Articles Grid -->
+                 
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-4">
+                    <div class="bg-white overflow-hidden rounded-md cursor-pointer">
+                        <img src="https://images.pexels.com/photos/33691273/pexels-photo-33691273.jpeg" alt="Article 1"
+                            class="w-full h-[6.25rem] object-cover rounded-t-md" />
+                        <div class="p-4 text-center">
+                            <h2 class="text-[0.875rem] font-semibold text-gray-800 leading-snug hover:text-red-600">
+                                How the Middle East Became an Arena for Putin's Power Struggle with the US
+                            </h2>
+                        </div>
                     </div>
 
-                    <!-- Card 3 -->
-                    <div class="text-center">
-                        <img src="https://picsum.photos/id/1013/600/400" alt="Post 3"
-                            class="w-full h-[80px] object-cover transition duration-300 hover:opacity-80">
-                        <p class="mt-2 text-[14px] font-semibold leading-snug hover:text-red-600 cursor-pointer">
-                            Experience Luxury Your Way at Kivotos Santorini..
-                        </p>
+                    <div class="bg-white overflow-hidden rounded-md cursor-pointer">
+                        <img src="https://images.pexels.com/photos/33691273/pexels-photo-33691273.jpeg" alt="Article 2"
+                            class="w-full h-[6.25rem] object-cover rounded-t-md" />
+                        <div class="p-4 text-center">
+                            <h2 class="text-[0.875rem] font-semibold text-gray-800 leading-snug hover:text-red-600">
+                                How the Middle East Became an Arena for Putin's Power Struggle with the US
+                            </h2>
+                        </div>
                     </div>
 
-                    <!-- Card 4 -->
-                    <div class="text-center">
-                        <img src="https://picsum.photos/id/1014/600/400" alt="Post 4"
-                            class="w-full h-[80px] object-cover transition duration-300 hover:opacity-80">
-                        <p class="mt-2 text-[14px] font-semibold leading-snug hover:text-red-600 cursor-pointer">
-                            Visiting Thailand? The Government Covers Your Medi..
-                        </p>
+                    <div class="bg-white overflow-hidden rounded-md cursor-pointer">
+                        <img src="https://images.pexels.com/photos/33691273/pexels-photo-33691273.jpeg" alt="Article 3"
+                            class="w-full h-[6.25rem] object-cover rounded-t-md" />
+                        <div class="p-4 text-center">
+                            <h2 class="text-[0.875rem] font-semibold text-gray-800 leading-snug hover:text-red-600">
+                                How the Middle East Became an Arena for Putin's Power Struggle with the US
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- RIGHT COLUMN inside main content (sidebar) -->
+             
+            <div class="lg:w-[19.375rem] flex-shrink-0 order-2 lg:order-2 mt-15">
+                <!-- Section Title -->
+                <div class="flex items-center w-full mb-10">
+                    
+                    <div class="flex-grow border-t border-gray-300 ml-4"></div>
+                </div>
+                <div class="space-y-4">
+                    <!-- Top Big Post -->
+                    <div class="border-b border-gray-300 pb-4 hover:bg-gray-100 cursor-pointer">
+                        <img src="https://picsum.photos/id/1005/600/400" alt="Main News"
+                            class="w-full h-[10.9375rem] object-cover rounded-md mb-2">
+                        <h2 class="text-sm font-bold hover:text-red-600 cursor-pointer">
+                            France Risks IMF, Commission Oversight if Macron Loses, Finance Minister Warns
+                        </h2>
+                    </div>
+
+                    <!-- Smaller Posts -->
+                    <div class="space-y-2">
+                        <div
+                            class="flex items-start gap-3 border-b border-gray-300 pb-4 hover:bg-gray-100 cursor-pointer">
+                            <div class="flex-1">
+                                <h3 class="text-sm font-semibold hover:text-red-600">Trump Calls for ‘No Holds Barred’
+                                    Presidential Debate With Biden</h3>
+                                <p class="text-gray-500 text-xs mt-1">Jun 30, 2024</p>
+                            </div>
+                            <img src="https://picsum.photos/id/1011/200/200" alt="Thumbnail"
+                                class="w-[4.375rem] h-[4.375rem] object-cover flex-shrink-0">
+                        </div>
+
+                        <div
+                            class="flex items-start gap-3 border-b border-gray-300 pb-4 hover:bg-gray-100 cursor-pointer">
+                            <div class="flex-1">
+                                <h3 class="text-sm font-semibold hover:text-red-600">Ukraine’s Soldier Crisis a Major
+                                    Challenge for Country’s Defense</h3>
+                                <p class="text-gray-500 text-xs mt-1">Jun 30, 2024</p>
+                            </div>
+                            <img src="https://picsum.photos/id/1012/200/200" alt="Thumbnail"
+                                class="w-[4.375rem] h-[4.375rem] object-cover flex-shrink-0">
+                        </div>
+
+                        <div
+                            class="flex items-start gap-3 border-b border-gray-300 pb-4 hover:bg-gray-100 cursor-pointer">
+                            <div class="flex-1">
+                                <h3 class="text-sm font-semibold hover:text-red-600">Ukraine’s Soldier Crisis a Major
+                                    Challenge for Country’s Defense</h3>
+                                <p class="text-gray-500 text-xs mt-1">Jun 30, 2024</p>
+                            </div>
+                            <img src="https://picsum.photos/id/1012/200/200" alt="Thumbnail"
+                                class="w-[4.375rem] h-[4.375rem] object-cover flex-shrink-0">
+                        </div>
+
+                        <div
+                            class="flex items-start gap-3 border-b border-gray-300 pb-4 hover:bg-gray-100 cursor-pointer">
+                            <div class="flex-1">
+                                <h3 class="text-sm font-semibold hover:text-red-600">Ukraine’s Soldier Crisis a Major
+                                    Challenge for Country’s Defense</h3>
+                                <p class="text-gray-500 text-xs mt-1">Jun 30, 2024</p>
+                            </div>
+                            <img src="https://picsum.photos/id/1012/200/200" alt="Thumbnail"
+                                class="w-[4.375rem] h-[4.375rem] object-cover flex-shrink-0">
+                        </div>
+
+                        <div
+                            class="flex items-start gap-3 border-b border-gray-300 pb-4 hover:bg-gray-100 cursor-pointer">
+                            <div class="flex-1">
+                                <h3 class="text-sm font-semibold hover:text-red-600">Ukraine’s Soldier Crisis a Major
+                                    Challenge for Country’s Defense</h3>
+                                <p class="text-gray-500 text-xs mt-1">Jun 30, 2024</p>
+                            </div>
+                            <img src="https://picsum.photos/id/1012/200/200" alt="Thumbnail"
+                                class="w-[4.375rem] h-[4.375rem] object-cover flex-shrink-0">
+                        </div>
+
+                        <div
+                            class="flex items-start gap-3 border-b border-gray-300 pb-4 hover:bg-gray-100 cursor-pointer">
+                            <div class="flex-1">
+                                <h3 class="text-sm font-semibold hover:text-red-600">Ukraine’s Soldier Crisis a Major
+                                    Challenge for Country’s Defense</h3>
+                                <p class="text-gray-500 text-xs mt-1">Jun 30, 2024</p>
+                            </div>
+                            <img src="https://picsum.photos/id/1012/200/200" alt="Thumbnail"
+                                class="w-[4.375rem] h-[4.375rem] object-cover flex-shrink-0">
+                        </div>
+
+                        <div
+                            class="flex items-start gap-3 border-b border-gray-300 pb-4 hover:bg-gray-100 cursor-pointer">
+                            <div class="flex-1">
+                                <h3 class="text-sm font-semibold hover:text-red-600">Ukraine’s Soldier Crisis a Major
+                                    Challenge for Country’s Defense</h3>
+                                <p class="text-gray-500 text-xs mt-1">Jun 30, 2024</p>
+                            </div>
+                            <img src="https://picsum.photos/id/1012/200/200" alt="Thumbnail"
+                                class="w-[4.375rem] h-[4.375rem] object-cover flex-shrink-0">
+                        </div>
+
+                        <div
+                            class="flex items-start gap-3 hover:bg-gray-100 cursor-pointer">
+                            <div class="flex-1">
+                                <h3 class="text-sm font-semibold hover:text-red-600">Ukraine’s Soldier Crisis a Major
+                                    Challenge for Country’s Defense</h3>
+                                <p class="text-gray-500 text-xs mt-1">Jun 30, 2024</p>
+                            </div>
+                            <img src="https://picsum.photos/id/1012/200/200" alt="Thumbnail"
+                                class="w-[4.375rem] h-[4.375rem] object-cover flex-shrink-0">
+                        </div>
+                        <!-- Repeat as needed -->
                     </div>
                 </div>
             </div>
 
+        </div>
+
+        <!-- RIGHT SIDE TRENDING & TRAVEL -->
+        <div class="lg:w-[18.75rem] mt-6 lg:mt-0 flex-shrink-0">
+            <!-- Trending Now Section -->
+            <div class="mb-6">
+                <div class="flex items-center w-full mb-4">
+                    <h2 class="text-xl font-bold text-red-600 whitespace-nowrap">Trending Now</h2>
+                    <div class="flex-grow border-t border-gray-300 ml-4"></div>
+                </div>
+
+                <div class="space-y-6">
+                    <!-- Repeatable posts -->
+                    <div class="space-y-2 cursor-pointer">
+                        <img src="https://images.pexels.com/photos/32965512/pexels-photo-32965512.jpeg" alt="Post 1"
+                            class="w-full h-[8.125rem] object-cover rounded-md hover:opacity-80 transition duration-300">
+                        <div class="flex mt-2">
+                            <span class="text-red-600 font-extrabold text-2xl mr-2">1.</span>
+                            <p class="text-sm font-semibold leading-snug hover:text-red-600 cursor-pointer">
+                                Grolar Bear Hybrids in N.W.T. All Traced Back to Same ‘Strange’ Female Polar Bear
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Repeatable posts -->
+                    <div class="space-y-2 cursor-pointer">
+                        <img src="https://images.pexels.com/photos/32965512/pexels-photo-32965512.jpeg" alt="Post 1"
+                            class="w-full h-[8.125rem] object-cover rounded-md hover:opacity-80 transition duration-300">
+                        <div class="flex mt-2">
+                            <span class="text-red-600 font-extrabold text-2xl mr-2">1.</span>
+                            <p class="text-sm font-semibold leading-snug hover:text-red-600 cursor-pointer">
+                                Grolar Bear Hybrids in N.W.T. All Traced Back to Same ‘Strange’ Female Polar Bear
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Repeatable posts -->
+                    <div class="space-y-2 cursor-pointer">
+                        <img src="https://images.pexels.com/photos/32965512/pexels-photo-32965512.jpeg" alt="Post 1"
+                            class="w-full h-[8.125rem] object-cover rounded-md hover:opacity-80 transition duration-300">
+                        <div class="flex mt-2">
+                            <span class="text-red-600 font-extrabold text-2xl mr-2">1.</span>
+                            <p class="text-sm font-semibold leading-snug hover:text-red-600 cursor-pointer">
+                                Grolar Bear Hybrids in N.W.T. All Traced Back to Same ‘Strange’ Female Polar Bear
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Repeatable posts -->
+                    <div class="space-y-2 cursor-pointer">
+                        <img src="https://images.pexels.com/photos/32965512/pexels-photo-32965512.jpeg" alt="Post 1"
+                            class="w-full h-[8.125rem] object-cover rounded-md hover:opacity-80 transition duration-300">
+                        <div class="flex mt-2">
+                            <span class="text-red-600 font-extrabold text-2xl mr-2">1.</span>
+                            <p class="text-sm font-semibold leading-snug hover:text-red-600 cursor-pointer">
+                                Grolar Bear Hybrids in N.W.T. All Traced Back to Same ‘Strange’ Female Polar Bear
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Add more posts similarly -->
+                </div>
+            </div>
+
+            <!-- Travel & Tourism Section -->
+            <div>
+                <div class="flex items-center w-full mb-4 mt-6">
+                    <h2 class="text-xl font-bold text-red-600 whitespace-nowrap">Travel & Tourism</h2>
+                    <div class="flex-grow border-t border-gray-300 ml-4"></div>
+                </div>
+
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="text-center cursor-pointer">
+                        <img src="https://picsum.photos/id/1011/600/400" alt="Post 1"
+                            class="w-full h-[5rem] object-cover rounded-md hover:opacity-80 transition duration-300">
+                        <p class="mt-1 text-sm font-semibold hover:text-red-600">After the July Fourth Fireworks, Look
+                            for Business..</p>
+                    </div>
+
+                    <div class="text-center cursor-pointer">
+                        <img src="https://picsum.photos/id/1012/600/400" alt="Post 2"
+                            class="w-full h-[5rem] object-cover rounded-md hover:opacity-80 transition duration-300">
+                        <p class="mt-1 text-sm font-semibold hover:text-red-600">Hunting, Fishing, Tourism and Nature
+                            Fair returns to..</p>
+                    </div>
+                    <!-- Add more cards -->
+                </div>
+            </div>
 
         </div>
 
-
     </div>
+
 
 
     <!-- LAST PART -->
