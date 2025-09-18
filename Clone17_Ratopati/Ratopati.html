@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ratopati clone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+
+<!-- NAVBAR -->
+<header class="w-full bg-red-700 fixed top-0 left-0 z-50 shadow-md">
+    <div class="max-w-[78.125rem] mx-auto flex items-center justify-between px-[1rem] sm:px-[2rem] py-[0.75rem]">
+
+        <!-- Logo -->
+        <div class="flex-shrink-0">
+            <img src="https://images.pexels.com/photos/965879/pexels-photo-965879.jpeg" alt="Logo"
+                class="h-[2.5rem] w-auto">
+        </div>
+
+        <!-- Desktop Nav (moved to right) -->
+        <nav class="hidden lg:flex flex-1 justify-end">
+            <ul class="flex gap-[2rem] text-white text-[1rem] font-semibold uppercase tracking-wide">
+                <li><a href="#"
+                        class="relative transition duration-300 hover:text-gray-200 after:content-[''] after:absolute after:left-0 after:bottom-[-4px] after:w-0 after:h-[2px] after:bg-white hover:after:w-full after:transition-all after:duration-300">Politics</a>
+                </li>
+                <li><a href="#"
+                        class="relative transition duration-300 hover:text-gray-200 after:content-[''] after:absolute after:left-0 after:bottom-[-4px] after:w-0 after:h-[2px] after:bg-white hover:after:w-full after:transition-all after:duration-300">Society</a>
+                </li>
+                <li><a href="#"
+                        class="relative transition duration-300 hover:text-gray-200 after:content-[''] after:absolute after:left-0 after:bottom-[-4px] after:w-0 after:h-[2px] after:bg-white hover:after:w-full after:transition-all after:duration-300">Health</a>
+                </li>
+                <li><a href="#"
+                        class="relative transition duration-300 hover:text-gray-200 after:content-[''] after:absolute after:left-0 after:bottom-[-4px] after:w-0 after:h-[2px] after:bg-white hover:after:w-full after:transition-all after:duration-300">Business</a>
+                </li>
+                <li><a href="#"
+                        class="relative transition duration-300 hover:text-gray-200 after:content-[''] after:absolute after:left-0 after:bottom-[-4px] after:w-0 after:h-[2px] after:bg-white hover:after:w-full after:transition-all after:duration-300">Sports</a>
+                </li>
+                <li><a href="#"
+                        class="relative transition duration-300 hover:text-gray-200 after:content-[''] after:absolute after:left-0 after:bottom-[-4px] after:w-0 after:h-[2px] after:bg-white hover:after:w-full after:transition-all after:duration-300">World</a>
+                </li>
+                <li><a href="#"
+                        class="relative transition duration-300 hover:text-gray-200 after:content-[''] after:absolute after:left-0 after:bottom-[-4px] after:w-0 after:h-[2px] after:bg-white hover:after:w-full after:transition-all after:duration-300">Diplomacy</a>
+                </li>
+                <li><a href="#"
+                        class="relative transition duration-300 hover:text-gray-200 after:content-[''] after:absolute after:left-0 after:bottom-[-4px] after:w-0 after:h-[2px] after:bg-white hover:after:w-full after:transition-all after:duration-300">Tech</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Hamburger (Mobile & Tablet) -->
+        <button id="menu-toggle" class="lg:hidden text-white text-[1.75rem] focus:outline-none">
+            ☰
+        </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-red-700">
+        <ul class="flex flex-col items-center gap-[1rem] py-[1rem] text-white text-[1rem] font-semibold uppercase">
+            <li><a href="#" class="hover:text-gray-200">Politics</a></li>
+            <li><a href="#" class="hover:text-gray-200">Society</a></li>
+            <li><a href="#" class="hover:text-gray-200">Health</a></li>
+            <li><a href="#" class="hover:text-gray-200">Business</a></li>
+            <li><a href="#" class="hover:text-gray-200">Sports</a></li>
+            <li><a href="#" class="hover:text-gray-200">World</a></li>
+            <li><a href="#" class="hover:text-gray-200">Diplomacy</a></li>
+            <li><a href="#" class="hover:text-gray-200">Tech</a></li>
+        </ul>
+    </div>
+</header>
+
+
+    <!-- LATEST NEWS SECTION -->
+    <section class="w-full max-w-[78.125rem] mx-auto px-[1rem] pt-[4rem] mt-4">
+        <!-- Section Heading -->
+        <div class=" mb-[1rem]">
+            <h2 class="text-[2rem] font-bold text-blue-900">Latest News</h2>
+        </div>
+
+        <!-- Grid Layout -->
+        <div class="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-[1.5rem]">
+
+            <!-- Left Big News -->
+            <div class="relative group overflow-hidden">
+                <img src="https://picsum.photos/800/450" alt="Big News" class="w-full aspect-[16/9] object-cover">
+                <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 p-[1rem]">
+                    <h3
+                        class="text-[1.25rem] md:text-[1.5rem] font-semibold text-white group-hover:text-red-600 cursor-pointer">
+                        Landslide blocks Kaligandaki Highway
+                    </h3>
+                </div>
+            </div>
+
+            <!-- Right Small News List -->
+            <div class="flex flex-col justify-start gap-[1rem] min-h-0">
+
+                <!-- Small News 1 -->
+                <div class="flex gap-[1rem] items-center group">
+                    <img src="https://picsum.photos/200/140" alt="News 1"
+                        class="w-[8rem] aspect-[4/3] object-cover flex-shrink-0">
+                    <h4
+                        class="text-[1.1rem] font-medium text-gray-800 leading-snug group-hover:text-red-600 cursor-pointer">
+                        Traffic resumes on Narayangadh-Muglin road after removal of landslide debris
+                    </h4>
+                </div>
+
+                <hr class="border-gray-300">
+
+                <!-- Small News 2 -->
+                <div class="flex gap-[1rem] items-center group">
+                    <img src="https://picsum.photos/201/140" alt="News 2"
+                        class="w-[8rem] aspect-[4/3] object-cover flex-shrink-0">
+                    <h4
+                        class="text-[1.1rem] font-medium text-gray-800 leading-snug group-hover:text-red-600 cursor-pointer">
+                        Under-construction roadway subsides in Tanahun
+                    </h4>
+                </div>
+
+                <hr class="border-gray-300">
+
+                <!-- Small News 3 -->
+                <div class="flex gap-[1rem] items-center group">
+                    <img src="https://picsum.photos/202/140" alt="News 3"
+                        class="w-[8rem] aspect-[4/3] object-cover flex-shrink-0">
+                    <h4
+                        class="text-[1.1rem] font-medium text-gray-800 leading-snug group-hover:text-red-600 cursor-pointer">
+                        Police working actively to retrieve looted items Lorem ipsum dolor sit amet. Lorem ipsum dolor,
+                        sit amet consectetur adipisicing elit. Quos, adipisci.
+                    </h4>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- HIGHLIGHT SECTION -->
+    <section class="w-full max-w-[78.125rem] mx-auto px-[1rem] p-[2rem]">
+        <!-- Section Heading -->
+        <div class="mb-[1rem]">
+            <h2 class="text-[2rem] font-bold text-blue-900">Highlights</h2>
+        </div>
+        <div class="flex flex-col lg:flex-row gap-[1.5rem] w-full">
+
+            <!-- Left Column (Flexible Width) -->
+            <div class="flex-1">
+                <!-- top section -->
+                <section class="flex flex-col lg:flex-row gap-[1rem] w-full">
+
+                    <!-- Big Featured News -->
+                    <div class="relative w-full lg:w-[605px] lg:h-[405px] flex-shrink-0">
+                        <img src="https://picsum.photos/605/405" alt="Big News"
+                            class="w-full h-auto max-w-full object-cover" />
+
+
+                        <!-- Overlay Text -->
+                        <div
+                            class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/70 to-transparent p-[1rem] rounded-b-md">
+                            <h2 class="text-white text-[1.5rem] font-bold leading-snug">
+                                Home Minister directs Traffic Police to work with high morale
+                            </h2>
+                        </div>
+                    </div>
+
+                    <!-- Small News Card -->
+                    <div class="flex-1 gap-6">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDvxJSFTbC6_7alKt2FGS4rr3G5Xiw274rXg&s"
+                            alt="Small News"
+                            class="w-full h-auto max-h-[170px] sm:max-h-[220px] md:max-h-[280px] lg:max-h-[320px] object-cover" />
+
+                        <div class="py-[1rem]">
+                            <h3
+                                class="text-[1.125rem] font-semibold leading-snug mb-[0.5rem] hover:text-red-600 cursor-pointer">
+                                Nepal's First Woman Prime Minister Sushila Karki Takes Oath
+                            </h3>
+                            <p class="text-[0.95rem] text-gray-700 leading-relaxed py-2">
+                                Nepal has made history by appointing its first woman Prime Minister. Former Chief
+                                Justice Sushila Karki was sworn in as the interim leader of the...
+                            </p>
+                        </div>
+                    </div>
+
+                </section>
+
+                <!-- button section -->
+                <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[1rem] w-full mt-[1rem]">
+
+                    <!-- News Card 1 -->
+                    <div class="bg-white overflow-hidden">
+                        <img src="https://picsum.photos/350/200" alt="News 1" class="w-full h-[10rem] object-cover">
+                        <h3
+                            class="mt-[0.5rem] text-[1.25rem] font-medium leading-[1.75rem] hover:text-red-600 cursor-pointer">
+                            Maoist Centre Chair Dahal calls for finding way out to existing political transition
+                            constitutionally
+                        </h3>
+                    </div>
+
+                    <!-- News Card 2 -->
+                    <div class="bg-white overflow-hidden">
+                        <img src="https://picsum.photos/351/200" alt="News 2" class="w-full h-[10rem] object-cover">
+                        <h3
+                            class="mt-[0.5rem] text-[1.25rem] font-medium leading-[1.75rem] hover:text-red-600 cursor-pointer">
+                            PM Oli urges for dialogue, calls all-party meeting
+                        </h3>
+                    </div>
+
+                    <!-- News Card 3 -->
+                    <div class="bg-white overflow-hidden">
+                        <img src="https://picsum.photos/352/200" alt="News 3" class="w-full h-[10rem] object-cover">
+                        <h3
+                            class="mt-[0.5rem] text-[1.25rem] font-medium leading-[1.75rem] hover:text-red-600 cursor-pointer">
+                            Death Toll Rises to Four in Protest Violence
+                        </h3>
+                    </div>
+
+                </section>
+
+
+
+
+
+
+            </div>
+
+            <!-- Right Column (Fixed 300px) -->
+            <div class="w-full lg:w-[18.75rem]">
+                <!-- RECENT UPDATE SIDEBAR -->
+                <aside class="w-full overflow-hidden">
+                    <!-- Heading -->
+                    <div class="flex items-center justify-between bg-blue-900 px-[1rem] py-[0.75rem]">
+                        <h3 class="text-white text-[1.25rem] font-bold">Recent Update</h3>
+                    </div>
+
+                    <!-- News List -->
+                    <div class="flex flex-col divide-y divide-gray-300">
+
+                        <!-- Item 1 -->
+                        <div class="flex gap-[0.75rem] py-[2rem] group">
+                            <img src="https://picsum.photos/120/80" alt="Update 1"
+                                class="w-[8rem] h-[6rem] object-cover flex-shrink-0">
+                            <h4
+                                class="text-[1.125rem] font-medium text-gray-800 leading-snug group-hover:text-red-600 cursor-pointer">
+                                Landslide blocks Kaligandaki Highway
+                            </h4>
+                        </div>
+
+                        <!-- Item 2 -->
+                        <div class="flex gap-[0.75rem] py-[2rem] group">
+                            <img src="https://picsum.photos/121/80" alt="Update 2"
+                                class="w-[8rem] h-[6rem]  object-cover flex-shrink-0">
+                            <h4
+                                class="text-[1.125rem] font-medium text-gray-800 leading-snug group-hover:text-red-600 cursor-pointer">
+                                Traffic resumes on Narayangadh-Muglin road after removal of landslide debris
+                            </h4>
+                        </div>
+
+                        <!-- Item 3 -->
+                        <div class="flex gap-[0.75rem] py-[2rem] group">
+                            <img src="https://picsum.photos/122/80" alt="Update 3"
+                                class="w-[8rem] h-[6rem] object-cover flex-shrink-0">
+                            <h4
+                                class="text-[1.125rem] font-medium text-gray-800 leading-snug group-hover:text-red-600 cursor-pointer">
+                                Under-construction roadway subsides in Tanahun
+                            </h4>
+                        </div>
+
+                        <!-- Item 4 -->
+                        <div class="flex gap-[0.75rem] py-[2rem] group">
+                            <img src="https://picsum.photos/123/80" alt="Update 4"
+                                class="w-[8rem] h-[6rem] object-cover flex-shrink-0">
+                            <h4
+                                class="text-[1.125rem] font-medium text-gray-800 leading-snug group-hover:text-red-600 cursor-pointer">
+                                Police working actively to retrieve looted items
+                            </h4>
+                        </div>
+
+                    </div>
+                </aside>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- POLITICS SECTION -->
+    <section class="w-full bg-gray-200 py-[1.5rem]">
+        <div class="max-w-[75rem] mx-auto px-4 sm:px-4 lg:px-0 py-6 lg:py-0">
+
+            <!-- Section Heading -->
+            <div class="mb-[1rem]">
+                <h2 class="text-[2rem] font-bold text-blue-900">Politics</h2>
+            </div>
+
+            <!-- Custom Grid: Left + Middle flexible, Right fixed 25rem -->
+            <div class="grid grid-cols-1 lg:grid-cols-[31rem_1fr_25rem] gap-[1.5rem]">
+
+                <!-- Left Big Featured -->
+                <div>
+                    <img src="https://images.pexels.com/photos/14868995/pexels-photo-14868995.jpeg" alt="Featured"
+                        class="w-full h-[25rem] object-cover">
+                    <h3
+                        class="mt-[0.75rem] text-[1.25rem] font-semibold hover:text-red-600 cursor-pointer leading-snug">
+                        Mayor Balen's Playful Message to an Angry Hark Sampang
+                    </h3>
+                </div>
+
+                <!-- Middle Medium Card -->
+                <div>
+                    <img src="https://picsum.photos/500/300" alt="Medium News" class="w-full h-[12.5rem] object-cover">
+                    <h3
+                        class="mt-[0.75rem] text-[1.125rem] font-semibold hover:text-red-600 cursor-pointer leading-snug">
+                        Meeting Between Prime Minister Karki and National Assembly Chairman Dahal in Kathmandu
+                    </h3>
+                    <p class="mt-[0.5rem] text-gray-600 text-[0.875rem] leading-[1.375rem]">
+                        National Assembly Chairman Narayan Prasad Dahal met with the newly appointed Prime Minister,
+                        Sushila Karki, to offer his congratulations and…
+                    </p>
+                </div>
+
+                <!-- Right Small List (Fixed 25rem width) -->
+                <div class="flex flex-col gap-[1rem] w-full">
+
+                    <!-- Item 1 -->
+                    <div class="flex gap-[0.75rem]">
+                        <img src="https://picsum.photos/100/70" alt="Small News" class="w-[5rem] h-[6rem] object-cover">
+                        <h4 class="text-[1.125rem] font-medium hover:text-red-600 cursor-pointer leading-snug">
+                            Nepal's First Woman Prime Minister Sushila Karki Takes Oath
+                        </h4>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="flex gap-[0.75rem]">
+                        <img src="https://picsum.photos/101/70" alt="Small News" class="w-[8rem] h-[6rem] object-cover">
+                        <h4 class="text-[1.125rem] font-medium hover:text-red-600 cursor-pointer leading-snug">
+                            Ministry Orders Free Treatment for Injured Protesters
+                        </h4>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="flex gap-[0.75rem]">
+                        <img src="https://picsum.photos/102/70" alt="Small News" class="w-[8rem] h-[6rem] object-cover">
+                        <h4 class="text-[1.125rem] font-medium hover:text-red-600 cursor-pointer leading-snug">
+                            Police Clash with Protesters Outside Parliament
+                        </h4>
+                    </div>
+
+                    <!-- Item 4 -->
+                    <div class="flex gap-[0.75rem]">
+                        <img src="https://picsum.photos/103/70" alt="Small News" class="w-[8rem] h-[6rem] object-cover">
+                        <h4
+                            class="text-[1.125rem] font-medium hover:text-red-600 cursor-pointer leading-snug hover:text-red-600">
+                            International Media Covers Nepal's GenZ Movement
+                        </h4>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRENDING SECTION -->
+    <section class="w-full bg-[#1f3b57] py-[2rem] mb-6">
+        <div class="max-w-[78.125rem] mx-auto px-[1rem]">
+
+            <!-- Section Heading -->
+            <div class="mb-[1rem]">
+                <h2 class="text-[2rem] font-bold text-white">Trending</h2>
+            </div>
+
+            <!-- Responsive Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[1.5rem]">
+
+                <!-- Card -->
+                <div class="flex gap-[0.75rem] border-b border-gray-500 pb-[1rem]">
+                    <img src="https://picsum.photos/100/70" alt="Trending"
+                        class="w-[7rem] h-[5rem] object-cover flex-shrink-0">
+                    <h3 class="text-[1rem] font-medium text-white hover:text-red-500 cursor-pointer leading-snug">
+                        Dear Youths, Our Mission Is Democracy and the End of Corruption, Not Mobocracy
+                    </h3>
+                </div>
+
+                <!-- Card -->
+                <div class="flex gap-[0.75rem] border-b border-gray-500 pb-[1rem]">
+                    <img src="https://picsum.photos/101/70" alt="Trending"
+                        class="w-[7rem] h-[5rem] object-cover flex-shrink-0">
+                    <h3 class="text-[1rem] font-medium text-white hover:text-red-500 cursor-pointer leading-snug">
+                        Nepal's First Woman Prime Minister Sushila Karki Takes Oath
+                    </h3>
+                </div>
+
+                <!-- Card -->
+                <div class="flex gap-[0.75rem] border-b border-gray-500 pb-[1rem]">
+                    <img src="https://picsum.photos/102/70" alt="Trending"
+                        class="w-[7rem] h-[5rem] object-cover flex-shrink-0">
+                    <h3 class="text-[1rem] font-medium text-white hover:text-red-500 cursor-pointer leading-snug">
+                        36 dead from Gen Z protest; injured ones being treated at hospitals: Health Ministry
+                    </h3>
+                </div>
+
+                <!-- Card -->
+                <div class="flex gap-[0.75rem] border-b border-gray-500 pb-[1rem]">
+                    <img src="https://picsum.photos/103/70" alt="Trending"
+                        class="w-[7rem] h-[5rem] object-cover flex-shrink-0">
+                    <h3 class="text-[1rem] font-medium text-white hover:text-red-500 cursor-pointer leading-snug">
+                        UN Security Council Emergency Meeting: Arab, Islamic Solidarity with Qatar Following Brutal
+                        Israeli Attack
+                    </h3>
+                </div>
+
+                <!-- Card -->
+                <div class="flex gap-[0.75rem] border-b border-gray-500 pb-[1rem]">
+                    <img src="https://picsum.photos/104/70" alt="Trending"
+                        class="w-[7rem] h-[5rem] object-cover flex-shrink-0">
+                    <h3 class="text-[1rem] font-medium text-white hover:text-red-500 cursor-pointer leading-snug">
+                        Peace and goodwill rally organized in Bhairahawa
+                    </h3>
+                </div>
+
+                <!-- Card -->
+                <div class="flex gap-[0.75rem] border-b border-gray-500 pb-[1rem]">
+                    <img src="https://picsum.photos/105/70" alt="Trending"
+                        class="w-[7rem] h-[5rem] object-cover flex-shrink-0">
+                    <h3 class="text-[1rem] font-medium text-white hover:text-red-500 cursor-pointer leading-snug">
+                        NIA’s directive to facilitate insurance claims
+                    </h3>
+                </div>
+
+                <!-- Card -->
+                <div class="flex gap-[0.75rem]">
+                    <img src="https://picsum.photos/106/70" alt="Trending"
+                        class="w-[7rem] h-[5rem] object-cover flex-shrink-0">
+                    <h3 class="text-[1rem] font-medium text-white hover:text-red-500 cursor-pointer leading-snug">
+                        Maoist Centre Chair Dahal calls for finding way out to existing political transition
+                        constitutionally
+                    </h3>
+                </div>
+
+                <!-- Card -->
+                <div class="flex gap-[0.75rem]">
+                    <img src="https://picsum.photos/107/70" alt="Trending"
+                        class="w-[7rem] h-[5rem] object-cover flex-shrink-0">
+                    <h3 class="text-[1rem] font-medium text-white hover:text-red-500 cursor-pointer leading-snug">
+                        Nepali Army's Request to the Public
+                    </h3>
+                </div>
+
+                <!-- Card -->
+                <div class="flex gap-[0.75rem]">
+                    <img src="https://picsum.photos/108/70" alt="Trending"
+                        class="w-[7rem] h-[5rem] object-cover flex-shrink-0">
+                    <h3 class="text-[1rem] font-medium text-white hover:text-red-500 cursor-pointer leading-snug">
+                        Public buses start operating their service from New Bus Park
+                    </h3>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SOCIETY SECTION -->
+    <section class="w-full py-[2rem]">
+        <div class="max-w-[78.125rem] mx-auto px-[1rem]">
+
+            <!-- Section Heading -->
+            <div class="mb-[1rem]">
+                <h2 class="text-[2rem] font-bold text-blue-900">Society</h2>
+            </div>
+
+            <!-- Responsive Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[1.5rem]">
+
+                <!-- Card -->
+                <div class="flex flex-col">
+                    <img src="https://picsum.photos/400/250?random=1" alt="Society News"
+                        class="w-full h-[12.5rem] object-cover">
+                    <h3 class="mt-[0.75rem] text-[1.25rem] font-medium hover:text-red-600 cursor-pointer leading-snug">
+                        Landslide blocks Kaligandaki Highway
+                    </h3>
+                </div>
+
+                <!-- Card -->
+                <div class="flex flex-col">
+                    <img src="https://picsum.photos/400/250?random=2" alt="Society News"
+                        class="w-full h-[12.5rem] object-cover">
+                    <h3 class="mt-[0.75rem] text-[1.25rem] font-medium hover:text-red-600 cursor-pointer leading-snug">
+                        Traffic resumes on Narayangadh-Muglin road after removal of landslide debris
+                    </h3>
+                </div>
+
+                <!-- Card -->
+                <div class="flex flex-col">
+                    <img src="https://picsum.photos/400/250?random=3" alt="Society News"
+                        class="w-full h-[12.5rem] object-cover">
+                    <h3 class="mt-[0.75rem] text-[1.25rem] font-medium hover:text-red-600 cursor-pointer leading-snug">
+                        Under-construction roadway subsides in Tanahun
+                    </h3>
+                </div>
+
+                <!-- Card -->
+                <div class="flex flex-col">
+                    <img src="https://picsum.photos/400/250?random=4" alt="Society News"
+                        class="w-full h-[12.5rem] object-cover">
+                    <h3 class="mt-[0.75rem] text-[1.25rem] font-medium hover:text-red-600 cursor-pointer leading-snug">
+                        Police working actively to retrieve looted items
+                    </h3>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Business section -->
+    <section class="w-full py-[2rem]">
+        <div class="max-w-[78.125rem] mx-auto px-[1rem]">
+
+            <!-- Section Heading -->
+            <div class="mb-[1rem]">
+                <h2 class="text-[2rem] font-bold text-blue-900">Business</h2>
+            </div>
+
+            <!-- Grid -->
+            <div class="grid grid-cols-1 lg:grid-cols-[1fr_23.25rem_16.875rem] gap-[1.5rem]">
+
+                <!-- Left Big Feature -->
+                <div class="relative">
+                    <img src="https://picsum.photos/700/450?random=1" alt="Big Business News"
+                        class="w-full h-full object-cover rounded">
+                    <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/70 to-transparent p-[1rem]">
+                        <h3
+                            class="text-white text-[1.25rem] font-semibold leading-snug hover:text-red-500 cursor-pointer">
+                            Gold price down Rs 1,000 per tola
+                        </h3>
+                    </div>
+                </div>
+
+                <!-- Middle List (fixed 372px) -->
+                <div class="flex flex-col gap-[1rem]">
+                    <div class="flex gap-[0.75rem]">
+                        <img src="https://picsum.photos/100/80?random=2" alt="Small News"
+                            class="w-[8rem] h-[6rem] object-cover">
+                        <h4 class="text-[1.125rem] font-medium hover:text-red-500 cursor-pointer leading-snug">
+                            Under-construction roadway subsides in Tanahun
+                        </h4>
+                    </div>
+                    <div class="flex gap-[0.75rem]">
+                        <img src="https://picsum.photos/100/80?random=3" alt="Small News"
+                            class="w-[8rem] h-[6rem] object-cover">
+                        <h4 class="text-[1.125rem] font-medium hover:text-red-500 cursor-pointer leading-snug">
+                            Birgunj metropolis claims loss of Rs 1.15 billion in Gen-Z protest
+                        </h4>
+                    </div>
+                    <div class="flex gap-[0.75rem]">
+                        <img src="https://picsum.photos/100/80?random=4" alt="Small News"
+                            class="w-[8rem] h-[6rem] object-cover">
+                        <h4 class="text-[1.125rem] font-medium hover:text-red-500 cursor-pointer leading-snug">
+                            Fair price shops in Humla
+                        </h4>
+                    </div>
+                    <div class="flex gap-[0.75rem]">
+                        <img src="https://picsum.photos/100/80?random=5" alt="Small News"
+                            class="w-[8rem] h-[6rem] object-cover">
+                        <h4 class="text-[1.125rem] font-medium hover:text-red-500 cursor-pointer leading-snug">
+                            Kaski administration requests patience for regular service
+                        </h4>
+                    </div>
+                </div>
+
+                <!-- Right Column (fixed 270px) -->
+                <div class="flex flex-col">
+                    <img src="https://picsum.photos/400/250?random=6" alt="Right News"
+                        class="w-full h-[12rem] object-cover rounded">
+                    <h3
+                        class="mt-[1.25rem] text-[1.125rem] font-semibold hover:text-red-500 cursor-pointer leading-snug">
+                        Cinema Halls Reopen After Closure
+                    </h3>
+                    <p class="mt-[0.5rem] text-gray-600 text-[0.9375rem] leading-[1.5375rem]">
+                        Cinema halls that were closed due to the Janjati movement have reopened starting Monday.
+                        This decision was made by the…
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Science and Technology section -->
+    <section class="bg-sky-400 py-8">
+        <div class="max-w-[76rem] mx-auto px-4 lg:px-0">
+            <!-- Section Header -->
+            <div class="mb-[1rem]">
+                <h2 class="text-[2rem] font-bold text-white">Science and Technology</h2>
+            </div>
+
+            <!-- Main Grid -->
+            <div class="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-6">
+
+                <!-- Left Column (Big News) -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- News 1 -->
+                    <div class="relative rounded overflow-hidden group">
+                        <img src="https://picsum.photos/600/450" alt="News 1"
+                            class="w-full h-[18rem] md:h-[22rem] object-cover">
+                        <div
+                            class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-3 hover:text-red-600">
+                            <h3 class="text-white font-semibold text-[1.125rem] group-hover:text-gray-200">4G service
+                                launched in Humla</h3>
+                        </div>
+                    </div>
+
+                    <!-- News 2 -->
+                    <div class="group relative rounded overflow-hidden">
+                        <img src="https://picsum.photos/601/451" alt="News 2"
+                            class="w-full h-[18rem] md:h-[22rem] object-cover">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-3">
+                            <h3 class="text-white font-semibold text-[1.125rem] group-hover:text-gray-200">
+                                NC to discuss with govt on social media restriction
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column (More News) -->
+                <div class="flex flex-col gap-6">
+
+                    <!-- Small News Item -->
+                    <div class="flex items-center gap-3 group">
+                        <img src="https://picsum.photos/100/75" alt="Small News"
+                            class="w-[6.5rem] h-[4.25rem] object-cover rounded">
+                        <p class="text-white text-[0.875rem] font-medium group-hover:text-gray-200">
+                            An Unprecedented Digital Silence Falls on Nepal
+                        </p>
+                    </div>
+
+                    <div class="flex items-center gap-3 group">
+                        <img src="https://picsum.photos/101/76" alt="Small News"
+                            class="w-[5.5rem] h-[4.25rem] object-cover rounded">
+                        <p class="text-white text-[0.875rem] font-medium group-hover:text-gray-200">
+                            Regulation of social sites is positive move: CAN Federation
+                        </p>
+                    </div>
+
+                    <div class="flex items-center gap-3 group">
+                        <img src="https://picsum.photos/102/77" alt="Small News"
+                            class="w-[6.5rem] h-[4.25rem] object-cover rounded">
+                        <p class="text-white text-[0.875rem] font-medium group-hover:text-gray-200">
+                            Google Fined Over 42 Million Dollars in California
+                        </p>
+                    </div>
+
+                    <div class="flex items-center gap-3 group">
+                        <img src="https://picsum.photos/103/78" alt="Small News"
+                            class="w-[6.5rem] h-[4.25rem] object-cover rounded">
+                        <p class="text-white text-[0.875rem] font-medium group-hover:text-gray-200">
+                            Government Bans Unregistered Social Media in Nepal
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interview Section -->
+    <section class="w-full  py-[2rem]">
+        <div class="max-w-[78.125rem] mx-auto px-[1rem]">
+            <!-- Section Header -->
+            <div class="mb-[1rem]">
+                <h2 class="text-[2rem] font-bold text-blue-900">Science and Technology</h2>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-[1fr_18.75rem] gap-[2rem]">
+
+                <!-- Left Column -->
+                <div class="flex flex-col gap-[1.5rem]">
+                    <!-- Top Two Feature News + Small List in one block -->
+                    <div class="flex flex-col gap-[1.5rem]">
+                        <!-- Top Two Feature News -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-[1rem]">
+                            <!-- Feature 1 -->
+                            <div class="relative group">
+                                <img src="https://picsum.photos/600/400?random=1" alt="Feature News"
+                                    class="w-full h-[20rem] object-cover rounded">
+                                <div
+                                    class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/70 to-transparent p-[1rem]">
+                                    <h3
+                                        class="text-white text-[1.25rem] font-semibold leading-snug group-hover:text-red-500 cursor-pointer transition-colors">
+                                        Two Arrested in Maharajgunj with Foreign Currency
+                                    </h3>
+                                </div>
+                            </div>
+
+                            <!-- Feature 2 -->
+                            <div class="relative group">
+                                <img src="https://picsum.photos/600/400?random=2" alt="Feature News"
+                                    class="w-full h-[20rem] object-cover rounded">
+                                <div
+                                    class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/70 to-transparent p-[1rem]">
+                                    <h3
+                                        class="text-white text-[1.25rem] font-semibold leading-snug group-hover:text-red-500 cursor-pointer transition-colors">
+                                        UNFPA and Yeti Airlines Partner to Fight Gender-Based Violence in Nepal
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Small News List (2 per row, under big posts) -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-[1rem]">
+                            <div class="flex gap-[0.75rem] items-start">
+                                <img src="https://picsum.photos/80/80?random=3" alt="Small News"
+                                    class="w-[4rem] h-[4rem] object-cover rounded">
+                                <h4 class="text-[1rem] font-medium leading-snug hover:text-red-500 cursor-pointer">
+                                    Harnessing Nepal’s Cultural Heritage: Lalitpur’s Blueprint for Soft Diplomacy
+                                </h4>
+                            </div>
+                            <div class="flex gap-[0.75rem] items-start">
+                                <img src="https://picsum.photos/80/80?random=4" alt="Small News"
+                                    class="w-[4rem] h-[4rem] object-cover rounded">
+                                <h4 class="text-[1rem] font-medium leading-snug hover:text-red-500 cursor-pointer">
+                                    The Girl Who Came Back to Build a Better Future
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- Right Column (Opinion Blog) -->
+                <div class="flex flex-col gap-[1.25rem]">
+                    <!-- Heading -->
+                    <h2
+                        class="bg-red-600 text-white text-[1.25rem] font-semibold px-[1rem] py-[0.5rem] rounded flex items-center justify-between">
+                        Opinion Blog
+                    </h2>
+
+                    <!-- Blog List -->
+                    <div class="flex flex-col gap-[1.25rem]">
+                        <!-- Item 1 -->
+                        <div class="flex gap-[0.75rem] items-start">
+                            <img src="https://picsum.photos/50/50?random=5" alt="Author"
+                                class="w-[2.5rem] h-[2.5rem] rounded-full object-cover">
+                            <div>
+                                <h4 class="text-[1rem] font-medium leading-snug hover:text-red-500 cursor-pointer">
+                                    Yadav Calls Karki's Recommendation a Positive Step
+                                </h4>
+                                <p class="text-gray-500 text-[0.9rem]">- Ratopati</p>
+                            </div>
+                        </div>
+
+                        <!-- Item 2 -->
+                        <div class="flex gap-[0.75rem] items-start">
+                            <img src="https://picsum.photos/50/50?random=6" alt="Author"
+                                class="w-[2.5rem] h-[2.5rem] rounded-full object-cover">
+                            <div>
+                                <h4 class="text-[1rem] font-medium leading-snug hover:text-red-500 cursor-pointer">
+                                    Dear Youths, Our Mission Is Democracy and the End of Corruption, Not Mobocracy
+                                </h4>
+                                <p class="text-gray-500 text-[0.9rem]">- Sameer Budhathoki</p>
+                            </div>
+                        </div>
+
+                        <!-- Item 3 -->
+                        <div class="flex gap-[0.75rem] items-start">
+                            <img src="https://picsum.photos/50/50?random=7" alt="Author"
+                                class="w-[2.5rem] h-[2.5rem] rounded-full object-cover">
+                            <div>
+                                <h4 class="text-[1rem] font-medium leading-snug hover:text-red-500 cursor-pointer">
+                                    Forest Act Repeal Halts Development: President Karki
+                                </h4>
+                                <p class="text-gray-500 text-[0.9rem]">- Ratopati</p>
+                            </div>
+                        </div>
+
+                        <!-- Item 4 -->
+                        <div class="flex gap-[0.75rem] items-start">
+                            <img src="https://picsum.photos/50/50?random=8" alt="Author"
+                                class="w-[2.5rem] h-[2.5rem] rounded-full object-cover">
+                            <div>
+                                <h4 class="text-[1rem] font-medium leading-snug hover:text-red-500 cursor-pointer">
+                                    An Unprecedented Digital Silence Falls on Nepal
+                                </h4>
+                                <p class="text-gray-500 text-[0.9rem]">- Ratopati</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Entertainment section -->
+    <section class="w-full bg-[#222] py-[4rem] mt-4 mb-4">
+        <div class="max-w-[76rem] mx-auto grid grid-cols-1 lg:grid-cols-[45rem_1fr] gap-[2rem] px-[1rem] lg:px-0">
+
+            <!-- Section Header spanning full width -->
+            <div class=" col-span-full">
+                <h2 class="text-[2rem] font-bold text-white">Science and Technology</h2>
+            </div>
+
+            <!-- Left Column (Feature Image) -->
+            <div class="relative">
+                <img src="https://picsum.photos/720/400?random=1" alt="Feature News"
+                    class="w-full h-full object-cover rounded">
+                <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/70 to-transparent p-[1rem]">
+                    <h2 class="text-white text-[1.5rem] font-semibold leading-snug hover:text-red-500 cursor-pointer">
+                        Cinema Halls Reopen After Closure
+                    </h2>
+                </div>
+            </div>
+
+            <!-- Right Column (News List) -->
+            <div class="flex flex-col gap-[1.25rem]">
+
+                <!-- Item 1 -->
+                <div class="flex gap-[0.75rem] items-start">
+                    <img src="https://picsum.photos/120/80?random=2" alt="Small News"
+                        class="w-[7rem] h-[5rem] object-cover">
+                    <h3 class="text-white text-[1rem] font-medium leading-snug hover:text-red-500 cursor-pointer">
+                        New Song "Yo Jaan Balidan" Released for Film 'Balidan'
+                    </h3>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="flex gap-[0.75rem] items-start">
+                    <img src="https://picsum.photos/120/80?random=3" alt="Small News"
+                        class="w-[7rem] h-[5rem] object-cover">
+                    <h3 class="text-white text-[1rem] font-medium leading-snug hover:text-red-500 cursor-pointer">
+                        Tongue piercing festival in Madhyapurthimi today
+                    </h3>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="flex gap-[0.75rem] items-start">
+                    <img src="https://picsum.photos/120/80?random=4" alt="Small News"
+                        class="w-[7rem] h-[5rem] object-cover">
+                    <h3 class="text-white text-[1rem] font-medium leading-snug hover:text-red-500 cursor-pointer">
+                        Chepang community celebrating Nwangi festival today
+                    </h3>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="flex gap-[0.75rem] items-start">
+                    <img src="https://picsum.photos/120/80?random=5" alt="Small News"
+                        class="w-[7rem] h-[5rem] object-cover">
+                    <h3 class="text-white text-[1rem] font-medium leading-snug hover:text-red-500 cursor-pointer">
+                        Chulu Sudur Purwa mountain open for climbing
+                    </h3>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="flex gap-[0.75rem] items-start">
+                    <img src="https://picsum.photos/120/80?random=6" alt="Small News"
+                        class="w-[7rem] h-[5rem] object-cover">
+                    <h3 class="text-white text-[1rem] font-medium leading-snug hover:text-red-500 cursor-pointer">
+                        Nepal's Slow Progress on Tobacco Tax
+                    </h3>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- International Section -->
+    <section class="w-full py-[2rem]">
+
+        <!-- Section Heading -->
+        <div class="max-w-[78.125rem] mx-auto px-[1rem] mb-[1.5rem]">
+            <h2 class="text-[2rem] font-bold text-blue-900">International</h2>
+        </div>
+
+        <div
+            class="max-w-[78.125rem] mx-auto grid grid-cols-1 lg:grid-cols-[1fr_37.5rem_18.75rem] gap-[2rem] px-[1rem]">
+
+            <!-- Left Column -->
+            <div class="space-y-[1.5rem]">
+
+                <!-- News 1 -->
+                <div class="flex flex-col">
+                    <img src="https://picsum.photos/400/250?random=1" alt="News"
+                        class="w-full h-[10rem] object-cover rounded">
+                    <h2 class="text-[1.25rem] font-semibold mt-[0.5rem] hover:text-red-500 cursor-pointer">
+                        Karan Johar Seeks Court Protection for His Personality Rights
+                    </h2>
+                    <p class="text-[0.95rem] text-gray-600">
+                        Following in the footsteps of Bollywood actors Aishwarya Rai Bachchan and Abhishek Bachchan,
+                        renowned film producer and director Karan Johar has also filed a petition...
+                    </p>
+                </div>
+
+                <!-- News 2 -->
+                <div class="flex flex-col">
+                    <img src="https://picsum.photos/400/250?random=2" alt="News"
+                        class="w-full h-[10rem] object-cover rounded">
+                    <h2 class="text-[1.25rem] font-semibold mt-[0.5rem] hover:text-red-500 cursor-pointer">
+                        UN Security Council Emergency Meeting: Arab, Islamic Solidarity with Qatar
+                    </h2>
+                </div>
+
+            </div>
+
+            <!-- Middle Column -->
+            <div class="space-y-[1.5rem]">
+                <!-- Big Feature News -->
+                <div class="relative">
+                    <img src="https://picsum.photos/600/350?random=3" alt="Big News"
+                        class="w-full h-[23rem] object-cover rounded">
+                    <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/70 to-transparent p-[1rem]">
+                        <h2 class="text-white text-[1.5rem] font-bold hover:text-red-500 cursor-pointer">
+                            Trump Sues New York Times for $1.5 Billion
+                        </h2>
+                    </div>
+                </div>
+
+                <!-- Other Middle News -->
+                <div class="flex  gap-[1rem]">
+                    <div>
+                        <img src="https://picsum.photos/200/150?random=4" class="w-full h-[9rem] object-cover rounded">
+                        <h3 class="mt-[0.5rem] text-[1rem] font-medium hover:text-red-500 cursor-pointer">
+                            Former Brazilian President Bolsonaro Found Guilty
+                        </h3>
+                    </div>
+                    <div>
+                        <img src="https://picsum.photos/200/150?random=5" class="w-full h-[9rem] object-cover rounded">
+                        <h3 class="mt-[0.5rem] text-[1rem] font-medium hover:text-red-500 cursor-pointer">
+                            NASA Bans Chinese Nationals from Its Program
+                        </h3>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Right Column -->
+            <div class="space-y-[1rem]">
+                <div
+                    class="bg-blue-900 text-white px-[1rem] py-[0.5rem] font-semibold rounded flex items-center justify-between">
+                    Diaspora <span class="text-lg">➤</span>
+                </div>
+                <!-- Blog List -->
+                <div class="flex flex-col gap-[1.25rem]">
+                    <!-- Item 1 -->
+                    <div class="flex gap-[0.75rem] items-start">
+                        <img src="https://picsum.photos/50/50?random=5" alt="Author"
+                            class="w-[2.5rem] h-[2.5rem] rounded-full object-cover">
+                        <div>
+                            <h4 class="text-[1rem] font-medium leading-snug hover:text-red-500 cursor-pointer">
+                                Yadav Calls Karki's Recommendation a Positive Step
+                            </h4>
+                            <p class="text-gray-500 text-[0.9rem]">- Ratopati</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="flex gap-[0.75rem] items-start">
+                        <img src="https://picsum.photos/50/50?random=6" alt="Author"
+                            class="w-[2.5rem] h-[2.5rem] rounded-full object-cover">
+                        <div>
+                            <h4 class="text-[1rem] font-medium leading-snug hover:text-red-500 cursor-pointer">
+                                Dear Youths, Our Mission Is Democracy and the End of Corruption, Not Mobocracy
+                            </h4>
+                            <p class="text-gray-500 text-[0.9rem]">- Sameer Budhathoki</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="flex gap-[0.75rem] items-start">
+                        <img src="https://picsum.photos/50/50?random=7" alt="Author"
+                            class="w-[2.5rem] h-[2.5rem] rounded-full object-cover">
+                        <div>
+                            <h4 class="text-[1rem] font-medium leading-snug hover:text-red-500 cursor-pointer">
+                                Forest Act Repeal Halts Development: President Karki
+                            </h4>
+                            <p class="text-gray-500 text-[0.9rem]">- Ratopati</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 4 -->
+                    <div class="flex gap-[0.75rem] items-start">
+                        <img src="https://picsum.photos/50/50?random=8" alt="Author"
+                            class="w-[2.5rem] h-[2.5rem] rounded-full object-cover">
+                        <div>
+                            <h4 class="text-[1rem] font-medium leading-snug hover:text-red-500 cursor-pointer">
+                                An Unprecedented Digital Silence Falls on Nepal
+                            </h4>
+                            <p class="text-gray-500 text-[0.9rem]">- Ratopati</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sports SECTION -->
+    <section class="w-full py-[2rem] mt-4">
+        <div class="max-w-[78.125rem] mx-auto px-[1rem]">
+
+            <!-- Section Heading -->
+            <div class="mb-[1rem]">
+                <h2 class="text-[2rem] font-bold text-blue-900">Sports</h2>
+            </div>
+
+            <!-- Responsive Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[1.5rem]">
+
+                <!-- Card -->
+                <div class="flex flex-col">
+                    <img src="https://picsum.photos/400/250?random=1" alt="Society News"
+                        class="w-full h-[12.5rem] object-cover">
+                    <h3 class="mt-[0.75rem] text-[1.25rem] font-medium hover:text-red-600 cursor-pointer leading-snug">
+                        Landslide blocks Kaligandaki Highway
+                    </h3>
+                    <p class="text-[0.95rem] text-gray-600">
+                        Following in the footsteps of Bollywood actors Aishwarya Rai Bachchan and Abhishek Bachchan,
+                        renowned film producer and director Karan Johar has also filed a petition...
+                    </p>
+                </div>
+
+                <!-- Card -->
+                <div class="flex flex-col">
+                    <img src="https://picsum.photos/400/250?random=2" alt="Society News"
+                        class="w-full h-[12.5rem] object-cover">
+                    <h3 class="mt-[0.75rem] text-[1.25rem] font-medium hover:text-red-600 cursor-pointer leading-snug">
+                        Traffic resumes on Narayangadh-Muglin road after removal of landslide debris
+                    </h3>
+                    <p class="text-[0.95rem] text-gray-600">
+                        Following in the footsteps of Bollywood actors Aishwarya Rai Bachchan and Abhishek Bachchan,
+                        renowned film producer and director Karan Johar has also filed a petition...
+                    </p>
+                </div>
+
+                <!-- Card -->
+                <div class="flex flex-col">
+                    <img src="https://picsum.photos/400/250?random=3" alt="Society News"
+                        class="w-full h-[12.5rem] object-cover">
+                    <h3 class="mt-[0.75rem] text-[1.25rem] font-medium hover:text-red-600 cursor-pointer leading-snug">
+                        Under-construction roadway subsides in Tanahun
+                    </h3>
+                    <p class="text-[0.95rem] text-gray-600">
+                        Following in the footsteps of Bollywood actors Aishwarya Rai Bachchan and Abhishek Bachchan,
+                        renowned film producer and director Karan Johar has also filed a petition...
+                    </p>
+                </div>
+
+                <!-- Card -->
+                <div class="flex flex-col">
+                    <img src="https://picsum.photos/400/250?random=4" alt="Society News"
+                        class="w-full h-[12.5rem] object-cover">
+                    <h3 class="mt-[0.75rem] text-[1.25rem] font-medium hover:text-red-600 cursor-pointer leading-snug">
+                        Police working actively to retrieve looted items
+                    </h3>
+                    <p class="text-[0.95rem] text-gray-600">
+                        Following in the footsteps of Bollywood actors Aishwarya Rai Bachchan and Abhishek Bachchan,
+                        renowned film producer and director Karan Johar has also filed a petition...
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="w-full bg-red-700 text-white mt-[3rem]">
+        <div class="max-w-[78.125rem] mx-auto px-[1rem] py-[2rem] flex justify-center">
+            <p class="text-[1.125rem] text-center">
+                © 2025 YourWebsite. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+
+    <script>
+        // Select the button and mobile menu
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        // Toggle mobile menu on button click
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden'); // Show/hide menu
+        });
+    </script>
+
+
+
+</body>
+
+</html>

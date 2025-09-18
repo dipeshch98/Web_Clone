@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artical page - Ratopati clone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- NAVBAR -->
+    <header class="w-full bg-red-700 fixed top-0 left-0 z-50 shadow-md">
+        <div class="max-w-[78.125rem] mx-auto flex items-center justify-between px-[1rem] sm:px-[2rem] py-[0.75rem]">
+
+            <!-- Logo -->
+            <div class="flex-shrink-0">
+                <img src="https://images.pexels.com/photos/965879/pexels-photo-965879.jpeg" alt="Logo"
+                    class="h-[2.5rem] w-auto">
+            </div>
+
+            <!-- Desktop Nav (moved to right) -->
+            <nav class="hidden lg:flex flex-1 justify-end">
+                <ul class="flex gap-[2rem] text-white text-[1rem] font-semibold uppercase tracking-wide">
+                    <li><a href="#"
+                            class="relative transition duration-300 hover:text-gray-200 after:content-[''] after:absolute after:left-0 after:bottom-[-4px] after:w-0 after:h-[2px] after:bg-white hover:after:w-full after:transition-all after:duration-300">Politics</a>
+                    </li>
+                    <li><a href="#"
+                            class="relative transition duration-300 hover:text-gray-200 after:content-[''] after:absolute after:left-0 after:bottom-[-4px] after:w-0 after:h-[2px] after:bg-white hover:after:w-full after:transition-all after:duration-300">Society</a>
+                    </li>
+                    <li><a href="#"
+                            class="relative transition duration-300 hover:text-gray-200 after:content-[''] after:absolute after:left-0 after:bottom-[-4px] after:w-0 after:h-[2px] after:bg-white hover:after:w-full after:transition-all after:duration-300">Health</a>
+                    </li>
+                    <li><a href="#"
+                            class="relative transition duration-300 hover:text-gray-200 after:content-[''] after:absolute after:left-0 after:bottom-[-4px] after:w-0 after:h-[2px] after:bg-white hover:after:w-full after:transition-all after:duration-300">Business</a>
+                    </li>
+                    <li><a href="#"
+                            class="relative transition duration-300 hover:text-gray-200 after:content-[''] after:absolute after:left-0 after:bottom-[-4px] after:w-0 after:h-[2px] after:bg-white hover:after:w-full after:transition-all after:duration-300">Sports</a>
+                    </li>
+                    <li><a href="#"
+                            class="relative transition duration-300 hover:text-gray-200 after:content-[''] after:absolute after:left-0 after:bottom-[-4px] after:w-0 after:h-[2px] after:bg-white hover:after:w-full after:transition-all after:duration-300">World</a>
+                    </li>
+                    <li><a href="#"
+                            class="relative transition duration-300 hover:text-gray-200 after:content-[''] after:absolute after:left-0 after:bottom-[-4px] after:w-0 after:h-[2px] after:bg-white hover:after:w-full after:transition-all after:duration-300">Diplomacy</a>
+                    </li>
+                    <li><a href="#"
+                            class="relative transition duration-300 hover:text-gray-200 after:content-[''] after:absolute after:left-0 after:bottom-[-4px] after:w-0 after:h-[2px] after:bg-white hover:after:w-full after:transition-all after:duration-300">Tech</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Hamburger (Mobile & Tablet) -->
+            <button id="menu-toggle" class="lg:hidden text-white text-[1.75rem] focus:outline-none">
+                ☰
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-red-700">
+            <ul class="flex flex-col items-center gap-[1rem] py-[1rem] text-white text-[1rem] font-semibold uppercase">
+                <li><a href="#" class="hover:text-gray-200">Politics</a></li>
+                <li><a href="#" class="hover:text-gray-200">Society</a></li>
+                <li><a href="#" class="hover:text-gray-200">Health</a></li>
+                <li><a href="#" class="hover:text-gray-200">Business</a></li>
+                <li><a href="#" class="hover:text-gray-200">Sports</a></li>
+                <li><a href="#" class="hover:text-gray-200">World</a></li>
+                <li><a href="#" class="hover:text-gray-200">Diplomacy</a></li>
+                <li><a href="#" class="hover:text-gray-200">Tech</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Blog Section SECTION -->
+    <section class="w-full max-w-[78.125rem] mx-auto px-[1rem] lg:px-0 p-[2rem] pt-[5rem]">
+        <div class="flex flex-col lg:flex-row gap-[1.5rem] w-full">
+
+            <!-- Left Column (Flexible Width) -->
+            <div class="flex-1">
+                <section class="w-full max-w-[60rem] mx-auto px-[1rem] py-[2rem] pt-0">
+
+                    <!-- Title -->
+                    <h1 class="text-[1.75rem] md:text-[2rem] font-bold leading-snug mb-[1rem]">
+                        Top of the World Golf Classic tournament to be held in Lo-manthang
+                    </h1>
+
+                    <!-- Featured Image -->
+                    <div class="mb-[1.5rem]">
+                        <img src="https://picsum.photos/800/400?random=10" alt="News Image" class="w-full h-[40rem] ">
+                    </div>
+
+                    <!-- Article Content -->
+                    <article class="text-[1rem] leading-[1.7] text-gray-700 space-y-[1rem]">
+                        <p>
+                            Kaski, Sept 1: The Fourth Edition of the Top of the World Golf Classic tournament is going
+                            to be
+                            organized in Lo-manthang, Mustang, on September 13-14. This golf tournament is one of the
+                            prestigious
+                            golf competitions being played at a high altitude in the world.
+                        </p>
+                        <p>
+                            Organizer Mustang Golf Course organized a press meet in Pokhara on Sunday to brief the media
+                            about
+                            the tournament. As shared by the organizer, the competition would be held at Lowathang Golf
+                            Course in
+                            Lo-manthang at an altitude of 4,700 metres above sea level.
+                        </p>
+                        <p>
+                            Managing Director of Mustang Golf Course Indra Dhara Bista shared that more than 60 golfers
+                            from
+                            Nepal and other countries will take part in the competition. According to Bista, this year’s
+                            golf
+                            tournament would be held under the theme of ‘Tee for Climate’ stating that “we will
+                            disseminate a
+                            message to the world to draw attention on the climate crisis in Mustang”.
+                        </p>
+                    </article>
+
+                    <!-- Featured Image -->
+                    <div class="mb-[1.5rem] mt-6">
+                        <img src="https://picsum.photos/800/400?random=10" alt="News Image" class="w-full h-auto ">
+                    </div>
+
+                    <!-- Article Content -->
+                    <article class="text-[1rem] leading-[1.7] text-gray-700 space-y-[1rem]">
+                        <p>
+                            Kaski, Sept 1: The Fourth Edition of the Top of the World Golf Classic tournament is going
+                            to be
+                            organized in Lo-manthang, Mustang, on September 13-14. This golf tournament is one of the
+                            prestigious
+                            golf competitions being played at a high altitude in the world.
+                        </p>
+                        <p>
+                            Organizer Mustang Golf Course organized a press meet in Pokhara on Sunday to brief the media
+                            about
+                            the tournament. As shared by the organizer, the competition would be held at Lowathang Golf
+                            Course in
+                            Lo-manthang at an altitude of 4,700 metres above sea level.
+                        </p>
+                        <p>
+                            Managing Director of Mustang Golf Course Indra Dhara Bista shared that more than 60 golfers
+                            from
+                            Nepal and other countries will take part in the competition. According to Bista, this year’s
+                            golf
+                            tournament would be held under the theme of ‘Tee for Climate’ stating that “we will
+                            disseminate a
+                            message to the world to draw attention on the climate crisis in Mustang”.
+                        </p>
+                    </article>
+
+                </section>
+
+
+            </div>
+
+            <!-- Right Column (Fixed 300px) -->
+            <div class="w-full lg:w-[18.75rem] lg:sticky lg:top-[5rem] self-start h-fit">
+                <!-- RECENT UPDATE SIDEBAR -->
+                <aside class="w-full overflow-hidden">
+                    <!-- Heading -->
+                    <div class="flex items-center justify-between bg-blue-900 px-[1rem] py-[0.75rem]">
+                        <h3 class="text-white text-[1.25rem] font-bold">Recent Update</h3>
+                    </div>
+
+                    <!-- News List -->
+                    <div class="flex flex-col divide-y divide-gray-300">
+
+                        <!-- Item 1 -->
+                        <div class="flex gap-[0.75rem] py-[2rem] group">
+                            <img src="https://picsum.photos/120/80" alt="Update 1"
+                                class="w-[8rem] h-[6rem] object-cover flex-shrink-0">
+                            <h4
+                                class="text-[1.125rem] font-medium text-gray-800 leading-snug group-hover:text-red-600 cursor-pointer">
+                                Landslide blocks Kaligandaki Highway
+                            </h4>
+                        </div>
+
+                        <!-- Item 2 -->
+                        <div class="flex gap-[0.75rem] py-[2rem] group">
+                            <img src="https://picsum.photos/121/80" alt="Update 2"
+                                class="w-[8rem] h-[6rem]  object-cover flex-shrink-0">
+                            <h4
+                                class="text-[1.125rem] font-medium text-gray-800 leading-snug group-hover:text-red-600 cursor-pointer">
+                                Traffic resumes on Narayangadh-Muglin road after removal of landslide debris
+                            </h4>
+                        </div>
+
+                        <!-- Item 3 -->
+                        <div class="flex gap-[0.75rem] py-[2rem] group">
+                            <img src="https://picsum.photos/122/80" alt="Update 3"
+                                class="w-[8rem] h-[6rem] object-cover flex-shrink-0">
+                            <h4
+                                class="text-[1.125rem] font-medium text-gray-800 leading-snug group-hover:text-red-600 cursor-pointer">
+                                Under-construction roadway subsides in Tanahun
+                            </h4>
+                        </div>
+
+                        <!-- Item 4 -->
+                        <div class="flex gap-[0.75rem] py-[2rem] group">
+                            <img src="https://picsum.photos/123/80" alt="Update 4"
+                                class="w-[8rem] h-[6rem] object-cover flex-shrink-0">
+                            <h4
+                                class="text-[1.125rem] font-medium text-gray-800 leading-snug group-hover:text-red-600 cursor-pointer">
+                                Police working actively to retrieve looted items
+                            </h4>
+                        </div>
+
+                    </div>
+
+
+                </aside>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Related Artical SECTION -->
+    <section class="w-full py-[2rem]">
+        <div class="max-w-[78.125rem] mx-auto px-[1rem]">
+
+            <!-- Section Heading -->
+            <div class="mb-[1rem]">
+                <h2 class="text-[2rem] font-bold text-blue-900">Related Artical</h2>
+            </div>
+
+            <!-- Responsive Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[1.5rem]">
+
+                <!-- Card -->
+                <div class="flex flex-col">
+                    <img src="https://picsum.photos/400/250?random=1" alt="Society News"
+                        class="w-full h-[12.5rem] object-cover">
+                    <h3 class="mt-[0.75rem] text-[1.25rem] font-medium hover:text-red-600 cursor-pointer leading-snug">
+                        Landslide blocks Kaligandaki Highway
+                    </h3>
+                    <p class="text-[0.95rem] text-gray-600">
+                        Following in the footsteps of Bollywood actors Aishwarya Rai Bachchan and Abhishek Bachchan,
+                        renowned film producer and director Karan Johar has also filed a petition...
+                    </p>
+                </div>
+
+                <!-- Card -->
+                <div class="flex flex-col">
+                    <img src="https://picsum.photos/400/250?random=2" alt="Society News"
+                        class="w-full h-[12.5rem] object-cover">
+                    <h3 class="mt-[0.75rem] text-[1.25rem] font-medium hover:text-red-600 cursor-pointer leading-snug">
+                        Traffic resumes on Narayangadh-Muglin road after removal of landslide debris
+                    </h3>
+                    <p class="text-[0.95rem] text-gray-600">
+                        Following in the footsteps of Bollywood actors Aishwarya Rai Bachchan and Abhishek Bachchan,
+                        renowned film producer and director Karan Johar has also filed a petition...
+                    </p>
+                </div>
+
+                <!-- Card -->
+                <div class="flex flex-col">
+                    <img src="https://picsum.photos/400/250?random=3" alt="Society News"
+                        class="w-full h-[12.5rem] object-cover">
+                    <h3 class="mt-[0.75rem] text-[1.25rem] font-medium hover:text-red-600 cursor-pointer leading-snug">
+                        Under-construction roadway subsides in Tanahun
+                    </h3>
+                    <p class="text-[0.95rem] text-gray-600">
+                        Following in the footsteps of Bollywood actors Aishwarya Rai Bachchan and Abhishek Bachchan,
+                        renowned film producer and director Karan Johar has also filed a petition...
+                    </p>
+                </div>
+
+                <!-- Card -->
+                <div class="flex flex-col">
+                    <img src="https://picsum.photos/400/250?random=4" alt="Society News"
+                        class="w-full h-[12.5rem] object-cover">
+                    <h3 class="mt-[0.75rem] text-[1.25rem] font-medium hover:text-red-600 cursor-pointer leading-snug">
+                        Police working actively to retrieve looted items
+                    </h3>
+                    <p class="text-[0.95rem] text-gray-600">
+                        Following in the footsteps of Bollywood actors Aishwarya Rai Bachchan and Abhishek Bachchan,
+                        renowned film producer and director Karan Johar has also filed a petition...
+                    </p>
+                </div>
+
+                <!-- Card -->
+                <div class="flex flex-col">
+                    <img src="https://picsum.photos/400/250?random=4" alt="Society News"
+                        class="w-full h-[12.5rem] object-cover">
+                    <h3 class="mt-[0.75rem] text-[1.25rem] font-medium hover:text-red-600 cursor-pointer leading-snug">
+                        Police working actively to retrieve looted items
+                    </h3>
+                    <p class="text-[0.95rem] text-gray-600">
+                        Following in the footsteps of Bollywood actors Aishwarya Rai Bachchan and Abhishek Bachchan,
+                        renowned film producer and director Karan Johar has also filed a petition...
+                    </p>
+                </div>
+
+                <!-- Card -->
+                <div class="flex flex-col">
+                    <img src="https://picsum.photos/400/250?random=2" alt="Society News"
+                        class="w-full h-[12.5rem] object-cover">
+                    <h3 class="mt-[0.75rem] text-[1.25rem] font-medium hover:text-red-600 cursor-pointer leading-snug">
+                        Traffic resumes on Narayangadh-Muglin road after removal of landslide debris
+                    </h3>
+                    <p class="text-[0.95rem] text-gray-600">
+                        Following in the footsteps of Bollywood actors Aishwarya Rai Bachchan and Abhishek Bachchan,
+                        renowned film producer and director Karan Johar has also filed a petition...
+                    </p>
+                </div>
+
+                <!-- Card -->
+                <div class="flex flex-col">
+                    <img src="https://picsum.photos/400/250?random=1" alt="Society News"
+                        class="w-full h-[12.5rem] object-cover">
+                    <h3 class="mt-[0.75rem] text-[1.25rem] font-medium hover:text-red-600 cursor-pointer leading-snug">
+                        Landslide blocks Kaligandaki Highway
+                    </h3>
+                    <p class="text-[0.95rem] text-gray-600">
+                        Following in the footsteps of Bollywood actors Aishwarya Rai Bachchan and Abhishek Bachchan,
+                        renowned film producer and director Karan Johar has also filed a petition...
+                    </p>
+                </div>
+
+                <!-- Card -->
+                <div class="flex flex-col">
+                    <img src="https://picsum.photos/400/250?random=1" alt="Society News"
+                        class="w-full h-[12.5rem] object-cover">
+                    <h3 class="mt-[0.75rem] text-[1.25rem] font-medium hover:text-red-600 cursor-pointer leading-snug">
+                        Landslide blocks Kaligandaki Highway
+                    </h3>
+                    <p class="text-[0.95rem] text-gray-600">
+                        Following in the footsteps of Bollywood actors Aishwarya Rai Bachchan and Abhishek Bachchan,
+                        renowned film producer and director Karan Johar has also filed a petition...
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Footer -->
+    <footer class="w-full bg-red-700 text-white mt-[3rem]">
+        <div class="max-w-[78.125rem] mx-auto px-[1rem] py-[2rem] flex justify-center">
+            <p class="text-[1.125rem] text-center">
+                © 2025 YourWebsite. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+
+    <script>
+        // Select the button and mobile menu
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        // Toggle mobile menu on button click
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden'); // Show/hide menu
+        });
+    </script>
+
+
+
+</body>
+
+</html>
